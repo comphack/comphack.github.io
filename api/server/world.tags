@@ -1,0 +1,1565 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>AccountLogin.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/packets/</path>
+    <filename>AccountLogin_8cpp</filename>
+    <includes id="AccountManager_8h" name="AccountManager.h" local="yes" imported="no">AccountManager.h</includes>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <member kind="function">
+      <type>void</type>
+      <name>ChannelLogin</name>
+      <anchorfile>AccountLogin_8cpp.html</anchorfile>
+      <anchor>ac6cbfededd5803f269338b754a9e0dce</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, const std::shared_ptr&lt; libcomp::InternalConnection &gt; connection, uint32_t sesssionKey, const libcomp::String username)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>LobbyLogin</name>
+      <anchorfile>AccountLogin_8cpp.html</anchorfile>
+      <anchor>aac8cbc691906a5b1d142429a24dd0445</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, const std::shared_ptr&lt; libcomp::InternalConnection &gt; connection, std::shared_ptr&lt; objects::AccountLogin &gt; login)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>AccountLogout.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/packets/</path>
+    <filename>AccountLogout_8cpp</filename>
+    <includes id="AccountManager_8h" name="AccountManager.h" local="yes" imported="no">AccountManager.h</includes>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>AccountManager.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/</path>
+    <filename>AccountManager_8cpp</filename>
+    <includes id="AccountManager_8h" name="AccountManager.h" local="yes" imported="no">AccountManager.h</includes>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <includes id="WorldSyncManager_8h" name="WorldSyncManager.h" local="yes" imported="no">WorldSyncManager.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>AccountManager.h</name>
+    <path>C:/projects/comp-hack/server/world/src/</path>
+    <filename>AccountManager_8h</filename>
+    <class kind="class">world::AccountManager</class>
+    <namespace>objects</namespace>
+    <namespace>world</namespace>
+  </compound>
+  <compound kind="file">
+    <name>CharacterLogin.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/packets/</path>
+    <filename>CharacterLogin_8cpp</filename>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>CharacterManager.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/</path>
+    <filename>CharacterManager_8cpp</filename>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>CharacterManager.h</name>
+    <path>C:/projects/comp-hack/server/world/src/</path>
+    <filename>CharacterManager_8h</filename>
+    <class kind="class">world::CharacterManager</class>
+    <namespace>libcomp</namespace>
+    <namespace>world</namespace>
+    <member kind="variable">
+      <type>const uint8_t</type>
+      <name>RELATED_CLAN</name>
+      <anchorfile>CharacterManager_8h.html</anchorfile>
+      <anchor>af6e7c60f6c6542d5fe82b994549f1252</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const uint8_t</type>
+      <name>RELATED_FRIENDS</name>
+      <anchorfile>CharacterManager_8h.html</anchorfile>
+      <anchor>ad5bcd9858e8fb229e397bc511327e38e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const uint8_t</type>
+      <name>RELATED_PARTY</name>
+      <anchorfile>CharacterManager_8h.html</anchorfile>
+      <anchor>aaac7a5edb6a85a10764ae4458012f6e4</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ClanUpdate.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/packets/</path>
+    <filename>ClanUpdate_8cpp</filename>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <member kind="function">
+      <type>void</type>
+      <name>ClanForm</name>
+      <anchorfile>ClanUpdate_8cpp.html</anchorfile>
+      <anchor>a8f1d43146927e40e5bef19e0baa982cd</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, const libcomp::String clanName, uint32_t baseZoneID, int8_t activationID)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ClanInvite</name>
+      <anchorfile>ClanUpdate_8cpp.html</anchorfile>
+      <anchor>a4d9cf6188f664e6684e2723695b5c7aa</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, int32_t clanID, std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, const libcomp::String targetName)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>CMakeLists.txt</name>
+    <path>C:/projects/comp-hack/server/world/</path>
+    <filename>CMakeLists_8txt</filename>
+    <member kind="function">
+      <type></type>
+      <name>SET</name>
+      <anchorfile>CMakeLists_8txt.html</anchorfile>
+      <anchor>acb4028293fddd3bf242a3127f41eac65</anchor>
+      <arglist>(${PROJECT_NAME}_SRCS src/AccountManager.cpp src/CharacterManager.cpp src/ManagerConnection.cpp src/WorldServer.cpp src/WorldSyncManager.cpp src/main.cpp) SET($</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>DataSync.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/packets/</path>
+    <filename>DataSync_8cpp</filename>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <includes id="WorldSyncManager_8h" name="WorldSyncManager.h" local="yes" imported="no">WorldSyncManager.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>FriendsUpdate.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/packets/</path>
+    <filename>FriendsUpdate_8cpp</filename>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <member kind="function">
+      <type>void</type>
+      <name>FriendList</name>
+      <anchorfile>FriendsUpdate_8cpp.html</anchorfile>
+      <anchor>aa009d52d19efbc4ad87f187c59807852</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; connection, std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>FriendRemoved</name>
+      <anchorfile>FriendsUpdate_8cpp.html</anchorfile>
+      <anchor>a9aaa5ee03953275660afc04244575f65</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; sourceConnection, std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, int32_t targetCID)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>FriendRequest</name>
+      <anchorfile>FriendsUpdate_8cpp.html</anchorfile>
+      <anchor>a8875a6d160993972e81f8facb9475561</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; sourceConnection, std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, const libcomp::String sourceName, const libcomp::String targetName)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>FriendRequestAccepted</name>
+      <anchorfile>FriendsUpdate_8cpp.html</anchorfile>
+      <anchor>a2ddf6ec2c57141849cae6d1afbd82ee4</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; sourceConnection, std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, const libcomp::String sourceName, const libcomp::String targetName)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>FriendRequestCancel</name>
+      <anchorfile>FriendsUpdate_8cpp.html</anchorfile>
+      <anchor>a5c9199864327ccf2febbe1231cda83d9</anchor>
+      <arglist>(const std::shared_ptr&lt; libcomp::TcpConnection &gt; &amp;connection, const libcomp::String otherName, std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>FriendRequestCancelled</name>
+      <anchorfile>FriendsUpdate_8cpp.html</anchorfile>
+      <anchor>a878201e8e653c334ad077c16eaa56369</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; sourceConnection, std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, const libcomp::String sourceName, const libcomp::String targetName)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>GetWorldInfo.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/packets/</path>
+    <filename>GetWorldInfo_8cpp</filename>
+    <includes id="AccountManager_8h" name="AccountManager.h" local="yes" imported="no">AccountManager.h</includes>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <includes id="WorldSyncManager_8h" name="WorldSyncManager.h" local="yes" imported="no">WorldSyncManager.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>main.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/</path>
+    <filename>main_8cpp</filename>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <member kind="function">
+      <type>int</type>
+      <name>main</name>
+      <anchorfile>main_8cpp.html</anchorfile>
+      <anchor>ac0f2228420376f4db7e1274f2b41667c</anchor>
+      <arglist>(int argc, const char *argv[])</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>MainPage.dox</name>
+    <path>C:/projects/comp-hack/server/world/doc/</path>
+    <filename>MainPage_8dox</filename>
+  </compound>
+  <compound kind="file">
+    <name>ManagerConnection.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/</path>
+    <filename>ManagerConnection_8cpp</filename>
+    <includes id="ManagerConnection_8h" name="ManagerConnection.h" local="yes" imported="no">ManagerConnection.h</includes>
+    <includes id="AccountManager_8h" name="AccountManager.h" local="yes" imported="no">AccountManager.h</includes>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <includes id="WorldSyncManager_8h" name="WorldSyncManager.h" local="yes" imported="no">WorldSyncManager.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>ManagerConnection.h</name>
+    <path>C:/projects/comp-hack/server/world/src/</path>
+    <filename>ManagerConnection_8h</filename>
+    <class kind="class">world::ManagerConnection</class>
+    <namespace>world</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Packets.h</name>
+    <path>C:/projects/comp-hack/server/world/src/</path>
+    <filename>Packets_8h</filename>
+    <namespace>world</namespace>
+    <namespace>world::Parsers</namespace>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>ac6df79c916a2b4f7685332e82f08c526</anchor>
+      <arglist>(GetWorldInfo)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a46682720094efa209e101a1af53f4557</anchor>
+      <arglist>(SetChannelInfo)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a08e63d6684a40dbe46b4d6ddd12ea66c</anchor>
+      <arglist>(AccountLogin)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a9a43403e706da1e12e6edb30d7e42f13</anchor>
+      <arglist>(AccountLogout)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a60be64218fe8e5df84b2627a0172e527</anchor>
+      <arglist>(Relay)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a0a00b67b9cce03341e6deda10095c358</anchor>
+      <arglist>(DataSync)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>afac779528360f7903e461e6d5d4da265</anchor>
+      <arglist>(CharacterLogin)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>ab408586b8300e1aa14ad535a2405e0c0</anchor>
+      <arglist>(FriendsUpdate)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a1cdae6380f7b862051d827af58631743</anchor>
+      <arglist>(PartyUpdate)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a8af031f10495a5f3db9426ad726384b4</anchor>
+      <arglist>(ClanUpdate)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>PartyUpdate.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/packets/</path>
+    <filename>PartyUpdate_8cpp</filename>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <member kind="function">
+      <type>void</type>
+      <name>PartyCancel</name>
+      <anchorfile>PartyUpdate_8cpp.html</anchorfile>
+      <anchor>ab215c57b8db4aa672702d06843280015</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, const libcomp::String sourceName, const libcomp::String targetName, uint32_t partyID)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>PartyDropRule</name>
+      <anchorfile>PartyUpdate_8cpp.html</anchorfile>
+      <anchor>ad97d0d5fe8186604d05c6c17e3979838</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, uint8_t rule)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>PartyInvite</name>
+      <anchorfile>PartyUpdate_8cpp.html</anchorfile>
+      <anchor>a4724fa19f0b03496e837f39971323af2</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, std::shared_ptr&lt; objects::PartyCharacter &gt; member, const libcomp::String targetName)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>Relay.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/packets/</path>
+    <filename>Relay_8cpp</filename>
+    <includes id="AccountManager_8h" name="AccountManager.h" local="yes" imported="no">AccountManager.h</includes>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>SetChannelInfo.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/packets/</path>
+    <filename>SetChannelInfo_8cpp</filename>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>WorldServer.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/</path>
+    <filename>WorldServer_8cpp</filename>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <includes id="AccountManager_8h" name="AccountManager.h" local="yes" imported="no">AccountManager.h</includes>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
+    <includes id="Packets_8h" name="Packets.h" local="yes" imported="no">Packets.h</includes>
+    <includes id="WorldSyncManager_8h" name="WorldSyncManager.h" local="yes" imported="no">WorldSyncManager.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>WorldServer.h</name>
+    <path>C:/projects/comp-hack/server/world/src/</path>
+    <filename>WorldServer_8h</filename>
+    <includes id="ManagerConnection_8h" name="ManagerConnection.h" local="no" imported="no">ManagerConnection.h</includes>
+    <class kind="class">world::WorldServer</class>
+    <namespace>world</namespace>
+  </compound>
+  <compound kind="file">
+    <name>WorldSyncManager.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/</path>
+    <filename>WorldSyncManager_8cpp</filename>
+    <includes id="WorldSyncManager_8h" name="WorldSyncManager.h" local="yes" imported="no">WorldSyncManager.h</includes>
+    <includes id="AccountManager_8h" name="AccountManager.h" local="yes" imported="no">AccountManager.h</includes>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <namespace>world</namespace>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::Expire&lt; objects::SearchEntry &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>ab4208ca0d9641183fb24a9f3a0e3bca3</anchor>
+      <arglist>(int32_t entryID, uint32_t expirationTime)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::Account &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>ae236d4a611c48919df045025bbf9a257</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::Character &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>af2e5c463511f72fb909cd90654c41521</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::SearchEntry &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a12011286ba7f604b9ada7d84f9228a15</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>WorldSyncManager.h</name>
+    <path>C:/projects/comp-hack/server/world/src/</path>
+    <filename>WorldSyncManager_8h</filename>
+    <class kind="class">world::WorldSyncManager</class>
+    <namespace>objects</namespace>
+    <namespace>world</namespace>
+  </compound>
+  <compound kind="class">
+    <name>world::AccountManager</name>
+    <filename>classworld_1_1AccountManager.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>AccountManager</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a8787513398424aacb72c49a48278334d</anchor>
+      <arglist>(const std::weak_ptr&lt; WorldServer &gt; &amp;server)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ChannelLogin</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>abf1cca3f6ca19a8ebd46470e645c6d8f</anchor>
+      <arglist>(std::shared_ptr&lt; objects::AccountLogin &gt; login)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>CleanupAccountWorldData</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a273e2e2f1654fc351be34fb747db0ce0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DeleteCharacter</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a7340b6250cee676cc952e3aa6348d43d</anchor>
+      <arglist>(const std::shared_ptr&lt; objects::Character &gt; &amp;character)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ExpireSession</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a72aefa00a1084ae8f73ec27602983414</anchor>
+      <arglist>(const libcomp::String &amp;username, uint32_t key)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; objects::AccountLogin &gt;</type>
+      <name>GetUserLogin</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>aee0f697175d0ca91df06998eb6f69f25</anchor>
+      <arglist>(const libcomp::String &amp;username)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsLoggedIn</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a98a41589a9c8ca28bb1abf74d10f616c</anchor>
+      <arglist>(const libcomp::String &amp;username, int8_t &amp;channel)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>LobbyLogin</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a548ba42cf09636ae39106472533f5909</anchor>
+      <arglist>(std::shared_ptr&lt; objects::AccountLogin &gt; login)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; objects::AccountLogin &gt;</type>
+      <name>LogoutUser</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>accd0af684cd2f6129825809ed29c2a5f</anchor>
+      <arglist>(const libcomp::String &amp;username, int8_t channel=-1)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::list&lt; std::shared_ptr&lt; objects::AccountLogin &gt; &gt;</type>
+      <name>LogoutUsersOnChannel</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>af6a9833dc8a218216bb51806d5a9243d</anchor>
+      <arglist>(int8_t channel)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>PopChannelSwitch</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>acfd574efb4238c1e720183d59057e5d7</anchor>
+      <arglist>(const libcomp::String &amp;username, int8_t &amp;channel)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>SwitchChannel</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a217f22881346076bdab26120c1100a33</anchor>
+      <arglist>(std::shared_ptr&lt; objects::AccountLogin &gt; login, int8_t channelID)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>Cleanup</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a9a8c971a91ec20fd41eef6dc7b0426ea</anchor>
+      <arglist>(const std::shared_ptr&lt; objects::AccountLogin &gt; &amp;login)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>Cleanup</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a960bc724f8df9c444d0dd4bcbfcd5283</anchor>
+      <arglist>(const std::shared_ptr&lt; T &gt; &amp;obj)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>PushChannelSwitch</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a927cae4b3649e37a528d4dcd8dc7c33f</anchor>
+      <arglist>(const libcomp::String &amp;username, int8_t channel)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>UpdateSessionKey</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>aa8fa6642489afa2feacf8f7f51f6023a</anchor>
+      <arglist>(std::shared_ptr&lt; objects::AccountLogin &gt; login)</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; libcomp::String, std::shared_ptr&lt; objects::AccountLogin &gt; &gt;</type>
+      <name>mAccountMap</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a6dbe2bb63503cb3603c251253b59ca12</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; libcomp::String, int8_t &gt;</type>
+      <name>mChannelSwitches</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a91d00242fbab1e0c8f4373dacf19031b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::mutex</type>
+      <name>mLock</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>adb69b8edca7a177bfca6c3e135b479c0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::weak_ptr&lt; WorldServer &gt;</type>
+      <name>mServer</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a23266904a65a50be8f1a4f986cf1d398</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>world::CharacterManager</name>
+    <filename>classworld_1_1CharacterManager.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>CharacterManager</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a6d258a7b0f3ca8b52f172ffd94593ca4</anchor>
+      <arglist>(const std::weak_ptr&lt; WorldServer &gt; &amp;server)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>AddToParty</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a102d08d3f57b1907bbf2918189141eab</anchor>
+      <arglist>(std::shared_ptr&lt; objects::PartyCharacter &gt; member, uint32_t partyID)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ClanDisband</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a5e8ceb942eca71fbf3afe5e73e230093</anchor>
+      <arglist>(int32_t clanID, int32_t sourceCID=0, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ClanJoin</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a9676680cd16bfe2ea0d149d9c6ac33bb</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, int32_t clanID)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ClanKick</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a1bc92462da1a8baa45b61a481c835834</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, int32_t clanID, int32_t targetCID, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ClanLeave</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a41e5e3beb499218a796132081b3e79ec</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, int32_t clanID, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ConvertToTargetCIDPacket</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a25de37f1a3d5ffdfbd13beb8e1dc4c46</anchor>
+      <arglist>(libcomp::Packet &amp;p, uint32_t cidOffset, size_t cidCount)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; objects::CharacterLogin &gt;</type>
+      <name>GetCharacterLogin</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a8ce797005db7357338f5cabc3a9fcf87</anchor>
+      <arglist>(const libobjgen::UUID &amp;uuid)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; objects::CharacterLogin &gt;</type>
+      <name>GetCharacterLogin</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a4251540cc57a83bc735bcff99cecbc2b</anchor>
+      <arglist>(int32_t worldCID)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; objects::CharacterLogin &gt;</type>
+      <name>GetCharacterLogin</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a97957d7b01fd58b1ea853cebb6e14afe</anchor>
+      <arglist>(const libcomp::String &amp;characterName)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; objects::ClanInfo &gt;</type>
+      <name>GetClan</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a380df0d360f669561259ea388710f5a4</anchor>
+      <arglist>(int32_t clanID)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; objects::ClanInfo &gt;</type>
+      <name>GetClan</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>aa7877ce062276c99a889b53f954426b3</anchor>
+      <arglist>(const libobjgen::UUID &amp;uuid)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; objects::Party &gt;</type>
+      <name>GetParty</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a08e163b421556b191e4ca3e70a3caa4c</anchor>
+      <arglist>(uint32_t partyID)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; objects::PartyCharacter &gt;</type>
+      <name>GetPartyMember</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a23416e0b4ec6e57fecfe757d2cfdb210</anchor>
+      <arglist>(int32_t worldCID)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::list&lt; std::shared_ptr&lt; objects::CharacterLogin &gt; &gt;</type>
+      <name>GetRelatedCharacterLogins</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a6a0b28039550d061fd81c3fbef605d79</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, uint8_t relatedTypes)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>GetStatusPacket</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>aaca75ec7b190e6561f765ad5a26c0e53</anchor>
+      <arglist>(libcomp::Packet &amp;p, const std::shared_ptr&lt; objects::CharacterLogin &gt; &amp;cLogin, uint8_t &amp;updateFlags)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>PartyDisband</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a76ac9d127000c727244ce1add8a098dc</anchor>
+      <arglist>(uint32_t partyID, int32_t sourceCID=0, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>PartyJoin</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a062403952cf7fdaec0d9f6834e909003</anchor>
+      <arglist>(std::shared_ptr&lt; objects::PartyCharacter &gt; member, const libcomp::String targetName, uint32_t partyID, std::shared_ptr&lt; libcomp::TcpConnection &gt; sourceConnection)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>PartyKick</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a3265c6c8d6c9634fc6d44c11927f8a9f</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, int32_t targetCID)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>PartyLeaderUpdate</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a60b1bae62fc9261cc55d13a6b934d68a</anchor>
+      <arglist>(uint32_t partyID, int32_t sourceCID, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, int32_t targetCID)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>PartyLeave</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>ae220c0e248da12867884047c1f13247d</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, bool tempLeave)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>RecalculateClanLevel</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a87f6dab0eaa2330802ca8f6672fb2442</anchor>
+      <arglist>(int32_t clanID, bool sendUpdate=true)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; objects::CharacterLogin &gt;</type>
+      <name>RegisterCharacter</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a94945a18546c05f4706b9c2c4fe7f03f</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>RequestChannelDisconnect</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a4d71b0e8987897e0ef25f77e63728dbf</anchor>
+      <arglist>(int32_t worldCID)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SendClanDetails</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a40e3274fef88b62e7bc2e5bf2c47d886</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, std::list&lt; int32_t &gt; memberIDs={})</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SendClanInfo</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a098ea0b555b08f896c3708c8d6673e7d</anchor>
+      <arglist>(int32_t clanID, uint8_t updateFlags=0x07, const std::list&lt; int32_t &gt; &amp;cids={})</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SendClanMemberInfo</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>afdd8d763cc2bc0cdaa0aaf56a2f84a79</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, uint8_t updateFlags=0x30)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SendPartyInfo</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>afb9d99043d5be98fa26e6f1c1afd8680</anchor>
+      <arglist>(uint32_t partyID, const std::list&lt; int32_t &gt; &amp;cids={})</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SendStatusToRelatedCharacters</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a9e56d68a1b44160fa2668d09929ed8cd</anchor>
+      <arglist>(const std::list&lt; std::shared_ptr&lt; objects::CharacterLogin &gt;&gt; &amp;cLogins, uint8_t updateFlags, bool zoneRestrict=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>SendToCharacters</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a9662fe8357dd580c06969f2c4a253cd4</anchor>
+      <arglist>(libcomp::Packet &amp;p, const std::list&lt; std::shared_ptr&lt; objects::CharacterLogin &gt;&gt; &amp;cLogins, uint32_t cidOffset)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>SendToRelatedCharacters</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a35f28cdf565b0a7e9df2b78fa4a6e769</anchor>
+      <arglist>(libcomp::Packet &amp;p, int32_t worldCID, uint32_t cidOffset, uint8_t relatedTypes, bool includeSelf=false, bool zoneRestrict=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>UnregisterCharacter</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>ab899bb5b76f373a705a1e5e909794c03</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>uint32_t</type>
+      <name>CreateParty</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a0727a7e2aa622d2659505dda84e71f1f</anchor>
+      <arglist>(std::shared_ptr&lt; objects::PartyCharacter &gt; member)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>RemoveFromClan</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a40365ce0640718dd0881de42031e3fe6</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, int32_t clanID)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>RemoveFromParty</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a05b9b6363bc1862595abdec6242215a2</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, uint32_t partyID)</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; int32_t, std::shared_ptr&lt; objects::CharacterLogin &gt; &gt;</type>
+      <name>mCharacterCIDMap</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a3da7f0137c6d8fca19a8980047654743</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; libcomp::String, std::shared_ptr&lt; objects::CharacterLogin &gt; &gt;</type>
+      <name>mCharacterMap</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>adf44b8e3e6ba28d710034bcf1fd74723</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; libcomp::String, int32_t &gt;</type>
+      <name>mClanMap</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>ab55a7157bda0d58e99556da651f108de</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; int32_t, std::shared_ptr&lt; objects::ClanInfo &gt; &gt;</type>
+      <name>mClans</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a8679519cc6dd861c895e7f45b01ca266</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::mutex</type>
+      <name>mLock</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a8827f6368bfb64d6247916a2ea1dc47e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int32_t</type>
+      <name>mMaxCID</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a64de6d874b6876e2379700b7ff92268d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int32_t</type>
+      <name>mMaxClanID</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a8ca7fd561da0858072da1486b4f4fbc9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>uint32_t</type>
+      <name>mMaxPartyID</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a19f109685849f3362ec0cd893b0c9777</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; uint32_t, std::shared_ptr&lt; objects::Party &gt; &gt;</type>
+      <name>mParties</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a719e579a66737f5be113a4d6af9c0c6b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; int32_t, std::shared_ptr&lt; objects::PartyCharacter &gt; &gt;</type>
+      <name>mPartyCharacters</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a53f8d5754d7d2750cebf485f655afb3e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::weak_ptr&lt; WorldServer &gt;</type>
+      <name>mServer</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a394d1adfd27ef10e06459f2a6761218f</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>world::ManagerConnection</name>
+    <filename>classworld_1_1ManagerConnection.html</filename>
+    <base>libcomp::Manager</base>
+    <member kind="function">
+      <type></type>
+      <name>ManagerConnection</name>
+      <anchorfile>classworld_1_1ManagerConnection.html</anchorfile>
+      <anchor>a69744db1fdb43b965b8304f1685533a0</anchor>
+      <arglist>(std::weak_ptr&lt; libcomp::BaseServer &gt; server)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ManagerConnection</name>
+      <anchorfile>classworld_1_1ManagerConnection.html</anchorfile>
+      <anchor>aeca514062c780714800271a9a4aae4dd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; libcomp::InternalConnection &gt;</type>
+      <name>GetLobbyConnection</name>
+      <anchorfile>classworld_1_1ManagerConnection.html</anchorfile>
+      <anchor>ac968acd28a3aeaacc653c8e1bad93f1f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual std::list&lt; libcomp::Message::MessageType &gt;</type>
+      <name>GetSupportedTypes</name>
+      <anchorfile>classworld_1_1ManagerConnection.html</anchorfile>
+      <anchor>afb0b50132fc40f19d81d8a2e07e3e4d8</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>LobbyConnected</name>
+      <anchorfile>classworld_1_1ManagerConnection.html</anchorfile>
+      <anchor>ae0639dfbe61f9a5a03b18ecaaf3fa00c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>ProcessMessage</name>
+      <anchorfile>classworld_1_1ManagerConnection.html</anchorfile>
+      <anchor>ad07e4c1a45811f93e6ac9fd46da74e55</anchor>
+      <arglist>(const libcomp::Message::Message *pMessage)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>RemoveConnection</name>
+      <anchorfile>classworld_1_1ManagerConnection.html</anchorfile>
+      <anchor>a9986f8d084cffd42455094020ca5669c</anchor>
+      <arglist>(std::shared_ptr&lt; libcomp::InternalConnection &gt; &amp;connection)</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::shared_ptr&lt; libcomp::InternalConnection &gt;</type>
+      <name>mLobbyConnection</name>
+      <anchorfile>classworld_1_1ManagerConnection.html</anchorfile>
+      <anchor>ac316cf129759920ecc699a6314be7b06</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::weak_ptr&lt; libcomp::BaseServer &gt;</type>
+      <name>mServer</name>
+      <anchorfile>classworld_1_1ManagerConnection.html</anchorfile>
+      <anchor>a857bc152c4add5ab68367866d3d8ade5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private" static="yes">
+      <type>static std::list&lt; libcomp::Message::MessageType &gt;</type>
+      <name>sSupportedTypes</name>
+      <anchorfile>classworld_1_1ManagerConnection.html</anchorfile>
+      <anchor>a72b30885e78c7d972a5c85647d46e0a9</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>world::WorldServer</name>
+    <filename>classworld_1_1WorldServer.html</filename>
+    <base>libcomp::BaseServer</base>
+    <member kind="function">
+      <type></type>
+      <name>WorldServer</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>ac8c13513e0ddd0d98cd87430da673f1e</anchor>
+      <arglist>(const char *szProgram, std::shared_ptr&lt; objects::ServerConfig &gt; config, std::shared_ptr&lt; libcomp::ServerCommandLineParser &gt; commandLine)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~WorldServer</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>af1f00e4c0a6ccd8a9e4a1765b8c59e1c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>FinishInitialize</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a690f0554055c82bdac16b9314b29eb9a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>AccountManager *</type>
+      <name>GetAccountManager</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>ae0aec2e58b88eca4bd140db6f5f8d28c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; objects::RegisteredChannel &gt;</type>
+      <name>GetChannel</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a5cc7996ea0e13bad08858eb756d94583</anchor>
+      <arglist>(const std::shared_ptr&lt; libcomp::InternalConnection &gt; &amp;connection) const </arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; libcomp::InternalConnection &gt;</type>
+      <name>GetChannelConnectionByID</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a02ae8560ddc4014ab9cf33b59065f765</anchor>
+      <arglist>(int8_t channelID) const </arglist>
+    </member>
+    <member kind="function">
+      <type>std::map&lt; std::shared_ptr&lt; libcomp::InternalConnection &gt;, std::shared_ptr&lt; objects::RegisteredChannel &gt; &gt;</type>
+      <name>GetChannels</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a4c41e7f95d8847599039c32ae1886992</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>CharacterManager *</type>
+      <name>GetCharacterManager</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>ac7fa6400c510bdd8318251847320a23e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const std::shared_ptr&lt; libcomp::InternalConnection &gt;</type>
+      <name>GetLobbyConnection</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>ac2f05e06e36eacb4ed8dd6bb4c279898</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; libcomp::Database &gt;</type>
+      <name>GetLobbyDatabase</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>aca7571702103435ac53343e53ad541a5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; objects::RegisteredChannel &gt;</type>
+      <name>GetLoginChannel</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>ac4ffff1b9121621fc0c21a5edd254191</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>GetNextChannelID</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a14953c5322221f0fe4e3d91df0ab89f4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const std::shared_ptr&lt; objects::RegisteredWorld &gt;</type>
+      <name>GetRegisteredWorld</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>aa76c6d24ba346de82872178588426443</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; libcomp::Database &gt;</type>
+      <name>GetWorldDatabase</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a2100a1bde2f1c033e42678749e9fe9f4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>WorldSyncManager *</type>
+      <name>GetWorldSyncManager</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a4d267a97d47384381daae6d6ac1db135</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Initialize</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>ac8842676a703f130a4e779c7fc9cdc9c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>RegisterChannel</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a39f70610a15c5cfe00b4e95c38a42237</anchor>
+      <arglist>(const std::shared_ptr&lt; objects::RegisteredChannel &gt; &amp;channel, const std::shared_ptr&lt; libcomp::InternalConnection &gt; &amp;connection)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>RegisterServer</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>aa798d03bf3e8e6e8fc1a0866aec14615</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>RemoveChannel</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>abc4685086dfa0a004a52a2b091e42fa8</anchor>
+      <arglist>(const std::shared_ptr&lt; libcomp::InternalConnection &gt; &amp;connection)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetLobbyDatabase</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a0d9b5669f0091a6352e03281dda308b7</anchor>
+      <arglist>(const std::shared_ptr&lt; libcomp::Database &gt; &amp;database)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static uint32_t</type>
+      <name>GetRelayPacket</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a50407a26e77d8098d985934eb5f41a33</anchor>
+      <arglist>(libcomp::Packet &amp;p, const std::list&lt; int32_t &gt; &amp;targetCIDs={}, int32_t sourceCID=0)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>GetRelayPacket</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a7b29e863b11ccba49826f7191578f429</anchor>
+      <arglist>(libcomp::Packet &amp;p, int32_t targetCID, int32_t sourceCID=0)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual std::shared_ptr&lt; libcomp::TcpConnection &gt;</type>
+      <name>CreateConnection</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>ac9943a8350c010abc9aadc205cfe5643</anchor>
+      <arglist>(asio::ip::tcp::socket &amp;socket)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>AccountManager *</type>
+      <name>mAccountManager</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>af3e4f86b363f716c7aaf5da2466acb2a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>CharacterManager *</type>
+      <name>mCharacterManager</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a8fb6154574d3656a03d3d0ce0e5f89ad</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::shared_ptr&lt; libcomp::Database &gt;</type>
+      <name>mDatabase</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a997d83a4138dbc386652f73b9145e996</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::shared_ptr&lt; libcomp::Database &gt;</type>
+      <name>mLobbyDatabase</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>acc0ab1ff467a246cdbb07229aa7d7281</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::shared_ptr&lt; ManagerConnection &gt;</type>
+      <name>mManagerConnection</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a9fcdbd2e844cc55a8c2ec534601ff61c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::map&lt; std::shared_ptr&lt; libcomp::InternalConnection &gt;, std::shared_ptr&lt; objects::RegisteredChannel &gt; &gt;</type>
+      <name>mRegisteredChannels</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a63957ae150024a5fc69fbf26f45aa53d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::shared_ptr&lt; objects::RegisteredWorld &gt;</type>
+      <name>mRegisteredWorld</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>a197fdc888e8515c727e754d225baebe3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>WorldSyncManager *</type>
+      <name>mSyncManager</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>ae9e3edec500b4b981778581149e1e1f9</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>world::WorldSyncManager</name>
+    <filename>classworld_1_1WorldSyncManager.html</filename>
+    <base>libcomp::DataSyncManager</base>
+    <member kind="function">
+      <type></type>
+      <name>WorldSyncManager</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a9f1864185fdb9b11b8d0bbc62e6f3832</anchor>
+      <arglist>(const std::weak_ptr&lt; WorldServer &gt; &amp;server)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~WorldSyncManager</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a7591e89a188231e5e383a7a6740900f4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>CleanUpCharacterLogin</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a2a26315dec55f2bd93285951997696fb</anchor>
+      <arglist>(int32_t worldCID, bool flushOutgoing=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Expire</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a5d3c9aedd54436b50cfbd400624239fb</anchor>
+      <arglist>(int32_t entryID, uint32_t expirationTime)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>Initialize</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>afba422bf92db05169c90f4a6b9a828aa</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>RemoveRecord</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>aeac237604ef52dae135d3ff60543b64b</anchor>
+      <arglist>(const std::shared_ptr&lt; libcomp::Object &gt; &amp;record, const libcomp::String &amp;type)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SyncExistingChannelRecords</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a4c8d7ea620eac5362ecc9bc9179f958d</anchor>
+      <arglist>(const std::shared_ptr&lt; libcomp::InternalConnection &gt; &amp;connection)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>Update</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a3a61dd2bbd31e6770fc6aa0ff336fa9e</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>AdjustSearchEntryCount</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>ada3d142c99423512a772fa6adf38f91e</anchor>
+      <arglist>(int32_t sourceCID, objects::SearchEntry::Type_t type, bool increment)</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::list&lt; std::shared_ptr&lt; objects::SearchEntry &gt; &gt;</type>
+      <name>mSearchEntries</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>af87b8b8b5afe4575701c68d394052a50</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; int32_t, libcomp::EnumMap&lt; objects::SearchEntry::Type_t, uint16_t &gt; &gt;</type>
+      <name>mSearchEntryCounts</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a7a0521696bcabaf13dcedf0a0bcd9ef4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::weak_ptr&lt; WorldServer &gt;</type>
+      <name>mServer</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a43cda30ebc0eeb2b934377ccedd246ee</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>libcomp</name>
+    <filename>namespacelibcomp.html</filename>
+    <member kind="typedef">
+      <type>uint16_t</type>
+      <name>CommandCode_t</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a79ff02590a8d72c2abb8537458a72e9c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::unordered_map&lt; Key, T, HashType&lt; Key &gt;&gt;</type>
+      <name>EnumMap</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a1442fc2425910540ae92c53a56c03cc6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename std::conditional&lt; std::is_enum&lt; Key &gt;::value, EnumClassHash, std::hash&lt; Key &gt;&gt;::type</type>
+      <name>HashType</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ae51bc9f0bbe012f4ee4a81e96cf0f74f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DBExplicitUpdate::Set&lt; libcomp::String &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a79cce8c37467b57fa0878c88f17ade16</anchor>
+      <arglist>(const libcomp::String &amp;column, libcomp::String value)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DBExplicitUpdate::Set&lt; libobjgen::UUID &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ac186379bcff09a602a7c25063a2481fa</anchor>
+      <arglist>(const libcomp::String &amp;column, libobjgen::UUID value)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DBExplicitUpdate::SetFrom&lt; libcomp::String &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a970878719e0106f0e67b47ff49ec41f2</anchor>
+      <arglist>(const libcomp::String &amp;column, libcomp::String value, libcomp::String expected)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DBExplicitUpdate::SetFrom&lt; libobjgen::UUID &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a6083d3788dcaecb3851340467658d783</anchor>
+      <arglist>(const libcomp::String &amp;column, libobjgen::UUID value, libobjgen::UUID expected)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::RegisterServerSideDefinition&lt; objects::EnchantSetData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a990cd36a67fda02cfc87a982221dab63</anchor>
+      <arglist>(const std::shared_ptr&lt; objects::EnchantSetData &gt; &amp;record)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::RegisterServerSideDefinition&lt; objects::EnchantSpecialData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a2f227b7da737bb3aeccabafffbfdf4f0</anchor>
+      <arglist>(const std::shared_ptr&lt; objects::EnchantSpecialData &gt; &amp;record)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::RegisterServerSideDefinition&lt; objects::MiSStatusData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ae04e775813a7befb59c35f5056b3f0a5</anchor>
+      <arglist>(const std::shared_ptr&lt; objects::MiSStatusData &gt; &amp;record)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::RegisterServerSideDefinition&lt; objects::Tokusei &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ac53e99b39ffba66973e3f947dfce572d</anchor>
+      <arglist>(const std::shared_ptr&lt; objects::Tokusei &gt; &amp;record)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::DemonPresent &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a4f0280c8f124bea313f8fa5209945ef6</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::DropSet &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a677dc85ea0d544d99c17ebc220ec096b</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::EnchantSetData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a876428ea15c5f8323e4d82e2f514f68e</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::EnchantSpecialData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a282fd6a2a357f1c5f6a226d7ad31e6b7</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::Event &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a98741e6a5355d756cabe22bfc05af7a3</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::MiSStatusData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ae0ead762950f4e24f426c3858997d991</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::ServerShop &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a0142ab03575b635a88c9b691e990cb23</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::ServerZone &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a0d366da10417b39e657ff922f5be1812</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::ServerZoneInstance &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a4e572cf2ab83dc86193b64d5bf40f817</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::Tokusei &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ad85d85ace4ceb7ee4b4d51594dd5bf73</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="variable">
+      <type>const std::size_t</type>
+      <name>BLOWFISH_BLOCK_SIZE</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a2765e02af07d8f628f6e5e93d4c95b74</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const unsigned long long</type>
+      <name>LEVEL_XP_REQUIREMENTS</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a350e3aff57d5978e7732dc852bc07b63</anchor>
+      <arglist>[]</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static std::set&lt; libobjgen::MetaVariable::MetaVariableType_t &gt;</type>
+      <name>validInt32Types</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a3cc8ff7334c57b39376e2f9c7a7a5271</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static std::set&lt; libobjgen::MetaVariable::MetaVariableType_t &gt;</type>
+      <name>validInt64Types</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ad23f032a5d4228b97b4787845267f33d</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>objects</name>
+    <filename>namespaceobjects.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>world</name>
+    <filename>namespaceworld.html</filename>
+    <namespace>world::Parsers</namespace>
+    <class kind="class">world::AccountManager</class>
+    <class kind="class">world::CharacterManager</class>
+    <class kind="class">world::ManagerConnection</class>
+    <class kind="class">world::WorldServer</class>
+    <class kind="class">world::WorldSyncManager</class>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::Expire&lt; objects::SearchEntry &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>ab4208ca0d9641183fb24a9f3a0e3bca3</anchor>
+      <arglist>(int32_t entryID, uint32_t expirationTime)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::Account &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>ae236d4a611c48919df045025bbf9a257</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::Character &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>af2e5c463511f72fb909cd90654c41521</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::SearchEntry &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a12011286ba7f604b9ada7d84f9228a15</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>world::Parsers</name>
+    <filename>namespaceworld_1_1Parsers.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>ac6df79c916a2b4f7685332e82f08c526</anchor>
+      <arglist>(GetWorldInfo)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a46682720094efa209e101a1af53f4557</anchor>
+      <arglist>(SetChannelInfo)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a08e63d6684a40dbe46b4d6ddd12ea66c</anchor>
+      <arglist>(AccountLogin)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a9a43403e706da1e12e6edb30d7e42f13</anchor>
+      <arglist>(AccountLogout)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a60be64218fe8e5df84b2627a0172e527</anchor>
+      <arglist>(Relay)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a0a00b67b9cce03341e6deda10095c358</anchor>
+      <arglist>(DataSync)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>afac779528360f7903e461e6d5d4da265</anchor>
+      <arglist>(CharacterLogin)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>ab408586b8300e1aa14ad535a2405e0c0</anchor>
+      <arglist>(FriendsUpdate)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a1cdae6380f7b862051d827af58631743</anchor>
+      <arglist>(PartyUpdate)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a8af031f10495a5f3db9426ad726384b4</anchor>
+      <arglist>(ClanUpdate)</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title>server/world - A world server</title>
+    <filename>index</filename>
+    <docanchor file="index" title="Starting the server">setup</docanchor>
+    <docanchor file="index" title="Encryption and Decryption">enc_and_dec</docanchor>
+  </compound>
+</tagfile>
