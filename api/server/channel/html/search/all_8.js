@@ -37,6 +37,7 @@ var searchData=
   ['isitemskill',['IsItemSkill',['../classchannel_1_1ProcessingSkill.html#adc9bae4b803dfa42bae7d3b6847656f0',1,'channel::ProcessingSkill']]],
   ['isleader',['IsLeader',['../structPartyMemberInfo.html#a10837aa8325386475a6c108c579dcd94',1,'PartyMemberInfo']]],
   ['isline',['IsLine',['../classchannel_1_1ZoneShape.html#a065def0a0c1df7eb8e7aa5b058a63309',1,'channel::ZoneShape']]],
+  ['islnctype',['IsLNCType',['../classchannel_1_1ActiveEntityState.html#ae897ad90fe5cb5f505f2de5a0da374c7',1,'channel::ActiveEntityState']]],
   ['ismoving',['IsMoving',['../classchannel_1_1ActiveEntityState.html#aa86a6658fd24aeafde4b18c0c97d0433',1,'channel::ActiveEntityState']]],
   ['ismultipleoftwo',['IsMultipleOfTwo',['../../../../libcomp/html/classlibcomp_1_1RingBuffer.html#a77c8505452790bd67c40232cb16f9906',1,'libcomp::RingBuffer']]],
   ['isnull',['IsNull',['../../../../libcomp/html/classlibcomp_1_1ObjectReference.html#acdbd8b1b85ff178f8c914030c286251a',1,'libcomp::ObjectReference']]],

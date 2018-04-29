@@ -3,6 +3,7 @@ var searchData=
   ['absolutetooffset',['absoluteToOffset',['../../../../libcomp/html/classlibcomp_1_1PEFile.html#ae3353cb77421375f978f689a474353a0',1,'libcomp::PEFile']]],
   ['accepthandler',['AcceptHandler',['../../../../libcomp/html/classlibcomp_1_1TcpServer.html#a463bff4fbe9cf9b703bf1b8919c7ea80',1,'libcomp::BaseServer::AcceptHandler()'],['../../../../libcomp/html/classlibcomp_1_1TcpServer.html#a463bff4fbe9cf9b703bf1b8919c7ea80',1,'libcomp::TcpServer::AcceptHandler()']]],
   ['account_5fchangepassword',['Account_ChangePassword',['../classlobby_1_1ApiHandler.html#af57936a2d700d55884c3082f220ee35c',1,'lobby::ApiHandler']]],
+  ['account_5fclientlogin',['Account_ClientLogin',['../classlobby_1_1ApiHandler.html#af90975204b4ac76c8482f6fcfc673ef8',1,'lobby::ApiHandler']]],
   ['account_5fgetcp',['Account_GetCP',['../classlobby_1_1ApiHandler.html#af4e793fee0881db25e91c2101c1cc0cf',1,'lobby::ApiHandler']]],
   ['account_5fgetdetails',['Account_GetDetails',['../classlobby_1_1ApiHandler.html#a5dea46ea5da6736af59fe189b42e55bd',1,'lobby::ApiHandler']]],
   ['account_5fregister',['Account_Register',['../classlobby_1_1ApiHandler.html#a3f3adc968c238a6a27995abf7624045a',1,'lobby::ApiHandler']]],

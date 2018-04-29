@@ -2,7 +2,7 @@ var searchData=
 [
   ['macceptor',['mAcceptor',['../../../../libcomp/html/classlibcomp_1_1TcpServer.html#a2da2e4e22dfe6b90828f6a25d12b5273',1,'libcomp::TcpServer']]],
   ['maccountlock',['mAccountLock',['../classlobby_1_1AccountManager.html#a7a3bb54c94d5c0038146e576b563656c',1,'lobby::AccountManager']]],
-  ['maccountmanager',['mAccountManager',['../classlobby_1_1LobbyServer.html#af84a3c3e87316479569b951ae4e25ca3',1,'lobby::LobbyServer::mAccountManager()'],['../classlobby_1_1LoginHandler.html#a8128e8bc7883ad5fb21b4c671b29c0e6',1,'lobby::LoginHandler::mAccountManager()']]],
+  ['maccountmanager',['mAccountManager',['../classlobby_1_1ApiHandler.html#a9de2e48878c72442d68d2a114b793e3f',1,'lobby::ApiHandler::mAccountManager()'],['../classlobby_1_1LobbyServer.html#af84a3c3e87316479569b951ae4e25ca3',1,'lobby::LobbyServer::mAccountManager()'],['../classlobby_1_1LoginHandler.html#a8128e8bc7883ad5fb21b4c671b29c0e6',1,'lobby::LoginHandler::mAccountManager()']]],
   ['maccountmap',['mAccountMap',['../classlobby_1_1AccountManager.html#a811b9e1e3b29d3ecdde0388fd921444b',1,'lobby::AccountManager']]],
   ['machine',['Machine',['../../../../libcomp/html/structIMAGE__FILE__HEADER.html#a015f496c3957a28056de05deeb5dea20',1,'IMAGE_FILE_HEADER']]],
   ['maddress',['mAddress',['../../../../libcomp/html/classlibcomp_1_1Message_1_1WorldNotification.html#a07cf3cc331b3e632268d973dd1aaf015',1,'libcomp::Message::WorldNotification']]],

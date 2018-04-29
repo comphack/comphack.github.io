@@ -118,11 +118,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac89bbe6f245061610853733074d9b2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cf13ea45691227f384a99f1c8338871"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1ApiHandler.html#a1cf13ea45691227f384a99f1c8338871">handlePost</a> (CivetServer *pServer, struct mg_connection *pConnection)</td></tr>
 <tr class="separator:a1cf13ea45691227f384a99f1c8338871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ceb9721f920fceafaefc6555f8976a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1ApiHandler.html#a8ceb9721f920fceafaefc6555f8976a8">SetAccountManager</a> (<a class="el" href="classlobby_1_1AccountManager.html">AccountManager</a> *pManager)</td></tr>
+<tr class="separator:a8ceb9721f920fceafaefc6555f8976a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:af57936a2d700d55884c3082f220ee35c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1ApiHandler.html#af57936a2d700d55884c3082f220ee35c">Account_ChangePassword</a> (const JsonBox::Object &amp;request, JsonBox::Object &amp;response, const std::shared_ptr&lt; <a class="el" href="classlobby_1_1ApiSession.html">ApiSession</a> &gt; &amp;session)</td></tr>
 <tr class="separator:af57936a2d700d55884c3082f220ee35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90975204b4ac76c8482f6fcfc673ef8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1ApiHandler.html#af90975204b4ac76c8482f6fcfc673ef8">Account_ClientLogin</a> (const JsonBox::Object &amp;request, JsonBox::Object &amp;response, const std::shared_ptr&lt; <a class="el" href="classlobby_1_1ApiSession.html">ApiSession</a> &gt; &amp;session)</td></tr>
+<tr class="separator:af90975204b4ac76c8482f6fcfc673ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4e793fee0881db25e91c2101c1cc0cf"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1ApiHandler.html#af4e793fee0881db25e91c2101c1cc0cf">Account_GetCP</a> (const JsonBox::Object &amp;request, JsonBox::Object &amp;response, const std::shared_ptr&lt; <a class="el" href="classlobby_1_1ApiSession.html">ApiSession</a> &gt; &amp;session)</td></tr>
 <tr class="separator:af4e793fee0881db25e91c2101c1cc0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dea46ea5da6736af59fe189b42e55bd"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1ApiHandler.html#a5dea46ea5da6736af59fe189b42e55bd">Account_GetDetails</a> (const JsonBox::Object &amp;request, JsonBox::Object &amp;response, const std::shared_ptr&lt; <a class="el" href="classlobby_1_1ApiSession.html">ApiSession</a> &gt; &amp;session)</td></tr>
@@ -146,6 +150,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a9de2e48878c72442d68d2a114b793e3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlobby_1_1AccountManager.html">AccountManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1ApiHandler.html#a9de2e48878c72442d68d2a114b793e3f">mAccountManager</a></td></tr>
+<tr class="separator:a9de2e48878c72442d68d2a114b793e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac059d08a3747a4ab3b0743e51808bdd4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::LobbyConfig &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1ApiHandler.html#ac059d08a3747a4ab3b0743e51808bdd4">mConfig</a></td></tr>
 <tr class="separator:ac059d08a3747a4ab3b0743e51808bdd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac71a0832768a19273ff069fd5e2c4413"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a>, std::function&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>(<a class="el" href="classlobby_1_1ApiHandler.html">ApiHandler</a> &amp;, const JsonBox::Object &amp;request, JsonBox::Object &amp;response, const std::shared_ptr&lt; <a class="el" href="classlobby_1_1ApiSession.html">ApiSession</a> &gt; &amp;session)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1ApiHandler.html#ac71a0832768a19273ff069fd5e2c4413">mParsers</a></td></tr>
@@ -158,7 +164,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="ApiHandler_8h_source.html#l00064">64</a> of file <a class="el" href="ApiHandler_8h_source.html">ApiHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8h_source.html#l00066">66</a> of file <a class="el" href="ApiHandler_8h_source.html">ApiHandler.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2fd288b77907e5528cc341bef8fe2ffe"></a>
 <div class="memitem">
@@ -184,9 +190,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00048">48</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00051">51</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
-<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00187">Account_ChangePassword()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00130">Account_GetCP()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00149">Account_GetDetails()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00254">Account_Register()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00464">Admin_DeleteAccount()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00412">Admin_GetAccount()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00361">Admin_GetAccounts()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00502">Admin_UpdateAccount()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00067">Auth_Token()</a>, and <a class="el" href="ApiHandler_8h_source.html#l00118">mParsers</a>.</p>
+<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00191">Account_ChangePassword()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00258">Account_ClientLogin()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00134">Account_GetCP()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00153">Account_GetDetails()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00332">Account_Register()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00542">Admin_DeleteAccount()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00490">Admin_GetAccount()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00439">Admin_GetAccounts()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00580">Admin_UpdateAccount()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00071">Auth_Token()</a>, and <a class="el" href="ApiHandler_8h_source.html#l00125">mParsers</a>.</p>
 
 </div>
 </div>
@@ -211,7 +217,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00063">63</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00067">67</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
 </div>
 </div>
@@ -254,11 +260,57 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00187">187</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00191">191</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00694">GetDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a38a1731684a357f62f2c77eac470d256">libcomp::Decrypt::HashPassword()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#abe0230746f3e7f3bd5bc0c5dff61f069">libcomp::String::Matches()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00772">GetDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a38a1731684a357f62f2c77eac470d256">libcomp::Decrypt::HashPassword()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#abe0230746f3e7f3bd5bc0c5dff61f069">libcomp::String::Matches()</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00048">ApiHandler()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00051">ApiHandler()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af90975204b4ac76c8482f6fcfc673ef8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> ApiHandler::Account_ClientLogin </td>
+          <td>(</td>
+          <td class="paramtype">const JsonBox::Object &amp;&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">JsonBox::Object &amp;&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classlobby_1_1ApiSession.html">ApiSession</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>session</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00258">258</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ErrorCodes_8cpp.html#a14125a86427930b32b5f0d780237dd69">ErrorCodeString()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00772">GetDatabase()</a>, <a class="el" href="ApiHandler_8h_source.html#l00130">mAccountManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/PacketCodes_8h.html#a4d7d5dc6fabdf88ec8cb5c076a7dec1b">to_underlying()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a9e16562ef5f579438e618fc7f6f0c575">libcomp::String::ToDecimal()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a0f33fab6dbdf35a219ec5af90b8d6a5d">libcomp::String::ToUtf8()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00203">lobby::AccountManager::WebAuthLoginApi()</a>.</p>
+
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00051">ApiHandler()</a>.</p>
 
 </div>
 </div>
@@ -300,11 +352,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00130">130</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00134">134</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
-<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00694">GetDatabase()</a>.</p>
+<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00772">GetDatabase()</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00048">ApiHandler()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00051">ApiHandler()</a>.</p>
 
 </div>
 </div>
@@ -346,11 +398,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00149">149</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00153">153</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
-<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00694">GetDatabase()</a>.</p>
+<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00772">GetDatabase()</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00048">ApiHandler()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00051">ApiHandler()</a>.</p>
 
 </div>
 </div>
@@ -392,11 +444,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00254">254</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00332">332</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00694">GetDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a38a1731684a357f62f2c77eac470d256">libcomp::Decrypt::HashPassword()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2374550eaa6540c7f9fe58c389a27ec7">libcomp::String::IsEmpty()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#abe0230746f3e7f3bd5bc0c5dff61f069">libcomp::String::Matches()</a>, <a class="el" href="ApiHandler_8h_source.html#l00120">mConfig</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00772">GetDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a38a1731684a357f62f2c77eac470d256">libcomp::Decrypt::HashPassword()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2374550eaa6540c7f9fe58c389a27ec7">libcomp::String::IsEmpty()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#abe0230746f3e7f3bd5bc0c5dff61f069">libcomp::String::Matches()</a>, <a class="el" href="ApiHandler_8h_source.html#l00127">mConfig</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00048">ApiHandler()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00051">ApiHandler()</a>.</p>
 
 </div>
 </div>
@@ -438,11 +490,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00464">464</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00542">542</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
-<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00694">GetDatabase()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
+<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00772">GetDatabase()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00048">ApiHandler()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00051">ApiHandler()</a>.</p>
 
 </div>
 </div>
@@ -484,11 +536,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00412">412</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00490">490</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
-<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00694">GetDatabase()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
+<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00772">GetDatabase()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00048">ApiHandler()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00051">ApiHandler()</a>.</p>
 
 </div>
 </div>
@@ -530,11 +582,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00361">361</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00439">439</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
-<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00694">GetDatabase()</a>.</p>
+<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00772">GetDatabase()</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00048">ApiHandler()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00051">ApiHandler()</a>.</p>
 
 </div>
 </div>
@@ -576,11 +628,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00502">502</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00580">580</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00694">GetDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a38a1731684a357f62f2c77eac470d256">libcomp::Decrypt::HashPassword()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#abe0230746f3e7f3bd5bc0c5dff61f069">libcomp::String::Matches()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00772">GetDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a38a1731684a357f62f2c77eac470d256">libcomp::Decrypt::HashPassword()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#abe0230746f3e7f3bd5bc0c5dff61f069">libcomp::String::Matches()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00048">ApiHandler()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00051">ApiHandler()</a>.</p>
 
 </div>
 </div>
@@ -622,11 +674,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00067">67</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00071">71</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a8ffc97ef5bf9121723545168e5dbb4ca">libcomp::String::Arg()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00694">GetDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a0f33fab6dbdf35a219ec5af90b8d6a5d">libcomp::String::ToUtf8()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a8ffc97ef5bf9121723545168e5dbb4ca">libcomp::String::Arg()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00772">GetDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a0f33fab6dbdf35a219ec5af90b8d6a5d">libcomp::String::ToUtf8()</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00048">ApiHandler()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00051">ApiHandler()</a>.</p>
 
 </div>
 </div>
@@ -668,11 +720,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00651">651</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00729">729</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
 <p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a38a1731684a357f62f2c77eac470d256">libcomp::Decrypt::HashPassword()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a0f33fab6dbdf35a219ec5af90b8d6a5d">libcomp::String::ToUtf8()</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00716">handlePost()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00794">handlePost()</a>.</p>
 
 </div>
 </div>
@@ -697,11 +749,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00694">694</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00772">772</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ad7ad9103ec078bca8aba6ec87d82af35">libcomp::BaseServer::GetDatabase()</a>, and <a class="el" href="ApiHandler_8h_source.html#l00120">mConfig</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ad7ad9103ec078bca8aba6ec87d82af35">libcomp::BaseServer::GetDatabase()</a>, and <a class="el" href="ApiHandler_8h_source.html#l00127">mConfig</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00187">Account_ChangePassword()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00130">Account_GetCP()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00149">Account_GetDetails()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00254">Account_Register()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00464">Admin_DeleteAccount()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00412">Admin_GetAccount()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00361">Admin_GetAccounts()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00502">Admin_UpdateAccount()</a>, and <a class="el" href="ApiHandler_8cpp_source.html#l00067">Auth_Token()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00191">Account_ChangePassword()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00258">Account_ClientLogin()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00134">Account_GetCP()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00153">Account_GetDetails()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00332">Account_Register()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00542">Admin_DeleteAccount()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00490">Admin_GetAccount()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00439">Admin_GetAccounts()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00580">Admin_UpdateAccount()</a>, and <a class="el" href="ApiHandler_8cpp_source.html#l00071">Auth_Token()</a>.</p>
 
 </div>
 </div>
@@ -737,13 +789,57 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00716">716</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00794">794</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
 
-<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00651">Authenticate()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2a75fa643c649efdfc7b5741a5286940">libcomp::String::Left()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00039">MAX_PAYLOAD</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a305d79da2ba9bb7fe1d27d189a60e4f8">libcomp::String::Mid()</a>, <a class="el" href="ApiHandler_8h_source.html#l00118">mParsers</a>, and <a class="el" href="ApiHandler_8h_source.html#l00113">mSessions</a>.</p>
+<p>References <a class="el" href="ApiHandler_8cpp_source.html#l00729">Authenticate()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2a75fa643c649efdfc7b5741a5286940">libcomp::String::Left()</a>, <a class="el" href="ApiHandler_8cpp_source.html#l00042">MAX_PAYLOAD</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a305d79da2ba9bb7fe1d27d189a60e4f8">libcomp::String::Mid()</a>, <a class="el" href="ApiHandler_8h_source.html#l00125">mParsers</a>, and <a class="el" href="ApiHandler_8h_source.html#l00120">mSessions</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ceb9721f920fceafaefc6555f8976a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApiHandler::SetAccountManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlobby_1_1AccountManager.html">AccountManager</a> *&#160;</td>
+          <td class="paramname"><em>pManager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ApiHandler_8cpp_source.html#l00926">926</a> of file <a class="el" href="ApiHandler_8cpp_source.html">ApiHandler.cpp</a>.</p>
+
+<p>References <a class="el" href="ApiHandler_8h_source.html#l00130">mAccountManager</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a9de2e48878c72442d68d2a114b793e3f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlobby_1_1AccountManager.html">AccountManager</a>* lobby::ApiHandler::mAccountManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ApiHandler_8h_source.html#l00130">130</a> of file <a class="el" href="ApiHandler_8h_source.html">ApiHandler.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00258">Account_ClientLogin()</a>, and <a class="el" href="ApiHandler_8cpp_source.html#l00926">SetAccountManager()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac059d08a3747a4ab3b0743e51808bdd4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -762,9 +858,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8h_source.html#l00120">120</a> of file <a class="el" href="ApiHandler_8h_source.html">ApiHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8h_source.html#l00127">127</a> of file <a class="el" href="ApiHandler_8h_source.html">ApiHandler.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00254">Account_Register()</a>, and <a class="el" href="ApiHandler_8cpp_source.html#l00694">GetDatabase()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00332">Account_Register()</a>, and <a class="el" href="ApiHandler_8cpp_source.html#l00772">GetDatabase()</a>.</p>
 
 </div>
 </div>
@@ -788,9 +884,9 @@ Private Attributes</h2></td></tr>
 
 <p>List of API parsers. </p>
 
-<p>Definition at line <a class="el" href="ApiHandler_8h_source.html#l00118">118</a> of file <a class="el" href="ApiHandler_8h_source.html">ApiHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8h_source.html#l00125">125</a> of file <a class="el" href="ApiHandler_8h_source.html">ApiHandler.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00048">ApiHandler()</a>, and <a class="el" href="ApiHandler_8cpp_source.html#l00716">handlePost()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00051">ApiHandler()</a>, and <a class="el" href="ApiHandler_8cpp_source.html#l00794">handlePost()</a>.</p>
 
 </div>
 </div>
@@ -812,7 +908,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8h_source.html#l00121">121</a> of file <a class="el" href="ApiHandler_8h_source.html">ApiHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8h_source.html#l00128">128</a> of file <a class="el" href="ApiHandler_8h_source.html">ApiHandler.h</a>.</p>
 
 </div>
 </div>
@@ -834,9 +930,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ApiHandler_8h_source.html#l00113">113</a> of file <a class="el" href="ApiHandler_8h_source.html">ApiHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="ApiHandler_8h_source.html#l00120">120</a> of file <a class="el" href="ApiHandler_8h_source.html">ApiHandler.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00716">handlePost()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00794">handlePost()</a>.</p>
 
 </div>
 </div>

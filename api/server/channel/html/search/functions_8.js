@@ -17,6 +17,7 @@ var searchData=
   ['isdeleted',['IsDeleted',['../../../../libcomp/html/classlibcomp_1_1PersistentObject.html#a38150584e22bba836006cef948b45cdd',1,'libcomp::PersistentObject']]],
   ['isempty',['IsEmpty',['../../../../libcomp/html/classlibcomp_1_1String.html#a2374550eaa6540c7f9fe58c389a27ec7',1,'libcomp::String']]],
   ['isidle',['IsIdle',['../classchannel_1_1AIState.html#a4661008aa8028e2043776c4315e3cae6',1,'channel::AIState']]],
+  ['islnctype',['IsLNCType',['../classchannel_1_1ActiveEntityState.html#ae897ad90fe5cb5f505f2de5a0da374c7',1,'channel::ActiveEntityState']]],
   ['ismoving',['IsMoving',['../classchannel_1_1ActiveEntityState.html#aa86a6658fd24aeafde4b18c0c97d0433',1,'channel::ActiveEntityState']]],
   ['ismultipleoftwo',['IsMultipleOfTwo',['../../../../libcomp/html/classlibcomp_1_1RingBuffer.html#a77c8505452790bd67c40232cb16f9906',1,'libcomp::RingBuffer']]],
   ['isnull',['IsNull',['../../../../libcomp/html/classlibcomp_1_1ObjectReference.html#acdbd8b1b85ff178f8c914030c286251a',1,'libcomp::ObjectReference']]],

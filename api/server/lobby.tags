@@ -43,6 +43,7 @@
     <path>C:/projects/comp-hack/server/lobby/src/</path>
     <filename>ApiHandler_8cpp</filename>
     <includes id="ApiHandler_8h" name="ApiHandler.h" local="yes" imported="no">ApiHandler.h</includes>
+    <includes id="AccountManager_8h" name="AccountManager.h" local="no" imported="no">AccountManager.h</includes>
     <member kind="define">
       <type>#define</type>
       <name>MAX_PAYLOAD</name>
@@ -628,8 +629,15 @@
       <type>ErrorCodes_t</type>
       <name>WebAuthLogin</name>
       <anchorfile>classlobby_1_1AccountManager.html</anchorfile>
-      <anchor>a017a91471093914b57785f5a57d63435</anchor>
-      <arglist>(const libcomp::String &amp;username, const libcomp::String &amp;password, uint32_t clientVersion, libcomp::String &amp;sid)</arglist>
+      <anchor>ad2a916b69b9fe879b1b03d1ef8b9cb6b</anchor>
+      <arglist>(const libcomp::String &amp;username, const libcomp::String &amp;password, uint32_t clientVersion, libcomp::String &amp;sid, bool checkPassword=true)</arglist>
+    </member>
+    <member kind="function">
+      <type>ErrorCodes_t</type>
+      <name>WebAuthLoginApi</name>
+      <anchorfile>classlobby_1_1AccountManager.html</anchorfile>
+      <anchor>ad2ccb30fd18c18d0b5399ae4a07b9245</anchor>
+      <arglist>(const libcomp::String &amp;username, uint32_t clientVersion, libcomp::String &amp;sid)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -705,11 +713,25 @@
       <anchor>a1cf13ea45691227f384a99f1c8338871</anchor>
       <arglist>(CivetServer *pServer, struct mg_connection *pConnection)</arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetAccountManager</name>
+      <anchorfile>classlobby_1_1ApiHandler.html</anchorfile>
+      <anchor>a8ceb9721f920fceafaefc6555f8976a8</anchor>
+      <arglist>(AccountManager *pManager)</arglist>
+    </member>
     <member kind="function" protection="protected">
       <type>bool</type>
       <name>Account_ChangePassword</name>
       <anchorfile>classlobby_1_1ApiHandler.html</anchorfile>
       <anchor>af57936a2d700d55884c3082f220ee35c</anchor>
+      <arglist>(const JsonBox::Object &amp;request, JsonBox::Object &amp;response, const std::shared_ptr&lt; ApiSession &gt; &amp;session)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>Account_ClientLogin</name>
+      <anchorfile>classlobby_1_1ApiHandler.html</anchorfile>
+      <anchor>af90975204b4ac76c8482f6fcfc673ef8</anchor>
       <arglist>(const JsonBox::Object &amp;request, JsonBox::Object &amp;response, const std::shared_ptr&lt; ApiSession &gt; &amp;session)</arglist>
     </member>
     <member kind="function" protection="protected">
@@ -781,6 +803,13 @@
       <anchorfile>classlobby_1_1ApiHandler.html</anchorfile>
       <anchor>a63041160eb6c1fbcd27c6926eab64625</anchor>
       <arglist>() const </arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>AccountManager *</type>
+      <name>mAccountManager</name>
+      <anchorfile>classlobby_1_1ApiHandler.html</anchorfile>
+      <anchor>a9de2e48878c72442d68d2a114b793e3f</anchor>
+      <arglist></arglist>
     </member>
     <member kind="variable" protection="private">
       <type>std::shared_ptr&lt; objects::LobbyConfig &gt;</type>

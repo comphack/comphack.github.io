@@ -5029,6 +5029,13 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>IsLNCType</name>
+      <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
+      <anchor>ae897ad90fe5cb5f505f2de5a0da374c7</anchor>
+      <arglist>(uint8_t lncType, bool invertFlag)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>IsMoving</name>
       <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
       <anchor>aa86a6658fd24aeafde4b18c0c97d0433</anchor>
@@ -5672,6 +5679,13 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>IsLNCType</name>
+      <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
+      <anchor>ae897ad90fe5cb5f505f2de5a0da374c7</anchor>
+      <arglist>(uint8_t lncType, bool invertFlag)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>IsMoving</name>
       <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
       <anchor>aa86a6658fd24aeafde4b18c0c97d0433</anchor>
@@ -6286,6 +6300,13 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>IsLNCType</name>
+      <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
+      <anchor>ae897ad90fe5cb5f505f2de5a0da374c7</anchor>
+      <arglist>(uint8_t lncType, bool invertFlag)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>IsMoving</name>
       <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
       <anchor>aa86a6658fd24aeafde4b18c0c97d0433</anchor>
@@ -6858,6 +6879,13 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>IsLNCType</name>
+      <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
+      <anchor>ae897ad90fe5cb5f505f2de5a0da374c7</anchor>
+      <arglist>(uint8_t lncType, bool invertFlag)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>IsMoving</name>
       <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
       <anchor>aa86a6658fd24aeafde4b18c0c97d0433</anchor>
@@ -7427,6 +7455,13 @@
       <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
       <anchor>ab6edd9f3b8abd577890af858d5dc85dc</anchor>
       <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsLNCType</name>
+      <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
+      <anchor>ae897ad90fe5cb5f505f2de5a0da374c7</anchor>
+      <arglist>(uint8_t lncType, bool invertFlag)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -10237,6 +10272,13 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>IsLNCType</name>
+      <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
+      <anchor>ae897ad90fe5cb5f505f2de5a0da374c7</anchor>
+      <arglist>(uint8_t lncType, bool invertFlag)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>IsMoving</name>
       <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
       <anchor>aa86a6658fd24aeafde4b18c0c97d0433</anchor>
@@ -11496,6 +11538,13 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>IsLNCType</name>
+      <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
+      <anchor>ae897ad90fe5cb5f505f2de5a0da374c7</anchor>
+      <arglist>(uint8_t lncType, bool invertFlag)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>IsMoving</name>
       <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
       <anchor>aa86a6658fd24aeafde4b18c0c97d0433</anchor>
@@ -12125,6 +12174,13 @@
       <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
       <anchor>ab6edd9f3b8abd577890af858d5dc85dc</anchor>
       <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsLNCType</name>
+      <anchorfile>classchannel_1_1ActiveEntityState.html</anchorfile>
+      <anchor>ae897ad90fe5cb5f505f2de5a0da374c7</anchor>
+      <arglist>(uint8_t lncType, bool invertFlag)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
