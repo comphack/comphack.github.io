@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Website with PHP &amp; Nginx</title><link rel="stylesheet" type="text/css" href="static/docbook.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.79.1" /><link rel="home" href="index.html" title="COMP_hack: The Definitive Guide" /><link rel="up" href="ch02.html" title="Chapter 2. Server Setup" /><link rel="prev" href="ch02s03.html" title="Client Updater with Nginx" /><link rel="next" href="ch02s05.html" title="Configuration Files" /></head><body><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Website with PHP &amp; Nginx</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Server Setup</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm46658376079344"></a>Website with PHP &amp; Nginx</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46658385479648"></a>Overview</h3></div></div></div><p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Website with PHP &amp; Nginx</title><link rel="stylesheet" type="text/css" href="static/docbook.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.79.1" /><link rel="home" href="index.html" title="COMP_hack: The Definitive Guide" /><link rel="up" href="ch02.html" title="Chapter 2. Server Setup" /><link rel="prev" href="ch02s03.html" title="Client Updater with Nginx" /><link rel="next" href="ch02s05.html" title="Configuration Files" /></head><body><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Website with PHP &amp; Nginx</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Server Setup</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm45361530161520"></a>Website with PHP &amp; Nginx</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45361526916592"></a>Overview</h3></div></div></div><p>
 	This section of the guide will describe installation and setup of a website server software on an Ubuntu 16.04 LTS (<a class="ulink" href="https://www.ubuntu.com" target="_top">https://www.ubuntu.com</a>) system with Nginx, PHP and MariaDB. Installation on other systems should be possible and this guide could be adapted for such a system; however, installation on these systems won't be described here. Similarly, DNS setup, connecting to and maintaining a Linux server, basic Linux commands, basic SQL and web development are out of the scope of this document. Please look elsewhere online for an excellent selection of guides, tutorials and videos on these topics.
-</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46658386304032"></a>Installing Nginx</h3></div></div></div><p>
+</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45361527595856"></a>Installing Nginx</h3></div></div></div><p>
 	You just need to install the package as follows:
 </p><pre class="programlisting">
 sudo apt-get update
 sudo apt-get install nginx
-</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46658385335024"></a>Installing PHP</h3></div></div></div><p>
+</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45361527076256"></a>Installing PHP</h3></div></div></div><p>
     The server needs a new version of PHP (7.1+) and can be installed from a PPA. Here is how:
 </p><pre class="programlisting">
 sudo add-apt-repository ppa:ondrej/php
@@ -17,7 +17,7 @@ sudo apt-get install php7.1-mbstring php7.1-xml php7.1-curl php7.1-bcmath php7.1
     Next, install the PHP package manager called composer:
 </p><pre class="programlisting">
 php -r "readfile('http://getcomposer.org/installer');" | sudo php -- --install-dir=/usr/bin/ --filename=composer
-</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46658377802272"></a>Installing MariaDB</h3></div></div></div><p>
+</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45361529292960"></a>Installing MariaDB</h3></div></div></div><p>
     The website software uses Laravel. Laravel needs a new version of MariaDB (10.2+) so this must also be installed from a PPA. Here is how to install the latest version:
 </p><pre class="programlisting">
 sudo apt-get install software-properties-common
@@ -40,7 +40,7 @@ sudo mysql -u root
 CREATE USER 'compsite'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON comp_site.* TO 'compsite'@'localhost';
 CREATE DATABASE comp_site CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46658372942816"></a>Website Install</h3></div></div></div><p>
+</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45361527081616"></a>Website Install</h3></div></div></div><p>
 	This will install the develop branch of the website. This is bleeding edge and may break. Once it's stable this will be updated to describe how to use a released version. This first section of commands will checkout the website files, install the needed PHP dependencies, generate an application key, and copy the default configuration. Do <span class="emphasis"><em>not</em></span> re-run the key generation command or wipe out your <span class="emphasis"><em>.env</em></span> file as this may break account logins. Run these commands for a fresh install:
 </p><pre class="programlisting">
 sudo chown www-data:www-data /var/www/html
@@ -74,7 +74,7 @@ COMP_API=http://127.0.0.1:10999/api
 </p><pre class="programlisting">
 sudo -u www-data -H php artisan config:cache
 sudo -u www-data -H php artisan migrate
-</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46658379977136"></a>Nginx Configuration</h3></div></div></div><p>
+</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45361529301472"></a>Nginx Configuration</h3></div></div></div><p>
 	The files needed for the website are now in place. The next step is to configure the web server (Nginx). Create a new file or edit the file <span class="emphasis"><em>/etc/nginx/sites-available/default</em></span> with the following contents:
 </p><pre class="programlisting">
 server {
@@ -116,7 +116,7 @@ server {
 </p><pre class="programlisting">
 sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
-</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46658377772496"></a>Wrapping Up</h3></div></div></div><p>
+</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45361531153392"></a>Wrapping Up</h3></div></div></div><p>
 	The website should now be functional. It would be a good idea to configure the firewall to block access to port 10999 as it is no longer needed by the outside world. Nothing else should be connecting to this port or it may cause issues with the website. You can edit the <span class="emphasis"><em>ImagineUpdate.dat</em></span> to point to the server:
 </p><pre class="programlisting">
 [Setting]
