@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['npcstate',['NPCState',['../namespacechannel.html#afb0d4aa49728994544c41bf8d1a1e02e',1,'channel']]]
+  ['instancetype_5ft',['InstanceType_t',['../namespacechannel.html#a7afb7b114af6ae44f898a2c733619146',1,'channel']]]
 ];

@@ -19,6 +19,7 @@ var searchData=
   ['connectionclosed',['ConnectionClosed',['../classlibcomp_1_1Message_1_1ConnectionClosed.html#a4de036a08aa31eb46b5e0ff299a4812a',1,'libcomp::Message::ConnectionClosed']]],
   ['connectionencrypted',['ConnectionEncrypted',['../classlibcomp_1_1EncryptedConnection.html#a092a81782c9fde5fe8b10c055f2bab8c',1,'libcomp::EncryptedConnection']]],
   ['connectionfailed',['ConnectionFailed',['../classlibcomp_1_1TcpConnection.html#a5ba4f73c68fa2d2e9db43cc7a5e8dae4',1,'libcomp::TcpConnection']]],
+  ['connectionstring',['ConnectionString',['../DatabaseMariaDB_8cpp.html#ad3f028c7e9b06bf4736f13f3862f1f50',1,'ConnectionString(MYSQL *pConnection):&#160;DatabaseMariaDB.cpp'],['../DatabaseQueryMariaDB_8cpp.html#a3a857b7d55d34ef596b539b2d379a52d',1,'ConnectionString(void *pConnection):&#160;DatabaseQueryMariaDB.cpp']]],
   ['connectionsuccess',['ConnectionSuccess',['../classlibcomp_1_1EncryptedConnection.html#afdf8f76209ad2acbed875f8dad40e440',1,'libcomp::EncryptedConnection::ConnectionSuccess()'],['../classlibcomp_1_1LobbyConnection.html#a28c3006cf677bc909b439575820bf916',1,'libcomp::LobbyConnection::ConnectionSuccess()'],['../classlibcomp_1_1TcpConnection.html#a85eae081e47701b7e0253bf08c954e75',1,'libcomp::TcpConnection::ConnectionSuccess()']]],
   ['connecttodatabase',['ConnectToDatabase',['../classlibcomp_1_1DatabaseMariaDB.html#a9a2e1bd1c1e863581cd227c38fe2ce69',1,'libcomp::DatabaseMariaDB']]],
   ['constdata',['ConstData',['../classlibcomp_1_1ReadOnlyPacket.html#a69e01d178e3733fac85e620f9d490bfd',1,'libcomp::ReadOnlyPacket']]],

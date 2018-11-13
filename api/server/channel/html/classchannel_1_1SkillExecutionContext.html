@@ -91,7 +91,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classchannel_1_1SkillExecutionContext-members.html">List of all members</a>  </div>
@@ -105,28 +104,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ac093e144eae21e0c6bd70f4432cf4d53"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1SkillExecutionContext.html#ac093e144eae21e0c6bd70f4432cf4d53">FreeCast</a> = false</td></tr>
-<tr class="memdesc:ac093e144eae21e0c6bd70f4432cf4d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if the skill should not cost anything, false if normal costs apply  <a href="#ac093e144eae21e0c6bd70f4432cf4d53">More...</a><br /></td></tr>
-<tr class="separator:ac093e144eae21e0c6bd70f4432cf4d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a0ed1b4c3a44bfc7b4a9fe146f515eff6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1SkillExecutionContext.html#a0ed1b4c3a44bfc7b4a9fe146f515eff6">ApplyStatusEffects</a> = true</td></tr>
 <tr class="memdesc:a0ed1b4c3a44bfc7b4a9fe146f515eff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if status effects will be processed normally, false if they have been handled elsewhere  <a href="#a0ed1b4c3a44bfc7b4a9fe146f515eff6">More...</a><br /></td></tr>
 <tr class="separator:a0ed1b4c3a44bfc7b4a9fe146f515eff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4581219f854a35b5ae4290d5fa5035fc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classchannel_1_1ProcessingSkill.html">channel::ProcessingSkill</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1SkillExecutionContext.html#a4581219f854a35b5ae4290d5fa5035fc">CounteredSkill</a></td></tr>
-<tr class="memdesc:a4581219f854a35b5ae4290d5fa5035fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Designates a skill that is being countered.  <a href="#a4581219f854a35b5ae4290d5fa5035fc">More...</a><br /></td></tr>
+<tr class="memdesc:a4581219f854a35b5ae4290d5fa5035fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Designates a skill that is being countered (for any defensive skill)  <a href="#a4581219f854a35b5ae4290d5fa5035fc">More...</a><br /></td></tr>
 <tr class="separator:a4581219f854a35b5ae4290d5fa5035fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f294f9f2b30b98cde90a18c697f6cce"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::shared_ptr&lt; <a class="el" href="classchannel_1_1ProcessingSkill.html">channel::ProcessingSkill</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1SkillExecutionContext.html#a8f294f9f2b30b98cde90a18c697f6cce">CounteringSkills</a></td></tr>
-<tr class="memdesc:a8f294f9f2b30b98cde90a18c697f6cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of skills that are countering the current skill context.  <a href="#a8f294f9f2b30b98cde90a18c697f6cce">More...</a><br /></td></tr>
+<tr class="memdesc:a8f294f9f2b30b98cde90a18c697f6cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of skills that are countering the current skill context (can be any defensive skill, not just counters)  <a href="#a8f294f9f2b30b98cde90a18c697f6cce">More...</a><br /></td></tr>
 <tr class="separator:a8f294f9f2b30b98cde90a18c697f6cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db77303c146da57c509945059e2a22e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1SkillExecutionContext.html#a8db77303c146da57c509945059e2a22e">Executed</a> = false</td></tr>
+<tr class="memdesc:a8db77303c146da57c509945059e2a22e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that the skill's has already been executed.  <a href="#a8db77303c146da57c509945059e2a22e">More...</a><br /></td></tr>
+<tr class="separator:a8db77303c146da57c509945059e2a22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe74cad9d0793af626f0be843142dd0c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1SkillExecutionContext.html#afe74cad9d0793af626f0be843142dd0c">FastTrack</a> = false</td></tr>
+<tr class="memdesc:afe74cad9d0793af626f0be843142dd0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that no skill delays should be used when executing.  <a href="#afe74cad9d0793af626f0be843142dd0c">More...</a><br /></td></tr>
+<tr class="separator:afe74cad9d0793af626f0be843142dd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08402e6adad32bfb545e30533db5b1d6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1SkillExecutionContext.html#a08402e6adad32bfb545e30533db5b1d6">Finalized</a> = false</td></tr>
+<tr class="memdesc:a08402e6adad32bfb545e30533db5b1d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that the skill's has already been finalized.  <a href="#a08402e6adad32bfb545e30533db5b1d6">More...</a><br /></td></tr>
+<tr class="separator:a08402e6adad32bfb545e30533db5b1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec25abef3525019fc3f6963b5736a2f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1SkillExecutionContext.html#a4ec25abef3525019fc3f6963b5736a2f">Fizzle</a> = false</td></tr>
+<tr class="memdesc:a4ec25abef3525019fc3f6963b5736a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that the skill should stop processing at the next check.  <a href="#a4ec25abef3525019fc3f6963b5736a2f">More...</a><br /></td></tr>
+<tr class="separator:a4ec25abef3525019fc3f6963b5736a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79e5ca9913843332e9039240d9f04dcd"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classchannel_1_1ProcessingSkill.html">channel::ProcessingSkill</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1SkillExecutionContext.html#a79e5ca9913843332e9039240d9f04dcd">Skill</a></td></tr>
 <tr class="memdesc:a79e5ca9913843332e9039240d9f04dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Designates the skill that is being processed.  <a href="#a79e5ca9913843332e9039240d9f04dcd">More...</a><br /></td></tr>
 <tr class="separator:a79e5ca9913843332e9039240d9f04dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aebaeda8fe9e2e8513c6dad26cad55a"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::shared_ptr&lt; <a class="el" href="classchannel_1_1SkillExecutionContext.html">channel::SkillExecutionContext</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1SkillExecutionContext.html#a7aebaeda8fe9e2e8513c6dad26cad55a">SubContexts</a></td></tr>
-<tr class="memdesc:a7aebaeda8fe9e2e8513c6dad26cad55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of skill contexts created as a result of this one, typically as a result of a counter.  <a href="#a7aebaeda8fe9e2e8513c6dad26cad55a">More...</a><br /></td></tr>
+<tr class="memdesc:a7aebaeda8fe9e2e8513c6dad26cad55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of skill contexts created as a result of this one, typically as a result of a defensive skill.  <a href="#a7aebaeda8fe9e2e8513c6dad26cad55a">More...</a><br /></td></tr>
 <tr class="separator:a7aebaeda8fe9e2e8513c6dad26cad55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -182,9 +187,9 @@ Friends</h2></td></tr>
 
 <p>true if status effects will be processed normally, false if they have been handled elsewhere </p>
 
-<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00070">70</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00065">65</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -206,11 +211,11 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Designates a skill that is being countered. </p>
+<p>Designates a skill that is being countered (for any defensive skill) </p>
 
-<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00076">76</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00085">85</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l02972">channel::SkillManager::CalculateOffenseValue()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04561">channel::SkillManager::CalculateOffenseValue()</a>.</p>
 
 </div>
 </div>
@@ -232,25 +237,106 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>List of skills that are countering the current skill context. </p>
+<p>List of skills that are countering the current skill context (can be any defensive skill, not just counters) </p>
 
-<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00079">79</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00089">89</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac093e144eae21e0c6bd70f4432cf4d53"></a>
+<a class="anchor" id="a8db77303c146da57c509945059e2a22e"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> channel::SkillExecutionContext::FreeCast = false</td>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> channel::SkillExecutionContext::Executed = false</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>true if the skill should not cost anything, false if normal costs apply </p>
+<p>Indicates that the skill's has already been executed. </p>
 
-<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00063">63</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00068">68</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe74cad9d0793af626f0be843142dd0c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> channel::SkillExecutionContext::FastTrack = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates that no skill delays should be used when executing. </p>
+<p>Useful for "catching up" with something that should have already started earlier. </p>
+
+<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00076">76</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a08402e6adad32bfb545e30533db5b1d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> channel::SkillExecutionContext::Finalized = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates that the skill's has already been finalized. </p>
+
+<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00071">71</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ec25abef3525019fc3f6963b5736a2f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> channel::SkillExecutionContext::Fizzle = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates that the skill should stop processing at the next check. </p>
+
+<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00079">79</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
 
 </div>
 </div>
@@ -274,7 +360,7 @@ Friends</h2></td></tr>
 
 <p>Designates the skill that is being processed. </p>
 
-<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00073">73</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00082">82</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
 
 </div>
 </div>
@@ -296,9 +382,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>List of skill contexts created as a result of this one, typically as a result of a counter. </p>
+<p>List of skill contexts created as a result of this one, typically as a result of a defensive skill. </p>
 
-<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00083">83</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8h_source.html#l00093">93</a> of file <a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>.</p>
 
 </div>
 </div>

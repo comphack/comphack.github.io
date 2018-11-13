@@ -162,6 +162,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa345290d80d883e3886b3c444755a052"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1TokuseiManager.html#aa345290d80d883e3886b3c444755a052">SendCostAdjustments</a> (int32_t entityID, const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">ChannelClientConnection</a> &gt; &amp;client)</td></tr>
 <tr class="memdesc:aa345290d80d883e3886b3c444755a052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send skill cost adjustments from tokusei for the specified entity to the client.  <a href="#aa345290d80d883e3886b3c444755a052">More...</a><br /></td></tr>
 <tr class="separator:aa345290d80d883e3886b3c444755a052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96bfa8bf58292c0d5d467d62625058a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1TokuseiManager.html#ac96bfa8bf58292c0d5d467d62625058a">UpdateDiasporaMinibossCount</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1Zone.html">Zone</a> &gt; &amp;zone)</td></tr>
+<tr class="memdesc:ac96bfa8bf58292c0d5d467d62625058a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all entities affected by the DIASPORA_MINIBOSS_COUNT tokusei condition in the supplied zone.  <a href="#ac96bfa8bf58292c0d5d467d62625058a">More...</a><br /></td></tr>
+<tr class="separator:ac96bfa8bf58292c0d5d467d62625058a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660e912934050a0b67d8db0d6057c2ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1TokuseiManager.html#a660e912934050a0b67d8db0d6057c2ba">UpdateMovementDecay</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">ChannelClientConnection</a> &gt; &amp;client, float distance)</td></tr>
+<tr class="memdesc:a660e912934050a0b67d8db0d6057c2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lower durability on all movement durability decay equipment.  <a href="#a660e912934050a0b67d8db0d6057c2ba">More...</a><br /></td></tr>
+<tr class="separator:a660e912934050a0b67d8db0d6057c2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -195,6 +201,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a2e0a38f7b6fd8df5ea83a5fdbc705a66"><td class="memItemLeft" align="right" valign="top">std::set&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1TokuseiManager.html#a2e0a38f7b6fd8df5ea83a5fdbc705a66">mCostAdjustmentTokusei</a></td></tr>
 <tr class="memdesc:a2e0a38f7b6fd8df5ea83a5fdbc705a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set of all tokusei with at least one cost adjustment aspect.  <a href="#a2e0a38f7b6fd8df5ea83a5fdbc705a66">More...</a><br /></td></tr>
 <tr class="separator:a2e0a38f7b6fd8df5ea83a5fdbc705a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3075779b168a0bb0d050405f9c85dd7d"><td class="memItemLeft" align="right" valign="top">std::set&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1TokuseiManager.html#a3075779b168a0bb0d050405f9c85dd7d">mMoveDecayTokusei</a></td></tr>
+<tr class="memdesc:a3075779b168a0bb0d050405f9c85dd7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set of all tokusei with at least one movement decay aspect.  <a href="#a3075779b168a0bb0d050405f9c85dd7d">More...</a><br /></td></tr>
+<tr class="separator:a3075779b168a0bb0d050405f9c85dd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62aae6e0d3befb067c6535fe8288f645"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; <a class="el" href="classchannel_1_1ChannelServer.html">ChannelServer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1TokuseiManager.html#a62aae6e0d3befb067c6535fe8288f645">mServer</a></td></tr>
 <tr class="memdesc:a62aae6e0d3befb067c6535fe8288f645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the channel server.  <a href="#a62aae6e0d3befb067c6535fe8288f645">More...</a><br /></td></tr>
 <tr class="separator:a62aae6e0d3befb067c6535fe8288f645"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,7 +247,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00075">75</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00077">77</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -265,7 +274,7 @@ Private Attributes</h2></td></tr>
 
 <p>Clean up the <a class="el" href="classchannel_1_1TokuseiManager.html" title="Manages tokusei specific logic for the server and validates the definitions read at run time...">TokuseiManager</a>. </p>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00080">80</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00082">82</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -312,11 +321,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true the time was adjusted correctly, false if an error occurred </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01961">1961</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l02185">2185</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="WorldClock_8h_source.html#l00053">channel::WorldClockTime::Hour</a>, <a class="el" href="WorldClock_8h_source.html#l00056">channel::WorldClockTime::Min</a>, and <a class="el" href="WorldClock_8h_source.html#l00050">channel::WorldClockTime::MoonPhase</a>.</p>
+<p>References <a class="el" href="WorldClock_8h_source.html#l00058">channel::WorldClockTime::Hour</a>, <a class="el" href="WorldClock_8h_source.html#l00061">channel::WorldClockTime::Min</a>, and <a class="el" href="WorldClock_8h_source.html#l00055">channel::WorldClockTime::MoonPhase</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00386">GatherTimedTokusei()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00409">GatherTimedTokusei()</a>.</p>
 
 </div>
 </div>
@@ -383,11 +392,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Calculated attribute value </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01394">1394</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01473">1473</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ActiveEntityState_8cpp_source.html#l01680">channel::ActiveEntityState::GetCoreStats()</a>, <a class="el" href="ClientState_8cpp_source.html#l00086">channel::ClientState::GetDemonState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00331">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00236">channel::ClientState::GetWorldCID()</a>, <a class="el" href="ActiveEntityState_8cpp_source.html#l00468">channel::ActiveEntityState::GetZone()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>.</p>
+<p>References <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ActiveEntityState_8cpp_source.html#l02178">channel::ActiveEntityState::GetCoreStats()</a>, <a class="el" href="ClientState_8cpp_source.html#l00089">channel::ClientState::GetDemonState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00383">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="ActiveEntityState_8cpp_source.html#l02183">channel::ActiveEntityState::GetLevel()</a>, <a class="el" href="ClientState_8cpp_source.html#l00283">channel::ClientState::GetWorldCID()</a>, <a class="el" href="ActiveEntityState_8cpp_source.html#l00588">channel::ActiveEntityState::GetZone()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>.</p>
 
-<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l02177">channel::ActiveEntityState::AdjustStats()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01572">GetAspectMap()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01521">GetAspectSum()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01632">GetAspectValueList()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01767">RecalcCostAdjustments()</a>.</p>
+<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l02466">channel::ActiveEntityState::AdjustStats()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01726">GetAspectMap()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01675">GetAspectSum()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01786">GetAspectValueList()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01991">RecalcCostAdjustments()</a>.</p>
 
 </div>
 </div>
@@ -440,9 +449,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false if the condition does not evaluate to true </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l02009">2009</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l02233">2233</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01148">EvaluateTokuseiCondition()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01676">RecalcTimedTokusei()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01214">EvaluateTokuseiCondition()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01830">RecalcTimedTokusei()</a>.</p>
 
 </div>
 </div>
@@ -502,7 +511,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false if the condition does not evaluate to true </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l02015">2015</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l02239">2239</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -546,13 +555,12 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the condition evaluates to true </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000070">Todo:</a></b></dt><dd>: implement once digitalization is supported </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01148">1148</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01214">1214</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l02009">Compare()</a>, <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00086">channel::ClientState::GetDemonState()</a>, <a class="el" href="ActiveEntityState_8h_source.html#l00840">channel::ActiveEntityStateImp&lt; T &gt;::GetEntity()</a>, <a class="el" href="ClientState_8cpp_source.html#l00331">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="CharacterState_8cpp_source.html#l00314">channel::CharacterState::GetExpertiseRank()</a>, <a class="el" href="ClientState_8cpp_source.html#l00236">channel::ClientState::GetWorldCID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00241">channel::ClientState::GetZone()</a>, <a class="el" href="TokuseiManager_8h_source.html#l00328">mServer</a>, <a class="el" href="TokuseiManager_8h_source.html#l00314">mTimedTokusei</a>, <a class="el" href="AICommand_8h_source.html#l00048">channel::NONE</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>.</p>
+<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l02233">Compare()</a>, <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00089">channel::ClientState::GetDemonState()</a>, <a class="el" href="CharacterState_8cpp_source.html#l00150">channel::CharacterState::GetDigitalizeState()</a>, <a class="el" href="ActiveEntityState_8h_source.html#l01035">channel::ActiveEntityStateImp&lt; T &gt;::GetEntity()</a>, <a class="el" href="ClientState_8cpp_source.html#l00383">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="CharacterState_8cpp_source.html#l00688">channel::CharacterState::GetExpertiseRank()</a>, <a class="el" href="ClientState_8cpp_source.html#l00283">channel::ClientState::GetWorldCID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00288">channel::ClientState::GetZone()</a>, <a class="el" href="TokuseiManager_8h_source.html#l00347">mServer</a>, <a class="el" href="TokuseiManager_8h_source.html#l00330">mTimedTokusei</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01087">EvaluateTokuseiConditions()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01153">EvaluateTokuseiConditions()</a>.</p>
 
 </div>
 </div>
@@ -590,11 +598,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the condition set evaluates to true </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01087">1087</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01153">1153</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l01148">EvaluateTokuseiCondition()</a>.</p>
+<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l01214">EvaluateTokuseiCondition()</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00536">Recalculate()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00559">Recalculate()</a>.</p>
 
 </div>
 </div>
@@ -629,11 +637,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the tokusei was registered successfully, false if an error occurred </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00386">386</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00409">409</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l01961">BuildWorldClockTime()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="TokuseiManager_8h_source.html#l00328">mServer</a>, and <a class="el" href="TokuseiManager_8h_source.html#l00314">mTimedTokusei</a>.</p>
+<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l02185">BuildWorldClockTime()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="TokuseiManager_8h_source.html#l00347">mServer</a>, and <a class="el" href="TokuseiManager_8h_source.html#l00330">mTimedTokusei</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00084">Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00086">Initialize()</a>.</p>
 
 </div>
 </div>
@@ -660,11 +668,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>List of entities that could affect one another via a tokusei </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00884">884</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00911">911</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00086">channel::ClientState::GetDemonState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00331">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00236">channel::ClientState::GetWorldCID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00241">channel::ClientState::GetZone()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>.</p>
+<p>References <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00089">channel::ClientState::GetDemonState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00383">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00283">channel::ClientState::GetWorldCID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00288">channel::ClientState::GetZone()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00529">Recalculate()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00552">Recalculate()</a>.</p>
 
 </div>
 </div>
@@ -709,7 +717,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Map of calculated aspect modifier value sums by aspect value </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01564">1564</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01718">1718</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -761,9 +769,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Map of calculated aspect modifier value sums by aspect value with a default value of zero </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01572">1572</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01726">1726</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l01394">CalculateAttributeValue()</a>, and <a class="el" href="TokuseiManager_8h_source.html#l00328">mServer</a>.</p>
+<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l01473">CalculateAttributeValue()</a>, and <a class="el" href="TokuseiManager_8h_source.html#l00347">mServer</a>.</p>
 
 </div>
 </div>
@@ -808,9 +816,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Calculated aspect value sum </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01521">1521</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01675">1675</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l01394">CalculateAttributeValue()</a>, and <a class="el" href="TokuseiManager_8h_source.html#l00328">mServer</a>.</p>
+<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l01473">CalculateAttributeValue()</a>, and <a class="el" href="TokuseiManager_8h_source.html#l00347">mServer</a>.</p>
 
 </div>
 </div>
@@ -855,9 +863,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>List of all aspect values of the specified type </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01632">1632</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01786">1786</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l01394">CalculateAttributeValue()</a>, and <a class="el" href="TokuseiManager_8h_source.html#l00328">mServer</a>.</p>
+<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l01473">CalculateAttributeValue()</a>, and <a class="el" href="TokuseiManager_8h_source.html#l00347">mServer</a>.</p>
 
 </div>
 </div>
@@ -884,11 +892,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>List of tokusei originating from the supplied entity, can contain duplicates </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00936">936</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00963">963</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="DemonState_8cpp_source.html#l00080">channel::DemonState::GetCompendiumTokuseiIDs()</a>, <a class="el" href="ActiveEntityState_8h_source.html#l00840">channel::ActiveEntityStateImp&lt; T &gt;::GetEntity()</a>, and <a class="el" href="TokuseiManager_8h_source.html#l00328">mServer</a>.</p>
+<p>References <a class="el" href="ActiveEntityState_8h_source.html#l01035">channel::ActiveEntityStateImp&lt; T &gt;::GetEntity()</a>, <a class="el" href="ActiveEntityState_8h_source.html#l01054">channel::ActiveEntityStateImp&lt; T &gt;::GetLevel()</a>, <a class="el" href="TokuseiManager_8h_source.html#l00347">mServer</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html#a693b6ba29a440fa12e37272cebccce29">SVR_CONST</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00536">Recalculate()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00559">Recalculate()</a>.</p>
 
 </div>
 </div>
@@ -908,11 +916,11 @@ Private Attributes</h2></td></tr>
 <p>Initialize the manager and validate the tokusei definitions loaded. </p>
 <dl class="section return"><dt>Returns</dt><dd>false if any errors were encountered </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00084">84</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00086">86</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l00386">GatherTimedTokusei()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="TokuseiManager_8h_source.html#l00322">mCostAdjustmentTokusei</a>, <a class="el" href="TokuseiManager_8h_source.html#l00328">mServer</a>, and <a class="el" href="TokuseiManager_8h_source.html#l00310">mStatusEffectTokusei</a>.</p>
+<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l00409">GatherTimedTokusei()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="TokuseiManager_8h_source.html#l00338">mCostAdjustmentTokusei</a>, <a class="el" href="TokuseiManager_8h_source.html#l00341">mMoveDecayTokusei</a>, <a class="el" href="TokuseiManager_8h_source.html#l00347">mServer</a>, and <a class="el" href="TokuseiManager_8h_source.html#l00326">mStatusEffectTokusei</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00071">channel::ChannelServer::Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00107">channel::ChannelServer::Initialize()</a>.</p>
 
 </div>
 </div>
@@ -946,11 +954,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01767">1767</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01991">1991</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l01394">CalculateAttributeValue()</a>, <a class="el" href="ClientState_8cpp_source.html#l00331">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="TokuseiManager_8h_source.html#l00322">mCostAdjustmentTokusei</a>, <a class="el" href="TokuseiManager_8h_source.html#l00328">mServer</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01756">SendCostAdjustments()</a>, <a class="el" href="ClientState_8cpp_source.html#l00340">channel::ClientState::SetCostAdjustments()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>.</p>
+<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l01473">CalculateAttributeValue()</a>, <a class="el" href="ClientState_8cpp_source.html#l00383">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="TokuseiManager_8h_source.html#l00338">mCostAdjustmentTokusei</a>, <a class="el" href="TokuseiManager_8h_source.html#l00347">mServer</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01960">SendCostAdjustments()</a>, <a class="el" href="ClientState_8cpp_source.html#l00392">channel::ClientState::SetCostAdjustments()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00536">Recalculate()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00559">Recalculate()</a>.</p>
 
 </div>
 </div>
@@ -976,11 +984,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01676">1676</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01830">1830</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l02009">Compare()</a>, <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00331">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="WorldClock_8h_source.html#l00053">channel::WorldClockTime::Hour</a>, <a class="el" href="WorldClock_8h_source.html#l00056">channel::WorldClockTime::Min</a>, <a class="el" href="WorldClock_8h_source.html#l00050">channel::WorldClockTime::MoonPhase</a>, <a class="el" href="TokuseiManager_8h_source.html#l00328">mServer</a>, <a class="el" href="TokuseiManager_8h_source.html#l00314">mTimedTokusei</a>, <a class="el" href="TokuseiManager_8h_source.html#l00319">mTimedTokuseiEntities</a>, <a class="el" href="TokuseiManager_8h_source.html#l00325">mTimeLock</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00487">Recalculate()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>.</p>
+<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l02233">Compare()</a>, <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00383">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="WorldClock_8h_source.html#l00058">channel::WorldClockTime::Hour</a>, <a class="el" href="WorldClock_8h_source.html#l00061">channel::WorldClockTime::Min</a>, <a class="el" href="WorldClock_8h_source.html#l00055">channel::WorldClockTime::MoonPhase</a>, <a class="el" href="TokuseiManager_8h_source.html#l00347">mServer</a>, <a class="el" href="TokuseiManager_8h_source.html#l00330">mTimedTokusei</a>, <a class="el" href="TokuseiManager_8h_source.html#l00335">mTimedTokuseiEntities</a>, <a class="el" href="TokuseiManager_8h_source.html#l00344">mTimeLock</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00510">Recalculate()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01089">channel::ChannelServer::HandleClockEvents()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00071">channel::ChannelServer::Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01361">channel::ChannelServer::HandleClockEvents()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01284">channel::ChannelServer::ScheduleRecurringActions()</a>.</p>
 
 </div>
 </div>
@@ -1018,11 +1026,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Map of entity IDs to a true value if they have had their stats recalculated or false if only their tokusei sets and triggers were updated </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00487">487</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00510">510</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00331">channel::ClientState::GetEntityClientState()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>.</p>
+<p>References <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00383">channel::ClientState::GetEntityClientState()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01676">RecalcTimedTokusei()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00529">Recalculate()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l00853">RecalculateParty()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01830">RecalcTimedTokusei()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00552">Recalculate()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00880">RecalculateParty()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01971">UpdateDiasporaMinibossCount()</a>.</p>
 
 </div>
 </div>
@@ -1067,9 +1075,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Map of entity IDs to a true value if they have had their stats recalculated or false if only their tokusei sets and triggers were updated </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00529">529</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00552">552</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l00884">GetAllTokuseiEntities()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l00487">Recalculate()</a>.</p>
+<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l00911">GetAllTokuseiEntities()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l00510">Recalculate()</a>.</p>
 
 </div>
 </div>
@@ -1114,9 +1122,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Map of entity IDs to a true value if they have had their stats recalculated or false if only their tokusei sets and triggers were updated </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00536">536</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00559">559</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l01087">EvaluateTokuseiConditions()</a>, <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00086">channel::ClientState::GetDemonState()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00936">GetDirectTokusei()</a>, <a class="el" href="ClientState_8cpp_source.html#l00331">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00236">channel::ClientState::GetWorldCID()</a>, <a class="el" href="TokuseiManager_8h_source.html#l00328">mServer</a>, <a class="el" href="TokuseiManager_8h_source.html#l00310">mStatusEffectTokusei</a>, <a class="el" href="TokuseiManager_8h_source.html#l00314">mTimedTokusei</a>, <a class="el" href="TokuseiManager_8h_source.html#l00319">mTimedTokuseiEntities</a>, <a class="el" href="TokuseiManager_8h_source.html#l00325">mTimeLock</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01767">RecalcCostAdjustments()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>.</p>
+<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l01153">EvaluateTokuseiConditions()</a>, <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00089">channel::ClientState::GetDemonState()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00963">GetDirectTokusei()</a>, <a class="el" href="ClientState_8cpp_source.html#l00383">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00283">channel::ClientState::GetWorldCID()</a>, <a class="el" href="ActiveEntityState_8h_source.html#l00158">channel::StatusEffectChange::IsConstant</a>, <a class="el" href="TokuseiManager_8h_source.html#l00347">mServer</a>, <a class="el" href="TokuseiManager_8h_source.html#l00326">mStatusEffectTokusei</a>, <a class="el" href="TokuseiManager_8h_source.html#l00330">mTimedTokusei</a>, <a class="el" href="TokuseiManager_8h_source.html#l00335">mTimedTokuseiEntities</a>, <a class="el" href="TokuseiManager_8h_source.html#l00344">mTimeLock</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01991">RecalcCostAdjustments()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>.</p>
 
 </div>
 </div>
@@ -1143,9 +1151,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Map of entity IDs to a true value if they have had their stats recalculated or false if only their tokusei sets and triggers were updated </dd></dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00853">853</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l00880">880</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00086">channel::ClientState::GetDemonState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00331">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00487">Recalculate()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>.</p>
+<p>References <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00089">channel::ClientState::GetDemonState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00383">channel::ClientState::GetEntityClientState()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00510">Recalculate()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>.</p>
 
 </div>
 </div>
@@ -1171,9 +1179,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01750">1750</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01904">1904</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="TokuseiManager_8h_source.html#l00319">mTimedTokuseiEntities</a>, and <a class="el" href="TokuseiManager_8h_source.html#l00325">mTimeLock</a>.</p>
+<p>References <a class="el" href="TokuseiManager_8h_source.html#l00335">mTimedTokuseiEntities</a>, and <a class="el" href="TokuseiManager_8h_source.html#l00344">mTimeLock</a>.</p>
 
 </div>
 </div>
@@ -1210,11 +1218,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01756">1756</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01960">1960</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
-<p>References <a class="el" href="ClientState_8cpp_source.html#l00413">channel::ClientState::GetCostAdjustments()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>.</p>
+<p>References <a class="el" href="ClientState_8cpp_source.html#l00465">channel::ClientState::GetCostAdjustments()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01767">RecalcCostAdjustments()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01991">RecalcCostAdjustments()</a>.</p>
 
 </div>
 </div>
@@ -1266,9 +1274,76 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01938">1938</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l02162">2162</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
 
 <p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab4d39238a6c6aa34b51481009eabad10">libcomp::Packet::WriteS32Little()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ad995a520b3f035ccb13860b4801666f6">libcomp::Packet::WriteU32Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2507cb23cbaf9e6544370f7604c5810b">libcomp::Packet::WriteU8()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac96bfa8bf58292c0d5d467d62625058a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TokuseiManager::UpdateDiasporaMinibossCount </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classchannel_1_1Zone.html">Zone</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>zone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update all entities affected by the DIASPORA_MINIBOSS_COUNT tokusei condition in the supplied zone. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">zone</td><td>Pointer to the zone that was updated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01971">1971</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+
+<p>References <a class="el" href="TokuseiManager_8cpp_source.html#l00510">Recalculate()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a660e912934050a0b67d8db0d6057c2ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TokuseiManager::UpdateMovementDecay </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">ChannelClientConnection</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>distance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lower durability on all movement durability decay equipment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>Pointer to the client connection </td></tr>
+    <tr><td class="paramname">distance</td><td>Movement distance delta used to calculate how much the durability will lower by </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="TokuseiManager_8cpp_source.html#l01910">1910</a> of file <a class="el" href="TokuseiManager_8cpp_source.html">TokuseiManager.cpp</a>.</p>
+
+<p>References <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="TokuseiManager_8h_source.html#l00341">mMoveDecayTokusei</a>, <a class="el" href="TokuseiManager_8h_source.html#l00347">mServer</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>.</p>
 
 </div>
 </div>
@@ -1293,9 +1368,35 @@ Private Attributes</h2></td></tr>
 
 <p>Set of all tokusei with at least one cost adjustment aspect. </p>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8h_source.html#l00322">322</a> of file <a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8h_source.html#l00338">338</a> of file <a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00084">Initialize()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01767">RecalcCostAdjustments()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00086">Initialize()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01991">RecalcCostAdjustments()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3075779b168a0bb0d050405f9c85dd7d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;int32_t&gt; channel::TokuseiManager::mMoveDecayTokusei</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set of all tokusei with at least one movement decay aspect. </p>
+
+<p>Definition at line <a class="el" href="TokuseiManager_8h_source.html#l00341">341</a> of file <a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00086">Initialize()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01910">UpdateMovementDecay()</a>.</p>
 
 </div>
 </div>
@@ -1319,9 +1420,9 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the channel server. </p>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8h_source.html#l00328">328</a> of file <a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8h_source.html#l00347">347</a> of file <a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01148">EvaluateTokuseiCondition()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00386">GatherTimedTokusei()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01572">GetAspectMap()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01521">GetAspectSum()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01632">GetAspectValueList()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00936">GetDirectTokusei()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00084">Initialize()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01767">RecalcCostAdjustments()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01676">RecalcTimedTokusei()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l00536">Recalculate()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01214">EvaluateTokuseiCondition()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00409">GatherTimedTokusei()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01726">GetAspectMap()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01675">GetAspectSum()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01786">GetAspectValueList()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00963">GetDirectTokusei()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00086">Initialize()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01991">RecalcCostAdjustments()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01830">RecalcTimedTokusei()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00559">Recalculate()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01910">UpdateMovementDecay()</a>.</p>
 
 </div>
 </div>
@@ -1345,9 +1446,9 @@ Private Attributes</h2></td></tr>
 
 <p>Quick access mapping of constant status effect IDs to their source tokusei IDs. </p>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8h_source.html#l00310">310</a> of file <a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8h_source.html#l00326">326</a> of file <a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00084">Initialize()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l00536">Recalculate()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l00086">Initialize()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l00559">Recalculate()</a>.</p>
 
 </div>
 </div>
@@ -1371,9 +1472,9 @@ Private Attributes</h2></td></tr>
 
 <p>Map of all tokusei effect IDs that have a time restriction to a boolean "active" indicator. </p>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8h_source.html#l00314">314</a> of file <a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8h_source.html#l00330">330</a> of file <a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01148">EvaluateTokuseiCondition()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00386">GatherTimedTokusei()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01676">RecalcTimedTokusei()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l00536">Recalculate()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01214">EvaluateTokuseiCondition()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00409">GatherTimedTokusei()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01830">RecalcTimedTokusei()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l00559">Recalculate()</a>.</p>
 
 </div>
 </div>
@@ -1398,9 +1499,9 @@ Private Attributes</h2></td></tr>
 <p>Map of world CIDs to the set of related time restricted tokusei. </p>
 <p>This set is updated entity direct tokusei only and does not require that the effect is ultimately marked as effective. </p>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8h_source.html#l00319">319</a> of file <a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8h_source.html#l00335">335</a> of file <a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01676">RecalcTimedTokusei()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00536">Recalculate()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01750">RemoveTrackingEntities()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01830">RecalcTimedTokusei()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00559">Recalculate()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01904">RemoveTrackingEntities()</a>.</p>
 
 </div>
 </div>
@@ -1424,9 +1525,9 @@ Private Attributes</h2></td></tr>
 
 <p>Server lock for time calculation. </p>
 
-<p>Definition at line <a class="el" href="TokuseiManager_8h_source.html#l00325">325</a> of file <a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>.</p>
+<p>Definition at line <a class="el" href="TokuseiManager_8h_source.html#l00344">344</a> of file <a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01676">RecalcTimedTokusei()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00536">Recalculate()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01750">RemoveTrackingEntities()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01830">RecalcTimedTokusei()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00559">Recalculate()</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01904">RemoveTrackingEntities()</a>.</p>
 
 </div>
 </div>

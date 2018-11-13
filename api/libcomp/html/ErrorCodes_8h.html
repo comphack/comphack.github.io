@@ -154,20 +154,43 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a2cf7f25f3a3bc56e70c6f1ae0cc8323b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error codes used by the game client.  <a href="ErrorCodes_8h.html#a2cf7f25f3a3bc56e70c6f1ae0cc8323b">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a2cf7f25f3a3bc56e70c6f1ae0cc8323b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ad8177593b0263347e1d6e5a7a56bb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bb">PartyErrorCodes_t</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bba574dfca5e088abccfa24fec2a681e9c8">PartyErrorCodes_t::GENERIC_ERROR</a> = 199, 
+<a class="el" href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bbad0749aaba8b833466dfcbb0428e4f89c">PartyErrorCodes_t::SUCCESS</a> = 200, 
+<a class="el" href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bba3563d5b9341ec5d88fea47688d003254">PartyErrorCodes_t::INVALID_OR_OFFLINE</a> = 201, 
+<a class="el" href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bba0308abefbb28586b445c52dd72a6e378">PartyErrorCodes_t::IN_PARTY</a> = 202, 
+<br />
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bba515180a7bf3e387ef6a2b63fa5eee59d">PartyErrorCodes_t::INVALID_PARTY</a> = 203, 
+<a class="el" href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bba58f46ef81624d6394087de75f2a00cb4">PartyErrorCodes_t::NO_LEADER</a> = 204, 
+<a class="el" href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bba98a47b2f08a87c63db27050c7e9bc51e">PartyErrorCodes_t::NO_PARTY</a> = 205, 
+<a class="el" href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bba7db7f3c2db24664c3367f8cec0003586">PartyErrorCodes_t::INVALID_MEMBER</a> = 206, 
+<br />
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bba9cd0cb870825fe41261febdaaaebf8a2">PartyErrorCodes_t::PARTY_FULL</a> = 207, 
+<a class="el" href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bbaaede1c4f218c966ba0718e31cc42b56a">PartyErrorCodes_t::LEADER_REQUIRED</a> = 208, 
+<a class="el" href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bbac95472125b90ae311ae87e4686168c14">PartyErrorCodes_t::INVALID_TARGET</a> = 209
+<br />
+ }<tr class="memdesc:a64ad8177593b0263347e1d6e5a7a56bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error codes used for party actions by the game client.  <a href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bb">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a64ad8177593b0263347e1d6e5a7a56bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a407a8b14fbe4457dcd19565aacde2524"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524">SkillErrorCodes_t</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524ac942dc2a9f958acddc67e11472d3ca0b">SkillErrorCodes_t::GENERIC</a> = 0, 
 <a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a126f2594afb186ca13efb0ea0a2975b7">SkillErrorCodes_t::GENERIC_USE</a> = 2, 
 <a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a85933328a0f654955094f51777543d82">SkillErrorCodes_t::GENERIC_COST</a> = 3, 
-<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a8958c7e165eef2502b02c733ea4dc6ec">SkillErrorCodes_t::COOLING_DOWN</a> = 5, 
+<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524ae27b39978aff0e697bf9682bd46c8698">SkillErrorCodes_t::ACTIVATION_FAILURE</a> = 4, 
 <br />
-&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524ab5006e9ee9b1ec468e14cb0ddd7fd9d7">SkillErrorCodes_t::ACTION_RETRY</a> = 6, 
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a8958c7e165eef2502b02c733ea4dc6ec">SkillErrorCodes_t::COOLING_DOWN</a> = 5, 
+<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524ab5006e9ee9b1ec468e14cb0ddd7fd9d7">SkillErrorCodes_t::ACTION_RETRY</a> = 6, 
+<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524af2586b6cb40042973fe5b9c91a82c5e4">SkillErrorCodes_t::TOO_FAR</a> = 8, 
 <a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524acea54381739805deaa0ce54c7d097dda">SkillErrorCodes_t::CONDITION_RESTRICT</a> = 10, 
-<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524aa33eccf88e34a5fdb654b0ed488d9cb9">SkillErrorCodes_t::LOCATION_RESTRICT</a> = 11, 
-<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a9efe0c779be71bed939ad7028b842405">SkillErrorCodes_t::ITEM_USE</a> = 12, 
 <br />
-&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a0b2fa73c37cba44be6439a79f7c07ada">SkillErrorCodes_t::TALK_INVALID</a> = 21, 
-<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a74e37239399473d1a8b50099a2d448ab">SkillErrorCodes_t::TALK_LEVEL</a> = 22, 
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524aa33eccf88e34a5fdb654b0ed488d9cb9">SkillErrorCodes_t::LOCATION_RESTRICT</a> = 11, 
+<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a9efe0c779be71bed939ad7028b842405">SkillErrorCodes_t::ITEM_USE</a> = 12, 
+<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a2527ae9d32ace94663d600efc942f895">SkillErrorCodes_t::SILENT_FAIL</a> = 13, 
+<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a0b2fa73c37cba44be6439a79f7c07ada">SkillErrorCodes_t::TALK_INVALID</a> = 21, 
+<br />
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a74e37239399473d1a8b50099a2d448ab">SkillErrorCodes_t::TALK_LEVEL</a> = 22, 
 <a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a5247169a6120ae49dfe1a9b68785d2b7">SkillErrorCodes_t::TALK_WONT_LISTEN</a> = 23, 
+<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524ab84834464ead295f89341a37f8d52ded">SkillErrorCodes_t::TALK_INVALID_STATE</a> = 25, 
 <a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524ab39e1d584b0555fdfba87ec6732ff288">SkillErrorCodes_t::SUMMON_INVALID</a> = 26, 
 <br />
 &#160;&#160;<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a5832339a43d27583a8e3c399b5c64089">SkillErrorCodes_t::SUMMON_LEVEL</a> = 28, 
@@ -198,9 +221,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a9fb0c5c12c77133a41e3e0016f8883e4">SkillErrorCodes_t::MOOCH_PARTNER_TOO_FAR</a> = 60, 
 <a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524ae33aff0b418840837e5d5740afbe50d3">SkillErrorCodes_t::INVENTORY_SPACE_PRESENT</a> = 61, 
 <a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a45eac01e20d304cd764d4ba5c8d84140">SkillErrorCodes_t::INVENTORY_SPACE</a> = 63, 
-<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a2756326a3cddf5cb7cbc3731b9cb4e61">SkillErrorCodes_t::NOTHING_HAPPNED_NOW</a> = 68, 
+<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524aabef19118af43cab455ef767bb103d63">SkillErrorCodes_t::NOTHING_HAPPENED_NOW</a> = 68, 
 <br />
-&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a368936577cd746de699adb6d408beba5">SkillErrorCodes_t::NOTHING_HAPPNED_HERE</a> = 69, 
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a4b4423476a577aa47a4ad8f71751f6c1">SkillErrorCodes_t::NOTHING_HAPPENED_HERE</a> = 69, 
 <a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a85f6d9b10641e8b7b02b6d4f598e94b0">SkillErrorCodes_t::TIME_RESTRICT</a> = 71, 
 <a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a4240d56339d0911bfb4f9152a78442a3">SkillErrorCodes_t::ZONE_INVALID</a> = 72, 
 <a class="el" href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a45d73af825b7b72c6c2b6a09a3b672ef">SkillErrorCodes_t::PARTNER_INCOMPATIBLE</a> = 75, 
@@ -210,6 +233,42 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a407a8b14fbe4457dcd19565aacde2524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error codes used for skill failure by the game client.  <a href="ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a407a8b14fbe4457dcd19565aacde2524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025150864fda35ac52afa639bfd33c17"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17">TeamErrorCodes_t</a> : int8_t { <br />
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17ad0749aaba8b833466dfcbb0428e4f89c">TeamErrorCodes_t::SUCCESS</a> = 0, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a574dfca5e088abccfa24fec2a681e9c8">TeamErrorCodes_t::GENERIC_ERROR</a> = -1, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17aaede1c4f218c966ba0718e31cc42b56a">TeamErrorCodes_t::LEADER_REQUIRED</a> = -3, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17ac95472125b90ae311ae87e4686168c14">TeamErrorCodes_t::INVALID_TARGET</a> = -4, 
+<br />
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17ac4ff636c2b9951d15a4b6508f41d14f4">TeamErrorCodes_t::NO_TEAM</a> = -5, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a51c46c6d34d1bea1fe9f92b44897b2ba">TeamErrorCodes_t::TEAM_OVER</a> = -6, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a2a42775273dd9889cb0a8ab00b423878">TeamErrorCodes_t::INVALID_TARGET_STATE</a> = -7, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a01b17293657f5a6ba87143f1c62aaac8">TeamErrorCodes_t::MATCH_ACTIVE</a> = -8, 
+<br />
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a59dc3370a9a52ab60156495befa06860">TeamErrorCodes_t::INVALID_TEAM</a> = -9, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a2747c7e5b88dfc9c5f158a1c73ad94fd">TeamErrorCodes_t::TEAM_FULL</a> = -10, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a5ad1baddb615d955c2ff69bcd4a87cf1">TeamErrorCodes_t::AWAITING_ENTRY</a> = -11, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17ad531b0bf4bcc2e507e05dc02acad7395">TeamErrorCodes_t::PENALTY_ACTIVE</a> = -12, 
+<br />
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a7958f5366cbebfade52067360718984a">TeamErrorCodes_t::MODE_REQUIREMENTS</a> = -13, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17afe791689644dd6e82f877908387e1427">TeamErrorCodes_t::MATCH_ACTIVE_REJECT</a> = -14, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17adc2b884d3aacc6dbecd7a80a2b3a7954">TeamErrorCodes_t::AWAITING_ENTRY_REJECT</a> = -15, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a4b620c21f1e8036b74a6103d65fc07b7">TeamErrorCodes_t::PENALTY_ACTIVE_REJECT</a> = -16, 
+<br />
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17af68a30c2cde300075b050104311e6f42">TeamErrorCodes_t::MODE_REQUIREMENTS_REJECT</a> = -17, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a09769610dc8de96b3fc5256f9a517062">TeamErrorCodes_t::TARGET_IN_PARTY</a> = -19, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a9b7f90ecb66f5274c61c00af72607152">TeamErrorCodes_t::TARGET_DIASPORA_INVALID</a> = -20, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a236140d2fda84d4481de61c3741a228f">TeamErrorCodes_t::TARGET_VALUABLE_MISSING</a> = -21, 
+<br />
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a56170fbbb45df607f71a8cb78a3b4a6a">TeamErrorCodes_t::TARGET_COOLDOWN_20H</a> = -22, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a0308abefbb28586b445c52dd72a6e378">TeamErrorCodes_t::IN_PARTY</a> = -24, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17ade62b769d5269791e6d93a47149b19f2">TeamErrorCodes_t::VALUABLE_MISSING</a> = -25, 
+<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a14ebd7cd5ee381b4c6d6184b9ae63468">TeamErrorCodes_t::COOLDOWN_20H</a> = -27, 
+<br />
+&#160;&#160;<a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a4240d56339d0911bfb4f9152a78442a3">TeamErrorCodes_t::ZONE_INVALID</a> = -28
+<br />
+ }<tr class="memdesc:a025150864fda35ac52afa639bfd33c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error codes used for team actions by the game client.  <a href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a025150864fda35ac52afa639bfd33c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -273,7 +332,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="ErrorCodes_8h_source.html#l00121">121</a> of file <a class="el" href="ErrorCodes_8h_source.html">ErrorCodes.h</a>.</p>
+<p>Definition at line <a class="el" href="ErrorCodes_8h_source.html#l00143">143</a> of file <a class="el" href="ErrorCodes_8h_source.html">ErrorCodes.h</a>.</p>
 
 </div>
 </div>
@@ -375,6 +434,65 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a64ad8177593b0263347e1d6e5a7a56bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bb">PartyErrorCodes_t</a> : uint16_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Error codes used for party actions by the game client. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a64ad8177593b0263347e1d6e5a7a56bba574dfca5e088abccfa24fec2a681e9c8"></a>GENERIC_ERROR&#160;</td><td class="fielddoc">
+<p>Generic system error. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a64ad8177593b0263347e1d6e5a7a56bbad0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS&#160;</td><td class="fielddoc">
+<p>No error. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a64ad8177593b0263347e1d6e5a7a56bba3563d5b9341ec5d88fea47688d003254"></a>INVALID_OR_OFFLINE&#160;</td><td class="fielddoc">
+<p>Target character either does not exist or is offline. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a64ad8177593b0263347e1d6e5a7a56bba0308abefbb28586b445c52dd72a6e378"></a>IN_PARTY&#160;</td><td class="fielddoc">
+<p>Player is already in a party. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a64ad8177593b0263347e1d6e5a7a56bba515180a7bf3e387ef6a2b63fa5eee59d"></a>INVALID_PARTY&#160;</td><td class="fielddoc">
+<p>Request for invalid party received. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a64ad8177593b0263347e1d6e5a7a56bba58f46ef81624d6394087de75f2a00cb4"></a>NO_LEADER&#160;</td><td class="fielddoc">
+<p>Party does not have a leader (not sure why this would happen) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a64ad8177593b0263347e1d6e5a7a56bba98a47b2f08a87c63db27050c7e9bc51e"></a>NO_PARTY&#160;</td><td class="fielddoc">
+<p>Player is not in a party. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a64ad8177593b0263347e1d6e5a7a56bba7db7f3c2db24664c3367f8cec0003586"></a>INVALID_MEMBER&#160;</td><td class="fielddoc">
+<p>Party member being requested is invalid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a64ad8177593b0263347e1d6e5a7a56bba9cd0cb870825fe41261febdaaaebf8a2"></a>PARTY_FULL&#160;</td><td class="fielddoc">
+<p>Party is full and cannot be joined or invited to. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a64ad8177593b0263347e1d6e5a7a56bbaaede1c4f218c966ba0718e31cc42b56a"></a>LEADER_REQUIRED&#160;</td><td class="fielddoc">
+<p>Leader required update attempted by non-leader. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a64ad8177593b0263347e1d6e5a7a56bbac95472125b90ae311ae87e4686168c14"></a>INVALID_TARGET&#160;</td><td class="fielddoc">
+<p>Target is invalid. </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="ErrorCodes_8h_source.html#l00125">125</a> of file <a class="el" href="ErrorCodes_8h_source.html">ErrorCodes.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524"></a>
 <div class="memitem">
 <div class="memproto">
@@ -405,11 +523,17 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524a85933328a0f654955094f51777543d82"></a>GENERIC_COST&#160;</td><td class="fielddoc">
 <p>Cannot be paid for. </p>
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524ae27b39978aff0e697bf9682bd46c8698"></a>ACTIVATION_FAILURE&#160;</td><td class="fielddoc">
+<p>Cannot be activated. </p>
+</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524a8958c7e165eef2502b02c733ea4dc6ec"></a>COOLING_DOWN&#160;</td><td class="fielddoc">
 <p>Cool down has not completed. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524ab5006e9ee9b1ec468e14cb0ddd7fd9d7"></a>ACTION_RETRY&#160;</td><td class="fielddoc">
 <p>No message, request that client pursue and retry. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524af2586b6cb40042973fe5b9c91a82c5e4"></a>TOO_FAR&#160;</td><td class="fielddoc">
+<p>The skill was too far away when execution was attempted. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524acea54381739805deaa0ce54c7d097dda"></a>CONDITION_RESTRICT&#160;</td><td class="fielddoc">
 <p>Skill is not in a useable state. </p>
@@ -420,6 +544,9 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524a9efe0c779be71bed939ad7028b842405"></a>ITEM_USE&#160;</td><td class="fielddoc">
 <p>Item cannot have its skill used. </p>
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524a2527ae9d32ace94663d600efc942f895"></a>SILENT_FAIL&#160;</td><td class="fielddoc">
+<p>Skill cannot be used but don't print an error. </p>
+</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524a0b2fa73c37cba44be6439a79f7c07ada"></a>TALK_INVALID&#160;</td><td class="fielddoc">
 <p>Target cannot be talked to. </p>
 </td></tr>
@@ -428,6 +555,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524a5247169a6120ae49dfe1a9b68785d2b7"></a>TALK_WONT_LISTEN&#160;</td><td class="fielddoc">
 <p>Target refuses to listen to talk skills. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524ab84834464ead295f89341a37f8d52ded"></a>TALK_INVALID_STATE&#160;</td><td class="fielddoc">
+<p>Demon cannot be talked to due to its current state. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524ab39e1d584b0555fdfba87ec6732ff288"></a>SUMMON_INVALID&#160;</td><td class="fielddoc">
 <p>Demon cannot be summoned. </p>
@@ -501,10 +631,10 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524a45eac01e20d304cd764d4ba5c8d84140"></a>INVENTORY_SPACE&#160;</td><td class="fielddoc">
 <p>Inventory space needed to receive item. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524a2756326a3cddf5cb7cbc3731b9cb4e61"></a>NOTHING_HAPPNED_NOW&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524aabef19118af43cab455ef767bb103d63"></a>NOTHING_HAPPENED_NOW&#160;</td><td class="fielddoc">
 <p>Nothing happened currently. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524a368936577cd746de699adb6d408beba5"></a>NOTHING_HAPPNED_HERE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524a4b4423476a577aa47a4ad8f71751f6c1"></a>NOTHING_HAPPENED_HERE&#160;</td><td class="fielddoc">
 <p>Nothing happened in the current place. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a407a8b14fbe4457dcd19565aacde2524a85f6d9b10641e8b7b02b6d4f598e94b0"></a>TIME_RESTRICT&#160;</td><td class="fielddoc">
@@ -522,6 +652,107 @@ Functions</h2></td></tr>
 </table>
 
 <p>Definition at line <a class="el" href="ErrorCodes_8h_source.html#l00073">73</a> of file <a class="el" href="ErrorCodes_8h_source.html">ErrorCodes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a025150864fda35ac52afa639bfd33c17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17">TeamErrorCodes_t</a> : int8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Error codes used for team actions by the game client. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17ad0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS&#160;</td><td class="fielddoc">
+<p>No error. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a574dfca5e088abccfa24fec2a681e9c8"></a>GENERIC_ERROR&#160;</td><td class="fielddoc">
+<p>Unspecified error. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17aaede1c4f218c966ba0718e31cc42b56a"></a>LEADER_REQUIRED&#160;</td><td class="fielddoc">
+<p>Leader required update attempted by non-leader. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17ac95472125b90ae311ae87e4686168c14"></a>INVALID_TARGET&#160;</td><td class="fielddoc">
+<p>Target is invalid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17ac4ff636c2b9951d15a4b6508f41d14f4"></a>NO_TEAM&#160;</td><td class="fielddoc">
+<p>No current team exists. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a51c46c6d34d1bea1fe9f92b44897b2ba"></a>TEAM_OVER&#160;</td><td class="fielddoc">
+<p>Requested team no longer exists. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a2a42775273dd9889cb0a8ab00b423878"></a>INVALID_TARGET_STATE&#160;</td><td class="fielddoc">
+<p>Target is not in a valid team request state. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a01b17293657f5a6ba87143f1c62aaac8"></a>MATCH_ACTIVE&#160;</td><td class="fielddoc">
+<p>A match is currently active and the operation is not allowed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a59dc3370a9a52ab60156495befa06860"></a>INVALID_TEAM&#160;</td><td class="fielddoc">
+<p>Requested team is not valid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a2747c7e5b88dfc9c5f158a1c73ad94fd"></a>TEAM_FULL&#160;</td><td class="fielddoc">
+<p>Requested team is full. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a5ad1baddb615d955c2ff69bcd4a87cf1"></a>AWAITING_ENTRY&#160;</td><td class="fielddoc">
+<p>Request invalid due to match entry queue. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17ad531b0bf4bcc2e507e05dc02acad7395"></a>PENALTY_ACTIVE&#160;</td><td class="fielddoc">
+<p>Request invalid due to too many PvP penalties. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a7958f5366cbebfade52067360718984a"></a>MODE_REQUIREMENTS&#160;</td><td class="fielddoc">
+<p>Mode requirements are not met. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17afe791689644dd6e82f877908387e1427"></a>MATCH_ACTIVE_REJECT&#160;</td><td class="fielddoc">
+<p>Target is in an active match and the operation is not allowed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17adc2b884d3aacc6dbecd7a80a2b3a7954"></a>AWAITING_ENTRY_REJECT&#160;</td><td class="fielddoc">
+<p>Requested target invalid due to match entry queue. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a4b620c21f1e8036b74a6103d65fc07b7"></a>PENALTY_ACTIVE_REJECT&#160;</td><td class="fielddoc">
+<p>Requested target invalid due to too many PvP penalties. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17af68a30c2cde300075b050104311e6f42"></a>MODE_REQUIREMENTS_REJECT&#160;</td><td class="fielddoc">
+<p>Requested target mode requirements are not met. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a09769610dc8de96b3fc5256f9a517062"></a>TARGET_IN_PARTY&#160;</td><td class="fielddoc">
+<p>Target is in a party and cannot join a team. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a9b7f90ecb66f5274c61c00af72607152"></a>TARGET_DIASPORA_INVALID&#160;</td><td class="fielddoc">
+<p>Target cannot enter a disapora team right now. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a236140d2fda84d4481de61c3741a228f"></a>TARGET_VALUABLE_MISSING&#160;</td><td class="fielddoc">
+<p>Target is missing a valuable required to be in the team. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a56170fbbb45df607f71a8cb78a3b4a6a"></a>TARGET_COOLDOWN_20H&#160;</td><td class="fielddoc">
+<p>Target team cooldown has not completed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a0308abefbb28586b445c52dd72a6e378"></a>IN_PARTY&#160;</td><td class="fielddoc">
+<p>Party exists and team cannot be formed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17ade62b769d5269791e6d93a47149b19f2"></a>VALUABLE_MISSING&#160;</td><td class="fielddoc">
+<p>Valuable required is missing to form the team. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a14ebd7cd5ee381b4c6d6184b9ae63468"></a>COOLDOWN_20H&#160;</td><td class="fielddoc">
+<p>Team cooldown has not completed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a025150864fda35ac52afa639bfd33c17a4240d56339d0911bfb4f9152a78442a3"></a>ZONE_INVALID&#160;</td><td class="fielddoc">
+<p>Zone the requestor is in does not support the team type. </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="ErrorCodes_8h_source.html#l00158">158</a> of file <a class="el" href="ErrorCodes_8h_source.html">ErrorCodes.h</a>.</p>
 
 </div>
 </div>

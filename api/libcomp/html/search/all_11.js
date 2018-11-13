@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['quest_5factive_5fmax',['QUEST_ACTIVE_MAX',['../Constants_8h.html#aea909c5a14d69fec158fdfeb0ff57d9d',1,'Constants.h']]],
-  ['quest_5fmask_5fcount',['QUEST_MASK_COUNT',['../Constants_8h.html#a4e63d68d5d444157fb94800d363c3e3a',1,'Constants.h']]],
-  ['quest_5fmask_5fmax',['QUEST_MASK_MAX',['../Constants_8h.html#abcffa9ad77a6f5152a4bd2c7b1948793',1,'Constants.h']]],
+  ['quest_5fbonus',['QUEST_BONUS',['../structlibcomp_1_1ServerConstants_1_1Data.html#a6f535d0747f14e9d0fa65573e2d7bab9',1,'libcomp::ServerConstants::Data']]],
   ['queuechangeset',['QueueChangeSet',['../classlibcomp_1_1Database.html#afc4182f297d82b6a82a53b0484543291',1,'libcomp::Database']]],
   ['queuechild',['QueueChild',['../classlibcomp_1_1SpawnThread.html#aa44c0854796acec9a403ca2d6bc35d21',1,'libcomp::SpawnThread']]],
   ['queuedelete',['QueueDelete',['../classlibcomp_1_1Database.html#a50f057e6cdd00d3ca36863b799ce312d',1,'libcomp::Database']]],

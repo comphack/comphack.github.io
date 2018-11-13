@@ -118,9 +118,9 @@ Inheritance diagram for libcomp::DatabaseQueryMariaDB:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae7e53c6d48793fb87df475e8f0a5b85b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DatabaseQueryMariaDB.html#ae7e53c6d48793fb87df475e8f0a5b85b">DatabaseQueryMariaDB</a> (<a class="el" href="DatabaseMariaDB_8h.html#a82a6dc0dbc8c1a28b48de904614e0088">MYSQL</a> *pDatabase)</td></tr>
-<tr class="memdesc:ae7e53c6d48793fb87df475e8f0a5b85b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new MariaDB database query.  <a href="#ae7e53c6d48793fb87df475e8f0a5b85b">More...</a><br /></td></tr>
-<tr class="separator:ae7e53c6d48793fb87df475e8f0a5b85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d417287fbaad779d2faa3f7a15544a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DatabaseQueryMariaDB.html#ad8d417287fbaad779d2faa3f7a15544a">DatabaseQueryMariaDB</a> (<a class="el" href="DatabaseMariaDB_8h.html#a82a6dc0dbc8c1a28b48de904614e0088">MYSQL</a> *pDatabase, <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> databaseDebug)</td></tr>
+<tr class="memdesc:ad8d417287fbaad779d2faa3f7a15544a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new MariaDB database query.  <a href="#ad8d417287fbaad779d2faa3f7a15544a">More...</a><br /></td></tr>
+<tr class="separator:ad8d417287fbaad779d2faa3f7a15544a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ad7a52ea6ad2283654ca4e7ff3a5686"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DatabaseQueryMariaDB.html#a9ad7a52ea6ad2283654ca4e7ff3a5686">~DatabaseQueryMariaDB</a> ()</td></tr>
 <tr class="memdesc:a9ad7a52ea6ad2283654ca4e7ff3a5686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the query.  <a href="#a9ad7a52ea6ad2283654ca4e7ff3a5686">More...</a><br /></td></tr>
 <tr class="separator:a9ad7a52ea6ad2283654ca4e7ff3a5686"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,6 +295,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a70e2f6a6ea85be8017908609d4a255b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="DatabaseMariaDB_8h.html#a82a6dc0dbc8c1a28b48de904614e0088">MYSQL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DatabaseQueryMariaDB.html#a70e2f6a6ea85be8017908609d4a255b0">mDatabase</a></td></tr>
 <tr class="memdesc:a70e2f6a6ea85be8017908609d4a255b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the MariaDB database the query executes on.  <a href="#a70e2f6a6ea85be8017908609d4a255b0">More...</a><br /></td></tr>
 <tr class="separator:a70e2f6a6ea85be8017908609d4a255b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e0bb58c13c57828ffa08e4bc1826f6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DatabaseQueryMariaDB.html#a0e0bb58c13c57828ffa08e4bc1826f6c">mDatabaseDebug</a></td></tr>
+<tr class="memdesc:a0e0bb58c13c57828ffa08e4bc1826f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If we should output SQL debug logs.  <a href="#a0e0bb58c13c57828ffa08e4bc1826f6c">More...</a><br /></td></tr>
+<tr class="separator:a0e0bb58c13c57828ffa08e4bc1826f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6184ff013aedc1beb73e8586c7c43320"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DatabaseQueryMariaDB.html#a6184ff013aedc1beb73e8586c7c43320">mParamNames</a></td></tr>
 <tr class="memdesc:a6184ff013aedc1beb73e8586c7c43320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Param names pulled from the prepared statement to bind to.  <a href="#a6184ff013aedc1beb73e8586c7c43320">More...</a><br /></td></tr>
 <tr class="separator:a6184ff013aedc1beb73e8586c7c43320"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -320,7 +323,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00048">48</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae7e53c6d48793fb87df475e8f0a5b85b"></a>
+<a class="anchor" id="ad8d417287fbaad779d2faa3f7a15544a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -328,8 +331,18 @@ Private Attributes</h2></td></tr>
           <td class="memname">DatabaseQueryMariaDB::DatabaseQueryMariaDB </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="DatabaseMariaDB_8h.html#a82a6dc0dbc8c1a28b48de904614e0088">MYSQL</a> *&#160;</td>
-          <td class="paramname"><em>pDatabase</em></td><td>)</td>
+          <td class="paramname"><em>pDatabase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>databaseDebug</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -344,7 +357,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00039">39</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00061">61</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 </div>
 </div>
@@ -371,9 +384,9 @@ Private Attributes</h2></td></tr>
 
 <p>Clean up the query. </p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00044">44</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00067">67</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00142">mStatement</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00039">ConnectionString()</a>, <a class="el" href="Log_8h_source.html#l00397">LOG_DEBUG</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00189">mDatabaseDebug</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00142">mStatement</a>.</p>
 
 </div>
 </div>
@@ -454,11 +467,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#ab62f118c41013dfe5d813f4c83ace28d">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00190">190</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00327">327</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="CString_8cpp_source.html#l00741">libcomp::String::Data()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00177">mBufferBlob</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">PrepareBinding()</a>.</p>
+<p>References <a class="el" href="CString_8cpp_source.html#l00741">libcomp::String::Data()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00177">mBufferBlob</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00879">PrepareBinding()</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00213">Bind()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00350">Bind()</a>.</p>
 
 </div>
 </div>
@@ -506,9 +519,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#aa7329f77dda2f25f3df2e1a421e97807">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00213">213</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00350">350</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00190">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00327">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>.</p>
 
 </div>
 </div>
@@ -556,9 +569,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a50d97c50bdc7f1654258260b5432950e">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00219">219</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00356">356</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00177">mBufferBlob</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">PrepareBinding()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00177">mBufferBlob</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00879">PrepareBinding()</a>.</p>
 
 </div>
 </div>
@@ -606,9 +619,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#aca6585b5a4e80987a52cb6000a21a1c5">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00241">241</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00378">378</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00190">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00327">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>.</p>
 
 </div>
 </div>
@@ -656,9 +669,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a79f37aaee71fb69b5ce1351b36601e58">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00248">248</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00385">385</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00177">mBufferBlob</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">PrepareBinding()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00177">mBufferBlob</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00879">PrepareBinding()</a>.</p>
 
 </div>
 </div>
@@ -706,9 +719,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#adc5b4a822d5a1c05d6b4198cb4afda10">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00265">265</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00402">402</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00190">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">GetNamedBindingIndex()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00327">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">GetNamedBindingIndex()</a>.</p>
 
 </div>
 </div>
@@ -756,9 +769,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a573a28c048011fe575802f8d592e5406">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00272">272</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00409">409</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00165">mBufferInt</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">PrepareBinding()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00165">mBufferInt</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00879">PrepareBinding()</a>.</p>
 
 </div>
 </div>
@@ -806,9 +819,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#aa926073386f84240608cf34fafe56e5b">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00286">286</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00423">423</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00190">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00327">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>.</p>
 
 </div>
 </div>
@@ -856,9 +869,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a5184d1506cea6af9e3a2d32bc17c7fa4">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00292">292</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00429">429</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00168">mBufferBigInt</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">PrepareBinding()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00168">mBufferBigInt</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00879">PrepareBinding()</a>.</p>
 
 </div>
 </div>
@@ -906,9 +919,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#aa5acbf8f7408df0cad91bf4fab240f79">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00306">306</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00443">443</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00190">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00327">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>.</p>
 
 </div>
 </div>
@@ -956,9 +969,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a2a913ad261dc61e48c124a083717a6ba">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00312">312</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00449">449</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00171">mBufferFloat</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">PrepareBinding()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00171">mBufferFloat</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00879">PrepareBinding()</a>.</p>
 
 </div>
 </div>
@@ -1006,9 +1019,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a51930a4fa877104b13d85648441b87b6">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00326">326</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00463">463</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00190">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00327">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>.</p>
 
 </div>
 </div>
@@ -1056,9 +1069,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a3e6520ffc3d3a70cb5b4d3c586f5c00c">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00332">332</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00469">469</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00174">mBufferDouble</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">PrepareBinding()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00174">mBufferDouble</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00879">PrepareBinding()</a>.</p>
 
 </div>
 </div>
@@ -1106,9 +1119,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a3d6ee74a13a1f981881e89543faeefd2">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00346">346</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00483">483</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00190">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00327">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>.</p>
 
 </div>
 </div>
@@ -1156,9 +1169,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#ae8d04d89817ffc7daa06b9d9d3832583">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00352">352</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00489">489</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00180">mBufferBool</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">PrepareBinding()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00180">mBufferBool</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00879">PrepareBinding()</a>.</p>
 
 </div>
 </div>
@@ -1206,9 +1219,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a5814529a13a5464b3515b826f88820bf">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00366">366</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00503">503</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00190">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00327">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>.</p>
 
 </div>
 </div>
@@ -1257,7 +1270,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#af04debb78347537526d142704bb1e6ca">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00372">372</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00509">509</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 </div>
 </div>
@@ -1306,7 +1319,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#ada96c2ec27e3c8011a32d312ea23e787">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00382">382</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00519">519</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 </div>
 </div>
@@ -1337,9 +1350,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a9988818fbba355a8f2c1da9ef5561d50">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">79</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">145</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="DatabaseQuery_8h_source.html#l00381">libcomp::DatabaseQueryImpl::mAffectedRowCount</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00145">mBindings</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00168">mBufferBigInt</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00177">mBufferBlob</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00180">mBufferBool</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00174">mBufferDouble</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00171">mBufferFloat</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00165">mBufferInt</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00186">mBufferLengths</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00183">mBufferNulls</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00139">mDatabase</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00148">mResultBindings</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00158">mResultColumnNames</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00162">mResultColumnTypes</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00142">mStatement</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00152">mStatus</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00039">ConnectionString()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00046">GetLastError()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="Log_8h_source.html#l00397">LOG_DEBUG</a>, <a class="el" href="DatabaseQuery_8h_source.html#l00381">libcomp::DatabaseQueryImpl::mAffectedRowCount</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00145">mBindings</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00168">mBufferBigInt</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00177">mBufferBlob</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00180">mBufferBool</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00174">mBufferDouble</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00171">mBufferFloat</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00165">mBufferInt</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00186">mBufferLengths</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00183">mBufferNulls</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00139">mDatabase</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00189">mDatabaseDebug</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00148">mResultBindings</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00158">mResultColumnNames</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00162">mResultColumnTypes</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00142">mStatement</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00152">mStatus</a>.</p>
 
 </div>
 </div>
@@ -1374,11 +1387,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Index of the binding </dd></dl>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">719</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">856</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 <p>References <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00155">mParamNames</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00152">mStatus</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00213">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00544">GetValue()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00350">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00681">GetValue()</a>.</p>
 
 </div>
 </div>
@@ -1424,11 +1437,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00730">730</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00867">867</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 <p>References <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00158">mResultColumnNames</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00414">GetValue()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00551">GetValue()</a>.</p>
 
 </div>
 </div>
@@ -1465,9 +1478,9 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a9c14661324890477a213f54d35d910c0">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00605">605</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">742</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00031">bool</a>, <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00392">GetValue()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="CString_8cpp_source.html#l00476">libcomp::String::Length()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00158">mResultColumnNames</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00162">mResultColumnTypes</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00152">mStatus</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00183">Next()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00032">bool</a>, <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00529">GetValue()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="CString_8cpp_source.html#l00476">libcomp::String::Length()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00158">mResultColumnNames</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00162">mResultColumnTypes</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00152">mStatus</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00310">Next()</a>.</p>
 
 </div>
 </div>
@@ -1515,11 +1528,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a7a8bdc2a7b1cf242bd97074901f2d521">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00392">392</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00529">529</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 <p>References <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00148">mResultBindings</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00162">mResultColumnTypes</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00605">GetRows()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00414">GetValue()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">GetRows()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00551">GetValue()</a>.</p>
 
 </div>
 </div>
@@ -1567,9 +1580,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a54f811f88368df9ec66bb518d633cc00">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00414">414</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00551">551</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00730">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00392">GetValue()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00867">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00529">GetValue()</a>.</p>
 
 </div>
 </div>
@@ -1617,7 +1630,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a35dcf449b122ecc75747e005273251d1">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00425">425</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00562">562</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 <p>References <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00148">mResultBindings</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00162">mResultColumnTypes</a>.</p>
 
@@ -1667,9 +1680,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a6ed6ec0075196cd295c748862d9a4846">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00445">445</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00582">582</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00730">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00392">GetValue()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00867">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00529">GetValue()</a>.</p>
 
 </div>
 </div>
@@ -1717,9 +1730,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a7d9d8eac48e9c2b739c440a047b7c169">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00457">457</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00594">594</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00392">GetValue()</a>, and <a class="el" href="CString_8cpp_source.html#l00444">libcomp::String::ToUtf8()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00529">GetValue()</a>, and <a class="el" href="CString_8cpp_source.html#l00444">libcomp::String::ToUtf8()</a>.</p>
 
 </div>
 </div>
@@ -1767,9 +1780,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#ac56c3726f80cb26877d7a0af47653fc4">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00468">468</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00605">605</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00730">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00392">GetValue()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00867">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00529">GetValue()</a>.</p>
 
 </div>
 </div>
@@ -1817,7 +1830,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a6a9700fea32e2156f3bf16b9f200755a">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00480">480</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00617">617</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 <p>References <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00148">mResultBindings</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00162">mResultColumnTypes</a>.</p>
 
@@ -1867,9 +1880,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a1d6de517b8b4321839c5fb766dbdb91a">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00494">494</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00631">631</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00730">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00392">GetValue()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00867">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00529">GetValue()</a>.</p>
 
 </div>
 </div>
@@ -1917,7 +1930,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a758c34d4679c67ec649b4350ba98d363">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00505">505</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00642">642</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 <p>References <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00148">mResultBindings</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00162">mResultColumnTypes</a>.</p>
 
@@ -1967,9 +1980,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#aae68ba04442ef627e44ce5b4080ec037">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00519">519</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00656">656</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00730">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00392">GetValue()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00867">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00529">GetValue()</a>.</p>
 
 </div>
 </div>
@@ -2017,7 +2030,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a5fbd6ffc7aeedb39c35342843e4f55be">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00530">530</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00667">667</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 <p>References <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00148">mResultBindings</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00162">mResultColumnTypes</a>.</p>
 
@@ -2067,9 +2080,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a3d93f00fdfef0261d3ea272f92ffd8a6">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00544">544</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00681">681</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">GetNamedBindingIndex()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00730">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00392">GetValue()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">GetNamedBindingIndex()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00867">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00529">GetValue()</a>.</p>
 
 </div>
 </div>
@@ -2117,7 +2130,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a257392152a57d662c250a74518a845eb">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00555">555</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00692">692</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 <p>References <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00148">mResultBindings</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00162">mResultColumnTypes</a>.</p>
 
@@ -2167,9 +2180,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#ae661f3187197fe8144b22a9bf000bef5">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00569">569</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00706">706</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">GetNamedBindingIndex()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00730">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00392">GetValue()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">GetNamedBindingIndex()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00867">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00529">GetValue()</a>.</p>
 
 </div>
 </div>
@@ -2217,7 +2230,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a73d5b3e58afc33cf4b5c4f998a4e4496">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00580">580</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00717">717</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 <p>References <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00148">mResultBindings</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00162">mResultColumnTypes</a>.</p>
 
@@ -2267,9 +2280,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a7eb2114cb169dc0a6d1c1488277bf149">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00594">594</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00731">731</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">GetNamedBindingIndex()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00730">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00392">GetValue()</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">GetNamedBindingIndex()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00867">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00529">GetValue()</a>.</p>
 
 </div>
 </div>
@@ -2299,11 +2312,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a995f2324b217ef13b105f89808be0449">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">712</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">849</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 <p>References <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00139">mDatabase</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00142">mStatement</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00152">mStatus</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00190">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00605">GetRows()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00183">Next()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00052">Prepare()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00327">Bind()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">GetRows()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00310">Next()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00081">Prepare()</a>.</p>
 
 </div>
 </div>
@@ -2333,11 +2346,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#ad186b58630aa1a2ae9c5f804d25af081">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00183">183</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00310">310</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00142">mStatement</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00152">mStatus</a>.</p>
+<p>References <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00039">ConnectionString()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00046">GetLastError()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="Log_8h_source.html#l00397">LOG_DEBUG</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00139">mDatabase</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00189">mDatabaseDebug</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00142">mStatement</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00152">mStatus</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00605">GetRows()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">GetRows()</a>.</p>
 
 </div>
 </div>
@@ -2375,9 +2388,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classlibcomp_1_1DatabaseQueryImpl.html#a708b44b99d8416380a0c7cd149033d24">libcomp::DatabaseQueryImpl</a>.</p>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00052">52</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00081">81</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
-<p>References <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00139">mDatabase</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00155">mParamNames</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00142">mStatement</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00152">mStatus</a>.</p>
+<p>References <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00039">ConnectionString()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00046">GetLastError()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="Log_8h_source.html#l00397">LOG_DEBUG</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00139">mDatabase</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00189">mDatabaseDebug</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00155">mParamNames</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00142">mStatement</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00152">mStatus</a>.</p>
 
 </div>
 </div>
@@ -2423,11 +2436,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the parameter binding at the specified index </dd></dl>
 
-<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">742</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00879">879</a> of file <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html">DatabaseQueryMariaDB.cpp</a>.</p>
 
 <p>References <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00145">mBindings</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00186">mBufferLengths</a>, <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00183">mBufferNulls</a>, and <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00142">mStatement</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00190">Bind()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00327">Bind()</a>.</p>
 
 </div>
 </div>
@@ -2454,7 +2467,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQuery_8h_source.html#l00381">381</a> of file <a class="el" href="DatabaseQuery_8h_source.html">DatabaseQuery.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQuery_8cpp_source.html#l00065">libcomp::DatabaseQueryImpl::AffectedRowCount()</a>, <a class="el" href="DatabaseQuerySQLite3_8cpp_source.html#l00064">libcomp::DatabaseQuerySQLite3::Execute()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQuery_8cpp_source.html#l00065">libcomp::DatabaseQueryImpl::AffectedRowCount()</a>, <a class="el" href="DatabaseQuerySQLite3_8cpp_source.html#l00064">libcomp::DatabaseQuerySQLite3::Execute()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>.</p>
 
 </div>
 </div>
@@ -2480,7 +2493,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00145">145</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">PrepareBinding()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00879">PrepareBinding()</a>.</p>
 
 </div>
 </div>
@@ -2506,7 +2519,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00168">168</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00292">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00429">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>.</p>
 
 </div>
 </div>
@@ -2532,7 +2545,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00177">177</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00190">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00327">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>.</p>
 
 </div>
 </div>
@@ -2558,7 +2571,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00180">180</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00352">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00489">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>.</p>
 
 </div>
 </div>
@@ -2584,7 +2597,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00174">174</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00332">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00469">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>.</p>
 
 </div>
 </div>
@@ -2610,7 +2623,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00171">171</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00312">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00449">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>.</p>
 
 </div>
 </div>
@@ -2636,7 +2649,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00165">165</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00272">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00409">Bind()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>.</p>
 
 </div>
 </div>
@@ -2662,7 +2675,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00186">186</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">PrepareBinding()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00879">PrepareBinding()</a>.</p>
 
 </div>
 </div>
@@ -2688,7 +2701,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00183">183</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">PrepareBinding()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00879">PrepareBinding()</a>.</p>
 
 </div>
 </div>
@@ -2714,7 +2727,33 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00139">139</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00052">Prepare()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00310">Next()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00081">Prepare()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e0bb58c13c57828ffa08e4bc1826f6c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> libcomp::DatabaseQueryMariaDB::mDatabaseDebug</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If we should output SQL debug logs. </p>
+
+<p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00189">189</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
+
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00310">Next()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00081">Prepare()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00067">~DatabaseQueryMariaDB()</a>.</p>
 
 </div>
 </div>
@@ -2740,7 +2779,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00155">155</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00052">Prepare()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">GetNamedBindingIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00081">Prepare()</a>.</p>
 
 </div>
 </div>
@@ -2766,7 +2805,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00148">148</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00392">GetValue()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00529">GetValue()</a>.</p>
 
 </div>
 </div>
@@ -2792,7 +2831,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00158">158</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00730">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00605">GetRows()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00867">GetResultColumnIndex()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">GetRows()</a>.</p>
 
 </div>
 </div>
@@ -2818,7 +2857,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00162">162</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00605">GetRows()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00392">GetValue()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">GetRows()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00529">GetValue()</a>.</p>
 
 </div>
 </div>
@@ -2844,7 +2883,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00142">142</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00183">Next()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00052">Prepare()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">PrepareBinding()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00044">~DatabaseQueryMariaDB()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00310">Next()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00081">Prepare()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00879">PrepareBinding()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00067">~DatabaseQueryMariaDB()</a>.</p>
 
 </div>
 </div>
@@ -2870,7 +2909,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DatabaseQueryMariaDB_8h_source.html#l00152">152</a> of file <a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00079">Execute()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00719">GetNamedBindingIndex()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00605">GetRows()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00712">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00183">Next()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00052">Prepare()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00145">Execute()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00856">GetNamedBindingIndex()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00742">GetRows()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00849">IsValid()</a>, <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00310">Next()</a>, and <a class="el" href="DatabaseQueryMariaDB_8cpp_source.html#l00081">Prepare()</a>.</p>
 
 </div>
 </div>

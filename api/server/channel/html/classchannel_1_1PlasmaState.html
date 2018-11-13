@@ -161,6 +161,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9e5f69c81480fff443811d3384082d4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classchannel_1_1PlasmaPoint.html">PlasmaPoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1PlasmaState.html#ab9e5f69c81480fff443811d3384082d4">SetPickResult</a> (uint32_t pointID, int32_t looterID, int8_t result)</td></tr>
 <tr class="memdesc:ab9e5f69c81480fff443811d3384082d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a plasma point with the result of the picking minigame.  <a href="#ab9e5f69c81480fff443811d3384082d4">More...</a><br /></td></tr>
 <tr class="separator:ab9e5f69c81480fff443811d3384082d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ddcf0719176db5b0d0972c54b8ba705"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1PlasmaState.html#a3ddcf0719176db5b0d0972c54b8ba705">Toggle</a> (<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> enable)</td></tr>
+<tr class="memdesc:a3ddcf0719176db5b0d0972c54b8ba705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the the plasma set.  <a href="#a3ddcf0719176db5b0d0972c54b8ba705">More...</a><br /></td></tr>
+<tr class="separator:a3ddcf0719176db5b0d0972c54b8ba705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -170,6 +173,9 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a3bf7a81d2be10c99bac625a54dc1af2f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1PlasmaState.html#a3bf7a81d2be10c99bac625a54dc1af2f">mDisabled</a></td></tr>
+<tr class="memdesc:a3bf7a81d2be10c99bac625a54dc1af2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the plasma set is disabled and no points will spawn.  <a href="#a3bf7a81d2be10c99bac625a54dc1af2f">More...</a><br /></td></tr>
+<tr class="separator:a3bf7a81d2be10c99bac625a54dc1af2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4005e97adb6cfbcdd7b8f175f0a2d76c"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1PlasmaState.html#a4005e97adb6cfbcdd7b8f175f0a2d76c">mLock</a></td></tr>
 <tr class="memdesc:a4005e97adb6cfbcdd7b8f175f0a2d76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server lock for shared resources.  <a href="#a4005e97adb6cfbcdd7b8f175f0a2d76c">More...</a><br /></td></tr>
 <tr class="separator:a4005e97adb6cfbcdd7b8f175f0a2d76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,7 +216,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00083">83</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00105">105</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+
+<p>References <a class="el" href="PlasmaState_8h_source.html#l00264">mDisabled</a>.</p>
 
 </div>
 </div>
@@ -258,9 +266,9 @@ Private Attributes</h2></td></tr>
 <p>Create plasma points corresponding to each one required by the definition. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the points were created successfully </dd></dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00088">88</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00111">111</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
 
-<p>References <a class="el" href="EntityState_8h_source.html#l00057">channel::EntityState&lt; objects::PlasmaSpawn &gt;::GetEntity()</a>, and <a class="el" href="PlasmaState_8h_source.html#l00246">mPoints</a>.</p>
+<p>References <a class="el" href="EntityState_8h_source.html#l00059">channel::EntityState&lt; objects::PlasmaSpawn &gt;::GetEntity()</a>, and <a class="el" href="PlasmaState_8h_source.html#l00253">mPoints</a>.</p>
 
 </div>
 </div>
@@ -280,9 +288,9 @@ Private Attributes</h2></td></tr>
 <p>Get all active plasma points. </p>
 <dl class="section return"><dt>Returns</dt><dd>List of all active plasma points </dd></dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00116">116</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00139">139</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
 
-<p>References <a class="el" href="PlasmaState_8h_source.html#l00257">mLock</a>, and <a class="el" href="PlasmaState_8h_source.html#l00246">mPoints</a>.</p>
+<p>References <a class="el" href="PlasmaState_8h_source.html#l00267">mLock</a>, and <a class="el" href="PlasmaState_8h_source.html#l00253">mPoints</a>.</p>
 
 </div>
 </div>
@@ -310,11 +318,9 @@ Private Attributes</h2></td></tr>
 <p>Get the entity. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the entity </dd></dl>
 
-<p>Definition at line <a class="el" href="EntityState_8h_source.html#l00057">57</a> of file <a class="el" href="EntityState_8h_source.html">EntityState.h</a>.</p>
+<p>Definition at line <a class="el" href="EntityState_8h_source.html#l00059">59</a> of file <a class="el" href="EntityState_8h_source.html">EntityState.h</a>.</p>
 
-<p>References <a class="el" href="EntityState_8h_source.html#l00063">channel::EntityState&lt; T &gt;::mEntity</a>.</p>
-
-<p>Referenced by <a class="el" href="PlasmaState_8cpp_source.html#l00088">CreatePoints()</a>, and <a class="el" href="PlasmaState_8cpp_source.html#l00367">HidePoint()</a>.</p>
+<p>Referenced by <a class="el" href="PlasmaState_8cpp_source.html#l00111">CreatePoints()</a>, and <a class="el" href="PlasmaState_8cpp_source.html#l00433">HidePoint()</a>.</p>
 
 </div>
 </div>
@@ -341,9 +347,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the plasma point </dd></dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00108">108</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00131">131</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
 
-<p>References <a class="el" href="PlasmaState_8h_source.html#l00257">mLock</a>, and <a class="el" href="PlasmaState_8h_source.html#l00246">mPoints</a>.</p>
+<p>References <a class="el" href="PlasmaState_8h_source.html#l00267">mLock</a>, and <a class="el" href="PlasmaState_8h_source.html#l00253">mPoints</a>.</p>
 
 </div>
 </div>
@@ -387,7 +393,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00333">333</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00399">399</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
 
 </div>
 </div>
@@ -431,9 +437,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00342">342</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00408">408</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
 
-<p>References <a class="el" href="PlasmaState_8h_source.html#l00257">mLock</a>, <a class="el" href="PlasmaState_8h_source.html#l00246">mPoints</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab4d39238a6c6aa34b51481009eabad10">libcomp::Packet::WriteS32Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#acb7bad5ab1a3bdba98aaa900a456a4a7">libcomp::Packet::WriteS8()</a>.</p>
+<p>References <a class="el" href="PlasmaState_8h_source.html#l00267">mLock</a>, <a class="el" href="PlasmaState_8h_source.html#l00253">mPoints</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab4d39238a6c6aa34b51481009eabad10">libcomp::Packet::WriteS32Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#acb7bad5ab1a3bdba98aaa900a456a4a7">libcomp::Packet::WriteS8()</a>.</p>
 
 </div>
 </div>
@@ -471,9 +477,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if a point in the specified state exists </dd></dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00132">132</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00171">171</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8cpp_source.html#l00621">channel::ChannelServer::GetServerTime()</a>, <a class="el" href="PlasmaState_8h_source.html#l00257">mLock</a>, <a class="el" href="PlasmaState_8h_source.html#l00254">mPointHides</a>, <a class="el" href="PlasmaState_8h_source.html#l00250">mPointRespawns</a>, and <a class="el" href="PlasmaState_8h_source.html#l00246">mPoints</a>.</p>
+<p>References <a class="el" href="ChannelServer_8cpp_source.html#l00788">channel::ChannelServer::GetServerTime()</a>, <a class="el" href="PlasmaState_8h_source.html#l00264">mDisabled</a>, <a class="el" href="PlasmaState_8h_source.html#l00267">mLock</a>, <a class="el" href="PlasmaState_8h_source.html#l00261">mPointHides</a>, <a class="el" href="PlasmaState_8h_source.html#l00257">mPointRespawns</a>, and <a class="el" href="PlasmaState_8h_source.html#l00253">mPoints</a>.</p>
 
 </div>
 </div>
@@ -500,9 +506,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the point was empty and was marked as hidden, false if it was not empty </dd></dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00288">288</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00354">354</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
 
-<p>References <a class="el" href="PlasmaState_8cpp_source.html#l00367">HidePoint()</a>, <a class="el" href="PlasmaState_8h_source.html#l00257">mLock</a>, and <a class="el" href="PlasmaState_8h_source.html#l00246">mPoints</a>.</p>
+<p>References <a class="el" href="PlasmaState_8cpp_source.html#l00433">HidePoint()</a>, <a class="el" href="PlasmaState_8h_source.html#l00267">mLock</a>, and <a class="el" href="PlasmaState_8h_source.html#l00253">mPoints</a>.</p>
 
 </div>
 </div>
@@ -536,11 +542,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00367">367</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00433">433</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
 
-<p>References <a class="el" href="EntityState_8h_source.html#l00057">channel::EntityState&lt; objects::PlasmaSpawn &gt;::GetEntity()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00621">channel::ChannelServer::GetServerTime()</a>, <a class="el" href="PlasmaState_8h_source.html#l00254">mPointHides</a>, and <a class="el" href="PlasmaState_8h_source.html#l00250">mPointRespawns</a>.</p>
+<p>References <a class="el" href="EntityState_8h_source.html#l00059">channel::EntityState&lt; objects::PlasmaSpawn &gt;::GetEntity()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00788">channel::ChannelServer::GetServerTime()</a>, <a class="el" href="PlasmaState_8h_source.html#l00264">mDisabled</a>, <a class="el" href="PlasmaState_8h_source.html#l00261">mPointHides</a>, and <a class="el" href="PlasmaState_8h_source.html#l00257">mPointRespawns</a>.</p>
 
-<p>Referenced by <a class="el" href="PlasmaState_8cpp_source.html#l00288">HideIfEmpty()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00196">PopHidePoints()</a>, and <a class="el" href="PlasmaState_8cpp_source.html#l00252">SetPickResult()</a>.</p>
+<p>Referenced by <a class="el" href="PlasmaState_8cpp_source.html#l00354">HideIfEmpty()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00240">PopHidePoints()</a>, and <a class="el" href="PlasmaState_8cpp_source.html#l00296">SetPickResult()</a>.</p>
 
 </div>
 </div>
@@ -578,9 +584,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the point if the looter can pick it, null if they cannot </dd></dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00225">225</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00269">269</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
 
-<p>References <a class="el" href="PlasmaState_8h_source.html#l00257">mLock</a>, and <a class="el" href="PlasmaState_8h_source.html#l00246">mPoints</a>.</p>
+<p>References <a class="el" href="PlasmaState_8h_source.html#l00267">mLock</a>, and <a class="el" href="PlasmaState_8h_source.html#l00253">mPoints</a>.</p>
 
 </div>
 </div>
@@ -607,9 +613,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>List of plasma points that have become hidden </dd></dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00196">196</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00240">240</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8cpp_source.html#l00621">channel::ChannelServer::GetServerTime()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00367">HidePoint()</a>, <a class="el" href="PlasmaState_8h_source.html#l00257">mLock</a>, <a class="el" href="PlasmaState_8h_source.html#l00254">mPointHides</a>, and <a class="el" href="PlasmaState_8h_source.html#l00246">mPoints</a>.</p>
+<p>References <a class="el" href="ChannelServer_8cpp_source.html#l00788">channel::ChannelServer::GetServerTime()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00433">HidePoint()</a>, <a class="el" href="PlasmaState_8h_source.html#l00267">mLock</a>, <a class="el" href="PlasmaState_8h_source.html#l00261">mPointHides</a>, and <a class="el" href="PlasmaState_8h_source.html#l00253">mPoints</a>.</p>
 
 </div>
 </div>
@@ -636,9 +642,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>List of plasma points that have respawned </dd></dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00169">169</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00213">213</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8cpp_source.html#l00621">channel::ChannelServer::GetServerTime()</a>, <a class="el" href="PlasmaState_8h_source.html#l00257">mLock</a>, <a class="el" href="PlasmaState_8h_source.html#l00250">mPointRespawns</a>, and <a class="el" href="PlasmaState_8h_source.html#l00246">mPoints</a>.</p>
+<p>References <a class="el" href="ChannelServer_8cpp_source.html#l00788">channel::ChannelServer::GetServerTime()</a>, <a class="el" href="PlasmaState_8h_source.html#l00267">mLock</a>, <a class="el" href="PlasmaState_8h_source.html#l00257">mPointRespawns</a>, and <a class="el" href="PlasmaState_8h_source.html#l00253">mPoints</a>.</p>
 
 </div>
 </div>
@@ -683,9 +689,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the update was completed, otherwise false </dd></dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00310">310</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00376">376</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
 
-<p>References <a class="el" href="PlasmaState_8h_source.html#l00257">mLock</a>, and <a class="el" href="PlasmaState_8h_source.html#l00246">mPoints</a>.</p>
+<p>References <a class="el" href="PlasmaState_8h_source.html#l00267">mLock</a>, and <a class="el" href="PlasmaState_8h_source.html#l00253">mPoints</a>.</p>
 
 </div>
 </div>
@@ -730,13 +736,69 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the point if the update was valid, null if it was not </dd></dl>
 
-<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00252">252</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00296">296</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8cpp_source.html#l00621">channel::ChannelServer::GetServerTime()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00367">HidePoint()</a>, <a class="el" href="PlasmaState_8h_source.html#l00257">mLock</a>, <a class="el" href="PlasmaState_8h_source.html#l00254">mPointHides</a>, and <a class="el" href="PlasmaState_8h_source.html#l00246">mPoints</a>.</p>
+<p>References <a class="el" href="ChannelServer_8cpp_source.html#l00788">channel::ChannelServer::GetServerTime()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00433">HidePoint()</a>, <a class="el" href="PlasmaState_8h_source.html#l00267">mLock</a>, <a class="el" href="PlasmaState_8h_source.html#l00261">mPointHides</a>, and <a class="el" href="PlasmaState_8h_source.html#l00253">mPoints</a>.</p>
+
+<p>Referenced by <a class="el" href="ZoneManager_8cpp_source.html#l03987">channel::ZoneManager::FailPlasma()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ddcf0719176db5b0d0972c54b8ba705"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlasmaState::Toggle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or disable the the plasma set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>If true the points will be enabled, if false they will be disabled and de-pop if active </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="PlasmaState_8cpp_source.html#l00155">155</a> of file <a class="el" href="PlasmaState_8cpp_source.html">PlasmaState.cpp</a>.</p>
+
+<p>References <a class="el" href="PlasmaState_8h_source.html#l00264">mDisabled</a>, <a class="el" href="PlasmaState_8h_source.html#l00267">mLock</a>, <a class="el" href="PlasmaState_8h_source.html#l00261">mPointHides</a>, and <a class="el" href="PlasmaState_8h_source.html#l00253">mPoints</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a3bf7a81d2be10c99bac625a54dc1af2f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> channel::PlasmaState::mDisabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates if the plasma set is disabled and no points will spawn. </p>
+
+<p>Definition at line <a class="el" href="PlasmaState_8h_source.html#l00264">264</a> of file <a class="el" href="PlasmaState_8h_source.html">PlasmaState.h</a>.</p>
+
+<p>Referenced by <a class="el" href="PlasmaState_8cpp_source.html#l00171">HasStateChangePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00433">HidePoint()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00105">PlasmaState()</a>, and <a class="el" href="PlasmaState_8cpp_source.html#l00155">Toggle()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a4005e97adb6cfbcdd7b8f175f0a2d76c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -757,9 +819,9 @@ Private Attributes</h2></td></tr>
 
 <p>Server lock for shared resources. </p>
 
-<p>Definition at line <a class="el" href="PlasmaState_8h_source.html#l00257">257</a> of file <a class="el" href="PlasmaState_8h_source.html">PlasmaState.h</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8h_source.html#l00267">267</a> of file <a class="el" href="PlasmaState_8h_source.html">PlasmaState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PlasmaState_8cpp_source.html#l00116">GetActivePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00108">GetPoint()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00342">GetPointStatusData()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00132">HasStateChangePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00288">HideIfEmpty()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00225">PickPoint()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00196">PopHidePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00169">PopRespawnPoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00310">SetLoot()</a>, and <a class="el" href="PlasmaState_8cpp_source.html#l00252">SetPickResult()</a>.</p>
+<p>Referenced by <a class="el" href="PlasmaState_8cpp_source.html#l00139">GetActivePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00131">GetPoint()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00408">GetPointStatusData()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00171">HasStateChangePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00354">HideIfEmpty()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00269">PickPoint()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00240">PopHidePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00213">PopRespawnPoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00376">SetLoot()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00296">SetPickResult()</a>, and <a class="el" href="PlasmaState_8cpp_source.html#l00155">Toggle()</a>.</p>
 
 </div>
 </div>
@@ -783,9 +845,9 @@ Private Attributes</h2></td></tr>
 
 <p>Map of point IDs to server times when that point should be hidden to respawn later. </p>
 
-<p>Definition at line <a class="el" href="PlasmaState_8h_source.html#l00254">254</a> of file <a class="el" href="PlasmaState_8h_source.html">PlasmaState.h</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8h_source.html#l00261">261</a> of file <a class="el" href="PlasmaState_8h_source.html">PlasmaState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PlasmaState_8cpp_source.html#l00132">HasStateChangePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00367">HidePoint()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00196">PopHidePoints()</a>, and <a class="el" href="PlasmaState_8cpp_source.html#l00252">SetPickResult()</a>.</p>
+<p>Referenced by <a class="el" href="PlasmaState_8cpp_source.html#l00171">HasStateChangePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00433">HidePoint()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00240">PopHidePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00296">SetPickResult()</a>, and <a class="el" href="PlasmaState_8cpp_source.html#l00155">Toggle()</a>.</p>
 
 </div>
 </div>
@@ -809,9 +871,9 @@ Private Attributes</h2></td></tr>
 
 <p>Map of point IDs to server times when that point should be respawned. </p>
 
-<p>Definition at line <a class="el" href="PlasmaState_8h_source.html#l00250">250</a> of file <a class="el" href="PlasmaState_8h_source.html">PlasmaState.h</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8h_source.html#l00257">257</a> of file <a class="el" href="PlasmaState_8h_source.html">PlasmaState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PlasmaState_8cpp_source.html#l00132">HasStateChangePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00367">HidePoint()</a>, and <a class="el" href="PlasmaState_8cpp_source.html#l00169">PopRespawnPoints()</a>.</p>
+<p>Referenced by <a class="el" href="PlasmaState_8cpp_source.html#l00171">HasStateChangePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00433">HidePoint()</a>, and <a class="el" href="PlasmaState_8cpp_source.html#l00213">PopRespawnPoints()</a>.</p>
 
 </div>
 </div>
@@ -835,9 +897,9 @@ Private Attributes</h2></td></tr>
 
 <p>Map of points by definition ID. </p>
 
-<p>Definition at line <a class="el" href="PlasmaState_8h_source.html#l00246">246</a> of file <a class="el" href="PlasmaState_8h_source.html">PlasmaState.h</a>.</p>
+<p>Definition at line <a class="el" href="PlasmaState_8h_source.html#l00253">253</a> of file <a class="el" href="PlasmaState_8h_source.html">PlasmaState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PlasmaState_8cpp_source.html#l00088">CreatePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00116">GetActivePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00108">GetPoint()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00342">GetPointStatusData()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00132">HasStateChangePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00288">HideIfEmpty()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00225">PickPoint()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00196">PopHidePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00169">PopRespawnPoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00310">SetLoot()</a>, and <a class="el" href="PlasmaState_8cpp_source.html#l00252">SetPickResult()</a>.</p>
+<p>Referenced by <a class="el" href="PlasmaState_8cpp_source.html#l00111">CreatePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00139">GetActivePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00131">GetPoint()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00408">GetPointStatusData()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00171">HasStateChangePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00354">HideIfEmpty()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00269">PickPoint()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00240">PopHidePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00213">PopRespawnPoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00376">SetLoot()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00296">SetPickResult()</a>, and <a class="el" href="PlasmaState_8cpp_source.html#l00155">Toggle()</a>.</p>
 
 </div>
 </div>

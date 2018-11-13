@@ -93,19 +93,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Request from the client to analyze another player character or their partner demon.  
+<p>Request from the client to analyze another player character or their partner demon (basic details or time trial records).  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;Packets.h&quot;</code><br />
+<code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html">Log.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ManagerPacket_8h.html">ManagerPacket.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Packet_8h.html">Packet.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/PacketCodes_8h.html">PacketCodes.h</a>&gt;</code><br />
+<code>#include &lt;CharacterProgress.h&gt;</code><br />
 <code>#include &lt;Item.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>&quot;</code><br />
 </div>
 <p><a href="Analyze_8cpp_source.html">Go to the source code of this file.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Request from the client to analyze another player character or their partner demon. </p>
+<div class="textblock"><p>Request from the client to analyze another player character or their partner demon (basic details or time trial records). </p>
 <dl class="section author"><dt>Author</dt><dd>HACKfrost</dd></dl>
 <p>This file is part of the Channel Server (channel).</p>
 <p>Copyright (C) 2012-2018 COMP_hack Team <a href="#" onclick="location.href='mai'+'lto:'+'com'+'po'+'meg'+'a@'+'tut'+'an'+'ota'+'.c'+'om'; return false;">compo<span style="display: none;">.nosp@m.</span>mega<span style="display: none;">.nosp@m.</span>@tuta<span style="display: none;">.nosp@m.</span>nota<span style="display: none;">.nosp@m.</span>.com</a></p>

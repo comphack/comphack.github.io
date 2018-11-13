@@ -132,6 +132,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d3c9aedd54436b50cfbd400624239fb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a5d3c9aedd54436b50cfbd400624239fb">Expire</a> (int32_t entryID, uint32_t expirationTime)</td></tr>
 <tr class="memdesc:a5d3c9aedd54436b50cfbd400624239fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expire the existing record with a matching entry ID and expiration time of the templated type.  <a href="#a5d3c9aedd54436b50cfbd400624239fb">More...</a><br /></td></tr>
 <tr class="separator:a5d3c9aedd54436b50cfbd400624239fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06acb285120dd43a947d739c75f064fe"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::MatchEntry &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a06acb285120dd43a947d739c75f064fe">GetMatchEntry</a> (int32_t worldCID)</td></tr>
+<tr class="memdesc:a06acb285120dd43a947d739c75f064fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get any existing match entry by world CID.  <a href="#a06acb285120dd43a947d739c75f064fe">More...</a><br /></td></tr>
+<tr class="separator:a06acb285120dd43a947d739c75f064fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afba422bf92db05169c90f4a6b9a828aa"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#afba422bf92db05169c90f4a6b9a828aa">Initialize</a> ()</td></tr>
 <tr class="memdesc:afba422bf92db05169c90f4a6b9a828aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classworld_1_1WorldSyncManager.html" title="World specific implementation of the DataSyncManager in charge of performing server side update opera...">WorldSyncManager</a> after the server has been initialized.  <a href="#afba422bf92db05169c90f4a6b9a828aa">More...</a><br /></td></tr>
 <tr class="separator:afba422bf92db05169c90f4a6b9a828aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +148,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac1142242ad747f1627737cbc7c7e690c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeac237604ef52dae135d3ff60543b64b"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#aeac237604ef52dae135d3ff60543b64b">RemoveRecord</a> (const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;record, const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;type)</td></tr>
 <tr class="separator:aeac237604ef52dae135d3ff60543b64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301e7dbcaf0b2db7d2808311c0edfcda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a301e7dbcaf0b2db7d2808311c0edfcda">StartPvPMatch</a> (uint32_t time, uint8_t type)</td></tr>
+<tr class="memdesc:a301e7dbcaf0b2db7d2808311c0edfcda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start (after rechecking) a new solo PvP match based upon the current entries in the queues of the specified type.  <a href="#a301e7dbcaf0b2db7d2808311c0edfcda">More...</a><br /></td></tr>
+<tr class="separator:a301e7dbcaf0b2db7d2808311c0edfcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e76efbceeaf26353c8f2da4c5d5f24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#aa3e76efbceeaf26353c8f2da4c5d5f24">StartTeamPvPMatch</a> (uint32_t time, uint8_t type)</td></tr>
+<tr class="memdesc:aa3e76efbceeaf26353c8f2da4c5d5f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start (after rechecking) a new team PvP match based upon the current entries in the queues of the specified type.  <a href="#aa3e76efbceeaf26353c8f2da4c5d5f24">More...</a><br /></td></tr>
+<tr class="separator:aa3e76efbceeaf26353c8f2da4c5d5f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43c814df2cac2fed883547777c78563"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#ab43c814df2cac2fed883547777c78563">SyncComplete</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Object.html">libcomp::Object</a> &gt;, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &gt;&gt; &amp;objs, const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;source)</td></tr>
+<tr class="separator:ab43c814df2cac2fed883547777c78563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b1d08b0d144e74174127bcc889ff4c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a70b1d08b0d144e74174127bcc889ff4c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a70b1d08b0d144e74174127bcc889ff4c">SyncComplete</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Object.html">libcomp::Object</a> &gt;, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &gt;&gt; &amp;objs, const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;source)</td></tr>
+<tr class="memdesc:a70b1d08b0d144e74174127bcc889ff4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server specific handler for an operation following explicit types of non-persistent records being synced.  <a href="#a70b1d08b0d144e74174127bcc889ff4c">More...</a><br /></td></tr>
+<tr class="separator:a70b1d08b0d144e74174127bcc889ff4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c8d7ea620eac5362ecc9bc9179f958d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a4c8d7ea620eac5362ecc9bc9179f958d">SyncExistingChannelRecords</a> (const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1InternalConnection.html">libcomp::InternalConnection</a> &gt; &amp;connection)</td></tr>
 <tr class="memdesc:a4c8d7ea620eac5362ecc9bc9179f958d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send all existing sync records to the specified connection.  <a href="#a4c8d7ea620eac5362ecc9bc9179f958d">More...</a><br /></td></tr>
 <tr class="separator:a4c8d7ea620eac5362ecc9bc9179f958d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,6 +167,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab7246d10f1369580a1b82a3109bc4bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12a62581bedb6a8dee61dc372724c353"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a12a62581bedb6a8dee61dc372724c353">SyncOutgoing</a> ()</td></tr>
 <tr class="separator:a12a62581bedb6a8dee61dc372724c353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9b04ae7ab49ad1326bd3075df58289"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a5e9b04ae7ab49ad1326bd3075df58289">SyncRecordRemoval</a> (const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;record, const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;type)</td></tr>
+<tr class="separator:a5e9b04ae7ab49ad1326bd3075df58289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42773e95bb4e0a106db3ac5189d3248c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a42773e95bb4e0a106db3ac5189d3248c">SyncRecordUpdate</a> (const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;record, const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;type)</td></tr>
+<tr class="separator:a42773e95bb4e0a106db3ac5189d3248c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b585d01d696928804b68c2534861911"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a3b585d01d696928804b68c2534861911">Update</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;type, const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;obj, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> isRemove, const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;source)</td></tr>
 <tr class="separator:a3b585d01d696928804b68c2534861911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a61dd2bbd31e6770fc6aa0ff336fa9e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
@@ -189,9 +208,51 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ada3d142c99423512a772fa6adf38f91e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#ada3d142c99423512a772fa6adf38f91e">AdjustSearchEntryCount</a> (int32_t sourceCID, objects::SearchEntry::Type_t type, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> increment)</td></tr>
 <tr class="memdesc:ada3d142c99423512a772fa6adf38f91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the number of search entries associated to a specific character for quick access operations later.  <a href="#ada3d142c99423512a772fa6adf38f91e">More...</a><br /></td></tr>
 <tr class="separator:ada3d142c99423512a772fa6adf38f91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c99922c2453858070ffc2b8db01ac6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#af9c99922c2453858070ffc2b8db01ac6">DeterminePvPMatch</a> (uint8_t type, std::set&lt; int32_t &gt; updated={})</td></tr>
+<tr class="memdesc:af9c99922c2453858070ffc2b8db01ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a solo PvP match of the specified type can be started and queue it to start if it is.  <a href="#af9c99922c2453858070ffc2b8db01ac6">More...</a><br /></td></tr>
+<tr class="separator:af9c99922c2453858070ffc2b8db01ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3c31615df7002323050d168b1c9536"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a1f3c31615df7002323050d168b1c9536">DetermineTeamPvPMatch</a> (uint8_t type, std::set&lt; int32_t &gt; updated={})</td></tr>
+<tr class="memdesc:a1f3c31615df7002323050d168b1c9536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a team PvP match of the specified type can be started and queue it to start if it is.  <a href="#a1f3c31615df7002323050d168b1c9536">More...</a><br /></td></tr>
+<tr class="separator:a1f3c31615df7002323050d168b1c9536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4374ecd4b71af929d50354614162d25"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#ae4374ecd4b71af929d50354614162d25">EndMatch</a> (const std::shared_ptr&lt; objects::PentalphaMatch &gt; &amp;match)</td></tr>
+<tr class="memdesc:ae4374ecd4b71af929d50354614162d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">End the supplied PentalphaMatch by properly updating all participating players and closing out their match entries.  <a href="#ae4374ecd4b71af929d50354614162d25">More...</a><br /></td></tr>
+<tr class="separator:ae4374ecd4b71af929d50354614162d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb23983f7d6d2d04e382c8075f62605f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#aeb23983f7d6d2d04e382c8075f62605f">EndTournament</a> (const std::shared_ptr&lt; objects::UBTournament &gt; &amp;tournament)</td></tr>
+<tr class="memdesc:aeb23983f7d6d2d04e382c8075f62605f"><td class="mdescLeft">&#160;</td><td class="mdescRight">End the supplied UBTournament by properly updating the rankings and send the results to the channels.  <a href="#aeb23983f7d6d2d04e382c8075f62605f">More...</a><br /></td></tr>
+<tr class="separator:aeb23983f7d6d2d04e382c8075f62605f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4997895e96ecb17dd749976d6849bd47"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; int32_t, std::list&lt; std::shared_ptr&lt; objects::MatchEntry &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a4997895e96ecb17dd749976d6849bd47">GetMatchEntryTeams</a> (uint8_t type)</td></tr>
+<tr class="memdesc:a4997895e96ecb17dd749976d6849bd47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all match entries by their team ID (including no team)  <a href="#a4997895e96ecb17dd749976d6849bd47">More...</a><br /></td></tr>
+<tr class="separator:a4997895e96ecb17dd749976d6849bd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8639a45d7d218e6d5268c44b2d4e5fa8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a8639a45d7d218e6d5268c44b2d4e5fa8">PreparePvPMatch</a> (std::shared_ptr&lt; objects::PvPMatch &gt; match)</td></tr>
+<tr class="memdesc:a8639a45d7d218e6d5268c44b2d4e5fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ready a supplied PvP match to send to the channels.  <a href="#a8639a45d7d218e6d5268c44b2d4e5fa8">More...</a><br /></td></tr>
+<tr class="separator:a8639a45d7d218e6d5268c44b2d4e5fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936d39e45d09fae182c19aca36b1adc4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a936d39e45d09fae182c19aca36b1adc4">RecalculateTournamentRankings</a> (const libobjgen::UUID &amp;tournamentUID)</td></tr>
+<tr class="memdesc:a936d39e45d09fae182c19aca36b1adc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculate all rankings for a spectific UBTournament.  <a href="#a936d39e45d09fae182c19aca36b1adc4">More...</a><br /></td></tr>
+<tr class="separator:a936d39e45d09fae182c19aca36b1adc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dead1a3c9cd450d9b5c9f1db329bf09"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a5dead1a3c9cd450d9b5c9f1db329bf09">RecalculateUBRankings</a> ()</td></tr>
+<tr class="memdesc:a5dead1a3c9cd450d9b5c9f1db329bf09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculate all tournament independent UBResult rankings.  <a href="#a5dead1a3c9cd450d9b5c9f1db329bf09">More...</a><br /></td></tr>
+<tr class="separator:a5dead1a3c9cd450d9b5c9f1db329bf09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:ad3ba5724d67fff1a52b0b293702be0e3"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; uint8_t, std::unordered_map&lt; uint32_t, std::shared_ptr&lt; objects::InstanceAccess &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#ad3ba5724d67fff1a52b0b293702be0e3">mInstanceAccess</a></td></tr>
+<tr class="memdesc:ad3ba5724d67fff1a52b0b293702be0e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of zone instance access records by channel ID then instance ID.  <a href="#ad3ba5724d67fff1a52b0b293702be0e3">More...</a><br /></td></tr>
+<tr class="separator:ad3ba5724d67fff1a52b0b293702be0e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9c746e208a5c3d5c0b803b623a0c5c"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; int32_t, std::shared_ptr&lt; objects::MatchEntry &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a2c9c746e208a5c3d5c0b803b623a0c5c">mMatchEntries</a></td></tr>
+<tr class="memdesc:a2c9c746e208a5c3d5c0b803b623a0c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of character CIDs to queued match entries.  <a href="#a2c9c746e208a5c3d5c0b803b623a0c5c">More...</a><br /></td></tr>
+<tr class="separator:a2c9c746e208a5c3d5c0b803b623a0c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac79dee82144b42df60a6d41048ea86a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#aac79dee82144b42df60a6d41048ea86a">mNextMatchID</a></td></tr>
+<tr class="memdesc:aac79dee82144b42df60a6d41048ea86a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next match ID to use for any matches prepared by the server.  <a href="#aac79dee82144b42df60a6d41048ea86a">More...</a><br /></td></tr>
+<tr class="separator:aac79dee82144b42df60a6d41048ea86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb46adfcfa933b4fe8af1b89212a5772"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::PentalphaMatch &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#afb46adfcfa933b4fe8af1b89212a5772">mPentalphaMatch</a></td></tr>
+<tr class="memdesc:afb46adfcfa933b4fe8af1b89212a5772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the currently active pentalpha match.  <a href="#afb46adfcfa933b4fe8af1b89212a5772">More...</a><br /></td></tr>
+<tr class="separator:afb46adfcfa933b4fe8af1b89212a5772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acecf8dc87f6037b08da2ad1208a2f9ab"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::array&lt; std::shared_ptr&lt; objects::PvPMatch &gt;, 2 &gt;, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#acecf8dc87f6037b08da2ad1208a2f9ab">mPvPPendingMatches</a></td></tr>
+<tr class="memdesc:acecf8dc87f6037b08da2ad1208a2f9ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pending PvP matches prepared by the primary channel with all necessary instance information and the correct channel set indexed by solo entries (0) or team (1) then PVP type.  <a href="#acecf8dc87f6037b08da2ad1208a2f9ab">More...</a><br /></td></tr>
+<tr class="separator:acecf8dc87f6037b08da2ad1208a2f9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631222ee3e17a310c1c54b6996c69b97"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::array&lt; uint32_t, 2 &gt;, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a631222ee3e17a310c1c54b6996c69b97">mPvPReadyTimes</a></td></tr>
+<tr class="memdesc:a631222ee3e17a310c1c54b6996c69b97"><td class="mdescLeft">&#160;</td><td class="mdescRight">System timestamps for pending PvP ready times indexed by solo entries (0) or team (1) then PVP type.  <a href="#a631222ee3e17a310c1c54b6996c69b97">More...</a><br /></td></tr>
+<tr class="separator:a631222ee3e17a310c1c54b6996c69b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af87b8b8b5afe4575701c68d394052a50"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::shared_ptr&lt; objects::SearchEntry &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#af87b8b8b5afe4575701c68d394052a50">mSearchEntries</a></td></tr>
 <tr class="memdesc:af87b8b8b5afe4575701c68d394052a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all search entries registered with the server.  <a href="#af87b8b8b5afe4575701c68d394052a50">More...</a><br /></td></tr>
 <tr class="separator:af87b8b8b5afe4575701c68d394052a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,11 +262,17 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a43cda30ebc0eeb2b934377ccedd246ee"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; <a class="el" href="classworld_1_1WorldServer.html">WorldServer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a43cda30ebc0eeb2b934377ccedd246ee">mServer</a></td></tr>
 <tr class="memdesc:a43cda30ebc0eeb2b934377ccedd246ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the channel server.  <a href="#a43cda30ebc0eeb2b934377ccedd246ee">More...</a><br /></td></tr>
 <tr class="separator:a43cda30ebc0eeb2b934377ccedd246ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e8227c95e361c6155da409edd66962"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint32_t, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#ad7e8227c95e361c6155da409edd66962">mUBRecalcMin</a></td></tr>
+<tr class="memdesc:ad7e8227c95e361c6155da409edd66962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lowest points required to cause a recalculation of the current top 10 UB total score, top total points and top all time points (in that index order)  <a href="#ad7e8227c95e361c6155da409edd66962">More...</a><br /></td></tr>
+<tr class="separator:ad7e8227c95e361c6155da409edd66962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c35ea42de84a329d2a56bf8e00efce7"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::UBTournament &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworld_1_1WorldSyncManager.html#a2c35ea42de84a329d2a56bf8e00efce7">mUBTournament</a></td></tr>
+<tr class="memdesc:a2c35ea42de84a329d2a56bf8e00efce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the currently active UB tournament.  <a href="#a2c35ea42de84a329d2a56bf8e00efce7">More...</a><br /></td></tr>
+<tr class="separator:a2c35ea42de84a329d2a56bf8e00efce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>World specific implementation of the DataSyncManager in charge of performing server side update operations. </p>
 
-<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00052">52</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00057">57</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9f1864185fdb9b11b8d0bbc62e6f3832"></a>
 <div class="memitem">
@@ -229,9 +296,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l00048">48</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l00062">62</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l00057">Initialize()</a>.</p>
+<p>References <a class="el" href="WorldSyncManager_8h_source.html#l00263">mPvPReadyTimes</a>, and <a class="el" href="WorldSyncManager_8h_source.html#l00274">mUBRecalcMin</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l00074">Initialize()</a>.</p>
 
 </div>
 </div>
@@ -258,7 +327,7 @@ Private Attributes</h2></td></tr>
 
 <p>Clean up the <a class="el" href="classworld_1_1WorldSyncManager.html" title="World specific implementation of the DataSyncManager in charge of performing server side update opera...">WorldSyncManager</a>. </p>
 
-<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l00053">53</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l00070">70</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -311,11 +380,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l00358">358</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l01544">1544</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
 
-<p>References <a class="el" href="WorldSyncManager_8h_source.html#l00134">mSearchEntryCounts</a>.</p>
+<p>References <a class="el" href="WorldSyncManager_8h_source.html#l00244">mSearchEntryCounts</a>.</p>
 
-<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l00190">world::WorldSyncManager::Update&lt; objects::SearchEntry &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01008">world::WorldSyncManager::Update&lt; objects::SearchEntry &gt;()</a>.</p>
 
 </div>
 </div>
@@ -353,9 +422,187 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if updates were performed during this operation </dd></dl>
 
-<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l00301">301</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l01161">1161</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a964137fce868103cc57bef7fe75151a5">libcomp::DataSyncManager::mLock</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00129">mSearchEntries</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00134">mSearchEntryCounts</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00271">RemoveRecord()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a12a62581bedb6a8dee61dc372724c353">libcomp::DataSyncManager::SyncOutgoing()</a>.</p>
+<p>References <a class="el" href="WorldSyncManager_8cpp_source.html#l01580">DeterminePvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01654">DetermineTeamPvPMatch()</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00249">mInstanceAccess</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a964137fce868103cc57bef7fe75151a5">libcomp::DataSyncManager::mLock</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00253">mMatchEntries</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00239">mSearchEntries</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00244">mSearchEntryCounts</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00280">mServer</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01089">RemoveRecord()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a12a62581bedb6a8dee61dc372724c353">libcomp::DataSyncManager::SyncOutgoing()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#abb2018dca67ddac0919548287f158bec">libcomp::DataSyncManager::UpdateRecord()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af9c99922c2453858070ffc2b8db01ac6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> WorldSyncManager::DeterminePvPMatch </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::set&lt; int32_t &gt;&#160;</td>
+          <td class="paramname"><em>updated</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if a solo PvP match of the specified type can be started and queue it to start if it is. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Type ID of the PvP match </td></tr>
+    <tr><td class="paramname">updated</td><td>Set of world CIDs that have just entered the queue to determine if the queue countdown needs to restart </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the match can be started, false if it cannot </dd></dl>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l01580">1580</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+
+<p>References <a class="el" href="WorldSyncManager_8cpp_source.html#l01781">GetMatchEntryTeams()</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00269">mPvPPendingMatches</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00263">mPvPReadyTimes</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00280">mServer</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01319">StartPvPMatch()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#abb2018dca67ddac0919548287f158bec">libcomp::DataSyncManager::UpdateRecord()</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01161">CleanUpCharacterLogin()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01319">StartPvPMatch()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00533">world::WorldSyncManager::SyncComplete&lt; objects::MatchEntry &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f3c31615df7002323050d168b1c9536"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> WorldSyncManager::DetermineTeamPvPMatch </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::set&lt; int32_t &gt;&#160;</td>
+          <td class="paramname"><em>updated</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if a team PvP match of the specified type can be started and queue it to start if it is. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Type ID of the PvP match </td></tr>
+    <tr><td class="paramname">updated</td><td>Set of world CIDs that have just entered the queue to determine if the queue countdown needs to restart </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the match can be started, false if it cannot </dd></dl>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l01654">1654</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+
+<p>References <a class="el" href="WorldSyncManager_8cpp_source.html#l01781">GetMatchEntryTeams()</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00269">mPvPPendingMatches</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00263">mPvPReadyTimes</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00280">mServer</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01089">RemoveRecord()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01429">StartTeamPvPMatch()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#abb2018dca67ddac0919548287f158bec">libcomp::DataSyncManager::UpdateRecord()</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01161">CleanUpCharacterLogin()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01089">RemoveRecord()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01429">StartTeamPvPMatch()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00533">world::WorldSyncManager::SyncComplete&lt; objects::MatchEntry &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4374ecd4b71af929d50354614162d25"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> WorldSyncManager::EndMatch </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; objects::PentalphaMatch &gt; &amp;&#160;</td>
+          <td class="paramname"><em>match</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>End the supplied PentalphaMatch by properly updating all participating players and closing out their match entries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">match</td><td>Pointer to the PentalphaMatch to end </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the match and all related entries were updated properly </dd></dl>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l01798">1798</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+
+<p>References <a class="el" href="WorldSyncManager_8h_source.html#l00280">mServer</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01089">RemoveRecord()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#abb2018dca67ddac0919548287f158bec">libcomp::DataSyncManager::UpdateRecord()</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l00074">Initialize()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00800">world::WorldSyncManager::SyncComplete&lt; objects::PentalphaMatch &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb23983f7d6d2d04e382c8075f62605f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> WorldSyncManager::EndTournament </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; objects::UBTournament &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tournament</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>End the supplied UBTournament by properly updating the rankings and send the results to the channels. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tournament</td><td>Pointer to the UBTournament to end </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the tournament and all related entries were updated properly </dd></dl>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l02134">2134</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+
+<p>References <a class="el" href="WorldSyncManager_8h_source.html#l00280">mServer</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01949">RecalculateTournamentRankings()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01089">RemoveRecord()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#abb2018dca67ddac0919548287f158bec">libcomp::DataSyncManager::UpdateRecord()</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l00074">Initialize()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00882">world::WorldSyncManager::SyncComplete&lt; objects::UBTournament &gt;()</a>.</p>
 
 </div>
 </div>
@@ -394,7 +641,75 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l00190">world::WorldSyncManager::Update&lt; objects::SearchEntry &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01008">world::WorldSyncManager::Update&lt; objects::SearchEntry &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a06acb285120dd43a947d739c75f064fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; objects::MatchEntry &gt; WorldSyncManager::GetMatchEntry </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>worldCID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get any existing match entry by world CID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">worldCID</td><td>World CID of the entry </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to a match entry </dd></dl>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l01153">1153</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a964137fce868103cc57bef7fe75151a5">libcomp::DataSyncManager::mLock</a>, and <a class="el" href="WorldSyncManager_8h_source.html#l00253">mMatchEntries</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4997895e96ecb17dd749976d6849bd47"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt; int32_t, std::list&lt; std::shared_ptr&lt; objects::MatchEntry &gt; &gt; &gt; WorldSyncManager::GetMatchEntryTeams </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get all match entries by their team ID (including no team) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Type ID of the PvP match </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Map of team IDs to entries in that team </dd></dl>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l01781">1781</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+
+<p>References <a class="el" href="WorldSyncManager_8h_source.html#l00253">mMatchEntries</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01580">DeterminePvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01654">DetermineTeamPvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01319">StartPvPMatch()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l01429">StartTeamPvPMatch()</a>.</p>
 
 </div>
 </div>
@@ -414,9 +729,119 @@ template&lt;class T &gt; </div>
 <p>Initialize the <a class="el" href="classworld_1_1WorldSyncManager.html" title="World specific implementation of the DataSyncManager in charge of performing server side update opera...">WorldSyncManager</a> after the server has been initialized. </p>
 <dl class="section return"><dt>Returns</dt><dd>false if any errors were encountered and the server should be shut down. </dd></dl>
 
-<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l00057">57</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l00074">74</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a633daeeb0faf31f8ad6c8250de37781f">libcomp::DataSyncManager::mRegisteredTypes</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00137">mServer</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00048">WorldSyncManager()</a>.</p>
+<p>References <a class="el" href="WorldSyncManager_8cpp_source.html#l01798">EndMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l02134">EndTournament()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#abb2fbeaa9e8ad4dfc69e521a5df86684">libcomp::PersistentObject::LoadAll()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0c53e5566a3b790db039421523dd4637">LOG_WARNING</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00256">mPentalphaMatch</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a633daeeb0faf31f8ad6c8250de37781f">libcomp::DataSyncManager::mRegisteredTypes</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00280">mServer</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00259">mUBTournament</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l02019">RecalculateUBRankings()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a12a62581bedb6a8dee61dc372724c353">libcomp::DataSyncManager::SyncOutgoing()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00062">WorldSyncManager()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8639a45d7d218e6d5268c44b2d4e5fa8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> WorldSyncManager::PreparePvPMatch </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; objects::PvPMatch &gt;&#160;</td>
+          <td class="paramname"><em>match</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ready a supplied PvP match to send to the channels. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">match</td><td>Pointer to an existing match that has not been started </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the update succeeded, false if it did not </dd></dl>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l01758">1758</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a964137fce868103cc57bef7fe75151a5">libcomp::DataSyncManager::mLock</a>, and <a class="el" href="WorldSyncManager_8h_source.html#l00277">mNextMatchID</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01319">StartPvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01429">StartTeamPvPMatch()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00963">world::WorldSyncManager::SyncComplete&lt; objects::PvPMatch &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a936d39e45d09fae182c19aca36b1adc4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> WorldSyncManager::RecalculateTournamentRankings </td>
+          <td>(</td>
+          <td class="paramtype">const libobjgen::UUID &amp;&#160;</td>
+          <td class="paramname"><em>tournamentUID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Recalculate all rankings for a spectific UBTournament. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tournamentUID</td><td>UID of the tournament to recalculate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the rankings were updated, false if an error occurred </dd></dl>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l01949">1949</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DatabaseChangeSet.html#a03a7037cb49e525b13310dfd97f469dc">libcomp::DatabaseChangeSet::Create()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a964137fce868103cc57bef7fe75151a5">libcomp::DataSyncManager::mLock</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00280">mServer</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00274">mUBRecalcMin</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#abb2018dca67ddac0919548287f158bec">libcomp::DataSyncManager::UpdateRecord()</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l02134">EndTournament()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00820">world::WorldSyncManager::SyncComplete&lt; objects::UBResult &gt;()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00882">world::WorldSyncManager::SyncComplete&lt; objects::UBTournament &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5dead1a3c9cd450d9b5c9f1db329bf09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> WorldSyncManager::RecalculateUBRankings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Recalculate all tournament independent UBResult rankings. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the rankings were updated, false if an error occurred </dd></dl>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l02019">2019</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DatabaseChangeSet.html#a03a7037cb49e525b13310dfd97f469dc">libcomp::DatabaseChangeSet::Create()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a964137fce868103cc57bef7fe75151a5">libcomp::DataSyncManager::mLock</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00280">mServer</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00274">mUBRecalcMin</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#abb2018dca67ddac0919548287f158bec">libcomp::DataSyncManager::UpdateRecord()</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l00074">Initialize()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00820">world::WorldSyncManager::SyncComplete&lt; objects::UBResult &gt;()</a>.</p>
 
 </div>
 </div>
@@ -452,11 +877,137 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l00271">271</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l01089">1089</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a964137fce868103cc57bef7fe75151a5">libcomp::DataSyncManager::mLock</a>, and <a class="el" href="WorldSyncManager_8h_source.html#l00129">mSearchEntries</a>.</p>
+<p>References <a class="el" href="WorldSyncManager_8cpp_source.html#l01654">DetermineTeamPvPMatch()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a964137fce868103cc57bef7fe75151a5">libcomp::DataSyncManager::mLock</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00253">mMatchEntries</a>, and <a class="el" href="WorldSyncManager_8h_source.html#l00239">mSearchEntries</a>.</p>
 
-<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l00301">CleanUpCharacterLogin()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00166">world::WorldSyncManager::Expire&lt; objects::SearchEntry &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01161">CleanUpCharacterLogin()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01654">DetermineTeamPvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01798">EndMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l02134">EndTournament()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01319">StartPvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01429">StartTeamPvPMatch()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00590">world::WorldSyncManager::SyncComplete&lt; objects::EventCounter &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a301e7dbcaf0b2db7d2808311c0edfcda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorldSyncManager::StartPvPMatch </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start (after rechecking) a new solo PvP match based upon the current entries in the queues of the specified type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>Ready time that has been communicated as a countdown to each player in the queue. This helps in deciding if there are still enough players in the ready state to join the match. </td></tr>
+    <tr><td class="paramname">type</td><td>PvP match type to start </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l01319">1319</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+
+<p>References <a class="el" href="WorldSyncManager_8cpp_source.html#l01580">DeterminePvPMatch()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Randomizer.html#a3ab09734881b8dc3af04d27ed98b3361">libcomp::Randomizer::GetEntry()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01781">GetMatchEntryTeams()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a964137fce868103cc57bef7fe75151a5">libcomp::DataSyncManager::mLock</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00269">mPvPPendingMatches</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00263">mPvPReadyTimes</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00280">mServer</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01758">PreparePvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01089">RemoveRecord()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a12a62581bedb6a8dee61dc372724c353">libcomp::DataSyncManager::SyncOutgoing()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a42773e95bb4e0a106db3ac5189d3248c">libcomp::DataSyncManager::SyncRecordUpdate()</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01580">DeterminePvPMatch()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3e76efbceeaf26353c8f2da4c5d5f24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorldSyncManager::StartTeamPvPMatch </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start (after rechecking) a new team PvP match based upon the current entries in the queues of the specified type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>Ready time that has been communicated as a countdown to each player in the queue. This helps in deciding if there are still enough players in the ready state to join the match. </td></tr>
+    <tr><td class="paramname">type</td><td>PvP match type to start </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l01429">1429</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+
+<p>References <a class="el" href="WorldSyncManager_8cpp_source.html#l01654">DetermineTeamPvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01781">GetMatchEntryTeams()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a964137fce868103cc57bef7fe75151a5">libcomp::DataSyncManager::mLock</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00269">mPvPPendingMatches</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00263">mPvPReadyTimes</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00280">mServer</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01758">PreparePvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01089">RemoveRecord()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a12a62581bedb6a8dee61dc372724c353">libcomp::DataSyncManager::SyncOutgoing()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a42773e95bb4e0a106db3ac5189d3248c">libcomp::DataSyncManager::SyncRecordUpdate()</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01654">DetermineTeamPvPMatch()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a70b1d08b0d144e74174127bcc889ff4c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void world::WorldSyncManager::SyncComplete </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::list&lt; std::pair&lt; std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Object.html">libcomp::Object</a> &gt;, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>objs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Server specific handler for an operation following explicit types of non-persistent records being synced. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Type name of the object being updated </td></tr>
+    <tr><td class="paramname">objs</td><td>List of pointers to the records being updated and a flag indicating if the object was being removed </td></tr>
+    <tr><td class="paramname">source</td><td>Source server identifier </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -482,9 +1033,11 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l00341">341</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="WorldSyncManager_8cpp_source.html#l01258">1258</a> of file <a class="el" href="WorldSyncManager_8cpp_source.html">WorldSyncManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a964137fce868103cc57bef7fe75151a5">libcomp::DataSyncManager::mLock</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00129">mSearchEntries</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#aa4ddf890bae87976e23f969abcc2e145">libcomp::DataSyncManager::QueueOutgoing()</a>.</p>
+<p>References <a class="el" href="WorldSyncManager_8h_source.html#l00249">mInstanceAccess</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a964137fce868103cc57bef7fe75151a5">libcomp::DataSyncManager::mLock</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00253">mMatchEntries</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00256">mPentalphaMatch</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00239">mSearchEntries</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00280">mServer</a>, <a class="el" href="WorldSyncManager_8h_source.html#l00259">mUBTournament</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#aa4ddf890bae87976e23f969abcc2e145">libcomp::DataSyncManager::QueueOutgoing()</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldServer_8cpp_source.html#l00272">world::WorldServer::RegisterChannel()</a>.</p>
 
 </div>
 </div>
@@ -541,6 +1094,163 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ad3ba5724d67fff1a52b0b293702be0e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;uint8_t, std::unordered_map&lt;uint32_t, std::shared_ptr&lt;objects::InstanceAccess&gt; &gt; &gt; world::WorldSyncManager::mInstanceAccess</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Map of zone instance access records by channel ID then instance ID. </p>
+<p>Records are only stored here after they have an instance ID. </p>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00249">249</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01161">CleanUpCharacterLogin()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01258">SyncExistingChannelRecords()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00402">world::WorldSyncManager::Update&lt; objects::InstanceAccess &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c9c746e208a5c3d5c0b803b623a0c5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;int32_t, std::shared_ptr&lt;objects::MatchEntry&gt; &gt; world::WorldSyncManager::mMatchEntries</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Map of character CIDs to queued match entries. </p>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00253">253</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01161">CleanUpCharacterLogin()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01153">GetMatchEntry()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01781">GetMatchEntryTeams()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01089">RemoveRecord()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01258">SyncExistingChannelRecords()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00497">world::WorldSyncManager::Update&lt; objects::MatchEntry &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac79dee82144b42df60a6d41048ea86a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t world::WorldSyncManager::mNextMatchID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Next match ID to use for any matches prepared by the server. </p>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00277">277</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01758">PreparePvPMatch()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb46adfcfa933b4fe8af1b89212a5772"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;objects::PentalphaMatch&gt; world::WorldSyncManager::mPentalphaMatch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pointer to the currently active pentalpha match. </p>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00256">256</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l00074">Initialize()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01258">SyncExistingChannelRecords()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00736">world::WorldSyncManager::SyncComplete&lt; objects::PentalphaEntry &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acecf8dc87f6037b08da2ad1208a2f9ab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;std::array&lt; std::shared_ptr&lt;objects::PvPMatch&gt;, 2&gt;, 2&gt; world::WorldSyncManager::mPvPPendingMatches</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pending PvP matches prepared by the primary channel with all necessary instance information and the correct channel set indexed by solo entries (0) or team (1) then PVP type. </p>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00269">269</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01580">DeterminePvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01654">DetermineTeamPvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01319">StartPvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01429">StartTeamPvPMatch()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00923">world::WorldSyncManager::Update&lt; objects::PvPMatch &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a631222ee3e17a310c1c54b6996c69b97"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;std::array&lt;uint32_t, 2&gt;, 2&gt; world::WorldSyncManager::mPvPReadyTimes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>System timestamps for pending PvP ready times indexed by solo entries (0) or team (1) then PVP type. </p>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00263">263</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01580">DeterminePvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01654">DetermineTeamPvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01319">StartPvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01429">StartTeamPvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00062">WorldSyncManager()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00533">world::WorldSyncManager::SyncComplete&lt; objects::MatchEntry &gt;()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00923">world::WorldSyncManager::Update&lt; objects::PvPMatch &gt;()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af87b8b8b5afe4575701c68d394052a50"></a>
 <div class="memitem">
 <div class="memproto">
@@ -561,9 +1271,9 @@ template&lt;class T &gt; </div>
 
 <p>List of all search entries registered with the server. </p>
 
-<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00129">129</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00239">239</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l00301">CleanUpCharacterLogin()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00271">RemoveRecord()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00341">SyncExistingChannelRecords()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00166">world::WorldSyncManager::Expire&lt; objects::SearchEntry &gt;()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00190">world::WorldSyncManager::Update&lt; objects::SearchEntry &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01161">CleanUpCharacterLogin()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01089">RemoveRecord()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01258">SyncExistingChannelRecords()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00984">world::WorldSyncManager::Expire&lt; objects::SearchEntry &gt;()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l01008">world::WorldSyncManager::Update&lt; objects::SearchEntry &gt;()</a>.</p>
 
 </div>
 </div>
@@ -587,9 +1297,9 @@ template&lt;class T &gt; </div>
 
 <p>Map of character CIDs to registered search entry type counts used for quick access operations. </p>
 
-<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00134">134</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00244">244</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l00358">AdjustSearchEntryCount()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00301">CleanUpCharacterLogin()</a>.</p>
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01544">AdjustSearchEntryCount()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l01161">CleanUpCharacterLogin()</a>.</p>
 
 </div>
 </div>
@@ -613,9 +1323,61 @@ template&lt;class T &gt; </div>
 
 <p>Pointer to the channel server. </p>
 
-<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00137">137</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00280">280</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l00057">Initialize()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00092">world::WorldSyncManager::Update&lt; objects::Account &gt;()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00134">world::WorldSyncManager::Update&lt; objects::Character &gt;()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00190">world::WorldSyncManager::Update&lt; objects::SearchEntry &gt;()</a>.</p>
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01161">CleanUpCharacterLogin()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01580">DeterminePvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01654">DetermineTeamPvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01798">EndMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l02134">EndTournament()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00074">Initialize()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01949">RecalculateTournamentRankings()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l02019">RecalculateUBRankings()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01319">StartPvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01429">StartTeamPvPMatch()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01258">SyncExistingChannelRecords()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00590">world::WorldSyncManager::SyncComplete&lt; objects::EventCounter &gt;()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00456">world::WorldSyncManager::SyncComplete&lt; objects::Match &gt;()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00736">world::WorldSyncManager::SyncComplete&lt; objects::PentalphaEntry &gt;()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00276">world::WorldSyncManager::Update&lt; objects::Account &gt;()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00318">world::WorldSyncManager::Update&lt; objects::Character &gt;()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00364">world::WorldSyncManager::Update&lt; objects::CharacterProgress &gt;()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00402">world::WorldSyncManager::Update&lt; objects::InstanceAccess &gt;()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00497">world::WorldSyncManager::Update&lt; objects::MatchEntry &gt;()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l01008">world::WorldSyncManager::Update&lt; objects::SearchEntry &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad7e8227c95e361c6155da409edd66962"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;uint32_t, 3&gt; world::WorldSyncManager::mUBRecalcMin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lowest points required to cause a recalculation of the current top 10 UB total score, top total points and top all time points (in that index order) </p>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00274">274</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l01949">RecalculateTournamentRankings()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l02019">RecalculateUBRankings()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00062">WorldSyncManager()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00820">world::WorldSyncManager::SyncComplete&lt; objects::UBResult &gt;()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00882">world::WorldSyncManager::SyncComplete&lt; objects::UBTournament &gt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c35ea42de84a329d2a56bf8e00efce7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;objects::UBTournament&gt; world::WorldSyncManager::mUBTournament</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pointer to the currently active UB tournament. </p>
+
+<p>Definition at line <a class="el" href="WorldSyncManager_8h_source.html#l00259">259</a> of file <a class="el" href="WorldSyncManager_8h_source.html">WorldSyncManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="WorldSyncManager_8cpp_source.html#l00074">Initialize()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l01258">SyncExistingChannelRecords()</a>, <a class="el" href="WorldSyncManager_8cpp_source.html#l00820">world::WorldSyncManager::SyncComplete&lt; objects::UBResult &gt;()</a>, and <a class="el" href="WorldSyncManager_8cpp_source.html#l00882">world::WorldSyncManager::SyncComplete&lt; objects::UBTournament &gt;()</a>.</p>
 
 </div>
 </div>

@@ -149,6 +149,14 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:ac5c2d92e5b67c590344fdb4bc1a4105c"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1ServerConstants.html#ac5c2d92e5b67c590344fdb4bc1a4105c">ToIntegerArray</a> (std::array&lt; T, SIZE &gt; &amp;prop, std::list&lt; <a class="el" href="classlibcomp_1_1String.html">String</a> &gt; values)</td></tr>
 <tr class="memdesc:ac5c2d92e5b67c590344fdb4bc1a4105c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to load a list of strings into an array.  <a href="#ac5c2d92e5b67c590344fdb4bc1a4105c">More...</a><br /></td></tr>
 <tr class="separator:ac5c2d92e5b67c590344fdb4bc1a4105c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1433af67b82e5d829201bfab9614fa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:add1433af67b82e5d829201bfab9614fa"><td class="memTemplItemLeft" align="right" valign="top">static std::list&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1ServerConstants.html#add1433af67b82e5d829201bfab9614fa">ToIntegerRange</a> (const std::string &amp;value, <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &amp;success)</td></tr>
+<tr class="memdesc:add1433af67b82e5d829201bfab9614fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to load convert a string to a list of numeric ranges and return in a list.  <a href="#add1433af67b82e5d829201bfab9614fa">More...</a><br /></td></tr>
+<tr class="separator:add1433af67b82e5d829201bfab9614fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60257793e56eb4197471af5de54086cd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a60257793e56eb4197471af5de54086cd"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1ServerConstants.html#a60257793e56eb4197471af5de54086cd">ToIntegerSet</a> (std::set&lt; T &gt; &amp;prop, std::list&lt; <a class="el" href="classlibcomp_1_1String.html">String</a> &gt; values)</td></tr>
+<tr class="memdesc:a60257793e56eb4197471af5de54086cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to load a list of strings into a set.  <a href="#a60257793e56eb4197471af5de54086cd">More...</a><br /></td></tr>
+<tr class="separator:a60257793e56eb4197471af5de54086cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -185,9 +193,9 @@ Static Private Attributes</h2></td></tr>
 <p>Get a constant reference to the server side constants data. </p>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the server side constants data </dd></dl>
 
-<p>Definition at line <a class="el" href="ServerConstants_8cpp_source.html#l00804">804</a> of file <a class="el" href="ServerConstants_8cpp_source.html">ServerConstants.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ServerConstants_8cpp_source.html#l01291">1291</a> of file <a class="el" href="ServerConstants_8cpp_source.html">ServerConstants.cpp</a>.</p>
 
-<p>References <a class="el" href="ServerConstants_8h_source.html#l00425">sConstants</a>.</p>
+<p>References <a class="el" href="ServerConstants_8h_source.html#l00773">sConstants</a>.</p>
 
 </div>
 </div>
@@ -224,9 +232,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ServerConstants_8cpp_source.html#l00045">45</a> of file <a class="el" href="ServerConstants_8cpp_source.html">ServerConstants.cpp</a>.</p>
 
-<p>References <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="ServerConstants_8h_source.html#l00227">libcomp::ServerConstants::Data::CAMEO_MAP</a>, <a class="el" href="ServerConstants_8h_source.html#l00230">libcomp::ServerConstants::Data::CLAN_FORM_MAP</a>, <a class="el" href="ServerConstants_8h_source.html#l00233">libcomp::ServerConstants::Data::CLAN_LEVEL_SKILLS</a>, <a class="el" href="ServerConstants_8h_source.html#l00237">libcomp::ServerConstants::Data::DEMON_BOOK_BONUS</a>, <a class="el" href="ServerConstants_8h_source.html#l00240">libcomp::ServerConstants::Data::DEPO_MAP_DEMON</a>, <a class="el" href="ServerConstants_8h_source.html#l00243">libcomp::ServerConstants::Data::DEPO_MAP_ITEM</a>, <a class="el" href="ServerConstants_8h_source.html#l00246">libcomp::ServerConstants::Data::DISASSEMBLY_ITEMS</a>, <a class="el" href="ServerConstants_8h_source.html#l00063">libcomp::ServerConstants::Data::ELEMENTAL_1_FLAEMIS</a>, <a class="el" href="ServerConstants_8h_source.html#l00066">libcomp::ServerConstants::Data::ELEMENTAL_2_AQUANS</a>, <a class="el" href="ServerConstants_8h_source.html#l00069">libcomp::ServerConstants::Data::ELEMENTAL_3_AEROS</a>, <a class="el" href="ServerConstants_8h_source.html#l00072">libcomp::ServerConstants::Data::ELEMENTAL_4_ERTHYS</a>, <a class="el" href="ServerConstants_8h_source.html#l00249">libcomp::ServerConstants::Data::EQUIP_MOD_EDIT_ITEMS</a>, <a class="el" href="ServerConstants_8h_source.html#l00075">libcomp::ServerConstants::Data::EVENT_MENU_COMP_SHOP</a>, <a class="el" href="ServerConstants_8h_source.html#l00078">libcomp::ServerConstants::Data::EVENT_MENU_DEMON_DEPO</a>, <a class="el" href="ServerConstants_8h_source.html#l00081">libcomp::ServerConstants::Data::EVENT_MENU_ITEM_DEPO</a>, <a class="el" href="ServerConstants_8h_source.html#l00252">libcomp::ServerConstants::Data::FUSION_BOOST_SKILLS</a>, <a class="el" href="ServerConstants_8h_source.html#l00255">libcomp::ServerConstants::Data::FUSION_BOOST_STATUSES</a>, <a class="el" href="ServerConstants_8h_source.html#l00096">libcomp::ServerConstants::Data::ITEM_BALM_OF_LIFE</a>, <a class="el" href="ServerConstants_8h_source.html#l00099">libcomp::ServerConstants::Data::ITEM_KREUZ</a>, <a class="el" href="ServerConstants_8h_source.html#l00084">libcomp::ServerConstants::Data::ITEM_MACCA</a>, <a class="el" href="ServerConstants_8h_source.html#l00087">libcomp::ServerConstants::Data::ITEM_MACCA_NOTE</a>, <a class="el" href="ServerConstants_8h_source.html#l00093">libcomp::ServerConstants::Data::ITEM_MAG_PRESSER</a>, <a class="el" href="ServerConstants_8h_source.html#l00090">libcomp::ServerConstants::Data::ITEM_MAGNETITE</a>, <a class="el" href="ServerConstants_8h_source.html#l00102">libcomp::ServerConstants::Data::ITEM_RBLOODSTONE</a>, <a class="el" href="ServerConstants_8h_source.html#l00364">LoadInteger()</a>, <a class="el" href="ServerConstants_8h_source.html#l00404">LoadIntegerMap()</a>, <a class="el" href="ServerConstants_8cpp_source.html#l00844">LoadKeyValueStrings()</a>, <a class="el" href="ServerConstants_8cpp_source.html#l00809">LoadString()</a>, <a class="el" href="ServerConstants_8cpp_source.html#l00815">LoadStringList()</a>, <a class="el" href="Log_8h_source.html#l00264">LOG_ERROR</a>, <a class="el" href="ServerConstants_8h_source.html#l00105">libcomp::ServerConstants::Data::MENU_FUSION_KZ</a>, <a class="el" href="ServerConstants_8h_source.html#l00108">libcomp::ServerConstants::Data::MENU_REPAIR_KZ</a>, <a class="el" href="ServerConstants_8h_source.html#l00111">libcomp::ServerConstants::Data::MENU_TRIFUSION</a>, <a class="el" href="ServerConstants_8h_source.html#l00114">libcomp::ServerConstants::Data::MENU_TRIFUSION_KZ</a>, <a class="el" href="ServerConstants_8h_source.html#l00425">sConstants</a>, <a class="el" href="ServerConstants_8h_source.html#l00117">libcomp::ServerConstants::Data::SKILL_CAMEO</a>, <a class="el" href="ServerConstants_8h_source.html#l00120">libcomp::ServerConstants::Data::SKILL_CLAN_FORM</a>, <a class="el" href="ServerConstants_8h_source.html#l00123">libcomp::ServerConstants::Data::SKILL_DCM</a>, <a class="el" href="ServerConstants_8h_source.html#l00126">libcomp::ServerConstants::Data::SKILL_EQUIP_ITEM</a>, <a class="el" href="ServerConstants_8h_source.html#l00129">libcomp::ServerConstants::Data::SKILL_EQUIP_MOD_EDIT</a>, <a class="el" href="ServerConstants_8h_source.html#l00132">libcomp::ServerConstants::Data::SKILL_EXPERT_CLASS_DOWN</a>, <a class="el" href="ServerConstants_8h_source.html#l00135">libcomp::ServerConstants::Data::SKILL_EXPERT_FORGET</a>, <a class="el" href="ServerConstants_8h_source.html#l00138">libcomp::ServerConstants::Data::SKILL_EXPERT_FORGET_ALL</a>, <a class="el" href="ServerConstants_8h_source.html#l00141">libcomp::ServerConstants::Data::SKILL_EXPERT_RANK_DOWN</a>, <a class="el" href="ServerConstants_8h_source.html#l00144">libcomp::ServerConstants::Data::SKILL_FAM_UP</a>, <a class="el" href="ServerConstants_8h_source.html#l00147">libcomp::ServerConstants::Data::SKILL_ITEM_FAM_UP</a>, <a class="el" href="ServerConstants_8h_source.html#l00153">libcomp::ServerConstants::Data::SKILL_MAX_DURABILITY_FIXED</a>, <a class="el" href="ServerConstants_8h_source.html#l00156">libcomp::ServerConstants::Data::SKILL_MAX_DURABILITY_RANDOM</a>, <a class="el" href="ServerConstants_8h_source.html#l00150">libcomp::ServerConstants::Data::SKILL_MOOCH</a>, <a class="el" href="ServerConstants_8h_source.html#l00159">libcomp::ServerConstants::Data::SKILL_RESPEC</a>, <a class="el" href="ServerConstants_8h_source.html#l00162">libcomp::ServerConstants::Data::SKILL_REST</a>, <a class="el" href="ServerConstants_8h_source.html#l00166">libcomp::ServerConstants::Data::SKILL_SPECIAL_REQUEST</a>, <a class="el" href="ServerConstants_8h_source.html#l00169">libcomp::ServerConstants::Data::SKILL_STORE_DEMON</a>, <a class="el" href="ServerConstants_8h_source.html#l00172">libcomp::ServerConstants::Data::SKILL_SUICIDE</a>, <a class="el" href="ServerConstants_8h_source.html#l00175">libcomp::ServerConstants::Data::SKILL_SUMMON_DEMON</a>, <a class="el" href="ServerConstants_8h_source.html#l00178">libcomp::ServerConstants::Data::SKILL_TRAESTO</a>, <a class="el" href="ServerConstants_8h_source.html#l00182">libcomp::ServerConstants::Data::SKILL_TRAESTO_ARCADIA</a>, <a class="el" href="ServerConstants_8h_source.html#l00186">libcomp::ServerConstants::Data::SKILL_TRAESTO_KAKYOJO</a>, <a class="el" href="ServerConstants_8h_source.html#l00190">libcomp::ServerConstants::Data::SKILL_TRAESTO_SOUHONZAN</a>, <a class="el" href="ServerConstants_8h_source.html#l00193">libcomp::ServerConstants::Data::SKILL_WARP</a>, <a class="el" href="ServerConstants_8h_source.html#l00196">libcomp::ServerConstants::Data::SKILL_XP_PARTNER</a>, <a class="el" href="ServerConstants_8h_source.html#l00199">libcomp::ServerConstants::Data::SKILL_XP_SELF</a>, <a class="el" href="ServerConstants_8h_source.html#l00260">libcomp::ServerConstants::Data::SLOT_MOD_ITEMS</a>, <a class="el" href="CString_8cpp_source.html#l00364">libcomp::String::Split()</a>, <a class="el" href="ServerConstants_8h_source.html#l00202">libcomp::ServerConstants::Data::STATUS_DEATH</a>, <a class="el" href="ServerConstants_8h_source.html#l00205">libcomp::ServerConstants::Data::STATUS_SUMMON_SYNC_1</a>, <a class="el" href="ServerConstants_8h_source.html#l00208">libcomp::ServerConstants::Data::STATUS_SUMMON_SYNC_2</a>, <a class="el" href="ServerConstants_8h_source.html#l00211">libcomp::ServerConstants::Data::STATUS_SUMMON_SYNC_3</a>, <a class="el" href="ServerConstants_8h_source.html#l00263">libcomp::ServerConstants::Data::SYNTH_ADJUSTMENTS</a>, <a class="el" href="ServerConstants_8h_source.html#l00266">libcomp::ServerConstants::Data::SYNTH_SKILLS</a>, <a class="el" href="ServerConstants_8h_source.html#l00322">ToIntegerArray()</a>, <a class="el" href="ServerConstants_8h_source.html#l00269">libcomp::ServerConstants::Data::TRIFUSION_SPECIAL_DARK</a>, <a class="el" href="ServerConstants_8h_source.html#l00274">libcomp::ServerConstants::Data::TRIFUSION_SPECIAL_ELEMENTAL</a>, <a class="el" href="ServerConstants_8h_source.html#l00277">libcomp::ServerConstants::Data::VA_ADD_ITEM</a>, <a class="el" href="ServerConstants_8h_source.html#l00214">libcomp::ServerConstants::Data::VALUABLE_DEVIL_BOOK_V1</a>, <a class="el" href="ServerConstants_8h_source.html#l00217">libcomp::ServerConstants::Data::VALUABLE_DEVIL_BOOK_V2</a>, <a class="el" href="ServerConstants_8h_source.html#l00220">libcomp::ServerConstants::Data::VALUABLE_MATERIAL_TANK</a>, and <a class="el" href="ServerConstants_8h_source.html#l00223">libcomp::ServerConstants::Data::ZONE_DEFAULT</a>.</p>
+<p>References <a class="el" href="ServerConstants_8h_source.html#l00444">libcomp::ServerConstants::Data::ADJUSTMENT_ITEMS</a>, <a class="el" href="ServerConstants_8h_source.html#l00447">libcomp::ServerConstants::Data::ADJUSTMENT_SKILLS</a>, <a class="el" href="ServerConstants_8h_source.html#l00450">libcomp::ServerConstants::Data::BARTER_COOLDOWNS</a>, <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="ServerConstants_8h_source.html#l00454">libcomp::ServerConstants::Data::CAMEO_MAP</a>, <a class="el" href="ServerConstants_8h_source.html#l00457">libcomp::ServerConstants::Data::CLAN_FORM_MAP</a>, <a class="el" href="ServerConstants_8h_source.html#l00460">libcomp::ServerConstants::Data::CLAN_LEVEL_SKILLS</a>, <a class="el" href="ServerConstants_8h_source.html#l00464">libcomp::ServerConstants::Data::DEMON_BOOK_BONUS</a>, <a class="el" href="ServerConstants_8h_source.html#l00468">libcomp::ServerConstants::Data::DEMON_CRYSTALS</a>, <a class="el" href="ServerConstants_8h_source.html#l00472">libcomp::ServerConstants::Data::DEMON_FUSION_SKILLS</a>, <a class="el" href="ServerConstants_8h_source.html#l00475">libcomp::ServerConstants::Data::DEMON_QUEST_XP</a>, <a class="el" href="ServerConstants_8h_source.html#l00478">libcomp::ServerConstants::Data::DEPO_MAP_DEMON</a>, <a class="el" href="ServerConstants_8h_source.html#l00481">libcomp::ServerConstants::Data::DEPO_MAP_ITEM</a>, <a class="el" href="ServerConstants_8h_source.html#l00063">libcomp::ServerConstants::Data::ELEMENTAL_1_FLAEMIS</a>, <a class="el" href="ServerConstants_8h_source.html#l00066">libcomp::ServerConstants::Data::ELEMENTAL_2_AQUANS</a>, <a class="el" href="ServerConstants_8h_source.html#l00069">libcomp::ServerConstants::Data::ELEMENTAL_3_AEROS</a>, <a class="el" href="ServerConstants_8h_source.html#l00072">libcomp::ServerConstants::Data::ELEMENTAL_4_ERTHYS</a>, <a class="el" href="ServerConstants_8h_source.html#l00484">libcomp::ServerConstants::Data::EQUIP_MOD_EDIT_ITEMS</a>, <a class="el" href="ServerConstants_8h_source.html#l00487">libcomp::ServerConstants::Data::FUSION_BOOST_SKILLS</a>, <a class="el" href="ServerConstants_8h_source.html#l00490">libcomp::ServerConstants::Data::FUSION_BOOST_STATUSES</a>, <a class="el" href="ServerConstants_8h_source.html#l00087">libcomp::ServerConstants::Data::ITEM_BALM_OF_LIFE</a>, <a class="el" href="ServerConstants_8h_source.html#l00090">libcomp::ServerConstants::Data::ITEM_BALM_OF_LIFE_DEMON</a>, <a class="el" href="ServerConstants_8h_source.html#l00093">libcomp::ServerConstants::Data::ITEM_KREUZ</a>, <a class="el" href="ServerConstants_8h_source.html#l00075">libcomp::ServerConstants::Data::ITEM_MACCA</a>, <a class="el" href="ServerConstants_8h_source.html#l00078">libcomp::ServerConstants::Data::ITEM_MACCA_NOTE</a>, <a class="el" href="ServerConstants_8h_source.html#l00084">libcomp::ServerConstants::Data::ITEM_MAG_PRESSER</a>, <a class="el" href="ServerConstants_8h_source.html#l00081">libcomp::ServerConstants::Data::ITEM_MAGNETITE</a>, <a class="el" href="ServerConstants_8h_source.html#l00096">libcomp::ServerConstants::Data::ITEM_RBLOODSTONE</a>, <a class="el" href="ServerConstants_8h_source.html#l00493">libcomp::ServerConstants::Data::LEVELUP_STATUSES</a>, <a class="el" href="ServerConstants_8h_source.html#l00649">LoadInteger()</a>, <a class="el" href="ServerConstants_8h_source.html#l00689">LoadIntegerMap()</a>, <a class="el" href="ServerConstants_8cpp_source.html#l01331">LoadKeyValueStrings()</a>, <a class="el" href="ServerConstants_8cpp_source.html#l01296">LoadString()</a>, <a class="el" href="ServerConstants_8cpp_source.html#l01302">LoadStringList()</a>, <a class="el" href="Log_8h_source.html#l00370">LOG_ERROR</a>, <a class="el" href="ServerConstants_8h_source.html#l00099">libcomp::ServerConstants::Data::MENU_BAZAAR</a>, <a class="el" href="ServerConstants_8h_source.html#l00102">libcomp::ServerConstants::Data::MENU_COMP_SHOP</a>, <a class="el" href="ServerConstants_8h_source.html#l00105">libcomp::ServerConstants::Data::MENU_CULTURE</a>, <a class="el" href="ServerConstants_8h_source.html#l00108">libcomp::ServerConstants::Data::MENU_DEMON_DEPO</a>, <a class="el" href="ServerConstants_8h_source.html#l00111">libcomp::ServerConstants::Data::MENU_FUSION_KZ</a>, <a class="el" href="ServerConstants_8h_source.html#l00114">libcomp::ServerConstants::Data::MENU_ITEM_DEPO</a>, <a class="el" href="ServerConstants_8h_source.html#l00117">libcomp::ServerConstants::Data::MENU_ITIME</a>, <a class="el" href="ServerConstants_8h_source.html#l00120">libcomp::ServerConstants::Data::MENU_REPAIR_KZ</a>, <a class="el" href="ServerConstants_8h_source.html#l00123">libcomp::ServerConstants::Data::MENU_TRIFUSION</a>, <a class="el" href="ServerConstants_8h_source.html#l00126">libcomp::ServerConstants::Data::MENU_TRIFUSION_KZ</a>, <a class="el" href="ServerConstants_8h_source.html#l00129">libcomp::ServerConstants::Data::MENU_UB_RANKING</a>, <a class="el" href="ServerConstants_8h_source.html#l00132">libcomp::ServerConstants::Data::MENU_WEB_GAME</a>, <a class="el" href="ServerConstants_8h_source.html#l00135">libcomp::ServerConstants::Data::MITAMA_1_ARAMITAMA</a>, <a class="el" href="ServerConstants_8h_source.html#l00138">libcomp::ServerConstants::Data::MITAMA_2_NIGIMITAMA</a>, <a class="el" href="ServerConstants_8h_source.html#l00141">libcomp::ServerConstants::Data::MITAMA_3_KUSHIMITAMA</a>, <a class="el" href="ServerConstants_8h_source.html#l00144">libcomp::ServerConstants::Data::MITAMA_4_SAKIMITAMA</a>, <a class="el" href="ServerConstants_8h_source.html#l00147">libcomp::ServerConstants::Data::MITAMA_SET_BOOST</a>, <a class="el" href="ServerConstants_8h_source.html#l00497">libcomp::ServerConstants::Data::QUEST_BONUS</a>, <a class="el" href="ServerConstants_8h_source.html#l00505">libcomp::ServerConstants::Data::RATE_SCALING_ITEMS</a>, <a class="el" href="ServerConstants_8h_source.html#l00508">libcomp::ServerConstants::Data::REUNION_EXTRACT_ITEMS</a>, <a class="el" href="ServerConstants_8h_source.html#l00511">libcomp::ServerConstants::Data::ROLLBACK_PG_ITEMS</a>, <a class="el" href="ServerConstants_8h_source.html#l00773">sConstants</a>, <a class="el" href="ServerConstants_8h_source.html#l00150">libcomp::ServerConstants::Data::SKILL_ABS_DAMAGE</a>, <a class="el" href="ServerConstants_8h_source.html#l00153">libcomp::ServerConstants::Data::SKILL_CAMEO</a>, <a class="el" href="ServerConstants_8h_source.html#l00156">libcomp::ServerConstants::Data::SKILL_CLAN_FORM</a>, <a class="el" href="ServerConstants_8h_source.html#l00159">libcomp::ServerConstants::Data::SKILL_CLOAK</a>, <a class="el" href="ServerConstants_8h_source.html#l00162">libcomp::ServerConstants::Data::SKILL_CULTURE_SLOT_UP</a>, <a class="el" href="ServerConstants_8h_source.html#l00165">libcomp::ServerConstants::Data::SKILL_CULTURE_UP</a>, <a class="el" href="ServerConstants_8h_source.html#l00168">libcomp::ServerConstants::Data::SKILL_DCM</a>, <a class="el" href="ServerConstants_8h_source.html#l00171">libcomp::ServerConstants::Data::SKILL_DEMON_FUSION</a>, <a class="el" href="ServerConstants_8h_source.html#l00174">libcomp::ServerConstants::Data::SKILL_DEMON_FUSION_EXECUTE</a>, <a class="el" href="ServerConstants_8h_source.html#l00177">libcomp::ServerConstants::Data::SKILL_DESPAWN</a>, <a class="el" href="ServerConstants_8h_source.html#l00180">libcomp::ServerConstants::Data::SKILL_DESUMMON</a>, <a class="el" href="ServerConstants_8h_source.html#l00183">libcomp::ServerConstants::Data::SKILL_DIASPORA_QUAKE</a>, <a class="el" href="ServerConstants_8h_source.html#l00186">libcomp::ServerConstants::Data::SKILL_DIGITALIZE</a>, <a class="el" href="ServerConstants_8h_source.html#l00189">libcomp::ServerConstants::Data::SKILL_DIGITALIZE_BREAK</a>, <a class="el" href="ServerConstants_8h_source.html#l00192">libcomp::ServerConstants::Data::SKILL_DIGITALIZE_CANCEL</a>, <a class="el" href="ServerConstants_8h_source.html#l00195">libcomp::ServerConstants::Data::SKILL_DURABILITY_DOWN</a>, <a class="el" href="ServerConstants_8h_source.html#l00198">libcomp::ServerConstants::Data::SKILL_EQUIP_ITEM</a>, <a class="el" href="ServerConstants_8h_source.html#l00201">libcomp::ServerConstants::Data::SKILL_EQUIP_MOD_EDIT</a>, <a class="el" href="ServerConstants_8h_source.html#l00204">libcomp::ServerConstants::Data::SKILL_ESTOMA</a>, <a class="el" href="ServerConstants_8h_source.html#l00207">libcomp::ServerConstants::Data::SKILL_EXPERT_CLASS_DOWN</a>, <a class="el" href="ServerConstants_8h_source.html#l00210">libcomp::ServerConstants::Data::SKILL_EXPERT_FORGET</a>, <a class="el" href="ServerConstants_8h_source.html#l00213">libcomp::ServerConstants::Data::SKILL_EXPERT_FORGET_ALL</a>, <a class="el" href="ServerConstants_8h_source.html#l00216">libcomp::ServerConstants::Data::SKILL_EXPERT_RANK_DOWN</a>, <a class="el" href="ServerConstants_8h_source.html#l00219">libcomp::ServerConstants::Data::SKILL_FAM_UP</a>, <a class="el" href="ServerConstants_8h_source.html#l00222">libcomp::ServerConstants::Data::SKILL_GEM_COST</a>, <a class="el" href="ServerConstants_8h_source.html#l00225">libcomp::ServerConstants::Data::SKILL_GENDER_RESTRICTED</a>, <a class="el" href="ServerConstants_8h_source.html#l00228">libcomp::ServerConstants::Data::SKILL_HP_DEPENDENT</a>, <a class="el" href="ServerConstants_8h_source.html#l00231">libcomp::ServerConstants::Data::SKILL_HP_MP_MIN</a>, <a class="el" href="ServerConstants_8h_source.html#l00234">libcomp::ServerConstants::Data::SKILL_ITEM_FAM_UP</a>, <a class="el" href="ServerConstants_8h_source.html#l00237">libcomp::ServerConstants::Data::SKILL_LIBERAMA</a>, <a class="el" href="ServerConstants_8h_source.html#l00240">libcomp::ServerConstants::Data::SKILL_LNC_DAMAGE</a>, <a class="el" href="ServerConstants_8h_source.html#l00243">libcomp::ServerConstants::Data::SKILL_MAX_DURABILITY_FIXED</a>, <a class="el" href="ServerConstants_8h_source.html#l00246">libcomp::ServerConstants::Data::SKILL_MAX_DURABILITY_RANDOM</a>, <a class="el" href="ServerConstants_8h_source.html#l00249">libcomp::ServerConstants::Data::SKILL_MINION_DESPAWN</a>, <a class="el" href="ServerConstants_8h_source.html#l00252">libcomp::ServerConstants::Data::SKILL_MINION_SPAWN</a>, <a class="el" href="ServerConstants_8h_source.html#l00255">libcomp::ServerConstants::Data::SKILL_MOOCH</a>, <a class="el" href="ServerConstants_8h_source.html#l00258">libcomp::ServerConstants::Data::SKILL_MOUNT</a>, <a class="el" href="ServerConstants_8h_source.html#l00261">libcomp::ServerConstants::Data::SKILL_PIERCE</a>, <a class="el" href="ServerConstants_8h_source.html#l00264">libcomp::ServerConstants::Data::SKILL_RANDOM_ITEM</a>, <a class="el" href="ServerConstants_8h_source.html#l00267">libcomp::ServerConstants::Data::SKILL_RANDOMIZE</a>, <a class="el" href="ServerConstants_8h_source.html#l00270">libcomp::ServerConstants::Data::SKILL_RESPEC</a>, <a class="el" href="ServerConstants_8h_source.html#l00273">libcomp::ServerConstants::Data::SKILL_REST</a>, <a class="el" href="ServerConstants_8h_source.html#l00276">libcomp::ServerConstants::Data::SKILL_SLEEP_RESTRICTED</a>, <a class="el" href="ServerConstants_8h_source.html#l00279">libcomp::ServerConstants::Data::SKILL_SPAWN</a>, <a class="el" href="ServerConstants_8h_source.html#l00282">libcomp::ServerConstants::Data::SKILL_SPAWN_ZONE</a>, <a class="el" href="ServerConstants_8h_source.html#l00286">libcomp::ServerConstants::Data::SKILL_SPECIAL_REQUEST</a>, <a class="el" href="ServerConstants_8h_source.html#l00290">libcomp::ServerConstants::Data::SKILL_STAT_SUM_DAMAGE</a>, <a class="el" href="ServerConstants_8h_source.html#l00294">libcomp::ServerConstants::Data::SKILL_STATUS_DIRECT</a>, <a class="el" href="ServerConstants_8h_source.html#l00298">libcomp::ServerConstants::Data::SKILL_STATUS_LIMITED</a>, <a class="el" href="ServerConstants_8h_source.html#l00302">libcomp::ServerConstants::Data::SKILL_STATUS_RANDOM</a>, <a class="el" href="ServerConstants_8h_source.html#l00306">libcomp::ServerConstants::Data::SKILL_STATUS_RANDOM2</a>, <a class="el" href="ServerConstants_8h_source.html#l00310">libcomp::ServerConstants::Data::SKILL_STATUS_RESTRICTED</a>, <a class="el" href="ServerConstants_8h_source.html#l00314">libcomp::ServerConstants::Data::SKILL_STATUS_SCALE</a>, <a class="el" href="ServerConstants_8h_source.html#l00317">libcomp::ServerConstants::Data::SKILL_STORE_DEMON</a>, <a class="el" href="ServerConstants_8h_source.html#l00320">libcomp::ServerConstants::Data::SKILL_SUICIDE</a>, <a class="el" href="ServerConstants_8h_source.html#l00323">libcomp::ServerConstants::Data::SKILL_SUMMON_DEMON</a>, <a class="el" href="ServerConstants_8h_source.html#l00327">libcomp::ServerConstants::Data::SKILL_TAUNT</a>, <a class="el" href="ServerConstants_8h_source.html#l00330">libcomp::ServerConstants::Data::SKILL_TRAESTO</a>, <a class="el" href="ServerConstants_8h_source.html#l00334">libcomp::ServerConstants::Data::SKILL_TRAESTO_ARCADIA</a>, <a class="el" href="ServerConstants_8h_source.html#l00338">libcomp::ServerConstants::Data::SKILL_TRAESTO_DSHINJUKU</a>, <a class="el" href="ServerConstants_8h_source.html#l00342">libcomp::ServerConstants::Data::SKILL_TRAESTO_KAKYOJO</a>, <a class="el" href="ServerConstants_8h_source.html#l00346">libcomp::ServerConstants::Data::SKILL_TRAESTO_NAKANO_BDOMAIN</a>, <a class="el" href="ServerConstants_8h_source.html#l00350">libcomp::ServerConstants::Data::SKILL_TRAESTO_SOUHONZAN</a>, <a class="el" href="ServerConstants_8h_source.html#l00353">libcomp::ServerConstants::Data::SKILL_WARP</a>, <a class="el" href="ServerConstants_8h_source.html#l00356">libcomp::ServerConstants::Data::SKILL_XP_PARTNER</a>, <a class="el" href="ServerConstants_8h_source.html#l00359">libcomp::ServerConstants::Data::SKILL_XP_SELF</a>, <a class="el" href="ServerConstants_8h_source.html#l00362">libcomp::ServerConstants::Data::SKILL_ZONE_RESTRICTED</a>, <a class="el" href="ServerConstants_8h_source.html#l00365">libcomp::ServerConstants::Data::SKILL_ZONE_RESTRICTED_ITEM</a>, <a class="el" href="ServerConstants_8h_source.html#l00368">libcomp::ServerConstants::Data::SKILL_ZONE_TARGET_ALL</a>, <a class="el" href="ServerConstants_8h_source.html#l00515">libcomp::ServerConstants::Data::SPIRIT_FUSION_BOOST</a>, <a class="el" href="CString_8cpp_source.html#l00364">libcomp::String::Split()</a>, <a class="el" href="ServerConstants_8h_source.html#l00371">libcomp::ServerConstants::Data::STATUS_BIKE</a>, <a class="el" href="ServerConstants_8h_source.html#l00374">libcomp::ServerConstants::Data::STATUS_CLOAK</a>, <a class="el" href="ServerConstants_8h_source.html#l00377">libcomp::ServerConstants::Data::STATUS_COMP_TUNING</a>, <a class="el" href="ServerConstants_8h_source.html#l00380">libcomp::ServerConstants::Data::STATUS_DEATH</a>, <a class="el" href="ServerConstants_8h_source.html#l00383">libcomp::ServerConstants::Data::STATUS_DEMON_ONLY</a>, <a class="el" href="ServerConstants_8h_source.html#l00386">libcomp::ServerConstants::Data::STATUS_DEMON_QUEST_ACTIVE</a>, <a class="el" href="ServerConstants_8h_source.html#l00389">libcomp::ServerConstants::Data::STATUS_DIGITALIZE</a>, <a class="el" href="ServerConstants_8h_source.html#l00392">libcomp::ServerConstants::Data::STATUS_DIGITALIZE_COOLDOWN</a>, <a class="el" href="ServerConstants_8h_source.html#l00395">libcomp::ServerConstants::Data::STATUS_MOUNT</a>, <a class="el" href="ServerConstants_8h_source.html#l00398">libcomp::ServerConstants::Data::STATUS_MOUNT_SUPER</a>, <a class="el" href="ServerConstants_8h_source.html#l00401">libcomp::ServerConstants::Data::STATUS_SLEEP</a>, <a class="el" href="ServerConstants_8h_source.html#l00404">libcomp::ServerConstants::Data::STATUS_SUMMON_SYNC_1</a>, <a class="el" href="ServerConstants_8h_source.html#l00407">libcomp::ServerConstants::Data::STATUS_SUMMON_SYNC_2</a>, <a class="el" href="ServerConstants_8h_source.html#l00410">libcomp::ServerConstants::Data::STATUS_SUMMON_SYNC_3</a>, <a class="el" href="ServerConstants_8h_source.html#l00519">libcomp::ServerConstants::Data::SYNTH_SKILLS</a>, <a class="el" href="ServerConstants_8h_source.html#l00522">libcomp::ServerConstants::Data::TEAM_STATUS_COOLDOWN</a>, <a class="el" href="ServerConstants_8h_source.html#l00526">libcomp::ServerConstants::Data::TEAM_VALUABLES</a>, <a class="el" href="ServerConstants_8h_source.html#l00582">ToIntegerArray()</a>, <a class="el" href="ServerConstants_8h_source.html#l00613">ToIntegerSet()</a>, <a class="el" href="ServerConstants_8h_source.html#l00413">libcomp::ServerConstants::Data::TOKUSEI_BIKE_BOOST</a>, <a class="el" href="ServerConstants_8h_source.html#l00417">libcomp::ServerConstants::Data::TOKUSEI_MAGIC_CONTROL_COST</a>, <a class="el" href="ServerConstants_8h_source.html#l00529">libcomp::ServerConstants::Data::TRIFUSION_SPECIAL_DARK</a>, <a class="el" href="ServerConstants_8h_source.html#l00534">libcomp::ServerConstants::Data::TRIFUSION_SPECIAL_ELEMENTAL</a>, <a class="el" href="ServerConstants_8h_source.html#l00537">libcomp::ServerConstants::Data::VA_ADD_ITEMS</a>, <a class="el" href="ServerConstants_8h_source.html#l00426">libcomp::ServerConstants::Data::VALUABLE_DEMON_FORCE</a>, <a class="el" href="ServerConstants_8h_source.html#l00420">libcomp::ServerConstants::Data::VALUABLE_DEVIL_BOOK_V1</a>, <a class="el" href="ServerConstants_8h_source.html#l00423">libcomp::ServerConstants::Data::VALUABLE_DEVIL_BOOK_V2</a>, <a class="el" href="ServerConstants_8h_source.html#l00429">libcomp::ServerConstants::Data::VALUABLE_DIGITALIZE_LV1</a>, <a class="el" href="ServerConstants_8h_source.html#l00432">libcomp::ServerConstants::Data::VALUABLE_DIGITALIZE_LV2</a>, <a class="el" href="ServerConstants_8h_source.html#l00435">libcomp::ServerConstants::Data::VALUABLE_FUSION_GAUGE</a>, <a class="el" href="ServerConstants_8h_source.html#l00438">libcomp::ServerConstants::Data::VALUABLE_MATERIAL_TANK</a>, and <a class="el" href="ServerConstants_8h_source.html#l00441">libcomp::ServerConstants::Data::ZONE_DEFAULT</a>.</p>
 
-<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00061">libcomp::BaseServer::Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00062">libcomp::BaseServer::Initialize()</a>.</p>
 
 </div>
 </div>
@@ -274,7 +282,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="ServerConstants_8h_source.html#l00384">384</a> of file <a class="el" href="ServerConstants_8h_source.html">ServerConstants.h</a>.</p>
+<p>Definition at line <a class="el" href="ServerConstants_8h_source.html#l00669">669</a> of file <a class="el" href="ServerConstants_8h_source.html">ServerConstants.h</a>.</p>
 
 <p>References <a class="el" href="CString_8h_source.html#l00545">libcomp::String::ToDecimal()</a>.</p>
 
@@ -324,7 +332,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="ServerConstants_8h_source.html#l00364">364</a> of file <a class="el" href="ServerConstants_8h_source.html">ServerConstants.h</a>.</p>
+<p>Definition at line <a class="el" href="ServerConstants_8h_source.html#l00649">649</a> of file <a class="el" href="ServerConstants_8h_source.html">ServerConstants.h</a>.</p>
 
 <p>References <a class="el" href="CString_8h_source.html#l00453">libcomp::String::ToInteger()</a>.</p>
 
@@ -376,7 +384,7 @@ template&lt;typename K , typename V &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="ServerConstants_8h_source.html#l00404">404</a> of file <a class="el" href="ServerConstants_8h_source.html">ServerConstants.h</a>.</p>
+<p>Definition at line <a class="el" href="ServerConstants_8h_source.html#l00689">689</a> of file <a class="el" href="ServerConstants_8h_source.html">ServerConstants.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ServerConstants_8cpp_source.html#l00045">Initialize()</a>.</p>
 
@@ -424,7 +432,7 @@ template&lt;typename K , typename V &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="ServerConstants_8cpp_source.html#l00844">844</a> of file <a class="el" href="ServerConstants_8cpp_source.html">ServerConstants.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ServerConstants_8cpp_source.html#l01331">1331</a> of file <a class="el" href="ServerConstants_8cpp_source.html">ServerConstants.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="ServerConstants_8cpp_source.html#l00045">Initialize()</a>.</p>
 
@@ -472,7 +480,7 @@ template&lt;typename K , typename V &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="ServerConstants_8cpp_source.html#l00809">809</a> of file <a class="el" href="ServerConstants_8cpp_source.html">ServerConstants.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ServerConstants_8cpp_source.html#l01296">1296</a> of file <a class="el" href="ServerConstants_8cpp_source.html">ServerConstants.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="ServerConstants_8cpp_source.html#l00045">Initialize()</a>.</p>
 
@@ -520,7 +528,7 @@ template&lt;typename K , typename V &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="ServerConstants_8cpp_source.html#l00815">815</a> of file <a class="el" href="ServerConstants_8cpp_source.html">ServerConstants.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ServerConstants_8cpp_source.html#l01302">1302</a> of file <a class="el" href="ServerConstants_8cpp_source.html">ServerConstants.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="ServerConstants_8cpp_source.html#l00045">Initialize()</a>.</p>
 
@@ -570,7 +578,107 @@ template&lt;typename T , std::size_t SIZE&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="ServerConstants_8h_source.html#l00322">322</a> of file <a class="el" href="ServerConstants_8h_source.html">ServerConstants.h</a>.</p>
+<p>Definition at line <a class="el" href="ServerConstants_8h_source.html#l00582">582</a> of file <a class="el" href="ServerConstants_8h_source.html">ServerConstants.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ServerConstants_8cpp_source.html#l00045">Initialize()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add1433af67b82e5d829201bfab9614fa"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::list&lt;T&gt; libcomp::ServerConstants::ToIntegerRange </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &amp;&#160;</td>
+          <td class="paramname"><em>success</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Utility function to load convert a string to a list of numeric ranges and return in a list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td><a class="el" href="classlibcomp_1_1String.html" title="UTF-8 encoded string object. ">String</a> of numeric ranges </td></tr>
+    <tr><td class="paramname">success</td><td>Output success indicator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>List of converted numbers or empty if failure occurs </dd></dl>
+
+<p>Definition at line <a class="el" href="ServerConstants_8h_source.html#l00717">717</a> of file <a class="el" href="ServerConstants_8h_source.html">ServerConstants.h</a>.</p>
+
+<p>References <a class="el" href="CString_8cpp_source.html#l00364">libcomp::String::Split()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a60257793e56eb4197471af5de54086cd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> libcomp::ServerConstants::ToIntegerSet </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>prop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::list&lt; <a class="el" href="classlibcomp_1_1String.html">String</a> &gt;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Utility function to load a list of strings into a set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prop</td><td>Set of integers to assign the value to </td></tr>
+    <tr><td class="paramname">values</td><td>List of strings reference to pull the values from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
+
+<p>Definition at line <a class="el" href="ServerConstants_8h_source.html#l00613">613</a> of file <a class="el" href="ServerConstants_8h_source.html">ServerConstants.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ServerConstants_8cpp_source.html#l00045">Initialize()</a>.</p>
 
@@ -597,9 +705,9 @@ template&lt;typename T , std::size_t SIZE&gt; </div>
 
 <p>Container for all server side constants. </p>
 
-<p>Definition at line <a class="el" href="ServerConstants_8h_source.html#l00425">425</a> of file <a class="el" href="ServerConstants_8h_source.html">ServerConstants.h</a>.</p>
+<p>Definition at line <a class="el" href="ServerConstants_8h_source.html#l00773">773</a> of file <a class="el" href="ServerConstants_8h_source.html">ServerConstants.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ServerConstants_8cpp_source.html#l00804">GetConstants()</a>, and <a class="el" href="ServerConstants_8cpp_source.html#l00045">Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="ServerConstants_8cpp_source.html#l01291">GetConstants()</a>, and <a class="el" href="ServerConstants_8cpp_source.html#l00045">Initialize()</a>.</p>
 
 </div>
 </div>

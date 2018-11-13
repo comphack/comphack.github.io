@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['idle',['IDLE',['../namespacechannel.html#a4a9fbe80b5390309b933949e4db1da48a44d90ba02e1b0b1214d3e834149db70e',1,'channel']]]
+  ['fail',['FAIL',['../namespacechannel.html#aa9598e1d4a83d6f9b2700703051aa8baa63c93bb833e169b295480c3d44ebc8e7',1,'channel']]]
 ];

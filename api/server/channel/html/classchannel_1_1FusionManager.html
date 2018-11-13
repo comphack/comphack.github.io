@@ -116,6 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a932d7c7debfde482ef714b85e34131fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1FusionManager.html#a932d7c7debfde482ef714b85e34131fb">EndExchange</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">channel::ChannelClientConnection</a> &gt; &amp;client)</td></tr>
 <tr class="memdesc:a932d7c7debfde482ef714b85e34131fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">End any fusion based exchanges the player is a part of.  <a href="#a932d7c7debfde482ef714b85e34131fb">More...</a><br /></td></tr>
 <tr class="separator:a932d7c7debfde482ef714b85e34131fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a8f34ba227bd147b6887209ba17c203"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1FusionManager.html#a3a8f34ba227bd147b6887209ba17c203">GetMitamaIndex</a> (uint32_t mitamaType, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &amp;found)</td></tr>
+<tr class="memdesc:a3a8f34ba227bd147b6887209ba17c203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mitama index of the supplied type that matches the FusionTables entries.  <a href="#a3a8f34ba227bd147b6887209ba17c203">More...</a><br /></td></tr>
+<tr class="separator:a3a8f34ba227bd147b6887209ba17c203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89e84dda80ea20c0d0e6bad209ba5223"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1FusionManager.html#a89e84dda80ea20c0d0e6bad209ba5223">GetResultDemon</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">ChannelClientConnection</a> &gt; &amp;client, int64_t demonID1, int64_t demonID2, int64_t demonID3)</td></tr>
 <tr class="memdesc:a89e84dda80ea20c0d0e6bad209ba5223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the resulting demon based upon the supplied demon IDs.  <a href="#a89e84dda80ea20c0d0e6bad209ba5223">More...</a><br /></td></tr>
 <tr class="separator:a89e84dda80ea20c0d0e6bad209ba5223"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +143,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a36493205970cac07a18a2a1c5a86f555"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1FusionManager.html#a36493205970cac07a18a2a1c5a86f555">GetElementalType</a> (size_t elementalIndex) const </td></tr>
 <tr class="memdesc:a36493205970cac07a18a2a1c5a86f555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the demon type ID associated to an elemental index from the manager.  <a href="#a36493205970cac07a18a2a1c5a86f555">More...</a><br /></td></tr>
 <tr class="separator:a36493205970cac07a18a2a1c5a86f555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ffbcf3b19eb393d891f23814f47f959"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1FusionManager.html#a2ffbcf3b19eb393d891f23814f47f959">GetMitamaType</a> (size_t mitamaIndex) const </td></tr>
+<tr class="memdesc:a2ffbcf3b19eb393d891f23814f47f959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the demon type ID associated to a mitama index from the manager.  <a href="#a2ffbcf3b19eb393d891f23814f47f959">More...</a><br /></td></tr>
+<tr class="separator:a2ffbcf3b19eb393d891f23814f47f959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bcf7a1e9f4b4e8fe291ffc631268f4c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1FusionManager.html#a8bcf7a1e9f4b4e8fe291ffc631268f4c">GetRaceIndex</a> (uint8_t raceID, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &amp;found)</td></tr>
 <tr class="memdesc:a8bcf7a1e9f4b4e8fe291ffc631268f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the race index of the supplied race that matches the FusionTables entries.  <a href="#a8bcf7a1e9f4b4e8fe291ffc631268f4c">More...</a><br /></td></tr>
 <tr class="separator:a8bcf7a1e9f4b4e8fe291ffc631268f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,7 +192,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l00069">69</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l00070">70</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -213,7 +219,7 @@ Private Attributes</h2></td></tr>
 
 <p>Clean up the <a class="el" href="classchannel_1_1FusionManager.html" title="Manager class used to handle all demon fusion based actions. ">FusionManager</a>. </p>
 
-<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l00074">74</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l00075">75</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -240,9 +246,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01052">1052</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01099">1099</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelClientConnection_8cpp_source.html#l00058">channel::ChannelClientConnection::BroadcastPacket()</a>, <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="el" href="FusionManager_8h_source.html#l00201">mServer</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab4d39238a6c6aa34b51481009eabad10">libcomp::Packet::WriteS32Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#acb7bad5ab1a3bdba98aaa900a456a4a7">libcomp::Packet::WriteS8()</a>.</p>
+<p>References <a class="el" href="ChannelClientConnection_8cpp_source.html#l00064">channel::ChannelClientConnection::BroadcastPacket()</a>, <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="FusionManager_8h_source.html#l00217">mServer</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab4d39238a6c6aa34b51481009eabad10">libcomp::Packet::WriteS32Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#acb7bad5ab1a3bdba98aaa900a456a4a7">libcomp::Packet::WriteS8()</a>.</p>
 
 </div>
 </div>
@@ -295,7 +301,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Calculated level </dd></dl>
 
-<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01547">1547</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01684">1684</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l00411">GetResultDemon()</a>.</p>
 
@@ -357,9 +363,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Type ID of the result demon </dd></dl>
 
-<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01595">1595</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01745">1745</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
-<p>References <a class="el" href="FusionTables_8cpp_source.html#l01333">FUSION_ELEMENTAL_ADJUST</a>, <a class="el" href="FusionManager_8cpp_source.html#l01640">GetElementalIndex()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01624">GetRaceIndex()</a>, and <a class="el" href="FusionManager_8cpp_source.html#l01656">RankUpDown()</a>.</p>
+<p>References <a class="el" href="FusionTables_8cpp_source.html#l01333">FUSION_ELEMENTAL_ADJUST</a>, <a class="el" href="FusionManager_8cpp_source.html#l01790">GetElementalIndex()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01774">GetRaceIndex()</a>, and <a class="el" href="FusionManager_8cpp_source.html#l01822">RankUpDown()</a>.</p>
 
 <p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l00411">GetResultDemon()</a>.</p>
 
@@ -407,11 +413,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Elemental index for the supplied type </dd></dl>
 
-<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01640">1640</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01790">1790</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
-<p>References <a class="el" href="FusionManager_8cpp_source.html#l01582">GetElementalType()</a>.</p>
+<p>References <a class="el" href="FusionManager_8cpp_source.html#l01719">GetElementalType()</a>.</p>
 
-<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l01595">GetElementalFuseResult()</a>.</p>
+<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l01745">GetElementalFuseResult()</a>, and <a class="el" href="FusionManager_8cpp_source.html#l00411">GetResultDemon()</a>.</p>
 
 </div>
 </div>
@@ -446,11 +452,92 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Type ID of the result demon </dd></dl>
 
-<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01582">1582</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01719">1719</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
 <p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html#a693b6ba29a440fa12e37272cebccce29">SVR_CONST</a>.</p>
 
-<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l01640">GetElementalIndex()</a>, and <a class="el" href="FusionManager_8cpp_source.html#l00411">GetResultDemon()</a>.</p>
+<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l01790">GetElementalIndex()</a>, and <a class="el" href="FusionManager_8cpp_source.html#l00411">GetResultDemon()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a8f34ba227bd147b6887209ba17c203"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t FusionManager::GetMitamaIndex </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>mitamaType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &amp;&#160;</td>
+          <td class="paramname"><em>found</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the mitama index of the supplied type that matches the FusionTables entries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mitamaType</td><td>Demon type to calculate </td></tr>
+    <tr><td class="paramname">found</td><td>Output parameter indicating if the index was found </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Mitama index for the supplied type </dd></dl>
+
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01806">1806</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+
+<p>References <a class="el" href="FusionManager_8cpp_source.html#l01732">GetMitamaType()</a>.</p>
+
+<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l00411">GetResultDemon()</a>, and <a class="el" href="FusionManager_8cpp_source.html#l01193">ProcessFusion()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ffbcf3b19eb393d891f23814f47f959"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t FusionManager::GetMitamaType </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>mitamaIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the demon type ID associated to a mitama index from the manager. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mitamaIndex</td><td>Mitama index to retrieve </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Type ID of the result demon </dd></dl>
+
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01732">1732</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html#a693b6ba29a440fa12e37272cebccce29">SVR_CONST</a>.</p>
+
+<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l01806">GetMitamaIndex()</a>, and <a class="el" href="FusionManager_8cpp_source.html#l00411">GetResultDemon()</a>.</p>
 
 </div>
 </div>
@@ -496,11 +583,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Race index for the supplied race </dd></dl>
 
-<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01624">1624</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01774">1774</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
 <p>References <a class="el" href="FusionTables_8cpp_source.html#l00034">FUSION_RACE_MAP</a>.</p>
 
-<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l01595">GetElementalFuseResult()</a>, and <a class="el" href="FusionManager_8cpp_source.html#l00411">GetResultDemon()</a>.</p>
+<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l01745">GetElementalFuseResult()</a>, and <a class="el" href="FusionManager_8cpp_source.html#l00411">GetResultDemon()</a>.</p>
 
 </div>
 </div>
@@ -551,13 +638,12 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Type ID of the demon that would be fused </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>: support mitama result fusions </dd></dl>
 
 <p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l00411">411</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
-<p>References <a class="el" href="FusionTables_8cpp_source.html#l00034">FUSION_RACE_MAP</a>, <a class="el" href="ClientState_8cpp_source.html#l00225">channel::ClientState::GetAccountUID()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01547">GetAdjustedLevelSum()</a>, <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00086">channel::ClientState::GetDemonState()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01595">GetElementalFuseResult()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01582">GetElementalType()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#ad81a63b214eccb267d246000c33233a7">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00168">channel::ClientState::GetObjectUUID()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01624">GetRaceIndex()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="FusionManager_8h_source.html#l00201">mServer</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html#a693b6ba29a440fa12e37272cebccce29">SVR_CONST</a>, <a class="el" href="FusionTables_8cpp_source.html#l01419">TRIFUSION_FAMILY_MAP</a>, and <a class="el" href="FusionTables_8cpp_source.html#l01380">TRIFUSION_RACE_PRIORITY</a>.</p>
+<p>References <a class="el" href="CharacterManager_8cpp_source.html#l05244">channel::CharacterManager::ConvertIDToMaskValues()</a>, <a class="el" href="FusionTables_8cpp_source.html#l01371">FUSION_ELEMENTAL_MITAMA</a>, <a class="el" href="FusionTables_8cpp_source.html#l00034">FUSION_RACE_MAP</a>, <a class="el" href="ClientState_8cpp_source.html#l00272">channel::ClientState::GetAccountUID()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01684">GetAdjustedLevelSum()</a>, <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00089">channel::ClientState::GetDemonState()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01745">GetElementalFuseResult()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01790">GetElementalIndex()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01719">GetElementalType()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01806">GetMitamaIndex()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01732">GetMitamaType()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#ad81a63b214eccb267d246000c33233a7">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00204">channel::ClientState::GetObjectUUID()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01774">GetRaceIndex()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="FusionManager_8h_source.html#l00217">mServer</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html#a693b6ba29a440fa12e37272cebccce29">SVR_CONST</a>, <a class="el" href="FusionTables_8cpp_source.html#l01427">TRIFUSION_FAMILY_MAP</a>, and <a class="el" href="FusionTables_8cpp_source.html#l01388">TRIFUSION_RACE_PRIORITY</a>.</p>
 
-<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l01146">ProcessFusion()</a>.</p>
+<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l01193">ProcessFusion()</a>.</p>
 
 </div>
 </div>
@@ -603,9 +689,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the definition of the result demon </dd></dl>
 
-<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01554">1554</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01691">1691</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, and <a class="el" href="FusionManager_8h_source.html#l00201">mServer</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, and <a class="el" href="FusionManager_8h_source.html#l00217">mServer</a>.</p>
 
 </div>
 </div>
@@ -657,9 +743,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the fusion succeeded, false if it did not </dd></dl>
 
-<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l00078">78</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l00079">79</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
-<p>References <a class="el" href="FusionManager_8cpp_source.html#l01146">ProcessFusion()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab4d39238a6c6aa34b51481009eabad10">libcomp::Packet::WriteS32Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ad995a520b3f035ccb13860b4801666f6">libcomp::Packet::WriteU32Little()</a>.</p>
+<p>References <a class="el" href="FusionManager_8cpp_source.html#l01193">ProcessFusion()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab4d39238a6c6aa34b51481009eabad10">libcomp::Packet::WriteS32Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ad995a520b3f035ccb13860b4801666f6">libcomp::Packet::WriteU32Little()</a>.</p>
 
 </div>
 </div>
@@ -718,9 +804,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the fusion succeeded, false if it did not </dd></dl>
 
-<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l00096">96</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l00097">97</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelClientConnection_8cpp_source.html#l00058">channel::ChannelClientConnection::BroadcastPacket()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a18fe5254e32ac247d9a254f0c713d6b6">libcomp::Packet::Clear()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DatabaseChangeSet.html#a03a7037cb49e525b13310dfd97f469dc">libcomp::DatabaseChangeSet::Create()</a>, <a class="el" href="ClientState_8cpp_source.html#l00225">channel::ClientState::GetAccountUID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#ad81a63b214eccb267d246000c33233a7">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00168">channel::ClientState::GetObjectUUID()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="FusionManager_8h_source.html#l00201">mServer</a>, <a class="el" href="FusionManager_8cpp_source.html#l01146">ProcessFusion()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Randomizer_8h.html#a0d86a2bee95f162f95aacb8451b3078f">RNG</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a392884f8baef58e545c9559e75733e69">libcomp::Packet::Seek()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a760041f152f57ce4fdd5580c841bf41e">libcomp::Packet::Size()</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html#a693b6ba29a440fa12e37272cebccce29">SVR_CONST</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab4d39238a6c6aa34b51481009eabad10">libcomp::Packet::WriteS32Little()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ae476b10477f85075b3405083205eb1d9">libcomp::Packet::WriteS64Little()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#acb7bad5ab1a3bdba98aaa900a456a4a7">libcomp::Packet::WriteS8()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a170e6cd6bb4f2a3f28d2a892beb633d8">libcomp::Packet::WriteU16Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ad995a520b3f035ccb13860b4801666f6">libcomp::Packet::WriteU32Little()</a>.</p>
+<p>References <a class="el" href="ChannelClientConnection_8cpp_source.html#l00064">channel::ChannelClientConnection::BroadcastPacket()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a18fe5254e32ac247d9a254f0c713d6b6">libcomp::Packet::Clear()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DatabaseChangeSet.html#a03a7037cb49e525b13310dfd97f469dc">libcomp::DatabaseChangeSet::Create()</a>, <a class="el" href="ClientState_8cpp_source.html#l00272">channel::ClientState::GetAccountUID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#ad81a63b214eccb267d246000c33233a7">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00204">channel::ClientState::GetObjectUUID()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="FusionManager_8h_source.html#l00217">mServer</a>, <a class="el" href="FusionManager_8cpp_source.html#l01193">ProcessFusion()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Randomizer_8h.html#a0d86a2bee95f162f95aacb8451b3078f">RNG</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a392884f8baef58e545c9559e75733e69">libcomp::Packet::Seek()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a760041f152f57ce4fdd5580c841bf41e">libcomp::Packet::Size()</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html#a693b6ba29a440fa12e37272cebccce29">SVR_CONST</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab4d39238a6c6aa34b51481009eabad10">libcomp::Packet::WriteS32Little()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ae476b10477f85075b3405083205eb1d9">libcomp::Packet::WriteS64Little()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#acb7bad5ab1a3bdba98aaa900a456a4a7">libcomp::Packet::WriteS8()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a170e6cd6bb4f2a3f28d2a892beb633d8">libcomp::Packet::WriteU16Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ad995a520b3f035ccb13860b4801666f6">libcomp::Packet::WriteU32Little()</a>.</p>
 
 </div>
 </div>
@@ -794,11 +880,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Error code associated to the reason why any failure may have ocurred: 1 = Normal failure 0 = No failure -1 = Generic/criteria error -2 = Calculated fusion failed -3 = Supplied cost type is not valid -4 = Cost could not be paid </dd></dl>
 
-<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01146">1146</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01193">1193</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DatabaseChangeSet.html#a03a7037cb49e525b13310dfd97f469dc">libcomp::DatabaseChangeSet::Create()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Constants_8h.html#adee38e7f85d82ec4971303901fa7c08e">EXPERTISE_DEMONOLOGY</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Constants_8h.html#a57748d83c764997f90aad04fbe1274b8">EXPERTISE_FUSION</a>, <a class="el" href="FusionTables_8cpp_source.html#l01371">FUSION_FAMILIARITY_BONUS</a>, <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#ad81a63b214eccb267d246000c33233a7">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00168">channel::ClientState::GetObjectUUID()</a>, <a class="el" href="FusionManager_8cpp_source.html#l00411">GetResultDemon()</a>, <a class="el" href="FusionTables_8cpp_source.html#l01773">INHERITENCE_SKILL_MAP</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Constants_8h.html#a6e2192c16f72548be45da2d807927146">MAX_INHERIT_SKILL</a>, <a class="el" href="FusionManager_8h_source.html#l00201">mServer</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#a997d0624a8767a4c14052e7d82384a95">libcomp::PersistentObject::New()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Randomizer_8h.html#a0d86a2bee95f162f95aacb8451b3078f">RNG</a>, <a class="el" href="ClientState_8cpp_source.html#l00210">channel::ClientState::SetObjectID()</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html#a693b6ba29a440fa12e37272cebccce29">SVR_CONST</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DatabaseChangeSet.html#a03a7037cb49e525b13310dfd97f469dc">libcomp::DatabaseChangeSet::Create()</a>, <a class="el" href="FusionTables_8cpp_source.html#l01379">FUSION_FAMILIARITY_BONUS</a>, <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01806">GetMitamaIndex()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#ad81a63b214eccb267d246000c33233a7">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00190">channel::ClientState::GetObjectID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00204">channel::ClientState::GetObjectUUID()</a>, <a class="el" href="FusionManager_8cpp_source.html#l00411">GetResultDemon()</a>, <a class="el" href="FusionTables_8cpp_source.html#l01781">INHERITENCE_SKILL_MAP</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="FusionManager_8h_source.html#l00217">mServer</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#a997d0624a8767a4c14052e7d82384a95">libcomp::PersistentObject::New()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Randomizer_8h.html#a0d86a2bee95f162f95aacb8451b3078f">RNG</a>, <a class="el" href="ClientState_8cpp_source.html#l00246">channel::ClientState::SetObjectID()</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html#a693b6ba29a440fa12e37272cebccce29">SVR_CONST</a>.</p>
 
-<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l00078">HandleFusion()</a>, and <a class="el" href="FusionManager_8cpp_source.html#l00096">HandleTriFusion()</a>.</p>
+<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l00079">HandleFusion()</a>, and <a class="el" href="FusionManager_8cpp_source.html#l00097">HandleTriFusion()</a>.</p>
 
 </div>
 </div>
@@ -851,11 +937,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Demon type directly above or below the supplied type </dd></dl>
 
-<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01656">1656</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8cpp_source.html#l01822">1822</a> of file <a class="el" href="FusionManager_8cpp_source.html">FusionManager.cpp</a>.</p>
 
-<p>References <a class="el" href="FusionManager_8h_source.html#l00201">mServer</a>.</p>
+<p>References <a class="el" href="FusionManager_8h_source.html#l00217">mServer</a>.</p>
 
-<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l01595">GetElementalFuseResult()</a>.</p>
+<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l01745">GetElementalFuseResult()</a>.</p>
 
 </div>
 </div>
@@ -880,9 +966,9 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the channel server. </p>
 
-<p>Definition at line <a class="el" href="FusionManager_8h_source.html#l00201">201</a> of file <a class="el" href="FusionManager_8h_source.html">FusionManager.h</a>.</p>
+<p>Definition at line <a class="el" href="FusionManager_8h_source.html#l00217">217</a> of file <a class="el" href="FusionManager_8h_source.html">FusionManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l01052">EndExchange()</a>, <a class="el" href="FusionManager_8cpp_source.html#l00411">GetResultDemon()</a>, <a class="el" href="FusionManager_8cpp_source.html#l00096">HandleTriFusion()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01146">ProcessFusion()</a>, and <a class="el" href="FusionManager_8cpp_source.html#l01656">RankUpDown()</a>.</p>
+<p>Referenced by <a class="el" href="FusionManager_8cpp_source.html#l01099">EndExchange()</a>, <a class="el" href="FusionManager_8cpp_source.html#l00411">GetResultDemon()</a>, <a class="el" href="FusionManager_8cpp_source.html#l00097">HandleTriFusion()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01193">ProcessFusion()</a>, and <a class="el" href="FusionManager_8cpp_source.html#l01822">RankUpDown()</a>.</p>
 
 </div>
 </div>

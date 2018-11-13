@@ -166,8 +166,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>sConstants
 : <a class="el" href="classlibcomp_1_1ServerConstants.html#ad411b32b502551b5ecfde514755dd71c">libcomp::ServerConstants</a>
 </li>
-<li>ScriptEngine()
-: <a class="el" href="classlibcomp_1_1ScriptEngine.html#ab3ba834e1c57de7d41601309a3d8f9fd">libcomp::ScriptEngine</a>
+<li>ScriptEngine
+: <a class="el" href="classlibcomp_1_1PersistentObject.html#a6732e7667ed86d03ec878927893dd0ed">libcomp::PersistentObject</a>
+, <a class="el" href="classlibcomp_1_1ScriptEngine.html#ab3ba834e1c57de7d41601309a3d8f9fd">libcomp::ScriptEngine</a>
 </li>
 <li>sData
 : <a class="el" href="classlibcomp_1_1ObjectReference.html#aaef1118a66e55c48f8d39874136bfc74">libcomp::ObjectReference&lt; T &gt;</a>
@@ -198,6 +199,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>seekpos()
 : <a class="el" href="classlibcomp_1_1BasicPacketStream.html#af53b8f70ac7179034a9b7eaad4a29ff6">libcomp::BasicPacketStream</a>
 , <a class="el" href="classlibcomp_1_1VectorStream.html#ac5e152fd36ff925affcbbbedd8f1299b">libcomp::VectorStream&lt; CharT, TraitsT &gt;</a>
+</li>
+<li>Self()
+: <a class="el" href="classlibcomp_1_1ScriptEngine.html#a80b469e80ac3265d16a37270e53a2421">libcomp::ScriptEngine</a>
 </li>
 <li>SendMessage()
 : <a class="el" href="classlibcomp_1_1EncryptedConnection.html#aa7d6bf506641a73026eaa89968b85d5b">libcomp::EncryptedConnection</a>
@@ -246,7 +250,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classlibcomp_1_1TcpConnection.html#affe1bdf86d9c2d760eb1240a358c93d1">libcomp::TcpConnection</a>
 </li>
 <li>SetFrom()
-: <a class="el" href="classlibcomp_1_1DBExplicitUpdate.html#a26d129eecb45cc8be5e4beefaa5ee31a">libcomp::DBExplicitUpdate</a>
+: <a class="el" href="classlibcomp_1_1DBExplicitUpdate.html#a0acc1539139af367de853604d7933706">libcomp::DBExplicitUpdate</a>
+</li>
+<li>SetListenPort()
+: <a class="el" href="classlibcomp_1_1LobbyConnection.html#a9393c1e95179ad12a14de593dc02cf28">libcomp::LobbyConnection</a>
+</li>
+<li>SetLogCompression()
+: <a class="el" href="classlibcomp_1_1Log.html#aeec8d587b0867acdbe40f22e1b88f3d7">libcomp::Log</a>
 </li>
 <li>SetLogFileTimestampsEnabled()
 : <a class="el" href="classlibcomp_1_1Log.html#afe340ed8397ffdc4ec2f60822cb44d47">libcomp::Log</a>
@@ -256,6 +266,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SetLogPath()
 : <a class="el" href="classlibcomp_1_1Log.html#a22f355e39b7e8a836e28b61ccb957df9">libcomp::Log</a>
+</li>
+<li>SetLogRotationCount()
+: <a class="el" href="classlibcomp_1_1Log.html#a70e8e46ec454bbc90f60bf4deab9339c">libcomp::Log</a>
+</li>
+<li>SetLogRotationDays()
+: <a class="el" href="classlibcomp_1_1Log.html#a8a282ebb184a26d43d3bf47dfe1cb044">libcomp::Log</a>
+</li>
+<li>SetLogRotationEnabled()
+: <a class="el" href="classlibcomp_1_1Log.html#acf5533faca72d12024afcbf3f5d6547d">libcomp::Log</a>
 </li>
 <li>SetMessageQueue()
 : <a class="el" href="classlibcomp_1_1EncryptedConnection.html#a7cc9f7a06a333be489a024caed63a89b">libcomp::EncryptedConnection</a>
@@ -276,9 +295,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classlibcomp_1_1EncryptedConnection.html#a011ace39e63134c0d6af7e4cde3b5417">libcomp::EncryptedConnection</a>
 </li>
 <li>Setup()
-: <a class="el" href="classlibcomp_1_1Database.html#afa6813e428800934d4d9dcc2b4294a50">libcomp::Database</a>
-, <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#aa7955d165954d90d264d9d7c8330d942">libcomp::DatabaseMariaDB</a>
-, <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#ac6bdf3d6c21fa6758d1af8c6dbc01705">libcomp::DatabaseSQLite3</a>
+: <a class="el" href="classlibcomp_1_1Database.html#a1b5ea8359282d4bd844d865b9d46e463">libcomp::Database</a>
+, <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a8d322da49ab7325fb553b3772e70dba8">libcomp::DatabaseMariaDB</a>
+, <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#ae85a63597720bb2d034b1ba98a552e87">libcomp::DatabaseSQLite3</a>
 </li>
 <li>SetUUID()
 : <a class="el" href="classlibcomp_1_1ObjectReference.html#a6576f36b458f3836fac3bd67ab849d30">libcomp::ObjectReference&lt; T &gt;</a>
@@ -357,20 +376,62 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structIMAGE__OPTIONAL__HEADER32.html#a9cc569a8685edb25641d078517b11204">PIMAGE_OPTIONAL_HEADER32</a>
 , <a class="el" href="structIMAGE__OPTIONAL__HEADER64.html#ad85549a6d0940ab9153f6f05c8d309a8">PIMAGE_OPTIONAL_HEADER64</a>
 </li>
+<li>SKILL_ABS_DAMAGE
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#afad1b12207b4c33d7857959a21d25b27">libcomp::ServerConstants::Data</a>
+</li>
 <li>SKILL_CAMEO
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a9b12c06adc885f9b9cce772e30507d5e">libcomp::ServerConstants::Data</a>
 </li>
 <li>SKILL_CLAN_FORM
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a3d12990138da65243e42bbfd7dbd093e">libcomp::ServerConstants::Data</a>
 </li>
+<li>SKILL_CLOAK
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a5795566b22e972f2612b260fed78991c">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_CULTURE_SLOT_UP
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#ae323d28249216537c355f677cd13cf58">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_CULTURE_UP
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#abaff97486e8c6bb5766c65f94d3dd710">libcomp::ServerConstants::Data</a>
+</li>
 <li>SKILL_DCM
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a6d78f6489fde6e6e2303a547eef70165">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_DEMON_FUSION
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a307dd756d79fb16f96a042146951d69f">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_DEMON_FUSION_EXECUTE
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a504b7be2afe3a1c925fc4851d9bba9ba">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_DESPAWN
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a64a736195522af1f83bd20caca01170b">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_DESUMMON
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a81acdfe75f79f7021a2f96dfcf85b346">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_DIASPORA_QUAKE
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#af87386e8d2bd7ba08a70870803bb53ac">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_DIGITALIZE
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#aad3b170e7b9a4eb4ddf6d7ab7f89a459">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_DIGITALIZE_BREAK
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#ac8b9d894d9dc8172bfe692edda0bdf74">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_DIGITALIZE_CANCEL
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a063d04b2b4084a496d621768e8b80ac0">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_DURABILITY_DOWN
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a130723b4441c93580367b2b721f414c9">libcomp::ServerConstants::Data</a>
 </li>
 <li>SKILL_EQUIP_ITEM
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a2e46f914d09aa9b9697ff97176fbd83a">libcomp::ServerConstants::Data</a>
 </li>
 <li>SKILL_EQUIP_MOD_EDIT
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a24ee3733bef291d86ccd632e87f8624e">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_ESTOMA
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a5f8380eecd0690feee63511940290faf">libcomp::ServerConstants::Data</a>
 </li>
 <li>SKILL_EXPERT_CLASS_DOWN
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#ae583ad54f33f3d78e0b641aaf32c389c">libcomp::ServerConstants::Data</a>
@@ -387,8 +448,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SKILL_FAM_UP
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#aa1c965bf52a218e43dd48aecd9e1737a">libcomp::ServerConstants::Data</a>
 </li>
+<li>SKILL_GEM_COST
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a9295031b07628bd114976d9165ff4d3e">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_GENDER_RESTRICTED
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#aea79e8e52e504b56e498d593866b730e">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_HP_DEPENDENT
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a2c56d1b5618ba213a4028c38f0938f1f">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_HP_MP_MIN
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a7b53b262f6f2f81c86697fd475d66810">libcomp::ServerConstants::Data</a>
+</li>
 <li>SKILL_ITEM_FAM_UP
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#aaae4533abbc7940676f1c559cd2ac8af">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_LIBERAMA
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a5861960c8cdf6dbe852c08e130f38fec">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_LNC_DAMAGE
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#afa46fbe000fa9f1d408938dd3aa03a49">libcomp::ServerConstants::Data</a>
 </li>
 <li>SKILL_MAX_DURABILITY_FIXED
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a5e64ef67a2d965d70569590fc2757345">libcomp::ServerConstants::Data</a>
@@ -396,8 +475,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SKILL_MAX_DURABILITY_RANDOM
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a8557b1684d725e0f00814bca1fbc23a5">libcomp::ServerConstants::Data</a>
 </li>
+<li>SKILL_MINION_DESPAWN
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a665756a167f2bb82d982e9aac172b8a2">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_MINION_SPAWN
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#adde51de2f46d39fecb331a6828784edf">libcomp::ServerConstants::Data</a>
+</li>
 <li>SKILL_MOOCH
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a99528cb7077f6fa0baad6c8f24d5303a">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_MOUNT
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a3f0a5d8849dc626411785368b4a6989e">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_PIERCE
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#ac54afb0bed9b4c2a5d84565487b8c9a8">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_RANDOM_ITEM
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a97891750b4278abe13c52c3885047236">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_RANDOMIZE
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a257f783688bb853b29d278c32f6bcbb1">libcomp::ServerConstants::Data</a>
 </li>
 <li>SKILL_RESPEC
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#ab1ea64a2099dd4961d8a5b9a16712f0d">libcomp::ServerConstants::Data</a>
@@ -405,8 +502,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SKILL_REST
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a9e33ba65998747b4d27966594e95988c">libcomp::ServerConstants::Data</a>
 </li>
+<li>SKILL_SLEEP_RESTRICTED
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a7de81f3af523d7c7ec8913aae443f97c">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_SPAWN
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#aa974ca7a74a25b2d5f8c6fa6e75168ab">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_SPAWN_ZONE
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#ae3533389f065fe5517d1eb76aacba938">libcomp::ServerConstants::Data</a>
+</li>
 <li>SKILL_SPECIAL_REQUEST
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#ad04ac3eef082a32a54800fbe633c9bc9">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_STAT_SUM_DAMAGE
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#aece8b1ea0df4a146382a3bad75bfb88e">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_STATUS_DIRECT
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a6f7d2f32a0d7ef80476c077f4e983637">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_STATUS_LIMITED
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a2b016d1397620730959b022eddfa3c3d">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_STATUS_RANDOM
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a61f88cae28cabce7de587cae25ee951e">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_STATUS_RANDOM2
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a951928a5efa7fe3195d561809f77b9c8">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_STATUS_RESTRICTED
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#aea2b1b9a9e2554d08d659b89e6889605">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_STATUS_SCALE
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#adffcef5120c49489a12afeff72fa74e6">libcomp::ServerConstants::Data</a>
 </li>
 <li>SKILL_STORE_DEMON
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#ae924375c38a5bd34fe00598109cd6bf8">libcomp::ServerConstants::Data</a>
@@ -417,14 +544,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SKILL_SUMMON_DEMON
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a91477becedd7a58eabcc5a763bf2933e">libcomp::ServerConstants::Data</a>
 </li>
+<li>SKILL_TAUNT
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#ae54ff7300203945b9377cab2bcf87330">libcomp::ServerConstants::Data</a>
+</li>
 <li>SKILL_TRAESTO
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a8268ec62587b8b0c40eac5a16cdb449a">libcomp::ServerConstants::Data</a>
 </li>
 <li>SKILL_TRAESTO_ARCADIA
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a72216bc7a706b4ce75b94ae719f6989d">libcomp::ServerConstants::Data</a>
 </li>
+<li>SKILL_TRAESTO_DSHINJUKU
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a0e6ec32a0fbf58779cae9547c17f682d">libcomp::ServerConstants::Data</a>
+</li>
 <li>SKILL_TRAESTO_KAKYOJO
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a30171985e192a4b5eb7ddbc6972c456d">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_TRAESTO_NAKANO_BDOMAIN
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a35ca55ddcd538251dacadbe12b10680e">libcomp::ServerConstants::Data</a>
 </li>
 <li>SKILL_TRAESTO_SOUHONZAN
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#ae0dee2d8b4b447de22597bae0617a5ac">libcomp::ServerConstants::Data</a>
@@ -438,11 +574,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SKILL_XP_SELF
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a4d26156bfd1fd57740c1e090ad68962a">libcomp::ServerConstants::Data</a>
 </li>
+<li>SKILL_ZONE_RESTRICTED
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a89201d71339f2bd35f380e0c99ffc1d4">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_ZONE_RESTRICTED_ITEM
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a79372c8326d62e55709a41f23bdf257d">libcomp::ServerConstants::Data</a>
+</li>
+<li>SKILL_ZONE_TARGET_ALL
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a23ed7319c1c86bb3aa22b854654f3479">libcomp::ServerConstants::Data</a>
+</li>
 <li>Skip()
 : <a class="el" href="classlibcomp_1_1ReadOnlyPacket.html#a0889d24e27f40dbb478c6b3ac5553091">libcomp::ReadOnlyPacket</a>
 </li>
-<li>SLOT_MOD_ITEMS
-: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a058ec05de4b797cfbb619758ea6fed71">libcomp::ServerConstants::Data</a>
+<li>SkipPadding()
+: <a class="el" href="classlibcomp_1_1Object.html#a49f887ec98e5f34bc5973815cfe780df">libcomp::Object</a>
 </li>
 <li>sNull
 : <a class="el" href="classlibcomp_1_1ObjectReference.html#adf9f1d171264310dc5d1e26aa9604180">libcomp::ObjectReference&lt; T &gt;</a>
@@ -457,6 +602,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SpawnThread()
 : <a class="el" href="classlibcomp_1_1SpawnThread.html#a9ba340bcb38908f82d6526e781222351">libcomp::SpawnThread</a>
 </li>
+<li>SPIRIT_FUSION_BOOST
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a013433ddc77ab911b38dc2bb6826e15d">libcomp::ServerConstants::Data</a>
+</li>
 <li>Split()
 : <a class="el" href="classlibcomp_1_1Packet.html#af4055b643ecda64de45c977499fc045a">libcomp::Packet</a>
 , <a class="el" href="classlibcomp_1_1String.html#a6ba6dc4f0d21634f10e48270c594fed7">libcomp::String</a>
@@ -466,8 +614,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>Start()
 : <a class="el" href="classlibcomp_1_1Child.html#acb217f21a02e6cc2322787500c43d1a2">libcomp::Child</a>
-, <a class="el" href="classlibcomp_1_1TcpServer.html#ad41e8f0ede0549eef18b2ecb769aca22">libcomp::TcpServer</a>
+, <a class="el" href="classlibcomp_1_1TcpServer.html#a11b85f7704e169be0147dc98faf09fb3">libcomp::TcpServer</a>
 , <a class="el" href="classlibcomp_1_1Worker.html#a128e7629843e40e2cc306a5e466aff64">libcomp::Worker</a>
+</li>
+<li>STATUS_BIKE
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a811518cdeb8720b2b747bd7dd6fce851">libcomp::ServerConstants::Data</a>
+</li>
+<li>STATUS_CLOAK
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a0b57418ff2be8e61d49d36e05b790be2">libcomp::ServerConstants::Data</a>
+</li>
+<li>STATUS_COMP_TUNING
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#aec6fc8f4d0a409e79a049f6dbc882a79">libcomp::ServerConstants::Data</a>
 </li>
 <li>STATUS_CONNECTED
 : <a class="el" href="classlibcomp_1_1TcpConnection.html#ac238c985bb979b6f49d28827cbe58796aefdd5a70d030589ff3d1762d0685670a">libcomp::TcpConnection</a>
@@ -478,11 +635,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>STATUS_DEATH
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a2d0482f267ec87c21e19784cda1ffdf6">libcomp::ServerConstants::Data</a>
 </li>
+<li>STATUS_DEMON_ONLY
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#aca324e72ebf251887340b5dbc03bed34">libcomp::ServerConstants::Data</a>
+</li>
+<li>STATUS_DEMON_QUEST_ACTIVE
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a9d2d011d6590b58859e42d745f6489de">libcomp::ServerConstants::Data</a>
+</li>
+<li>STATUS_DIGITALIZE
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#aca60b25186d6480a47db244bf86fdd7d">libcomp::ServerConstants::Data</a>
+</li>
+<li>STATUS_DIGITALIZE_COOLDOWN
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#abb2506d262c94a18afa604e727a7553c">libcomp::ServerConstants::Data</a>
+</li>
 <li>STATUS_ENCRYPTED
 : <a class="el" href="classlibcomp_1_1TcpConnection.html#ac238c985bb979b6f49d28827cbe58796a81e8ce69a6c1e48793288dc9da68327e">libcomp::TcpConnection</a>
 </li>
+<li>STATUS_MOUNT
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#af7ddfdc8dc0a402dd447d5fc71c6f2a8">libcomp::ServerConstants::Data</a>
+</li>
+<li>STATUS_MOUNT_SUPER
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#af45a229da928f4d4b551fad26d438a4d">libcomp::ServerConstants::Data</a>
+</li>
 <li>STATUS_NOT_CONNECTED
 : <a class="el" href="classlibcomp_1_1TcpConnection.html#ac238c985bb979b6f49d28827cbe58796ae7d750ffaa4bcfa717c958fb2af099d3">libcomp::TcpConnection</a>
+</li>
+<li>STATUS_SLEEP
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#ac0a744ede43da5f2c29ebf7367e77d0b">libcomp::ServerConstants::Data</a>
 </li>
 <li>STATUS_SUMMON_SYNC_1
 : <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a51c53533833ab07edee29b7321c77610">libcomp::ServerConstants::Data</a>
@@ -517,10 +695,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structIMAGE__OPTIONAL__HEADER64.html#a65da0207088cc8441bc1f0a3418ff6cd">PIMAGE_OPTIONAL_HEADER64</a>
 </li>
 <li>Subtract()
-: <a class="el" href="classlibcomp_1_1DBExplicitUpdate.html#ade856a05856f710504eac121c8563164">libcomp::DBExplicitUpdate</a>
+: <a class="el" href="classlibcomp_1_1DBExplicitUpdate.html#a2b190a5960d01b61c6ab5fc1b707697a">libcomp::DBExplicitUpdate</a>
 </li>
 <li>SubtractFrom()
-: <a class="el" href="classlibcomp_1_1DBExplicitUpdate.html#a9d4e68a5b2d53c8c88721d8230157aa5">libcomp::DBExplicitUpdate</a>
+: <a class="el" href="classlibcomp_1_1DBExplicitUpdate.html#a58bc6053bbeacc6070242718b399a212">libcomp::DBExplicitUpdate</a>
 </li>
 <li>SYNC_FAILED
 : <a class="el" href="classlibcomp_1_1DataSyncManager.html#a5e66dfb256049e24516c9928520bb8d1">libcomp::DataSyncManager</a>
@@ -531,17 +709,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SYNC_UPDATED
 : <a class="el" href="classlibcomp_1_1DataSyncManager.html#a1c43deeb6048ef7f636af1eda337c082">libcomp::DataSyncManager</a>
 </li>
+<li>SyncComplete()
+: <a class="el" href="classlibcomp_1_1DataSyncManager.html#ab43c814df2cac2fed883547777c78563">libcomp::DataSyncManager</a>
+</li>
+<li>SyncCompleteHandler
+: <a class="el" href="classlibcomp_1_1DataSyncManager_1_1ObjectConfig.html#ac6a64253fc19c67d61949d663a33a042">libcomp::DataSyncManager::ObjectConfig</a>
+</li>
 <li>SyncIncoming()
 : <a class="el" href="classlibcomp_1_1DataSyncManager.html#ab7246d10f1369580a1b82a3109bc4bde">libcomp::DataSyncManager</a>
 </li>
 <li>SyncOutgoing()
 : <a class="el" href="classlibcomp_1_1DataSyncManager.html#a12a62581bedb6a8dee61dc372724c353">libcomp::DataSyncManager</a>
 </li>
-<li>SYNTH_ADJUSTMENTS
-: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a1629bc50e44d454f9d838a3d63fab05e">libcomp::ServerConstants::Data</a>
+<li>SyncRecordRemoval()
+: <a class="el" href="classlibcomp_1_1DataSyncManager.html#a5e9b04ae7ab49ad1326bd3075df58289">libcomp::DataSyncManager</a>
+</li>
+<li>SyncRecordUpdate()
+: <a class="el" href="classlibcomp_1_1DataSyncManager.html#a42773e95bb4e0a106db3ac5189d3248c">libcomp::DataSyncManager</a>
 </li>
 <li>SYNTH_SKILLS
-: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#a796fff137753a6070f64bf171d7e0e4e">libcomp::ServerConstants::Data</a>
+: <a class="el" href="structlibcomp_1_1ServerConstants_1_1Data.html#ad70b737c4e25f3e95414aefdf7f8d0b1">libcomp::ServerConstants::Data</a>
 </li>
 </ul>
 </div><!-- contents -->

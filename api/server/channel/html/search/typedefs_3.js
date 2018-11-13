@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['enummap',['EnumMap',['../../../../libcomp/html/namespacelibcomp.html#a1442fc2425910540ae92c53a56c03cc6',1,'libcomp']]],
-  ['eventcomparemode',['EventCompareMode',['../EventManager_8h.html#a82224bae604284567c8ac6eae2113af5',1,'EventManager.h']]]
+  ['diasporabasestate',['DiasporaBaseState',['../namespacechannel.html#a3ef065d293b7767acc98de19c69c2b3a',1,'channel']]]
 ];

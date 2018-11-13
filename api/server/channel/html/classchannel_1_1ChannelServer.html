@@ -150,6 +150,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6913a3dafb51d079216fd53a98b0088"><td class="memItemLeft" align="right" valign="top">const std::list&lt; std::shared_ptr&lt; objects::RegisteredChannel &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#ab6913a3dafb51d079216fd53a98b0088">GetAllRegisteredChannels</a> ()</td></tr>
 <tr class="memdesc:ab6913a3dafb51d079216fd53a98b0088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all channels registerd on the channel's world (including itself).  <a href="#ab6913a3dafb51d079216fd53a98b0088">More...</a><br /></td></tr>
 <tr class="separator:ab6913a3dafb51d079216fd53a98b0088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a300eebcf7430536ee6e2f5d37d1e84a9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a300eebcf7430536ee6e2f5d37d1e84a9">GetChannelID</a> ()</td></tr>
+<tr class="memdesc:a300eebcf7430536ee6e2f5d37d1e84a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current channel ID from the RegisteredChannel.  <a href="#a300eebcf7430536ee6e2f5d37d1e84a9">More...</a><br /></td></tr>
+<tr class="separator:a300eebcf7430536ee6e2f5d37d1e84a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97cc63d98b46baf8030c6e90552e3b7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchannel_1_1ChannelSyncManager.html">ChannelSyncManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a97cc63d98b46baf8030c6e90552e3b7a">GetChannelSyncManager</a> () const </td></tr>
 <tr class="memdesc:a97cc63d98b46baf8030c6e90552e3b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the data sync manager.  <a href="#a97cc63d98b46baf8030c6e90552e3b7a">More...</a><br /></td></tr>
 <tr class="separator:a97cc63d98b46baf8030c6e90552e3b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,10 +164,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa39e2c0486b44f51d8c1074b6b39d2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f136d3503bef43fc0001c8a9eb8d682"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::ServerConfig &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a3f136d3503bef43fc0001c8a9eb8d682">GetConfig</a> () const </td></tr>
 <tr class="separator:a3f136d3503bef43fc0001c8a9eb8d682"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7ad9103ec078bca8aba6ec87d82af35"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; Database &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ad7ad9103ec078bca8aba6ec87d82af35">GetDatabase</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp.html#a1442fc2425910540ae92c53a56c03cc6">EnumMap</a>&lt; objects::ServerConfig::DatabaseType_t, std::shared_ptr&lt; objects::DatabaseConfig &gt;&gt; &amp;configMap, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> performSetup)</td></tr>
-<tr class="separator:ad7ad9103ec078bca8aba6ec87d82af35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8d279d27d0b9b9f03ba396bac53e144"><td class="memItemLeft" align="right" valign="top">gsl::not_null&lt; DataStore * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ae8d279d27d0b9b9f03ba396bac53e144">GetDataStore</a> ()</td></tr>
-<tr class="separator:ae8d279d27d0b9b9f03ba396bac53e144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ea7dd332cc42025e9d8d5f48921ec4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; Database &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a04ea7dd332cc42025e9d8d5f48921ec4">GetDatabase</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp.html#a1442fc2425910540ae92c53a56c03cc6">EnumMap</a>&lt; objects::ServerConfig::DatabaseType_t, std::shared_ptr&lt; objects::DatabaseConfig &gt;&gt; &amp;configMap, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> performSetup, DataStore *pDataStore=nullptr, const std::string &amp;migrationDirectory=std::string())</td></tr>
+<tr class="separator:a04ea7dd332cc42025e9d8d5f48921ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f88b56f0ef6c0c5660d2c5d9f6c2f7a"><td class="memItemLeft" align="right" valign="top">DataStore *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a9f88b56f0ef6c0c5660d2c5d9f6c2f7a">GetDataStore</a> ()</td></tr>
+<tr class="separator:a9f88b56f0ef6c0c5660d2c5d9f6c2f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8d74ab162cc698cac5748390da474c9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ab00d1dd4d6e965d76c482ef854459d03">PersistentObjectMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#aa8d74ab162cc698cac5748390da474c9">GetDefaultCharacterObjectMap</a> () const </td></tr>
 <tr class="memdesc:aa8d74ab162cc698cac5748390da474c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default character creation object map.  <a href="#aa8d74ab162cc698cac5748390da474c9">More...</a><br /></td></tr>
 <tr class="separator:aa8d74ab162cc698cac5748390da474c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,6 +186,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a50ccb06823904b53406446e7e09102c6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classchannel_1_1ManagerConnection.html">ManagerConnection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a50ccb06823904b53406446e7e09102c6">GetManagerConnection</a> () const </td></tr>
 <tr class="memdesc:a50ccb06823904b53406446e7e09102c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the connection manager for the server.  <a href="#a50ccb06823904b53406446e7e09102c6">More...</a><br /></td></tr>
 <tr class="separator:a50ccb06823904b53406446e7e09102c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15412664d598f360ca5ba0331409791a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchannel_1_1MatchManager.html">MatchManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a15412664d598f360ca5ba0331409791a">GetMatchManager</a> () const </td></tr>
+<tr class="memdesc:a15412664d598f360ca5ba0331409791a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the match manager.  <a href="#a15412664d598f360ca5ba0331409791a">More...</a><br /></td></tr>
+<tr class="separator:a15412664d598f360ca5ba0331409791a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a981d3f4fd9bfca170dcb7e6ea0834174"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a981d3f4fd9bfca170dcb7e6ea0834174">GetNextEntityID</a> ()</td></tr>
 <tr class="memdesc:a981d3f4fd9bfca170dcb7e6ea0834174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments and returns the next available entity ID.  <a href="#a981d3f4fd9bfca170dcb7e6ea0834174">More...</a><br /></td></tr>
 <tr class="separator:a981d3f4fd9bfca170dcb7e6ea0834174"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,12 +223,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7942e5878f1183e0f0a88504692ad74b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Database.html">libcomp::Database</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a7942e5878f1183e0f0a88504692ad74b">GetWorldDatabase</a> () const </td></tr>
 <tr class="memdesc:a7942e5878f1183e0f0a88504692ad74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the world database.  <a href="#a7942e5878f1183e0f0a88504692ad74b">More...</a><br /></td></tr>
 <tr class="separator:a7942e5878f1183e0f0a88504692ad74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4236b0aea223d864f90da34b8a67ba8e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::WorldSharedConfig &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a4236b0aea223d864f90da34b8a67ba8e">GetWorldSharedConfig</a> () const </td></tr>
+<tr class="memdesc:a4236b0aea223d864f90da34b8a67ba8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the world server supplied shared config settings.  <a href="#a4236b0aea223d864f90da34b8a67ba8e">More...</a><br /></td></tr>
+<tr class="separator:a4236b0aea223d864f90da34b8a67ba8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add8755ff0b0fae5d89d640de553c78e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchannel_1_1ZoneManager.html">ZoneManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#add8755ff0b0fae5d89d640de553c78e7">GetZoneManager</a> () const </td></tr>
 <tr class="memdesc:add8755ff0b0fae5d89d640de553c78e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the zone manager.  <a href="#add8755ff0b0fae5d89d640de553c78e7">More...</a><br /></td></tr>
 <tr class="separator:add8755ff0b0fae5d89d640de553c78e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fad40c4909c15d2a568c55eadeec163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a5fad40c4909c15d2a568c55eadeec163">HandleClockEvents</a> ()</td></tr>
 <tr class="memdesc:a5fad40c4909c15d2a568c55eadeec163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock event handler that is called once every second to update the the world time.  <a href="#a5fad40c4909c15d2a568c55eadeec163">More...</a><br /></td></tr>
 <tr class="separator:a5fad40c4909c15d2a568c55eadeec163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ae3ccb4aa44e8d3ccfba4888a3ee3ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a6ae3ccb4aa44e8d3ccfba4888a3ee3ce">HandleDemonQuestReset</a> ()</td></tr>
+<tr class="memdesc:a6ae3ccb4aa44e8d3ccfba4888a3ee3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update and notify all currently connected players of demon quests becoming available for the next day.  <a href="#a6ae3ccb4aa44e8d3ccfba4888a3ee3ce">More...</a><br /></td></tr>
+<tr class="separator:a6ae3ccb4aa44e8d3ccfba4888a3ee3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29f9ad23185a05488f2a5824773abd6b"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a29f9ad23185a05488f2a5824773abd6b">Initialize</a> ()</td></tr>
 <tr class="memdesc:a29f9ad23185a05488f2a5824773abd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the database connection and do anything else that can fail to execute that needs to be handled outside of a constructor.  <a href="#a29f9ad23185a05488f2a5824773abd6b">More...</a><br /></td></tr>
 <tr class="separator:a29f9ad23185a05488f2a5824773abd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,6 +256,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a99fed75a086016efe1ee4917c14979d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72bc46aa57e7b0fa194be6bb3cfe9ef4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#a72bc46aa57e7b0fa194be6bb3cfe9ef4">RemoveConnection</a> (std::shared_ptr&lt; TcpConnection &gt; &amp;connection)</td></tr>
 <tr class="separator:a72bc46aa57e7b0fa194be6bb3cfe9ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dc5a2def313933ae2ceefb67c6c50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#af77dc5a2def313933ae2ceefb67c6c50">ScheduleRecurringActions</a> ()</td></tr>
+<tr class="memdesc:af77dc5a2def313933ae2ceefb67c6c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule recurring actions that continue to run until the server shuts down.  <a href="#af77dc5a2def313933ae2ceefb67c6c50">More...</a><br /></td></tr>
+<tr class="separator:af77dc5a2def313933ae2ceefb67c6c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f46322193991c26d4f4ef079c6c00f9"><td class="memTemplParams" colspan="2">template&lt;typename Function , typename... Args&gt; </td></tr>
 <tr class="memitem:a3f46322193991c26d4f4ef079c6c00f9"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a3f46322193991c26d4f4ef079c6c00f9">ScheduleWork</a> (<a class="el" href="namespacechannel.html#a3645d2f2639d292478c3287540fc9052">ServerTime</a> timestamp, Function &amp;&amp;f, Args &amp;&amp;...args)</td></tr>
 <tr class="memdesc:a3f46322193991c26d4f4ef079c6c00f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule code work to be queued by the next server tick that occurs following the specified time.  <a href="#a3f46322193991c26d4f4ef079c6c00f9">More...</a><br /></td></tr>
@@ -251,6 +266,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d0fe62af223acc61855de614359ca69"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a3d0fe62af223acc61855de614359ca69">SendSystemMessage</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">channel::ChannelClientConnection</a> &gt; &amp;client, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> message, int8_t type, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> broadcast)</td></tr>
 <tr class="memdesc:a3d0fe62af223acc61855de614359ca69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an announcement to each client connected to world.  <a href="#a3d0fe62af223acc61855de614359ca69">More...</a><br /></td></tr>
 <tr class="separator:a3d0fe62af223acc61855de614359ca69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a724620208dfb4a16fd5bff8e330c7ea0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a724620208dfb4a16fd5bff8e330c7ea0">ServerReady</a> ()</td></tr>
+<tr class="separator:a724620208dfb4a16fd5bff8e330c7ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a5a6e9f5d11051f052f8858e0d60b33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a3a5a6e9f5d11051f052f8858e0d60b33">SetLobbyDatabase</a> (const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Database.html">libcomp::Database</a> &gt; &amp;database)</td></tr>
 <tr class="memdesc:a3a5a6e9f5d11051f052f8858e0d60b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the lobby database.  <a href="#a3a5a6e9f5d11051f052f8858e0d60b33">More...</a><br /></td></tr>
 <tr class="separator:a3a5a6e9f5d11051f052f8858e0d60b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,8 +280,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a99648dc49a207a83de662a90a056cb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a6a99648dc49a207a83de662a90a056cb">Shutdown</a> ()</td></tr>
 <tr class="memdesc:a6a99648dc49a207a83de662a90a056cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the Shutdown function on each worker.  <a href="#a6a99648dc49a207a83de662a90a056cb">More...</a><br /></td></tr>
 <tr class="separator:a6a99648dc49a207a83de662a90a056cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad41e8f0ede0549eef18b2ecb769aca22"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#ad41e8f0ede0549eef18b2ecb769aca22">Start</a> ()</td></tr>
-<tr class="separator:ad41e8f0ede0549eef18b2ecb769aca22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b85f7704e169be0147dc98faf09fb3"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#a11b85f7704e169be0147dc98faf09fb3">Start</a> (<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> delayReady=false)</td></tr>
+<tr class="separator:a11b85f7704e169be0147dc98faf09fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcb1bb264243548a4a40484526cf2506"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#afcb1bb264243548a4a40484526cf2506">StartGameTick</a> ()</td></tr>
 <tr class="memdesc:afcb1bb264243548a4a40484526cf2506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates server game ticks.  <a href="#afcb1bb264243548a4a40484526cf2506">More...</a><br /></td></tr>
 <tr class="separator:afcb1bb264243548a4a40484526cf2506"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -320,6 +337,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:aadaa6bdc45b7ffd97493c9002c8d5e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad13b43c1005ae85f5a81f331aee199ce"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html">libcomp::Worker</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ad13b43c1005ae85f5a81f331aee199ce">GetNextConnectionWorker</a> ()</td></tr>
 <tr class="separator:ad13b43c1005ae85f5a81f331aee199ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2cfeb08af58064b13eb5946bb840328"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#ab2cfeb08af58064b13eb5946bb840328">GetTimeUntilMidnight</a> ()</td></tr>
+<tr class="memdesc:ab2cfeb08af58064b13eb5946bb840328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of seconds until midnight of the next day.  <a href="#ab2cfeb08af58064b13eb5946bb840328">More...</a><br /></td></tr>
+<tr class="separator:ab2cfeb08af58064b13eb5946bb840328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8571c58c0d1aa351fb584119175c29e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ac8571c58c0d1aa351fb584119175c29e">InsertDataFromFile</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;filePath, const std::shared_ptr&lt; Database &gt; &amp;db, const std::set&lt; std::string &gt; &amp;specificTypes={})</td></tr>
 <tr class="separator:ac8571c58c0d1aa351fb584119175c29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30ffbbe25582b0bdee423083593158eb"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a30ffbbe25582b0bdee423083593158eb">LoadDataFromFile</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;filePath, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ab00d1dd4d6e965d76c482ef854459d03">PersistentObjectMap</a> &amp;records, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> registerRecords, const std::set&lt; std::string &gt; &amp;specificTypes={})</td></tr>
@@ -329,8 +349,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:acd027ac951c6576c1257311f8221a505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8242184f16ac6379b0deb827ca7920f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ab8242184f16ac6379b0deb827ca7920f">Run</a> ()</td></tr>
 <tr class="separator:ab8242184f16ac6379b0deb827ca7920f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724620208dfb4a16fd5bff8e330c7ea0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a724620208dfb4a16fd5bff8e330c7ea0">ServerReady</a> ()</td></tr>
-<tr class="separator:a724620208dfb4a16fd5bff8e330c7ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa7fa058f68c10fc7d8300c50cbf2ba9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#aaa7fa058f68c10fc7d8300c50cbf2ba9">SetDiffieHellman</a> (DH *pDiffieHellman)</td></tr>
 <tr class="separator:aaa7fa058f68c10fc7d8300c50cbf2ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -385,6 +403,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a075b6158f29c49304ee6265670fa1cc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchannel_1_1FusionManager.html">FusionManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a075b6158f29c49304ee6265670fa1cc0">mFusionManager</a></td></tr>
 <tr class="memdesc:a075b6158f29c49304ee6265670fa1cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the Fusion Manager.  <a href="#a075b6158f29c49304ee6265670fa1cc0">More...</a><br /></td></tr>
 <tr class="separator:a075b6158f29c49304ee6265670fa1cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f8d7987ca6a23d4fbdd0b2e905f25d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchannel_1_1WorldClockTime.html">WorldClockTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a3f8d7987ca6a23d4fbdd0b2e905f25d9">mLastEventTrigger</a></td></tr>
+<tr class="memdesc:a3f8d7987ca6a23d4fbdd0b2e905f25d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">World clock time of the last time zone events processed.  <a href="#a3f8d7987ca6a23d4fbdd0b2e905f25d9">More...</a><br /></td></tr>
+<tr class="separator:a3f8d7987ca6a23d4fbdd0b2e905f25d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44ed1e0fa4b2ba83fb1d5dd9befeb628"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Database.html">libcomp::Database</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a44ed1e0fa4b2ba83fb1d5dd9befeb628">mLobbyDatabase</a></td></tr>
 <tr class="memdesc:a44ed1e0fa4b2ba83fb1d5dd9befeb628"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the main database used by the server.  <a href="#a44ed1e0fa4b2ba83fb1d5dd9befeb628">More...</a><br /></td></tr>
 <tr class="separator:a44ed1e0fa4b2ba83fb1d5dd9befeb628"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -396,6 +417,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a8bd675f078ebe8a25e4ce10366892f92"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classchannel_1_1ManagerConnection.html">ManagerConnection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a8bd675f078ebe8a25e4ce10366892f92">mManagerConnection</a></td></tr>
 <tr class="memdesc:a8bd675f078ebe8a25e4ce10366892f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the manager in charge of connection messages.  <a href="#a8bd675f078ebe8a25e4ce10366892f92">More...</a><br /></td></tr>
 <tr class="separator:a8bd675f078ebe8a25e4ce10366892f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6beb13c65f8d490fad76388cd41cca1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchannel_1_1MatchManager.html">MatchManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a6beb13c65f8d490fad76388cd41cca1c">mMatchManager</a></td></tr>
+<tr class="memdesc:a6beb13c65f8d490fad76388cd41cca1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the Match Manager.  <a href="#a6beb13c65f8d490fad76388cd41cca1c">More...</a><br /></td></tr>
+<tr class="separator:a6beb13c65f8d490fad76388cd41cca1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a910f55f1f98fc8391093218e04fa3a6b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a910f55f1f98fc8391093218e04fa3a6b">mMaxEntityID</a></td></tr>
 <tr class="memdesc:a910f55f1f98fc8391093218e04fa3a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highest entity ID currently assigned.  <a href="#a910f55f1f98fc8391093218e04fa3a6b">More...</a><br /></td></tr>
 <tr class="separator:a910f55f1f98fc8391093218e04fa3a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -430,9 +454,15 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a74891f7870db30cab95e807b01df789c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchannel_1_1ChannelSyncManager.html">ChannelSyncManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a74891f7870db30cab95e807b01df789c">mSyncManager</a></td></tr>
 <tr class="memdesc:a74891f7870db30cab95e807b01df789c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data sync manager for the server.  <a href="#a74891f7870db30cab95e807b01df789c">More...</a><br /></td></tr>
 <tr class="separator:a74891f7870db30cab95e807b01df789c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959d0cb709cf5703454ec169305632a8"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a959d0cb709cf5703454ec169305632a8">mTickLock</a></td></tr>
+<tr class="memdesc:a959d0cb709cf5703454ec169305632a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server lock for setting the tick pending indicator.  <a href="#a959d0cb709cf5703454ec169305632a8">More...</a><br /></td></tr>
+<tr class="separator:a959d0cb709cf5703454ec169305632a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad89e6d66185abd19658a66e4fbd9a256"><td class="memItemLeft" align="right" valign="top">volatile <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#ad89e6d66185abd19658a66e4fbd9a256">mTickRunning</a></td></tr>
 <tr class="memdesc:ad89e6d66185abd19658a66e4fbd9a256"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the tick thread should continue running.  <a href="#ad89e6d66185abd19658a66e4fbd9a256">More...</a><br /></td></tr>
 <tr class="separator:ad89e6d66185abd19658a66e4fbd9a256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ea4c0bf519287fe1d80541915b2218"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a31ea4c0bf519287fe1d80541915b2218">mTicksPending</a></td></tr>
+<tr class="memdesc:a31ea4c0bf519287fe1d80541915b2218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inidicates how many tick messages are sitting in the queue.  <a href="#a31ea4c0bf519287fe1d80541915b2218">More...</a><br /></td></tr>
+<tr class="separator:a31ea4c0bf519287fe1d80541915b2218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a706aebd85bb3fac124e3b669e69da0b1"><td class="memItemLeft" align="right" valign="top">std::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelServer.html#a706aebd85bb3fac124e3b669e69da0b1">mTickThread</a></td></tr>
 <tr class="memdesc:a706aebd85bb3fac124e3b669e69da0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread that queues up tick messages after a delay.  <a href="#a706aebd85bb3fac124e3b669e69da0b1">More...</a><br /></td></tr>
 <tr class="separator:a706aebd85bb3fac124e3b669e69da0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -470,7 +500,7 @@ Static Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Channel server that handles client packets in game. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00075">75</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00077">77</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a345555654aab382c26928ee393c10e5d"></a>
 <div class="memitem">
@@ -511,7 +541,7 @@ Static Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00060">60</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00095">95</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
 </div>
 </div>
@@ -538,9 +568,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Clean up the server. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00597">597</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00763">763</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00456">mAccountManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00459">mActionManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00462">mAIManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00465">mCharacterManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00468">mChatManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00483">mDefinitionManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00471">mEventManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00474">mFusionManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00486">mServerDataManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00477">mSkillManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00489">mSyncManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00521">mTickRunning</a>, <a class="el" href="ChannelServer_8h_source.html#l00512">mTickThread</a>, <a class="el" href="ChannelServer_8h_source.html#l00492">mTokuseiManager</a>, and <a class="el" href="ChannelServer_8h_source.html#l00480">mZoneManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00499">mAccountManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00502">mActionManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00505">mAIManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00508">mCharacterManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00511">mChatManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00529">mDefinitionManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00514">mEventManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00517">mFusionManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00520">mMatchManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00532">mServerDataManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00523">mSkillManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00535">mSyncManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00577">mTickRunning</a>, <a class="el" href="ChannelServer_8h_source.html#l00565">mTickThread</a>, <a class="el" href="ChannelServer_8h_source.html#l00538">mTokuseiManager</a>, and <a class="el" href="ChannelServer_8h_source.html#l00526">mZoneManager</a>.</p>
 
 </div>
 </div>
@@ -570,9 +600,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a558ac503ff5aef83d5b08cc0b7449722">libcomp::BaseServer</a>.</p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00587">587</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00753">753</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00453">mDefaultCharacterObjectMap</a>, and <a class="el" href="ChannelServer_8h_source.html#l00512">mTickThread</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00496">mDefaultCharacterObjectMap</a>, and <a class="el" href="ChannelServer_8h_source.html#l00565">mTickThread</a>.</p>
 
 </div>
 </div>
@@ -609,9 +639,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#ad9e38654d84b3c3902d208f1cf6db2f1">libcomp::BaseServer</a>.</p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01110">1110</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01413">1413</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ab9978ae51f0f7986e284b7f559c7875b">libcomp::BaseServer::AssignMessageQueue()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#ad2e679a1c5363ebee90d4d0a89802489">libcomp::BaseServer::CopyDiffieHellman()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#aadaa6bdc45b7ffd97493c9002c8d5e53">libcomp::BaseServer::GetDiffieHellman()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00621">GetServerTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01151">GetServerTimeHighResolution()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01144">GetServerTimeSteady()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a1464941c745d75dcc84e34819066e03e">libcomp::BaseServer::mConfig</a>, and <a class="el" href="ChannelServer_8h_source.html#l00415">sGetServerTime</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ab9978ae51f0f7986e284b7f559c7875b">libcomp::BaseServer::AssignMessageQueue()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#ad2e679a1c5363ebee90d4d0a89802489">libcomp::BaseServer::CopyDiffieHellman()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#aadaa6bdc45b7ffd97493c9002c8d5e53">libcomp::BaseServer::GetDiffieHellman()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00788">GetServerTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01454">GetServerTimeHighResolution()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01447">GetServerTimeSteady()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a1464941c745d75dcc84e34819066e03e">libcomp::BaseServer::mConfig</a>, and <a class="el" href="ChannelServer_8h_source.html#l00456">sGetServerTime</a>.</p>
 
 </div>
 </div>
@@ -631,11 +661,11 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the account manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classchannel_1_1AccountManager.html" title="Manager to handle Account focused actions. ">AccountManager</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00821">821</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01000">1000</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00456">mAccountManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00499">mAccountManager</a>.</p>
 
-<p>Referenced by <a class="el" href="ManagerConnection_8cpp_source.html#l00168">channel::ManagerConnection::RemoveClientConnection()</a>.</p>
+<p>Referenced by <a class="el" href="ManagerConnection_8cpp_source.html#l00170">channel::ManagerConnection::RemoveClientConnection()</a>.</p>
 
 </div>
 </div>
@@ -655,9 +685,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the action manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classchannel_1_1ActionManager.html" title="Class to manage actions when triggering a spot or interacting with an object/NPC. ...">ActionManager</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00826">826</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01005">1005</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00459">mActionManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00502">mActionManager</a>.</p>
 
 </div>
 </div>
@@ -677,9 +707,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the AI manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classchannel_1_1AIManager.html" title="Class to manage actions when triggering a spot or interacting with an object/NPC. ...">AIManager</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00831">831</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01010">1010</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00462">mAIManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00505">mAIManager</a>.</p>
 
 </div>
 </div>
@@ -699,9 +729,31 @@ Static Protected Attributes</h2></td></tr>
 <p>Get all channels registerd on the channel's world (including itself). </p>
 <dl class="section return"><dt>Returns</dt><dd>List of pointers to all of the world's registered channels </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00717">717</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00896">896</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00450">mAllRegisteredChannels</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00493">mAllRegisteredChannels</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a300eebcf7430536ee6e2f5d37d1e84a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ChannelServer::GetChannelID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current channel ID from the RegisteredChannel. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current channel ID </dd></dl>
+
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00889">889</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00490">mRegisteredChannel</a>.</p>
 
 </div>
 </div>
@@ -721,9 +773,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the data sync manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classchannel_1_1ChannelSyncManager.html" title="Channel specific implementation of the DataSyncManager in charge of performing server side update ope...">ChannelSyncManager</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00876">876</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01060">1060</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00489">mSyncManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00535">mSyncManager</a>.</p>
 
 </div>
 </div>
@@ -743,9 +795,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the character manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classchannel_1_1CharacterManager.html" title="Manager to handle Character focused actions. ">CharacterManager</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00836">836</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01015">1015</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00465">mCharacterManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00508">mCharacterManager</a>.</p>
 
 </div>
 </div>
@@ -765,9 +817,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the chat manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classchannel_1_1ChatManager.html" title="Manager to handle chat communication and processing of GM commands. ">ChatManager</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00841">841</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01020">1020</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00468">mChatManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00511">mChatManager</a>.</p>
 
 </div>
 </div>
@@ -787,9 +839,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the default character creation object map. </p>
 <dl class="section return"><dt>Returns</dt><dd>Default character creation object map </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01037">1037</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01279">1279</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00453">mDefaultCharacterObjectMap</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00496">mDefaultCharacterObjectMap</a>.</p>
 
 </div>
 </div>
@@ -809,9 +861,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the definition manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the DefinitionManager </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00866">866</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01050">1050</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00483">mDefinitionManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00529">mDefinitionManager</a>.</p>
 
 </div>
 </div>
@@ -831,9 +883,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the event manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classchannel_1_1EventManager.html" title="Manager class in charge of processing event sequences as well as quest phase progression and conditio...">EventManager</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00846">846</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01025">1025</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00471">mEventManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00514">mEventManager</a>.</p>
 
 </div>
 </div>
@@ -872,9 +924,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the amount of time left in an expiration relative to the server, in seconds. </p>
 <dl class="section return"><dt>Returns</dt><dd>Time until expiration relative to the server, in seconds </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00626">626</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00793">793</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="CharacterManager_8cpp_source.html#l01069">channel::CharacterManager::SendDemonBoxData()</a>.</p>
+<p>Referenced by <a class="el" href="MatchManager_8cpp_source.html#l03882">channel::MatchManager::CreatePvPInstance()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l07491">channel::CharacterManager::GetDemonPacketData()</a>, <a class="el" href="CultureItem_8cpp_source.html#l00062">HandleCultureItem()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l01576">channel::CharacterManager::SendDemonBoxData()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00642">channel::CharacterManager::SendDemonData()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l05588">channel::CharacterManager::SendInvokeStatus()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00435">channel::CharacterManager::SendPartnerData()</a>, <a class="el" href="MatchManager_8cpp_source.html#l03398">channel::MatchManager::UpdateMatchEntries()</a>, and <a class="el" href="MatchManager_8cpp_source.html#l03630">channel::MatchManager::UpdatePvPMatches()</a>.</p>
 
 </div>
 </div>
@@ -894,9 +946,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the fusion manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classchannel_1_1FusionManager.html" title="Manager class used to handle all demon fusion based actions. ">FusionManager</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00851">851</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01030">1030</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00474">mFusionManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00517">mFusionManager</a>.</p>
 
 </div>
 </div>
@@ -916,9 +968,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the lobby database. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the lobby's database </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00758">758</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00937">937</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00444">mLobbyDatabase</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00487">mLobbyDatabase</a>.</p>
 
 </div>
 </div>
@@ -938,11 +990,33 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the connection manager for the server. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the connection manager. </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00816">816</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00995">995</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00435">mManagerConnection</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00478">mManagerConnection</a>.</p>
 
-<p>Referenced by <a class="el" href="ManagerConnection_8cpp_source.html#l00308">channel::ManagerConnection::ScheduleClientTimeoutHandler()</a>, and <a class="el" href="FriendsUpdate_8cpp_source.html#l00049">SendFriendInfo()</a>.</p>
+<p>Referenced by <a class="el" href="ManagerConnection_8cpp_source.html#l00333">channel::ManagerConnection::ScheduleClientTimeoutHandler()</a>, and <a class="el" href="FriendsUpdate_8cpp_source.html#l00049">SendFriendInfo()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a15412664d598f360ca5ba0331409791a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchannel_1_1MatchManager.html">MatchManager</a> * ChannelServer::GetMatchManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a pointer to the match manager. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classchannel_1_1MatchManager.html" title="Manager class used to handle all channel side match logic. ">MatchManager</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01035">1035</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00520">mMatchManager</a>.</p>
 
 </div>
 </div>
@@ -962,9 +1036,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Increments and returns the next available entity ID. </p>
 <dl class="section return"><dt>Returns</dt><dd>Next game entity ID for the channel </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00886">886</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01077">1077</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00515">mLock</a>, and <a class="el" href="ChannelServer_8h_source.html#l00506">mMaxEntityID</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00568">mLock</a>, and <a class="el" href="ChannelServer_8h_source.html#l00555">mMaxEntityID</a>.</p>
 
 </div>
 </div>
@@ -984,9 +1058,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Increments and returns the next available object ID. </p>
 <dl class="section return"><dt>Returns</dt><dd>Next object ID for the channel </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00892">892</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01083">1083</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00515">mLock</a>, and <a class="el" href="ChannelServer_8h_source.html#l00509">mMaxObjectID</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00568">mLock</a>, and <a class="el" href="ChannelServer_8h_source.html#l00558">mMaxObjectID</a>.</p>
 
 </div>
 </div>
@@ -1006,7 +1080,7 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the system time deadline for all punitive attributes which matches midnight of the next Monday. </p>
 <p>Punitive atributes are used for time restricted actions such as participation in the "invoke" events. </p><dl class="section return"><dt>Returns</dt><dd>System time respresenting the punitive attribute deadline </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01018">1018</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01247">1247</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
 </div>
 </div>
@@ -1026,9 +1100,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the RegisteredChannel. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the RegisteredChannel </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00711">711</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00884">884</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00447">mRegisteredChannel</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00490">mRegisteredChannel</a>.</p>
 
 </div>
 </div>
@@ -1048,9 +1122,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the RegisteredWorld. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the RegisteredWorld </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00722">722</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00901">901</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00438">mRegisteredWorld</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00481">mRegisteredWorld</a>.</p>
 
 </div>
 </div>
@@ -1070,9 +1144,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the server data manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the ServerDataManager </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00871">871</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01055">1055</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00486">mServerDataManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00532">mServerDataManager</a>.</p>
 
 </div>
 </div>
@@ -1100,11 +1174,11 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the current time relative to the server. </p>
 <dl class="section return"><dt>Returns</dt><dd>Current time relative to the server </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00621">621</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00788">788</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00415">sGetServerTime</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00456">sGetServerTime</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l00275">channel::SkillManager::ActivateSkill()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01110">CreateConnection()</a>, <a class="el" href="ActionManager_8cpp_source.html#l01580">channel::ActionManager::CreateLoot()</a>, <a class="el" href="Zone_8cpp_source.html#l01109">channel::Zone::EnableSpawnGroups()</a>, <a class="el" href="SkillManager_8cpp_source.html#l00450">channel::SkillManager::ExecuteSkill()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l01260">channel::ZoneManager::ExpireBazaarMarkets()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l01090">channel::ZoneManager::FixCurrentPosition()</a>, <a class="el" href="ChatManager_8cpp_source.html#l00568">channel::ChatManager::GMCommand_Enemy()</a>, <a class="el" href="SkillManager_8cpp_source.html#l03388">channel::SkillManager::HandleKills()</a>, <a class="el" href="SkillManager_8cpp_source.html#l03908">channel::SkillManager::HandleNegotiations()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00132">channel::PlasmaState::HasStateChangePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00367">channel::PlasmaState::HidePoint()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l00542">channel::ZoneManager::LeaveZone()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00196">channel::PlasmaState::PopHidePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00169">channel::PlasmaState::PopRespawnPoints()</a>, <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>, <a class="el" href="Zone_8cpp_source.html#l00211">channel::Zone::RemoveEntity()</a>, <a class="el" href="SkillManager_8cpp_source.html#l06135">channel::SkillManager::Rest()</a>, <a class="el" href="ManagerConnection_8cpp_source.html#l00308">channel::ManagerConnection::ScheduleClientTimeoutHandler()</a>, <a class="el" href="SendData_8cpp_source.html#l00052">SendClientReadyData()</a>, <a class="el" href="ActiveEntityState_8cpp_source.html#l00492">channel::ActiveEntityState::SetHPMP()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00252">channel::PlasmaState::SetPickResult()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00898">Tick()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02358">channel::ZoneManager::UpdateActiveZoneStates()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l01677">channel::ZoneManager::UpdateSpawnGroups()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l00326">channel::SkillManager::ActivateSkill()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l03129">channel::ZoneManager::AddEnemiesToZone()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l06096">channel::CharacterManager::AddRemoveOpponent()</a>, <a class="el" href="SkillManager_8cpp_source.html#l01385">channel::SkillManager::BeginSkillExecution()</a>, <a class="el" href="SkillManager_8cpp_source.html#l01570">channel::SkillManager::CompleteSkillExecution()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01413">CreateConnection()</a>, <a class="el" href="Zone_8cpp_source.html#l01043">channel::Zone::CreateEncounter()</a>, <a class="el" href="ActionManager_8cpp_source.html#l02929">channel::ActionManager::CreateLoot()</a>, <a class="el" href="MatchManager_8cpp_source.html#l03882">channel::MatchManager::CreatePvPInstance()</a>, <a class="el" href="ActionManager_8cpp_source.html#l03056">channel::ActionManager::Delay()</a>, <a class="el" href="Zone_8cpp_source.html#l01815">channel::Zone::EnableSpawnGroups()</a>, <a class="el" href="MatchManager_8cpp_source.html#l01552">channel::MatchManager::EnterDiaspora()</a>, <a class="el" href="MatchManager_8cpp_source.html#l01601">channel::MatchManager::EnterUltimateBattle()</a>, <a class="el" href="SkillManager_8cpp_source.html#l02166">channel::SkillManager::ExecuteNormalSkill()</a>, <a class="el" href="SkillManager_8cpp_source.html#l00628">channel::SkillManager::ExecuteSkill()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02358">channel::ZoneManager::ExpireRentals()</a>, <a class="el" href="SkillManager_8cpp_source.html#l08501">channel::SkillManager::FinalizeSkillExecution()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02171">channel::ZoneManager::FixCurrentPosition()</a>, <a class="el" href="Zone_8cpp_source.html#l00618">channel::Zone::GetActiveEntitiesInRadius()</a>, <a class="el" href="ChatManager_8cpp_source.html#l01136">channel::ChatManager::GMCommand_Enemy()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l05289">channel::ZoneManager::HandleDeathTimeOut()</a>, <a class="el" href="SkillManager_8cpp_source.html#l05168">channel::SkillManager::HandleKills()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00263">channel::AccountManager::HandleLogoutRequest()</a>, <a class="el" href="SkillManager_8cpp_source.html#l06670">channel::SkillManager::HandleNegotiations()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02860">channel::ZoneManager::HandleSpecialInstancePopulate()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00171">channel::PlasmaState::HasStateChangePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00433">channel::PlasmaState::HidePoint()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l01139">channel::ZoneManager::LeaveZone()</a>, <a class="el" href="SkillManager_8cpp_source.html#l09996">channel::SkillManager::Mount()</a>, <a class="el" href="Zone_8cpp_source.html#l00767">channel::Zone::OccupyPvPBase()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00240">channel::PlasmaState::PopHidePoints()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00213">channel::PlasmaState::PopRespawnPoints()</a>, <a class="el" href="SkillManager_8cpp_source.html#l01189">channel::SkillManager::PrepareFusionSkill()</a>, <a class="el" href="SkillManager_8cpp_source.html#l02235">channel::SkillManager::ProcessSkillResult()</a>, <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>, <a class="el" href="Zone_8cpp_source.html#l00266">channel::Zone::RemoveEntity()</a>, <a class="el" href="SkillManager_8cpp_source.html#l10412">channel::SkillManager::Rest()</a>, <a class="el" href="ManagerConnection_8cpp_source.html#l00333">channel::ManagerConnection::ScheduleClientTimeoutHandler()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l06675">channel::ZoneManager::ScheduleTimerExpiration()</a>, <a class="el" href="SendData_8cpp_source.html#l00055">SendClientReadyData()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l04999">channel::ZoneManager::SendInstanceTimer()</a>, <a class="el" href="MatchManager_8cpp_source.html#l04748">channel::MatchManager::SendPhase()</a>, <a class="el" href="ActiveEntityState_8cpp_source.html#l00612">channel::ActiveEntityState::SetHPMP()</a>, <a class="el" href="PlasmaState_8cpp_source.html#l00296">channel::PlasmaState::SetPickResult()</a>, <a class="el" href="SkillManager_8cpp_source.html#l08711">channel::SkillManager::SetSkillCompleteState()</a>, <a class="el" href="AIState_8cpp_source.html#l00102">channel::AIState::SetStatus()</a>, <a class="el" href="SkillManager_8cpp_source.html#l08804">channel::SkillManager::SpecialSkill()</a>, <a class="el" href="AICommand_8cpp_source.html#l00070">channel::AICommand::Start()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l04557">channel::ZoneManager::StartInstanceTimer()</a>, <a class="el" href="MatchManager_8cpp_source.html#l02236">channel::MatchManager::StartStopMatch()</a>, <a class="el" href="MatchManager_8cpp_source.html#l02611">channel::MatchManager::StartUltimateBattleTimer()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l04768">channel::ZoneManager::StopInstanceTimer()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01089">Tick()</a>, <a class="el" href="MatchManager_8cpp_source.html#l02111">channel::MatchManager::ToggleDiasporaBase()</a>, <a class="el" href="MatchManager_8cpp_source.html#l02769">channel::MatchManager::UltimateBattleQueue()</a>, <a class="el" href="MatchManager_8cpp_source.html#l02836">channel::MatchManager::UltimateBattleTick()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l04233">channel::ZoneManager::UpdateActiveZoneStates()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l05203">channel::ZoneManager::UpdateDeathTimeOut()</a>, <a class="el" href="MatchManager_8cpp_source.html#l03630">channel::MatchManager::UpdatePvPMatches()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l03281">channel::ZoneManager::UpdateSpawnGroups()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l04395">channel::ZoneManager::Warp()</a>.</p>
 
 </div>
 </div>
@@ -1132,9 +1206,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the current time relative to the server using the C++ standard high_resolution_clock. </p>
 <dl class="section return"><dt>Returns</dt><dd>Current time relative to the server </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01151">1151</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01454">1454</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01110">CreateConnection()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01413">CreateConnection()</a>.</p>
 
 </div>
 </div>
@@ -1162,9 +1236,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the current time relative to the server using the C++ standard steady_clock. </p>
 <dl class="section return"><dt>Returns</dt><dd>Current time relative to the server </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01144">1144</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01447">1447</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01110">CreateConnection()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01413">CreateConnection()</a>.</p>
 
 </div>
 </div>
@@ -1184,9 +1258,39 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the skill manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classchannel_1_1SkillManager.html" title="Manager to handle skill focused actions. ">SkillManager</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00856">856</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01040">1040</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00477">mSkillManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00523">mSkillManager</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2cfeb08af58064b13eb5946bb840328"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ChannelServer::GetTimeUntilMidnight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the number of seconds until midnight of the next day. </p>
+<p>Useful for scheduling timed events. </p><dl class="section return"><dt>Returns</dt><dd>Number of seconds until midnight of the next day </dd></dl>
+
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01265">1265</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01387">HandleDemonQuestReset()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01284">ScheduleRecurringActions()</a>.</p>
 
 </div>
 </div>
@@ -1206,9 +1310,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the tokusei manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classchannel_1_1TokuseiManager.html" title="Manages tokusei specific logic for the server and validates the definitions read at run time...">TokuseiManager</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00881">881</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01065">1065</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00492">mTokuseiManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00538">mTokuseiManager</a>.</p>
 
 </div>
 </div>
@@ -1228,11 +1332,11 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the world clock time of the server. </p>
 <p>This is thread safe and checks to make sure it does not calculate more than is needed. </p><dl class="section return"><dt>Returns</dt><dd>Current world clock time </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00636">636</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00808">808</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Constants_8h.html#ab1e0bdd1feb99488a32b9bf5ddcfaae3">BASE_WORLD_TIME</a>, <a class="el" href="WorldClock_8h_source.html#l00130">channel::WorldClock::CycleOffset</a>, <a class="el" href="WorldClock_8h_source.html#l00117">channel::WorldClock::Day</a>, <a class="el" href="WorldClock_8h_source.html#l00126">channel::WorldClock::GameOffset</a>, <a class="el" href="WorldClock_8h_source.html#l00053">channel::WorldClockTime::Hour</a>, <a class="el" href="WorldClock_8h_source.html#l00056">channel::WorldClockTime::Min</a>, <a class="el" href="ChannelServer_8h_source.html#l00499">mNextEventTime</a>, <a class="el" href="WorldClock_8h_source.html#l00114">channel::WorldClock::Month</a>, <a class="el" href="WorldClock_8h_source.html#l00050">channel::WorldClockTime::MoonPhase</a>, <a class="el" href="ChannelServer_8h_source.html#l00503">mRecalcTimeDependents</a>, <a class="el" href="ChannelServer_8h_source.html#l00518">mTimeLock</a>, <a class="el" href="ChannelServer_8h_source.html#l00495">mWorldClock</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01158">RecalcNextWorldEventTime()</a>, <a class="el" href="WorldClock_8h_source.html#l00059">channel::WorldClockTime::SystemHour</a>, <a class="el" href="WorldClock_8h_source.html#l00062">channel::WorldClockTime::SystemMin</a>, <a class="el" href="WorldClock_8h_source.html#l00120">channel::WorldClock::SystemSec</a>, <a class="el" href="WorldClock_8h_source.html#l00123">channel::WorldClock::SystemTime</a>, and <a class="el" href="WorldClock_8h_source.html#l00110">channel::WorldClock::WeekDay</a>.</p>
+<p>References <a class="el" href="WorldClock_8h_source.html#l00149">channel::WorldClock::CycleOffset</a>, <a class="el" href="WorldClock_8h_source.html#l00136">channel::WorldClock::Day</a>, <a class="el" href="WorldClock_8h_source.html#l00145">channel::WorldClock::GameOffset</a>, <a class="el" href="WorldClock_8h_source.html#l00058">channel::WorldClockTime::Hour</a>, <a class="el" href="WorldClock_8h_source.html#l00061">channel::WorldClockTime::Min</a>, <a class="el" href="ChannelServer_8h_source.html#l00548">mNextEventTime</a>, <a class="el" href="WorldClock_8h_source.html#l00133">channel::WorldClock::Month</a>, <a class="el" href="WorldClock_8h_source.html#l00055">channel::WorldClockTime::MoonPhase</a>, <a class="el" href="ChannelServer_8h_source.html#l00552">mRecalcTimeDependents</a>, <a class="el" href="ChannelServer_8h_source.html#l00571">mTimeLock</a>, <a class="el" href="ChannelServer_8h_source.html#l00541">mWorldClock</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01461">RecalcNextWorldEventTime()</a>, <a class="el" href="WorldClock_8h_source.html#l00064">channel::WorldClockTime::SystemHour</a>, <a class="el" href="WorldClock_8h_source.html#l00067">channel::WorldClockTime::SystemMin</a>, <a class="el" href="WorldClock_8h_source.html#l00139">channel::WorldClock::SystemSec</a>, <a class="el" href="WorldClock_8h_source.html#l00142">channel::WorldClock::SystemTime</a>, and <a class="el" href="WorldClock_8h_source.html#l00129">channel::WorldClock::WeekDay</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01089">HandleClockEvents()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01361">HandleClockEvents()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01284">ScheduleRecurringActions()</a>.</p>
 
 </div>
 </div>
@@ -1252,9 +1356,31 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the world database. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the world's database </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00748">748</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00927">927</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00441">mWorldDatabase</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00484">mWorldDatabase</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4236b0aea223d864f90da34b8a67ba8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; objects::WorldSharedConfig &gt; ChannelServer::GetWorldSharedConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the world server supplied shared config settings. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the world shared config </dd></dl>
+
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01071">1071</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a3f136d3503bef43fc0001c8a9eb8d682">libcomp::BaseServer::GetConfig()</a>.</p>
 
 </div>
 </div>
@@ -1274,9 +1400,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the zone manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classchannel_1_1ZoneManager.html" title="Manager to handle zone focused actions. ">ZoneManager</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00861">861</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01045">1045</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00480">mZoneManager</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00526">mZoneManager</a>.</p>
 
 </div>
 </div>
@@ -1296,11 +1422,35 @@ Static Protected Attributes</h2></td></tr>
 <p>Clock event handler that is called once every second to update the the world time. </p>
 <p>If the registered "next time" is hit, the time sources will be notified to recalculate updates. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01089">1089</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01361">1361</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8cpp_source.html#l00636">GetWorldClockTime()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02461">channel::ZoneManager::HandleTimedActions()</a>, <a class="el" href="ChannelServer_8h_source.html#l00503">mRecalcTimeDependents</a>, <a class="el" href="ChannelServer_8h_source.html#l00518">mTimeLock</a>, <a class="el" href="ChannelServer_8h_source.html#l00492">mTokuseiManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00480">mZoneManager</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01676">channel::TokuseiManager::RecalcTimedTokusei()</a>.</p>
+<p>References <a class="el" href="ChannelServer_8cpp_source.html#l00808">GetWorldClockTime()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l04425">channel::ZoneManager::HandleTimedActions()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="ChannelServer_8h_source.html#l00544">mLastEventTrigger</a>, <a class="el" href="ChannelServer_8h_source.html#l00552">mRecalcTimeDependents</a>, <a class="el" href="ChannelServer_8h_source.html#l00571">mTimeLock</a>, <a class="el" href="ChannelServer_8h_source.html#l00538">mTokuseiManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00526">mZoneManager</a>, and <a class="el" href="TokuseiManager_8cpp_source.html#l01830">channel::TokuseiManager::RecalcTimedTokusei()</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01284">ScheduleRecurringActions()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ae3ccb4aa44e8d3ccfba4888a3ee3ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChannelServer::HandleDemonQuestReset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update and notify all currently connected players of demon quests becoming available for the next day. </p>
+<p>By default this is scheduled to execute at midnight UTC. </p>
+
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01387">1387</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+
+<p>References <a class="el" href="ClientState_8cpp_source.html#l00272">channel::ClientState::GetAccountUID()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01265">GetTimeUntilMidnight()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01387">HandleDemonQuestReset()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="ChannelServer_8h_source.html#l00514">mEventManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00478">mManagerConnection</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a0cc084558cb650669a9fdc1c0aba328c">libcomp::BaseServer::mTimerManager</a>, <a class="el" href="EventManager_8cpp_source.html#l03409">channel::EventManager::ResetDemonQuests()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TimerManager.html#ac9f698e22c74b68a73918bca23b3490d">libcomp::TimerManager::ScheduleEventIn()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>.</p>
+
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01387">HandleDemonQuestReset()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01284">ScheduleRecurringActions()</a>.</p>
 
 </div>
 </div>
@@ -1336,9 +1486,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ada464b9076e97ea48fd7c747d5de41c8">libcomp::BaseServer</a>.</p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00071">71</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00107">107</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html#a12989e593f18370720de5ed0971cf333">libcomp::Worker::AddManager()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a0644cb1881fdf1da8a3c5ecb7e8787e0">libcomp::BaseServer::GetConfigPath()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ae8d279d27d0b9b9f03ba396bac53e144">libcomp::BaseServer::GetDataStore()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html#a8945242ba8f5a7f8748b146e01691728">libcomp::Worker::GetMessageQueue()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00636">GetWorldClockTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01089">HandleClockEvents()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00084">channel::TokuseiManager::Initialize()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ServerDataManager.html#af3b50993fbaf6e715b8c1833911edc1c">libcomp::ServerDataManager::LoadData()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a30ffbbe25582b0bdee423083593158eb">libcomp::BaseServer::LoadDataFromFile()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l00105">channel::ZoneManager::LoadGeometry()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a59ea33d00f1f148aaeadbebfa0425bca">LOG_CRITICAL</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a81c35fcd628c47ba893c17792f6ea929">LOG_INFO</a>, <a class="el" href="ChannelServer_8h_source.html#l00456">mAccountManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00459">mActionManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00462">mAIManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00465">mCharacterManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00468">mChatManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a1464941c745d75dcc84e34819066e03e">libcomp::BaseServer::mConfig</a>, <a class="el" href="ChannelServer_8h_source.html#l00453">mDefaultCharacterObjectMap</a>, <a class="el" href="ChannelServer_8h_source.html#l00483">mDefinitionManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00471">mEventManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00474">mFusionManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ade237f520f624d480e02a7235c411809">libcomp::BaseServer::mMainWorker</a>, <a class="el" href="ChannelServer_8h_source.html#l00435">mManagerConnection</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#acfe2403fc7925ba4d899ce5acf3978df">libcomp::BaseServer::mQueueWorker</a>, <a class="el" href="ChannelServer_8h_source.html#l00486">mServerDataManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#a09f3da6ea1d1fb1fc3c3131aef334fb0">libcomp::BaseServer::mService</a>, <a class="el" href="ChannelServer_8h_source.html#l00477">mSkillManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00489">mSyncManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a0cc084558cb650669a9fdc1c0aba328c">libcomp::BaseServer::mTimerManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00492">mTokuseiManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a084ec4211d2b1098bb53e41b6cbe13b6">libcomp::BaseServer::mWorkers</a>, <a class="el" href="ChannelServer_8h_source.html#l00480">mZoneManager</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01676">channel::TokuseiManager::RecalcTimedTokusei()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TimerManager.html#a40e6ccd110f9524d650398d12964eccb">libcomp::TimerManager::SchedulePeriodicEvent()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html#abe57b02b9b98f6cc97053dce3808d485">libcomp::InternalConnection::SetName()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html#ac238c985bb979b6f49d28827cbe58796aefdd5a70d030589ff3d1762d0685670a">libcomp::TcpConnection::STATUS_CONNECTED</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/PacketCodes_8h.html#a4d7d5dc6fabdf88ec8cb5c076a7dec1b">to_underlying()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html#a12989e593f18370720de5ed0971cf333">libcomp::Worker::AddManager()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a0644cb1881fdf1da8a3c5ecb7e8787e0">libcomp::BaseServer::GetConfigPath()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a9f88b56f0ef6c0c5660d2c5d9f6c2f7a">libcomp::BaseServer::GetDataStore()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html#a8945242ba8f5a7f8748b146e01691728">libcomp::Worker::GetMessageQueue()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l00086">channel::TokuseiManager::Initialize()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ServerDataManager.html#a5cc28e8625dbb8854488758eb7e9ed12">libcomp::ServerDataManager::LoadData()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a30ffbbe25582b0bdee423083593158eb">libcomp::BaseServer::LoadDataFromFile()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a59ea33d00f1f148aaeadbebfa0425bca">LOG_CRITICAL</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a81c35fcd628c47ba893c17792f6ea929">LOG_INFO</a>, <a class="el" href="ChannelServer_8h_source.html#l00499">mAccountManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00502">mActionManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00505">mAIManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00508">mCharacterManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00511">mChatManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a1464941c745d75dcc84e34819066e03e">libcomp::BaseServer::mConfig</a>, <a class="el" href="ChannelServer_8h_source.html#l00496">mDefaultCharacterObjectMap</a>, <a class="el" href="ChannelServer_8h_source.html#l00529">mDefinitionManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00514">mEventManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00517">mFusionManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ade237f520f624d480e02a7235c411809">libcomp::BaseServer::mMainWorker</a>, <a class="el" href="ChannelServer_8h_source.html#l00478">mManagerConnection</a>, <a class="el" href="ChannelServer_8h_source.html#l00520">mMatchManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#acfe2403fc7925ba4d899ce5acf3978df">libcomp::BaseServer::mQueueWorker</a>, <a class="el" href="ChannelServer_8h_source.html#l00532">mServerDataManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#a09f3da6ea1d1fb1fc3c3131aef334fb0">libcomp::BaseServer::mService</a>, <a class="el" href="ChannelServer_8h_source.html#l00523">mSkillManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00535">mSyncManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00538">mTokuseiManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a084ec4211d2b1098bb53e41b6cbe13b6">libcomp::BaseServer::mWorkers</a>, <a class="el" href="ChannelServer_8h_source.html#l00526">mZoneManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html#abe57b02b9b98f6cc97053dce3808d485">libcomp::InternalConnection::SetName()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html#ac238c985bb979b6f49d28827cbe58796aefdd5a70d030589ff3d1762d0685670a">libcomp::TcpConnection::STATUS_CONNECTED</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/PacketCodes_8h.html#a4d7d5dc6fabdf88ec8cb5c076a7dec1b">to_underlying()</a>.</p>
 
 </div>
 </div>
@@ -1358,9 +1508,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Load all of the channel's connected world's RegisteredChannel entries in the database. </p>
 <p>This allows other channels to be seen by the current channel for listing existing channels to the client. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00733">733</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00912">912</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#abb2fbeaa9e8ad4dfc69e521a5df86684">libcomp::PersistentObject::LoadAll()</a>, <a class="el" href="ChannelServer_8h_source.html#l00450">mAllRegisteredChannels</a>, <a class="el" href="ChannelServer_8h_source.html#l00447">mRegisteredChannel</a>, and <a class="el" href="ChannelServer_8h_source.html#l00441">mWorldDatabase</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#abb2fbeaa9e8ad4dfc69e521a5df86684">libcomp::PersistentObject::LoadAll()</a>, <a class="el" href="ChannelServer_8h_source.html#l00493">mAllRegisteredChannels</a>, <a class="el" href="ChannelServer_8h_source.html#l00490">mRegisteredChannel</a>, and <a class="el" href="ChannelServer_8h_source.html#l00484">mWorldDatabase</a>.</p>
 
 </div>
 </div>
@@ -1388,11 +1538,11 @@ Static Protected Attributes</h2></td></tr>
 <p>Recalculate the next time the world clock will fire an event on. </p>
 <p>This will be stored as a system timestamp for easy comparison. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01158">1158</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01461">1461</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="WorldClock_8h_source.html#l00053">channel::WorldClockTime::Hour</a>, <a class="el" href="WorldClock_8cpp_source.html#l00047">channel::WorldClockTime::IsSet()</a>, <a class="el" href="WorldClock_8h_source.html#l00056">channel::WorldClockTime::Min</a>, <a class="el" href="ChannelServer_8h_source.html#l00499">mNextEventTime</a>, <a class="el" href="WorldClock_8h_source.html#l00050">channel::WorldClockTime::MoonPhase</a>, <a class="el" href="ChannelServer_8h_source.html#l00495">mWorldClock</a>, <a class="el" href="ChannelServer_8h_source.html#l00432">mWorldClockEvents</a>, <a class="el" href="WorldClock_8h_source.html#l00059">channel::WorldClockTime::SystemHour</a>, <a class="el" href="WorldClock_8h_source.html#l00062">channel::WorldClockTime::SystemMin</a>, <a class="el" href="WorldClock_8h_source.html#l00120">channel::WorldClock::SystemSec</a>, and <a class="el" href="WorldClock_8h_source.html#l00123">channel::WorldClock::SystemTime</a>.</p>
+<p>References <a class="el" href="WorldClock_8h_source.html#l00058">channel::WorldClockTime::Hour</a>, <a class="el" href="WorldClock_8cpp_source.html#l00095">channel::WorldClockTime::IsSet()</a>, <a class="el" href="WorldClock_8h_source.html#l00061">channel::WorldClockTime::Min</a>, <a class="el" href="ChannelServer_8h_source.html#l00548">mNextEventTime</a>, <a class="el" href="WorldClock_8h_source.html#l00055">channel::WorldClockTime::MoonPhase</a>, <a class="el" href="ChannelServer_8h_source.html#l00541">mWorldClock</a>, <a class="el" href="ChannelServer_8h_source.html#l00475">mWorldClockEvents</a>, <a class="el" href="WorldClock_8h_source.html#l00064">channel::WorldClockTime::SystemHour</a>, <a class="el" href="WorldClock_8h_source.html#l00067">channel::WorldClockTime::SystemMin</a>, <a class="el" href="WorldClock_8h_source.html#l00139">channel::WorldClock::SystemSec</a>, and <a class="el" href="WorldClock_8h_source.html#l00142">channel::WorldClock::SystemTime</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00636">GetWorldClockTime()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01042">RegisterClockEvent()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00808">GetWorldClockTime()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01314">RegisterClockEvent()</a>.</p>
 
 </div>
 </div>
@@ -1437,9 +1587,9 @@ Static Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the time was registered properly, false if a failure ocurred </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01042">1042</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01314">1314</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="WorldClock_8h_source.html#l00053">channel::WorldClockTime::Hour</a>, <a class="el" href="WorldClock_8cpp_source.html#l00047">channel::WorldClockTime::IsSet()</a>, <a class="el" href="WorldClock_8h_source.html#l00056">channel::WorldClockTime::Min</a>, <a class="el" href="ChannelServer_8h_source.html#l00518">mTimeLock</a>, <a class="el" href="ChannelServer_8h_source.html#l00432">mWorldClockEvents</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01158">RecalcNextWorldEventTime()</a>, <a class="el" href="WorldClock_8h_source.html#l00059">channel::WorldClockTime::SystemHour</a>, and <a class="el" href="WorldClock_8h_source.html#l00062">channel::WorldClockTime::SystemMin</a>.</p>
+<p>References <a class="el" href="WorldClock_8h_source.html#l00058">channel::WorldClockTime::Hour</a>, <a class="el" href="WorldClock_8cpp_source.html#l00095">channel::WorldClockTime::IsSet()</a>, <a class="el" href="WorldClock_8h_source.html#l00061">channel::WorldClockTime::Min</a>, <a class="el" href="ChannelServer_8h_source.html#l00571">mTimeLock</a>, <a class="el" href="ChannelServer_8h_source.html#l00475">mWorldClockEvents</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01461">RecalcNextWorldEventTime()</a>, <a class="el" href="WorldClock_8h_source.html#l00064">channel::WorldClockTime::SystemHour</a>, and <a class="el" href="WorldClock_8h_source.html#l00067">channel::WorldClockTime::SystemMin</a>.</p>
 
 </div>
 </div>
@@ -1466,9 +1616,9 @@ Static Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00768">768</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00947">947</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a8ffc97ef5bf9121723545168e5dbb4ca">libcomp::String::Arg()</a>, <a class="el" href="ChannelServer_8h_source.html#l00450">mAllRegisteredChannels</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a1464941c745d75dcc84e34819066e03e">libcomp::BaseServer::mConfig</a>, <a class="el" href="ChannelServer_8h_source.html#l00447">mRegisteredChannel</a>, and <a class="el" href="ChannelServer_8h_source.html#l00441">mWorldDatabase</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a8ffc97ef5bf9121723545168e5dbb4ca">libcomp::String::Arg()</a>, <a class="el" href="ChannelServer_8h_source.html#l00493">mAllRegisteredChannels</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a1464941c745d75dcc84e34819066e03e">libcomp::BaseServer::mConfig</a>, <a class="el" href="ChannelServer_8h_source.html#l00490">mRegisteredChannel</a>, and <a class="el" href="ChannelServer_8h_source.html#l00484">mWorldDatabase</a>.</p>
 
 </div>
 </div>
@@ -1494,9 +1644,31 @@ Static Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00727">727</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00906">906</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00438">mRegisteredWorld</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00481">mRegisteredWorld</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af77dc5a2def313933ae2ceefb67c6c50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChannelServer::ScheduleRecurringActions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Schedule recurring actions that continue to run until the server shuts down. </p>
+<p>This does not need to run until the channel has successfully registered with the world. </p>
+
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01284">1284</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a3f136d3503bef43fc0001c8a9eb8d682">libcomp::BaseServer::GetConfig()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01265">GetTimeUntilMidnight()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00808">GetWorldClockTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01361">HandleClockEvents()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01387">HandleDemonQuestReset()</a>, <a class="el" href="ChannelServer_8h_source.html#l00478">mManagerConnection</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a0cc084558cb650669a9fdc1c0aba328c">libcomp::BaseServer::mTimerManager</a>, <a class="el" href="ChannelServer_8h_source.html#l00538">mTokuseiManager</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01830">channel::TokuseiManager::RecalcTimedTokusei()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TimerManager.html#ac9f698e22c74b68a73918bca23b3490d">libcomp::TimerManager::ScheduleEventIn()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TimerManager.html#a40e6ccd110f9524d650398d12964eccb">libcomp::TimerManager::SchedulePeriodicEvent()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01171">StartGameTick()</a>.</p>
 
 </div>
 </div>
@@ -1551,7 +1723,7 @@ template&lt;typename Function , typename... Args&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00379">379</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00413">413</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
 </div>
 </div>
@@ -1603,9 +1775,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the message was successfully sent, false otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00996">996</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01225">1225</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00435">mManagerConnection</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#acb7bad5ab1a3bdba98aaa900a456a4a7">libcomp::Packet::WriteS8()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab7f2381548009b30746d4d8717bdcd7f">libcomp::Packet::WriteString16Little()</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00478">mManagerConnection</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#acb7bad5ab1a3bdba98aaa900a456a4a7">libcomp::Packet::WriteS8()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab7f2381548009b30746d4d8717bdcd7f">libcomp::Packet::WriteString16Little()</a>.</p>
 
 </div>
 </div>
@@ -1631,9 +1803,9 @@ template&lt;typename Function , typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00763">763</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00942">942</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00444">mLobbyDatabase</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00487">mLobbyDatabase</a>.</p>
 
 </div>
 </div>
@@ -1659,9 +1831,9 @@ template&lt;typename Function , typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00701">701</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00873">873</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="WorldClock_8h_source.html#l00126">channel::WorldClock::GameOffset</a>, <a class="el" href="ChannelServer_8h_source.html#l00499">mNextEventTime</a>, <a class="el" href="ChannelServer_8h_source.html#l00518">mTimeLock</a>, <a class="el" href="ChannelServer_8h_source.html#l00495">mWorldClock</a>, and <a class="el" href="WorldClock_8h_source.html#l00123">channel::WorldClock::SystemTime</a>.</p>
+<p>References <a class="el" href="WorldClock_8h_source.html#l00145">channel::WorldClock::GameOffset</a>, <a class="el" href="ChannelServer_8h_source.html#l00544">mLastEventTrigger</a>, <a class="el" href="ChannelServer_8h_source.html#l00548">mNextEventTime</a>, <a class="el" href="ChannelServer_8h_source.html#l00571">mTimeLock</a>, <a class="el" href="ChannelServer_8h_source.html#l00541">mWorldClock</a>, and <a class="el" href="WorldClock_8h_source.html#l00142">channel::WorldClock::SystemTime</a>.</p>
 
 </div>
 </div>
@@ -1687,9 +1859,9 @@ template&lt;typename Function , typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00753">753</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00932">932</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00441">mWorldDatabase</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00484">mWorldDatabase</a>.</p>
 
 </div>
 </div>
@@ -1719,11 +1891,11 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Reimplemented from <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ad74f7a784b5eb617e096dcf8ff8e76e4">libcomp::BaseServer</a>.</p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00580">580</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00746">746</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelServer_8h_source.html#l00521">mTickRunning</a>.</p>
+<p>References <a class="el" href="ChannelServer_8h_source.html#l00577">mTickRunning</a>.</p>
 
-<p>Referenced by <a class="el" href="SetWorldInfo_8cpp_source.html#l00085">SetWorldInfoFromPacket()</a>.</p>
+<p>Referenced by <a class="el" href="SetWorldInfo_8cpp_source.html#l00086">SetWorldInfoFromPacket()</a>.</p>
 
 </div>
 </div>
@@ -1742,9 +1914,11 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Generates server game ticks. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00975">975</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01171">1171</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html#a8945242ba8f5a7f8748b146e01691728">libcomp::Worker::GetMessageQueue()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#acfe2403fc7925ba4d899ce5acf3978df">libcomp::BaseServer::mQueueWorker</a>, <a class="el" href="ChannelServer_8h_source.html#l00521">mTickRunning</a>, and <a class="el" href="ChannelServer_8h_source.html#l00512">mTickThread</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html#a8945242ba8f5a7f8748b146e01691728">libcomp::Worker::GetMessageQueue()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#acfe2403fc7925ba4d899ce5acf3978df">libcomp::BaseServer::mQueueWorker</a>, <a class="el" href="ChannelServer_8h_source.html#l00574">mTickLock</a>, <a class="el" href="ChannelServer_8h_source.html#l00577">mTickRunning</a>, <a class="el" href="ChannelServer_8h_source.html#l00562">mTicksPending</a>, and <a class="el" href="ChannelServer_8h_source.html#l00565">mTickThread</a>.</p>
+
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01284">ScheduleRecurringActions()</a>.</p>
 
 </div>
 </div>
@@ -1763,9 +1937,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Simulate a server tick, handling events like updating the server time and zone states as well as ansynchronously saving data. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l00898">898</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8cpp_source.html#l01089">1089</a> of file <a class="el" href="ChannelServer_8cpp_source.html">ChannelServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html#a8945242ba8f5a7f8748b146e01691728">libcomp::Worker::GetMessageQueue()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#ad81a63b214eccb267d246000c33233a7">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00621">GetServerTime()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="ChannelServer_8h_source.html#l00444">mLobbyDatabase</a>, <a class="el" href="ChannelServer_8h_source.html#l00515">mLock</a>, <a class="el" href="ChannelServer_8h_source.html#l00435">mManagerConnection</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#acfe2403fc7925ba4d899ce5acf3978df">libcomp::BaseServer::mQueueWorker</a>, <a class="el" href="ChannelServer_8h_source.html#l00426">mScheduledWork</a>, <a class="el" href="ChannelServer_8h_source.html#l00441">mWorldDatabase</a>, <a class="el" href="ChannelServer_8h_source.html#l00480">mZoneManager</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l02358">channel::ZoneManager::UpdateActiveZoneStates()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html#a8945242ba8f5a7f8748b146e01691728">libcomp::Worker::GetMessageQueue()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#ad81a63b214eccb267d246000c33233a7">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00788">GetServerTime()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="ChannelServer_8h_source.html#l00487">mLobbyDatabase</a>, <a class="el" href="ChannelServer_8h_source.html#l00568">mLock</a>, <a class="el" href="ChannelServer_8h_source.html#l00478">mManagerConnection</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#acfe2403fc7925ba4d899ce5acf3978df">libcomp::BaseServer::mQueueWorker</a>, <a class="el" href="ChannelServer_8h_source.html#l00467">mScheduledWork</a>, <a class="el" href="ChannelServer_8h_source.html#l00574">mTickLock</a>, <a class="el" href="ChannelServer_8h_source.html#l00562">mTicksPending</a>, <a class="el" href="ChannelServer_8h_source.html#l00484">mWorldDatabase</a>, <a class="el" href="ChannelServer_8h_source.html#l00526">mZoneManager</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l04233">channel::ZoneManager::UpdateActiveZoneStates()</a>.</p>
 
 <p>Referenced by <a class="el" href="ManagerSystem_8cpp_source.html#l00056">channel::ManagerSystem::ProcessMessage()</a>.</p>
 
@@ -1792,9 +1966,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Pointer to the account manager. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00456">456</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00499">499</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00821">GetAccountManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01000">GetAccountManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
 
 </div>
 </div>
@@ -1818,9 +1992,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Pointer to the action manager. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00459">459</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00502">502</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00826">GetActionManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01005">GetActionManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
 
 </div>
 </div>
@@ -1844,9 +2018,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Pointer to the AI manager. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00462">462</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00505">505</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00831">GetAIManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01010">GetAIManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
 
 </div>
 </div>
@@ -1870,9 +2044,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>List of pointers to all RegisteredChannels for the world. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00450">450</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00493">493</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00717">GetAllRegisteredChannels()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00733">LoadAllRegisteredChannels()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00768">RegisterServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00896">GetAllRegisteredChannels()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00912">LoadAllRegisteredChannels()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00947">RegisterServer()</a>.</p>
 
 </div>
 </div>
@@ -1896,9 +2070,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Poiner to the character manager. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00465">465</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00508">508</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00836">GetCharacterManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01015">GetCharacterManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
 
 </div>
 </div>
@@ -1922,9 +2096,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Pointer to the Chat Manager. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00468">468</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00511">511</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00841">GetChatManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01020">GetChatManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
 
 </div>
 </div>
@@ -1948,9 +2122,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Map of default character creation state objects. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00453">453</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00496">496</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00587">Cleanup()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01037">GetDefaultCharacterObjectMap()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00753">Cleanup()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01279">GetDefaultCharacterObjectMap()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>.</p>
 
 </div>
 </div>
@@ -1974,9 +2148,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Pointer to the Definition Manager. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00483">483</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00529">529</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00866">GetDefinitionManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01050">GetDefinitionManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
 
 </div>
 </div>
@@ -2000,9 +2174,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Pointer to the Event Manager. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00471">471</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00514">514</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00846">GetEventManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01025">GetEventManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01387">HandleDemonQuestReset()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
 
 </div>
 </div>
@@ -2026,9 +2200,35 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Pointer to the Fusion Manager. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00474">474</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00517">517</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00851">GetFusionManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01030">GetFusionManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f8d7987ca6a23d4fbdd0b2e905f25d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchannel_1_1WorldClockTime.html">WorldClockTime</a> channel::ChannelServer::mLastEventTrigger</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>World clock time of the last time zone events processed. </p>
+
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00544">544</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01361">HandleClockEvents()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00873">SetTimeOffset()</a>.</p>
 
 </div>
 </div>
@@ -2052,9 +2252,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>A shared pointer to the main database used by the server. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00444">444</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00487">487</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00758">GetLobbyDatabase()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00763">SetLobbyDatabase()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00898">Tick()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00937">GetLobbyDatabase()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00942">SetLobbyDatabase()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01089">Tick()</a>.</p>
 
 </div>
 </div>
@@ -2078,9 +2278,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Server lock for shared resources. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00515">515</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00568">568</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00886">GetNextEntityID()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00892">GetNextObjectID()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00898">Tick()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01077">GetNextEntityID()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01083">GetNextObjectID()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01089">Tick()</a>.</p>
 
 </div>
 </div>
@@ -2104,9 +2304,35 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Pointer to the manager in charge of connection messages. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00435">435</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00478">478</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00816">GetManagerConnection()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00996">SendSystemMessage()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00898">Tick()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00995">GetManagerConnection()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01387">HandleDemonQuestReset()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01284">ScheduleRecurringActions()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01225">SendSystemMessage()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01089">Tick()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6beb13c65f8d490fad76388cd41cca1c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchannel_1_1MatchManager.html">MatchManager</a>* channel::ChannelServer::mMatchManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pointer to the Match Manager. </p>
+
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00520">520</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01035">GetMatchManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
 
 </div>
 </div>
@@ -2130,9 +2356,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Highest entity ID currently assigned. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00506">506</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00555">555</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00886">GetNextEntityID()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01077">GetNextEntityID()</a>.</p>
 
 </div>
 </div>
@@ -2156,9 +2382,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Highest unique object ID currently assigned. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00509">509</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00558">558</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00892">GetNextObjectID()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01083">GetNextObjectID()</a>.</p>
 
 </div>
 </div>
@@ -2182,9 +2408,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>System time representation of the next world clock event time that the clock needs to react to. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00499">499</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00548">548</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00636">GetWorldClockTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01158">RecalcNextWorldEventTime()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00701">SetTimeOffset()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00808">GetWorldClockTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01461">RecalcNextWorldEventTime()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00873">SetTimeOffset()</a>.</p>
 
 </div>
 </div>
@@ -2208,9 +2434,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>true if the sources of each time registered should should be updated based on the last clock update </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00503">503</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00552">552</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00636">GetWorldClockTime()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01089">HandleClockEvents()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00808">GetWorldClockTime()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01361">HandleClockEvents()</a>.</p>
 
 </div>
 </div>
@@ -2234,9 +2460,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Pointer to the RegisteredChannel for this server. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00447">447</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00490">490</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00711">GetRegisteredChannel()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00733">LoadAllRegisteredChannels()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00768">RegisterServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00889">GetChannelID()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00884">GetRegisteredChannel()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00912">LoadAllRegisteredChannels()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00947">RegisterServer()</a>.</p>
 
 </div>
 </div>
@@ -2260,9 +2486,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Pointer to the RegisteredWorld. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00438">438</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00481">481</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00722">GetRegisteredWorld()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00727">RegisterWorld()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00901">GetRegisteredWorld()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00906">RegisterWorld()</a>.</p>
 
 </div>
 </div>
@@ -2286,9 +2512,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Timestamp ordered map of prepared Execute messages and timestamps associated to when they should be queued following a server tick. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00426">426</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00467">467</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00898">Tick()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01089">Tick()</a>.</p>
 
 </div>
 </div>
@@ -2312,9 +2538,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Pointer to the Server Data Manager. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00486">486</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00532">532</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00871">GetServerDataManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01055">GetServerDataManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
 
 </div>
 </div>
@@ -2338,9 +2564,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Pointer to the Skill Manager. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00477">477</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00523">523</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00856">GetSkillManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01040">GetSkillManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
 
 </div>
 </div>
@@ -2364,9 +2590,35 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Data sync manager for the server. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00489">489</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00535">535</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00876">GetChannelSyncManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01060">GetChannelSyncManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a959d0cb709cf5703454ec169305632a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex channel::ChannelServer::mTickLock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Server lock for setting the tick pending indicator. </p>
+
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00574">574</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01171">StartGameTick()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01089">Tick()</a>.</p>
 
 </div>
 </div>
@@ -2390,9 +2642,36 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>If the tick thread should continue running. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00521">521</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00577">577</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00580">Shutdown()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00975">StartGameTick()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00746">Shutdown()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01171">StartGameTick()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a31ea4c0bf519287fe1d80541915b2218"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t channel::ChannelServer::mTicksPending</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inidicates how many tick messages are sitting in the queue. </p>
+<p>Incremented by StartTick and decremented by Tick. </p>
+
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00562">562</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01171">StartGameTick()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01089">Tick()</a>.</p>
 
 </div>
 </div>
@@ -2416,9 +2695,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Thread that queues up tick messages after a delay. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00512">512</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00565">565</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00587">Cleanup()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00975">StartGameTick()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00753">Cleanup()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01171">StartGameTick()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
 
 </div>
 </div>
@@ -2442,9 +2721,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Server lock for server time calculation. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00518">518</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00571">571</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00636">GetWorldClockTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01089">HandleClockEvents()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01042">RegisterClockEvent()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00701">SetTimeOffset()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00808">GetWorldClockTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01361">HandleClockEvents()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01314">RegisterClockEvent()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00873">SetTimeOffset()</a>.</p>
 
 </div>
 </div>
@@ -2468,9 +2747,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Tokusei manager for the server. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00492">492</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00538">538</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00881">GetTokuseiManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01089">HandleClockEvents()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01065">GetTokuseiManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01361">HandleClockEvents()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01284">ScheduleRecurringActions()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
 
 </div>
 </div>
@@ -2494,9 +2773,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Server world clock. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00495">495</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00541">541</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00636">GetWorldClockTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01158">RecalcNextWorldEventTime()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00701">SetTimeOffset()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00808">GetWorldClockTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01461">RecalcNextWorldEventTime()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00873">SetTimeOffset()</a>.</p>
 
 </div>
 </div>
@@ -2519,11 +2798,11 @@ template&lt;typename Function , typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Map of world clock times to the type of event that will occur at that time. </p>
-<p>Types include: 1) Spawn activation/deactivation 2) Tokusei active timespans </p>
+<p>Types include: 1) Spawn activation/deactivation 2) Tokusei active timespans 3) <a class="el" href="classchannel_1_1Zone.html" title="Represents a server zone containing client connections, objects, enemies, etc. ">Zone</a> event trigger 4) Global zone event trigger </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00432">432</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00475">475</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01158">RecalcNextWorldEventTime()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01042">RegisterClockEvent()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01461">RecalcNextWorldEventTime()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01314">RegisterClockEvent()</a>.</p>
 
 </div>
 </div>
@@ -2547,9 +2826,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>A shared pointer to the world database used by the server. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00441">441</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00484">484</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00748">GetWorldDatabase()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00733">LoadAllRegisteredChannels()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00768">RegisterServer()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00753">SetWorldDatabase()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00898">Tick()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00927">GetWorldDatabase()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00912">LoadAllRegisteredChannels()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00947">RegisterServer()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00932">SetWorldDatabase()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01089">Tick()</a>.</p>
 
 </div>
 </div>
@@ -2573,9 +2852,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 
 <p>Pointer to the <a class="el" href="classchannel_1_1Zone.html" title="Represents a server zone containing client connections, objects, enemies, etc. ">Zone</a> Manager. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00480">480</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00526">526</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00861">GetZoneManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01089">HandleClockEvents()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00071">Initialize()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00898">Tick()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00597">~ChannelServer()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01045">GetZoneManager()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01361">HandleClockEvents()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00107">Initialize()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01089">Tick()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00763">~ChannelServer()</a>.</p>
 
 </div>
 </div>
@@ -2599,9 +2878,9 @@ template&lt;typename Function , typename... Args&gt; </div>
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    std::chrono::high_resolution_clock::is_steady</div><div class="line">        ? &amp;<a class="code" href="classchannel_1_1ChannelServer.html#ab5162e52342c8e17481d9f4461a9ec7c">ChannelServer::GetServerTimeHighResolution</a></div><div class="line">        : &amp;<a class="code" href="classchannel_1_1ChannelServer.html#a7624fd49f864a73ba5a746d009ba6063">ChannelServer::GetServerTimeSteady</a></div></div><!-- fragment -->
 <p>Function pointer to the most accurate time detection code available for the current machine. </p>
 
-<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00415">415</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelServer_8h_source.html#l00456">456</a> of file <a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01110">CreateConnection()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00621">GetServerTime()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01413">CreateConnection()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l00788">GetServerTime()</a>.</p>
 
 </div>
 </div>

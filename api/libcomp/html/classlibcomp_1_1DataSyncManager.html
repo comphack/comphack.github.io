@@ -137,12 +137,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac1142242ad747f1627737cbc7c7e690c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DataSyncManager.html#ac1142242ad747f1627737cbc7c7e690c">RemoveRecord</a> (const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;record, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;type)</td></tr>
 <tr class="memdesc:ac1142242ad747f1627737cbc7c7e690c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a specific record on the server if this is the master server for the type.  <a href="#ac1142242ad747f1627737cbc7c7e690c">More...</a><br /></td></tr>
 <tr class="separator:ac1142242ad747f1627737cbc7c7e690c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43c814df2cac2fed883547777c78563"><td class="memTemplParams" colspan="2">template&lt;class D , class T &gt; </td></tr>
+<tr class="memitem:ab43c814df2cac2fed883547777c78563"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DataSyncManager.html#ab43c814df2cac2fed883547777c78563">SyncComplete</a> (const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Object.html">libcomp::Object</a> &gt;, <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &gt;&gt; &amp;objs, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;source)</td></tr>
+<tr class="memdesc:ab43c814df2cac2fed883547777c78563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for performing a post record update operation useful for <a class="el" href="classlibcomp_1_1DataSyncManager_1_1ObjectConfig.html" title="Container class for a specific object&#39;s synchronization configuration for the server. ">ObjectConfig</a>'s SyncCompleteHandler property.  <a href="#ab43c814df2cac2fed883547777c78563">More...</a><br /></td></tr>
+<tr class="separator:ab43c814df2cac2fed883547777c78563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7246d10f1369580a1b82a3109bc4bde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DataSyncManager.html#ab7246d10f1369580a1b82a3109bc4bde">SyncIncoming</a> (<a class="el" href="classlibcomp_1_1ReadOnlyPacket.html">libcomp::ReadOnlyPacket</a> &amp;p, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;source=&quot;&quot;)</td></tr>
 <tr class="memdesc:ab7246d10f1369580a1b82a3109bc4bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all data read from the supplied packet on this server and relay to other servers if this is the master server for the type.  <a href="#ab7246d10f1369580a1b82a3109bc4bde">More...</a><br /></td></tr>
 <tr class="separator:ab7246d10f1369580a1b82a3109bc4bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12a62581bedb6a8dee61dc372724c353"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DataSyncManager.html#a12a62581bedb6a8dee61dc372724c353">SyncOutgoing</a> ()</td></tr>
 <tr class="memdesc:a12a62581bedb6a8dee61dc372724c353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and send a synchronization request packet for all updated data in the queue.  <a href="#a12a62581bedb6a8dee61dc372724c353">More...</a><br /></td></tr>
 <tr class="separator:a12a62581bedb6a8dee61dc372724c353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9b04ae7ab49ad1326bd3075df58289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DataSyncManager.html#a5e9b04ae7ab49ad1326bd3075df58289">SyncRecordRemoval</a> (const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;record, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;type)</td></tr>
+<tr class="memdesc:a5e9b04ae7ab49ad1326bd3075df58289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a record removal and sync to the other servers immediately.  <a href="#a5e9b04ae7ab49ad1326bd3075df58289">More...</a><br /></td></tr>
+<tr class="separator:a5e9b04ae7ab49ad1326bd3075df58289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42773e95bb4e0a106db3ac5189d3248c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DataSyncManager.html#a42773e95bb4e0a106db3ac5189d3248c">SyncRecordUpdate</a> (const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;record, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;type)</td></tr>
+<tr class="memdesc:a42773e95bb4e0a106db3ac5189d3248c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a record update and sync to the other servers immediately.  <a href="#a42773e95bb4e0a106db3ac5189d3248c">More...</a><br /></td></tr>
+<tr class="separator:a42773e95bb4e0a106db3ac5189d3248c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b585d01d696928804b68c2534861911"><td class="memTemplParams" colspan="2">template&lt;class D , class T &gt; </td></tr>
 <tr class="memitem:a3b585d01d696928804b68c2534861911"><td class="memTemplItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DataSyncManager.html#a3b585d01d696928804b68c2534861911">Update</a> (const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;type, const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;obj, <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> isRemove, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;source)</td></tr>
 <tr class="memdesc:a3b585d01d696928804b68c2534861911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for updating a record useful for <a class="el" href="classlibcomp_1_1DataSyncManager_1_1ObjectConfig.html" title="Container class for a specific object&#39;s synchronization configuration for the server. ">ObjectConfig</a>'s UpdateHandler property.  <a href="#a3b585d01d696928804b68c2534861911">More...</a><br /></td></tr>
@@ -219,7 +229,7 @@ Private Attributes</h2></td></tr>
 
 <p>Create a new <a class="el" href="classlibcomp_1_1DataSyncManager.html" title="Manager to synchronize data between two or more servers. ">DataSyncManager</a>. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00037">37</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00059">59</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -238,7 +248,7 @@ Private Attributes</h2></td></tr>
 
 <p>Clean up the <a class="el" href="classlibcomp_1_1DataSyncManager.html" title="Manager to synchronize data between two or more servers. ">DataSyncManager</a>. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00041">41</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00063">63</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -269,7 +279,7 @@ template&lt;class T &gt; </div>
 <p>Helper function for quick creation of a record useful for <a class="el" href="classlibcomp_1_1DataSyncManager_1_1ObjectConfig.html" title="Container class for a specific object&#39;s synchronization configuration for the server. ">ObjectConfig</a>'s BuildHandler property. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to a new record of the specified type </dd></dl>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00124">124</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00146">146</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
 </div>
 </div>
@@ -328,11 +338,11 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00398">398</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00483">483</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
 
-<p>References <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="Convert_8h_source.html#l00043">libcomp::Convert::ENCODING_UTF8</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00250">libcomp::PersistentObject::GetTypeHashByName()</a>, <a class="el" href="PacketCodes_8h.html#ac0ff7a56e53798307cd98b3c35519773a36a946a9289b16e1afa8691e67495302">PACKET_DATA_SYNC</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00445">WriteOutgoingRecords()</a>, <a class="el" href="Packet_8h_source.html#l00453">libcomp::Packet::WritePacketCode()</a>, and <a class="el" href="src_2Packet_8cpp_source.html#l00265">libcomp::Packet::WriteString16Little()</a>.</p>
+<p>References <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="Convert_8h_source.html#l00043">libcomp::Convert::ENCODING_UTF8</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00274">libcomp::PersistentObject::GetTypeHashByName()</a>, <a class="el" href="PacketCodes_8h.html#ac0ff7a56e53798307cd98b3c35519773a36a946a9289b16e1afa8691e67495302">PACKET_DATA_SYNC</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00530">WriteOutgoingRecords()</a>, <a class="el" href="Packet_8h_source.html#l00459">libcomp::Packet::WritePacketCode()</a>, and <a class="el" href="src_2Packet_8cpp_source.html#l00265">libcomp::Packet::WriteString16Little()</a>.</p>
 
-<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00082">SyncOutgoing()</a>.</p>
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00104">SyncOutgoing()</a>.</p>
 
 </div>
 </div>
@@ -370,9 +380,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false if the connection could not be registered for any reason </dd></dl>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00045">45</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00067">67</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
 
-<p>References <a class="el" href="DataSyncManager_8h_source.html#l00287">mConnections</a>, and <a class="el" href="DataSyncManager_8h_source.html#l00261">mLock</a>.</p>
+<p>References <a class="el" href="DataSyncManager_8h_source.html#l00338">mConnections</a>, and <a class="el" href="DataSyncManager_8h_source.html#l00312">mLock</a>.</p>
 
 </div>
 </div>
@@ -399,9 +409,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the connection was removed successfully </dd></dl>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00066">66</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00088">88</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
 
-<p>References <a class="el" href="DataSyncManager_8h_source.html#l00287">mConnections</a>, and <a class="el" href="DataSyncManager_8h_source.html#l00261">mLock</a>.</p>
+<p>References <a class="el" href="DataSyncManager_8h_source.html#l00338">mConnections</a>, and <a class="el" href="DataSyncManager_8h_source.html#l00312">mLock</a>.</p>
 
 </div>
 </div>
@@ -445,11 +455,67 @@ template&lt;class T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the remove was performed without issue </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the record was queued for outgoing sync, false if no additional sync is necessary </dd></dl>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00365">365</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00438">438</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
 
-<p>References <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="DataSyncManager_8h_source.html#l00287">mConnections</a>, <a class="el" href="DataSyncManager_8h_source.html#l00261">mLock</a>, <a class="el" href="DataSyncManager_8h_source.html#l00282">mOutboundRemoves</a>, <a class="el" href="DataSyncManager_8h_source.html#l00258">mRegisteredTypes</a>, and <a class="el" href="DataSyncManager_8h_source.html#l00161">SYNC_HANDLED</a>.</p>
+<p>References <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="DataSyncManager_8h_source.html#l00338">mConnections</a>, <a class="el" href="DataSyncManager_8h_source.html#l00312">mLock</a>, <a class="el" href="DataSyncManager_8h_source.html#l00333">mOutboundRemoves</a>, <a class="el" href="DataSyncManager_8h_source.html#l00309">mRegisteredTypes</a>, and <a class="el" href="DataSyncManager_8h_source.html#l00201">SYNC_HANDLED</a>.</p>
+
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00471">SyncRecordRemoval()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00041">libcomp::ScriptEngine::Using()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab43c814df2cac2fed883547777c78563"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class D , class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libcomp::DataSyncManager::SyncComplete </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::list&lt; std::pair&lt; std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Object.html">libcomp::Object</a> &gt;, <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>objs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper function for performing a post record update operation useful for <a class="el" href="classlibcomp_1_1DataSyncManager_1_1ObjectConfig.html" title="Container class for a specific object&#39;s synchronization configuration for the server. ">ObjectConfig</a>'s SyncCompleteHandler property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Type name of the object being removed </td></tr>
+    <tr><td class="paramname">objs</td><td>List of pointers to the records being updated and a flag indicating if the object was being removed </td></tr>
+    <tr><td class="paramname">source</td><td>Identifier for the server sending the updates </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00182">182</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
 </div>
 </div>
@@ -487,9 +553,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the packet was read without issue </dd></dl>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00131">131</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00153">153</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
 
-<p>References <a class="el" href="Convert_8h_source.html#l00043">libcomp::Convert::ENCODING_UTF8</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00172">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00250">libcomp::PersistentObject::GetTypeHashByName()</a>, <a class="el" href="ReadOnlyPacket_8cpp_source.html#l00740">libcomp::ReadOnlyPacket::Left()</a>, <a class="el" href="PersistentObject_8h_source.html#l00176">libcomp::PersistentObject::LoadObjectByUUID()</a>, <a class="el" href="Log_8h_source.html#l00264">LOG_ERROR</a>, <a class="el" href="Log_8h_source.html#l00273">LOG_WARNING</a>, <a class="el" href="DataSyncManager_8h_source.html#l00261">mLock</a>, <a class="el" href="DataSyncManager_8h_source.html#l00282">mOutboundRemoves</a>, <a class="el" href="DataSyncManager_8h_source.html#l00278">mOutboundUpdates</a>, <a class="el" href="DataSyncManager_8h_source.html#l00258">mRegisteredTypes</a>, <a class="el" href="ReadOnlyPacket_8cpp_source.html#l00267">libcomp::ReadOnlyPacket::ReadString16Little()</a>, <a class="el" href="ReadOnlyPacket_8cpp_source.html#l00548">libcomp::ReadOnlyPacket::ReadU16Little()</a>, <a class="el" href="DataSyncManager_8h_source.html#l00165">SYNC_FAILED</a>, and <a class="el" href="DataSyncManager_8h_source.html#l00156">SYNC_UPDATED</a>.</p>
+<p>References <a class="el" href="Convert_8h_source.html#l00043">libcomp::Convert::ENCODING_UTF8</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00184">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00274">libcomp::PersistentObject::GetTypeHashByName()</a>, <a class="el" href="ReadOnlyPacket_8cpp_source.html#l00759">libcomp::ReadOnlyPacket::Left()</a>, <a class="el" href="PersistentObject_8h_source.html#l00179">libcomp::PersistentObject::LoadObjectByUUID()</a>, <a class="el" href="Log_8h_source.html#l00370">LOG_ERROR</a>, <a class="el" href="Log_8h_source.html#l00379">LOG_WARNING</a>, <a class="el" href="DataSyncManager_8h_source.html#l00312">mLock</a>, <a class="el" href="DataSyncManager_8h_source.html#l00333">mOutboundRemoves</a>, <a class="el" href="DataSyncManager_8h_source.html#l00329">mOutboundUpdates</a>, <a class="el" href="DataSyncManager_8h_source.html#l00309">mRegisteredTypes</a>, <a class="el" href="ReadOnlyPacket_8cpp_source.html#l00267">libcomp::ReadOnlyPacket::ReadString16Little()</a>, <a class="el" href="ReadOnlyPacket_8cpp_source.html#l00548">libcomp::ReadOnlyPacket::ReadU16Little()</a>, <a class="el" href="DataSyncManager_8h_source.html#l00205">SYNC_FAILED</a>, and <a class="el" href="DataSyncManager_8h_source.html#l00196">SYNC_UPDATED</a>.</p>
 
 </div>
 </div>
@@ -509,9 +575,91 @@ template&lt;class T &gt; </div>
 <p>Build and send a synchronization request packet for all updated data in the queue. </p>
 <p>One packet will be sent for each type assigned to each server connection. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00082">82</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00104">104</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
 
-<p>References <a class="el" href="DataSyncManager_8h_source.html#l00287">mConnections</a>, <a class="el" href="DataSyncManager_8h_source.html#l00261">mLock</a>, <a class="el" href="DataSyncManager_8h_source.html#l00282">mOutboundRemoves</a>, <a class="el" href="DataSyncManager_8h_source.html#l00278">mOutboundUpdates</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00398">QueueOutgoing()</a>.</p>
+<p>References <a class="el" href="DataSyncManager_8h_source.html#l00338">mConnections</a>, <a class="el" href="DataSyncManager_8h_source.html#l00312">mLock</a>, <a class="el" href="DataSyncManager_8h_source.html#l00333">mOutboundRemoves</a>, <a class="el" href="DataSyncManager_8h_source.html#l00329">mOutboundUpdates</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00483">QueueOutgoing()</a>.</p>
+
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00471">SyncRecordRemoval()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00426">SyncRecordUpdate()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00041">libcomp::ScriptEngine::Using()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e9b04ae7ab49ad1326bd3075df58289"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> DataSyncManager::SyncRecordRemoval </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>record</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform a record removal and sync to the other servers immediately. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">record</td><td>Pointer to the record being removed </td></tr>
+    <tr><td class="paramname">type</td><td>Type name of the object being removed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the record was synced, false if no additional sync is necessary </dd></dl>
+
+<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00471">471</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
+
+<p>References <a class="el" href="DataSyncManager_8cpp_source.html#l00438">RemoveRecord()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00104">SyncOutgoing()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42773e95bb4e0a106db3ac5189d3248c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> DataSyncManager::SyncRecordUpdate </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>record</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform a record update and sync to the other servers immediately. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">record</td><td>Pointer to the record being updated </td></tr>
+    <tr><td class="paramname">type</td><td>Type name of the object being updated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the record was synced, false if no additional sync is necessary </dd></dl>
+
+<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00426">426</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
+
+<p>References <a class="el" href="DataSyncManager_8cpp_source.html#l00104">SyncOutgoing()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00393">UpdateRecord()</a>.</p>
 
 </div>
 </div>
@@ -565,7 +713,7 @@ template&lt;class D , class T &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>Type name of the object being removed </td></tr>
-    <tr><td class="paramname">record</td><td>Pointer to the record being updated </td></tr>
+    <tr><td class="paramname">obj</td><td>Pointer to the record being updated </td></tr>
     <tr><td class="paramname">isRemove</td><td>true if the change is a remove, false if it is an insert or an update </td></tr>
     <tr><td class="paramname">source</td><td>Identifier for the server sending the updates </td></tr>
   </table>
@@ -573,9 +721,9 @@ template&lt;class D , class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the update was performed without issue </dd></dl>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00139">139</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00161">161</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
-<p>References <a class="el" href="DataSyncManager_8h_source.html#l00165">SYNC_FAILED</a>.</p>
+<p>References <a class="el" href="DataSyncManager_8h_source.html#l00205">SYNC_FAILED</a>.</p>
 
 </div>
 </div>
@@ -619,11 +767,13 @@ template&lt;class D , class T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the update was performed without issue </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the record was queued for outgoing sync, false if no additional sync is necessary </dd></dl>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00332">332</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00393">393</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
 
-<p>References <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="DataSyncManager_8h_source.html#l00287">mConnections</a>, <a class="el" href="DataSyncManager_8h_source.html#l00261">mLock</a>, <a class="el" href="DataSyncManager_8h_source.html#l00278">mOutboundUpdates</a>, <a class="el" href="DataSyncManager_8h_source.html#l00258">mRegisteredTypes</a>, and <a class="el" href="DataSyncManager_8h_source.html#l00161">SYNC_HANDLED</a>.</p>
+<p>References <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="DataSyncManager_8h_source.html#l00338">mConnections</a>, <a class="el" href="DataSyncManager_8h_source.html#l00312">mLock</a>, <a class="el" href="DataSyncManager_8h_source.html#l00329">mOutboundUpdates</a>, <a class="el" href="DataSyncManager_8h_source.html#l00309">mRegisteredTypes</a>, and <a class="el" href="DataSyncManager_8h_source.html#l00201">SYNC_HANDLED</a>.</p>
+
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00426">SyncRecordUpdate()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00041">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -682,9 +832,9 @@ template&lt;class D , class T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00420">420</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00505">505</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
 
-<p>References <a class="el" href="Convert_8h_source.html#l00043">libcomp::Convert::ENCODING_UTF8</a>, <a class="el" href="PacketCodes_8h.html#ac0ff7a56e53798307cd98b3c35519773a36a946a9289b16e1afa8691e67495302">PACKET_DATA_SYNC</a>, <a class="el" href="Packet_8h_source.html#l00453">libcomp::Packet::WritePacketCode()</a>, <a class="el" href="src_2Packet_8cpp_source.html#l00265">libcomp::Packet::WriteString16Little()</a>, and <a class="el" href="src_2Packet_8cpp_source.html#l00309">libcomp::Packet::WriteU16Little()</a>.</p>
+<p>References <a class="el" href="Convert_8h_source.html#l00043">libcomp::Convert::ENCODING_UTF8</a>, <a class="el" href="PacketCodes_8h.html#ac0ff7a56e53798307cd98b3c35519773a36a946a9289b16e1afa8691e67495302">PACKET_DATA_SYNC</a>, <a class="el" href="Packet_8h_source.html#l00459">libcomp::Packet::WritePacketCode()</a>, <a class="el" href="src_2Packet_8cpp_source.html#l00265">libcomp::Packet::WriteString16Little()</a>, and <a class="el" href="src_2Packet_8cpp_source.html#l00309">libcomp::Packet::WriteU16Little()</a>.</p>
 
 </div>
 </div>
@@ -736,11 +886,11 @@ template&lt;class D , class T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00445">445</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8cpp_source.html#l00530">530</a> of file <a class="el" href="DataSyncManager_8cpp_source.html">DataSyncManager.cpp</a>.</p>
 
 <p>References <a class="el" href="Convert_8h_source.html#l00043">libcomp::Convert::ENCODING_UTF8</a>, <a class="el" href="src_2Packet_8cpp_source.html#l00265">libcomp::Packet::WriteString16Little()</a>, and <a class="el" href="src_2Packet_8cpp_source.html#l00309">libcomp::Packet::WriteU16Little()</a>.</p>
 
-<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00398">QueueOutgoing()</a>.</p>
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00483">QueueOutgoing()</a>.</p>
 
 </div>
 </div>
@@ -765,9 +915,9 @@ template&lt;class D , class T &gt; </div>
 
 <p>Map of all configurated server connections to their synchronized object types. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00287">287</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00338">338</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00045">RegisterConnection()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00066">RemoveConnection()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00365">RemoveRecord()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00082">SyncOutgoing()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00332">UpdateRecord()</a>.</p>
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00067">RegisterConnection()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00088">RemoveConnection()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00438">RemoveRecord()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00104">SyncOutgoing()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00393">UpdateRecord()</a>.</p>
 
 </div>
 </div>
@@ -791,9 +941,9 @@ template&lt;class D , class T &gt; </div>
 
 <p>Server lock for shared resources. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00261">261</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00312">312</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00045">RegisterConnection()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00066">RemoveConnection()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00365">RemoveRecord()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00131">SyncIncoming()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00082">SyncOutgoing()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00332">UpdateRecord()</a>.</p>
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00067">RegisterConnection()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00088">RemoveConnection()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00438">RemoveRecord()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00153">SyncIncoming()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00104">SyncOutgoing()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00393">UpdateRecord()</a>.</p>
 
 </div>
 </div>
@@ -817,9 +967,9 @@ template&lt;class D , class T &gt; </div>
 
 <p>Map of all record removes queued for synchronization. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00282">282</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00333">333</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00365">RemoveRecord()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00131">SyncIncoming()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00082">SyncOutgoing()</a>.</p>
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00438">RemoveRecord()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00153">SyncIncoming()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00104">SyncOutgoing()</a>.</p>
 
 </div>
 </div>
@@ -843,9 +993,9 @@ template&lt;class D , class T &gt; </div>
 
 <p>Map of all record inserts and updates queued for synchronization. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00278">278</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00329">329</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00131">SyncIncoming()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00082">SyncOutgoing()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00332">UpdateRecord()</a>.</p>
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00153">SyncIncoming()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00104">SyncOutgoing()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00393">UpdateRecord()</a>.</p>
 
 </div>
 </div>
@@ -869,9 +1019,9 @@ template&lt;class D , class T &gt; </div>
 
 <p>Map of registered synchronized types by name. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00258">258</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00309">309</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00365">RemoveRecord()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00131">SyncIncoming()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00332">UpdateRecord()</a>.</p>
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00438">RemoveRecord()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00153">SyncIncoming()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00393">UpdateRecord()</a>.</p>
 
 </div>
 </div>
@@ -895,9 +1045,9 @@ template&lt;class D , class T &gt; </div>
 
 <p>Internal sync manager code indicating that the update handler failed to complete successfully. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00165">165</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00205">205</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00131">SyncIncoming()</a>, and <a class="el" href="DataSyncManager_8h_source.html#l00139">Update()</a>.</p>
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00153">SyncIncoming()</a>, and <a class="el" href="DataSyncManager_8h_source.html#l00161">Update()</a>.</p>
 
 </div>
 </div>
@@ -921,9 +1071,9 @@ template&lt;class D , class T &gt; </div>
 
 <p>Internal sync manager code indicating that the update handler completed without error and the record should NOT be queued for sync if applicable. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00161">161</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00201">201</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00365">RemoveRecord()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00332">UpdateRecord()</a>.</p>
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00438">RemoveRecord()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00393">UpdateRecord()</a>.</p>
 
 </div>
 </div>
@@ -947,9 +1097,9 @@ template&lt;class D , class T &gt; </div>
 
 <p>Internal sync manager code indicating that the update handler completed without error and the record should be queued for sync if applicable. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00156">156</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00196">196</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00131">SyncIncoming()</a>.</p>
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00153">SyncIncoming()</a>.</p>
 
 </div>
 </div>

@@ -29,8 +29,5 @@ var searchData=
   ['encrypted_5ffile_5fiv',['ENCRYPTED_FILE_IV',['../../../../libcomp/html/namespacelibcomp_1_1Config.html#a842abe352138c42cd859e9f4a9aa0ea7',1,'libcomp::Config']]],
   ['encrypted_5ffile_5fkey',['ENCRYPTED_FILE_KEY',['../../../../libcomp/html/namespacelibcomp_1_1Config.html#a9365572eacd52fb8db65d878c7a744c1',1,'libcomp::Config']]],
   ['encrypted_5ffile_5fmagic',['ENCRYPTED_FILE_MAGIC',['../../../../libcomp/html/namespacelibcomp_1_1Config.html#a475501f783db93c1fee5fd471b45420a',1,'libcomp::Config']]],
-  ['equip_5fmod_5fedit_5fitems',['EQUIP_MOD_EDIT_ITEMS',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a5c6b6e1511517f0c718b31d4775d1345',1,'libcomp::ServerConstants::Data']]],
-  ['event_5fmenu_5fcomp_5fshop',['EVENT_MENU_COMP_SHOP',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a8b9f7bfe03429de09c973c0db19d31ec',1,'libcomp::ServerConstants::Data']]],
-  ['event_5fmenu_5fdemon_5fdepo',['EVENT_MENU_DEMON_DEPO',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a1a90e86b470baaa0221a241e3bef48c2',1,'libcomp::ServerConstants::Data']]],
-  ['event_5fmenu_5fitem_5fdepo',['EVENT_MENU_ITEM_DEPO',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#abc604a385da483dba0dacfad1c5e0c96',1,'libcomp::ServerConstants::Data']]]
+  ['equip_5fmod_5fedit_5fitems',['EQUIP_MOD_EDIT_ITEMS',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a5c6b6e1511517f0c718b31d4775d1345',1,'libcomp::ServerConstants::Data']]]
 ];

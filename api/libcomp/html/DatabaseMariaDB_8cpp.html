@@ -90,7 +90,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">DatabaseMariaDB.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -99,10 +100,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Class to handle a MariaDB database.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="DatabaseMariaDB_8h_source.html">DatabaseMariaDB.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="BaseServer_8h_source.html">BaseServer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DatabaseBind_8h_source.html">DatabaseBind.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DatabaseQueryMariaDB_8h_source.html">DatabaseQueryMariaDB.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="DataStore_8h_source.html">DataStore.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Log_8h_source.html">Log.h</a>&quot;</code><br />
-<code>#include &lt;my_global.h&gt;</code><br />
 <code>#include &lt;mysql.h&gt;</code><br />
 </div>
 <p><a href="DatabaseMariaDB_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -111,6 +113,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Macros</h2></td></tr>
 <tr class="memitem:abb452686968e48b67397da5f97445f5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DatabaseMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;&#160;&#160;bool</td></tr>
 <tr class="separator:abb452686968e48b67397da5f97445f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad3f028c7e9b06bf4736f13f3862f1f50"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DatabaseMariaDB_8cpp.html#ad3f028c7e9b06bf4736f13f3862f1f50">ConnectionString</a> (<a class="el" href="DatabaseMariaDB_8h.html#a82a6dc0dbc8c1a28b48de904614e0088">MYSQL</a> *pConnection)</td></tr>
+<tr class="separator:ad3f028c7e9b06bf4736f13f3862f1f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to handle a MariaDB database. </p>
@@ -133,7 +140,38 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00035">35</a> of file <a class="el" href="DatabaseMariaDB_8cpp_source.html">DatabaseMariaDB.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00037">37</a> of file <a class="el" href="DatabaseMariaDB_8cpp_source.html">DatabaseMariaDB.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ad3f028c7e9b06bf4736f13f3862f1f50"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> ConnectionString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="DatabaseMariaDB_8h.html#a82a6dc0dbc8c1a28b48de904614e0088">MYSQL</a> *&#160;</td>
+          <td class="paramname"><em>pConnection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00044">44</a> of file <a class="el" href="DatabaseMariaDB_8cpp_source.html">DatabaseMariaDB.cpp</a>.</p>
+
+<p>References <a class="el" href="CString_8cpp_source.html#l00561">libcomp::String::Arg()</a>.</p>
+
+<p>Referenced by <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00081">libcomp::DatabaseMariaDB::Close()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l01193">libcomp::DatabaseMariaDB::ConnectToDatabase()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00987">libcomp::DatabaseMariaDB::ProcessOperationalChangeSet()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00891">libcomp::DatabaseMariaDB::ProcessStandardChangeSet()</a>.</p>
 
 </div>
 </div>

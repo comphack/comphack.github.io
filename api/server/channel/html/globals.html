@@ -89,12 +89,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_n"><span>n</span></a></li>
-      <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_q"><span>q</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
       <li class="current"><a href="#index_v"><span>v</span></a></li>
     </ul>
   </div>
@@ -118,19 +118,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
 <li>ACTION_LEARN_ACQUIRED
-: <a class="el" href="UpdateDemonSkill_8cpp.html#ac6c65b501ae9880f18bdf94845f850c3">UpdateDemonSkill.cpp</a>
+: <a class="el" href="DemonSkillUpdate_8cpp.html#ac6c65b501ae9880f18bdf94845f850c3">DemonSkillUpdate.cpp</a>
 </li>
 <li>ACTION_LEARN_INHERITED
-: <a class="el" href="UpdateDemonSkill_8cpp.html#a41609d95197476f81f85b98b5f608ac0">UpdateDemonSkill.cpp</a>
+: <a class="el" href="DemonSkillUpdate_8cpp.html#a41609d95197476f81f85b98b5f608ac0">DemonSkillUpdate.cpp</a>
 </li>
 <li>ACTION_MOVE
-: <a class="el" href="UpdateDemonSkill_8cpp.html#a1809abc00fae8880f54b9d50974a17c8">UpdateDemonSkill.cpp</a>
+: <a class="el" href="DemonSkillUpdate_8cpp.html#a1809abc00fae8880f54b9d50974a17c8">DemonSkillUpdate.cpp</a>
 </li>
-<li>ADD_CUSTOM_TARGET()
-: <a class="el" href="CMakeLists_8txt.html#a4d26af06bb65f6c57b9bab37326b2dee">CMakeLists.txt</a>
-</li>
-<li>AddStatusEffectMap
-: <a class="el" href="ActiveEntityState_8h.html#a8c121a6e760a339634841ced705f0616">ActiveEntityState.h</a>
+<li>ActiveDisplayState_t
+: <a class="el" href="ActiveEntityState_8h.html#af09b470d685d26db7b32cdc05e124747">ActiveEntityState.h</a>
 </li>
 <li>AIL_OFFSET
 : <a class="el" href="SkillManager_8cpp.html#a977044bc5dcb3a0f4c109e7bf3c43227">SkillManager.cpp</a>
@@ -162,13 +159,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="ActiveEntityState_8h.html#ae5e46bc20c247425b6c26aa4d9636868">ActiveEntityState.h</a>
 , <a class="el" href="CharacterManager_8h.html#ae5e46bc20c247425b6c26aa4d9636868">CharacterManager.h</a>
 </li>
-<li>COVERALLS_SOURCES()
-: <a class="el" href="CMakeLists_8txt.html#ab96ef612f015528247c48d55d727c244">CMakeLists.txt</a>
-</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>DAMAGE_EXPLICIT_SET
+: <a class="el" href="SkillManager_8cpp.html#ad68a770a9e22ec6690f8ebdf70e275be">SkillManager.cpp</a>
+</li>
 <li>DAMAGE_TYPE_DRAIN
 : <a class="el" href="SkillManager_8cpp.html#a7730f5a108834730aea3e0e79f6413fc">SkillManager.cpp</a>
 </li>
@@ -184,11 +181,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>DAMAGE_TYPE_NONE
 : <a class="el" href="SkillManager_8cpp.html#abea0dd75beddfb15c5ec9375b2cb0a2d">SkillManager.cpp</a>
 </li>
-<li>DemonDismiss()
-: <a class="el" href="DismissDemon_8cpp.html#a46a050384ae3d543321e19f8e16bc9f8">DismissDemon.cpp</a>
+<li>DemonLockSet()
+: <a class="el" href="DemonLock_8cpp.html#ad43ae8a341fb9f5da753e3ebdfd069b1">DemonLock.cpp</a>
 </li>
-<li>DemonSkillUpdate()
-: <a class="el" href="UpdateDemonSkill_8cpp.html#a89539b632dfc25fbab685d3ca60f94b7">UpdateDemonSkill.cpp</a>
+<li>DismissDemon()
+: <a class="el" href="DemonDismiss_8cpp.html#a69ac7dcdbb6723c89468b0d61707f071">DemonDismiss.cpp</a>
 </li>
 <li>DropItem()
 : <a class="el" href="ItemDrop_8cpp.html#afa128412ca19b64d49dc9c41972f3342">ItemDrop.cpp</a>
@@ -238,6 +235,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>EventCompareMode
 : <a class="el" href="EventManager_8h.html#a82224bae604284567c8ac6eae2113af5">EventManager.h</a>
+</li>
+<li>ExtractReunionPoints()
+: <a class="el" href="ReunionExtract_8cpp.html#ac58ba6daf12f0f8c9260fead107e06ce">ReunionExtract.cpp</a>
 </li>
 </ul>
 
@@ -303,9 +303,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>FLAG2_LIMIT_BREAK
 : <a class="el" href="SkillManager_8cpp.html#a1fa320df0bd1e6e8074c236ce7b3ffeb">SkillManager.cpp</a>
 </li>
+<li>FORCE_NUMERIC
+: <a class="el" href="ActiveEntityState_8cpp.html#a81b7893bd32baafea5bd1de208c4c2b4">ActiveEntityState.cpp</a>
+</li>
 <li>FUSION_ELEMENTAL_ADJUST
 : <a class="el" href="FusionTables_8cpp.html#a930ed54df4d4788b342d06717857eb0a">FusionTables.cpp</a>
 , <a class="el" href="FusionTables_8h.html#a930ed54df4d4788b342d06717857eb0a">FusionTables.h</a>
+</li>
+<li>FUSION_ELEMENTAL_MITAMA
+: <a class="el" href="FusionTables_8cpp.html#a868badbb97b033768a4c448c66bfac2f">FusionTables.cpp</a>
+, <a class="el" href="FusionTables_8h.html#a868badbb97b033768a4c448c66bfac2f">FusionTables.h</a>
 </li>
 <li>FUSION_FAMILIARITY_BONUS
 : <a class="el" href="FusionTables_8cpp.html#afdd9ba40ab12aa4f9d44268a212ff04e">FusionTables.cpp</a>
@@ -322,14 +329,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>HandleBarter()
 : <a class="el" href="Barter_8cpp.html#ae0c15ea6e49c0a8f7d206c69dc56bd73">Barter.cpp</a>
 </li>
+<li>HandleCultureItem()
+: <a class="el" href="CultureItem_8cpp.html#a391d376d61ab409448459eadc33222ea">CultureItem.cpp</a>
+</li>
 <li>HandleLoginResponse()
 : <a class="el" href="AccountLogin_8cpp.html#afbed0e021c8c8b741774697301704585">AccountLogin.cpp</a>
 </li>
+<li>HandleMitamaReset()
+: <a class="el" href="MitamaReset_8cpp.html#ab009c0f67990ed6db0cbdbb5324ee252">MitamaReset.cpp</a>
+</li>
+<li>HandleMitamaReunion()
+: <a class="el" href="MitamaReunion_8cpp.html#a1197ea9d0812d122f518b13a84a66b4d">MitamaReunion.cpp</a>
+</li>
 <li>HandleShopPurchase()
-: <a class="el" href="ShopBuy_8cpp.html#ab61cabece8c933cc8dfea49a2e3bd7e5">ShopBuy.cpp</a>
+: <a class="el" href="ShopBuy_8cpp.html#a4153b12281c7add667e8759bc4ec6918">ShopBuy.cpp</a>
 </li>
 <li>HandleShopSale()
-: <a class="el" href="ShopSell_8cpp.html#a86fb7c38f0302404b2e7f8ef2836d3f4">ShopSell.cpp</a>
+: <a class="el" href="ShopSell_8cpp.html#a4351cc9f37ccff931844a88c1a28e03f">ShopSell.cpp</a>
 </li>
 </ul>
 
@@ -338,6 +354,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>INHERITENCE_SKILL_MAP
 : <a class="el" href="FusionTables_8cpp.html#a506d6f827fce1c0804627c24544abf88">FusionTables.cpp</a>
 , <a class="el" href="FusionTables_8h.html#a506d6f827fce1c0804627c24544abf88">FusionTables.h</a>
+</li>
+<li>InjectReunionPoints()
+: <a class="el" href="ReunionInject_8cpp.html#a67855c04bef1b08ddb416a977c1c45b2">ReunionInject.cpp</a>
 </li>
 </ul>
 
@@ -363,13 +382,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 
 
-<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
-<li>OBJGEN_XML()
-: <a class="el" href="CMakeLists_8txt.html#ac5b247237c6bf66bcca03258f145e149">CMakeLists.txt</a>
-</li>
-</ul>
-
-
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>ParseDatabase()
 : <a class="el" href="SetWorldInfo_8cpp.html#ad888f42dfbda001cb3cccd6dc2a4ee79">SetWorldInfo.cpp</a>
@@ -391,6 +403,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>RES_OFFSET
 : <a class="el" href="SkillManager_8cpp.html#a4f0b4728bb96f11ab637a677b9633013">SkillManager.cpp</a>
 </li>
+<li>REUNION_RANK_POINTS
+: <a class="el" href="FusionTables_8cpp.html#a8c62bce2d47072b0d6eae6db2053a3d4">FusionTables.cpp</a>
+, <a class="el" href="FusionTables_8h.html#a8c62bce2d47072b0d6eae6db2053a3d4">FusionTables.h</a>
+</li>
 </ul>
 
 
@@ -400,6 +416,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SendClientReadyData()
 : <a class="el" href="SendData_8cpp.html#a4d40869b7ccab27fb36dcf12b89ffef3">SendData.cpp</a>
+</li>
+<li>SendDemonQuestData()
+: <a class="el" href="DemonQuestData_8cpp.html#a6e9167718bbaddc9c97548ead9f29bf1">DemonQuestData.cpp</a>
 </li>
 <li>SendEquipmentList()
 : <a class="el" href="EquipmentList_8cpp.html#afd6aaba003dc40f029037fb74db565b3">EquipmentList.cpp</a>
@@ -411,7 +430,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="HotbarData_8cpp.html#a807b4457fdcd0fe6eb2962cee576f72c">HotbarData.cpp</a>
 </li>
 <li>SendPartnerData()
-: <a class="el" href="PartnerDemonData_8cpp.html#abb17409eeb4ba571829c3e2b5708e6a2">PartnerDemonData.cpp</a>
+: <a class="el" href="DemonData_8cpp.html#abb17409eeb4ba571829c3e2b5708e6a2">DemonData.cpp</a>
 </li>
 <li>SendShopPurchaseReply()
 : <a class="el" href="ShopBuy_8cpp.html#a4fa3002a2dde1717da7ada9c6aa176a5">ShopBuy.cpp</a>
@@ -423,10 +442,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="State_8cpp.html#a5d72fe6d2cdaa07a518165696dc50a04">State.cpp</a>
 </li>
 <li>SET()
-: <a class="el" href="CMakeLists_8txt.html#ae34d1b4c8620e9d20449785b146e5c13">CMakeLists.txt</a>
-</li>
-<li>SetDemonLock()
-: <a class="el" href="LockDemon_8cpp.html#ada59e8a7cacec9e4a5aa4809a1991b02">LockDemon.cpp</a>
+: <a class="el" href="CMakeLists_8txt.html#afc3d092dff98766bac9b4b1dfdfbe78a">CMakeLists.txt</a>
 </li>
 <li>SetWorldInfoFromPacket()
 : <a class="el" href="SetWorldInfo_8cpp.html#ab730b49d6765a03d1d062421184fd736">SetWorldInfo.cpp</a>
@@ -445,6 +461,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>STATUS_KNOCKBACK
 : <a class="el" href="ActiveEntityState_8h.html#ae2e5657f94c1486a34bc9ec39e2b45f9">ActiveEntityState.h</a>
+</li>
+<li>STATUS_LOCKOUT
+: <a class="el" href="ActiveEntityState_8h.html#af8c3ef7eb61a25458414b410c964e298">ActiveEntityState.h</a>
 </li>
 <li>STATUS_RESTING
 : <a class="el" href="ActiveEntityState_8h.html#a411f472122829e12d52b929cbaf47aa3">ActiveEntityState.h</a>
@@ -496,6 +515,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>TRIFUSION_RACE_PRIORITY
 : <a class="el" href="FusionTables_8cpp.html#a9e06e2b8eb073f71e095a384ff8eb2a6">FusionTables.cpp</a>
 , <a class="el" href="FusionTables_8h.html#a9e06e2b8eb073f71e095a384ff8eb2a6">FusionTables.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>UpdateDemonSkill()
+: <a class="el" href="DemonSkillUpdate_8cpp.html#a0a339d844ed8392fe28977864699f915">DemonSkillUpdate.cpp</a>
 </li>
 </ul>
 

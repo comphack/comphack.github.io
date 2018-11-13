@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Manages skill execution and logic.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>&quot;</code><br />
-<code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Constants_8h.html">Constants.h</a>&gt;</code><br />
+<code>#include &lt;Constants.h&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DefinitionManager_8h.html">DefinitionManager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ErrorCodes_8h.html">ErrorCodes.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html">Log.h</a>&gt;</code><br />
@@ -109,13 +109,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html">ServerConstants.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerDataManager_8h.html">ServerDataManager.h</a>&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;AccountWorldData.h&gt;</code><br />
 <code>#include &lt;ActionSpawn.h&gt;</code><br />
 <code>#include &lt;ActivatedAbility.h&gt;</code><br />
 <code>#include &lt;CalculatedEntityState.h&gt;</code><br />
 <code>#include &lt;ChannelConfig.h&gt;</code><br />
 <code>#include &lt;CharacterProgress.h&gt;</code><br />
-<code>#include &lt;DemonPresent.h&gt;</code><br />
+<code>#include &lt;DigitalizeState.h&gt;</code><br />
 <code>#include &lt;DropSet.h&gt;</code><br />
+<code>#include &lt;Expertise.h&gt;</code><br />
 <code>#include &lt;InheritedSkill.h&gt;</code><br />
 <code>#include &lt;Item.h&gt;</code><br />
 <code>#include &lt;ItemBox.h&gt;</code><br />
@@ -135,9 +137,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;MiCostTbl.h&gt;</code><br />
 <code>#include &lt;MiDamageData.h&gt;</code><br />
 <code>#include &lt;MiDCategoryData.h&gt;</code><br />
+<code>#include &lt;MiDevilBattleData.h&gt;</code><br />
 <code>#include &lt;MiDevilBookData.h&gt;</code><br />
 <code>#include &lt;MiDevilData.h&gt;</code><br />
 <code>#include &lt;MiDevilFamiliarityData.h&gt;</code><br />
+<code>#include &lt;MiDevilFusionData.h&gt;</code><br />
 <code>#include &lt;MiDischargeData.h&gt;</code><br />
 <code>#include &lt;MiDoTDamageData.h&gt;</code><br />
 <code>#include &lt;MiEffectData.h&gt;</code><br />
@@ -147,6 +151,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;MiExpertGrowthTbl.h&gt;</code><br />
 <code>#include &lt;MiExpertRankData.h&gt;</code><br />
 <code>#include &lt;MiGrowthData.h&gt;</code><br />
+<code>#include &lt;MiGuardianLevelData.h&gt;</code><br />
+<code>#include &lt;MiGuardianLevelDataEntry.h&gt;</code><br />
+<code>#include &lt;MiGuardianSpecialData.h&gt;</code><br />
 <code>#include &lt;MiItemBasicData.h&gt;</code><br />
 <code>#include &lt;MiItemData.h&gt;</code><br />
 <code>#include &lt;MiKnockBackData.h&gt;</code><br />
@@ -154,7 +161,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;MiNegotiationData.h&gt;</code><br />
 <code>#include &lt;MiNPCBasicData.h&gt;</code><br />
 <code>#include &lt;MiPossessionData.h&gt;</code><br />
+<code>#include &lt;MiRentalData.h&gt;</code><br />
+<code>#include &lt;MiSItemData.h&gt;</code><br />
 <code>#include &lt;MiSkillBasicData.h&gt;</code><br />
+<code>#include &lt;MiSkillCharasticData.h&gt;</code><br />
 <code>#include &lt;MiSkillData.h&gt;</code><br />
 <code>#include &lt;MiSkillItemStatusCommonData.h&gt;</code><br />
 <code>#include &lt;MiSkillSpecialParams.h&gt;</code><br />
@@ -164,20 +174,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;MiTargetData.h&gt;</code><br />
 <code>#include &lt;MiUnionData.h&gt;</code><br />
 <code>#include &lt;Party.h&gt;</code><br />
+<code>#include &lt;PvPInstanceStats.h&gt;</code><br />
+<code>#include &lt;PvPPlayerStats.h&gt;</code><br />
 <code>#include &lt;ServerZone.h&gt;</code><br />
+<code>#include &lt;ServerZoneInstance.h&gt;</code><br />
+<code>#include &lt;ServerZonePartial.h&gt;</code><br />
 <code>#include &lt;Spawn.h&gt;</code><br />
 <code>#include &lt;SpawnGroup.h&gt;</code><br />
+<code>#include &lt;SpawnLocation.h&gt;</code><br />
+<code>#include &lt;SpawnLocationGroup.h&gt;</code><br />
 <code>#include &lt;Tokusei.h&gt;</code><br />
 <code>#include &lt;TokuseiCondition.h&gt;</code><br />
 <code>#include &lt;TokuseiSkillCondition.h&gt;</code><br />
+<code>#include &lt;UBMatch.h&gt;</code><br />
 <code>#include &lt;WorldSharedConfig.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="ActionManager_8h_source.html">ActionManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="AIManager_8h_source.html">AIManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="EventManager_8h_source.html">EventManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ManagerConnection_8h_source.html">ManagerConnection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MatchManager_8h_source.html">MatchManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Zone_8h_source.html">Zone.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ZoneInstance_8h_source.html">ZoneInstance.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ZoneManager_8h_source.html">ZoneManager.h</a>&quot;</code><br />
 </div>
 <p><a href="SkillManager_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -193,8 +213,10 @@ Classes</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a977044bc5dcb3a0f4c109e7bf3c43227"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkillManager_8cpp.html#a977044bc5dcb3a0f4c109e7bf3c43227">AIL_OFFSET</a></td></tr>
 <tr class="separator:a977044bc5dcb3a0f4c109e7bf3c43227"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe5ffcca695591cd21488fe2261b3e54"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkillManager_8cpp.html#afe5ffcca695591cd21488fe2261b3e54">BOOST_OFFSET</a> = (uint8_t)CorrectTbl::BOOST_SLASH - 2</td></tr>
+<tr class="memitem:afe5ffcca695591cd21488fe2261b3e54"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkillManager_8cpp.html#afe5ffcca695591cd21488fe2261b3e54">BOOST_OFFSET</a> = (uint8_t)CorrectTbl::BOOST_DEFAULT</td></tr>
 <tr class="separator:afe5ffcca695591cd21488fe2261b3e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68a770a9e22ec6690f8ebdf70e275be"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkillManager_8cpp.html#ad68a770a9e22ec6690f8ebdf70e275be">DAMAGE_EXPLICIT_SET</a> = 6</td></tr>
+<tr class="separator:ad68a770a9e22ec6690f8ebdf70e275be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7730f5a108834730aea3e0e79f6413fc"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkillManager_8cpp.html#a7730f5a108834730aea3e0e79f6413fc">DAMAGE_TYPE_DRAIN</a> = 5</td></tr>
 <tr class="separator:a7730f5a108834730aea3e0e79f6413fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4975ff3cb4beb96878ffca8a2dd8520"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkillManager_8cpp.html#aa4975ff3cb4beb96878ffca8a2dd8520">DAMAGE_TYPE_GENERIC</a> = 0</td></tr>
@@ -245,9 +267,9 @@ Variables</h2></td></tr>
 <tr class="separator:aaceca4dc4e8cff17f57740c82f0e7a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fa320df0bd1e6e8074c236ce7b3ffeb"><td class="memItemLeft" align="right" valign="top">const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkillManager_8cpp.html#a1fa320df0bd1e6e8074c236ce7b3ffeb">FLAG2_LIMIT_BREAK</a> = 1 &lt;&lt; 5</td></tr>
 <tr class="separator:a1fa320df0bd1e6e8074c236ce7b3ffeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a485bfa66c7e75373401438412e7e06b3"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkillManager_8cpp.html#a485bfa66c7e75373401438412e7e06b3">NRA_OFFSET</a> = (uint8_t)CorrectTbl::NRA_WEAPON - 1</td></tr>
+<tr class="memitem:a485bfa66c7e75373401438412e7e06b3"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkillManager_8cpp.html#a485bfa66c7e75373401438412e7e06b3">NRA_OFFSET</a> = (uint8_t)CorrectTbl::NRA_DEFAULT</td></tr>
 <tr class="separator:a485bfa66c7e75373401438412e7e06b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f0b4728bb96f11ab637a677b9633013"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkillManager_8cpp.html#a4f0b4728bb96f11ab637a677b9633013">RES_OFFSET</a> = (uint8_t)CorrectTbl::RES_WEAPON - 1</td></tr>
+<tr class="memitem:a4f0b4728bb96f11ab637a677b9633013"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkillManager_8cpp.html#a4f0b4728bb96f11ab637a677b9633013">RES_OFFSET</a> = (uint8_t)CorrectTbl::RES_DEFAULT</td></tr>
 <tr class="separator:a4f0b4728bb96f11ab637a677b9633013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a642f4c69260075efae64e01b7b3246ba"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkillManager_8cpp.html#a642f4c69260075efae64e01b7b3246ba">TALK_GIVE_ITEM</a> = 6</td></tr>
 <tr class="separator:a642f4c69260075efae64e01b7b3246ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,10 +308,10 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= (uint8_t)((uint8_t)CorrectTbl::RES_FIRE -</div><div class="line">    (uint8_t)CorrectTbl::RES_SLASH + 1)</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00168">168</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">= (uint8_t)((uint8_t)CorrectTbl::RES_FIRE -</div><div class="line">    (uint8_t)CorrectTbl::RES_DEFAULT - 1)</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00189">189</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l03203">channel::SkillManager::HandleStatusEffects()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04870">channel::SkillManager::HandleStatusEffects()</a>.</p>
 
 </div>
 </div>
@@ -298,14 +320,30 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t BOOST_OFFSET = (uint8_t)CorrectTbl::BOOST_SLASH - 2</td>
+          <td class="memname">const uint8_t BOOST_OFFSET = (uint8_t)CorrectTbl::BOOST_DEFAULT</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00166">166</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00187">187</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04728">channel::SkillManager::CalculateDamage_Normal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l07851">channel::SkillManager::CalculateDamage_Normal()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l04870">channel::SkillManager::HandleStatusEffects()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad68a770a9e22ec6690f8ebdf70e275be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DAMAGE_EXPLICIT_SET = 6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00144">144</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l07243">channel::SkillManager::CalculateDamage()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -319,9 +357,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00123">123</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00143">143</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04333">channel::SkillManager::CalculateDamage()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l07243">channel::SkillManager::CalculateDamage()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -335,9 +373,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00119">119</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00139">139</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04333">channel::SkillManager::CalculateDamage()</a>, <a class="el" href="SkillManager_8cpp_source.html#l04973">channel::SkillManager::CalculateDamage_MaxPercent()</a>, <a class="el" href="SkillManager_8cpp_source.html#l04728">channel::SkillManager::CalculateDamage_Normal()</a>, <a class="el" href="SkillManager_8cpp_source.html#l04954">channel::SkillManager::CalculateDamage_Percent()</a>, <a class="el" href="SkillManager_8cpp_source.html#l04941">channel::SkillManager::CalculateDamage_Static()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06125">channel::SkillManager::ApplyZoneSpecificEffects()</a>, <a class="el" href="SkillManager_8cpp_source.html#l07243">channel::SkillManager::CalculateDamage()</a>, <a class="el" href="SkillManager_8cpp_source.html#l08121">channel::SkillManager::CalculateDamage_MaxPercent()</a>, <a class="el" href="SkillManager_8cpp_source.html#l07851">channel::SkillManager::CalculateDamage_Normal()</a>, <a class="el" href="SkillManager_8cpp_source.html#l08102">channel::SkillManager::CalculateDamage_Percent()</a>, <a class="el" href="SkillManager_8cpp_source.html#l08089">channel::SkillManager::CalculateDamage_Static()</a>, <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l06215">channel::SkillManager::UpdatePvPStats()</a>.</p>
 
 </div>
 </div>
@@ -351,9 +389,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00120">120</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00140">140</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04333">channel::SkillManager::CalculateDamage()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06125">channel::SkillManager::ApplyZoneSpecificEffects()</a>, <a class="el" href="SkillManager_8cpp_source.html#l07243">channel::SkillManager::CalculateDamage()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -367,9 +405,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00122">122</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00142">142</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l03168">channel::SkillManager::HandleDodge()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04823">channel::SkillManager::HandleDodge()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -383,7 +421,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00121">121</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00141">141</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -397,9 +437,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00137">137</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00158">158</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -413,9 +453,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00143">143</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00164">164</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -429,9 +469,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00141">141</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00162">162</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -445,7 +485,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00127">127</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00148">148</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -459,9 +499,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00129">129</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00150">150</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04333">channel::SkillManager::CalculateDamage()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l07243">channel::SkillManager::CalculateDamage()</a>.</p>
 
 </div>
 </div>
@@ -475,9 +515,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00128">128</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00149">149</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l03168">channel::SkillManager::HandleDodge()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04823">channel::SkillManager::HandleDodge()</a>.</p>
 
 </div>
 </div>
@@ -491,9 +531,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00126">126</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00147">147</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l03128">channel::SkillManager::HandleCounter()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l03090">channel::SkillManager::HandleGuard()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04774">channel::SkillManager::HandleCounter()</a>, <a class="el" href="SkillManager_8cpp_source.html#l04702">channel::SkillManager::HandleGuard()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -507,9 +547,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00131">131</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00152">152</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l03203">channel::SkillManager::HandleStatusEffects()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04870">channel::SkillManager::HandleStatusEffects()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -523,9 +563,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00125">125</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00146">146</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06125">channel::SkillManager::ApplyZoneSpecificEffects()</a>, <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l06215">channel::SkillManager::UpdatePvPStats()</a>.</p>
 
 </div>
 </div>
@@ -539,9 +579,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00133">133</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00154">154</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04333">channel::SkillManager::CalculateDamage()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l07243">channel::SkillManager::CalculateDamage()</a>.</p>
 
 </div>
 </div>
@@ -555,9 +595,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00142">142</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00163">163</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -571,9 +611,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00140">140</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00161">161</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -587,9 +627,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00136">136</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00157">157</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06125">channel::SkillManager::ApplyZoneSpecificEffects()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -603,9 +643,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00132">132</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00153">153</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -619,9 +659,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00130">130</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00151">151</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04333">channel::SkillManager::CalculateDamage()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l07243">channel::SkillManager::CalculateDamage()</a>.</p>
 
 </div>
 </div>
@@ -635,7 +675,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00148">148</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00169">169</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -649,7 +691,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00147">147</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00168">168</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l07243">channel::SkillManager::CalculateDamage()</a>.</p>
 
 </div>
 </div>
@@ -663,9 +707,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00150">150</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00171">171</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -679,9 +723,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00149">149</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00170">170</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04333">channel::SkillManager::CalculateDamage()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l07243">channel::SkillManager::CalculateDamage()</a>.</p>
 
 </div>
 </div>
@@ -695,9 +739,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00146">146</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00167">167</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04333">channel::SkillManager::CalculateDamage()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l07243">channel::SkillManager::CalculateDamage()</a>.</p>
 
 </div>
 </div>
@@ -706,14 +750,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t NRA_OFFSET = (uint8_t)CorrectTbl::NRA_WEAPON - 1</td>
+          <td class="memname">const uint8_t NRA_OFFSET = (uint8_t)CorrectTbl::NRA_DEFAULT</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00167">167</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00188">188</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l05058">channel::SkillManager::GetNRAResult()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l03203">channel::SkillManager::HandleStatusEffects()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l08238">channel::SkillManager::GetNRAResult()</a>, <a class="el" href="SkillManager_8cpp_source.html#l04870">channel::SkillManager::HandleStatusEffects()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l02235">channel::SkillManager::ProcessSkillResult()</a>.</p>
 
 </div>
 </div>
@@ -722,14 +766,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t RES_OFFSET = (uint8_t)CorrectTbl::RES_WEAPON - 1</td>
+          <td class="memname">const uint8_t RES_OFFSET = (uint8_t)CorrectTbl::RES_DEFAULT</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00165">165</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00186">186</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l04333">channel::SkillManager::CalculateDamage()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l02525">channel::SkillManager::GetProcessingSkill()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l07243">channel::SkillManager::CalculateDamage()</a>, <a class="el" href="SkillManager_8cpp_source.html#l04025">channel::SkillManager::GetProcessingSkill()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l04870">channel::SkillManager::HandleStatusEffects()</a>.</p>
 
 </div>
 </div>
@@ -743,9 +787,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00157">157</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00178">178</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l03908">channel::SkillManager::HandleNegotiations()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06439">channel::SkillManager::ApplyNegotiationDamage()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l06670">channel::SkillManager::HandleNegotiations()</a>.</p>
 
 </div>
 </div>
@@ -759,9 +803,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00161">161</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00182">182</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l03908">channel::SkillManager::HandleNegotiations()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06439">channel::SkillManager::ApplyNegotiationDamage()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l06670">channel::SkillManager::HandleNegotiations()</a>.</p>
 
 </div>
 </div>
@@ -775,9 +819,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00156">156</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00177">177</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l03908">channel::SkillManager::HandleNegotiations()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06439">channel::SkillManager::ApplyNegotiationDamage()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l06670">channel::SkillManager::HandleNegotiations()</a>.</p>
 
 </div>
 </div>
@@ -791,9 +835,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00160">160</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00181">181</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l03908">channel::SkillManager::HandleNegotiations()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06439">channel::SkillManager::ApplyNegotiationDamage()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l06670">channel::SkillManager::HandleNegotiations()</a>.</p>
 
 </div>
 </div>
@@ -807,9 +851,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00159">159</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00180">180</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l03908">channel::SkillManager::HandleNegotiations()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06439">channel::SkillManager::ApplyNegotiationDamage()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l06670">channel::SkillManager::HandleNegotiations()</a>.</p>
 
 </div>
 </div>
@@ -823,9 +867,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00162">162</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00183">183</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l03908">channel::SkillManager::HandleNegotiations()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06439">channel::SkillManager::ApplyNegotiationDamage()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l06670">channel::SkillManager::HandleNegotiations()</a>.</p>
 
 </div>
 </div>
@@ -839,9 +883,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00152">152</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00173">173</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06439">channel::SkillManager::ApplyNegotiationDamage()</a>.</p>
 
 </div>
 </div>
@@ -855,9 +899,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00155">155</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SkillManager_8cpp_source.html#l00176">176</a> of file <a class="el" href="SkillManager_8cpp_source.html">SkillManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06439">channel::SkillManager::ApplyNegotiationDamage()</a>.</p>
 
 </div>
 </div>

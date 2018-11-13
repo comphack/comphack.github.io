@@ -112,8 +112,8 @@ Inheritance diagram for libcomp::Database:</div>
  <div class="center">
   <img src="classlibcomp_1_1Database.png" usemap="#libcomp::Database_map" alt=""/>
   <map id="libcomp::Database_map" name="libcomp::Database_map">
-<area href="classlibcomp_1_1DatabaseMariaDB.html" title="Represents a MariaDB database connection via the supplied config. " alt="libcomp::DatabaseMariaDB" shape="rect" coords="0,56,164,80"/>
-<area href="classlibcomp_1_1DatabaseSQLite3.html" title="Represents a SQLite3 database connection associated to a specific file via the supplied config..." alt="libcomp::DatabaseSQLite3" shape="rect" coords="174,56,338,80"/>
+<area href="classlibcomp_1_1DatabaseMariaDB.html" title="Represents a MariaDB database connection via the supplied config. " alt="libcomp::DatabaseMariaDB" shape="rect" coords="0,112,253,136"/>
+<area href="classlibcomp_1_1DatabaseSQLite3.html" title="Represents a SQLite3 database connection associated to a specific file via the supplied config..." alt="libcomp::DatabaseSQLite3" shape="rect" coords="263,112,516,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -122,9 +122,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac54a972830f30edf74be00dda5c4d006"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Database.html#ac54a972830f30edf74be00dda5c4d006">Database</a> (const std::shared_ptr&lt; objects::DatabaseConfig &gt; &amp;config)</td></tr>
 <tr class="memdesc:ac54a972830f30edf74be00dda5c4d006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="classlibcomp_1_1Database.html" title="Abstract base class that represents a database to use for loading and modifying PersistentObject inst...">Database</a> connection.  <a href="#ac54a972830f30edf74be00dda5c4d006">More...</a><br /></td></tr>
 <tr class="separator:ac54a972830f30edf74be00dda5c4d006"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84d399a2ad58d69daab9b05330e1316d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Database.html#a84d399a2ad58d69daab9b05330e1316d">~Database</a> ()</td></tr>
+<tr class="memitem:a84d399a2ad58d69daab9b05330e1316d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Database.html#a84d399a2ad58d69daab9b05330e1316d">~Database</a> ()</td></tr>
 <tr class="memdesc:a84d399a2ad58d69daab9b05330e1316d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close and clean up the database connection.  <a href="#a84d399a2ad58d69daab9b05330e1316d">More...</a><br /></td></tr>
 <tr class="separator:a84d399a2ad58d69daab9b05330e1316d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ddcf6da45d7e3e1f3c1ea1c07701a6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Database.html#ae2ddcf6da45d7e3e1f3c1ea1c07701a6">ApplyMigration</a> (const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1BaseServer.html">BaseServer</a> &gt; &amp;server, <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> *pDataStore, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;migration, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;path)</td></tr>
+<tr class="memdesc:ae2ddcf6da45d7e3e1f3c1ea1c07701a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a database migration script.  <a href="#ae2ddcf6da45d7e3e1f3c1ea1c07701a6">More...</a><br /></td></tr>
+<tr class="separator:ae2ddcf6da45d7e3e1f3c1ea1c07701a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a760e06342224a40b248d9b53363a45cd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Database.html#a760e06342224a40b248d9b53363a45cd">Close</a> ()=0</td></tr>
 <tr class="memdesc:a760e06342224a40b248d9b53363a45cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the connection to the database.  <a href="#a760e06342224a40b248d9b53363a45cd">More...</a><br /></td></tr>
 <tr class="separator:a760e06342224a40b248d9b53363a45cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,9 +185,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a97e9ef82c119acd3691ed4d261ee5b9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Database.html#a97e9ef82c119acd3691ed4d261ee5b9e">QueueUpdate</a> (std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">PersistentObject</a> &gt; obj, const libobjgen::UUID &amp;uuid=NULLUUID)</td></tr>
 <tr class="memdesc:a97e9ef82c119acd3691ed4d261ee5b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue an object to update during the next call to ProcessTransactionQueue.  <a href="#a97e9ef82c119acd3691ed4d261ee5b9e">More...</a><br /></td></tr>
 <tr class="separator:a97e9ef82c119acd3691ed4d261ee5b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa6813e428800934d4d9dcc2b4294a50"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Database.html#afa6813e428800934d4d9dcc2b4294a50">Setup</a> (<a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> rebuild=false)=0</td></tr>
-<tr class="memdesc:afa6813e428800934d4d9dcc2b4294a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the database schema and perform all validation steps.  <a href="#afa6813e428800934d4d9dcc2b4294a50">More...</a><br /></td></tr>
-<tr class="separator:afa6813e428800934d4d9dcc2b4294a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5ea8359282d4bd844d865b9d46e463"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Database.html#a1b5ea8359282d4bd844d865b9d46e463">Setup</a> (<a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> rebuild=false, const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1BaseServer.html">BaseServer</a> &gt; &amp;server={}, <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> *pDataStore=nullptr, const std::string &amp;migrationDirectory=std::string())=0</td></tr>
+<tr class="memdesc:a1b5ea8359282d4bd844d865b9d46e463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the database schema and perform all validation steps.  <a href="#a1b5ea8359282d4bd844d865b9d46e463">More...</a><br /></td></tr>
+<tr class="separator:a1b5ea8359282d4bd844d865b9d46e463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7969fad6d6121c655a541379c12fc5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Database.html#a1c7969fad6d6121c655a541379c12fc5">TableExists</a> (const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;table)=0</td></tr>
+<tr class="memdesc:a1c7969fad6d6121c655a541379c12fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a table exists.  <a href="#a1c7969fad6d6121c655a541379c12fc5">More...</a><br /></td></tr>
+<tr class="separator:a1c7969fad6d6121c655a541379c12fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c2d92bc3c77b3aa0ec4ea135a6ecfbc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Database.html#a3c2d92bc3c77b3aa0ec4ea135a6ecfbc">TableHasRows</a> (const <a class="el" href="classlibcomp_1_1String.html">String</a> &amp;table)</td></tr>
 <tr class="memdesc:a3c2d92bc3c77b3aa0ec4ea135a6ecfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the supplied table name exists and has at least one row.  <a href="#a3c2d92bc3c77b3aa0ec4ea135a6ecfbc">More...</a><br /></td></tr>
 <tr class="separator:a3c2d92bc3c77b3aa0ec4ea135a6ecfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,7 +241,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>Abstract base class that represents a database to use for loading and modifying <a class="el" href="classlibcomp_1_1PersistentObject.html">PersistentObject</a> instances as well as utility tables by translating actions to database specific query syntax. </p>
 <p>The typeHash is used as a parameter to access object metadata to perform various tasks such as checking column data types and knowing what table name to use in a select statement. </p>
 
-<p>Definition at line <a class="el" href="Database_8h_source.html#l00050">50</a> of file <a class="el" href="Database_8h_source.html">Database.h</a>.</p>
+<p>Definition at line <a class="el" href="Database_8h_source.html#l00052">52</a> of file <a class="el" href="Database_8h_source.html">Database.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac54a972830f30edf74be00dda5c4d006"></a>
 <div class="memitem">
@@ -259,15 +265,18 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00031">31</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00037">37</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
-<p>References <a class="el" href="Database_8h_source.html#l00285">mConfig</a>.</p>
+<p>References <a class="el" href="Database_8h_source.html#l00312">mConfig</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a84d399a2ad58d69daab9b05330e1316d"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Database::~Database </td>
@@ -276,15 +285,84 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Close and clean up the database connection. </p>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00036">36</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00042">42</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae2ddcf6da45d7e3e1f3c1ea1c07701a6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> Database::ApplyMigration </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1BaseServer.html">BaseServer</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>server</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> *&#160;</td>
+          <td class="paramname"><em>pDataStore</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>migration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply a database migration script. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">server</td><td>Server to pass to the script. </td></tr>
+    <tr><td class="paramname">pDataStore</td><td>Data store to read the script from. </td></tr>
+    <tr><td class="paramname">migration</td><td>Name of the migration. </td></tr>
+    <tr><td class="paramname">path</td><td>Path to the script in the data store. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the migration was applied; false otherwise. </dd></dl>
+
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00296">296</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+
+<p>References <a class="el" href="Log_8h_source.html#l00397">LOG_DEBUG</a>, <a class="el" href="Log_8h_source.html#l00370">LOG_ERROR</a>, and <a class="el" href="DataStore_8cpp_source.html#l00323">libcomp::DataStore::ReadFile()</a>.</p>
+
+<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00119">libcomp::DatabaseSQLite3::Setup()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00137">libcomp::DatabaseMariaDB::Setup()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a760e06342224a40b248d9b53363a45cd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -310,6 +388,8 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a6cb6e3bfdb4e10b8ee926c6da0cfc4ad">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#a447300cd15983d0457bac0ae55a35546">libcomp::DatabaseSQLite3</a>.</p>
+
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00350">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -346,7 +426,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a4c8fdfd6980162e40a209b8600ce7b27">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#a1c357033746812028772e21b13c3a73f">libcomp::DatabaseSQLite3</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00093">DeleteSingleObject()</a>.</p>
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00099">DeleteSingleObject()</a>.</p>
 
 </div>
 </div>
@@ -381,11 +461,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00093">93</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00099">99</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
 <p>References <a class="el" href="classlibcomp_1_1Database.html#a7ba9941107ce107c20b953511217481c">DeleteObjects()</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00806">libcomp::DatabaseSQLite3::ProcessOperationalChangeSet()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00825">libcomp::DatabaseMariaDB::ProcessOperationalChangeSet()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00913">libcomp::DatabaseSQLite3::ProcessOperationalChangeSet()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00987">libcomp::DatabaseMariaDB::ProcessOperationalChangeSet()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00350">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -420,11 +500,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on error </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00040">40</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00046">46</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
 <p>References <a class="el" href="DatabaseQuery_8cpp_source.html#l00103">libcomp::DatabaseQuery::Execute()</a>, and <a class="el" href="classlibcomp_1_1Database.html#a43aee41a7db505e28a1fd60f4710e149">Prepare()</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00403">libcomp::DatabaseSQLite3::DeleteObjects()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00408">libcomp::DatabaseMariaDB::DeleteObjects()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00806">libcomp::DatabaseSQLite3::ProcessOperationalChangeSet()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00744">libcomp::DatabaseSQLite3::ProcessStandardChangeSet()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00117">libcomp::DatabaseSQLite3::Setup()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00116">libcomp::DatabaseMariaDB::Setup()</a>, <a class="el" href="MariaDB_8cpp_source.html#l00079">TEST()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00443">libcomp::DatabaseSQLite3::VerifyAndSetupSchema()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00448">libcomp::DatabaseMariaDB::VerifyAndSetupSchema()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00510">libcomp::DatabaseSQLite3::DeleteObjects()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00534">libcomp::DatabaseMariaDB::DeleteObjects()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00913">libcomp::DatabaseSQLite3::ProcessOperationalChangeSet()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00851">libcomp::DatabaseSQLite3::ProcessStandardChangeSet()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00119">libcomp::DatabaseSQLite3::Setup()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00137">libcomp::DatabaseMariaDB::Setup()</a>, <a class="el" href="MariaDB_8cpp_source.html#l00079">TEST()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00350">libcomp::ScriptEngine::Using()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00550">libcomp::DatabaseSQLite3::VerifyAndSetupSchema()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00574">libcomp::DatabaseMariaDB::VerifyAndSetupSchema()</a>.</p>
 
 </div>
 </div>
@@ -454,6 +534,8 @@ Private Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a8fcbd653cb5ada40834d5ac8b1319a63">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#a6bb20725dc0245014c5dfe18d5973ce9">libcomp::DatabaseSQLite3</a>.</p>
 
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00350">libcomp::ScriptEngine::Using()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a15be3e723e40a5544910edcc06bfabbe"></a>
@@ -472,9 +554,9 @@ Private Attributes</h2></td></tr>
 <p>Get the database config. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the database config </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00050">50</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00056">56</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
-<p>References <a class="el" href="Database_8h_source.html#l00285">mConfig</a>.</p>
+<p>References <a class="el" href="Database_8h_source.html#l00312">mConfig</a>.</p>
 
 </div>
 </div>
@@ -504,11 +586,11 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a10355689e2b457c21490cb5905b96c31">libcomp::DatabaseMariaDB</a>.</p>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00045">45</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00051">51</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
-<p>References <a class="el" href="Database_8h_source.html#l00282">mError</a>.</p>
+<p>References <a class="el" href="Database_8h_source.html#l00309">mError</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00249">libcomp::DatabaseSQLite3::InsertSingleObject()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00177">libcomp::DatabaseSQLite3::LoadObjects()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00881">libcomp::DatabaseSQLite3::ProcessExplicitUpdate()</a>, and <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00327">libcomp::DatabaseSQLite3::UpdateSingleObject()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00356">libcomp::DatabaseSQLite3::InsertSingleObject()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00284">libcomp::DatabaseSQLite3::LoadObjects()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00991">libcomp::DatabaseSQLite3::ProcessExplicitUpdate()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00119">libcomp::DatabaseSQLite3::Setup()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00434">libcomp::DatabaseSQLite3::UpdateSingleObject()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00350">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -536,11 +618,11 @@ Private Attributes</h2></td></tr>
 <p>Get the list of objects mapped to the current database type configured for the database. </p>
 <dl class="section return"><dt>Returns</dt><dd>List of pointers to object definitions with a source set to the current database type </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00274">274</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00280">280</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00245">libcomp::PersistentObject::GetRegistry()</a>, <a class="el" href="Database_8h_source.html#l00285">mConfig</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00236">UsingDefaultDatabaseType()</a>.</p>
+<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00269">libcomp::PersistentObject::GetRegistry()</a>, <a class="el" href="Database_8h_source.html#l00312">mConfig</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00242">UsingDefaultDatabaseType()</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00443">libcomp::DatabaseSQLite3::VerifyAndSetupSchema()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00448">libcomp::DatabaseMariaDB::VerifyAndSetupSchema()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00550">libcomp::DatabaseSQLite3::VerifyAndSetupSchema()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00574">libcomp::DatabaseMariaDB::VerifyAndSetupSchema()</a>.</p>
 
 </div>
 </div>
@@ -577,6 +659,8 @@ Private Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a197b5f0bc9d0dbab80c3aa1b62bb2f48">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#a0a8334b858d6227b7140fa7447c77b32">libcomp::DatabaseSQLite3</a>.</p>
 
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00350">libcomp::ScriptEngine::Using()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad3cb508f27df976b853057daf7f82e6a"></a>
@@ -604,6 +688,8 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if it is open, false if it is not </dd></dl>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a5c142c227b0ba4f7bc7e7e258392e906">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#ab35db7c7e96637b94d3132237aa5aba9">libcomp::DatabaseSQLite3</a>.</p>
+
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00350">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -651,7 +737,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#ad16be9b33c26f98a91e2c95ea4b1d01d">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#aae5d3fd7094ed34d45151423dfe8fb6a">libcomp::DatabaseSQLite3</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00085">LoadSingleObject()</a>.</p>
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00091">LoadSingleObject()</a>.</p>
 
 </div>
 </div>
@@ -697,11 +783,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the first loaded object from the query results </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00085">85</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00091">91</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
 <p>References <a class="el" href="classlibcomp_1_1Database.html#ada8807376bdfa27d064f9b8c2a074ec7">LoadObjects()</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00806">libcomp::DatabaseSQLite3::ProcessOperationalChangeSet()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00825">libcomp::DatabaseMariaDB::ProcessOperationalChangeSet()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00913">libcomp::DatabaseSQLite3::ProcessOperationalChangeSet()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00987">libcomp::DatabaseMariaDB::ProcessOperationalChangeSet()</a>.</p>
 
 </div>
 </div>
@@ -747,11 +833,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the new object </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00241">241</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00247">247</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00172">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="DatabaseQuery_8cpp_source.html#l00357">libcomp::DatabaseQuery::GetValue()</a>, <a class="el" href="PersistentObject_8h_source.html#l00253">libcomp::PersistentObject::New()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00100">libcomp::PersistentObject::Register()</a>.</p>
+<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00184">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="DatabaseQuery_8cpp_source.html#l00357">libcomp::DatabaseQuery::GetValue()</a>, <a class="el" href="PersistentObject_8h_source.html#l00263">libcomp::PersistentObject::New()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00112">libcomp::PersistentObject::Register()</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00177">libcomp::DatabaseSQLite3::LoadObjects()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00182">libcomp::DatabaseMariaDB::LoadObjects()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00284">libcomp::DatabaseSQLite3::LoadObjects()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00308">libcomp::DatabaseMariaDB::LoadObjects()</a>.</p>
 
 </div>
 </div>
@@ -780,6 +866,8 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a74cdeae80264fea64b368ab682214d2d">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#a1db4d065956dc1f95b81d7ea29f585ec">libcomp::DatabaseSQLite3</a>.</p>
+
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00350">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -816,7 +904,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a738bac3b614eef7fab179427ff7c91b0">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#afb29f1d80c1b48e27a49572190408f52">libcomp::DatabaseSQLite3</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00040">Execute()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00055">TableHasRows()</a>.</p>
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00046">Execute()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00061">TableHasRows()</a>.</p>
 
 </div>
 </div>
@@ -843,11 +931,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00216">216</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00222">222</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
 <p>References <a class="el" href="classlibcomp_1_1Database.html#aea0371bfd5be27e27595c446656bd6fb">ProcessOperationalChangeSet()</a>, and <a class="el" href="classlibcomp_1_1Database.html#a1c7692ab1f24f2118c3a94a3ddd29c71">ProcessStandardChangeSet()</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00175">ProcessTransactionQueue()</a>, and <a class="el" href="MariaDB_8cpp_source.html#l00313">TEST()</a>.</p>
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00181">ProcessTransactionQueue()</a>, and <a class="el" href="MariaDB_8cpp_source.html#l00313">TEST()</a>.</p>
 
 </div>
 </div>
@@ -884,7 +972,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a5e489ab787f2ac5e1125d4bfeb27f552">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#a9756e04eb6adb4f2c687d3c242609671">libcomp::DatabaseSQLite3</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00216">ProcessChangeSet()</a>.</p>
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00222">ProcessChangeSet()</a>.</p>
 
 </div>
 </div>
@@ -921,7 +1009,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a494196582df88b3df5e5638d3c78fceb">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#a3452788f352196523fc46f7c7963ae99">libcomp::DatabaseSQLite3</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00216">ProcessChangeSet()</a>.</p>
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00222">ProcessChangeSet()</a>.</p>
 
 </div>
 </div>
@@ -941,9 +1029,9 @@ Private Attributes</h2></td></tr>
 <p>Pop and process all transactions stored in the transaction queue. </p>
 <dl class="section return"><dt>Returns</dt><dd>List of all transaction group UUIDs that failed to process </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00175">175</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00181">181</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
-<p>References <a class="el" href="Database_8h_source.html#l00293">mTransactionLock</a>, <a class="el" href="Database_8h_source.html#l00290">mTransactionQueue</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00216">ProcessChangeSet()</a>.</p>
+<p>References <a class="el" href="Database_8h_source.html#l00320">mTransactionLock</a>, <a class="el" href="Database_8h_source.html#l00317">mTransactionQueue</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00222">ProcessChangeSet()</a>.</p>
 
 </div>
 </div>
@@ -970,11 +1058,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00124">124</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00130">130</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
-<p>References <a class="el" href="Database_8h_source.html#l00293">mTransactionLock</a>, and <a class="el" href="Database_8h_source.html#l00290">mTransactionQueue</a>.</p>
+<p>References <a class="el" href="Database_8h_source.html#l00320">mTransactionLock</a>, and <a class="el" href="Database_8h_source.html#l00317">mTransactionQueue</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00116">QueueDelete()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00100">QueueInsert()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00108">QueueUpdate()</a>.</p>
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00122">QueueDelete()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00106">QueueInsert()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00114">QueueUpdate()</a>.</p>
 
 </div>
 </div>
@@ -1011,9 +1099,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00116">116</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00122">122</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseChangeSet_8cpp_source.html#l00048">libcomp::DatabaseChangeSet::Create()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00124">QueueChangeSet()</a>.</p>
+<p>References <a class="el" href="DatabaseChangeSet_8cpp_source.html#l00048">libcomp::DatabaseChangeSet::Create()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00130">QueueChangeSet()</a>.</p>
 
 </div>
 </div>
@@ -1050,9 +1138,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00100">100</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00106">106</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseChangeSet_8cpp_source.html#l00048">libcomp::DatabaseChangeSet::Create()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00124">QueueChangeSet()</a>.</p>
+<p>References <a class="el" href="DatabaseChangeSet_8cpp_source.html#l00048">libcomp::DatabaseChangeSet::Create()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00130">QueueChangeSet()</a>.</p>
 
 </div>
 </div>
@@ -1089,13 +1177,13 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00108">108</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00114">114</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
-<p>References <a class="el" href="DatabaseChangeSet_8cpp_source.html#l00048">libcomp::DatabaseChangeSet::Create()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00124">QueueChangeSet()</a>.</p>
+<p>References <a class="el" href="DatabaseChangeSet_8cpp_source.html#l00048">libcomp::DatabaseChangeSet::Create()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00130">QueueChangeSet()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afa6813e428800934d4d9dcc2b4294a50"></a>
+<a class="anchor" id="a1b5ea8359282d4bd844d865b9d46e463"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1106,8 +1194,30 @@ Private Attributes</h2></td></tr>
           <td class="memname">virtual <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> libcomp::Database::Setup </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
-          <td class="paramname"><em>rebuild</em> = <code>false</code></td><td>)</td>
+          <td class="paramname"><em>rebuild</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1BaseServer.html">BaseServer</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>server</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> *&#160;</td>
+          <td class="paramname"><em>pDataStore</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>migrationDirectory</em> = <code>std::string()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1121,12 +1231,52 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rebuild</td><td>Optional parameter to rebuild all tables used by this database during the verification step </td></tr>
+    <tr><td class="paramname">server</td><td>Server to pass to migration scripts (or null). </td></tr>
+    <tr><td class="paramname">pDataStore</td><td>Pointer to the data store for migrations (or null). </td></tr>
+    <tr><td class="paramname">migrationDirectory</td><td>Directory to look for migrations in. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if it could be set up, false if it could not </dd></dl>
 
-<p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#aa7955d165954d90d264d9d7c8330d942">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#ac6bdf3d6c21fa6758d1af8c6dbc01705">libcomp::DatabaseSQLite3</a>.</p>
+<p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a8d322da49ab7325fb553b3772e70dba8">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#ae85a63597720bb2d034b1ba98a552e87">libcomp::DatabaseSQLite3</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c7969fad6d6121c655a541379c12fc5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> libcomp::Database::TableExists </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if a table exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td>Name of the table to check for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the table exists, false otherwise. </dd></dl>
+
+<p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a59695f10d0d1a23d1e445256d56dc101">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#aa00577de4017e0a0bafd6a56389e8f31">libcomp::DatabaseSQLite3</a>.</p>
+
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00350">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -1163,11 +1313,11 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#a888db19baef3e677f110be25e79097e8">libcomp::DatabaseSQLite3</a>.</p>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00055">55</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00061">61</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
 <p>References <a class="el" href="DatabaseQuery_8cpp_source.html#l00103">libcomp::DatabaseQuery::Execute()</a>, <a class="el" href="DatabaseQuery_8cpp_source.html#l00357">libcomp::DatabaseQuery::GetValue()</a>, <a class="el" href="DatabaseQuery_8cpp_source.html#l00319">libcomp::DatabaseQuery::IsValid()</a>, <a class="el" href="DatabaseQuery_8cpp_source.html#l00115">libcomp::DatabaseQuery::Next()</a>, and <a class="el" href="classlibcomp_1_1Database.html#a43aee41a7db505e28a1fd60f4710e149">Prepare()</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00172">libcomp::DatabaseSQLite3::TableHasRows()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00279">libcomp::DatabaseSQLite3::TableHasRows()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00350">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -1204,6 +1354,8 @@ Private Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a4bd3821bd0e03a2fbe6f6ab3a1b9d4d2">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#a5d09ea3c87472932b0cb836b48f90a79">libcomp::DatabaseSQLite3</a>.</p>
 
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00350">libcomp::ScriptEngine::Using()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a87cb4aadaa77e01dfb86ecc8bf3b4239"></a>
@@ -1232,6 +1384,8 @@ Private Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#add6ecfd95b4d3c17470d935e62e88dd6">libcomp::DatabaseMariaDB</a>, and <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#aa00f95bea19d5444f89248224a7edcb5">libcomp::DatabaseSQLite3</a>.</p>
 
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00350">libcomp::ScriptEngine::Using()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4c125410c57437895ee1f0939d592166"></a>
@@ -1250,11 +1404,11 @@ Private Attributes</h2></td></tr>
 <p>Check if the config is for the default database type. </p>
 <p>Non-default connections are only responsible for verifying the schema of their own tables where-as default database connections may also have additional tables to maintain. </p><dl class="section return"><dt>Returns</dt><dd>true if the default database type is configured, false if it is not </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00236">236</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2Database_8cpp_source.html#l00242">242</a> of file <a class="el" href="src_2Database_8cpp_source.html">src/Database.cpp</a>.</p>
 
-<p>References <a class="el" href="Database_8h_source.html#l00285">mConfig</a>.</p>
+<p>References <a class="el" href="Database_8h_source.html#l00312">mConfig</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00274">GetMappedObjects()</a>, and <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00117">libcomp::DatabaseSQLite3::Setup()</a>.</p>
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00280">GetMappedObjects()</a>, and <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00119">libcomp::DatabaseSQLite3::Setup()</a>.</p>
 
 </div>
 </div>
@@ -1279,9 +1433,9 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the config file used to configure the database connection. </p>
 
-<p>Definition at line <a class="el" href="Database_8h_source.html#l00285">285</a> of file <a class="el" href="Database_8h_source.html">Database.h</a>.</p>
+<p>Definition at line <a class="el" href="Database_8h_source.html#l00312">312</a> of file <a class="el" href="Database_8h_source.html">Database.h</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00992">libcomp::DatabaseMariaDB::ConnectToDatabase()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00031">Database()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00096">libcomp::DatabaseMariaDB::Exists()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00050">GetConfig()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l01038">libcomp::DatabaseMariaDB::GetConnection()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00974">libcomp::DatabaseSQLite3::GetFilepath()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00274">GetMappedObjects()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00094">libcomp::DatabaseSQLite3::Prepare()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00117">libcomp::DatabaseSQLite3::Setup()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00116">libcomp::DatabaseMariaDB::Setup()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00174">libcomp::DatabaseMariaDB::Use()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00236">UsingDefaultDatabaseType()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00443">libcomp::DatabaseSQLite3::VerifyAndSetupSchema()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00448">libcomp::DatabaseMariaDB::VerifyAndSetupSchema()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00081">libcomp::DatabaseMariaDB::Close()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l01193">libcomp::DatabaseMariaDB::ConnectToDatabase()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00037">Database()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00117">libcomp::DatabaseMariaDB::Exists()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00056">GetConfig()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l01260">libcomp::DatabaseMariaDB::GetConnection()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l01084">libcomp::DatabaseSQLite3::GetFilepath()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00280">GetMappedObjects()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00096">libcomp::DatabaseSQLite3::Prepare()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00110">libcomp::DatabaseMariaDB::Prepare()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00987">libcomp::DatabaseMariaDB::ProcessOperationalChangeSet()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00891">libcomp::DatabaseMariaDB::ProcessStandardChangeSet()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00119">libcomp::DatabaseSQLite3::Setup()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00137">libcomp::DatabaseMariaDB::Setup()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l01349">libcomp::DatabaseMariaDB::TableExists()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00300">libcomp::DatabaseMariaDB::Use()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00242">UsingDefaultDatabaseType()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00550">libcomp::DatabaseSQLite3::VerifyAndSetupSchema()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00574">libcomp::DatabaseMariaDB::VerifyAndSetupSchema()</a>.</p>
 
 </div>
 </div>
@@ -1305,9 +1459,9 @@ Private Attributes</h2></td></tr>
 
 <p>Last error raised by a database related action. </p>
 
-<p>Definition at line <a class="el" href="Database_8h_source.html#l00282">282</a> of file <a class="el" href="Database_8h_source.html">Database.h</a>.</p>
+<p>Definition at line <a class="el" href="Database_8h_source.html#l00309">309</a> of file <a class="el" href="Database_8h_source.html">Database.h</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00045">GetLastError()</a>.</p>
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00051">GetLastError()</a>.</p>
 
 </div>
 </div>
@@ -1331,9 +1485,9 @@ Private Attributes</h2></td></tr>
 
 <p>Mutex to lock accessing the transaction queue. </p>
 
-<p>Definition at line <a class="el" href="Database_8h_source.html#l00293">293</a> of file <a class="el" href="Database_8h_source.html">Database.h</a>.</p>
+<p>Definition at line <a class="el" href="Database_8h_source.html#l00320">320</a> of file <a class="el" href="Database_8h_source.html">Database.h</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00175">ProcessTransactionQueue()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00124">QueueChangeSet()</a>.</p>
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00181">ProcessTransactionQueue()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00130">QueueChangeSet()</a>.</p>
 
 </div>
 </div>
@@ -1357,9 +1511,9 @@ Private Attributes</h2></td></tr>
 
 <p>Map of transaction pointers by UUID. </p>
 
-<p>Definition at line <a class="el" href="Database_8h_source.html#l00290">290</a> of file <a class="el" href="Database_8h_source.html">Database.h</a>.</p>
+<p>Definition at line <a class="el" href="Database_8h_source.html#l00317">317</a> of file <a class="el" href="Database_8h_source.html">Database.h</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00175">ProcessTransactionQueue()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00124">QueueChangeSet()</a>.</p>
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00181">ProcessTransactionQueue()</a>, and <a class="el" href="src_2Database_8cpp_source.html#l00130">QueueChangeSet()</a>.</p>
 
 </div>
 </div>

@@ -119,7 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f56375b6625c8469484fd25208837c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneShape.html#a1f56375b6625c8469484fd25208837c6">ZoneShape</a> ()</td></tr>
 <tr class="memdesc:a1f56375b6625c8469484fd25208837c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new shape.  <a href="#a1f56375b6625c8469484fd25208837c6">More...</a><br /></td></tr>
 <tr class="separator:a1f56375b6625c8469484fd25208837c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a670b3b136576dfadb0c6562633e48767"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneShape.html#a670b3b136576dfadb0c6562633e48767">Collides</a> (const <a class="el" href="classchannel_1_1Line.html">Line</a> &amp;path, <a class="el" href="classchannel_1_1Point.html">Point</a> &amp;point, <a class="el" href="classchannel_1_1Line.html">Line</a> &amp;surface) const </td></tr>
+<tr class="memitem:a670b3b136576dfadb0c6562633e48767"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneShape.html#a670b3b136576dfadb0c6562633e48767">Collides</a> (const <a class="el" href="classchannel_1_1Line.html">Line</a> &amp;path, <a class="el" href="classchannel_1_1Point.html">Point</a> &amp;point, <a class="el" href="classchannel_1_1Line.html">Line</a> &amp;surface) const </td></tr>
 <tr class="memdesc:a670b3b136576dfadb0c6562633e48767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the supplied path collides with the shape.  <a href="#a670b3b136576dfadb0c6562633e48767">More...</a><br /></td></tr>
 <tr class="separator:a670b3b136576dfadb0c6562633e48767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -134,6 +134,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a5ba5b7e1063b9e7359dd7991bef32b0d"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classchannel_1_1Line.html">Line</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneShape.html#a5ba5b7e1063b9e7359dd7991bef32b0d">Lines</a></td></tr>
 <tr class="memdesc:a5ba5b7e1063b9e7359dd7991bef32b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all lines that make up the shape.  <a href="#a5ba5b7e1063b9e7359dd7991bef32b0d">More...</a><br /></td></tr>
 <tr class="separator:a5ba5b7e1063b9e7359dd7991bef32b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46efe561a393800ee9286e8c44a1ecf"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneShape.html#ad46efe561a393800ee9286e8c44a1ecf">OneWay</a></td></tr>
+<tr class="memdesc:ad46efe561a393800ee9286e8c44a1ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if the shape lines block intersections only from one direction false if the lines block intersections from both direction  <a href="#ad46efe561a393800ee9286e8c44a1ecf">More...</a><br /></td></tr>
+<tr class="separator:ad46efe561a393800ee9286e8c44a1ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5455c8f10110c5628974f69ec1c3d2f8"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classchannel_1_1Point.html">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneShape.html#a5455c8f10110c5628974f69ec1c3d2f8">Vertices</a></td></tr>
 <tr class="memdesc:a5455c8f10110c5628974f69ec1c3d2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lines poitns as vertices.  <a href="#a5455c8f10110c5628974f69ec1c3d2f8">More...</a><br /></td></tr>
 <tr class="separator:a5455c8f10110c5628974f69ec1c3d2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,7 +145,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Represents a multi-point shape in a particular zone to be used for calculating collisions. </p>
 <p>A shape can either be an enclosed polygonal shape or a series of line segments. </p>
 
-<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00143">143</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
+<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00146">146</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1f56375b6625c8469484fd25208837c6"></a>
 <div class="memitem">
@@ -159,7 +162,7 @@ Public Attributes</h2></td></tr>
 
 <p>Create a new shape. </p>
 
-<p>Definition at line <a class="el" href="ZoneGeometry_8cpp_source.html#l00107">107</a> of file <a class="el" href="ZoneGeometry_8cpp_source.html">ZoneGeometry.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ZoneGeometry_8cpp_source.html#l00118">118</a> of file <a class="el" href="ZoneGeometry_8cpp_source.html">ZoneGeometry.cpp</a>.</p>
 
 </div>
 </div>
@@ -167,6 +170,9 @@ Public Attributes</h2></td></tr>
 <a class="anchor" id="a670b3b136576dfadb0c6562633e48767"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> ZoneShape::Collides </td>
@@ -192,6 +198,11 @@ Public Attributes</h2></td></tr>
           <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Determines if the supplied path collides with the shape. </p>
@@ -205,11 +216,13 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the line collides, false if it does not </dd></dl>
 
-<p>Definition at line <a class="el" href="ZoneGeometry_8cpp_source.html#l00111">111</a> of file <a class="el" href="ZoneGeometry_8cpp_source.html">ZoneGeometry.cpp</a>.</p>
+<p>Reimplemented in <a class="el" href="classchannel_1_1ZoneQmpShape.html#a09ce6ec4d4a3f245c657b2eb1816fb7b">channel::ZoneQmpShape</a>.</p>
 
-<p>References <a class="el" href="ZoneGeometry_8h_source.html#l00175">Boundaries</a>, and <a class="el" href="ZoneGeometry_8h_source.html#l00163">Lines</a>.</p>
+<p>Definition at line <a class="el" href="ZoneGeometry_8cpp_source.html#l00122">122</a> of file <a class="el" href="ZoneGeometry_8cpp_source.html">ZoneGeometry.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="ZoneGeometry_8cpp_source.html#l00189">channel::ZoneGeometry::Collides()</a>.</p>
+<p>References <a class="el" href="ZoneGeometry_8h_source.html#l00182">Boundaries</a>, <a class="el" href="ZoneGeometry_8h_source.html#l00166">Lines</a>, and <a class="el" href="ZoneGeometry_8h_source.html#l00177">OneWay</a>.</p>
+
+<p>Referenced by <a class="el" href="ZoneGeometry_8cpp_source.html#l00177">channel::ZoneQmpShape::Collides()</a>.</p>
 
 </div>
 </div>
@@ -227,9 +240,9 @@ Public Attributes</h2></td></tr>
 <p>Represents the top left-most and bottom right most points of the shape. </p>
 <p>This is useful in determining if a shape could be collided with instead of checking each surface individually </p>
 
-<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00175">175</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
+<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00182">182</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ZoneGeometry_8cpp_source.html#l00111">Collides()</a>.</p>
+<p>Referenced by <a class="el" href="ZoneGeometry_8cpp_source.html#l00122">Collides()</a>.</p>
 
 </div>
 </div>
@@ -245,7 +258,7 @@ Public Attributes</h2></td></tr>
 
 <p>true if the shape is one or many line segments with no enclosure false if the shape is a solid enclosure </p>
 
-<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00170">170</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
+<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00173">173</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
 
 </div>
 </div>
@@ -261,9 +274,27 @@ Public Attributes</h2></td></tr>
 
 <p>List of all lines that make up the shape. </p>
 
-<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00163">163</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
+<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00166">166</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ZoneGeometry_8cpp_source.html#l00111">Collides()</a>.</p>
+<p>Referenced by <a class="el" href="ZoneGeometry_8cpp_source.html#l00122">Collides()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad46efe561a393800ee9286e8c44a1ecf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> channel::ZoneShape::OneWay</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>true if the shape lines block intersections only from one direction false if the lines block intersections from both direction </p>
+
+<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00177">177</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ZoneGeometry_8cpp_source.html#l00122">Collides()</a>.</p>
 
 </div>
 </div>
@@ -279,7 +310,7 @@ Public Attributes</h2></td></tr>
 
 <p>Lines poitns as vertices. </p>
 
-<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00166">166</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
+<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00169">169</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
 
 </div>
 </div>

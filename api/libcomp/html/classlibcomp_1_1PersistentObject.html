@@ -101,6 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classlibcomp_1_1PersistentObject-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">libcomp::PersistentObject Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -217,9 +218,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a36f891647a3a171f7c4337c1880cc9e6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classlibcomp_1_1PersistentObject.html#a7420260e98873124555d9142f9d3d937">TypeMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1PersistentObject.html#a36f891647a3a171f7c4337c1880cc9e6">GetRegistry</a> ()</td></tr>
 <tr class="memdesc:a36f891647a3a171f7c4337c1880cc9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all <a class="el" href="classlibcomp_1_1PersistentObject.html" title="Base class of a all dynamically generated objects that persist in the database. ">PersistentObject</a> derived class MetaObject definitions.  <a href="#a36f891647a3a171f7c4337c1880cc9e6">More...</a><br /></td></tr>
 <tr class="separator:a36f891647a3a171f7c4337c1880cc9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e239826cea72cac097396ecc4e53856"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1PersistentObject.html#a8e239826cea72cac097396ecc4e53856">GetTypeHashByName</a> (std::string name, <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &amp;result)</td></tr>
-<tr class="memdesc:a8e239826cea72cac097396ecc4e53856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the C++ type hash by the associated object type's name.  <a href="#a8e239826cea72cac097396ecc4e53856">More...</a><br /></td></tr>
-<tr class="separator:a8e239826cea72cac097396ecc4e53856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89edf76ee48db18e0f61f704f7349785"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1PersistentObject.html#a89edf76ee48db18e0f61f704f7349785">GetTypeHashByName</a> (const std::string &amp;name, <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &amp;result)</td></tr>
+<tr class="memdesc:a89edf76ee48db18e0f61f704f7349785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the C++ type hash by the associated object type's name.  <a href="#a89edf76ee48db18e0f61f704f7349785">More...</a><br /></td></tr>
+<tr class="separator:a89edf76ee48db18e0f61f704f7349785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917fd71225e4dba66a86df592805e506"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1PersistentObject.html#a917fd71225e4dba66a86df592805e506">GetTypeHashByName</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a917fd71225e4dba66a86df592805e506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the C++ type hash by the associated object type's name.  <a href="#a917fd71225e4dba66a86df592805e506">More...</a><br /></td></tr>
+<tr class="separator:a917fd71225e4dba66a86df592805e506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da664c1018593fdd7877242d185f516"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1PersistentObject.html#a5da664c1018593fdd7877242d185f516">Initialize</a> ()</td></tr>
 <tr class="memdesc:a5da664c1018593fdd7877242d185f516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register all derived types in libcomp to the TypeMap.  <a href="#a5da664c1018593fdd7877242d185f516">More...</a><br /></td></tr>
 <tr class="separator:a5da664c1018593fdd7877242d185f516"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,15 +273,27 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a92d676d6520230b286acf4c1a52a9df3"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Object.html#a92d676d6520230b286acf4c1a52a9df3">GetXmlText</a> (const tinyxml2::XMLElement &amp;root) const </td></tr>
 <tr class="memdesc:a92d676d6520230b286acf4c1a52a9df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to get element text from an XML node.  <a href="#a92d676d6520230b286acf4c1a52a9df3">More...</a><br /></td></tr>
 <tr class="separator:a92d676d6520230b286acf4c1a52a9df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f887ec98e5f34bc5973815cfe780df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Object.html#a49f887ec98e5f34bc5973815cfe780df">SkipPadding</a> (std::istream &amp;stream, uint8_t count)</td></tr>
+<tr class="memdesc:a49f887ec98e5f34bc5973815cfe780df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to skip padding bytes when reading from a datastream.  <a href="#a49f887ec98e5f34bc5973815cfe780df">More...</a><br /></td></tr>
+<tr class="separator:a49f887ec98e5f34bc5973815cfe780df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c4e0a1e8f3c20e4684599af22cba05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Object.html#a94c4e0a1e8f3c20e4684599af22cba05">WritePadding</a> (std::ostream &amp;stream, uint8_t count) const </td></tr>
+<tr class="memdesc:a94c4e0a1e8f3c20e4684599af22cba05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to write padding bytes when writing to a datastream.  <a href="#a94c4e0a1e8f3c20e4684599af22cba05">More...</a><br /></td></tr>
+<tr class="separator:a94c4e0a1e8f3c20e4684599af22cba05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa29f0d3a0559e94d82d4a7811b835af9"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">PersistentObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1PersistentObject.html#aa29f0d3a0559e94d82d4a7811b835af9">LoadObject</a> (size_t typeHash, const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Database.html">Database</a> &gt; &amp;db, <a class="el" href="classlibcomp_1_1DatabaseBind.html">DatabaseBind</a> *pValue)</td></tr>
 <tr class="memdesc:aa29f0d3a0559e94d82d4a7811b835af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an object from the database from a field database binding.  <a href="#aa29f0d3a0559e94d82d4a7811b835af9">More...</a><br /></td></tr>
 <tr class="separator:aa29f0d3a0559e94d82d4a7811b835af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd49033e860a8c2469464f8424c59ee0"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">PersistentObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1PersistentObject.html#acd49033e860a8c2469464f8424c59ee0">LoadObject</a> (size_t typeHash, const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Database.html">Database</a> &gt; &amp;db)</td></tr>
+<tr class="memdesc:acd49033e860a8c2469464f8424c59ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an object from the database from a field database binding.  <a href="#acd49033e860a8c2469464f8424c59ee0">More...</a><br /></td></tr>
+<tr class="separator:acd49033e860a8c2469464f8424c59ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a533d1e832b2fc7fe56bc02c2f7cf07ed"><td class="memItemLeft" align="right" valign="top">static std::list&lt; std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">PersistentObject</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1PersistentObject.html#a533d1e832b2fc7fe56bc02c2f7cf07ed">LoadObjects</a> (size_t typeHash, const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Database.html">Database</a> &gt; &amp;db, <a class="el" href="classlibcomp_1_1DatabaseBind.html">DatabaseBind</a> *pValue)</td></tr>
 <tr class="memdesc:a533d1e832b2fc7fe56bc02c2f7cf07ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load multiple objects from the database from a field database binding.  <a href="#a533d1e832b2fc7fe56bc02c2f7cf07ed">More...</a><br /></td></tr>
 <tr class="separator:a533d1e832b2fc7fe56bc02c2f7cf07ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85e26b62b780664377ec9f365551f40"><td class="memItemLeft" align="right" valign="top">static std::list&lt; std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">PersistentObject</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1PersistentObject.html#ae85e26b62b780664377ec9f365551f40">LoadObjects</a> (size_t typeHash, const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Database.html">Database</a> &gt; &amp;db)</td></tr>
+<tr class="memdesc:ae85e26b62b780664377ec9f365551f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load multiple objects from the database from a field database binding.  <a href="#ae85e26b62b780664377ec9f365551f40">More...</a><br /></td></tr>
+<tr class="separator:ae85e26b62b780664377ec9f365551f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fa5b1c6ce4849852df97c257b22aa8c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1PersistentObject.html#a1fa5b1c6ce4849852df97c257b22aa8c">RegisterType</a> (std::type_index type, const std::shared_ptr&lt; libobjgen::MetaObject &gt; &amp;obj, const std::function&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">PersistentObject</a> *()&gt; &amp;f)</td></tr>
 <tr class="memdesc:a1fa5b1c6ce4849852df97c257b22aa8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a derived class type with a function to describe it to the database.  <a href="#a1fa5b1c6ce4849852df97c257b22aa8c">More...</a><br /></td></tr>
 <tr class="separator:a1fa5b1c6ce4849852df97c257b22aa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,12 +342,17 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:a0f4080030691ab96860a75b42c7685bf"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1PersistentObject.html#a0f4080030691ab96860a75b42c7685bf">sTypeNames</a></td></tr>
 <tr class="memdesc:a0f4080030691ab96860a75b42c7685bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static map of C++ type hashes by name.  <a href="#a0f4080030691ab96860a75b42c7685bf">More...</a><br /></td></tr>
 <tr class="separator:a0f4080030691ab96860a75b42c7685bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a6732e7667ed86d03ec878927893dd0ed"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1PersistentObject.html#a6732e7667ed86d03ec878927893dd0ed">ScriptEngine</a></td></tr>
+<tr class="separator:a6732e7667ed86d03ec878927893dd0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class of a all dynamically generated objects that persist in the database. </p>
 <p>Persistent objects are cached upon load or by explicitly registering them which will allow them to be retrieved via a generated UUID. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00054">54</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00055">55</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a7420260e98873124555d9142f9d3d937"></a>
 <div class="memitem">
@@ -345,7 +366,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Map of MetaObject definitions by the source object's C++ type hash. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00059">59</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00062">62</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
 </div>
 </div>
@@ -365,7 +386,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Create a persistent object with no UUID. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00068">68</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00080">80</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00373">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -391,9 +414,9 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00073">73</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00085">85</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8h_source.html#l00380">mSelf</a>.</p>
+<p>References <a class="el" href="PersistentObject_8h_source.html#l00408">mSelf</a>.</p>
 
 </div>
 </div>
@@ -412,9 +435,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Clean up the object and remove it from the UUID cache. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00081">81</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00093">93</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00167">IsDeleted()</a>, <a class="el" href="PersistentObject_8h_source.html#l00367">mCacheLock</a>, <a class="el" href="PersistentObject_8h_source.html#l00356">mUUID</a>, and <a class="el" href="PersistentObject_8h_source.html#l00364">sCached</a>.</p>
+<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00179">IsDeleted()</a>, <a class="el" href="PersistentObject_8h_source.html#l00395">mCacheLock</a>, <a class="el" href="PersistentObject_8h_source.html#l00384">mUUID</a>, and <a class="el" href="PersistentObject_8h_source.html#l00392">sCached</a>.</p>
 
 </div>
 </div>
@@ -442,11 +465,11 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00311">311</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00342">342</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8h_source.html#l00380">mSelf</a>, and <a class="el" href="PersistentObject_8h_source.html#l00353">sInitializationFailed</a>.</p>
+<p>References <a class="el" href="PersistentObject_8h_source.html#l00408">mSelf</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8h_source.html#l00282">ToList()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8h_source.html#l00292">ToList()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00373">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -564,9 +587,9 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the MetaObject definition or nullptr on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00263">263</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00294">294</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8h_source.html#l00221">GetRegisteredMetadata()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8h_source.html#l00231">GetRegisteredMetadata()</a>.</p>
 
 </div>
 </div>
@@ -601,11 +624,11 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the cached object or nullptr if it doesn't exist </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00172">172</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00184">184</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8h_source.html#l00367">mCacheLock</a>, and <a class="el" href="PersistentObject_8h_source.html#l00364">sCached</a>.</p>
+<p>References <a class="el" href="PersistentObject_8h_source.html#l00395">mCacheLock</a>, and <a class="el" href="PersistentObject_8h_source.html#l00392">sCached</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00185">LoadObjectByUUID()</a>, <a class="el" href="ObjectReference_8h_source.html#l00298">libcomp::ObjectReference&lt; T &gt;::LoadReference()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00241">libcomp::Database::LoadSingleObjectFromRow()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00131">libcomp::DataSyncManager::SyncIncoming()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00197">LoadObjectByUUID()</a>, <a class="el" href="ObjectReference_8h_source.html#l00298">libcomp::ObjectReference&lt; T &gt;::LoadReference()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00247">libcomp::Database::LoadSingleObjectFromRow()</a>, and <a class="el" href="DataSyncManager_8cpp_source.html#l00153">libcomp::DataSyncManager::SyncIncoming()</a>.</p>
 
 </div>
 </div>
@@ -661,11 +684,11 @@ template&lt;class T &gt; </div>
 <p>Get the <a class="el" href="classlibcomp_1_1PersistentObject.html" title="Base class of a all dynamically generated objects that persist in the database. ">PersistentObject</a> of the specified type's MetaObject definition. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the MetaObject definition </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00221">221</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00231">231</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00263">GetMetadataFromBytes()</a>.</p>
+<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00294">GetMetadataFromBytes()</a>.</p>
 
-<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00177">libcomp::DatabaseSQLite3::LoadObjects()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00182">libcomp::DatabaseMariaDB::LoadObjects()</a>.</p>
+<p>Referenced by <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00284">libcomp::DatabaseSQLite3::LoadObjects()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00308">libcomp::DatabaseMariaDB::LoadObjects()</a>.</p>
 
 </div>
 </div>
@@ -700,9 +723,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the MetaObject definition </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00257">257</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00288">288</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8h_source.html#l00370">sTypeMap</a>.</p>
+<p>References <a class="el" href="PersistentObject_8h_source.html#l00398">sTypeMap</a>.</p>
 
 </div>
 </div>
@@ -730,15 +753,15 @@ template&lt;class T &gt; </div>
 <p>Get all <a class="el" href="classlibcomp_1_1PersistentObject.html" title="Base class of a all dynamically generated objects that persist in the database. ">PersistentObject</a> derived class MetaObject definitions. </p>
 <dl class="section return"><dt>Returns</dt><dd>Map of MetaObject definitions by the source object's C++ type </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00245">245</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00269">269</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8h_source.html#l00370">sTypeMap</a>.</p>
+<p>References <a class="el" href="PersistentObject_8h_source.html#l00398">sTypeMap</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00274">libcomp::Database::GetMappedObjects()</a>, and <a class="el" href="PersistentObject_8h_source.html#l00176">LoadObjectByUUID()</a>.</p>
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00280">libcomp::Database::GetMappedObjects()</a>, and <a class="el" href="PersistentObject_8h_source.html#l00179">LoadObjectByUUID()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8e239826cea72cac097396ecc4e53856"></a>
+<a class="anchor" id="a89edf76ee48db18e0f61f704f7349785"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -748,7 +771,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">size_t PersistentObject::GetTypeHashByName </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -780,11 +803,48 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>C++ type hash matching the supplied name </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00250">250</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00274">274</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8h_source.html#l00377">sTypeNames</a>.</p>
+<p>References <a class="el" href="PersistentObject_8h_source.html#l00405">sTypeNames</a>.</p>
 
-<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00545">libcomp::BaseServer::LoadDataFromFile()</a>, <a class="el" href="PersistentObject_8h_source.html#l00176">LoadObjectByUUID()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00806">libcomp::DatabaseSQLite3::ProcessOperationalChangeSet()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00825">libcomp::DatabaseMariaDB::ProcessOperationalChangeSet()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00398">libcomp::DataSyncManager::QueueOutgoing()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00131">libcomp::DataSyncManager::SyncIncoming()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00443">libcomp::DatabaseSQLite3::VerifyAndSetupSchema()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00448">libcomp::DatabaseMariaDB::VerifyAndSetupSchema()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00281">GetTypeHashByName()</a>, <a class="el" href="BaseServer_8cpp_source.html#l00552">libcomp::BaseServer::LoadDataFromFile()</a>, <a class="el" href="PersistentObject_8h_source.html#l00179">LoadObjectByUUID()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00913">libcomp::DatabaseSQLite3::ProcessOperationalChangeSet()</a>, <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00987">libcomp::DatabaseMariaDB::ProcessOperationalChangeSet()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00483">libcomp::DataSyncManager::QueueOutgoing()</a>, <a class="el" href="DataSyncManager_8cpp_source.html#l00153">libcomp::DataSyncManager::SyncIncoming()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00373">libcomp::ScriptEngine::Using()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00550">libcomp::DatabaseSQLite3::VerifyAndSetupSchema()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00574">libcomp::DatabaseMariaDB::VerifyAndSetupSchema()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a917fd71225e4dba66a86df592805e506"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t PersistentObject::GetTypeHashByName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the C++ type hash by the associated object type's name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of a persistent object type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>C++ type hash matching the supplied name </dd></dl>
+
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00281">281</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+
+<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00274">GetTypeHashByName()</a>.</p>
 
 </div>
 </div>
@@ -804,11 +864,11 @@ template&lt;class T &gt; </div>
 <p>Get the object's UUID. </p>
 <dl class="section return"><dt>Returns</dt><dd>The object's UUID </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00095">95</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00107">107</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8h_source.html#l00356">mUUID</a>.</p>
+<p>References <a class="el" href="PersistentObject_8h_source.html#l00384">mUUID</a>.</p>
 
-<p>Referenced by <a class="el" href="ObjectReference_8h_source.html#l00189">libcomp::ObjectReference&lt; T &gt;::SetReference()</a>.</p>
+<p>Referenced by <a class="el" href="ObjectReference_8h_source.html#l00189">libcomp::ObjectReference&lt; T &gt;::SetReference()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00373">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -836,7 +896,7 @@ template&lt;class T &gt; </div>
 <p>Save the object into XML and return it as a string. </p>
 <dl class="section return"><dt>Returns</dt><dd>An XML string for the object. </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00297">297</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00298">298</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 <p>References <a class="el" href="classlibcomp_1_1Object.html#a6b726aabcadc40f46afef2e6164f0e39">libcomp::Object::Save()</a>.</p>
 
@@ -885,9 +945,9 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>First matching XML node child or nullptr if not found </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classlibcomp_1_1Object.html#aa897ef8716eabc1b8c7cb3bf0eac5dce" title="Utility function to get child XML elements from a parent node matching a specified name...">Object::GetXmlChildren</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00074">74</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00075">75</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
-<p>References <a class="el" href="Object_8cpp_source.html#l00081">libcomp::Object::GetXmlChildren()</a>.</p>
+<p>References <a class="el" href="Object_8cpp_source.html#l00082">libcomp::Object::GetXmlChildren()</a>.</p>
 
 </div>
 </div>
@@ -934,9 +994,9 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>List of matching XML node children or empty if not found </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classlibcomp_1_1Object.html#a5a9a204c875a0c5204014751fa2b35cc" title="Utility function to get a child XML element from a parent node matching a specified name...">Object::GetXmlChild</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00081">81</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00082">82</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00074">libcomp::Object::GetXmlChild()</a>.</p>
+<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00075">libcomp::Object::GetXmlChild()</a>.</p>
 
 </div>
 </div>
@@ -971,7 +1031,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Map of child members by element name </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00099">99</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00100">100</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 </div>
 </div>
@@ -1006,7 +1066,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Text contained in the node's element text </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00120">120</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00121">121</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 </div>
 </div>
@@ -1034,9 +1094,9 @@ template&lt;class T &gt; </div>
 <p>Register all derived types in libcomp to the TypeMap. </p>
 <p>Persisted types needed in other databases should derive from this class to register their own as well. </p><dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00323">323</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00405">405</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00234">RegisterType()</a>, and <a class="el" href="PersistentObject_8h_source.html#l00353">sInitializationFailed</a>.</p>
+<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00258">RegisterType()</a>, and <a class="el" href="PersistentObject_8h_source.html#l00381">sInitializationFailed</a>.</p>
 
 </div>
 </div>
@@ -1063,11 +1123,11 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00289">289</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00320">320</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8h_source.html#l00380">mSelf</a>.</p>
+<p>References <a class="el" href="PersistentObject_8h_source.html#l00408">mSelf</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8h_source.html#l00282">ToList()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8h_source.html#l00292">ToList()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00373">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -1087,11 +1147,11 @@ template&lt;class T &gt; </div>
 <p>Check if the record is marked as deleted from the database. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if it is deleted, false if it is not </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00167">167</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00179">179</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8h_source.html#l00383">mDeleted</a>.</p>
+<p>References <a class="el" href="PersistentObject_8h_source.html#l00411">mDeleted</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00081">~PersistentObject()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00093">~PersistentObject()</a>.</p>
 
 </div>
 </div>
@@ -1128,6 +1188,8 @@ template&lt;class T &gt; </div>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DynamicObject.html#a202d48566f9277e572dbfd9d91c6f268">libcomp::DynamicObject</a>.</p>
 
+<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00339">libcomp::ScriptEngine::Using()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a32d4706f815f90eacd9e12cc7e7741f2"></a>
@@ -1161,7 +1223,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if loading was successful, false if it was not </dd></dl>
 
-<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00049">libcomp::Object::LoadPacket()</a>.</p>
+<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00050">libcomp::Object::LoadPacket()</a>.</p>
 
 </div>
 </div>
@@ -1286,9 +1348,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>List of pointers to all objects of the specified type </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00153">153</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00156">156</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00222">LoadObjects()</a>.</p>
+<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00240">LoadObjects()</a>.</p>
 
 </div>
 </div>
@@ -1334,7 +1396,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>List of resulting objects built from the stream </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00144">144</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00145">145</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 <p>References <a class="el" href="Object_8h_source.html#l00067">libcomp::ObjectInStream::dynamicSizes</a>.</p>
 
@@ -1422,9 +1484,57 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the object or nullptr if it doesn't exist </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00208">208</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00220">220</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00185">LoadObjectByUUID()</a>, and <a class="el" href="PersistentObject_8h_source.html#l00282">ToList()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00234">LoadObject()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00197">LoadObjectByUUID()</a>, and <a class="el" href="PersistentObject_8h_source.html#l00292">ToList()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd49033e860a8c2469464f8424c59ee0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">PersistentObject</a> &gt; PersistentObject::LoadObject </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>typeHash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Database.html">Database</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>db</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load an object from the database from a field database binding. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">typeHash</td><td>C++ type hash representing the object type to load </td></tr>
+    <tr><td class="paramname">db</td><td><a class="el" href="classlibcomp_1_1Database.html" title="Abstract base class that represents a database to use for loading and modifying PersistentObject inst...">Database</a> to load from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the object or nullptr if it doesn't exist </dd></dl>
+
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00234">234</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+
+<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00220">LoadObject()</a>.</p>
 
 </div>
 </div>
@@ -1479,11 +1589,11 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the object or nullptr if it doesn't exist </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00176">176</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00179">179</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00245">GetRegistry()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00250">GetTypeHashByName()</a>.</p>
+<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00269">GetRegistry()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00274">GetTypeHashByName()</a>.</p>
 
-<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00131">libcomp::DataSyncManager::SyncIncoming()</a>.</p>
+<p>Referenced by <a class="el" href="DataSyncManager_8cpp_source.html#l00153">libcomp::DataSyncManager::SyncIncoming()</a>.</p>
 
 </div>
 </div>
@@ -1543,9 +1653,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the object or nullptr if it doesn't exist </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00185">185</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00197">197</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00172">GetObjectByUUID()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00208">LoadObject()</a>, <a class="el" href="Log_8h_source.html#l00264">LOG_ERROR</a>, and <a class="el" href="PersistentObject_8h_source.html#l00370">sTypeMap</a>.</p>
+<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00184">GetObjectByUUID()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00220">LoadObject()</a>, <a class="el" href="Log_8h_source.html#l00370">LOG_ERROR</a>, and <a class="el" href="PersistentObject_8h_source.html#l00398">sTypeMap</a>.</p>
 
 </div>
 </div>
@@ -1598,9 +1708,57 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>List of pointers objects </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00222">222</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00240">240</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8h_source.html#l00153">LoadAll()</a>, and <a class="el" href="PersistentObject_8h_source.html#l00282">ToList()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8h_source.html#l00156">LoadAll()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00252">LoadObjects()</a>, <a class="el" href="PersistentObject_8h_source.html#l00292">ToList()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00373">libcomp::ScriptEngine::Using()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae85e26b62b780664377ec9f365551f40"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt; std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">PersistentObject</a> &gt; &gt; PersistentObject::LoadObjects </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>typeHash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Database.html">Database</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>db</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load multiple objects from the database from a field database binding. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">typeHash</td><td>C++ type hash representing the object type to load </td></tr>
+    <tr><td class="paramname">db</td><td><a class="el" href="classlibcomp_1_1Database.html" title="Abstract base class that represents a database to use for loading and modifying PersistentObject inst...">Database</a> to load from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>List of pointers objects </dd></dl>
+
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00252">252</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+
+<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00240">LoadObjects()</a>.</p>
 
 </div>
 </div>
@@ -1646,7 +1804,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if loading was successful, false if it was not </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00049">49</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00050">50</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 <p>References <a class="el" href="classlibcomp_1_1Object.html#a32d4706f815f90eacd9e12cc7e7741f2">libcomp::Object::Load()</a>, and <a class="el" href="ReadOnlyPacket_8cpp_source.html#l00116">libcomp::ReadOnlyPacket::Skip()</a>.</p>
 
@@ -1685,9 +1843,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to a new <a class="el" href="classlibcomp_1_1PersistentObject.html" title="Base class of a all dynamically generated objects that persist in the database. ">PersistentObject</a> of the specified type </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00253">253</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00263">263</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00545">libcomp::BaseServer::LoadDataFromFile()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00241">libcomp::Database::LoadSingleObjectFromRow()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00443">libcomp::DatabaseSQLite3::VerifyAndSetupSchema()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00448">libcomp::DatabaseMariaDB::VerifyAndSetupSchema()</a>.</p>
+<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00552">libcomp::BaseServer::LoadDataFromFile()</a>, <a class="el" href="src_2Database_8cpp_source.html#l00247">libcomp::Database::LoadSingleObjectFromRow()</a>, <a class="el" href="DatabaseSQLite3_8cpp_source.html#l00550">libcomp::DatabaseSQLite3::VerifyAndSetupSchema()</a>, and <a class="el" href="DatabaseMariaDB_8cpp_source.html#l00574">libcomp::DatabaseMariaDB::VerifyAndSetupSchema()</a>.</p>
 
 </div>
 </div>
@@ -1722,9 +1880,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to a new <a class="el" href="classlibcomp_1_1PersistentObject.html" title="Base class of a all dynamically generated objects that persist in the database. ">PersistentObject</a> of the specified type ID </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00283">283</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00314">314</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8h_source.html#l00374">sFactory</a>.</p>
+<p>References <a class="el" href="PersistentObject_8h_source.html#l00402">sFactory</a>.</p>
 
 </div>
 </div>
@@ -1770,11 +1928,11 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00100">100</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00112">112</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="Log_8h_source.html#l00264">LOG_ERROR</a>, <a class="el" href="PersistentObject_8h_source.html#l00367">mCacheLock</a>, and <a class="el" href="PersistentObject_8h_source.html#l00364">sCached</a>.</p>
+<p>References <a class="el" href="Log_8h_source.html#l00370">LOG_ERROR</a>, <a class="el" href="PersistentObject_8h_source.html#l00395">mCacheLock</a>, and <a class="el" href="PersistentObject_8h_source.html#l00392">sCached</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00241">libcomp::Database::LoadSingleObjectFromRow()</a>.</p>
+<p>Referenced by <a class="el" href="src_2Database_8cpp_source.html#l00247">libcomp::Database::LoadSingleObjectFromRow()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00373">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -1826,11 +1984,11 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00234">234</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00258">258</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8h_source.html#l00374">sFactory</a>, <a class="el" href="PersistentObject_8h_source.html#l00370">sTypeMap</a>, and <a class="el" href="PersistentObject_8h_source.html#l00377">sTypeNames</a>.</p>
+<p>References <a class="el" href="PersistentObject_8h_source.html#l00402">sFactory</a>, <a class="el" href="PersistentObject_8h_source.html#l00398">sTypeMap</a>, and <a class="el" href="PersistentObject_8h_source.html#l00405">sTypeNames</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00323">Initialize()</a>, and <a class="el" href="PersistentObject_8h_source.html#l00282">ToList()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00405">Initialize()</a>, and <a class="el" href="PersistentObject_8h_source.html#l00292">ToList()</a>.</p>
 
 </div>
 </div>
@@ -1865,7 +2023,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if saving was successful, false if it was not </dd></dl>
 
-<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00297">libcomp::Object::GetXml()</a>, and <a class="el" href="Object_8cpp_source.html#l00065">libcomp::Object::SavePacket()</a>.</p>
+<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00298">libcomp::Object::GetXml()</a>, and <a class="el" href="Object_8cpp_source.html#l00066">libcomp::Object::SavePacket()</a>.</p>
 
 </div>
 </div>
@@ -2006,7 +2164,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if saving was successful, false if it was not </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00204">204</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00205">205</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 <p>References <a class="el" href="Object_8h_source.html#l00086">libcomp::ObjectOutStream::dynamicSizes</a>.</p>
 
@@ -2054,11 +2212,57 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if saving was successful, false if it was not </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00065">65</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00066">66</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 <p>References <a class="el" href="classlibcomp_1_1Object.html#a6b726aabcadc40f46afef2e6164f0e39">libcomp::Object::Save()</a>.</p>
 
 <p>Referenced by <a class="el" href="TcpConnection_8cpp_source.html#l00134">libcomp::TcpConnection::QueueObject()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a49f887ec98e5f34bc5973815cfe780df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> Object::SkipPadding </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Utility function to skip padding bytes when reading from a datastream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Byte stream being read from </td></tr>
+    <tr><td class="paramname">count</td><td>Number of bytes to skip </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the stream is still good after skipping </dd></dl>
+
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00316">316</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 </div>
 </div>
@@ -2095,9 +2299,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>List of <a class="el" href="classlibcomp_1_1PersistentObject.html" title="Base class of a all dynamically generated objects that persist in the database. ">PersistentObject</a> pointers </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00282">282</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00292">292</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00311">Delete()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00289">Insert()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00208">LoadObject()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00222">LoadObjects()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00234">RegisterType()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00300">Update()</a>.</p>
+<p>References <a class="el" href="PersistentObject_8cpp_source.html#l00342">Delete()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00320">Insert()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00220">LoadObject()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00240">LoadObjects()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00258">RegisterType()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00331">Update()</a>.</p>
 
 </div>
 </div>
@@ -2117,9 +2321,9 @@ template&lt;class T &gt; </div>
 <p>Unregisters an object from the cache and marks it as deleted. </p>
 <p>Once an object is marked as deleted, it will not be cached again. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00154">154</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00166">166</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8h_source.html#l00367">mCacheLock</a>, <a class="el" href="PersistentObject_8h_source.html#l00383">mDeleted</a>, <a class="el" href="PersistentObject_8h_source.html#l00356">mUUID</a>, and <a class="el" href="PersistentObject_8h_source.html#l00364">sCached</a>.</p>
+<p>References <a class="el" href="PersistentObject_8h_source.html#l00395">mCacheLock</a>, <a class="el" href="PersistentObject_8h_source.html#l00411">mDeleted</a>, <a class="el" href="PersistentObject_8h_source.html#l00384">mUUID</a>, and <a class="el" href="PersistentObject_8h_source.html#l00392">sCached</a>.</p>
 
 </div>
 </div>
@@ -2146,11 +2350,80 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00300">300</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8cpp_source.html#l00331">331</a> of file <a class="el" href="PersistentObject_8cpp_source.html">PersistentObject.cpp</a>.</p>
 
-<p>References <a class="el" href="PersistentObject_8h_source.html#l00380">mSelf</a>.</p>
+<p>References <a class="el" href="PersistentObject_8h_source.html#l00408">mSelf</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8h_source.html#l00282">ToList()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8h_source.html#l00292">ToList()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00373">libcomp::ScriptEngine::Using()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94c4e0a1e8f3c20e4684599af22cba05"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> Object::WritePadding </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Utility function to write padding bytes when writing to a datastream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Byte stream being written to </td></tr>
+    <tr><td class="paramname">count</td><td>Number of bytes to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the stream is still good after writing </dd></dl>
+
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00324">324</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a6732e7667ed86d03ec878927893dd0ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classlibcomp_1_1ScriptEngine.html">ScriptEngine</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00057">57</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
 </div>
 </div>
@@ -2175,9 +2448,9 @@ template&lt;class T &gt; </div>
 
 <p>Mutex to lock accessing the cache. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00367">367</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00395">395</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00172">GetObjectByUUID()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00100">Register()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00154">Unregister()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00081">~PersistentObject()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00184">GetObjectByUUID()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00112">Register()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00166">Unregister()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00093">~PersistentObject()</a>.</p>
 
 </div>
 </div>
@@ -2201,9 +2474,9 @@ template&lt;class T &gt; </div>
 
 <p>Indicator that the object has been deleted and should not be cached again. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00383">383</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00411">411</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00167">IsDeleted()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00154">Unregister()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00179">IsDeleted()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00166">Unregister()</a>.</p>
 
 </div>
 </div>
@@ -2227,7 +2500,7 @@ template&lt;class T &gt; </div>
 
 <p>Set of fields that have been updated since the last save operation. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00359">359</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00387">387</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
 </div>
 </div>
@@ -2251,7 +2524,7 @@ template&lt;class T &gt; </div>
 
 <p>Mutex to lock accessing the object fields. </p>
 
-<p>Definition at line <a class="el" href="Object_8h_source.html#l00268">268</a> of file <a class="el" href="Object_8h_source.html">Object.h</a>.</p>
+<p>Definition at line <a class="el" href="Object_8h_source.html#l00284">284</a> of file <a class="el" href="Object_8h_source.html">Object.h</a>.</p>
 
 </div>
 </div>
@@ -2275,9 +2548,9 @@ template&lt;class T &gt; </div>
 
 <p>Pointer to object itself. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00380">380</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00408">408</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00311">Delete()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00289">Insert()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00073">PersistentObject()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00300">Update()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00342">Delete()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00320">Insert()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00085">PersistentObject()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00331">Update()</a>.</p>
 
 </div>
 </div>
@@ -2301,9 +2574,9 @@ template&lt;class T &gt; </div>
 
 <p>UUID associated to the object. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00356">356</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00384">384</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00095">GetUUID()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00154">Unregister()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00081">~PersistentObject()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00107">GetUUID()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00166">Unregister()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00093">~PersistentObject()</a>.</p>
 
 </div>
 </div>
@@ -2327,9 +2600,9 @@ template&lt;class T &gt; </div>
 
 <p>Map of intantiated objects listed by their UUID. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00364">364</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00392">392</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00172">GetObjectByUUID()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00100">Register()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00154">Unregister()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00081">~PersistentObject()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00184">GetObjectByUUID()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00112">Register()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00166">Unregister()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00093">~PersistentObject()</a>.</p>
 
 </div>
 </div>
@@ -2353,9 +2626,9 @@ template&lt;class T &gt; </div>
 
 <p>Static map of functions to create an object by their C++ type hash. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00374">374</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00402">402</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00283">New()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00234">RegisterType()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00314">New()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00258">RegisterType()</a>.</p>
 
 </div>
 </div>
@@ -2379,9 +2652,9 @@ template&lt;class T &gt; </div>
 
 <p>Static value to be set to true if any <a class="el" href="classlibcomp_1_1PersistentObject.html" title="Base class of a all dynamically generated objects that persist in the database. ">PersistentObject</a> type fails to register itself at runtime. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00353">353</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00381">381</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00311">Delete()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00323">Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00405">Initialize()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00373">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -2405,9 +2678,9 @@ template&lt;class T &gt; </div>
 
 <p>Static map of MetaObject definitions by the source object's C++ type hash. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00370">370</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00398">398</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00257">GetRegisteredMetadata()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00245">GetRegistry()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00185">LoadObjectByUUID()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00234">RegisterType()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00288">GetRegisteredMetadata()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00269">GetRegistry()</a>, <a class="el" href="PersistentObject_8cpp_source.html#l00197">LoadObjectByUUID()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00258">RegisterType()</a>.</p>
 
 </div>
 </div>
@@ -2431,9 +2704,9 @@ template&lt;class T &gt; </div>
 
 <p>Static map of C++ type hashes by name. </p>
 
-<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00377">377</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
+<p>Definition at line <a class="el" href="PersistentObject_8h_source.html#l00405">405</a> of file <a class="el" href="PersistentObject_8h_source.html">PersistentObject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00250">GetTypeHashByName()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00234">RegisterType()</a>.</p>
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00274">GetTypeHashByName()</a>, and <a class="el" href="PersistentObject_8cpp_source.html#l00258">RegisterType()</a>.</p>
 
 </div>
 </div>

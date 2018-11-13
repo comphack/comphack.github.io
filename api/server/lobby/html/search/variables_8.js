@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['level_5fxp_5frequirements',['LEVEL_XP_REQUIREMENTS',['../../../../libcomp/html/namespacelibcomp.html#a350e3aff57d5978e7732dc852bc07b63',1,'libcomp']]],
+  ['levelup_5fstatuses',['LEVELUP_STATUSES',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a4275e0538a0e5db6d2002a2b5f10fb48',1,'libcomp::ServerConstants::Data']]],
   ['loaderflags',['LoaderFlags',['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER32.html#a26439606afeb1b6b106008355b95cfcb',1,'IMAGE_OPTIONAL_HEADER32::LoaderFlags()'],['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER64.html#aece99af93af6de3f517d42608369c42c',1,'IMAGE_OPTIONAL_HEADER64::LoaderFlags()']]],
   ['log_5flevel_5fcount',['LOG_LEVEL_COUNT',['../../../../libcomp/html/classlibcomp_1_1Log.html#a1472098b0e9b0bfebec448507c9cc6abaa17536d1ed65be43ffe3a0e2065ace4f',1,'libcomp::Log']]],
   ['log_5flevel_5fcritical',['LOG_LEVEL_CRITICAL',['../../../../libcomp/html/classlibcomp_1_1Log.html#a1472098b0e9b0bfebec448507c9cc6abaedf5e9f93072516b2d90311d6d85f73d',1,'libcomp::Log']]],

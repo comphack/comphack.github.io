@@ -116,12 +116,12 @@ Inheritance diagram for channel::AIUseSkillCommand:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1dfddb064dd81f7c90061a07c1cbeb89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AIUseSkillCommand.html#a1dfddb064dd81f7c90061a07c1cbeb89">AIUseSkillCommand</a> (uint32_t skillID, int64_t targetObjectID)</td></tr>
-<tr class="memdesc:a1dfddb064dd81f7c90061a07c1cbeb89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new use skill command for a skill not already activated.  <a href="#a1dfddb064dd81f7c90061a07c1cbeb89">More...</a><br /></td></tr>
-<tr class="separator:a1dfddb064dd81f7c90061a07c1cbeb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa64237ab7007c89d400c9a9fa3f4ca60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AIUseSkillCommand.html#aa64237ab7007c89d400c9a9fa3f4ca60">AIUseSkillCommand</a> (const std::shared_ptr&lt; objects::ActivatedAbility &gt; &amp;activated)</td></tr>
-<tr class="memdesc:aa64237ab7007c89d400c9a9fa3f4ca60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new use skill command for a skill that has already been activated.  <a href="#aa64237ab7007c89d400c9a9fa3f4ca60">More...</a><br /></td></tr>
-<tr class="separator:aa64237ab7007c89d400c9a9fa3f4ca60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5029e7bed29d80c644967bd6eb9a028e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AIUseSkillCommand.html#a5029e7bed29d80c644967bd6eb9a028e">AIUseSkillCommand</a> (const std::shared_ptr&lt; objects::MiSkillData &gt; &amp;skillData, int32_t targetEntityID)</td></tr>
+<tr class="memdesc:a5029e7bed29d80c644967bd6eb9a028e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new use skill command for a skill not already activated.  <a href="#a5029e7bed29d80c644967bd6eb9a028e">More...</a><br /></td></tr>
+<tr class="separator:a5029e7bed29d80c644967bd6eb9a028e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79feee11096f8fbb66150bd6b8acdaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AIUseSkillCommand.html#ad79feee11096f8fbb66150bd6b8acdaf">AIUseSkillCommand</a> (const std::shared_ptr&lt; objects::MiSkillData &gt; &amp;skillData, const std::shared_ptr&lt; objects::ActivatedAbility &gt; &amp;activated)</td></tr>
+<tr class="memdesc:ad79feee11096f8fbb66150bd6b8acdaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new use skill command for a skill that has already been activated.  <a href="#ad79feee11096f8fbb66150bd6b8acdaf">More...</a><br /></td></tr>
+<tr class="separator:ad79feee11096f8fbb66150bd6b8acdaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ba92de78010be3390f74dbfe2271184"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AIUseSkillCommand.html#a0ba92de78010be3390f74dbfe2271184">~AIUseSkillCommand</a> ()</td></tr>
 <tr class="memdesc:a0ba92de78010be3390f74dbfe2271184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the use skill command.  <a href="#a0ba92de78010be3390f74dbfe2271184">More...</a><br /></td></tr>
 <tr class="separator:a0ba92de78010be3390f74dbfe2271184"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,12 +131,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab101e10bc85b83f9519a220f80dbc2b2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AICommand.html#ab101e10bc85b83f9519a220f80dbc2b2">GetDelay</a> () const </td></tr>
 <tr class="memdesc:ab101e10bc85b83f9519a220f80dbc2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the delay to process before the command itself.  <a href="#ab101e10bc85b83f9519a220f80dbc2b2">More...</a><br /></td></tr>
 <tr class="separator:ab101e10bc85b83f9519a220f80dbc2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8c9c559bb1c5ad42ba1ff47da40f6c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::MiSkillData &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AIUseSkillCommand.html#afe8c9c559bb1c5ad42ba1ff47da40f6c">GetSkillData</a> () const </td></tr>
+<tr class="memdesc:afe8c9c559bb1c5ad42ba1ff47da40f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the definition of the skill to use.  <a href="#afe8c9c559bb1c5ad42ba1ff47da40f6c">More...</a><br /></td></tr>
+<tr class="separator:afe8c9c559bb1c5ad42ba1ff47da40f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add7f92c3fa78adf5b7ad2386e4f6d983"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AIUseSkillCommand.html#add7f92c3fa78adf5b7ad2386e4f6d983">GetSkillID</a> () const </td></tr>
 <tr class="memdesc:add7f92c3fa78adf5b7ad2386e4f6d983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the skill to use.  <a href="#add7f92c3fa78adf5b7ad2386e4f6d983">More...</a><br /></td></tr>
 <tr class="separator:add7f92c3fa78adf5b7ad2386e4f6d983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4f4ee9f3497c44fc851760998d19941"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AIUseSkillCommand.html#af4f4ee9f3497c44fc851760998d19941">GetTargetObjectID</a> () const </td></tr>
-<tr class="memdesc:af4f4ee9f3497c44fc851760998d19941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the object that was targeted by the skill.  <a href="#af4f4ee9f3497c44fc851760998d19941">More...</a><br /></td></tr>
-<tr class="separator:af4f4ee9f3497c44fc851760998d19941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d740a87421b7c0e71a01801b3a634ce"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AICommand.html#a8d740a87421b7c0e71a01801b3a634ce">GetStartTime</a> ()</td></tr>
+<tr class="memdesc:a8d740a87421b7c0e71a01801b3a634ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the server time set when the command started.  <a href="#a8d740a87421b7c0e71a01801b3a634ce">More...</a><br /></td></tr>
+<tr class="separator:a8d740a87421b7c0e71a01801b3a634ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa157f82bc73863ed1cb9ea3eeb2618cb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AICommand.html#aa157f82bc73863ed1cb9ea3eeb2618cb">GetTargetEntityID</a> () const </td></tr>
+<tr class="memdesc:aa157f82bc73863ed1cb9ea3eeb2618cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the entity targeted by the command.  <a href="#aa157f82bc73863ed1cb9ea3eeb2618cb">More...</a><br /></td></tr>
+<tr class="separator:aa157f82bc73863ed1cb9ea3eeb2618cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac770cd7345a7cb02befb6143097f13b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechannel.html#aaf2e50152d91fa2bd5167b1df358468f">AICommandType_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AICommand.html#ac770cd7345a7cb02befb6143097f13b7">GetType</a> () const </td></tr>
 <tr class="memdesc:ac770cd7345a7cb02befb6143097f13b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the AI command type.  <a href="#ac770cd7345a7cb02befb6143097f13b7">More...</a><br /></td></tr>
 <tr class="separator:ac770cd7345a7cb02befb6143097f13b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,21 +152,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:accdaf0ca0a5f4a5fb9ca0a298d843918"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AICommand.html#accdaf0ca0a5f4a5fb9ca0a298d843918">SetDelay</a> (uint64_t delay)</td></tr>
 <tr class="memdesc:accdaf0ca0a5f4a5fb9ca0a298d843918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the delay to process before the command itself.  <a href="#accdaf0ca0a5f4a5fb9ca0a298d843918">More...</a><br /></td></tr>
 <tr class="separator:accdaf0ca0a5f4a5fb9ca0a298d843918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd11390662c71e608520663043dc74e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AICommand.html#acd11390662c71e608520663043dc74e1">SetTargetEntityID</a> (int32_t targetEntityID)</td></tr>
+<tr class="memdesc:acd11390662c71e608520663043dc74e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the ID of the entity targeted by the command.  <a href="#acd11390662c71e608520663043dc74e1">More...</a><br /></td></tr>
+<tr class="separator:acd11390662c71e608520663043dc74e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b47c1e8c12cf485f4a85d2288f47313"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AICommand.html#a7b47c1e8c12cf485f4a85d2288f47313">Start</a> ()</td></tr>
 <tr class="memdesc:a7b47c1e8c12cf485f4a85d2288f47313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the command as having been started.  <a href="#a7b47c1e8c12cf485f4a85d2288f47313">More...</a><br /></td></tr>
 <tr class="separator:a7b47c1e8c12cf485f4a85d2288f47313"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a939b7ec968290d22f41f9d214b40bfb5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AICommand.html#a939b7ec968290d22f41f9d214b40bfb5">Started</a> ()</td></tr>
-<tr class="memdesc:a939b7ec968290d22f41f9d214b40bfb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the command has been marked as started.  <a href="#a939b7ec968290d22f41f9d214b40bfb5">More...</a><br /></td></tr>
-<tr class="separator:a939b7ec968290d22f41f9d214b40bfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a09b7fb5df9a176691c3d06a6a77e0179"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AICommand.html#a09b7fb5df9a176691c3d06a6a77e0179">mDelay</a></td></tr>
 <tr class="memdesc:a09b7fb5df9a176691c3d06a6a77e0179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-process delay time in microseconds.  <a href="#a09b7fb5df9a176691c3d06a6a77e0179">More...</a><br /></td></tr>
 <tr class="separator:a09b7fb5df9a176691c3d06a6a77e0179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71314d2af764f261b5c2cb165186f8fb"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AICommand.html#a71314d2af764f261b5c2cb165186f8fb">mStarted</a></td></tr>
-<tr class="memdesc:a71314d2af764f261b5c2cb165186f8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that the command has been started.  <a href="#a71314d2af764f261b5c2cb165186f8fb">More...</a><br /></td></tr>
-<tr class="separator:a71314d2af764f261b5c2cb165186f8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a734392c618a2d1314df456b403e39c3d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AICommand.html#a734392c618a2d1314df456b403e39c3d">mStartTime</a></td></tr>
+<tr class="memdesc:a734392c618a2d1314df456b403e39c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command start time.  <a href="#a734392c618a2d1314df456b403e39c3d">More...</a><br /></td></tr>
+<tr class="separator:a734392c618a2d1314df456b403e39c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e984be6a9dbdc4e97e2fbce250b9a64"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AICommand.html#a4e984be6a9dbdc4e97e2fbce250b9a64">mTargetEntityID</a></td></tr>
+<tr class="memdesc:a4e984be6a9dbdc4e97e2fbce250b9a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity ID being targeted by the command (can be unset as -1)  <a href="#a4e984be6a9dbdc4e97e2fbce250b9a64">More...</a><br /></td></tr>
+<tr class="separator:a4e984be6a9dbdc4e97e2fbce250b9a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45e5dfbf56e2c66d9f31e1eed21b629e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechannel.html#aaf2e50152d91fa2bd5167b1df358468f">AICommandType_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AICommand.html#a45e5dfbf56e2c66d9f31e1eed21b629e">mType</a></td></tr>
 <tr class="memdesc:a45e5dfbf56e2c66d9f31e1eed21b629e"><td class="mdescLeft">&#160;</td><td class="mdescRight">AI command type.  <a href="#a45e5dfbf56e2c66d9f31e1eed21b629e">More...</a><br /></td></tr>
 <tr class="separator:a45e5dfbf56e2c66d9f31e1eed21b629e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,33 +179,30 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae85ba79c0248ea6e936bed406b6de41a"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::ActivatedAbility &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AIUseSkillCommand.html#ae85ba79c0248ea6e936bed406b6de41a">mActivated</a></td></tr>
 <tr class="memdesc:ae85ba79c0248ea6e936bed406b6de41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the ActivatedAbility of a skill to execute.  <a href="#ae85ba79c0248ea6e936bed406b6de41a">More...</a><br /></td></tr>
 <tr class="separator:ae85ba79c0248ea6e936bed406b6de41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8e17b96eb0f64e11b98907af5c05813"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AIUseSkillCommand.html#aa8e17b96eb0f64e11b98907af5c05813">mSkillID</a></td></tr>
-<tr class="memdesc:aa8e17b96eb0f64e11b98907af5c05813"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the skill being used.  <a href="#aa8e17b96eb0f64e11b98907af5c05813">More...</a><br /></td></tr>
-<tr class="separator:aa8e17b96eb0f64e11b98907af5c05813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dbcccca362c8ec4a488315d58613a7a"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AIUseSkillCommand.html#a3dbcccca362c8ec4a488315d58613a7a">mTargetObjectID</a></td></tr>
-<tr class="memdesc:a3dbcccca362c8ec4a488315d58613a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the object being targeted by the skill.  <a href="#a3dbcccca362c8ec4a488315d58613a7a">More...</a><br /></td></tr>
-<tr class="separator:a3dbcccca362c8ec4a488315d58613a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe53a230589a46a00ad6d82c3592a09"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::MiSkillData &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AIUseSkillCommand.html#adfe53a230589a46a00ad6d82c3592a09">mSkillData</a></td></tr>
+<tr class="memdesc:adfe53a230589a46a00ad6d82c3592a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of the skill being used.  <a href="#adfe53a230589a46a00ad6d82c3592a09">More...</a><br /></td></tr>
+<tr class="separator:adfe53a230589a46a00ad6d82c3592a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>AI command used to activate or execute a skill. </p>
 
-<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00169">169</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00228">228</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a1dfddb064dd81f7c90061a07c1cbeb89"></a>
+<a class="anchor" id="a5029e7bed29d80c644967bd6eb9a028e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">AIUseSkillCommand::AIUseSkillCommand </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>skillID</em>, </td>
+          <td class="paramtype">const std::shared_ptr&lt; objects::MiSkillData &gt; &amp;&#160;</td>
+          <td class="paramname"><em>skillData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>targetObjectID</em>&#160;</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>targetEntityID</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -209,28 +215,38 @@ Private Attributes</h2></td></tr>
 <p>Create a new use skill command for a skill not already activated. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">skillID</td><td>ID of the skill being used </td></tr>
-    <tr><td class="paramname">targetObjectID</td><td>ID of the object being targeted by the skill </td></tr>
+    <tr><td class="paramname">skillData</td><td>Pointer to the definition of the skill being used </td></tr>
+    <tr><td class="paramname">targetEntityID</td><td>ID of the entity being targeted by the skill </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00132">132</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00178">178</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
 
-<p>References <a class="el" href="AICommand_8h_source.html#l00104">channel::AICommand::mType</a>, and <a class="el" href="AICommand_8h_source.html#l00050">channel::USE_SKILL</a>.</p>
+<p>References <a class="el" href="AICommand_8h_source.html#l00129">channel::AICommand::mTargetEntityID</a>, <a class="el" href="AICommand_8h_source.html#l00120">channel::AICommand::mType</a>, and <a class="el" href="AICommand_8h_source.html#l00053">channel::USE_SKILL</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa64237ab7007c89d400c9a9fa3f4ca60"></a>
+<a class="anchor" id="ad79feee11096f8fbb66150bd6b8acdaf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">AIUseSkillCommand::AIUseSkillCommand </td>
           <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; objects::ActivatedAbility &gt; &amp;&#160;</td>
-          <td class="paramname"><em>activated</em></td><td>)</td>
+          <td class="paramtype">const std::shared_ptr&lt; objects::MiSkillData &gt; &amp;&#160;</td>
+          <td class="paramname"><em>skillData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; objects::ActivatedAbility &gt; &amp;&#160;</td>
+          <td class="paramname"><em>activated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -238,14 +254,15 @@ Private Attributes</h2></td></tr>
 <p>Create a new use skill command for a skill that has already been activated. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">skillData</td><td>Pointer to the definition of the skill being used </td></tr>
     <tr><td class="paramname">activated</td><td>Pointer to the ActivatedAbility of a skill to execute </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00139">139</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00187">187</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
 
-<p>References <a class="el" href="AICommand_8h_source.html#l00104">channel::AICommand::mType</a>, and <a class="el" href="AICommand_8h_source.html#l00050">channel::USE_SKILL</a>.</p>
+<p>References <a class="el" href="AICommand_8h_source.html#l00129">channel::AICommand::mTargetEntityID</a>, <a class="el" href="AICommand_8h_source.html#l00120">channel::AICommand::mType</a>, and <a class="el" href="AICommand_8h_source.html#l00053">channel::USE_SKILL</a>.</p>
 
 </div>
 </div>
@@ -272,7 +289,7 @@ Private Attributes</h2></td></tr>
 
 <p>Clean up the use skill command. </p>
 
-<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00151">151</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00201">201</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
 
 </div>
 </div>
@@ -293,7 +310,9 @@ Private Attributes</h2></td></tr>
 <p>Get the pointer to the ActivatedAbility of a skill to execute. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the ActivatedAbility of a skill to execute </dd></dl>
 
-<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00172">172</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00222">222</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="AIManager_8cpp_source.html#l00296">channel::AIManager::CombatSkillHit()</a>, and <a class="el" href="AIManager_8cpp_source.html#l00746">channel::AIManager::UpdateState()</a>.</p>
 
 </div>
 </div>
@@ -321,9 +340,29 @@ Private Attributes</h2></td></tr>
 <p>Get the delay to process before the command itself. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pre-process delay time in microseconds </dd></dl>
 
-<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00049">49</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00055">55</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
 
-<p>References <a class="el" href="AICommand_8h_source.html#l00107">channel::AICommand::mDelay</a>.</p>
+<p>References <a class="el" href="AICommand_8h_source.html#l00126">channel::AICommand::mDelay</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe8c9c559bb1c5ad42ba1ff47da40f6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; objects::MiSkillData &gt; AIUseSkillCommand::GetSkillData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the definition of the skill to use. </p>
+<dl class="section return"><dt>Returns</dt><dd>Definition fo the skill to use </dd></dl>
+
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00210">210</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
 
 </div>
 </div>
@@ -343,27 +382,67 @@ Private Attributes</h2></td></tr>
 <p>Get the ID of the skill to use. </p>
 <dl class="section return"><dt>Returns</dt><dd>ID fo the skill to use </dd></dl>
 
-<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00155">155</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00205">205</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af4f4ee9f3497c44fc851760998d19941"></a>
+<a class="anchor" id="a8d740a87421b7c0e71a01801b3a634ce"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t AIUseSkillCommand::GetTargetObjectID </td>
+          <td class="memname">uint64_t AICommand::GetStartTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the server time set when the command started. </p>
+<dl class="section return"><dt>Returns</dt><dd>Server time in microseconds </dd></dl>
+
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00065">65</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+
+<p>References <a class="el" href="AICommand_8h_source.html#l00123">channel::AICommand::mStartTime</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa157f82bc73863ed1cb9ea3eeb2618cb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t AICommand::GetTargetEntityID </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Get the ID of the object that was targeted by the skill. </p>
-<dl class="section return"><dt>Returns</dt><dd>ID of the object that was targeted by the skill </dd></dl>
+<p>Get the ID of the entity targeted by the command. </p>
+<dl class="section return"><dt>Returns</dt><dd>Entity ID targeted by the command or -1 if none set </dd></dl>
 
-<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00160">160</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00078">78</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+
+<p>References <a class="el" href="AICommand_8h_source.html#l00129">channel::AICommand::mTargetEntityID</a>.</p>
 
 </div>
 </div>
@@ -391,9 +470,9 @@ Private Attributes</h2></td></tr>
 <p>Get the AI command type. </p>
 <dl class="section return"><dt>Returns</dt><dd>AI command type </dd></dl>
 
-<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00044">44</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00050">50</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
 
-<p>References <a class="el" href="AICommand_8h_source.html#l00104">channel::AICommand::mType</a>.</p>
+<p>References <a class="el" href="AICommand_8h_source.html#l00120">channel::AICommand::mType</a>.</p>
 
 </div>
 </div>
@@ -419,7 +498,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00165">165</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00215">215</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
 
 </div>
 </div>
@@ -453,9 +532,47 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00054">54</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00060">60</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
 
-<p>References <a class="el" href="AICommand_8h_source.html#l00107">channel::AICommand::mDelay</a>.</p>
+<p>References <a class="el" href="AICommand_8h_source.html#l00126">channel::AICommand::mDelay</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd11390662c71e608520663043dc74e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AICommand::SetTargetEntityID </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>targetEntityID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the ID of the entity targeted by the command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">targetEntityID</td><td>Entity ID targeted by the command or -1 if none </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00083">83</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+
+<p>References <a class="el" href="AICommand_8h_source.html#l00129">channel::AICommand::mTargetEntityID</a>.</p>
+
+<p>Referenced by <a class="el" href="AICommand_8cpp_source.html#l00095">channel::AIMoveCommand::AIMoveCommand()</a>.</p>
 
 </div>
 </div>
@@ -482,39 +599,9 @@ Private Attributes</h2></td></tr>
 
 <p>Set the command as having been started. </p>
 
-<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00064">64</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00070">70</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
 
-<p>References <a class="el" href="AICommand_8h_source.html#l00110">channel::AICommand::mStarted</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a939b7ec968290d22f41f9d214b40bfb5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> AICommand::Started </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Check if the command has been marked as started. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if the command has started, false if it has not </dd></dl>
-
-<p>Definition at line <a class="el" href="AICommand_8cpp_source.html#l00059">59</a> of file <a class="el" href="AICommand_8cpp_source.html">AICommand.cpp</a>.</p>
-
-<p>References <a class="el" href="AICommand_8h_source.html#l00110">channel::AICommand::mStarted</a>.</p>
+<p>References <a class="el" href="ChannelServer_8cpp_source.html#l00788">channel::ChannelServer::GetServerTime()</a>, and <a class="el" href="AICommand_8h_source.html#l00123">channel::AICommand::mStartTime</a>.</p>
 
 </div>
 </div>
@@ -539,7 +626,7 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the ActivatedAbility of a skill to execute. </p>
 
-<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00223">223</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00282">282</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
 
 </div>
 </div>
@@ -563,13 +650,13 @@ Private Attributes</h2></td></tr>
 
 <p>Pre-process delay time in microseconds. </p>
 
-<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00107">107</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00126">126</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AICommand_8cpp_source.html#l00049">channel::AICommand::GetDelay()</a>, and <a class="el" href="AICommand_8cpp_source.html#l00054">channel::AICommand::SetDelay()</a>.</p>
+<p>Referenced by <a class="el" href="AICommand_8cpp_source.html#l00055">channel::AICommand::GetDelay()</a>, and <a class="el" href="AICommand_8cpp_source.html#l00060">channel::AICommand::SetDelay()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa8e17b96eb0f64e11b98907af5c05813"></a>
+<a class="anchor" id="adfe53a230589a46a00ad6d82c3592a09"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -577,7 +664,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t channel::AIUseSkillCommand::mSkillID</td>
+          <td class="memname">std::shared_ptr&lt;objects::MiSkillData&gt; channel::AIUseSkillCommand::mSkillData</td>
         </tr>
       </table>
   </td>
@@ -587,13 +674,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>ID of the skill being used. </p>
+<p>Definition of the skill being used. </p>
 
-<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00217">217</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00279">279</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a71314d2af764f261b5c2cb165186f8fb"></a>
+<a class="anchor" id="a734392c618a2d1314df456b403e39c3d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -601,7 +688,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> channel::AICommand::mStarted</td>
+          <td class="memname">uint64_t channel::AICommand::mStartTime</td>
         </tr>
       </table>
   </td>
@@ -611,15 +698,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates that the command has been started. </p>
+<p>Command start time. </p>
 
-<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00110">110</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00123">123</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AICommand_8cpp_source.html#l00064">channel::AICommand::Start()</a>, and <a class="el" href="AICommand_8cpp_source.html#l00059">channel::AICommand::Started()</a>.</p>
+<p>Referenced by <a class="el" href="AICommand_8cpp_source.html#l00065">channel::AICommand::GetStartTime()</a>, and <a class="el" href="AICommand_8cpp_source.html#l00070">channel::AICommand::Start()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3dbcccca362c8ec4a488315d58613a7a"></a>
+<a class="anchor" id="a4e984be6a9dbdc4e97e2fbce250b9a64"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -627,19 +714,21 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t channel::AIUseSkillCommand::mTargetObjectID</td>
+          <td class="memname">int32_t channel::AICommand::mTargetEntityID</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>ID of the object being targeted by the skill. </p>
+<p>Entity ID being targeted by the command (can be unset as -1) </p>
 
-<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00220">220</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00129">129</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
+
+<p>Referenced by <a class="el" href="AICommand_8cpp_source.html#l00178">AIUseSkillCommand()</a>, <a class="el" href="AICommand_8cpp_source.html#l00078">channel::AICommand::GetTargetEntityID()</a>, and <a class="el" href="AICommand_8cpp_source.html#l00083">channel::AICommand::SetTargetEntityID()</a>.</p>
 
 </div>
 </div>
@@ -663,9 +752,9 @@ Private Attributes</h2></td></tr>
 
 <p>AI command type. </p>
 
-<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00104">104</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
+<p>Definition at line <a class="el" href="AICommand_8h_source.html#l00120">120</a> of file <a class="el" href="AICommand_8h_source.html">AICommand.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AICommand_8cpp_source.html#l00069">channel::AIMoveCommand::AIMoveCommand()</a>, <a class="el" href="AICommand_8cpp_source.html#l00177">channel::AIScriptedCommand::AIScriptedCommand()</a>, <a class="el" href="AICommand_8cpp_source.html#l00132">AIUseSkillCommand()</a>, and <a class="el" href="AICommand_8cpp_source.html#l00044">channel::AICommand::GetType()</a>.</p>
+<p>Referenced by <a class="el" href="AICommand_8cpp_source.html#l00088">channel::AIMoveCommand::AIMoveCommand()</a>, <a class="el" href="AICommand_8cpp_source.html#l00227">channel::AIScriptedCommand::AIScriptedCommand()</a>, <a class="el" href="AICommand_8cpp_source.html#l00178">AIUseSkillCommand()</a>, and <a class="el" href="AICommand_8cpp_source.html#l00050">channel::AICommand::GetType()</a>.</p>
 
 </div>
 </div>

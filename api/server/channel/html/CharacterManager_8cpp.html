@@ -96,20 +96,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Manages characters on the channel.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>&quot;</code><br />
-<code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Constants_8h.html">Constants.h</a>&gt;</code><br />
+<code>#include &lt;Constants.h&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DefinitionManager_8h.html">DefinitionManager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html">Log.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/PacketCodes_8h.html">PacketCodes.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Randomizer_8h.html">Randomizer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html">ServerConstants.h</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerDataManager_8h.html">ServerDataManager.h</a>&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;Account.h&gt;</code><br />
 <code>#include &lt;AccountWorldData.h&gt;</code><br />
+<code>#include &lt;ActivatedAbility.h&gt;</code><br />
+<code>#include &lt;CalculatedEntityState.h&gt;</code><br />
 <code>#include &lt;ChannelConfig.h&gt;</code><br />
 <code>#include &lt;CharacterProgress.h&gt;</code><br />
 <code>#include &lt;Clan.h&gt;</code><br />
+<code>#include &lt;CultureData.h&gt;</code><br />
 <code>#include &lt;DemonBox.h&gt;</code><br />
+<code>#include &lt;DemonPresent.h&gt;</code><br />
+<code>#include &lt;DemonQuest.h&gt;</code><br />
+<code>#include &lt;DigitalizeState.h&gt;</code><br />
 <code>#include &lt;EnchantSpecialData.h&gt;</code><br />
+<code>#include &lt;EventCounter.h&gt;</code><br />
 <code>#include &lt;Expertise.h&gt;</code><br />
 <code>#include &lt;InheritedSkill.h&gt;</code><br />
 <code>#include &lt;Item.h&gt;</code><br />
@@ -120,35 +129,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;MiAcquisitionSkillData.h&gt;</code><br />
 <code>#include &lt;MiCancelData.h&gt;</code><br />
 <code>#include &lt;MiCategoryData.h&gt;</code><br />
+<code>#include &lt;MiDCategoryData.h&gt;</code><br />
 <code>#include &lt;MiDevilBattleData.h&gt;</code><br />
 <code>#include &lt;MiDevilCrystalData.h&gt;</code><br />
 <code>#include &lt;MiDevilData.h&gt;</code><br />
+<code>#include &lt;MiDevilEquipmentItemData.h&gt;</code><br />
 <code>#include &lt;MiDevilFamiliarityData.h&gt;</code><br />
 <code>#include &lt;MiDevilLVUpData.h&gt;</code><br />
 <code>#include &lt;MiDevilLVUpRateData.h&gt;</code><br />
+<code>#include &lt;MiDevilReunionConditionData.h&gt;</code><br />
 <code>#include &lt;MiEnchantCharasticData.h&gt;</code><br />
 <code>#include &lt;MiEnchantData.h&gt;</code><br />
 <code>#include &lt;MiExpertData.h&gt;</code><br />
 <code>#include &lt;MiExpertGrowthTbl.h&gt;</code><br />
 <code>#include &lt;MiGrowthData.h&gt;</code><br />
+<code>#include &lt;MiGuardianAssistData.h&gt;</code><br />
+<code>#include &lt;MiGuardianLevelData.h&gt;</code><br />
+<code>#include &lt;MiGuardianLevelDataEntry.h&gt;</code><br />
+<code>#include &lt;MiGuardianUnlockData.h&gt;</code><br />
 <code>#include &lt;MiItemBasicData.h&gt;</code><br />
 <code>#include &lt;MiItemData.h&gt;</code><br />
+<code>#include &lt;MiMitamaReunionBonusData.h&gt;</code><br />
+<code>#include &lt;MiMitamaReunionSetBonusData.h&gt;</code><br />
+<code>#include &lt;MiMitamaUnionBonusData.h&gt;</code><br />
 <code>#include &lt;MiNPCBasicData.h&gt;</code><br />
 <code>#include &lt;MiPossessionData.h&gt;</code><br />
 <code>#include &lt;MiRentalData.h&gt;</code><br />
 <code>#include &lt;MiSkillData.h&gt;</code><br />
 <code>#include &lt;MiSkillItemStatusCommonData.h&gt;</code><br />
+<code>#include &lt;MiSkillSpecialParams.h&gt;</code><br />
+<code>#include &lt;MiSpotData.h&gt;</code><br />
 <code>#include &lt;MiStatusData.h&gt;</code><br />
 <code>#include &lt;MiUnionData.h&gt;</code><br />
 <code>#include &lt;MiUseRestrictionsData.h&gt;</code><br />
 <code>#include &lt;PlayerExchangeSession.h&gt;</code><br />
+<code>#include &lt;PentalphaEntry.h&gt;</code><br />
+<code>#include &lt;PostItem.h&gt;</code><br />
+<code>#include &lt;PvPData.h&gt;</code><br />
+<code>#include &lt;ServerCultureMachineSet.h&gt;</code><br />
 <code>#include &lt;ServerZone.h&gt;</code><br />
 <code>#include &lt;StatusEffect.h&gt;</code><br />
+<code>#include &lt;Tokusei.h&gt;</code><br />
+<code>#include &lt;TokuseiAspect.h&gt;</code><br />
 <code>#include &lt;WorldSharedConfig.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="ActionManager_8h_source.html">ActionManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AIState_8h_source.html">AIState.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ChannelSyncManager_8h_source.html">ChannelSyncManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="CultureMachineState_8h_source.html">CultureMachineState.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EventManager_8h_source.html">EventManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="FusionManager_8h_source.html">FusionManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ManagerConnection_8h_source.html">ManagerConnection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MatchManager_8h_source.html">MatchManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SkillManager_8h_source.html">SkillManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ZoneManager_8h_source.html">ZoneManager.h</a>&quot;</code><br />
 </div>

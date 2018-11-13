@@ -131,6 +131,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:addeeb72160c7c1561bb28fe0617a3031"><td class="memItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DataSyncManager_1_1ObjectConfig.html#addeeb72160c7c1561bb28fe0617a3031">ServerOwned</a></td></tr>
 <tr class="memdesc:addeeb72160c7c1561bb28fe0617a3031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies that the server this manager belongs to is the master server.  <a href="#addeeb72160c7c1561bb28fe0617a3031">More...</a><br /></td></tr>
 <tr class="separator:addeeb72160c7c1561bb28fe0617a3031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a64253fc19c67d61949d663a33a042"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="classlibcomp_1_1DataSyncManager.html">DataSyncManager</a> &amp;, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;, const std::list&lt; std::pair&lt; std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Object.html">libcomp::Object</a> &gt;, <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &gt;&gt; &amp;, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DataSyncManager_1_1ObjectConfig.html#ac6a64253fc19c67d61949d663a33a042">SyncCompleteHandler</a></td></tr>
+<tr class="memdesc:ac6a64253fc19c67d61949d663a33a042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional pointer to the function to use when the the complete record set has been synched.  <a href="#ac6a64253fc19c67d61949d663a33a042">More...</a><br /></td></tr>
+<tr class="separator:ac6a64253fc19c67d61949d663a33a042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e1a348e4cf43cc9e8c7fe19acd57487"><td class="memItemLeft" align="right" valign="top">std::function&lt; int8_t(<a class="el" href="classlibcomp_1_1DataSyncManager.html">DataSyncManager</a> &amp;, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;, const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;, <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1DataSyncManager_1_1ObjectConfig.html#a1e1a348e4cf43cc9e8c7fe19acd57487">UpdateHandler</a></td></tr>
 <tr class="memdesc:a1e1a348e4cf43cc9e8c7fe19acd57487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the function to use when the record is being updated.  <a href="#a1e1a348e4cf43cc9e8c7fe19acd57487">More...</a><br /></td></tr>
 <tr class="separator:a1e1a348e4cf43cc9e8c7fe19acd57487"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,7 +141,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Container class for a specific object's synchronization configuration for the server. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00171">171</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00211">211</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac27b324a65fd5823987a31879b75e1fb"></a>
 <div class="memitem">
@@ -163,7 +166,7 @@ Public Attributes</h2></td></tr>
 
 <p>Create a new empty <a class="el" href="classlibcomp_1_1DataSyncManager_1_1ObjectConfig.html" title="Container class for a specific object&#39;s synchronization configuration for the server. ">ObjectConfig</a>. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00177">177</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00217">217</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
 </div>
 </div>
@@ -215,7 +218,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00189">189</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00229">229</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
 </div>
 </div>
@@ -232,7 +235,7 @@ Public Attributes</h2></td></tr>
 
 <p>Pointer to the function to use when creating a new record of the specified type This is not used when the object type is persistent. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00227">227</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00278">278</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
 </div>
 </div>
@@ -248,7 +251,7 @@ Public Attributes</h2></td></tr>
 
 <p>Pointer to the database to use when loading if the object is persistent. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00201">201</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00241">241</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +267,7 @@ Public Attributes</h2></td></tr>
 
 <p>Specifies that there is a dynamic update handler that should always be called when an update is passed to the manager. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00209">209</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00249">249</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
 </div>
 </div>
@@ -280,7 +283,7 @@ Public Attributes</h2></td></tr>
 
 <p>Type name of the object. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00197">197</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00237">237</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +299,24 @@ Public Attributes</h2></td></tr>
 
 <p>Specifies that the server this manager belongs to is the master server. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00205">205</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00245">245</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6a64253fc19c67d61949d663a33a042"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(<a class="el" href="classlibcomp_1_1DataSyncManager.html">DataSyncManager</a>&amp;, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a>&amp;, const std::list&lt;std::pair&lt;std::shared_ptr&lt;<a class="el" href="classlibcomp_1_1Object.html">libcomp::Object</a>&gt;, <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&gt;&gt;&amp;, const <a class="el" href="classlibcomp_1_1String.html">libcomp::String</a>&amp;)&gt; libcomp::DataSyncManager::ObjectConfig::SyncCompleteHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional pointer to the function to use when the the complete record set has been synched. </p>
+<p>Parameters are as follows: 1) <a class="el" href="classlibcomp_1_1Object.html" title="Abstract base class that represents any object that can be defined via a MetaObject definition and co...">Object</a> type name 2) List of pointers to the object record and flags that indicate if the record was removed 3) Identification string for the server sending an update </p>
+
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00272">272</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
 </div>
 </div>
@@ -311,9 +331,9 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pointer to the function to use when the record is being updated. </p>
-<p>Parameters are as follows: 1) <a class="el" href="classlibcomp_1_1Object.html" title="Abstract base class that represents any object that can be defined via a MetaObject definition and co...">Object</a> type name 2) Pointer to the object record 3) Indicator that the update is actually a rmove 4) Identification string for the server sending an update The return value should use the codes in this header This is not necessary when the object type is persistent. </p>
+<p>Parameters are as follows: 1) <a class="el" href="classlibcomp_1_1Object.html" title="Abstract base class that represents any object that can be defined via a MetaObject definition and co...">Object</a> type name 2) Pointer to the object record 3) Indicator that the update is actually a remove 4) Identification string for the server sending an update The return value should use the codes in this header This is not necessary when the object type is persistent. </p>
 
-<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00221">221</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
+<p>Definition at line <a class="el" href="DataSyncManager_8h_source.html#l00261">261</a> of file <a class="el" href="DataSyncManager_8h_source.html">DataSyncManager.h</a>.</p>
 
 </div>
 </div>

@@ -138,10 +138,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5a3b535dbeb5f2300dd2da93c2ba0aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f136d3503bef43fc0001c8a9eb8d682"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::ServerConfig &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a3f136d3503bef43fc0001c8a9eb8d682">GetConfig</a> () const </td></tr>
 <tr class="separator:a3f136d3503bef43fc0001c8a9eb8d682"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7ad9103ec078bca8aba6ec87d82af35"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; Database &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ad7ad9103ec078bca8aba6ec87d82af35">GetDatabase</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp.html#a1442fc2425910540ae92c53a56c03cc6">EnumMap</a>&lt; objects::ServerConfig::DatabaseType_t, std::shared_ptr&lt; objects::DatabaseConfig &gt;&gt; &amp;configMap, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> performSetup)</td></tr>
-<tr class="separator:ad7ad9103ec078bca8aba6ec87d82af35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8d279d27d0b9b9f03ba396bac53e144"><td class="memItemLeft" align="right" valign="top">gsl::not_null&lt; DataStore * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ae8d279d27d0b9b9f03ba396bac53e144">GetDataStore</a> ()</td></tr>
-<tr class="separator:ae8d279d27d0b9b9f03ba396bac53e144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ea7dd332cc42025e9d8d5f48921ec4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; Database &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a04ea7dd332cc42025e9d8d5f48921ec4">GetDatabase</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp.html#a1442fc2425910540ae92c53a56c03cc6">EnumMap</a>&lt; objects::ServerConfig::DatabaseType_t, std::shared_ptr&lt; objects::DatabaseConfig &gt;&gt; &amp;configMap, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> performSetup, DataStore *pDataStore=nullptr, const std::string &amp;migrationDirectory=std::string())</td></tr>
+<tr class="separator:a04ea7dd332cc42025e9d8d5f48921ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f88b56f0ef6c0c5660d2c5d9f6c2f7a"><td class="memItemLeft" align="right" valign="top">DataStore *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a9f88b56f0ef6c0c5660d2c5d9f6c2f7a">GetDataStore</a> ()</td></tr>
+<tr class="separator:a9f88b56f0ef6c0c5660d2c5d9f6c2f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d35949f1dc031c456ae1e064548b19f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1LobbyServer.html#a2d35949f1dc031c456ae1e064548b19f">GetFakeAccountSalt</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;username)</td></tr>
 <tr class="memdesc:a2d35949f1dc031c456ae1e064548b19f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the same fake salt for an account that does not exist.  <a href="#a2d35949f1dc031c456ae1e064548b19f">More...</a><br /></td></tr>
 <tr class="separator:a2d35949f1dc031c456ae1e064548b19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,10 +182,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8bba6ccda93882c827bbd3398041970a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1LobbyServer.html#a8bba6ccda93882c827bbd3398041970a">SendWorldList</a> (const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html">libcomp::TcpConnection</a> &gt; &amp;connection) const </td></tr>
 <tr class="memdesc:a8bba6ccda93882c827bbd3398041970a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the world list to either one or all client connections.  <a href="#a8bba6ccda93882c827bbd3398041970a">More...</a><br /></td></tr>
 <tr class="separator:a8bba6ccda93882c827bbd3398041970a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a724620208dfb4a16fd5bff8e330c7ea0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a724620208dfb4a16fd5bff8e330c7ea0">ServerReady</a> ()</td></tr>
+<tr class="separator:a724620208dfb4a16fd5bff8e330c7ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad74f7a784b5eb617e096dcf8ff8e76e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ad74f7a784b5eb617e096dcf8ff8e76e4">Shutdown</a> ()</td></tr>
 <tr class="separator:ad74f7a784b5eb617e096dcf8ff8e76e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad41e8f0ede0549eef18b2ecb769aca22"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#ad41e8f0ede0549eef18b2ecb769aca22">Start</a> ()</td></tr>
-<tr class="separator:ad41e8f0ede0549eef18b2ecb769aca22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b85f7704e169be0147dc98faf09fb3"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#a11b85f7704e169be0147dc98faf09fb3">Start</a> (<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> delayReady=false)</td></tr>
+<tr class="separator:a11b85f7704e169be0147dc98faf09fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -232,9 +234,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:aadaa6bdc45b7ffd97493c9002c8d5e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad13b43c1005ae85f5a81f331aee199ce"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html">libcomp::Worker</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ad13b43c1005ae85f5a81f331aee199ce">GetNextConnectionWorker</a> ()</td></tr>
 <tr class="separator:ad13b43c1005ae85f5a81f331aee199ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54eee09eca7daf61263d9ed5232c3b66"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1LobbyServer.html#a54eee09eca7daf61263d9ed5232c3b66">InitializeTestMode</a> ()</td></tr>
-<tr class="memdesc:a54eee09eca7daf61263d9ed5232c3b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up required test data for unit testing, removing the need for human interaction via the usual prompt.  <a href="#a54eee09eca7daf61263d9ed5232c3b66">More...</a><br /></td></tr>
-<tr class="separator:a54eee09eca7daf61263d9ed5232c3b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8571c58c0d1aa351fb584119175c29e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ac8571c58c0d1aa351fb584119175c29e">InsertDataFromFile</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;filePath, const std::shared_ptr&lt; Database &gt; &amp;db, const std::set&lt; std::string &gt; &amp;specificTypes={})</td></tr>
 <tr class="separator:ac8571c58c0d1aa351fb584119175c29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30ffbbe25582b0bdee423083593158eb"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a30ffbbe25582b0bdee423083593158eb">LoadDataFromFile</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;filePath, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ab00d1dd4d6e965d76c482ef854459d03">PersistentObjectMap</a> &amp;records, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> registerRecords, const std::set&lt; std::string &gt; &amp;specificTypes={})</td></tr>
@@ -247,8 +246,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:af6351032f80380c5fa0bc151758169aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8242184f16ac6379b0deb827ca7920f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ab8242184f16ac6379b0deb827ca7920f">Run</a> ()</td></tr>
 <tr class="separator:ab8242184f16ac6379b0deb827ca7920f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724620208dfb4a16fd5bff8e330c7ea0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a724620208dfb4a16fd5bff8e330c7ea0">ServerReady</a> ()</td></tr>
-<tr class="separator:a724620208dfb4a16fd5bff8e330c7ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa7fa058f68c10fc7d8300c50cbf2ba9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#aaa7fa058f68c10fc7d8300c50cbf2ba9">SetDiffieHellman</a> (DH *pDiffieHellman)</td></tr>
 <tr class="separator:aaa7fa058f68c10fc7d8300c50cbf2ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f223a56e99eba29d21e3d151cf99cf"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1LobbyServer.html#ac2f223a56e99eba29d21e3d151cf99cf">Setup</a> ()</td></tr>
@@ -381,9 +378,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Clean up the server. </p>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00168">168</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00164">164</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyServer_8h_source.html#l00205">mAccountManager</a>, and <a class="el" href="LobbyServer_8h_source.html#l00208">mSyncManager</a>.</p>
+<p>References <a class="el" href="LobbyServer_8h_source.html#l00198">mAccountManager</a>, and <a class="el" href="LobbyServer_8h_source.html#l00201">mSyncManager</a>.</p>
 
 </div>
 </div>
@@ -421,7 +418,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#ad9e38654d84b3c3902d208f1cf6db2f1">libcomp::BaseServer</a>.</p>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00268">268</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00264">264</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
 <p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ab9978ae51f0f7986e284b7f559c7875b">libcomp::BaseServer::AssignMessageQueue()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#ad2e679a1c5363ebee90d4d0a89802489">libcomp::BaseServer::CopyDiffieHellman()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#aadaa6bdc45b7ffd97493c9002c8d5e53">libcomp::BaseServer::GetDiffieHellman()</a>.</p>
 
@@ -451,9 +448,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Create the first account when none currently exist in the connected database via PromptCreateAccount. </p>
 <p>The user will also be prompted to create more accounts should they want to here. </p>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00304">304</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00293">293</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a81c35fcd628c47ba893c17792f6ea929">LOG_INFO</a>, and <a class="el" href="LobbyServer_8cpp_source.html#l00321">PromptCreateAccount()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a81c35fcd628c47ba893c17792f6ea929">LOG_INFO</a>, and <a class="el" href="LobbyServer_8cpp_source.html#l00310">PromptCreateAccount()</a>.</p>
 
 <p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00062">Initialize()</a>.</p>
 
@@ -475,9 +472,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the account manager for the server. </p>
 <dl class="section return"><dt>Returns</dt><dd>Account manager for the server. </dd></dl>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00541">541</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00530">530</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyServer_8h_source.html#l00205">mAccountManager</a>.</p>
+<p>References <a class="el" href="LobbyServer_8h_source.html#l00198">mAccountManager</a>.</p>
 
 <p>Referenced by <a class="el" href="ManagerConnection_8cpp_source.html#l00366">lobby::ManagerConnection::RemoveClientConnection()</a>.</p>
 
@@ -500,9 +497,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the same fake salt for an account that does not exist. </p>
 <dl class="section return"><dt>Returns</dt><dd>A fake salt for an account that does not exist. </dd></dl>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00580">580</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00569">569</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="LobbyServer_8h_source.html#l00214">mFakeSalts</a>, and <a class="el" href="LobbyServer_8h_source.html#l00211">mFakeSaltsLock</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="LobbyServer_8h_source.html#l00207">mFakeSalts</a>, and <a class="el" href="LobbyServer_8h_source.html#l00204">mFakeSaltsLock</a>.</p>
 
 </div>
 </div>
@@ -522,11 +519,11 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a pointer to the data sync manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classlobby_1_1LobbySyncManager.html" title="Lobby specific implementation of the DataSyncManager in charge of performing server side update opera...">LobbySyncManager</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00546">546</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00535">535</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyServer_8h_source.html#l00208">mSyncManager</a>.</p>
+<p>References <a class="el" href="LobbyServer_8h_source.html#l00201">mSyncManager</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00805">lobby::AccountManager::DeleteCharacter()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00820">lobby::AccountManager::DeleteCharacter()</a>.</p>
 
 </div>
 </div>
@@ -546,11 +543,11 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the main database. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the main database </dd></dl>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00258">258</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00254">254</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyServer_8h_source.html#l00196">mDatabase</a>.</p>
+<p>References <a class="el" href="LobbyServer_8h_source.html#l00189">mDatabase</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00805">lobby::AccountManager::DeleteCharacter()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00580">lobby::AccountManager::GetOrCreateLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00746">lobby::AccountManager::SetCharacterOnAccount()</a>, and <a class="el" href="SetWorldInfo_8cpp_source.html#l00044">SetWorldInfoFromPacket()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00820">lobby::AccountManager::DeleteCharacter()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00593">lobby::AccountManager::GetOrCreateLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00761">lobby::AccountManager::SetCharacterOnAccount()</a>, and <a class="el" href="SetWorldInfo_8cpp_source.html#l00044">SetWorldInfoFromPacket()</a>.</p>
 
 </div>
 </div>
@@ -570,9 +567,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Get the connection manager for the server. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the connection manager. </dd></dl>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00263">263</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00259">259</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyServer_8h_source.html#l00199">mManagerConnection</a>.</p>
+<p>References <a class="el" href="LobbyServer_8h_source.html#l00192">mManagerConnection</a>.</p>
 
 </div>
 </div>
@@ -599,9 +596,9 @@ Static Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the connected world. </dd></dl>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00184">184</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00180">180</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyServer_8h_source.html#l00199">mManagerConnection</a>.</p>
+<p>References <a class="el" href="LobbyServer_8h_source.html#l00192">mManagerConnection</a>.</p>
 
 </div>
 </div>
@@ -628,9 +625,9 @@ Static Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the matching world </dd></dl>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00179">179</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00175">175</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyServer_8h_source.html#l00199">mManagerConnection</a>.</p>
+<p>References <a class="el" href="LobbyServer_8h_source.html#l00192">mManagerConnection</a>.</p>
 
 </div>
 </div>
@@ -650,11 +647,11 @@ Static Protected Attributes</h2></td></tr>
 <p>Get a list of pointers to the connected worlds. </p>
 <dl class="section return"><dt>Returns</dt><dd>List of pointers to the connected worlds </dd></dl>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00174">174</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00170">170</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyServer_8h_source.html#l00199">mManagerConnection</a>.</p>
+<p>References <a class="el" href="LobbyServer_8h_source.html#l00192">mManagerConnection</a>.</p>
 
-<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00196">SendWorldList()</a>.</p>
+<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00192">SendWorldList()</a>.</p>
 
 </div>
 </div>
@@ -692,38 +689,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00062">62</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html#a12989e593f18370720de5ed0971cf333">libcomp::Worker::AddManager()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00304">CreateFirstAccount()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ad7ad9103ec078bca8aba6ec87d82af35">libcomp::BaseServer::GetDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html#a8945242ba8f5a7f8748b146e01691728">libcomp::Worker::GetMessageQueue()</a>, <a class="el" href="LobbySyncManager_8cpp_source.html#l00058">lobby::LobbySyncManager::Initialize()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00297">InitializeTestMode()</a>, <a class="el" href="LobbyServer_8h_source.html#l00205">mAccountManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a1464941c745d75dcc84e34819066e03e">libcomp::BaseServer::mConfig</a>, <a class="el" href="LobbyServer_8h_source.html#l00196">mDatabase</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ade237f520f624d480e02a7235c411809">libcomp::BaseServer::mMainWorker</a>, <a class="el" href="LobbyServer_8h_source.html#l00199">mManagerConnection</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#a09f3da6ea1d1fb1fc3c3131aef334fb0">libcomp::BaseServer::mService</a>, <a class="el" href="LobbyServer_8h_source.html#l00208">mSyncManager</a>, <a class="el" href="LobbyServer_8h_source.html#l00202">mUnitTestMode</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a084ec4211d2b1098bb53e41b6cbe13b6">libcomp::BaseServer::mWorkers</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00551">ResetRegisteredWorlds()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00534">Setup()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/PacketCodes_8h.html#a4d7d5dc6fabdf88ec8cb5c076a7dec1b">to_underlying()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a54eee09eca7daf61263d9ed5232c3b66"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> LobbyServer::InitializeTestMode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set up required test data for unit testing, removing the need for human interaction via the usual prompt. </p>
-<dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>: Is this still needed now that mock data is inserted elsewhere? </dd></dl>
-
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00297">297</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
-
-<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00062">Initialize()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html#a12989e593f18370720de5ed0971cf333">libcomp::Worker::AddManager()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00293">CreateFirstAccount()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a04ea7dd332cc42025e9d8d5f48921ec4">libcomp::BaseServer::GetDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a9f88b56f0ef6c0c5660d2c5d9f6c2f7a">libcomp::BaseServer::GetDataStore()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Worker.html#a8945242ba8f5a7f8748b146e01691728">libcomp::Worker::GetMessageQueue()</a>, <a class="el" href="LobbySyncManager_8cpp_source.html#l00059">lobby::LobbySyncManager::Initialize()</a>, <a class="el" href="LobbyServer_8h_source.html#l00198">mAccountManager</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a1464941c745d75dcc84e34819066e03e">libcomp::BaseServer::mConfig</a>, <a class="el" href="LobbyServer_8h_source.html#l00189">mDatabase</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ade237f520f624d480e02a7235c411809">libcomp::BaseServer::mMainWorker</a>, <a class="el" href="LobbyServer_8h_source.html#l00192">mManagerConnection</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpServer.html#a09f3da6ea1d1fb1fc3c3131aef334fb0">libcomp::BaseServer::mService</a>, <a class="el" href="LobbyServer_8h_source.html#l00201">mSyncManager</a>, <a class="el" href="LobbyServer_8h_source.html#l00195">mUnitTestMode</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a084ec4211d2b1098bb53e41b6cbe13b6">libcomp::BaseServer::mWorkers</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00540">ResetRegisteredWorlds()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00523">Setup()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/PacketCodes_8h.html#a4d7d5dc6fabdf88ec8cb5c076a7dec1b">to_underlying()</a>.</p>
 
 </div>
 </div>
@@ -749,14 +715,14 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Prompt for and create an account via pre-populated or user entered values. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Use a regular expression. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Make this a better check for a valid email. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Use a regular expression. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Make this a better check for a valid email. </dd></dl>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00321">321</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00310">310</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a7468107e3817b7faee67d4cc1a183458">libcomp::String::Contains()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a38a1731684a357f62f2c77eac470d256">libcomp::Decrypt::HashPassword()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a4e8fb512730c14bb1ff9344df6184f32">libcomp::String::Length()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a81c35fcd628c47ba893c17792f6ea929">LOG_INFO</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a1464941c745d75dcc84e34819066e03e">libcomp::BaseServer::mConfig</a>, <a class="el" href="LobbyServer_8h_source.html#l00196">mDatabase</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#af189b0634846030ec48fd0ac7134b252">libcomp::String::ToInteger()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a7468107e3817b7faee67d4cc1a183458">libcomp::String::Contains()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a38a1731684a357f62f2c77eac470d256">libcomp::Decrypt::HashPassword()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a4e8fb512730c14bb1ff9344df6184f32">libcomp::String::Length()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a81c35fcd628c47ba893c17792f6ea929">LOG_INFO</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a1464941c745d75dcc84e34819066e03e">libcomp::BaseServer::mConfig</a>, <a class="el" href="LobbyServer_8h_source.html#l00189">mDatabase</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#af189b0634846030ec48fd0ac7134b252">libcomp::String::ToInteger()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
-<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00304">CreateFirstAccount()</a>.</p>
+<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00293">CreateFirstAccount()</a>.</p>
 
 </div>
 </div>
@@ -784,11 +750,11 @@ Static Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the new registered server or nullptr on failure </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classlobby_1_1ManagerConnection.html#a0fe452ce6bffa3487d317ac5d28104f8" title="Register a world and remove previous entries. ">ManagerConnection::RegisterWorld</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00190">190</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00186">186</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyServer_8h_source.html#l00199">mManagerConnection</a>.</p>
+<p>References <a class="el" href="LobbyServer_8h_source.html#l00192">mManagerConnection</a>.</p>
 
-<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00551">ResetRegisteredWorlds()</a>.</p>
+<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00540">ResetRegisteredWorlds()</a>.</p>
 
 </div>
 </div>
@@ -816,9 +782,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Reset the values in the RegisteredWorld table, pulling <a class="el" href="classlobby_1_1World.html" title="Associates a world connection to RegisteredWorld and its channels for the lobby. ">World</a> information from it before servers connect. </p>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00551">551</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00540">540</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a59ea33d00f1f148aaeadbebfa0425bca">LOG_CRITICAL</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="LobbyServer_8h_source.html#l00196">mDatabase</a>, and <a class="el" href="LobbyServer_8cpp_source.html#l00190">RegisterWorld()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a59ea33d00f1f148aaeadbebfa0425bca">LOG_CRITICAL</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="LobbyServer_8h_source.html#l00189">mDatabase</a>, and <a class="el" href="LobbyServer_8cpp_source.html#l00186">RegisterWorld()</a>.</p>
 
 <p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00062">Initialize()</a>.</p>
 
@@ -846,9 +812,9 @@ Static Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00196">196</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00192">192</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html#a99f2a1310e869a11536e490c7997748a">libcomp::TcpConnection::BroadcastPacket()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Convert.html#acf55d81b176d67bdfa666b3248c16ac4a439ee39e30ecd2cb6dfec4020697eeb7">libcomp::Convert::ENCODING_UTF8</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00174">GetWorlds()</a>, <a class="el" href="LobbyServer_8h_source.html#l00199">mManagerConnection</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab7f2381548009b30746d4d8717bdcd7f">libcomp::Packet::WriteString16Little()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a170e6cd6bb4f2a3f28d2a892beb633d8">libcomp::Packet::WriteU16Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2507cb23cbaf9e6544370f7604c5810b">libcomp::Packet::WriteU8()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html#a99f2a1310e869a11536e490c7997748a">libcomp::TcpConnection::BroadcastPacket()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Convert.html#acf55d81b176d67bdfa666b3248c16ac4a439ee39e30ecd2cb6dfec4020697eeb7">libcomp::Convert::ENCODING_UTF8</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00170">GetWorlds()</a>, <a class="el" href="LobbyServer_8h_source.html#l00192">mManagerConnection</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab7f2381548009b30746d4d8717bdcd7f">libcomp::Packet::WriteString16Little()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a170e6cd6bb4f2a3f28d2a892beb633d8">libcomp::Packet::WriteU16Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2507cb23cbaf9e6544370f7604c5810b">libcomp::Packet::WriteU8()</a>.</p>
 
 </div>
 </div>
@@ -876,9 +842,9 @@ Static Protected Attributes</h2></td></tr>
 <p>Setup the server based on the setup config file. </p>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure or no work done </dd></dl>
 
-<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00534">534</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8cpp_source.html#l00523">523</a> of file <a class="el" href="LobbyServer_8cpp_source.html">LobbyServer.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a0644cb1881fdf1da8a3c5ecb7e8787e0">libcomp::BaseServer::GetConfigPath()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ac8571c58c0d1aa351fb584119175c29e">libcomp::BaseServer::InsertDataFromFile()</a>, and <a class="el" href="LobbyServer_8h_source.html#l00196">mDatabase</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a0644cb1881fdf1da8a3c5ecb7e8787e0">libcomp::BaseServer::GetConfigPath()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#ac8571c58c0d1aa351fb584119175c29e">libcomp::BaseServer::InsertDataFromFile()</a>, and <a class="el" href="LobbyServer_8h_source.html#l00189">mDatabase</a>.</p>
 
 <p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00062">Initialize()</a>.</p>
 
@@ -905,9 +871,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Account manager for the server. </p>
 
-<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00205">205</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00198">198</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00541">GetAccountManager()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00062">Initialize()</a>, and <a class="el" href="LobbyServer_8cpp_source.html#l00168">~LobbyServer()</a>.</p>
+<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00530">GetAccountManager()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00062">Initialize()</a>, and <a class="el" href="LobbyServer_8cpp_source.html#l00164">~LobbyServer()</a>.</p>
 
 </div>
 </div>
@@ -931,9 +897,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>A shared pointer to the main database used by the server. </p>
 
-<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00196">196</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00189">189</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00258">GetMainDatabase()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00062">Initialize()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00321">PromptCreateAccount()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00551">ResetRegisteredWorlds()</a>, and <a class="el" href="LobbyServer_8cpp_source.html#l00534">Setup()</a>.</p>
+<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00254">GetMainDatabase()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00062">Initialize()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00310">PromptCreateAccount()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00540">ResetRegisteredWorlds()</a>, and <a class="el" href="LobbyServer_8cpp_source.html#l00523">Setup()</a>.</p>
 
 </div>
 </div>
@@ -957,9 +923,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Mapping of fake salts for usernames that do not exist. </p>
 
-<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00214">214</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00207">207</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00580">GetFakeAccountSalt()</a>.</p>
+<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00569">GetFakeAccountSalt()</a>.</p>
 
 </div>
 </div>
@@ -983,9 +949,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Lock for the fake salts. </p>
 
-<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00211">211</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00204">204</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00580">GetFakeAccountSalt()</a>.</p>
+<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00569">GetFakeAccountSalt()</a>.</p>
 
 </div>
 </div>
@@ -1009,9 +975,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Pointer to the manager in charge of connections. </p>
 
-<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00199">199</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00192">192</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00263">GetManagerConnection()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00184">GetWorldByConnection()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00179">GetWorldByID()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00174">GetWorlds()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00062">Initialize()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00190">RegisterWorld()</a>, and <a class="el" href="LobbyServer_8cpp_source.html#l00196">SendWorldList()</a>.</p>
+<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00259">GetManagerConnection()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00180">GetWorldByConnection()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00175">GetWorldByID()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00170">GetWorlds()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00062">Initialize()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00186">RegisterWorld()</a>, and <a class="el" href="LobbyServer_8cpp_source.html#l00192">SendWorldList()</a>.</p>
 
 </div>
 </div>
@@ -1035,9 +1001,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Data sync manager for the server. </p>
 
-<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00208">208</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00201">201</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00546">GetLobbySyncManager()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00062">Initialize()</a>, and <a class="el" href="LobbyServer_8cpp_source.html#l00168">~LobbyServer()</a>.</p>
+<p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00535">GetLobbySyncManager()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00062">Initialize()</a>, and <a class="el" href="LobbyServer_8cpp_source.html#l00164">~LobbyServer()</a>.</p>
 
 </div>
 </div>
@@ -1061,7 +1027,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Indicates the unit test database should be used. </p>
 
-<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00202">202</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
+<p>Definition at line <a class="el" href="LobbyServer_8h_source.html#l00195">195</a> of file <a class="el" href="LobbyServer_8h_source.html">LobbyServer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="LobbyServer_8cpp_source.html#l00062">Initialize()</a>.</p>
 

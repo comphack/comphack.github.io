@@ -182,6 +182,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classlibcomp_1_1BasicPacketStream.html#af53b8f70ac7179034a9b7eaad4a29ff6">libcomp::BasicPacketStream</a>
 , <a class="el" href="classlibcomp_1_1VectorStream.html#ac5e152fd36ff925affcbbbedd8f1299b">libcomp::VectorStream&lt; CharT, TraitsT &gt;</a>
 </li>
+<li>Self()
+: <a class="el" href="classlibcomp_1_1ScriptEngine.html#a80b469e80ac3265d16a37270e53a2421">libcomp::ScriptEngine</a>
+</li>
 <li>SendMessage()
 : <a class="el" href="classlibcomp_1_1EncryptedConnection.html#aa7d6bf506641a73026eaa89968b85d5b">libcomp::EncryptedConnection</a>
 </li>
@@ -228,6 +231,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SetFrom()
 : <a class="el" href="classlibcomp_1_1DBExplicitUpdate.html#a26d129eecb45cc8be5e4beefaa5ee31a">libcomp::DBExplicitUpdate</a>
 </li>
+<li>SetListenPort()
+: <a class="el" href="classlibcomp_1_1LobbyConnection.html#a9393c1e95179ad12a14de593dc02cf28">libcomp::LobbyConnection</a>
+</li>
+<li>SetLogCompression()
+: <a class="el" href="classlibcomp_1_1Log.html#aeec8d587b0867acdbe40f22e1b88f3d7">libcomp::Log</a>
+</li>
 <li>SetLogFileTimestampsEnabled()
 : <a class="el" href="classlibcomp_1_1Log.html#afe340ed8397ffdc4ec2f60822cb44d47">libcomp::Log</a>
 </li>
@@ -236,6 +245,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SetLogPath()
 : <a class="el" href="classlibcomp_1_1Log.html#a22f355e39b7e8a836e28b61ccb957df9">libcomp::Log</a>
+</li>
+<li>SetLogRotationCount()
+: <a class="el" href="classlibcomp_1_1Log.html#a70e8e46ec454bbc90f60bf4deab9339c">libcomp::Log</a>
+</li>
+<li>SetLogRotationDays()
+: <a class="el" href="classlibcomp_1_1Log.html#a8a282ebb184a26d43d3bf47dfe1cb044">libcomp::Log</a>
+</li>
+<li>SetLogRotationEnabled()
+: <a class="el" href="classlibcomp_1_1Log.html#acf5533faca72d12024afcbf3f5d6547d">libcomp::Log</a>
 </li>
 <li>SetMessageQueue()
 : <a class="el" href="classlibcomp_1_1EncryptedConnection.html#a7cc9f7a06a333be489a024caed63a89b">libcomp::EncryptedConnection</a>
@@ -256,9 +274,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classlibcomp_1_1EncryptedConnection.html#a011ace39e63134c0d6af7e4cde3b5417">libcomp::EncryptedConnection</a>
 </li>
 <li>Setup()
-: <a class="el" href="classlibcomp_1_1Database.html#afa6813e428800934d4d9dcc2b4294a50">libcomp::Database</a>
-, <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#aa7955d165954d90d264d9d7c8330d942">libcomp::DatabaseMariaDB</a>
-, <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#ac6bdf3d6c21fa6758d1af8c6dbc01705">libcomp::DatabaseSQLite3</a>
+: <a class="el" href="classlibcomp_1_1Database.html#a1b5ea8359282d4bd844d865b9d46e463">libcomp::Database</a>
+, <a class="el" href="classlibcomp_1_1DatabaseMariaDB.html#a8d322da49ab7325fb553b3772e70dba8">libcomp::DatabaseMariaDB</a>
+, <a class="el" href="classlibcomp_1_1DatabaseSQLite3.html#ae85a63597720bb2d034b1ba98a552e87">libcomp::DatabaseSQLite3</a>
 </li>
 <li>SetUUID()
 : <a class="el" href="classlibcomp_1_1ObjectReference.html#a6576f36b458f3836fac3bd67ab849d30">libcomp::ObjectReference&lt; T &gt;</a>
@@ -278,6 +296,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>Skip()
 : <a class="el" href="classlibcomp_1_1ReadOnlyPacket.html#a0889d24e27f40dbb478c6b3ac5553091">libcomp::ReadOnlyPacket</a>
 </li>
+<li>SkipPadding()
+: <a class="el" href="classlibcomp_1_1Object.html#a49f887ec98e5f34bc5973815cfe780df">libcomp::Object</a>
+</li>
 <li>SocketError()
 : <a class="el" href="classlibcomp_1_1EncryptedConnection.html#aaec864c6a99b8961045fad3cb2d36173">libcomp::EncryptedConnection</a>
 , <a class="el" href="classlibcomp_1_1TcpConnection.html#acdf4cf46c2ac2768f2575efdaa003219">libcomp::TcpConnection</a>
@@ -291,26 +312,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>Start()
 : <a class="el" href="classlibcomp_1_1Child.html#acb217f21a02e6cc2322787500c43d1a2">libcomp::Child</a>
-, <a class="el" href="classlibcomp_1_1TcpServer.html#ad41e8f0ede0549eef18b2ecb769aca22">libcomp::TcpServer</a>
+, <a class="el" href="classlibcomp_1_1TcpServer.html#a11b85f7704e169be0147dc98faf09fb3">libcomp::TcpServer</a>
 , <a class="el" href="classlibcomp_1_1Worker.html#a128e7629843e40e2cc306a5e466aff64">libcomp::Worker</a>
 </li>
 <li>String()
-: <a class="el" href="classlibcomp_1_1String.html#a67e795f975de382e5ae2b41c21ea7849">libcomp::String</a>
+: <a class="el" href="classlibcomp_1_1String.html#a70d3cf01c15ee023b4cd8ac504431384">libcomp::String</a>
 </li>
 <li>StringData()
 : <a class="el" href="classString_1_1StringData.html#a49e5887fc5d8cf50026168cd10c2a61c">libcomp::String::StringData</a>
 </li>
 <li>Subtract()
-: <a class="el" href="classlibcomp_1_1DBExplicitUpdate.html#a39ac66eedc5e3b1c6debec8ea9b877ed">libcomp::DBExplicitUpdate</a>
+: <a class="el" href="classlibcomp_1_1DBExplicitUpdate.html#a9b7adea48c0b2f4c14d77259f1c6156f">libcomp::DBExplicitUpdate</a>
 </li>
 <li>SubtractFrom()
-: <a class="el" href="classlibcomp_1_1DBExplicitUpdate.html#a58bc6053bbeacc6070242718b399a212">libcomp::DBExplicitUpdate</a>
+: <a class="el" href="classlibcomp_1_1DBExplicitUpdate.html#ac70613c95edef095628f490755fb75e0">libcomp::DBExplicitUpdate</a>
+</li>
+<li>SyncComplete()
+: <a class="el" href="classlibcomp_1_1DataSyncManager.html#ab43c814df2cac2fed883547777c78563">libcomp::DataSyncManager</a>
 </li>
 <li>SyncIncoming()
 : <a class="el" href="classlibcomp_1_1DataSyncManager.html#ab7246d10f1369580a1b82a3109bc4bde">libcomp::DataSyncManager</a>
 </li>
 <li>SyncOutgoing()
 : <a class="el" href="classlibcomp_1_1DataSyncManager.html#a12a62581bedb6a8dee61dc372724c353">libcomp::DataSyncManager</a>
+</li>
+<li>SyncRecordRemoval()
+: <a class="el" href="classlibcomp_1_1DataSyncManager.html#a5e9b04ae7ab49ad1326bd3075df58289">libcomp::DataSyncManager</a>
+</li>
+<li>SyncRecordUpdate()
+: <a class="el" href="classlibcomp_1_1DataSyncManager.html#a42773e95bb4e0a106db3ac5189d3248c">libcomp::DataSyncManager</a>
 </li>
 </ul>
 </div><!-- contents -->

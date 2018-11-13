@@ -5,13 +5,15 @@ var searchData=
   ['cancelledstatuses',['CancelledStatuses',['../classchannel_1_1SkillTargetResult.html#ac74a3c1ea2dc8455ffbc296075713330',1,'channel::SkillTargetResult']]],
   ['canhitstun',['CanHitstun',['../classchannel_1_1SkillTargetResult.html#aad1366d84845aec866058e95e47e87bc',1,'channel::SkillTargetResult']]],
   ['canknockback',['CanKnockback',['../classchannel_1_1SkillTargetResult.html#af2e68d797cfedb089d62cf10e451ee9e',1,'channel::SkillTargetResult']]],
+  ['channelchanged',['ChannelChanged',['../structchannel_1_1ActionManager_1_1ActionContext.html#a99bee275efccb5c75aaa6437342c70ca',1,'channel::ActionManager::ActionContext']]],
   ['characteristics',['Characteristics',['../../../../libcomp/html/structIMAGE__FILE__HEADER.html#a16a93bce8001903b28d32f7ca0f9fab7',1,'IMAGE_FILE_HEADER::Characteristics()'],['../../../../libcomp/html/structIMAGE__SECTION__HEADER.html#a06f65f067ba6cc3696fe5ce614cebbdd',1,'IMAGE_SECTION_HEADER::Characteristics()']]],
+  ['chargereduce',['ChargeReduce',['../classchannel_1_1ProcessingSkill.html#af2e94c81d9b9a8eeef999cafb581a67f',1,'channel::ProcessingSkill']]],
   ['checksum',['CheckSum',['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER32.html#a5a54705f82de17f1aebb99d47490e58b',1,'IMAGE_OPTIONAL_HEADER32::CheckSum()'],['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER64.html#a7cc7ed67a9d1014d835af573c1b6cf0b',1,'IMAGE_OPTIONAL_HEADER64::CheckSum()']]],
   ['clan_5fform_5fmap',['CLAN_FORM_MAP',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a994b9eafaae9a74c9ece4fbf25f56c7b',1,'libcomp::ServerConstants::Data']]],
   ['clan_5flevel_5fskills',['CLAN_LEVEL_SKILLS',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#ae69f8731978a39c71a76bc6c081655f8',1,'libcomp::ServerConstants::Data']]],
-  ['client',['Client',['../structchannel_1_1ActionContext.html#abe2e007cc2547736f55f0a1c7bded47b',1,'channel::ActionContext::Client()'],['../structchannel_1_1EventContext.html#afa60e4823906c8e7e1c8b281568f5187',1,'channel::EventContext::Client()']]],
+  ['client',['Client',['../structchannel_1_1ActionManager_1_1ActionContext.html#a60742468c4b7f3c2b82e56e238b7e73c',1,'channel::ActionManager::ActionContext::Client()'],['../structchannel_1_1EventManager_1_1EventContext.html#a4e04da17fb960196a68881301972512d',1,'channel::EventManager::EventContext::Client()']]],
   ['counteredskill',['CounteredSkill',['../classchannel_1_1SkillExecutionContext.html#a4581219f854a35b5ae4290d5fa5035fc',1,'channel::SkillExecutionContext']]],
   ['counteringskills',['CounteringSkills',['../classchannel_1_1SkillExecutionContext.html#a8f294f9f2b30b98cde90a18c697f6cce',1,'channel::SkillExecutionContext']]],
-  ['currentzone',['CurrentZone',['../structchannel_1_1ActionContext.html#a953e23ee40c399263f18899672a9a813',1,'channel::ActionContext::CurrentZone()'],['../structchannel_1_1EventContext.html#abbb4d0c9bf55752c4d0569183f53218e',1,'channel::EventContext::CurrentZone()']]],
+  ['currentzone',['CurrentZone',['../structchannel_1_1ActionManager_1_1ActionContext.html#aeb80296ebc93c0cca4440ef5867ed08e',1,'channel::ActionManager::ActionContext::CurrentZone()'],['../structchannel_1_1EventManager_1_1EventContext.html#a304d065f872fcdae02bb0e7bc2e3b23a',1,'channel::EventManager::EventContext::CurrentZone()'],['../classchannel_1_1ProcessingSkill.html#a57df6fd35f4b21ab4162121803902098',1,'channel::ProcessingSkill::CurrentZone()']]],
   ['cycleoffset',['CycleOffset',['../classchannel_1_1WorldClock.html#a97d14b9b985ea297a318e057e8e80ab2',1,'channel::WorldClock']]]
 ];

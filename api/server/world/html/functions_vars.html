@@ -77,6 +77,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions_vars.html"><span>Variables</span></a></li>
     </ul>
   </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li class="current"><a href="#index_s"><span>s</span></a></li>
+    </ul>
+  </div>
 </div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -93,7 +99,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 
 <div class="contents">
-&#160;<ul>
+&#160;
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>mAccountManager
 : <a class="el" href="classworld_1_1WorldServer.html#af3e4f86b363f716c7aaf5da2466acb2a">world::WorldServer</a>
 </li>
@@ -101,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classworld_1_1AccountManager.html#a6dbe2bb63503cb3603c251253b59ca12">world::AccountManager</a>
 </li>
 <li>mChannelSwitches
-: <a class="el" href="classworld_1_1AccountManager.html#a91d00242fbab1e0c8f4373dacf19031b">world::AccountManager</a>
+: <a class="el" href="classworld_1_1AccountManager.html#a97e01c1f8d56ce2705cde16cf8ecf326">world::AccountManager</a>
 </li>
 <li>mCharacterCIDMap
 : <a class="el" href="classworld_1_1CharacterManager.html#a3da7f0137c6d8fca19a8980047654743">world::CharacterManager</a>
@@ -121,6 +129,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>mDatabase
 : <a class="el" href="classworld_1_1WorldServer.html#a997d83a4138dbc386652f73b9145e996">world::WorldServer</a>
 </li>
+<li>mInstanceAccess
+: <a class="el" href="classworld_1_1WorldSyncManager.html#ad3ba5724d67fff1a52b0b293702be0e3">world::WorldSyncManager</a>
+</li>
 <li>mLobbyConnection
 : <a class="el" href="classworld_1_1ManagerConnection.html#ac316cf129759920ecc699a6314be7b06">world::ManagerConnection</a>
 </li>
@@ -130,9 +141,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>mLock
 : <a class="el" href="classworld_1_1AccountManager.html#adb69b8edca7a177bfca6c3e135b479c0">world::AccountManager</a>
 , <a class="el" href="classworld_1_1CharacterManager.html#a8827f6368bfb64d6247916a2ea1dc47e">world::CharacterManager</a>
+, <a class="el" href="classworld_1_1WorldServer.html#abdba95965cdd570d14a3db0f1b2a2708">world::WorldServer</a>
 </li>
 <li>mManagerConnection
 : <a class="el" href="classworld_1_1WorldServer.html#a9fcdbd2e844cc55a8c2ec534601ff61c">world::WorldServer</a>
+</li>
+<li>mMatchEntries
+: <a class="el" href="classworld_1_1WorldSyncManager.html#a2c9c746e208a5c3d5c0b803b623a0c5c">world::WorldSyncManager</a>
 </li>
 <li>mMaxCID
 : <a class="el" href="classworld_1_1CharacterManager.html#a64de6d874b6876e2379700b7ff92268d">world::CharacterManager</a>
@@ -143,11 +158,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>mMaxPartyID
 : <a class="el" href="classworld_1_1CharacterManager.html#a19f109685849f3362ec0cd893b0c9777">world::CharacterManager</a>
 </li>
+<li>mMaxTeamID
+: <a class="el" href="classworld_1_1CharacterManager.html#ab7fc2bc93e2db636884013968fd0d2cc">world::CharacterManager</a>
+</li>
+<li>mNextMatchID
+: <a class="el" href="classworld_1_1WorldSyncManager.html#aac79dee82144b42df60a6d41048ea86a">world::WorldSyncManager</a>
+</li>
 <li>mParties
 : <a class="el" href="classworld_1_1CharacterManager.html#a719e579a66737f5be113a4d6af9c0c6b">world::CharacterManager</a>
 </li>
 <li>mPartyCharacters
 : <a class="el" href="classworld_1_1CharacterManager.html#a53f8d5754d7d2750cebf485f655afb3e">world::CharacterManager</a>
+</li>
+<li>mPentalphaMatch
+: <a class="el" href="classworld_1_1WorldSyncManager.html#afb46adfcfa933b4fe8af1b89212a5772">world::WorldSyncManager</a>
+</li>
+<li>mPvPPendingMatches
+: <a class="el" href="classworld_1_1WorldSyncManager.html#acecf8dc87f6037b08da2ad1208a2f9ab">world::WorldSyncManager</a>
+</li>
+<li>mPvPReadyTimes
+: <a class="el" href="classworld_1_1WorldSyncManager.html#a631222ee3e17a310c1c54b6996c69b97">world::WorldSyncManager</a>
 </li>
 <li>mRegisteredChannels
 : <a class="el" href="classworld_1_1WorldServer.html#a63957ae150024a5fc69fbf26f45aa53d">world::WorldServer</a>
@@ -170,6 +200,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>mSyncManager
 : <a class="el" href="classworld_1_1WorldServer.html#ae9e3edec500b4b981778581149e1e1f9">world::WorldServer</a>
 </li>
+<li>mTeams
+: <a class="el" href="classworld_1_1CharacterManager.html#a7deca2bb2af8171101c90df74e36659d">world::CharacterManager</a>
+</li>
+<li>mUBRecalcMin
+: <a class="el" href="classworld_1_1WorldSyncManager.html#ad7e8227c95e361c6155da409edd66962">world::WorldSyncManager</a>
+</li>
+<li>mUBTournament
+: <a class="el" href="classworld_1_1WorldSyncManager.html#a2c35ea42de84a329d2a56bf8e00efce7">world::WorldSyncManager</a>
+</li>
+<li>mWebGameSessions
+: <a class="el" href="classworld_1_1AccountManager.html#a4bff7ac7117478119cd6f8edeeed2c2c">world::AccountManager</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>sSupportedTypes
 : <a class="el" href="classworld_1_1ManagerConnection.html#a72b30885e78c7d972a5c85647d46e0a9">world::ManagerConnection</a>
 </li>

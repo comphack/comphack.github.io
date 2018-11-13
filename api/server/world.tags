@@ -5,22 +5,7 @@
     <path>C:/projects/comp-hack/server/world/src/packets/</path>
     <filename>AccountLogin_8cpp</filename>
     <includes id="AccountManager_8h" name="AccountManager.h" local="yes" imported="no">AccountManager.h</includes>
-    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
     <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
-    <member kind="function">
-      <type>void</type>
-      <name>ChannelLogin</name>
-      <anchorfile>AccountLogin_8cpp.html</anchorfile>
-      <anchor>ac6cbfededd5803f269338b754a9e0dce</anchor>
-      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, const std::shared_ptr&lt; libcomp::InternalConnection &gt; connection, uint32_t sesssionKey, const libcomp::String username)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>LobbyLogin</name>
-      <anchorfile>AccountLogin_8cpp.html</anchorfile>
-      <anchor>aac8cbc691906a5b1d142429a24dd0445</anchor>
-      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, const std::shared_ptr&lt; libcomp::InternalConnection &gt; connection, std::shared_ptr&lt; objects::AccountLogin &gt; login)</arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>AccountLogout.cpp</name>
@@ -53,6 +38,7 @@
     <filename>CharacterLogin_8cpp</filename>
     <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
     <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <includes id="WorldSyncManager_8h" name="WorldSyncManager.h" local="yes" imported="no">WorldSyncManager.h</includes>
   </compound>
   <compound kind="file">
     <name>CharacterManager.cpp</name>
@@ -60,6 +46,7 @@
     <filename>CharacterManager_8cpp</filename>
     <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
     <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <includes id="WorldSyncManager_8h" name="WorldSyncManager.h" local="yes" imported="no">WorldSyncManager.h</includes>
   </compound>
   <compound kind="file">
     <name>CharacterManager.h</name>
@@ -87,6 +74,13 @@
       <name>RELATED_PARTY</name>
       <anchorfile>CharacterManager_8h.html</anchorfile>
       <anchor>aaac7a5edb6a85a10764ae4458012f6e4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const uint8_t</type>
+      <name>RELATED_TEAM</name>
+      <anchorfile>CharacterManager_8h.html</anchorfile>
+      <anchor>ab48708f81af041925576733557cd6879</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -119,8 +113,8 @@
       <type></type>
       <name>SET</name>
       <anchorfile>CMakeLists_8txt.html</anchorfile>
-      <anchor>acb4028293fddd3bf242a3127f41eac65</anchor>
-      <arglist>(${PROJECT_NAME}_SRCS src/AccountManager.cpp src/CharacterManager.cpp src/ManagerConnection.cpp src/WorldServer.cpp src/WorldSyncManager.cpp src/main.cpp) SET($</arglist>
+      <anchor>add4c41fd23600dbad22b59731e5401b2</anchor>
+      <arglist>(${PROJECT_NAME}_SRCS ${CMAKE_SOURCE_DIR}/libcomp/src/WindowsServiceMain.cpp src/AccountManager.cpp src/CharacterManager.cpp src/ManagerConnection.cpp src/WorldServer.cpp src/WorldSyncManager.cpp src/main.cpp) SET($</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -298,6 +292,20 @@
       <anchor>a8af031f10495a5f3db9426ad726384b4</anchor>
       <arglist>(ClanUpdate)</arglist>
     </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>af8d993bed46b1d99f75493f23ffdf7b0</anchor>
+      <arglist>(WebGame)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a0d7ba737fda790403f3ae2540f591647</anchor>
+      <arglist>(TeamUpdate)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>PartyUpdate.cpp</name>
@@ -326,6 +334,13 @@
       <anchor>a4724fa19f0b03496e837f39971323af2</anchor>
       <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, std::shared_ptr&lt; objects::PartyCharacter &gt; member, const libcomp::String targetName)</arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>PartyRecruitJoin</name>
+      <anchorfile>PartyUpdate_8cpp.html</anchorfile>
+      <anchor>af13d68d8043d38d5be86128ca906203d</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, std::shared_ptr&lt; objects::PartyCharacter &gt; member, const libcomp::String targetName)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>Relay.cpp</name>
@@ -339,6 +354,43 @@
     <name>SetChannelInfo.cpp</name>
     <path>C:/projects/comp-hack/server/world/src/packets/</path>
     <filename>SetChannelInfo_8cpp</filename>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>TeamUpdate.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/packets/</path>
+    <filename>TeamUpdate_8cpp</filename>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
+    <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
+    <member kind="function">
+      <type>void</type>
+      <name>TeamCancel</name>
+      <anchorfile>TeamUpdate_8cpp.html</anchorfile>
+      <anchor>adb24bdb689be362db5e143b8f28928ae</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, int32_t teamID)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>TeamForm</name>
+      <anchorfile>TeamUpdate_8cpp.html</anchorfile>
+      <anchor>a383c816d09f207afb8cd563d566181b0</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, int32_t teamID, int8_t type)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>TeamInvite</name>
+      <anchorfile>TeamUpdate_8cpp.html</anchorfile>
+      <anchor>a70a38386f89a42d1468a5a1befe6958c</anchor>
+      <arglist>(std::shared_ptr&lt; WorldServer &gt; server, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, int32_t teamID, const libcomp::String targetName)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>WebGame.cpp</name>
+    <path>C:/projects/comp-hack/server/world/src/packets/</path>
+    <filename>WebGame_8cpp</filename>
+    <includes id="AccountManager_8h" name="AccountManager.h" local="yes" imported="no">AccountManager.h</includes>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
+    <includes id="ManagerConnection_8h" name="ManagerConnection.h" local="yes" imported="no">ManagerConnection.h</includes>
     <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
   </compound>
   <compound kind="file">
@@ -365,6 +417,7 @@
     <filename>WorldSyncManager_8cpp</filename>
     <includes id="WorldSyncManager_8h" name="WorldSyncManager.h" local="yes" imported="no">WorldSyncManager.h</includes>
     <includes id="AccountManager_8h" name="AccountManager.h" local="yes" imported="no">AccountManager.h</includes>
+    <includes id="CharacterManager_8h" name="CharacterManager.h" local="yes" imported="no">CharacterManager.h</includes>
     <includes id="WorldServer_8h" name="WorldServer.h" local="yes" imported="no">WorldServer.h</includes>
     <namespace>world</namespace>
     <member kind="function">
@@ -373,6 +426,62 @@
       <anchorfile>namespaceworld.html</anchorfile>
       <anchor>ab4208ca0d9641183fb24a9f3a0e3bca3</anchor>
       <arglist>(int32_t entryID, uint32_t expirationTime)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::EventCounter &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a860d24a1cc339e76d178df61c53cbaa7</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::Match &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a93298383b5fc0fae6337a7b4b28b53b2</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::MatchEntry &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>abe1610487ea7410897affe0207f0fd36</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::PentalphaEntry &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>ae98a7e775ad2fcd953eae5df4d73f317</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::PentalphaMatch &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>aa4ebc1c522576640f9bc21c0f7a7e801</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::PvPMatch &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a19adec5bff48552e0a6173b9886f8b43</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::UBResult &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a6831b58e2d5334726485275f56d035d8</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::UBTournament &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>af35ac6d9eb0a71e20691c70095573cfe</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
     </member>
     <member kind="function">
       <type>int8_t</type>
@@ -390,9 +499,58 @@
     </member>
     <member kind="function">
       <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::CharacterLogin &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>ab6fdaa3b2d3b0c611373abdec3a80162</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::CharacterProgress &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>ac96434dda47c08ba8ae28478a00c6dd6</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::InstanceAccess &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a07c522c95b09bca2f88c5e36dfe92664</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::MatchEntry &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>ac0b65ea1bd0fa616281d3ec16b597752</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::PentalphaMatch &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a553311431ab52329cdfe2e499f03a5f5</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::PvPMatch &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a8e967af1cf44ec57d02a7aa5d02b811b</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
       <name>WorldSyncManager::Update&lt; objects::SearchEntry &gt;</name>
       <anchorfile>namespaceworld.html</anchorfile>
       <anchor>a12011286ba7f604b9ada7d84f9228a15</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::UBTournament &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a34621e126e9fdd741d44b6f017a23814</anchor>
       <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
     </member>
   </compound>
@@ -422,11 +580,25 @@
       <arglist>(std::shared_ptr&lt; objects::AccountLogin &gt; login)</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>ChannelSwitchPending</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a64be15c80d7d6a6ae15b57b79650e1dd</anchor>
+      <arglist>(const libcomp::String &amp;username, int8_t &amp;channel)</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>CleanupAccountWorldData</name>
       <anchorfile>classworld_1_1AccountManager.html</anchorfile>
       <anchor>a273e2e2f1654fc351be34fb747db0ce0</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>CompleteLobbyLogin</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a763f2c9a518d645f932ddf3a955ec0d7</anchor>
+      <arglist>(const std::shared_ptr&lt; objects::AccountLogin &gt; &amp;login, const std::shared_ptr&lt; objects::ChannelLogin &gt; &amp;channelLogin=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -437,10 +609,24 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>EndWebGameSession</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a0a22d80ff5bfc0a29965ea3bfe74c465</anchor>
+      <arglist>(const libcomp::String &amp;username, bool notifyLobby, bool notifyChannel)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>ExpireSession</name>
       <anchorfile>classworld_1_1AccountManager.html</anchorfile>
       <anchor>a72aefa00a1084ae8f73ec27602983414</anchor>
       <arglist>(const libcomp::String &amp;username, uint32_t key)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; objects::WebGameSession &gt;</type>
+      <name>GetGameSession</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a88ceaa7fa7da4ff742be8bf6cb883deb</anchor>
+      <arglist>(const libcomp::String &amp;username)</arglist>
     </member>
     <member kind="function">
       <type>std::shared_ptr&lt; objects::AccountLogin &gt;</type>
@@ -448,6 +634,20 @@
       <anchorfile>classworld_1_1AccountManager.html</anchorfile>
       <anchor>aee0f697175d0ca91df06998eb6f69f25</anchor>
       <arglist>(const libcomp::String &amp;username)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>HandleChannelLogin</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>aa323301d014e03c980138fa2770e4731</anchor>
+      <arglist>(const std::shared_ptr&lt; libcomp::InternalConnection &gt; &amp;requestConnection, uint32_t sessionKey, const libcomp::String &amp;username)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>HandleLobbyLogin</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a7e38692370c4e31bf453b11d1ee4ae0a</anchor>
+      <arglist>(const std::shared_ptr&lt; objects::AccountLogin &gt; &amp;login)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -478,18 +678,25 @@
       <arglist>(int8_t channel)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>std::shared_ptr&lt; objects::ChannelLogin &gt;</type>
       <name>PopChannelSwitch</name>
       <anchorfile>classworld_1_1AccountManager.html</anchorfile>
-      <anchor>acfd574efb4238c1e720183d59057e5d7</anchor>
-      <arglist>(const libcomp::String &amp;username, int8_t &amp;channel)</arglist>
+      <anchor>a9b7587779fd07e24fcd6fdcb9e58a843</anchor>
+      <arglist>(const libcomp::String &amp;username)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>StartWebGameSession</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a1ca30cc24c59c20739380717c35f5699</anchor>
+      <arglist>(const std::shared_ptr&lt; objects::WebGameSession &gt; &amp;gameSession)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>SwitchChannel</name>
       <anchorfile>classworld_1_1AccountManager.html</anchorfile>
-      <anchor>a217f22881346076bdab26120c1100a33</anchor>
-      <arglist>(std::shared_ptr&lt; objects::AccountLogin &gt; login, int8_t channelID)</arglist>
+      <anchor>ad517b592635fe6f80d54d2fe60e7bf0d</anchor>
+      <arglist>(std::shared_ptr&lt; objects::AccountLogin &gt; login, const std::shared_ptr&lt; objects::ChannelLogin &gt; &amp;switchDef)</arglist>
     </member>
     <member kind="function" protection="private">
       <type>void</type>
@@ -509,8 +716,8 @@
       <type>void</type>
       <name>PushChannelSwitch</name>
       <anchorfile>classworld_1_1AccountManager.html</anchorfile>
-      <anchor>a927cae4b3649e37a528d4dcd8dc7c33f</anchor>
-      <arglist>(const libcomp::String &amp;username, int8_t channel)</arglist>
+      <anchor>a79bbcd606a3f0ba89929c5f5b830e223</anchor>
+      <arglist>(const libcomp::String &amp;username, const std::shared_ptr&lt; objects::ChannelLogin &gt; &amp;switchDef)</arglist>
     </member>
     <member kind="function" protection="private">
       <type>void</type>
@@ -527,10 +734,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="private">
-      <type>std::unordered_map&lt; libcomp::String, int8_t &gt;</type>
+      <type>std::unordered_map&lt; libcomp::String, std::shared_ptr&lt; objects::ChannelLogin &gt; &gt;</type>
       <name>mChannelSwitches</name>
       <anchorfile>classworld_1_1AccountManager.html</anchorfile>
-      <anchor>a91d00242fbab1e0c8f4373dacf19031b</anchor>
+      <anchor>a97e01c1f8d56ce2705cde16cf8ecf326</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="private">
@@ -545,6 +752,13 @@
       <name>mServer</name>
       <anchorfile>classworld_1_1AccountManager.html</anchorfile>
       <anchor>a23266904a65a50be8f1a4f986cf1d398</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; libcomp::String, std::shared_ptr&lt; objects::WebGameSession &gt; &gt;</type>
+      <name>mWebGameSessions</name>
+      <anchorfile>classworld_1_1AccountManager.html</anchorfile>
+      <anchor>a4bff7ac7117478119cd6f8edeeed2c2c</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -564,6 +778,13 @@
       <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
       <anchor>a102d08d3f57b1907bbf2918189141eab</anchor>
       <arglist>(std::shared_ptr&lt; objects::PartyCharacter &gt; member, uint32_t partyID)</arglist>
+    </member>
+    <member kind="function">
+      <type>int32_t</type>
+      <name>AddToTeam</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>abeb6819dd993e3a0236e65014fd6f8ed</anchor>
+      <arglist>(int32_t worldCID, int32_t teamID)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -587,10 +808,10 @@
       <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, int32_t clanID, int32_t targetCID, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>bool</type>
       <name>ClanLeave</name>
       <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
-      <anchor>a41e5e3beb499218a796132081b3e79ec</anchor>
+      <anchor>a463be7a3abd3d8b349c51e02bce76695</anchor>
       <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, int32_t clanID, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection)</arglist>
     </member>
     <member kind="function">
@@ -599,6 +820,13 @@
       <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
       <anchor>a25de37f1a3d5ffdfbd13beb8e1dc4c46</anchor>
       <arglist>(libcomp::Packet &amp;p, uint32_t cidOffset, size_t cidCount)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::list&lt; std::shared_ptr&lt; objects::CharacterLogin &gt; &gt;</type>
+      <name>GetActiveCharacters</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a5c79353455fa5f129430e3a1e8b0879f</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>std::shared_ptr&lt; objects::CharacterLogin &gt;</type>
@@ -664,6 +892,20 @@
       <arglist>(libcomp::Packet &amp;p, const std::shared_ptr&lt; objects::CharacterLogin &gt; &amp;cLogin, uint8_t &amp;updateFlags)</arglist>
     </member>
     <member kind="function">
+      <type>std::shared_ptr&lt; objects::Team &gt;</type>
+      <name>GetTeam</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a91f3b95a98e8a5e6a5f47a3355e295c8</anchor>
+      <arglist>(int32_t teamID)</arglist>
+    </member>
+    <member kind="function">
+      <type>size_t</type>
+      <name>GetTeamMaxSize</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>ab51be5272e9d83878cc7bbfa8ae08325</anchor>
+      <arglist>(int8_t category) const </arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>PartyDisband</name>
       <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
@@ -695,8 +937,15 @@
       <type>void</type>
       <name>PartyLeave</name>
       <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
-      <anchor>ae220c0e248da12867884047c1f13247d</anchor>
-      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, bool tempLeave)</arglist>
+      <anchor>ad7115014b2641736861237b6a76d7e9d</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>PartyRecruit</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a03dd9d2de36cb1023fbc87c7e72b75bf</anchor>
+      <arglist>(std::shared_ptr&lt; objects::PartyCharacter &gt; member, const libcomp::String targetName, uint32_t partyID, std::shared_ptr&lt; libcomp::TcpConnection &gt; sourceConnection)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -713,10 +962,10 @@
       <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>bool</type>
       <name>RequestChannelDisconnect</name>
       <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
-      <anchor>a4d71b0e8987897e0ef25f77e63728dbf</anchor>
+      <anchor>a321cb5efbd267592e8d19e7607b14763</anchor>
       <arglist>(int32_t worldCID)</arglist>
     </member>
     <member kind="function">
@@ -749,10 +998,24 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>SendPartyMember</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>afcf22d05285b129652a67d81e9ec4054</anchor>
+      <arglist>(std::shared_ptr&lt; objects::PartyCharacter &gt; member, uint32_t partyID, bool newParty, bool isRefresh, std::shared_ptr&lt; libcomp::TcpConnection &gt; sourceConnection)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>SendStatusToRelatedCharacters</name>
       <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
       <anchor>a9e56d68a1b44160fa2668d09929ed8cd</anchor>
       <arglist>(const std::list&lt; std::shared_ptr&lt; objects::CharacterLogin &gt;&gt; &amp;cLogins, uint8_t updateFlags, bool zoneRestrict=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SendTeamInfo</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a635414745e5438c205dc45eda27d87c5</anchor>
+      <arglist>(int32_t teamID, const std::list&lt; int32_t &gt; &amp;cids={})</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -767,6 +1030,48 @@
       <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
       <anchor>a35f28cdf565b0a7e9df2b78fa4a6e769</anchor>
       <arglist>(libcomp::Packet &amp;p, int32_t worldCID, uint32_t cidOffset, uint8_t relatedTypes, bool includeSelf=false, bool zoneRestrict=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>TeamDisband</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>ad91755d9ee7b08322ebbf66890986ec4</anchor>
+      <arglist>(int32_t teamID, int32_t sourceCID=0, bool toDiaspora=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>TeamJoin</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a8abaa62f0509c462a2ed00ac481447c2</anchor>
+      <arglist>(int32_t worldCID, int32_t teamID, std::shared_ptr&lt; libcomp::TcpConnection &gt; sourceConnection)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>TeamKick</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>ac8232241d199477a3d541859e2ad1bbc</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, int32_t targetCID, int32_t teamID, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>TeamLeaderUpdate</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>ab3ad327a95f30abc459d2134f4540c47</anchor>
+      <arglist>(int32_t teamID, int32_t sourceCID, std::shared_ptr&lt; libcomp::TcpConnection &gt; requestConnection, int32_t targetCID)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>TeamLeave</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a59ecd4dfb833e65c2cb9b64d090b6c6d</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>TeamZiotiteUpdate</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a7f206977936bc27d7aa1e2d1623d39cd</anchor>
+      <arglist>(int32_t teamID, const std::shared_ptr&lt; objects::CharacterLogin &gt; &amp;source=nullptr, int32_t sZiotite=0, int8_t lZiotite=0)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -795,6 +1100,13 @@
       <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
       <anchor>a05b9b6363bc1862595abdec6242215a2</anchor>
       <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, uint32_t partyID)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>RemoveFromTeam</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a58d2e9136afc0fb3b95af4d0ce775bfe</anchor>
+      <arglist>(std::shared_ptr&lt; objects::CharacterLogin &gt; cLogin, int32_t teamID)</arglist>
     </member>
     <member kind="variable" protection="private">
       <type>std::unordered_map&lt; int32_t, std::shared_ptr&lt; objects::CharacterLogin &gt; &gt;</type>
@@ -853,6 +1165,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="private">
+      <type>int32_t</type>
+      <name>mMaxTeamID</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>ab7fc2bc93e2db636884013968fd0d2cc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
       <type>std::unordered_map&lt; uint32_t, std::shared_ptr&lt; objects::Party &gt; &gt;</type>
       <name>mParties</name>
       <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
@@ -871,6 +1190,13 @@
       <name>mServer</name>
       <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
       <anchor>a394d1adfd27ef10e06459f2a6761218f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; int32_t, std::shared_ptr&lt; objects::Team &gt; &gt;</type>
+      <name>mTeams</name>
+      <anchorfile>classworld_1_1CharacterManager.html</anchorfile>
+      <anchor>a7deca2bb2af8171101c90df74e36659d</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1024,13 +1350,6 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>std::shared_ptr&lt; objects::RegisteredChannel &gt;</type>
-      <name>GetLoginChannel</name>
-      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
-      <anchor>ac4ffff1b9121621fc0c21a5edd254191</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
       <type>uint8_t</type>
       <name>GetNextChannelID</name>
       <anchorfile>classworld_1_1WorldServer.html</anchorfile>
@@ -1143,6 +1462,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
+      <type>std::mutex</type>
+      <name>mLock</name>
+      <anchorfile>classworld_1_1WorldServer.html</anchorfile>
+      <anchor>abdba95965cdd570d14a3db0f1b2a2708</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
       <type>std::shared_ptr&lt; ManagerConnection &gt;</type>
       <name>mManagerConnection</name>
       <anchorfile>classworld_1_1WorldServer.html</anchorfile>
@@ -1204,6 +1530,13 @@
       <arglist>(int32_t entryID, uint32_t expirationTime)</arglist>
     </member>
     <member kind="function">
+      <type>std::shared_ptr&lt; objects::MatchEntry &gt;</type>
+      <name>GetMatchEntry</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a06acb285120dd43a947d739c75f064fe</anchor>
+      <arglist>(int32_t worldCID)</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>Initialize</name>
       <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
@@ -1216,6 +1549,27 @@
       <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
       <anchor>aeac237604ef52dae135d3ff60543b64b</anchor>
       <arglist>(const std::shared_ptr&lt; libcomp::Object &gt; &amp;record, const libcomp::String &amp;type)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>StartPvPMatch</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a301e7dbcaf0b2db7d2808311c0edfcda</anchor>
+      <arglist>(uint32_t time, uint8_t type)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>StartTeamPvPMatch</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>aa3e76efbceeaf26353c8f2da4c5d5f24</anchor>
+      <arglist>(uint32_t time, uint8_t type)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SyncComplete</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a70b1d08b0d144e74174127bcc889ff4c</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1238,6 +1592,104 @@
       <anchor>ada3d142c99423512a772fa6adf38f91e</anchor>
       <arglist>(int32_t sourceCID, objects::SearchEntry::Type_t type, bool increment)</arglist>
     </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>DeterminePvPMatch</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>af9c99922c2453858070ffc2b8db01ac6</anchor>
+      <arglist>(uint8_t type, std::set&lt; int32_t &gt; updated={})</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>DetermineTeamPvPMatch</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a1f3c31615df7002323050d168b1c9536</anchor>
+      <arglist>(uint8_t type, std::set&lt; int32_t &gt; updated={})</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>EndMatch</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>ae4374ecd4b71af929d50354614162d25</anchor>
+      <arglist>(const std::shared_ptr&lt; objects::PentalphaMatch &gt; &amp;match)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>EndTournament</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>aeb23983f7d6d2d04e382c8075f62605f</anchor>
+      <arglist>(const std::shared_ptr&lt; objects::UBTournament &gt; &amp;tournament)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>std::unordered_map&lt; int32_t, std::list&lt; std::shared_ptr&lt; objects::MatchEntry &gt; &gt; &gt;</type>
+      <name>GetMatchEntryTeams</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a4997895e96ecb17dd749976d6849bd47</anchor>
+      <arglist>(uint8_t type)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>PreparePvPMatch</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a8639a45d7d218e6d5268c44b2d4e5fa8</anchor>
+      <arglist>(std::shared_ptr&lt; objects::PvPMatch &gt; match)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>RecalculateTournamentRankings</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a936d39e45d09fae182c19aca36b1adc4</anchor>
+      <arglist>(const libobjgen::UUID &amp;tournamentUID)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>RecalculateUBRankings</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a5dead1a3c9cd450d9b5c9f1db329bf09</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; uint8_t, std::unordered_map&lt; uint32_t, std::shared_ptr&lt; objects::InstanceAccess &gt; &gt; &gt;</type>
+      <name>mInstanceAccess</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>ad3ba5724d67fff1a52b0b293702be0e3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; int32_t, std::shared_ptr&lt; objects::MatchEntry &gt; &gt;</type>
+      <name>mMatchEntries</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a2c9c746e208a5c3d5c0b803b623a0c5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>uint32_t</type>
+      <name>mNextMatchID</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>aac79dee82144b42df60a6d41048ea86a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::shared_ptr&lt; objects::PentalphaMatch &gt;</type>
+      <name>mPentalphaMatch</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>afb46adfcfa933b4fe8af1b89212a5772</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::array&lt; std::array&lt; std::shared_ptr&lt; objects::PvPMatch &gt;, 2 &gt;, 2 &gt;</type>
+      <name>mPvPPendingMatches</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>acecf8dc87f6037b08da2ad1208a2f9ab</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::array&lt; std::array&lt; uint32_t, 2 &gt;, 2 &gt;</type>
+      <name>mPvPReadyTimes</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a631222ee3e17a310c1c54b6996c69b97</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="variable" protection="private">
       <type>std::list&lt; std::shared_ptr&lt; objects::SearchEntry &gt; &gt;</type>
       <name>mSearchEntries</name>
@@ -1257,6 +1709,20 @@
       <name>mServer</name>
       <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
       <anchor>a43cda30ebc0eeb2b934377ccedd246ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::array&lt; uint32_t, 3 &gt;</type>
+      <name>mUBRecalcMin</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>ad7e8227c95e361c6155da409edd66962</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::shared_ptr&lt; objects::UBTournament &gt;</type>
+      <name>mUBTournament</name>
+      <anchorfile>classworld_1_1WorldSyncManager.html</anchorfile>
+      <anchor>a2c35ea42de84a329d2a56bf8e00efce7</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1314,6 +1780,384 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiAIData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a4af73545da8968aaa693e1ce445eeab1</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiBlendData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a225ff9e9c182e203a52f8ac02ca80f5f</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiBlendExtData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a9f4271bf570658698deb8f92101fd4cf</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiCHouraiData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a03632a99c2316b11a2d2886090d490dc</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiCItemData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a9dc27e7367e2ddb7a8c0f8f07722f35c</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiCultureItemData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a917509802d16740298081a9e2e9d4956</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiCZoneRelationData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a4b303e3022ef5ed95b11589ee5a9149e</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiDevilBookData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>aa696cbbb8de724b106cab086d07f1626</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiDevilBoostData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ab86baacac23cee7f4a1ddc46100bfa83</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiDevilBoostExtraData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a5c181c48d13a563d222374b81a3e01aa</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiDevilBoostItemData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a57450cb45e4552e32cbbec347ee13911</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiDevilBoostLotData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a933828b7925dff7968205391e38f538e</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiDevilData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ae983c35421d06f0b5b94245c83ccbf25</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiDevilEquipmentData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ad4c9ed68bc51aa158474a43e5d3f1f4c</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiDevilEquipmentItemData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>af0dd56448a14fd08a0683a53ff31cf2d</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiDevilFusionData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a9c969487089f39c4bf390521aa4e09e1</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiDevilLVUpRateData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a6bf63c82ecb2ef73e0a82c22a20a364f</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiDisassemblyData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>aaac34185168882c1c36fc34185e2d6fd</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiDisassemblyTriggerData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>abbec586d8669df01eab8c5824cec0cb7</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiDynamicMapData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ad9ab217b21e71f49b147ddb4c0a5a00b</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiEnchantData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>af75329a30e3e46935c0632f505bef9c7</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiEquipmentSetData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a3e1af335c55fc18163bcfc3f237bc935</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiExchangeData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a80f245ec078c0dbe011dc2d50bf7260d</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiExpertData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a6e47bc67cb38c24d8e0540a0a0b00b23</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiGuardianAssistData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ae2473571cbe0a71229efd0ccd16e3861</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiGuardianLevelData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a213aacbfd9444c7d530a1dcf6f7cbe1c</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiGuardianSpecialData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a8b07af2358d6511105000f47df53a26c</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiGuardianUnlockData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a1845e6785e9b38e432fc2a78c87b44a2</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiHNPCData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a2127df0a3684487ede0c1bc8ca0db720</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiItemData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a6fa17d553d3acc512bb7ab02908c746b</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiMissionData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a1c478a08c6ce6531773cd76b8fb6ecc4</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiMitamaReunionBonusData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a9d8ebe3143e3c511455690bd00611ded</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiMitamaReunionSetBonusData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a90d4f8dd4e59fff5c876826a4642a46b</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiMitamaUnionBonusData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a2b1b4c46b8765f0d4475618f11be700b</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiModificationData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a75c2d2b38cc3179945cbe6a17a0b8afb</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiModificationExtEffectData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a2d820c47ee8a1375eaf15b21dcc2ae99</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiModificationExtRecipeData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>acbf1022259927342332d56bb30211f47</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiModificationTriggerData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a55bc5dda0a888bb2909451655d618d3d</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiModifiedEffectData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a9b485d19f46fb172f7f17c4376b03412</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiNPCBarterData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ab4329eaf645b237085da60d28b201dc3</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiONPCData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>ae7fa9591f57b7fe8141fd8edf428f35b</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiQuestBonusCodeData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a400e2a8fb15f476c2bd5b6d1c6063cda</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiQuestData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a4d8760c696e8ef7f8498a48c49315e1d</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiShopProductData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a09fd976d34663fa81f084d0aba52bf7f</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiSItemData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a6ccecd0fb1e94fb87d02799918c9c243</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiSkillData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a38274bb7855f7ef174929a1672a59dfc</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiStatusData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a0f3891c46b5e2d943ea0c34df787eaf8</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiSynthesisData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a2ce9ea383dea0cda3611be1427eaf38c</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiTimeLimitData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a570779562228183eceef95bc59946352</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiTitleData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a6dcd56dbbec0881fe92f542ad1242e0f</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiTriUnionSpecialData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>aa137be539d20044e713ce2889f1dfd3e</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiUraFieldTowerData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a64d7f684fabce4d290c724aff56552c8</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiWarpPointData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>acb60a33de847ff14cd1872f64e630b97</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::LoadData&lt; objects::MiZoneData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>adc634bb751af5a13d9ea2a06ddc821e0</anchor>
+      <arglist>(gsl::not_null&lt; DataStore * &gt; pDataStore)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>DefinitionManager::RegisterServerSideDefinition&lt; objects::EnchantSetData &gt;</name>
       <anchorfile>namespacelibcomp.html</anchorfile>
       <anchor>a990cd36a67fda02cfc87a982221dab63</anchor>
@@ -1325,6 +2169,13 @@
       <anchorfile>namespacelibcomp.html</anchorfile>
       <anchor>a2f227b7da737bb3aeccabafffbfdf4f0</anchor>
       <arglist>(const std::shared_ptr&lt; objects::EnchantSpecialData &gt; &amp;record)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>DefinitionManager::RegisterServerSideDefinition&lt; objects::MiSItemData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a64207f0d83c6273d2a0613f425b47e6c</anchor>
+      <arglist>(const std::shared_ptr&lt; objects::MiSItemData &gt; &amp;record)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -1341,10 +2192,24 @@
       <arglist>(const std::shared_ptr&lt; objects::Tokusei &gt; &amp;record)</arglist>
     </member>
     <member kind="function">
+      <type>ScriptEngine &amp;</type>
+      <name>ScriptEngine::Using&lt; libobjgen::UUID &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a437bf8c16dc529fbaceddc55d492fb91</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>ServerDataManager::LoadObject&lt; objects::DemonPresent &gt;</name>
       <anchorfile>namespacelibcomp.html</anchorfile>
       <anchor>a4f0280c8f124bea313f8fa5209945ef6</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::DemonQuestReward &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>abd41a6f270064ac1a9931604481a8198</anchor>
       <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
     </member>
     <member kind="function">
@@ -1377,6 +2242,13 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::MiSItemData &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>abe9868d99f17086a36bde2a5bbf4249e</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>ServerDataManager::LoadObject&lt; objects::MiSStatusData &gt;</name>
       <anchorfile>namespacelibcomp.html</anchorfile>
       <anchor>ae0ead762950f4e24f426c3858997d991</anchor>
@@ -1405,6 +2277,20 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::ServerZoneInstanceVariant &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>a1c07a3936e20d98147edf7deaf53457e</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ServerDataManager::LoadObject&lt; objects::ServerZonePartial &gt;</name>
+      <anchorfile>namespacelibcomp.html</anchorfile>
+      <anchor>af74e5667a2dcc7d6961b34376657ca4b</anchor>
+      <arglist>(const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, DefinitionManager *definitionManager)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>ServerDataManager::LoadObject&lt; objects::Tokusei &gt;</name>
       <anchorfile>namespacelibcomp.html</anchorfile>
       <anchor>ad85d85ace4ceb7ee4b4d51594dd5bf73</anchor>
@@ -1416,13 +2302,6 @@
       <anchorfile>namespacelibcomp.html</anchorfile>
       <anchor>a2765e02af07d8f628f6e5e93d4c95b74</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const unsigned long long</type>
-      <name>LEVEL_XP_REQUIREMENTS</name>
-      <anchorfile>namespacelibcomp.html</anchorfile>
-      <anchor>a350e3aff57d5978e7732dc852bc07b63</anchor>
-      <arglist>[]</arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static std::set&lt; libobjgen::MetaVariable::MetaVariableType_t &gt;</type>
@@ -1460,6 +2339,62 @@
       <arglist>(int32_t entryID, uint32_t expirationTime)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::EventCounter &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a860d24a1cc339e76d178df61c53cbaa7</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::Match &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a93298383b5fc0fae6337a7b4b28b53b2</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::MatchEntry &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>abe1610487ea7410897affe0207f0fd36</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::PentalphaEntry &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>ae98a7e775ad2fcd953eae5df4d73f317</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::PentalphaMatch &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>aa4ebc1c522576640f9bc21c0f7a7e801</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::PvPMatch &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a19adec5bff48552e0a6173b9886f8b43</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::UBResult &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a6831b58e2d5334726485275f56d035d8</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>WorldSyncManager::SyncComplete&lt; objects::UBTournament &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>af35ac6d9eb0a71e20691c70095573cfe</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::list&lt; std::pair&lt; std::shared_ptr&lt; libcomp::Object &gt;, bool &gt;&gt; &amp;objs, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
       <type>int8_t</type>
       <name>WorldSyncManager::Update&lt; objects::Account &gt;</name>
       <anchorfile>namespaceworld.html</anchorfile>
@@ -1475,9 +2410,58 @@
     </member>
     <member kind="function">
       <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::CharacterLogin &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>ab6fdaa3b2d3b0c611373abdec3a80162</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::CharacterProgress &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>ac96434dda47c08ba8ae28478a00c6dd6</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::InstanceAccess &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a07c522c95b09bca2f88c5e36dfe92664</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::MatchEntry &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>ac0b65ea1bd0fa616281d3ec16b597752</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::PentalphaMatch &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a553311431ab52329cdfe2e499f03a5f5</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::PvPMatch &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a8e967af1cf44ec57d02a7aa5d02b811b</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
       <name>WorldSyncManager::Update&lt; objects::SearchEntry &gt;</name>
       <anchorfile>namespaceworld.html</anchorfile>
       <anchor>a12011286ba7f604b9ada7d84f9228a15</anchor>
+      <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
+    </member>
+    <member kind="function">
+      <type>int8_t</type>
+      <name>WorldSyncManager::Update&lt; objects::UBTournament &gt;</name>
+      <anchorfile>namespaceworld.html</anchorfile>
+      <anchor>a34621e126e9fdd741d44b6f017a23814</anchor>
       <arglist>(const libcomp::String &amp;type, const std::shared_ptr&lt; libcomp::Object &gt; &amp;obj, bool isRemove, const libcomp::String &amp;source)</arglist>
     </member>
   </compound>
@@ -1553,6 +2537,20 @@
       <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
       <anchor>a8af031f10495a5f3db9426ad726384b4</anchor>
       <arglist>(ClanUpdate)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>af8d993bed46b1d99f75493f23ffdf7b0</anchor>
+      <arglist>(WebGame)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PACKET_PARSER_DECL</name>
+      <anchorfile>namespaceworld_1_1Parsers.html</anchorfile>
+      <anchor>a0d7ba737fda790403f3ae2540f591647</anchor>
+      <arglist>(TeamUpdate)</arglist>
     </member>
   </compound>
   <compound kind="page">

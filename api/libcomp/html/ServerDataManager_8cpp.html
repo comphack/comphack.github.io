@@ -103,16 +103,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="DefinitionManager_8h_source.html">DefinitionManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Log_8h_source.html">Log.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ScriptEngine_8h_source.html">ScriptEngine.h</a>&quot;</code><br />
+<code>#include &lt;Action.h&gt;</code><br />
+<code>#include &lt;ActionDelay.h&gt;</code><br />
+<code>#include &lt;ActionSpawn.h&gt;</code><br />
+<code>#include &lt;ActionZoneChange.h&gt;</code><br />
+<code>#include &lt;ActionZoneInstance.h&gt;</code><br />
 <code>#include &lt;DemonPresent.h&gt;</code><br />
+<code>#include &lt;DemonQuestReward.h&gt;</code><br />
 <code>#include &lt;DropSet.h&gt;</code><br />
 <code>#include &lt;EnchantSetData.h&gt;</code><br />
 <code>#include &lt;EnchantSpecialData.h&gt;</code><br />
 <code>#include &lt;Event.h&gt;</code><br />
+<code>#include &lt;EventPerformActions.h&gt;</code><br />
+<code>#include &lt;MiSItemData.h&gt;</code><br />
 <code>#include &lt;MiSStatusData.h&gt;</code><br />
+<code>#include &lt;MiZoneBasicData.h&gt;</code><br />
+<code>#include &lt;MiZoneData.h&gt;</code><br />
+<code>#include &lt;PlasmaSpawn.h&gt;</code><br />
+<code>#include &lt;PvPInstanceVariant.h&gt;</code><br />
+<code>#include &lt;ServerNPC.h&gt;</code><br />
+<code>#include &lt;ServerObject.h&gt;</code><br />
 <code>#include &lt;ServerShop.h&gt;</code><br />
+<code>#include &lt;ServerShopProduct.h&gt;</code><br />
+<code>#include &lt;ServerShopTab.h&gt;</code><br />
 <code>#include &lt;ServerZone.h&gt;</code><br />
 <code>#include &lt;ServerZoneInstance.h&gt;</code><br />
+<code>#include &lt;ServerZoneInstanceVariant.h&gt;</code><br />
+<code>#include &lt;ServerZonePartial.h&gt;</code><br />
+<code>#include &lt;ServerZoneSpot.h&gt;</code><br />
+<code>#include &lt;ServerZoneTrigger.h&gt;</code><br />
+<code>#include &lt;Spawn.h&gt;</code><br />
+<code>#include &lt;SpawnGroup.h&gt;</code><br />
+<code>#include &lt;SpawnLocationGroup.h&gt;</code><br />
 <code>#include &lt;Tokusei.h&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 </div>
 <p><a href="ServerDataManager_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -127,6 +151,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a4f0280c8f124bea313f8fa5209945ef6"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a4f0280c8f124bea313f8fa5209945ef6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a4f0280c8f124bea313f8fa5209945ef6">libcomp::ServerDataManager::LoadObject&lt; objects::DemonPresent &gt;</a> (const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, <a class="el" href="classlibcomp_1_1DefinitionManager.html">DefinitionManager</a> *definitionManager)</td></tr>
 <tr class="separator:a4f0280c8f124bea313f8fa5209945ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd41a6f270064ac1a9931604481a8198"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:abd41a6f270064ac1a9931604481a8198"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#abd41a6f270064ac1a9931604481a8198">libcomp::ServerDataManager::LoadObject&lt; objects::DemonQuestReward &gt;</a> (const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, <a class="el" href="classlibcomp_1_1DefinitionManager.html">DefinitionManager</a> *definitionManager)</td></tr>
+<tr class="separator:abd41a6f270064ac1a9931604481a8198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a677dc85ea0d544d99c17ebc220ec096b"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a677dc85ea0d544d99c17ebc220ec096b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a677dc85ea0d544d99c17ebc220ec096b">libcomp::ServerDataManager::LoadObject&lt; objects::DropSet &gt;</a> (const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, <a class="el" href="classlibcomp_1_1DefinitionManager.html">DefinitionManager</a> *definitionManager)</td></tr>
 <tr class="separator:a677dc85ea0d544d99c17ebc220ec096b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +166,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a98741e6a5355d756cabe22bfc05af7a3"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a98741e6a5355d756cabe22bfc05af7a3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a98741e6a5355d756cabe22bfc05af7a3">libcomp::ServerDataManager::LoadObject&lt; objects::Event &gt;</a> (const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, <a class="el" href="classlibcomp_1_1DefinitionManager.html">DefinitionManager</a> *definitionManager)</td></tr>
 <tr class="separator:a98741e6a5355d756cabe22bfc05af7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9868d99f17086a36bde2a5bbf4249e"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:abe9868d99f17086a36bde2a5bbf4249e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#abe9868d99f17086a36bde2a5bbf4249e">libcomp::ServerDataManager::LoadObject&lt; objects::MiSItemData &gt;</a> (const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, <a class="el" href="classlibcomp_1_1DefinitionManager.html">DefinitionManager</a> *definitionManager)</td></tr>
+<tr class="separator:abe9868d99f17086a36bde2a5bbf4249e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0ead762950f4e24f426c3858997d991"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:ae0ead762950f4e24f426c3858997d991"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#ae0ead762950f4e24f426c3858997d991">libcomp::ServerDataManager::LoadObject&lt; objects::MiSStatusData &gt;</a> (const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, <a class="el" href="classlibcomp_1_1DefinitionManager.html">DefinitionManager</a> *definitionManager)</td></tr>
 <tr class="separator:ae0ead762950f4e24f426c3858997d991"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +181,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a4e572cf2ab83dc86193b64d5bf40f817"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a4e572cf2ab83dc86193b64d5bf40f817"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a4e572cf2ab83dc86193b64d5bf40f817">libcomp::ServerDataManager::LoadObject&lt; objects::ServerZoneInstance &gt;</a> (const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, <a class="el" href="classlibcomp_1_1DefinitionManager.html">DefinitionManager</a> *definitionManager)</td></tr>
 <tr class="separator:a4e572cf2ab83dc86193b64d5bf40f817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c07a3936e20d98147edf7deaf53457e"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a1c07a3936e20d98147edf7deaf53457e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a1c07a3936e20d98147edf7deaf53457e">libcomp::ServerDataManager::LoadObject&lt; objects::ServerZoneInstanceVariant &gt;</a> (const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, <a class="el" href="classlibcomp_1_1DefinitionManager.html">DefinitionManager</a> *definitionManager)</td></tr>
+<tr class="separator:a1c07a3936e20d98147edf7deaf53457e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af74e5667a2dcc7d6961b34376657ca4b"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:af74e5667a2dcc7d6961b34376657ca4b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#af74e5667a2dcc7d6961b34376657ca4b">libcomp::ServerDataManager::LoadObject&lt; objects::ServerZonePartial &gt;</a> (const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, <a class="el" href="classlibcomp_1_1DefinitionManager.html">DefinitionManager</a> *definitionManager)</td></tr>
+<tr class="separator:af74e5667a2dcc7d6961b34376657ca4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad85d85ace4ceb7ee4b4d51594dd5bf73"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:ad85d85ace4ceb7ee4b4d51594dd5bf73"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#ad85d85ace4ceb7ee4b4d51594dd5bf73">libcomp::ServerDataManager::LoadObject&lt; objects::Tokusei &gt;</a> (const tinyxml2::XMLDocument &amp;doc, const tinyxml2::XMLElement *objNode, <a class="el" href="classlibcomp_1_1DefinitionManager.html">DefinitionManager</a> *definitionManager)</td></tr>
 <tr class="separator:ad85d85ace4ceb7ee4b4d51594dd5bf73"><td class="memSeparator" colspan="2">&#160;</td></tr>

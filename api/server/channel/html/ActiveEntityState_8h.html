@@ -118,6 +118,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ActiveEntityStateImp.html">channel::ActiveEntityStateImp&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the state of an active entity related to a channel.  <a href="classchannel_1_1ActiveEntityStateImp.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1StatusEffectChange.html">channel::StatusEffectChange</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a request to add or remove a status effect with any applicable modifications to the normal definition.  <a href="classchannel_1_1StatusEffectChange.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -125,13 +128,17 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacelibcomp"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html">libcomp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceobjects"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceobjects.html">objects</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a8c121a6e760a339634841ced705f0616"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; uint32_t, std::pair&lt; uint8_t, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ActiveEntityState_8h.html#a8c121a6e760a339634841ced705f0616">AddStatusEffectMap</a></td></tr>
-<tr class="separator:a8c121a6e760a339634841ced705f0616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af09b470d685d26db7b32cdc05e124747"><td class="memItemLeft" align="right" valign="top">typedef objects::ActiveEntityStateObject::DisplayState_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ActiveEntityState_8h.html#af09b470d685d26db7b32cdc05e124747">ActiveDisplayState_t</a></td></tr>
+<tr class="separator:af09b470d685d26db7b32cdc05e124747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5e46bc20c247425b6c26aa4d9636868"><td class="memItemLeft" align="right" valign="top">typedef objects::MiCorrectTbl::ID_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ActiveEntityState_8h.html#ae5e46bc20c247425b6c26aa4d9636868">CorrectTbl</a></td></tr>
 <tr class="separator:ae5e46bc20c247425b6c26aa4d9636868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754f2659c0023d7503b5dfb4ba938a0b"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; uint32_t, StatusEffectChange &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechannel.html#a754f2659c0023d7503b5dfb4ba938a0b">channel::StatusEffectChanges</a></td></tr>
+<tr class="separator:a754f2659c0023d7503b5dfb4ba938a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -180,10 +187,13 @@ Variables</h2></td></tr>
 <tr class="memitem:ae2e5657f94c1486a34bc9ec39e2b45f9"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ActiveEntityState_8h.html#ae2e5657f94c1486a34bc9ec39e2b45f9">STATUS_KNOCKBACK</a> = 0x04</td></tr>
 <tr class="memdesc:ae2e5657f94c1486a34bc9ec39e2b45f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity is being knocked back.  <a href="#ae2e5657f94c1486a34bc9ec39e2b45f9">More...</a><br /></td></tr>
 <tr class="separator:ae2e5657f94c1486a34bc9ec39e2b45f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c3ef7eb61a25458414b410c964e298"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ActiveEntityState_8h.html#af8c3ef7eb61a25458414b410c964e298">STATUS_LOCKOUT</a> = 0x20</td></tr>
+<tr class="memdesc:af8c3ef7eb61a25458414b410c964e298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity is still affected by a skill's lockout time.  <a href="#af8c3ef7eb61a25458414b410c964e298">More...</a><br /></td></tr>
+<tr class="separator:af8c3ef7eb61a25458414b410c964e298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a411f472122829e12d52b929cbaf47aa3"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ActiveEntityState_8h.html#a411f472122829e12d52b929cbaf47aa3">STATUS_RESTING</a> = 0x10</td></tr>
 <tr class="memdesc:a411f472122829e12d52b929cbaf47aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity is using the rest command.  <a href="#a411f472122829e12d52b929cbaf47aa3">More...</a><br /></td></tr>
 <tr class="separator:a411f472122829e12d52b929cbaf47aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbbdd172fcdb08aebd30e9bdc65531c9"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ActiveEntityState_8h.html#acbbdd172fcdb08aebd30e9bdc65531c9">STATUS_WAITING</a> = 0x20</td></tr>
+<tr class="memitem:acbbdd172fcdb08aebd30e9bdc65531c9"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ActiveEntityState_8h.html#acbbdd172fcdb08aebd30e9bdc65531c9">STATUS_WAITING</a> = 0x40</td></tr>
 <tr class="memdesc:acbbdd172fcdb08aebd30e9bdc65531c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity is waiting (used by AI controlled entity)  <a href="#acbbdd172fcdb08aebd30e9bdc65531c9">More...</a><br /></td></tr>
 <tr class="separator:acbbdd172fcdb08aebd30e9bdc65531c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -198,17 +208,17 @@ Variables</h2></td></tr>
 
 <p>Definition in file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a8c121a6e760a339634841ced705f0616"></a>
+<a class="anchor" id="af09b470d685d26db7b32cdc05e124747"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::unordered_map&lt;uint32_t, std::pair&lt;uint8_t, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&gt; &gt; <a class="el" href="ActiveEntityState_8h.html#a8c121a6e760a339634841ced705f0616">AddStatusEffectMap</a></td>
+          <td class="memname">typedef objects::ActiveEntityStateObject::DisplayState_t <a class="el" href="ActiveEntityState_8h.html#af09b470d685d26db7b32cdc05e124747">ActiveDisplayState_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00100">100</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
+<p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00109">109</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
 </div>
 </div>
@@ -222,7 +232,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00099">99</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
+<p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00108">108</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
 </div>
 </div>
@@ -241,7 +251,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00056">56</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l01430">channel::ZoneManager::UpdateStatusEffectStates()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06125">channel::SkillManager::ApplyZoneSpecificEffects()</a>, <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l02691">channel::ZoneManager::UpdateStatusEffectStates()</a>.</p>
 
 </div>
 </div>
@@ -259,7 +269,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00050">50</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l03203">channel::SkillManager::HandleStatusEffects()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06125">channel::SkillManager::ApplyZoneSpecificEffects()</a>, <a class="el" href="SkillManager_8cpp_source.html#l04870">channel::SkillManager::HandleStatusEffects()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -277,7 +287,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00053">53</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l06125">channel::SkillManager::ApplyZoneSpecificEffects()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -295,7 +305,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00059">59</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -313,7 +323,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00044">44</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ZoneManager_8cpp_source.html#l00542">channel::ZoneManager::LeaveZone()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00126">channel::AccountManager::HandleLoginResponse()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l01139">channel::ZoneManager::LeaveZone()</a>.</p>
 
 </div>
 </div>
@@ -331,7 +341,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00062">62</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l05239">channel::SkillManager::FinalizeSkillExecution()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l08501">channel::SkillManager::FinalizeSkillExecution()</a>.</p>
 
 </div>
 </div>
@@ -349,7 +359,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00047">47</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ZoneManager_8cpp_source.html#l00542">channel::ZoneManager::LeaveZone()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l00794">channel::ZoneManager::SendPopulateZoneData()</a>.</p>
+<p>Referenced by <a class="el" href="CharacterManager_8cpp_source.html#l05900">channel::CharacterManager::CancelStatusEffects()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00126">channel::AccountManager::HandleLoginResponse()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l01139">channel::ZoneManager::LeaveZone()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l01792">channel::ZoneManager::SendPopulateZoneData()</a>.</p>
 
 </div>
 </div>
@@ -367,7 +377,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00071">71</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l02632">channel::ActiveEntityState::CompareAndResetStats()</a>, and <a class="el" href="CharacterManager_8cpp_source.html#l00692">channel::CharacterManager::RecalculateStats()</a>.</p>
+<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l03064">channel::ActiveEntityState::CompareAndResetStats()</a>, and <a class="el" href="CharacterManager_8cpp_source.html#l00800">channel::CharacterManager::RecalculateStats()</a>.</p>
 
 </div>
 </div>
@@ -385,7 +395,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00074">74</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="CharacterManager_8cpp_source.html#l00692">channel::CharacterManager::RecalculateStats()</a>, and <a class="el" href="ActiveEntityState_8cpp_source.html#l01955">channel::ActiveEntityStateImp&lt; T &gt;::RecalculateStats()</a>.</p>
+<p>Referenced by <a class="el" href="CharacterManager_8cpp_source.html#l00800">channel::CharacterManager::RecalculateStats()</a>, and <a class="el" href="CharacterState_8cpp_source.html#l00878">channel::CharacterState::RecalculateStats()</a>.</p>
 
 </div>
 </div>
@@ -403,7 +413,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00065">65</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l02632">channel::ActiveEntityState::CompareAndResetStats()</a>, and <a class="el" href="CharacterManager_8cpp_source.html#l00692">channel::CharacterManager::RecalculateStats()</a>.</p>
+<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l03064">channel::ActiveEntityState::CompareAndResetStats()</a>, and <a class="el" href="CharacterManager_8cpp_source.html#l00800">channel::CharacterManager::RecalculateStats()</a>.</p>
 
 </div>
 </div>
@@ -421,7 +431,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00068">68</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l02632">channel::ActiveEntityState::CompareAndResetStats()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00692">channel::CharacterManager::RecalculateStats()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l01430">channel::ZoneManager::UpdateStatusEffectStates()</a>.</p>
+<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l03064">channel::ActiveEntityState::CompareAndResetStats()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00800">channel::CharacterManager::RecalculateStats()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l02691">channel::ZoneManager::UpdateStatusEffectStates()</a>.</p>
 
 </div>
 </div>
@@ -439,7 +449,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00086">86</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l00275">channel::SkillManager::ActivateSkill()</a>, <a class="el" href="ActiveEntityState_8cpp_source.html#l00204">channel::ActiveEntityState::CanMove()</a>, <a class="el" href="AIManager_8cpp_source.html#l00763">channel::AIManager::Retarget()</a>, and <a class="el" href="AIManager_8cpp_source.html#l00270">channel::AIManager::UpdateState()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l00326">channel::SkillManager::ActivateSkill()</a>, <a class="el" href="ActiveEntityState_8cpp_source.html#l00226">channel::ActiveEntityState::CanMove()</a>, <a class="el" href="AIManager_8cpp_source.html#l01535">channel::AIManager::Retarget()</a>, <a class="el" href="AIManager_8cpp_source.html#l01135">channel::AIManager::UpdateEnemyState()</a>, and <a class="el" href="AIManager_8cpp_source.html#l00746">channel::AIManager::UpdateState()</a>.</p>
 
 </div>
 </div>
@@ -457,7 +467,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00080">80</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l00204">channel::ActiveEntityState::CanMove()</a>, <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>, and <a class="el" href="AIManager_8cpp_source.html#l00270">channel::AIManager::UpdateState()</a>.</p>
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l01385">channel::SkillManager::BeginSkillExecution()</a>, <a class="el" href="ActiveEntityState_8cpp_source.html#l00218">channel::ActiveEntityState::CanAct()</a>, <a class="el" href="ActiveEntityState_8cpp_source.html#l00226">channel::ActiveEntityState::CanMove()</a>, <a class="el" href="AIManager_8cpp_source.html#l00357">channel::AIManager::CombatSkillComplete()</a>, <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>, and <a class="el" href="AIManager_8cpp_source.html#l00746">channel::AIManager::UpdateState()</a>.</p>
 
 </div>
 </div>
@@ -475,7 +485,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00077">77</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l00204">channel::ActiveEntityState::CanMove()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l05361">channel::SkillManager::SetSkillCompleteState()</a>.</p>
+<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l00226">channel::ActiveEntityState::CanMove()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>.</p>
 
 </div>
 </div>
@@ -493,7 +503,25 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00083">83</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l00204">channel::ActiveEntityState::CanMove()</a>, <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>, and <a class="el" href="AIManager_8cpp_source.html#l00270">channel::AIManager::UpdateState()</a>.</p>
+<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l00218">channel::ActiveEntityState::CanAct()</a>, <a class="el" href="ActiveEntityState_8cpp_source.html#l00226">channel::ActiveEntityState::CanMove()</a>, <a class="el" href="AIManager_8cpp_source.html#l00357">channel::AIManager::CombatSkillComplete()</a>, <a class="el" href="SkillManager_8cpp_source.html#l02166">channel::SkillManager::ExecuteNormalSkill()</a>, <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>, <a class="el" href="AIManager_8cpp_source.html#l01135">channel::AIManager::UpdateEnemyState()</a>, and <a class="el" href="AIManager_8cpp_source.html#l00746">channel::AIManager::UpdateState()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af8c3ef7eb61a25458414b410c964e298"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t STATUS_LOCKOUT = 0x20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Entity is still affected by a skill's lockout time. </p>
+
+<p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00092">92</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
+
+<p>Referenced by <a class="el" href="SkillManager_8cpp_source.html#l08711">channel::SkillManager::SetSkillCompleteState()</a>, and <a class="el" href="AIManager_8cpp_source.html#l00746">channel::AIManager::UpdateState()</a>.</p>
 
 </div>
 </div>
@@ -511,7 +539,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00089">89</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l00204">channel::ActiveEntityState::CanMove()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l06135">channel::SkillManager::Rest()</a>.</p>
+<p>Referenced by <a class="el" href="ActiveEntityState_8cpp_source.html#l00226">channel::ActiveEntityState::CanMove()</a>, <a class="el" href="CharacterState_8cpp_source.html#l00878">channel::CharacterState::RecalculateStats()</a>, and <a class="el" href="SkillManager_8cpp_source.html#l10412">channel::SkillManager::Rest()</a>.</p>
 
 </div>
 </div>
@@ -520,16 +548,16 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t STATUS_WAITING = 0x20</td>
+          <td class="memname">const uint8_t STATUS_WAITING = 0x40</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Entity is waiting (used by AI controlled entity) </p>
 
-<p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00092">92</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
+<p>Definition at line <a class="el" href="ActiveEntityState_8h_source.html#l00095">95</a> of file <a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AIManager_8cpp_source.html#l00270">channel::AIManager::UpdateState()</a>.</p>
+<p>Referenced by <a class="el" href="AIManager_8cpp_source.html#l00746">channel::AIManager::UpdateState()</a>.</p>
 
 </div>
 </div>

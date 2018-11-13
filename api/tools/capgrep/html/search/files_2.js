@@ -10,7 +10,6 @@ var searchData=
   ['config_2ecpp',['Config.cpp',['../../../../libcomp/html/Config_8cpp.html',1,'']]],
   ['config_2eh',['Config.h',['../../../../libcomp/html/Config_8h.html',1,'']]],
   ['connectionmessage_2eh',['ConnectionMessage.h',['../../../../libcomp/html/ConnectionMessage_8h.html',1,'']]],
-  ['constants_2eh',['Constants.h',['../../../../libcomp/html/Constants_8h.html',1,'']]],
   ['convert_2eh',['Convert.h',['../../../../libcomp/html/Convert_8h.html',1,'']]],
   ['cstring_2ecpp',['CString.cpp',['../../../../libcomp/html/CString_8cpp.html',1,'']]],
   ['cstring_2eh',['CString.h',['../../../../libcomp/html/CString_8h.html',1,'']]]

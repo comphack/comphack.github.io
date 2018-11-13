@@ -89,7 +89,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">EventManager.cpp File Reference</div>  </div>
@@ -103,20 +102,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html">Log.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/PacketCodes_8h.html">PacketCodes.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Randomizer_8h.html">Randomizer.h</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ScriptEngine_8h.html">ScriptEngine.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html">ServerConstants.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerDataManager_8h.html">ServerDataManager.h</a>&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;Account.h&gt;</code><br />
+<code>#include &lt;AccountWorldData.h&gt;</code><br />
+<code>#include &lt;ChannelConfig.h&gt;</code><br />
+<code>#include &lt;ChannelLogin.h&gt;</code><br />
 <code>#include &lt;CharacterProgress.h&gt;</code><br />
 <code>#include &lt;DemonBox.h&gt;</code><br />
+<code>#include &lt;DemonQuest.h&gt;</code><br />
+<code>#include &lt;DemonQuestReward.h&gt;</code><br />
+<code>#include &lt;DestinyBox.h&gt;</code><br />
+<code>#include &lt;DiasporaBase.h&gt;</code><br />
+<code>#include &lt;DigitalizeState.h&gt;</code><br />
+<code>#include &lt;DropSet.h&gt;</code><br />
 <code>#include &lt;EventChoice.h&gt;</code><br />
 <code>#include &lt;EventCondition.h&gt;</code><br />
 <code>#include &lt;EventConditionData.h&gt;</code><br />
+<code>#include &lt;EventCounter.h&gt;</code><br />
 <code>#include &lt;EventDirection.h&gt;</code><br />
 <code>#include &lt;EventExNPCMessage.h&gt;</code><br />
 <code>#include &lt;EventFlagCondition.h&gt;</code><br />
-<code>#include &lt;EventInstance.h&gt;</code><br />
+<code>#include &lt;EventITime.h&gt;</code><br />
 <code>#include &lt;EventMultitalk.h&gt;</code><br />
 <code>#include &lt;EventNPCMessage.h&gt;</code><br />
 <code>#include &lt;EventOpenMenu.h&gt;</code><br />
@@ -126,40 +134,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;EventScriptCondition.h&gt;</code><br />
 <code>#include &lt;EventState.h&gt;</code><br />
 <code>#include &lt;Expertise.h&gt;</code><br />
+<code>#include &lt;InstanceAccess.h&gt;</code><br />
 <code>#include &lt;Item.h&gt;</code><br />
 <code>#include &lt;ItemBox.h&gt;</code><br />
+<code>#include &lt;ItemDrop.h&gt;</code><br />
+<code>#include &lt;MiDCategoryData.h&gt;</code><br />
 <code>#include &lt;MiDevilBookData.h&gt;</code><br />
+<code>#include &lt;MiDevilCrystalData.h&gt;</code><br />
 <code>#include &lt;MiDevilData.h&gt;</code><br />
+<code>#include &lt;MiEnchantData.h&gt;</code><br />
 <code>#include &lt;MiExpertData.h&gt;</code><br />
+<code>#include &lt;MiGrowthData.h&gt;</code><br />
 <code>#include &lt;MiItemBasicData.h&gt;</code><br />
 <code>#include &lt;MiItemData.h&gt;</code><br />
 <code>#include &lt;MiQuestData.h&gt;</code><br />
 <code>#include &lt;MiQuestPhaseData.h&gt;</code><br />
 <code>#include &lt;MiQuestUpperCondition.h&gt;</code><br />
+<code>#include &lt;MiSynthesisData.h&gt;</code><br />
+<code>#include &lt;MiTriUnionSpecialData.h&gt;</code><br />
 <code>#include &lt;MiUnionData.h&gt;</code><br />
+<code>#include &lt;MiUraFieldTowerData.h&gt;</code><br />
 <code>#include &lt;Party.h&gt;</code><br />
+<code>#include &lt;PentalphaEntry.h&gt;</code><br />
 <code>#include &lt;Quest.h&gt;</code><br />
 <code>#include &lt;QuestPhaseRequirement.h&gt;</code><br />
 <code>#include &lt;ServerNPC.h&gt;</code><br />
 <code>#include &lt;ServerObject.h&gt;</code><br />
 <code>#include &lt;ServerZone.h&gt;</code><br />
 <code>#include &lt;ServerZoneInstance.h&gt;</code><br />
+<code>#include &lt;Spawn.h&gt;</code><br />
+<code>#include &lt;Team.h&gt;</code><br />
 <code>#include &lt;TriFusionHostSession.h&gt;</code><br />
+<code>#include &lt;WebGameSession.h&gt;</code><br />
+<code>#include &lt;WorldSharedConfig.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="ActionManager_8h_source.html">ActionManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ChannelSyncManager_8h_source.html">ChannelSyncManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CharacterState_8h_source.html">CharacterState.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="FusionTables_8h_source.html">FusionTables.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ManagerConnection_8h_source.html">ManagerConnection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MatchManager_8h_source.html">MatchManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ZoneInstance_8h_source.html">ZoneInstance.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ZoneManager_8h_source.html">ZoneManager.h</a>&quot;</code><br />
 </div>
 <p><a href="EventManager_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchannel_1_1EventContext.html">channel::EventContext</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a1ce4d2b03d1ee04eff1a1b68f2cd3160"><td class="memItemLeft" align="right" valign="top">const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EventManager_8cpp.html#a1ce4d2b03d1ee04eff1a1b68f2cd3160">EVENT_COMPARE_NUMERIC</a></td></tr>
@@ -188,9 +209,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= (uint16_t)EventCompareMode::EQUAL |</div><div class="line">    (uint16_t)EventCompareMode::LT | (uint16_t)EventCompareMode::GTE</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="EventManager_8cpp_source.html#l00093">93</a> of file <a class="el" href="EventManager_8cpp_source.html">EventManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="EventManager_8cpp_source.html#l00120">120</a> of file <a class="el" href="EventManager_8cpp_source.html">EventManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="EventManager_8cpp_source.html#l01001">channel::EventManager::EvaluateCondition()</a>, <a class="el" href="EventManager_8cpp_source.html#l00706">channel::EventManager::EvaluatePartnerCondition()</a>, and <a class="el" href="EventManager_8cpp_source.html#l00779">channel::EventManager::EvaluateQuestCondition()</a>.</p>
+<p>Referenced by <a class="el" href="EventManager_8cpp_source.html#l01338">channel::EventManager::EvaluateCondition()</a>, <a class="el" href="EventManager_8cpp_source.html#l01030">channel::EventManager::EvaluatePartnerCondition()</a>, and <a class="el" href="EventManager_8cpp_source.html#l01103">channel::EventManager::EvaluateQuestCondition()</a>.</p>
 
 </div>
 </div>
@@ -203,11 +224,11 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="EventManager_8cpp.html#a1ce4d2b03d1ee04eff1a1b68f2cd3160">EVENT_COMPARE_NUMERIC</a> |</div><div class="line">    (uint16_t)EventCompareMode::BETWEEN</div><div class="ttc" id="EventManager_8cpp_html_a1ce4d2b03d1ee04eff1a1b68f2cd3160"><div class="ttname"><a href="EventManager_8cpp.html#a1ce4d2b03d1ee04eff1a1b68f2cd3160">EVENT_COMPARE_NUMERIC</a></div><div class="ttdeci">const uint16_t EVENT_COMPARE_NUMERIC</div><div class="ttdef"><b>Definition:</b> <a href="EventManager_8cpp_source.html#l00093">EventManager.cpp:93</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="EventManager_8cpp.html#a1ce4d2b03d1ee04eff1a1b68f2cd3160">EVENT_COMPARE_NUMERIC</a> |</div><div class="line">    (uint16_t)EventCompareMode::BETWEEN</div><div class="ttc" id="EventManager_8cpp_html_a1ce4d2b03d1ee04eff1a1b68f2cd3160"><div class="ttname"><a href="EventManager_8cpp.html#a1ce4d2b03d1ee04eff1a1b68f2cd3160">EVENT_COMPARE_NUMERIC</a></div><div class="ttdeci">const uint16_t EVENT_COMPARE_NUMERIC</div><div class="ttdef"><b>Definition:</b> <a href="EventManager_8cpp_source.html#l00120">EventManager.cpp:120</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="EventManager_8cpp_source.html#l00096">96</a> of file <a class="el" href="EventManager_8cpp_source.html">EventManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="EventManager_8cpp_source.html#l00123">123</a> of file <a class="el" href="EventManager_8cpp_source.html">EventManager.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="EventManager_8cpp_source.html#l01001">channel::EventManager::EvaluateCondition()</a>, and <a class="el" href="EventManager_8cpp_source.html#l00706">channel::EventManager::EvaluatePartnerCondition()</a>.</p>
+<p>Referenced by <a class="el" href="EventManager_8cpp_source.html#l01338">channel::EventManager::EvaluateCondition()</a>, and <a class="el" href="EventManager_8cpp_source.html#l01030">channel::EventManager::EvaluatePartnerCondition()</a>.</p>
 
 </div>
 </div>

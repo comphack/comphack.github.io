@@ -126,6 +126,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1ManagerConnection.html">ManagerConnection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to handle messages pertaining to connecting to worlds or game clients.  <a href="classlobby_1_1ManagerConnection.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1WebGameApiSession.html">WebGameApiSession</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1World.html">World</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates a world connection to RegisteredWorld and its channels for the lobby.  <a href="classlobby_1_1World.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +142,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a39bab11f5f67a8b591af2ce0666c0a96"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a39bab11f5f67a8b591af2ce0666c0a96"><td class="memTemplItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelobby.html#a39bab11f5f67a8b591af2ce0666c0a96">LobbySyncManager::Update&lt; objects::Character &gt;</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;type, const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;obj, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> isRemove, const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;source)</td></tr>
 <tr class="separator:a39bab11f5f67a8b591af2ce0666c0a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cead30e6f926596fbc7d53b3623a192"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a2cead30e6f926596fbc7d53b3623a192"><td class="memTemplItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelobby.html#a2cead30e6f926596fbc7d53b3623a192">LobbySyncManager::Update&lt; objects::CharacterProgress &gt;</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;type, const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;obj, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> isRemove, const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;source)</td></tr>
+<tr class="separator:a2cead30e6f926596fbc7d53b3623a192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9049744f9d8022218afee271c786a6b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classlobby_1_1ClientState.html">ClientState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelobby.html#af9049744f9d8022218afee271c786a6b">state</a> (const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html">libcomp::TcpConnection</a> &gt; &amp;connection)</td></tr>
 <tr class="separator:af9049744f9d8022218afee271c786a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -170,7 +175,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ManagerPacket.html#aa21f449c7953fe4108dbfb2f3334d869">libcomp::ManagerPacket::GetServer()</a>.</p>
 
-<p>Referenced by <a class="el" href="Login_8cpp_source.html#l00048">LoginError()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00499">lobby::AccountManager::Logout()</a>, <a class="el" href="main_8cpp_source.html#l00048">main()</a>, <a class="el" href="LoginWebHandler_8cpp_source.html#l00067">lobby::LoginHandler::SetConfig()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00699">lobby::AccountManager::UpdateKillTime()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00058">lobby::AccountManager::WebAuthLogin()</a>.</p>
+<p>Referenced by <a class="el" href="Login_8cpp_source.html#l00048">LoginError()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00506">lobby::AccountManager::Logout()</a>, <a class="el" href="main_8cpp_source.html#l00049">main()</a>, <a class="el" href="LoginWebHandler_8cpp_source.html#l00067">lobby::LoginHandler::SetConfig()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00714">lobby::AccountManager::UpdateKillTime()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00060">lobby::AccountManager::WebAuthLogin()</a>.</p>
 
 </div>
 </div>
@@ -212,9 +217,9 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="LobbySyncManager_8cpp_source.html#l00085">85</a> of file <a class="el" href="LobbySyncManager_8cpp_source.html">LobbySyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbySyncManager_8cpp_source.html#l00094">94</a> of file <a class="el" href="LobbySyncManager_8cpp_source.html">LobbySyncManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a71b54e55b684cf16e6d862cda1a7e27b">libcomp::DataSyncManager::SYNC_HANDLED</a>, and <a class="el" href="LobbySyncManager_8cpp_source.html#l00116">lobby::LobbySyncManager::SyncAccount()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a71b54e55b684cf16e6d862cda1a7e27b">libcomp::DataSyncManager::SYNC_HANDLED</a>, and <a class="el" href="LobbySyncManager_8cpp_source.html#l00144">lobby::LobbySyncManager::SyncAccount()</a>.</p>
 
 </div>
 </div>
@@ -256,9 +261,53 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="LobbySyncManager_8cpp_source.html#l00101">101</a> of file <a class="el" href="LobbySyncManager_8cpp_source.html">LobbySyncManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="LobbySyncManager_8cpp_source.html#l00110">110</a> of file <a class="el" href="LobbySyncManager_8cpp_source.html">LobbySyncManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a71b54e55b684cf16e6d862cda1a7e27b">libcomp::DataSyncManager::SYNC_HANDLED</a>, and <a class="el" href="LobbySyncManager_8cpp_source.html#l00141">lobby::LobbySyncManager::SyncCharacter()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a71b54e55b684cf16e6d862cda1a7e27b">libcomp::DataSyncManager::SYNC_HANDLED</a>, and <a class="el" href="LobbySyncManager_8cpp_source.html#l00169">lobby::LobbySyncManager::SyncCharacter()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2cead30e6f926596fbc7d53b3623a192"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t <a class="el" href="classlobby_1_1LobbySyncManager.html#a78df3fb5b92d4c450853312b308a86dc">lobby::LobbySyncManager::Update</a>&lt; objects::CharacterProgress &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Object.html">libcomp::Object</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>isRemove</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="LobbySyncManager_8cpp_source.html#l00125">125</a> of file <a class="el" href="LobbySyncManager_8cpp_source.html">LobbySyncManager.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#a71b54e55b684cf16e6d862cda1a7e27b">libcomp::DataSyncManager::SYNC_HANDLED</a>, and <a class="el" href="LobbySyncManager_8cpp_source.html#l00199">lobby::LobbySyncManager::SyncCharacterProgress()</a>.</p>
 
 </div>
 </div>
@@ -286,7 +335,7 @@ template&lt;&gt; </div>
 
 <p>Definition at line <a class="el" href="LobbyClientConnection_8h_source.html#l00056">56</a> of file <a class="el" href="LobbyClientConnection_8h_source.html">LobbyClientConnection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Auth_8cpp_source.html#l00062">CompleteLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00260">lobby::AccountManager::LobbyLogin()</a>, <a class="el" href="Login_8cpp_source.html#l00048">LoginError()</a>, <a class="el" href="Auth_8cpp_source.html#l00112">NoWebAuthParse()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00879">lobby::AccountManager::PrintAccounts()</a>, <a class="el" href="ManagerConnection_8cpp_source.html#l00366">lobby::ManagerConnection::RemoveClientConnection()</a>, <a class="el" href="ManagerConnection_8cpp_source.html#l00348">lobby::ManagerConnection::SetClientConnection()</a>, <a class="el" href="LobbyClientConnection_8cpp_source.html#l00045">lobby::LobbyClientConnection::SetClientState()</a>, <a class="el" href="ManagerClientPacket_8cpp_source.html#l00047">lobby::ManagerClientPacket::ValidateConnectionState()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00058">lobby::AccountManager::WebAuthLogin()</a>, and <a class="el" href="Auth_8cpp_source.html#l00149">WebAuthParse()</a>.</p>
+<p>Referenced by <a class="el" href="Auth_8cpp_source.html#l00062">CompleteLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00262">lobby::AccountManager::LobbyLogin()</a>, <a class="el" href="Login_8cpp_source.html#l00048">LoginError()</a>, <a class="el" href="Auth_8cpp_source.html#l00112">NoWebAuthParse()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00990">lobby::AccountManager::PrintAccounts()</a>, <a class="el" href="ManagerConnection_8cpp_source.html#l00366">lobby::ManagerConnection::RemoveClientConnection()</a>, <a class="el" href="ManagerConnection_8cpp_source.html#l00348">lobby::ManagerConnection::SetClientConnection()</a>, <a class="el" href="LobbyClientConnection_8cpp_source.html#l00045">lobby::LobbyClientConnection::SetClientState()</a>, <a class="el" href="ManagerClientPacket_8cpp_source.html#l00047">lobby::ManagerClientPacket::ValidateConnectionState()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00060">lobby::AccountManager::WebAuthLogin()</a>, and <a class="el" href="Auth_8cpp_source.html#l00149">WebAuthParse()</a>.</p>
 
 </div>
 </div>

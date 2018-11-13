@@ -106,28 +106,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a803290437ace8ec1e9d1e943ee6dcac7"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneGeometry.html#a803290437ace8ec1e9d1e943ee6dcac7">Collides</a> (const <a class="el" href="classchannel_1_1Line.html">Line</a> &amp;path, <a class="el" href="classchannel_1_1Point.html">Point</a> &amp;point, <a class="el" href="classchannel_1_1Line.html">Line</a> &amp;surface, std::shared_ptr&lt; <a class="el" href="classchannel_1_1ZoneShape.html">ZoneShape</a> &gt; &amp;shape) const </td></tr>
-<tr class="memdesc:a803290437ace8ec1e9d1e943ee6dcac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the supplied path collides with any shape.  <a href="#a803290437ace8ec1e9d1e943ee6dcac7">More...</a><br /></td></tr>
-<tr class="separator:a803290437ace8ec1e9d1e943ee6dcac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04967a970a5cb0d1394aacc835d67f5d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneGeometry.html#a04967a970a5cb0d1394aacc835d67f5d">Collides</a> (const <a class="el" href="classchannel_1_1Line.html">Line</a> &amp;path, <a class="el" href="classchannel_1_1Point.html">Point</a> &amp;point, <a class="el" href="classchannel_1_1Line.html">Line</a> &amp;surface, std::shared_ptr&lt; <a class="el" href="classchannel_1_1ZoneShape.html">ZoneShape</a> &gt; &amp;shape, const std::set&lt; uint32_t &gt; disabledBarriers={}) const </td></tr>
+<tr class="memdesc:a04967a970a5cb0d1394aacc835d67f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the supplied path collides with any shape.  <a href="#a04967a970a5cb0d1394aacc835d67f5d">More...</a><br /></td></tr>
+<tr class="separator:a04967a970a5cb0d1394aacc835d67f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cac6a335c4a9dd68ac1faa6d604b08b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneGeometry.html#a7cac6a335c4a9dd68ac1faa6d604b08b">Collides</a> (const <a class="el" href="classchannel_1_1Line.html">Line</a> &amp;path, <a class="el" href="classchannel_1_1Point.html">Point</a> &amp;point) const </td></tr>
 <tr class="memdesc:a7cac6a335c4a9dd68ac1faa6d604b08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the supplied path collides with any shape.  <a href="#a7cac6a335c4a9dd68ac1faa6d604b08b">More...</a><br /></td></tr>
 <tr class="separator:a7cac6a335c4a9dd68ac1faa6d604b08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a904f6ae9e0e1cd711de258504a498e45"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::shared_ptr&lt; objects::QmpElement &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneGeometry.html#a904f6ae9e0e1cd711de258504a498e45">Elements</a></td></tr>
+<tr class="memdesc:a904f6ae9e0e1cd711de258504a498e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all Qmp elements.  <a href="#a904f6ae9e0e1cd711de258504a498e45">More...</a><br /></td></tr>
+<tr class="separator:a904f6ae9e0e1cd711de258504a498e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83d686be7e83f67ca712ed1b4cb3aeea"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; uint32_t, std::shared_ptr&lt; objects::QmpNavPoint &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneGeometry.html#a83d686be7e83f67ca712ed1b4cb3aeea">NavPoints</a></td></tr>
+<tr class="memdesc:a83d686be7e83f67ca712ed1b4cb3aeea"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of nav points in zones that use this geometry.  <a href="#a83d686be7e83f67ca712ed1b4cb3aeea">More...</a><br /></td></tr>
+<tr class="separator:a83d686be7e83f67ca712ed1b4cb3aeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a217ce0d4813a29e927fb93707f4905"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneGeometry.html#a0a217ce0d4813a29e927fb93707f4905">QmpFilename</a></td></tr>
 <tr class="memdesc:a0a217ce0d4813a29e927fb93707f4905"><td class="mdescLeft">&#160;</td><td class="mdescRight">QMP filename where the geometry was loaded from.  <a href="#a0a217ce0d4813a29e927fb93707f4905">More...</a><br /></td></tr>
 <tr class="separator:a0a217ce0d4813a29e927fb93707f4905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82a97f7cbd3ae5018b7fdd596453de5d"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::shared_ptr&lt; <a class="el" href="classchannel_1_1ZoneShape.html">ZoneShape</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneGeometry.html#a82a97f7cbd3ae5018b7fdd596453de5d">Shapes</a></td></tr>
-<tr class="memdesc:a82a97f7cbd3ae5018b7fdd596453de5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all shapes.  <a href="#a82a97f7cbd3ae5018b7fdd596453de5d">More...</a><br /></td></tr>
-<tr class="separator:a82a97f7cbd3ae5018b7fdd596453de5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af431076221cfe66705f201be44240e97"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::shared_ptr&lt; <a class="el" href="classchannel_1_1ZoneQmpShape.html">ZoneQmpShape</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ZoneGeometry.html#af431076221cfe66705f201be44240e97">Shapes</a></td></tr>
+<tr class="memdesc:af431076221cfe66705f201be44240e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all shapes.  <a href="#af431076221cfe66705f201be44240e97">More...</a><br /></td></tr>
+<tr class="separator:af431076221cfe66705f201be44240e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents all zone geometry retrieved from a QMP file for use in calculating collisions. </p>
 
-<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00218">218</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
+<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00231">231</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a803290437ace8ec1e9d1e943ee6dcac7"></a>
+<a class="anchor" id="a04967a970a5cb0d1394aacc835d67f5d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -153,7 +159,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classchannel_1_1ZoneShape.html">ZoneShape</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>shape</em>&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; uint32_t &gt;&#160;</td>
+          <td class="paramname"><em>disabledBarriers</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -170,14 +182,15 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">point</td><td>Output parameter to set where the intersection occurs </td></tr>
     <tr><td class="paramname">surface</td><td>Output parameter to return the first line to be intersected by the path </td></tr>
     <tr><td class="paramname">shape</td><td>Output parameter to return the first shape the path will collide with. This will always be the shape the surface belongs to </td></tr>
+    <tr><td class="paramname">disabledBarriers</td><td>Set of element IDs that should not count as a collision </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the line collides, false if it does not </dd></dl>
 
-<p>Definition at line <a class="el" href="ZoneGeometry_8cpp_source.html#l00156">156</a> of file <a class="el" href="ZoneGeometry_8cpp_source.html">ZoneGeometry.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ZoneGeometry_8cpp_source.html#l00192">192</a> of file <a class="el" href="ZoneGeometry_8cpp_source.html">ZoneGeometry.cpp</a>.</p>
 
-<p>References <a class="el" href="ZoneGeometry_8h_source.html#l00087">channel::Point::x</a>, and <a class="el" href="ZoneGeometry_8h_source.html#l00090">channel::Point::y</a>.</p>
+<p>References <a class="el" href="ZoneGeometry_8h_source.html#l00090">channel::Point::x</a>, and <a class="el" href="ZoneGeometry_8h_source.html#l00093">channel::Point::y</a>.</p>
 
 </div>
 </div>
@@ -215,13 +228,46 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the line collides, false if it does not </dd></dl>
 
-<p>Definition at line <a class="el" href="ZoneGeometry_8cpp_source.html#l00189">189</a> of file <a class="el" href="ZoneGeometry_8cpp_source.html">ZoneGeometry.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ZoneGeometry_8cpp_source.html#l00228">228</a> of file <a class="el" href="ZoneGeometry_8cpp_source.html">ZoneGeometry.cpp</a>.</p>
 
-<p>References <a class="el" href="ZoneGeometry_8cpp_source.html#l00111">channel::ZoneShape::Collides()</a>.</p>
+<p>References <a class="el" href="ZoneGeometry_8cpp_source.html#l00177">channel::ZoneQmpShape::Collides()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a904f6ae9e0e1cd711de258504a498e45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;std::shared_ptr&lt;objects::QmpElement&gt; &gt; channel::ZoneGeometry::Elements</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List of all Qmp elements. </p>
+
+<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00266">266</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83d686be7e83f67ca712ed1b4cb3aeea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;uint32_t, std::shared_ptr&lt;objects::QmpNavPoint&gt; &gt; channel::ZoneGeometry::NavPoints</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List of nav points in zones that use this geometry. </p>
+<p>In zones that contain player zone-in spots, these are filtered to the active play area only. </p>
+
+<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00272">272</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0a217ce0d4813a29e927fb93707f4905"></a>
 <div class="memitem">
 <div class="memproto">
@@ -234,23 +280,23 @@ Public Attributes</h2></td></tr>
 
 <p>QMP filename where the geometry was loaded from. </p>
 
-<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00244">244</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
+<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00260">260</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a82a97f7cbd3ae5018b7fdd596453de5d"></a>
+<a class="anchor" id="af431076221cfe66705f201be44240e97"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;std::shared_ptr&lt;<a class="el" href="classchannel_1_1ZoneShape.html">ZoneShape</a>&gt; &gt; channel::ZoneGeometry::Shapes</td>
+          <td class="memname">std::list&lt;std::shared_ptr&lt;<a class="el" href="classchannel_1_1ZoneQmpShape.html">ZoneQmpShape</a>&gt; &gt; channel::ZoneGeometry::Shapes</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>List of all shapes. </p>
 
-<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00247">247</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
+<p>Definition at line <a class="el" href="ZoneGeometry_8h_source.html#l00263">263</a> of file <a class="el" href="ZoneGeometry_8h_source.html">ZoneGeometry.h</a>.</p>
 
 </div>
 </div>

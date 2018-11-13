@@ -1,6 +1,9 @@
 var searchData=
 [
   ['file',['File',['../../../../libcomp/html/classlibcomp_1_1Exception.html#a7627bf0e51c1a16bc99440723978fae2',1,'libcomp::Exception::File()'],['../../../../libcomp/html/classlibcomp_1_1Exception.html#a7627bf0e51c1a16bc99440723978fae2',1,'libcomp::PacketException::File()']]],
+  ['filedelete',['FileDelete',['../../../../libcomp/html/classlibcomp_1_1Log.html#a251a836d87a44cb3fda0d858f5637c3b',1,'libcomp::Log']]],
+  ['fileexists',['FileExists',['../../../../libcomp/html/classlibcomp_1_1Log.html#a7fb8c58767a29922bafa7836bdbb8f5c',1,'libcomp::Log']]],
+  ['filemove',['FileMove',['../../../../libcomp/html/classlibcomp_1_1Log.html#a57ccc287dc27898b1358ba3f850d43dd',1,'libcomp::Log']]],
   ['filesize',['FileSize',['../../../../libcomp/html/classlibcomp_1_1DataStore.html#a87b17b1382168ea39fbd11a1f3346716',1,'libcomp::DataStore']]],
   ['filter',['Filter',['../classFilter.html#a7c8213ef1fdcbf849744c2548cdbffb9',1,'Filter']]],
   ['find',['Find',['../classFind.html#adb334365fed093fa6ed56f8c9dcf076c',1,'Find']]],

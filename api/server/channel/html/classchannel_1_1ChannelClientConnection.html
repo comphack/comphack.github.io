@@ -158,12 +158,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab0a14eefb42d36b1df8d33453005126d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelClientConnection.html#ab0a14eefb42d36b1df8d33453005126d">GetTimeout</a> () const </td></tr>
 <tr class="memdesc:ab0a14eefb42d36b1df8d33453005126d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next client timeout timestamp.  <a href="#ab0a14eefb42d36b1df8d33453005126d">More...</a><br /></td></tr>
 <tr class="separator:ab0a14eefb42d36b1df8d33453005126d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1496e2c1ff0642e2ed5e8f38fa139424"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelClientConnection.html#a1496e2c1ff0642e2ed5e8f38fa139424">Kill</a> ()</td></tr>
+<tr class="memdesc:a1496e2c1ff0642e2ed5e8f38fa139424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the connection after marking it to not save any logout data.  <a href="#a1496e2c1ff0642e2ed5e8f38fa139424">More...</a><br /></td></tr>
+<tr class="separator:a1496e2c1ff0642e2ed5e8f38fa139424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5109dde7f1740798c3a5d377dc398b88"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html#a5109dde7f1740798c3a5d377dc398b88">QueueObject</a> (const Object &amp;obj)</td></tr>
 <tr class="separator:a5109dde7f1740798c3a5d377dc398b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a236aec6d08c3f3455f4b59f3ce61d9e3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html#a236aec6d08c3f3455f4b59f3ce61d9e3">QueuePacket</a> (ReadOnlyPacket &amp;packet)</td></tr>
-<tr class="separator:a236aec6d08c3f3455f4b59f3ce61d9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa2f1397fe3c8d90151a42036f4c540c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html#afa2f1397fe3c8d90151a42036f4c540c">QueuePacket</a> (Packet &amp;packet)</td></tr>
 <tr class="separator:afa2f1397fe3c8d90151a42036f4c540c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236aec6d08c3f3455f4b59f3ce61d9e3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html#a236aec6d08c3f3455f4b59f3ce61d9e3">QueuePacket</a> (ReadOnlyPacket &amp;packet)</td></tr>
+<tr class="separator:a236aec6d08c3f3455f4b59f3ce61d9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06bbfcc02048901ac0444481524c478a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html#a06bbfcc02048901ac0444481524c478a">QueuePacketCopy</a> (<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html">libcomp::Packet</a> &amp;packet)</td></tr>
 <tr class="separator:a06bbfcc02048901ac0444481524c478a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d5f6eb4ecd7d1adeb9252fd91d572a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ChannelClientConnection.html#a4d5f6eb4ecd7d1adeb9252fd91d572a8">RefreshTimeout</a> (uint64_t now, uint16_t aliveUntil)</td></tr>
@@ -426,11 +429,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ChannelClientConnection_8cpp_source.html#l00058">58</a> of file <a class="el" href="ChannelClientConnection_8cpp_source.html">ChannelClientConnection.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelClientConnection_8cpp_source.html#l00064">64</a> of file <a class="el" href="ChannelClientConnection_8cpp_source.html">ChannelClientConnection.cpp</a>.</p>
 
 <p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1TcpConnection.html#a99f2a1310e869a11536e490c7997748a">libcomp::TcpConnection::BroadcastPacket()</a>.</p>
 
-<p>Referenced by <a class="el" href="ManagerConnection_8cpp_source.html#l00294">channel::ManagerConnection::BroadcastPacketToClients()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01052">channel::FusionManager::EndExchange()</a>, <a class="el" href="FusionManager_8cpp_source.html#l00096">channel::FusionManager::HandleTriFusion()</a>, <a class="el" href="EventManager_8cpp_source.html#l02396">channel::EventManager::HandleTriFusion()</a>, <a class="el" href="PartyUpdate_8cpp_source.html#l00057">QueuePartyMemberInfo()</a>, <a class="el" href="SkillManager_8cpp_source.html#l06653">channel::SkillManager::SendCompleteSkill()</a>, <a class="el" href="SkillManager_8cpp_source.html#l06612">channel::SkillManager::SendExecuteSkillInstant()</a>, <a class="el" href="SkillManager_8cpp_source.html#l00947">channel::SkillManager::SendFailure()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00261">channel::CharacterManager::SendOtherCharacterData()</a>, and <a class="el" href="CharacterManager_8cpp_source.html#l00526">channel::CharacterManager::SendOtherPartnerData()</a>.</p>
+<p>Referenced by <a class="el" href="ManagerConnection_8cpp_source.html#l00319">channel::ManagerConnection::BroadcastPacketToClients()</a>, <a class="el" href="FusionManager_8cpp_source.html#l01099">channel::FusionManager::EndExchange()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l05383">channel::ZoneManager::EndInstanceTimer()</a>, <a class="el" href="MatchManager_8cpp_source.html#l01014">channel::MatchManager::EndPvPMatch()</a>, <a class="el" href="MatchManager_8cpp_source.html#l04522">channel::MatchManager::EndUltimateBattlePhase()</a>, <a class="el" href="FusionManager_8cpp_source.html#l00097">channel::FusionManager::HandleTriFusion()</a>, <a class="el" href="EventManager_8cpp_source.html#l04363">channel::EventManager::HandleTriFusion()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l06014">channel::ZoneManager::MultiZoneBossKilled()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02071">channel::ZoneManager::PopEntityForProduction()</a>, <a class="el" href="PartyUpdate_8cpp_source.html#l00058">QueuePartyMemberInfo()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02091">channel::ZoneManager::RemoveEntities()</a>, <a class="el" href="ChatManager_8cpp_source.html#l00159">channel::ChatManager::SendChatMessage()</a>, <a class="el" href="SkillManager_8cpp_source.html#l11149">channel::SkillManager::SendCompleteSkill()</a>, <a class="el" href="MatchManager_8cpp_source.html#l03081">channel::MatchManager::SendDiasporaLocation()</a>, <a class="el" href="SkillManager_8cpp_source.html#l11104">channel::SkillManager::SendExecuteSkillInstant()</a>, <a class="el" href="SkillManager_8cpp_source.html#l00908">channel::SkillManager::SendFailure()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l04999">channel::ZoneManager::SendInstanceTimer()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00301">channel::CharacterManager::SendOtherCharacterData()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00584">channel::CharacterManager::SendOtherPartnerData()</a>, <a class="el" href="MatchManager_8cpp_source.html#l04748">channel::MatchManager::SendPhase()</a>, <a class="el" href="MatchManager_8cpp_source.html#l03028">channel::MatchManager::SendPvPLocation()</a>, <a class="el" href="MatchManager_8cpp_source.html#l00557">channel::MatchManager::SendZiotite()</a>, <a class="el" href="ActionManager_8cpp_source.html#l01808">channel::ActionManager::SetNPCState()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02046">channel::ZoneManager::ShowEntity()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02117">channel::ZoneManager::ShowNPC()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02144">channel::ZoneManager::ShowObject()</a>, <a class="el" href="MatchManager_8cpp_source.html#l02355">channel::MatchManager::StartUltimateBattle()</a>, <a class="el" href="MatchManager_8cpp_source.html#l02515">channel::MatchManager::UltimateBattleBegin()</a>, <a class="el" href="MatchManager_8cpp_source.html#l02450">channel::MatchManager::UltimateBattleRecruit()</a>, <a class="el" href="MatchManager_8cpp_source.html#l02836">channel::MatchManager::UltimateBattleTick()</a>, <a class="el" href="AIManager_8cpp_source.html#l00535">channel::AIManager::UpdateAggro()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l05846">channel::ZoneManager::UpdateDestinyBox()</a>, <a class="el" href="MatchManager_8cpp_source.html#l02016">channel::MatchManager::UpdatePvPPoints()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l05800">channel::ZoneManager::UpdateTrackedTeam()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l05740">channel::ZoneManager::UpdateTrackedZone()</a>.</p>
 
 </div>
 </div>
@@ -475,9 +478,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ChannelClientConnection_8cpp_source.html#l00080">80</a> of file <a class="el" href="ChannelClientConnection_8cpp_source.html">ChannelClientConnection.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelClientConnection_8cpp_source.html#l00086">86</a> of file <a class="el" href="ChannelClientConnection_8cpp_source.html">ChannelClientConnection.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="CharacterManager_8cpp_source.html#l03859">channel::CharacterManager::AddRemoveOpponent()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l01430">channel::ZoneManager::UpdateStatusEffectStates()</a>.</p>
+<p>Referenced by <a class="el" href="CharacterManager_8cpp_source.html#l06096">channel::CharacterManager::AddRemoveOpponent()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l02691">channel::ZoneManager::UpdateStatusEffectStates()</a>.</p>
 
 </div>
 </div>
@@ -511,9 +514,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ChannelClientConnection_8cpp_source.html#l00094">94</a> of file <a class="el" href="ChannelClientConnection_8cpp_source.html">ChannelClientConnection.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelClientConnection_8cpp_source.html#l00100">100</a> of file <a class="el" href="ChannelClientConnection_8cpp_source.html">ChannelClientConnection.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="ActionManager_8cpp_source.html#l01580">channel::ActionManager::CreateLoot()</a>, <a class="el" href="SkillManager_8cpp_source.html#l03388">channel::SkillManager::HandleKills()</a>, <a class="el" href="SkillManager_8cpp_source.html#l03908">channel::SkillManager::HandleNegotiations()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l01058">channel::ZoneManager::RemoveEntities()</a>, <a class="el" href="SkillManager_8cpp_source.html#l05216">channel::SkillManager::ScheduleFreeLoot()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l01341">channel::ZoneManager::SendEnemyData()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l01149">channel::ZoneManager::SendLootBoxData()</a>, and <a class="el" href="AIManager_8cpp_source.html#l00167">channel::AIManager::UpdateActiveStates()</a>.</p>
+<p>Referenced by <a class="el" href="ActionManager_8cpp_source.html#l02929">channel::ActionManager::CreateLoot()</a>, <a class="el" href="SkillManager_8cpp_source.html#l05168">channel::SkillManager::HandleKills()</a>, <a class="el" href="SkillManager_8cpp_source.html#l06670">channel::SkillManager::HandleNegotiations()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02091">channel::ZoneManager::RemoveEntities()</a>, <a class="el" href="SkillManager_8cpp_source.html#l08478">channel::SkillManager::ScheduleFreeLoot()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02549">channel::ZoneManager::SendAllyData()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02472">channel::ZoneManager::SendEnemyData()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02235">channel::ZoneManager::SendLootBoxData()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02117">channel::ZoneManager::ShowNPC()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l02144">channel::ZoneManager::ShowObject()</a>, and <a class="el" href="AIManager_8cpp_source.html#l00215">channel::AIManager::UpdateActiveStates()</a>.</p>
 
 </div>
 </div>
@@ -535,7 +538,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ChannelClientConnection_8cpp_source.html#l00043">43</a> of file <a class="el" href="ChannelClientConnection_8cpp_source.html">ChannelClientConnection.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelClientConnection_8h_source.html#l00121">mClientState</a>.</p>
+<p>References <a class="el" href="ChannelClientConnection_8h_source.html#l00128">mClientState</a>.</p>
 
 </div>
 </div>
@@ -557,7 +560,29 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ChannelClientConnection_8cpp_source.html#l00053">53</a> of file <a class="el" href="ChannelClientConnection_8cpp_source.html">ChannelClientConnection.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelClientConnection_8h_source.html#l00125">mTimeout</a>.</p>
+<p>References <a class="el" href="ChannelClientConnection_8h_source.html#l00132">mTimeout</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1496e2c1ff0642e2ed5e8f38fa139424"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChannelClientConnection::Kill </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close the connection after marking it to not save any logout data. </p>
+<p>This is useful for if the client gets into a state that is too complex to recover from to avoid data corruption. </p>
+
+<p>Definition at line <a class="el" href="ChannelClientConnection_8cpp_source.html#l00058">58</a> of file <a class="el" href="ChannelClientConnection_8cpp_source.html">ChannelClientConnection.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1EncryptedConnection.html#a25b99e80c70677f5e3345259559c9acc">libcomp::ChannelConnection::Close()</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00128">mClientState</a>.</p>
 
 </div>
 </div>
@@ -596,7 +621,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ChannelClientConnection_8cpp_source.html#l00048">48</a> of file <a class="el" href="ChannelClientConnection_8cpp_source.html">ChannelClientConnection.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelClientConnection_8h_source.html#l00125">mTimeout</a>.</p>
+<p>References <a class="el" href="ChannelClientConnection_8h_source.html#l00132">mTimeout</a>.</p>
 
 </div>
 </div>
@@ -655,11 +680,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ChannelClientConnection_8cpp_source.html#l00103">103</a> of file <a class="el" href="ChannelClientConnection_8cpp_source.html">ChannelClientConnection.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ChannelClientConnection_8cpp_source.html#l00109">109</a> of file <a class="el" href="ChannelClientConnection_8cpp_source.html">ChannelClientConnection.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a392884f8baef58e545c9559e75733e69">libcomp::Packet::Seek()</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>, <a class="el" href="ClientState_8cpp_source.html#l00316">channel::ClientState::ToClientTime()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a0552e50a74cbfb509fa07ab7afcaab2d">libcomp::Packet::WriteFloat()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a392884f8baef58e545c9559e75733e69">libcomp::Packet::Seek()</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>, <a class="el" href="ClientState_8cpp_source.html#l00368">channel::ClientState::ToClientTime()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a0552e50a74cbfb509fa07ab7afcaab2d">libcomp::Packet::WriteFloat()</a>.</p>
 
-<p>Referenced by <a class="el" href="ZoneManager_8cpp_source.html#l01090">channel::ZoneManager::FixCurrentPosition()</a>, <a class="el" href="SkillManager_8cpp_source.html#l01535">channel::SkillManager::ProcessSkillResultFinal()</a>, <a class="el" href="SkillManager_8cpp_source.html#l06529">channel::SkillManager::SendActivateSkill()</a>, <a class="el" href="SkillManager_8cpp_source.html#l06653">channel::SkillManager::SendCompleteSkill()</a>, <a class="el" href="SkillManager_8cpp_source.html#l06564">channel::SkillManager::SendExecuteSkill()</a>, <a class="el" href="SkillManager_8cpp_source.html#l06612">channel::SkillManager::SendExecuteSkillInstant()</a>, <a class="el" href="AIManager_8cpp_source.html#l00167">channel::AIManager::UpdateActiveStates()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l02430">channel::ZoneManager::Warp()</a>.</p>
+<p>Referenced by <a class="el" href="ZoneManager_8cpp_source.html#l02171">channel::ZoneManager::FixCurrentPosition()</a>, <a class="el" href="SkillManager_8cpp_source.html#l02824">channel::SkillManager::ProcessSkillResultFinal()</a>, <a class="el" href="SkillManager_8cpp_source.html#l10977">channel::SkillManager::SendActivateSkill()</a>, <a class="el" href="SkillManager_8cpp_source.html#l11149">channel::SkillManager::SendCompleteSkill()</a>, <a class="el" href="SkillManager_8cpp_source.html#l11033">channel::SkillManager::SendExecuteSkill()</a>, <a class="el" href="SkillManager_8cpp_source.html#l11104">channel::SkillManager::SendExecuteSkillInstant()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l04999">channel::ZoneManager::SendInstanceTimer()</a>, <a class="el" href="AIManager_8cpp_source.html#l00215">channel::AIManager::UpdateActiveStates()</a>, and <a class="el" href="ZoneManager_8cpp_source.html#l04395">channel::ZoneManager::Warp()</a>.</p>
 
 </div>
 </div>
@@ -684,9 +709,9 @@ Private Attributes</h2></td></tr>
 
 <p>State of the client. </p>
 
-<p>Definition at line <a class="el" href="ChannelClientConnection_8h_source.html#l00121">121</a> of file <a class="el" href="ChannelClientConnection_8h_source.html">ChannelClientConnection.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelClientConnection_8h_source.html#l00128">128</a> of file <a class="el" href="ChannelClientConnection_8h_source.html">ChannelClientConnection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelClientConnection_8cpp_source.html#l00043">GetClientState()</a>.</p>
+<p>Referenced by <a class="el" href="ChannelClientConnection_8cpp_source.html#l00043">GetClientState()</a>, and <a class="el" href="ChannelClientConnection_8cpp_source.html#l00058">Kill()</a>.</p>
 
 </div>
 </div>
@@ -710,7 +735,7 @@ Private Attributes</h2></td></tr>
 
 <p>Server timestamp used to disconnect the client should it pass without refreshing beforehand. </p>
 
-<p>Definition at line <a class="el" href="ChannelClientConnection_8h_source.html#l00125">125</a> of file <a class="el" href="ChannelClientConnection_8h_source.html">ChannelClientConnection.h</a>.</p>
+<p>Definition at line <a class="el" href="ChannelClientConnection_8h_source.html#l00132">132</a> of file <a class="el" href="ChannelClientConnection_8h_source.html">ChannelClientConnection.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ChannelClientConnection_8cpp_source.html#l00053">GetTimeout()</a>, and <a class="el" href="ChannelClientConnection_8cpp_source.html#l00048">RefreshTimeout()</a>.</p>
 

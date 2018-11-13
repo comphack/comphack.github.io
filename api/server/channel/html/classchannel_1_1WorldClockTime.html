@@ -152,7 +152,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Multi-number representation of the time in the current world. </p>
 
-<p>Definition at line <a class="el" href="WorldClock_8h_source.html#l00040">40</a> of file <a class="el" href="WorldClock_8h_source.html">WorldClock.h</a>.</p>
+<p>Definition at line <a class="el" href="WorldClock_8h_source.html#l00045">45</a> of file <a class="el" href="WorldClock_8h_source.html">WorldClock.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8a6a9bd8c0915fee0401f45da454366e"></a>
 <div class="memitem">
@@ -169,7 +169,7 @@ Public Attributes</h2></td></tr>
 
 <p>Construct a new time with default un-set values. </p>
 
-<p>Definition at line <a class="el" href="WorldClock_8cpp_source.html#l00032">32</a> of file <a class="el" href="WorldClock_8cpp_source.html">WorldClock.cpp</a>.</p>
+<p>Definition at line <a class="el" href="WorldClock_8cpp_source.html#l00080">80</a> of file <a class="el" href="WorldClock_8cpp_source.html">WorldClock.cpp</a>.</p>
 
 </div>
 </div>
@@ -190,11 +190,11 @@ Public Attributes</h2></td></tr>
 <p>Return a combined hash representation of the time. </p>
 <dl class="section return"><dt>Returns</dt><dd>Hash representation of the time </dd></dl>
 
-<p>Definition at line <a class="el" href="WorldClock_8cpp_source.html#l00056">56</a> of file <a class="el" href="WorldClock_8cpp_source.html">WorldClock.cpp</a>.</p>
+<p>Definition at line <a class="el" href="WorldClock_8cpp_source.html#l00104">104</a> of file <a class="el" href="WorldClock_8cpp_source.html">WorldClock.cpp</a>.</p>
 
-<p>References <a class="el" href="WorldClock_8h_source.html#l00053">Hour</a>, <a class="el" href="WorldClock_8h_source.html#l00056">Min</a>, <a class="el" href="WorldClock_8h_source.html#l00050">MoonPhase</a>, <a class="el" href="WorldClock_8h_source.html#l00059">SystemHour</a>, and <a class="el" href="WorldClock_8h_source.html#l00062">SystemMin</a>.</p>
+<p>References <a class="el" href="WorldClock_8h_source.html#l00058">Hour</a>, <a class="el" href="WorldClock_8h_source.html#l00061">Min</a>, <a class="el" href="WorldClock_8h_source.html#l00055">MoonPhase</a>, <a class="el" href="WorldClock_8h_source.html#l00064">SystemHour</a>, and <a class="el" href="WorldClock_8h_source.html#l00067">SystemMin</a>.</p>
 
-<p>Referenced by <a class="el" href="WorldClock_8cpp_source.html#l00042">operator&lt;()</a>, and <a class="el" href="WorldClock_8cpp_source.html#l00037">operator==()</a>.</p>
+<p>Referenced by <a class="el" href="WorldClock_8cpp_source.html#l00090">operator&lt;()</a>, and <a class="el" href="WorldClock_8cpp_source.html#l00085">operator==()</a>.</p>
 
 </div>
 </div>
@@ -214,11 +214,11 @@ Public Attributes</h2></td></tr>
 <p>Check if any values on the time are set. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if any values are set </dd></dl>
 
-<p>Definition at line <a class="el" href="WorldClock_8cpp_source.html#l00047">47</a> of file <a class="el" href="WorldClock_8cpp_source.html">WorldClock.cpp</a>.</p>
+<p>Definition at line <a class="el" href="WorldClock_8cpp_source.html#l00095">95</a> of file <a class="el" href="WorldClock_8cpp_source.html">WorldClock.cpp</a>.</p>
 
-<p>References <a class="el" href="WorldClock_8h_source.html#l00053">Hour</a>, <a class="el" href="WorldClock_8h_source.html#l00056">Min</a>, <a class="el" href="WorldClock_8h_source.html#l00050">MoonPhase</a>, <a class="el" href="WorldClock_8h_source.html#l00059">SystemHour</a>, and <a class="el" href="WorldClock_8h_source.html#l00062">SystemMin</a>.</p>
+<p>References <a class="el" href="WorldClock_8h_source.html#l00058">Hour</a>, <a class="el" href="WorldClock_8h_source.html#l00061">Min</a>, <a class="el" href="WorldClock_8h_source.html#l00055">MoonPhase</a>, <a class="el" href="WorldClock_8h_source.html#l00064">SystemHour</a>, and <a class="el" href="WorldClock_8h_source.html#l00067">SystemMin</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l01158">channel::ChannelServer::RecalcNextWorldEventTime()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01042">channel::ChannelServer::RegisterClockEvent()</a>.</p>
+<p>Referenced by <a class="el" href="ZoneManager_8cpp_source.html#l04425">channel::ZoneManager::HandleTimedActions()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01461">channel::ChannelServer::RecalcNextWorldEventTime()</a>, and <a class="el" href="ChannelServer_8cpp_source.html#l01314">channel::ChannelServer::RegisterClockEvent()</a>.</p>
 
 </div>
 </div>
@@ -245,9 +245,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the time is less than the other, false if it is not </dd></dl>
 
-<p>Definition at line <a class="el" href="WorldClock_8cpp_source.html#l00042">42</a> of file <a class="el" href="WorldClock_8cpp_source.html">WorldClock.cpp</a>.</p>
+<p>Definition at line <a class="el" href="WorldClock_8cpp_source.html#l00090">90</a> of file <a class="el" href="WorldClock_8cpp_source.html">WorldClock.cpp</a>.</p>
 
-<p>References <a class="el" href="WorldClock_8cpp_source.html#l00056">Hash()</a>.</p>
+<p>References <a class="el" href="WorldClock_8cpp_source.html#l00104">Hash()</a>.</p>
 
 </div>
 </div>
@@ -274,9 +274,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if they are the same, false if they are not </dd></dl>
 
-<p>Definition at line <a class="el" href="WorldClock_8cpp_source.html#l00037">37</a> of file <a class="el" href="WorldClock_8cpp_source.html">WorldClock.cpp</a>.</p>
+<p>Definition at line <a class="el" href="WorldClock_8cpp_source.html#l00085">85</a> of file <a class="el" href="WorldClock_8cpp_source.html">WorldClock.cpp</a>.</p>
 
-<p>References <a class="el" href="WorldClock_8cpp_source.html#l00056">Hash()</a>.</p>
+<p>References <a class="el" href="WorldClock_8cpp_source.html#l00104">Hash()</a>.</p>
 
 </div>
 </div>
@@ -293,9 +293,9 @@ Public Attributes</h2></td></tr>
 
 <p>Game time hours (-1 for not set) </p>
 
-<p>Definition at line <a class="el" href="WorldClock_8h_source.html#l00053">53</a> of file <a class="el" href="WorldClock_8h_source.html">WorldClock.h</a>.</p>
+<p>Definition at line <a class="el" href="WorldClock_8h_source.html#l00058">58</a> of file <a class="el" href="WorldClock_8h_source.html">WorldClock.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01961">channel::TokuseiManager::BuildWorldClockTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00636">channel::ChannelServer::GetWorldClockTime()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00056">Hash()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00047">IsSet()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01158">channel::ChannelServer::RecalcNextWorldEventTime()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01676">channel::TokuseiManager::RecalcTimedTokusei()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01042">channel::ChannelServer::RegisterClockEvent()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l03051">channel::ZoneManager::RegisterTimeRestrictions()</a>, and <a class="el" href="Zone_8cpp_source.html#l00994">channel::Zone::TimeRestrictionActive()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l02185">channel::TokuseiManager::BuildWorldClockTime()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l08071">channel::ZoneManager::GetTriggerTimes()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00808">channel::ChannelServer::GetWorldClockTime()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l04425">channel::ZoneManager::HandleTimedActions()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00104">Hash()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00124">channel::WorldClock::IsNight()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00095">IsSet()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01461">channel::ChannelServer::RecalcNextWorldEventTime()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01830">channel::TokuseiManager::RecalcTimedTokusei()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01314">channel::ChannelServer::RegisterClockEvent()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l07881">channel::ZoneManager::RegisterTimeRestrictions()</a>, <a class="el" href="Zone_8cpp_source.html#l01648">channel::Zone::TimeRestrictionActive()</a>, and <a class="el" href="WorldClock_8cpp_source.html#l00129">channel::WorldClock::ToString()</a>.</p>
 
 </div>
 </div>
@@ -311,9 +311,9 @@ Public Attributes</h2></td></tr>
 
 <p>Game time minutes (-1 for not set) </p>
 
-<p>Definition at line <a class="el" href="WorldClock_8h_source.html#l00056">56</a> of file <a class="el" href="WorldClock_8h_source.html">WorldClock.h</a>.</p>
+<p>Definition at line <a class="el" href="WorldClock_8h_source.html#l00061">61</a> of file <a class="el" href="WorldClock_8h_source.html">WorldClock.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01961">channel::TokuseiManager::BuildWorldClockTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00636">channel::ChannelServer::GetWorldClockTime()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00056">Hash()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00047">IsSet()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01158">channel::ChannelServer::RecalcNextWorldEventTime()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01676">channel::TokuseiManager::RecalcTimedTokusei()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01042">channel::ChannelServer::RegisterClockEvent()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l03051">channel::ZoneManager::RegisterTimeRestrictions()</a>, and <a class="el" href="Zone_8cpp_source.html#l00994">channel::Zone::TimeRestrictionActive()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l02185">channel::TokuseiManager::BuildWorldClockTime()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l08071">channel::ZoneManager::GetTriggerTimes()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00808">channel::ChannelServer::GetWorldClockTime()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l04425">channel::ZoneManager::HandleTimedActions()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00104">Hash()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00095">IsSet()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01461">channel::ChannelServer::RecalcNextWorldEventTime()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01830">channel::TokuseiManager::RecalcTimedTokusei()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01314">channel::ChannelServer::RegisterClockEvent()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l07881">channel::ZoneManager::RegisterTimeRestrictions()</a>, <a class="el" href="Zone_8cpp_source.html#l01648">channel::Zone::TimeRestrictionActive()</a>, and <a class="el" href="WorldClock_8cpp_source.html#l00129">channel::WorldClock::ToString()</a>.</p>
 
 </div>
 </div>
@@ -329,9 +329,9 @@ Public Attributes</h2></td></tr>
 
 <p>Current numeric moon phase representation (0 = new moon, 8 = full moon, -1 = not set) </p>
 
-<p>Definition at line <a class="el" href="WorldClock_8h_source.html#l00050">50</a> of file <a class="el" href="WorldClock_8h_source.html">WorldClock.h</a>.</p>
+<p>Definition at line <a class="el" href="WorldClock_8h_source.html#l00055">55</a> of file <a class="el" href="WorldClock_8h_source.html">WorldClock.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l01961">channel::TokuseiManager::BuildWorldClockTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00636">channel::ChannelServer::GetWorldClockTime()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00056">Hash()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00047">IsSet()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01158">channel::ChannelServer::RecalcNextWorldEventTime()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01676">channel::TokuseiManager::RecalcTimedTokusei()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l03051">channel::ZoneManager::RegisterTimeRestrictions()</a>, and <a class="el" href="Zone_8cpp_source.html#l00994">channel::Zone::TimeRestrictionActive()</a>.</p>
+<p>Referenced by <a class="el" href="TokuseiManager_8cpp_source.html#l02185">channel::TokuseiManager::BuildWorldClockTime()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l08071">channel::ZoneManager::GetTriggerTimes()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00808">channel::ChannelServer::GetWorldClockTime()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l04425">channel::ZoneManager::HandleTimedActions()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00104">Hash()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00095">IsSet()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01461">channel::ChannelServer::RecalcNextWorldEventTime()</a>, <a class="el" href="TokuseiManager_8cpp_source.html#l01830">channel::TokuseiManager::RecalcTimedTokusei()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l07881">channel::ZoneManager::RegisterTimeRestrictions()</a>, <a class="el" href="Zone_8cpp_source.html#l01648">channel::Zone::TimeRestrictionActive()</a>, and <a class="el" href="WorldClock_8cpp_source.html#l00129">channel::WorldClock::ToString()</a>.</p>
 
 </div>
 </div>
@@ -347,9 +347,9 @@ Public Attributes</h2></td></tr>
 
 <p>System time hours (-1 for not set) </p>
 
-<p>Definition at line <a class="el" href="WorldClock_8h_source.html#l00059">59</a> of file <a class="el" href="WorldClock_8h_source.html">WorldClock.h</a>.</p>
+<p>Definition at line <a class="el" href="WorldClock_8h_source.html#l00064">64</a> of file <a class="el" href="WorldClock_8h_source.html">WorldClock.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00636">channel::ChannelServer::GetWorldClockTime()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00056">Hash()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00047">IsSet()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01158">channel::ChannelServer::RecalcNextWorldEventTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01042">channel::ChannelServer::RegisterClockEvent()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l03051">channel::ZoneManager::RegisterTimeRestrictions()</a>, and <a class="el" href="Zone_8cpp_source.html#l00994">channel::Zone::TimeRestrictionActive()</a>.</p>
+<p>Referenced by <a class="el" href="ZoneManager_8cpp_source.html#l08071">channel::ZoneManager::GetTriggerTimes()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00808">channel::ChannelServer::GetWorldClockTime()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l04425">channel::ZoneManager::HandleTimedActions()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00104">Hash()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00095">IsSet()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01461">channel::ChannelServer::RecalcNextWorldEventTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01314">channel::ChannelServer::RegisterClockEvent()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l07881">channel::ZoneManager::RegisterTimeRestrictions()</a>, <a class="el" href="Zone_8cpp_source.html#l01648">channel::Zone::TimeRestrictionActive()</a>, and <a class="el" href="WorldClock_8cpp_source.html#l00129">channel::WorldClock::ToString()</a>.</p>
 
 </div>
 </div>
@@ -365,9 +365,9 @@ Public Attributes</h2></td></tr>
 
 <p>System time minutes (-1 for not set) </p>
 
-<p>Definition at line <a class="el" href="WorldClock_8h_source.html#l00062">62</a> of file <a class="el" href="WorldClock_8h_source.html">WorldClock.h</a>.</p>
+<p>Definition at line <a class="el" href="WorldClock_8h_source.html#l00067">67</a> of file <a class="el" href="WorldClock_8h_source.html">WorldClock.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ChannelServer_8cpp_source.html#l00636">channel::ChannelServer::GetWorldClockTime()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00056">Hash()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00047">IsSet()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01158">channel::ChannelServer::RecalcNextWorldEventTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01042">channel::ChannelServer::RegisterClockEvent()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l03051">channel::ZoneManager::RegisterTimeRestrictions()</a>, and <a class="el" href="Zone_8cpp_source.html#l00994">channel::Zone::TimeRestrictionActive()</a>.</p>
+<p>Referenced by <a class="el" href="ZoneManager_8cpp_source.html#l08071">channel::ZoneManager::GetTriggerTimes()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l00808">channel::ChannelServer::GetWorldClockTime()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l04425">channel::ZoneManager::HandleTimedActions()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00104">Hash()</a>, <a class="el" href="WorldClock_8cpp_source.html#l00095">IsSet()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01461">channel::ChannelServer::RecalcNextWorldEventTime()</a>, <a class="el" href="ChannelServer_8cpp_source.html#l01314">channel::ChannelServer::RegisterClockEvent()</a>, <a class="el" href="ZoneManager_8cpp_source.html#l07881">channel::ZoneManager::RegisterTimeRestrictions()</a>, <a class="el" href="Zone_8cpp_source.html#l01648">channel::Zone::TimeRestrictionActive()</a>, and <a class="el" href="WorldClock_8cpp_source.html#l00129">channel::WorldClock::ToString()</a>.</p>
 
 </div>
 </div>

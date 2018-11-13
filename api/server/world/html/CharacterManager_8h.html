@@ -105,6 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;ClanInfo.h&gt;</code><br />
 <code>#include &lt;Party.h&gt;</code><br />
 <code>#include &lt;PartyCharacter.h&gt;</code><br />
+<code>#include &lt;Team.h&gt;</code><br />
 </div>
 <p><a href="CharacterManager_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -132,6 +133,9 @@ Variables</h2></td></tr>
 <tr class="memitem:aaac7a5edb6a85a10764ae4458012f6e4"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CharacterManager_8h.html#aaac7a5edb6a85a10764ae4458012f6e4">RELATED_PARTY</a> = 0x02</td></tr>
 <tr class="memdesc:aaac7a5edb6a85a10764ae4458012f6e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Related characters should be retrieved from the current party.  <a href="#aaac7a5edb6a85a10764ae4458012f6e4">More...</a><br /></td></tr>
 <tr class="separator:aaac7a5edb6a85a10764ae4458012f6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48708f81af041925576733557cd6879"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CharacterManager_8h.html#ab48708f81af041925576733557cd6879">RELATED_TEAM</a> = 0x08</td></tr>
+<tr class="memdesc:ab48708f81af041925576733557cd6879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Related characters should be retrieved from the same team.  <a href="#ab48708f81af041925576733557cd6879">More...</a><br /></td></tr>
+<tr class="separator:ab48708f81af041925576733557cd6879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manager to handle world level character actions. </p>
@@ -156,9 +160,9 @@ Variables</h2></td></tr>
 
 <p>Related characters should be retrieved from the same clan. </p>
 
-<p>Definition at line <a class="el" href="CharacterManager_8h_source.html#l00047">47</a> of file <a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>.</p>
+<p>Definition at line <a class="el" href="CharacterManager_8h_source.html#l00048">48</a> of file <a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ClanUpdate_8cpp_source.html#l00130">ClanInvite()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00916">world::CharacterManager::ClanJoin()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l01172">world::CharacterManager::ClanKick()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l01002">world::CharacterManager::ClanLeave()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00252">world::CharacterManager::GetRelatedCharacterLogins()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l01456">world::CharacterManager::SendClanMemberInfo()</a>, and <a class="el" href="CharacterManager_8cpp_source.html#l00335">world::CharacterManager::SendStatusToRelatedCharacters()</a>.</p>
+<p>Referenced by <a class="el" href="ClanUpdate_8cpp_source.html#l00130">ClanInvite()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00964">world::CharacterManager::ClanJoin()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l01225">world::CharacterManager::ClanKick()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l01050">world::CharacterManager::ClanLeave()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00279">world::CharacterManager::GetRelatedCharacterLogins()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l01514">world::CharacterManager::SendClanMemberInfo()</a>, and <a class="el" href="CharacterManager_8cpp_source.html#l00375">world::CharacterManager::SendStatusToRelatedCharacters()</a>.</p>
 
 </div>
 </div>
@@ -174,9 +178,9 @@ Variables</h2></td></tr>
 
 <p>Related characters should be retrieved from the friends list. </p>
 
-<p>Definition at line <a class="el" href="CharacterManager_8h_source.html#l00041">41</a> of file <a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>.</p>
+<p>Definition at line <a class="el" href="CharacterManager_8h_source.html#l00042">42</a> of file <a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="FriendsUpdate_8cpp_source.html#l00063">FriendList()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00252">world::CharacterManager::GetRelatedCharacterLogins()</a>, and <a class="el" href="CharacterManager_8cpp_source.html#l00335">world::CharacterManager::SendStatusToRelatedCharacters()</a>.</p>
+<p>Referenced by <a class="el" href="FriendsUpdate_8cpp_source.html#l00063">FriendList()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00279">world::CharacterManager::GetRelatedCharacterLogins()</a>, and <a class="el" href="CharacterManager_8cpp_source.html#l00375">world::CharacterManager::SendStatusToRelatedCharacters()</a>.</p>
 
 </div>
 </div>
@@ -192,9 +196,27 @@ Variables</h2></td></tr>
 
 <p>Related characters should be retrieved from the current party. </p>
 
-<p>Definition at line <a class="el" href="CharacterManager_8h_source.html#l00044">44</a> of file <a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>.</p>
+<p>Definition at line <a class="el" href="CharacterManager_8h_source.html#l00045">45</a> of file <a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="CharacterManager_8cpp_source.html#l00252">world::CharacterManager::GetRelatedCharacterLogins()</a>, <a class="el" href="PartyUpdate_8cpp_source.html#l00116">PartyDropRule()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00462">world::CharacterManager::PartyJoin()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00779">world::CharacterManager::PartyKick()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00599">world::CharacterManager::PartyLeave()</a>, and <a class="el" href="CharacterManager_8cpp_source.html#l00335">world::CharacterManager::SendStatusToRelatedCharacters()</a>.</p>
+<p>Referenced by <a class="el" href="CharacterManager_8cpp_source.html#l00279">world::CharacterManager::GetRelatedCharacterLogins()</a>, <a class="el" href="PartyUpdate_8cpp_source.html#l00126">PartyDropRule()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00827">world::CharacterManager::PartyKick()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l00645">world::CharacterManager::PartyLeave()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l02096">world::CharacterManager::SendPartyMember()</a>, and <a class="el" href="CharacterManager_8cpp_source.html#l00375">world::CharacterManager::SendStatusToRelatedCharacters()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab48708f81af041925576733557cd6879"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t RELATED_TEAM = 0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Related characters should be retrieved from the same team. </p>
+
+<p>Definition at line <a class="el" href="CharacterManager_8h_source.html#l00051">51</a> of file <a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="CharacterManager_8cpp_source.html#l00279">world::CharacterManager::GetRelatedCharacterLogins()</a>, <a class="el" href="TeamUpdate_8cpp_source.html#l00049">TeamForm()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l01638">world::CharacterManager::TeamJoin()</a>, <a class="el" href="CharacterManager_8cpp_source.html#l01882">world::CharacterManager::TeamKick()</a>, and <a class="el" href="CharacterManager_8cpp_source.html#l01687">world::CharacterManager::TeamLeave()</a>.</p>
 
 </div>
 </div>

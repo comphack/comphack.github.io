@@ -17,6 +17,7 @@ var searchData=
   ['connection_5fmessage_5fencrypted',['CONNECTION_MESSAGE_ENCRYPTED',['../namespacelibcomp_1_1Message.html#a6216a7d546bf04641027b3b0eb205692ac2fa38340b1ae9f046c1e15c46a29fb4',1,'libcomp::Message']]],
   ['connection_5fmessage_5fworld_5fnotification',['CONNECTION_MESSAGE_WORLD_NOTIFICATION',['../namespacelibcomp_1_1Message.html#a6216a7d546bf04641027b3b0eb205692afaf4889ac7178dd2a459437d6b6b721a',1,'libcomp::Message']]],
   ['connection_5ftimeout',['CONNECTION_TIMEOUT',['../ErrorCodes_8h.html#a2cf7f25f3a3bc56e70c6f1ae0cc8323bad094d5806cc309e317fd3420bbd30fb5',1,'ErrorCodes.h']]],
+  ['cooldown_5f20h',['COOLDOWN_20H',['../ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17a14ebd7cd5ee381b4c6d6184b9ae63468',1,'ErrorCodes.h']]],
   ['cooling_5fdown',['COOLING_DOWN',['../ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a8958c7e165eef2502b02c733ea4dc6ec',1,'ErrorCodes.h']]],
   ['current',['CURRENT',['../classlibcomp_1_1DataFile.html#aa6ff1ed93162af325778c51ead0e5ba9aa2770969c827f0f2910f6179418462df',1,'libcomp::DataFile']]]
 ];

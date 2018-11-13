@@ -100,8 +100,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Class to manage Squirrel scripting.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ScriptEngine_8h_source.html">ScriptEngine.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Constants_8h_source.html">Constants.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="BaseServer_8h_source.html">BaseServer.h</a>&quot;</code><br />
+<code>#include &quot;Constants.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="Database_8h_source.html">Database.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Decrypt_8h_source.html">Decrypt.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="DefinitionManager_8h_source.html">DefinitionManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Log_8h_source.html">Log.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ServerDataManager_8h_source.html">ServerDataManager.h</a>&quot;</code><br />
+<code>#include &lt;Account.h&gt;</code><br />
+<code>#include &lt;AccountWorldData.h&gt;</code><br />
+<code>#include &lt;BazaarData.h&gt;</code><br />
+<code>#include &lt;BazaarItem.h&gt;</code><br />
+<code>#include &lt;Character.h&gt;</code><br />
+<code>#include &lt;Demon.h&gt;</code><br />
+<code>#include &lt;RegisteredChannel.h&gt;</code><br />
+<code>#include &lt;RegisteredWorld.h&gt;</code><br />
 <code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;cstdarg&gt;</code><br />
 <code>#include &lt;sqstdaux.h&gt;</code><br />
@@ -110,6 +123,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a39f8bb5961adafc006ef2a2beade95e1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2ScriptEngine_8cpp.html#a39f8bb5961adafc006ef2a2beade95e1">ScriptImport</a> (HSQUIRRELVM vm, const char *szModule)</td></tr>
+<tr class="separator:a39f8bb5961adafc006ef2a2beade95e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947f422ef7cb955986641abfec305b3e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2ScriptEngine_8cpp.html#a947f422ef7cb955986641abfec305b3e">ScriptInclude</a> (HSQUIRRELVM vm, const char *szPath)</td></tr>
+<tr class="separator:a947f422ef7cb955986641abfec305b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a999bfc4c117a75b1933109ddb46b3ed6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2ScriptEngine_8cpp.html#a999bfc4c117a75b1933109ddb46b3ed6">SquirrelErrorFunction</a> (HSQUIRRELVM vm, const SQChar *szFormat,...)</td></tr>
 <tr class="separator:a999bfc4c117a75b1933109ddb46b3ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac632755683e5f3aa6f7414c7e9bc2666"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2ScriptEngine_8cpp.html#ac632755683e5f3aa6f7414c7e9bc2666">SquirrelErrorFunctionRaw</a> (HSQUIRRELVM vm, const SQChar *szFormat,...)</td></tr>
@@ -118,6 +135,14 @@ Functions</h2></td></tr>
 <tr class="separator:a7c343d6cf4ba369dc1c130ee0b8828fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a395abd39629ce8c0c8b2c58a72db715b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2ScriptEngine_8cpp.html#a395abd39629ce8c0c8b2c58a72db715b">SquirrelPrintFunctionRaw</a> (HSQUIRRELVM vm, const SQChar *szFormat,...)</td></tr>
 <tr class="separator:a395abd39629ce8c0c8b2c58a72db715b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dfe9de22338ef6d4e8237797b5c6ec6"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; objects::Account &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2ScriptEngine_8cpp.html#a9dfe9de22338ef6d4e8237797b5c6ec6">ToAccount</a> (const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">libcomp::PersistentObject</a> &gt; &amp;obj)</td></tr>
+<tr class="separator:a9dfe9de22338ef6d4e8237797b5c6ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb3740b7042fa34600fc51279d16414a"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; objects::AccountWorldData &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2ScriptEngine_8cpp.html#aeb3740b7042fa34600fc51279d16414a">ToAccountWorldData</a> (const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">libcomp::PersistentObject</a> &gt; &amp;obj)</td></tr>
+<tr class="separator:aeb3740b7042fa34600fc51279d16414a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5c1e445e03d395f709dc16f77f1872"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; objects::Character &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2ScriptEngine_8cpp.html#a3e5c1e445e03d395f709dc16f77f1872">ToCharacter</a> (const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">libcomp::PersistentObject</a> &gt; &amp;obj)</td></tr>
+<tr class="separator:a3e5c1e445e03d395f709dc16f77f1872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83847bb86b5c0247e915d315c035e2b3"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; objects::Demon &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2ScriptEngine_8cpp.html#a83847bb86b5c0247e915d315c035e2b3">ToDemon</a> (const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">libcomp::PersistentObject</a> &gt; &amp;obj)</td></tr>
+<tr class="separator:a83847bb86b5c0247e915d315c035e2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -139,6 +164,86 @@ Variables</h2></td></tr>
 
 <p>Definition in file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a39f8bb5961adafc006ef2a2beade95e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> ScriptImport </td>
+          <td>(</td>
+          <td class="paramtype">HSQUIRRELVM&#160;</td>
+          <td class="paramname"><em>vm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szModule</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00092">92</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
+
+<p>References <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00282">libcomp::ScriptEngine::Self()</a>.</p>
+
+<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00204">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a947f422ef7cb955986641abfec305b3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> ScriptInclude </td>
+          <td>(</td>
+          <td class="paramtype">HSQUIRRELVM&#160;</td>
+          <td class="paramname"><em>vm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00087">87</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
+
+<p>References <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00282">libcomp::ScriptEngine::Self()</a>.</p>
+
+<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00204">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a999bfc4c117a75b1933109ddb46b3ed6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -177,11 +282,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00071">71</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00124">124</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
 
-<p>References <a class="el" href="Log_8h_source.html#l00264">LOG_ERROR</a>, and <a class="el" href="CString_8cpp_source.html#l00364">libcomp::String::Split()</a>.</p>
+<p>References <a class="el" href="Log_8h_source.html#l00370">LOG_ERROR</a>, and <a class="el" href="CString_8cpp_source.html#l00364">libcomp::String::Split()</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00151">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
+<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00204">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
 
 </div>
 </div>
@@ -223,11 +328,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00123">123</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00176">176</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
 
-<p>References <a class="el" href="Log_8h_source.html#l00264">LOG_ERROR</a>, and <a class="el" href="CString_8cpp_source.html#l00364">libcomp::String::Split()</a>.</p>
+<p>References <a class="el" href="Log_8h_source.html#l00370">LOG_ERROR</a>, and <a class="el" href="CString_8cpp_source.html#l00364">libcomp::String::Split()</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00151">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
+<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00204">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
 
 </div>
 </div>
@@ -269,11 +374,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00044">44</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00097">97</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
 
-<p>References <a class="el" href="Log_8h_source.html#l00282">LOG_INFO</a>, and <a class="el" href="CString_8cpp_source.html#l00364">libcomp::String::Split()</a>.</p>
+<p>References <a class="el" href="Log_8h_source.html#l00388">LOG_INFO</a>, and <a class="el" href="CString_8cpp_source.html#l00364">libcomp::String::Split()</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00151">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
+<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00204">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
 
 </div>
 </div>
@@ -315,11 +420,123 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00098">98</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00151">151</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
 
-<p>References <a class="el" href="Log_8h_source.html#l00282">LOG_INFO</a>, and <a class="el" href="CString_8cpp_source.html#l00364">libcomp::String::Split()</a>.</p>
+<p>References <a class="el" href="Log_8h_source.html#l00388">LOG_INFO</a>, and <a class="el" href="CString_8cpp_source.html#l00364">libcomp::String::Split()</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00151">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
+<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00204">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9dfe9de22338ef6d4e8237797b5c6ec6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::shared_ptr&lt;objects::Account&gt; ToAccount </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">libcomp::PersistentObject</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00063">63</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00204">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb3740b7042fa34600fc51279d16414a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::shared_ptr&lt;objects::AccountWorldData&gt; ToAccountWorldData </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">libcomp::PersistentObject</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00069">69</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00204">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e5c1e445e03d395f709dc16f77f1872"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::shared_ptr&lt;objects::Character&gt; ToCharacter </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">libcomp::PersistentObject</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00075">75</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00204">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83847bb86b5c0247e915d315c035e2b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::shared_ptr&lt;objects::Demon&gt; ToDemon </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1PersistentObject.html">libcomp::PersistentObject</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00081">81</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00204">libcomp::ScriptEngine::ScriptEngine()</a>.</p>
 
 </div>
 </div>
@@ -334,9 +551,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00041">41</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00057">57</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00186">libcomp::ScriptEngine::Eval()</a>.</p>
+<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00254">libcomp::ScriptEngine::Eval()</a>.</p>
 
 </div>
 </div>
@@ -350,9 +567,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00040">40</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00056">56</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00186">libcomp::ScriptEngine::Eval()</a>.</p>
+<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00254">libcomp::ScriptEngine::Eval()</a>.</p>
 
 </div>
 </div>
@@ -366,9 +583,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00042">42</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
+<p>Definition at line <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00058">58</a> of file <a class="el" href="src_2ScriptEngine_8cpp_source.html">src/ScriptEngine.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00186">libcomp::ScriptEngine::Eval()</a>.</p>
+<p>Referenced by <a class="el" href="src_2ScriptEngine_8cpp_source.html#l00254">libcomp::ScriptEngine::Eval()</a>.</p>
 
 </div>
 </div>

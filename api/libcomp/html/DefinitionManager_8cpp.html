@@ -101,16 +101,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="DefinitionManager_8h_source.html">DefinitionManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Log_8h_source.html">Log.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ScriptEngine_8h_source.html">ScriptEngine.h</a>&quot;</code><br />
 <code>#include &lt;EnchantSetData.h&gt;</code><br />
 <code>#include &lt;EnchantSpecialData.h&gt;</code><br />
 <code>#include &lt;MiAIData.h&gt;</code><br />
+<code>#include &lt;MiBlendData.h&gt;</code><br />
+<code>#include &lt;MiBlendExtData.h&gt;</code><br />
+<code>#include &lt;MiCHouraiData.h&gt;</code><br />
 <code>#include &lt;MiCItemBaseData.h&gt;</code><br />
 <code>#include &lt;MiCItemData.h&gt;</code><br />
+<code>#include &lt;MiCultureItemData.h&gt;</code><br />
 <code>#include &lt;MiCZoneRelationData.h&gt;</code><br />
+<code>#include &lt;MiDamageData.h&gt;</code><br />
 <code>#include &lt;MiDCategoryData.h&gt;</code><br />
 <code>#include &lt;MiDevilBookData.h&gt;</code><br />
+<code>#include &lt;MiDevilBoostData.h&gt;</code><br />
+<code>#include &lt;MiDevilBoostExtraData.h&gt;</code><br />
+<code>#include &lt;MiDevilBoostItemData.h&gt;</code><br />
+<code>#include &lt;MiDevilBoostLotData.h&gt;</code><br />
 <code>#include &lt;MiDevilCrystalData.h&gt;</code><br />
 <code>#include &lt;MiDevilData.h&gt;</code><br />
+<code>#include &lt;MiDevilEquipmentData.h&gt;</code><br />
+<code>#include &lt;MiDevilEquipmentItemData.h&gt;</code><br />
+<code>#include &lt;MiDevilFusionData.h&gt;</code><br />
 <code>#include &lt;MiDevilLVUpRateData.h&gt;</code><br />
 <code>#include &lt;MiDisassemblyData.h&gt;</code><br />
 <code>#include &lt;MiDisassemblyTriggerData.h&gt;</code><br />
@@ -122,9 +135,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;MiExpertData.h&gt;</code><br />
 <code>#include &lt;MiExpertRankData.h&gt;</code><br />
 <code>#include &lt;MiGrowthData.h&gt;</code><br />
+<code>#include &lt;MiGuardianAssistData.h&gt;</code><br />
+<code>#include &lt;MiGuardianLevelData.h&gt;</code><br />
+<code>#include &lt;MiGuardianLevelDataEntry.h&gt;</code><br />
+<code>#include &lt;MiGuardianSpecialData.h&gt;</code><br />
+<code>#include &lt;MiGuardianUnlockData.h&gt;</code><br />
 <code>#include &lt;MiHNPCBasicData.h&gt;</code><br />
 <code>#include &lt;MiHNPCData.h&gt;</code><br />
 <code>#include &lt;MiItemData.h&gt;</code><br />
+<code>#include &lt;MiMissionData.h&gt;</code><br />
+<code>#include &lt;MiMitamaReunionBonusData.h&gt;</code><br />
+<code>#include &lt;MiMitamaReunionSetBonusData.h&gt;</code><br />
+<code>#include &lt;MiMitamaUnionBonusData.h&gt;</code><br />
 <code>#include &lt;MiModificationData.h&gt;</code><br />
 <code>#include &lt;MiModificationExtEffectData.h&gt;</code><br />
 <code>#include &lt;MiModificationExtRecipeData.h&gt;</code><br />
@@ -133,6 +155,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;MiNPCBarterData.h&gt;</code><br />
 <code>#include &lt;MiNPCBasicData.h&gt;</code><br />
 <code>#include &lt;MiONPCData.h&gt;</code><br />
+<code>#include &lt;MiQuestBonusCodeData.h&gt;</code><br />
 <code>#include &lt;MiQuestData.h&gt;</code><br />
 <code>#include &lt;MiShopProductData.h&gt;</code><br />
 <code>#include &lt;MiSItemData.h&gt;</code><br />
@@ -141,9 +164,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;MiSpotData.h&gt;</code><br />
 <code>#include &lt;MiSStatusData.h&gt;</code><br />
 <code>#include &lt;MiStatusData.h&gt;</code><br />
+<code>#include &lt;MiSynthesisData.h&gt;</code><br />
+<code>#include &lt;MiTimeLimitData.h&gt;</code><br />
+<code>#include &lt;MiTitleData.h&gt;</code><br />
 <code>#include &lt;MiTriUnionSpecialData.h&gt;</code><br />
 <code>#include &lt;MiWarpPointData.h&gt;</code><br />
 <code>#include &lt;MiUnionData.h&gt;</code><br />
+<code>#include &lt;MiUraFieldTowerData.h&gt;</code><br />
 <code>#include &lt;MiZoneData.h&gt;</code><br />
 <code>#include &lt;MiZoneBasicData.h&gt;</code><br />
 <code>#include &lt;QmpFile.h&gt;</code><br />
@@ -159,12 +186,177 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a4af73545da8968aaa693e1ce445eeab1"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a4af73545da8968aaa693e1ce445eeab1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a4af73545da8968aaa693e1ce445eeab1">libcomp::DefinitionManager::LoadData&lt; objects::MiAIData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a4af73545da8968aaa693e1ce445eeab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225ff9e9c182e203a52f8ac02ca80f5f"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a225ff9e9c182e203a52f8ac02ca80f5f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a225ff9e9c182e203a52f8ac02ca80f5f">libcomp::DefinitionManager::LoadData&lt; objects::MiBlendData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a225ff9e9c182e203a52f8ac02ca80f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f4271bf570658698deb8f92101fd4cf"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a9f4271bf570658698deb8f92101fd4cf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a9f4271bf570658698deb8f92101fd4cf">libcomp::DefinitionManager::LoadData&lt; objects::MiBlendExtData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a9f4271bf570658698deb8f92101fd4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03632a99c2316b11a2d2886090d490dc"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a03632a99c2316b11a2d2886090d490dc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a03632a99c2316b11a2d2886090d490dc">libcomp::DefinitionManager::LoadData&lt; objects::MiCHouraiData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a03632a99c2316b11a2d2886090d490dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc27e7367e2ddb7a8c0f8f07722f35c"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a9dc27e7367e2ddb7a8c0f8f07722f35c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a9dc27e7367e2ddb7a8c0f8f07722f35c">libcomp::DefinitionManager::LoadData&lt; objects::MiCItemData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a9dc27e7367e2ddb7a8c0f8f07722f35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917509802d16740298081a9e2e9d4956"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a917509802d16740298081a9e2e9d4956"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a917509802d16740298081a9e2e9d4956">libcomp::DefinitionManager::LoadData&lt; objects::MiCultureItemData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a917509802d16740298081a9e2e9d4956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b303e3022ef5ed95b11589ee5a9149e"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a4b303e3022ef5ed95b11589ee5a9149e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a4b303e3022ef5ed95b11589ee5a9149e">libcomp::DefinitionManager::LoadData&lt; objects::MiCZoneRelationData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a4b303e3022ef5ed95b11589ee5a9149e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa696cbbb8de724b106cab086d07f1626"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:aa696cbbb8de724b106cab086d07f1626"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#aa696cbbb8de724b106cab086d07f1626">libcomp::DefinitionManager::LoadData&lt; objects::MiDevilBookData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:aa696cbbb8de724b106cab086d07f1626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86baacac23cee7f4a1ddc46100bfa83"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:ab86baacac23cee7f4a1ddc46100bfa83"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#ab86baacac23cee7f4a1ddc46100bfa83">libcomp::DefinitionManager::LoadData&lt; objects::MiDevilBoostData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:ab86baacac23cee7f4a1ddc46100bfa83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c181c48d13a563d222374b81a3e01aa"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a5c181c48d13a563d222374b81a3e01aa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a5c181c48d13a563d222374b81a3e01aa">libcomp::DefinitionManager::LoadData&lt; objects::MiDevilBoostExtraData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a5c181c48d13a563d222374b81a3e01aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57450cb45e4552e32cbbec347ee13911"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a57450cb45e4552e32cbbec347ee13911"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a57450cb45e4552e32cbbec347ee13911">libcomp::DefinitionManager::LoadData&lt; objects::MiDevilBoostItemData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a57450cb45e4552e32cbbec347ee13911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933828b7925dff7968205391e38f538e"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a933828b7925dff7968205391e38f538e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a933828b7925dff7968205391e38f538e">libcomp::DefinitionManager::LoadData&lt; objects::MiDevilBoostLotData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a933828b7925dff7968205391e38f538e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae983c35421d06f0b5b94245c83ccbf25"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:ae983c35421d06f0b5b94245c83ccbf25"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#ae983c35421d06f0b5b94245c83ccbf25">libcomp::DefinitionManager::LoadData&lt; objects::MiDevilData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:ae983c35421d06f0b5b94245c83ccbf25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c9ed68bc51aa158474a43e5d3f1f4c"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:ad4c9ed68bc51aa158474a43e5d3f1f4c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#ad4c9ed68bc51aa158474a43e5d3f1f4c">libcomp::DefinitionManager::LoadData&lt; objects::MiDevilEquipmentData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:ad4c9ed68bc51aa158474a43e5d3f1f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0dd56448a14fd08a0683a53ff31cf2d"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:af0dd56448a14fd08a0683a53ff31cf2d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#af0dd56448a14fd08a0683a53ff31cf2d">libcomp::DefinitionManager::LoadData&lt; objects::MiDevilEquipmentItemData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:af0dd56448a14fd08a0683a53ff31cf2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c969487089f39c4bf390521aa4e09e1"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a9c969487089f39c4bf390521aa4e09e1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a9c969487089f39c4bf390521aa4e09e1">libcomp::DefinitionManager::LoadData&lt; objects::MiDevilFusionData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a9c969487089f39c4bf390521aa4e09e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf63c82ecb2ef73e0a82c22a20a364f"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a6bf63c82ecb2ef73e0a82c22a20a364f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a6bf63c82ecb2ef73e0a82c22a20a364f">libcomp::DefinitionManager::LoadData&lt; objects::MiDevilLVUpRateData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a6bf63c82ecb2ef73e0a82c22a20a364f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac34185168882c1c36fc34185e2d6fd"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:aaac34185168882c1c36fc34185e2d6fd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#aaac34185168882c1c36fc34185e2d6fd">libcomp::DefinitionManager::LoadData&lt; objects::MiDisassemblyData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:aaac34185168882c1c36fc34185e2d6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbec586d8669df01eab8c5824cec0cb7"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:abbec586d8669df01eab8c5824cec0cb7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#abbec586d8669df01eab8c5824cec0cb7">libcomp::DefinitionManager::LoadData&lt; objects::MiDisassemblyTriggerData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:abbec586d8669df01eab8c5824cec0cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ab217b21e71f49b147ddb4c0a5a00b"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:ad9ab217b21e71f49b147ddb4c0a5a00b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#ad9ab217b21e71f49b147ddb4c0a5a00b">libcomp::DefinitionManager::LoadData&lt; objects::MiDynamicMapData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:ad9ab217b21e71f49b147ddb4c0a5a00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75329a30e3e46935c0632f505bef9c7"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:af75329a30e3e46935c0632f505bef9c7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#af75329a30e3e46935c0632f505bef9c7">libcomp::DefinitionManager::LoadData&lt; objects::MiEnchantData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:af75329a30e3e46935c0632f505bef9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1af335c55fc18163bcfc3f237bc935"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a3e1af335c55fc18163bcfc3f237bc935"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a3e1af335c55fc18163bcfc3f237bc935">libcomp::DefinitionManager::LoadData&lt; objects::MiEquipmentSetData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a3e1af335c55fc18163bcfc3f237bc935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f245ec078c0dbe011dc2d50bf7260d"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a80f245ec078c0dbe011dc2d50bf7260d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a80f245ec078c0dbe011dc2d50bf7260d">libcomp::DefinitionManager::LoadData&lt; objects::MiExchangeData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a80f245ec078c0dbe011dc2d50bf7260d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e47bc67cb38c24d8e0540a0a0b00b23"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a6e47bc67cb38c24d8e0540a0a0b00b23"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a6e47bc67cb38c24d8e0540a0a0b00b23">libcomp::DefinitionManager::LoadData&lt; objects::MiExpertData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a6e47bc67cb38c24d8e0540a0a0b00b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2473571cbe0a71229efd0ccd16e3861"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:ae2473571cbe0a71229efd0ccd16e3861"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#ae2473571cbe0a71229efd0ccd16e3861">libcomp::DefinitionManager::LoadData&lt; objects::MiGuardianAssistData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:ae2473571cbe0a71229efd0ccd16e3861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a213aacbfd9444c7d530a1dcf6f7cbe1c"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a213aacbfd9444c7d530a1dcf6f7cbe1c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a213aacbfd9444c7d530a1dcf6f7cbe1c">libcomp::DefinitionManager::LoadData&lt; objects::MiGuardianLevelData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a213aacbfd9444c7d530a1dcf6f7cbe1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b07af2358d6511105000f47df53a26c"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a8b07af2358d6511105000f47df53a26c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a8b07af2358d6511105000f47df53a26c">libcomp::DefinitionManager::LoadData&lt; objects::MiGuardianSpecialData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a8b07af2358d6511105000f47df53a26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1845e6785e9b38e432fc2a78c87b44a2"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a1845e6785e9b38e432fc2a78c87b44a2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a1845e6785e9b38e432fc2a78c87b44a2">libcomp::DefinitionManager::LoadData&lt; objects::MiGuardianUnlockData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a1845e6785e9b38e432fc2a78c87b44a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2127df0a3684487ede0c1bc8ca0db720"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a2127df0a3684487ede0c1bc8ca0db720"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a2127df0a3684487ede0c1bc8ca0db720">libcomp::DefinitionManager::LoadData&lt; objects::MiHNPCData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a2127df0a3684487ede0c1bc8ca0db720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa17d553d3acc512bb7ab02908c746b"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a6fa17d553d3acc512bb7ab02908c746b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a6fa17d553d3acc512bb7ab02908c746b">libcomp::DefinitionManager::LoadData&lt; objects::MiItemData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a6fa17d553d3acc512bb7ab02908c746b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c478a08c6ce6531773cd76b8fb6ecc4"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a1c478a08c6ce6531773cd76b8fb6ecc4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a1c478a08c6ce6531773cd76b8fb6ecc4">libcomp::DefinitionManager::LoadData&lt; objects::MiMissionData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a1c478a08c6ce6531773cd76b8fb6ecc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8ebe3143e3c511455690bd00611ded"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a9d8ebe3143e3c511455690bd00611ded"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a9d8ebe3143e3c511455690bd00611ded">libcomp::DefinitionManager::LoadData&lt; objects::MiMitamaReunionBonusData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a9d8ebe3143e3c511455690bd00611ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d4f8dd4e59fff5c876826a4642a46b"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a90d4f8dd4e59fff5c876826a4642a46b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a90d4f8dd4e59fff5c876826a4642a46b">libcomp::DefinitionManager::LoadData&lt; objects::MiMitamaReunionSetBonusData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a90d4f8dd4e59fff5c876826a4642a46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1b4c46b8765f0d4475618f11be700b"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a2b1b4c46b8765f0d4475618f11be700b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a2b1b4c46b8765f0d4475618f11be700b">libcomp::DefinitionManager::LoadData&lt; objects::MiMitamaUnionBonusData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a2b1b4c46b8765f0d4475618f11be700b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c2d2b38cc3179945cbe6a17a0b8afb"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a75c2d2b38cc3179945cbe6a17a0b8afb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a75c2d2b38cc3179945cbe6a17a0b8afb">libcomp::DefinitionManager::LoadData&lt; objects::MiModificationData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a75c2d2b38cc3179945cbe6a17a0b8afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d820c47ee8a1375eaf15b21dcc2ae99"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a2d820c47ee8a1375eaf15b21dcc2ae99"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a2d820c47ee8a1375eaf15b21dcc2ae99">libcomp::DefinitionManager::LoadData&lt; objects::MiModificationExtEffectData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a2d820c47ee8a1375eaf15b21dcc2ae99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf1022259927342332d56bb30211f47"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:acbf1022259927342332d56bb30211f47"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#acbf1022259927342332d56bb30211f47">libcomp::DefinitionManager::LoadData&lt; objects::MiModificationExtRecipeData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:acbf1022259927342332d56bb30211f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55bc5dda0a888bb2909451655d618d3d"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a55bc5dda0a888bb2909451655d618d3d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a55bc5dda0a888bb2909451655d618d3d">libcomp::DefinitionManager::LoadData&lt; objects::MiModificationTriggerData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a55bc5dda0a888bb2909451655d618d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b485d19f46fb172f7f17c4376b03412"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a9b485d19f46fb172f7f17c4376b03412"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a9b485d19f46fb172f7f17c4376b03412">libcomp::DefinitionManager::LoadData&lt; objects::MiModifiedEffectData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a9b485d19f46fb172f7f17c4376b03412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4329eaf645b237085da60d28b201dc3"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:ab4329eaf645b237085da60d28b201dc3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#ab4329eaf645b237085da60d28b201dc3">libcomp::DefinitionManager::LoadData&lt; objects::MiNPCBarterData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:ab4329eaf645b237085da60d28b201dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fa9591f57b7fe8141fd8edf428f35b"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:ae7fa9591f57b7fe8141fd8edf428f35b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#ae7fa9591f57b7fe8141fd8edf428f35b">libcomp::DefinitionManager::LoadData&lt; objects::MiONPCData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:ae7fa9591f57b7fe8141fd8edf428f35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400e2a8fb15f476c2bd5b6d1c6063cda"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a400e2a8fb15f476c2bd5b6d1c6063cda"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a400e2a8fb15f476c2bd5b6d1c6063cda">libcomp::DefinitionManager::LoadData&lt; objects::MiQuestBonusCodeData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a400e2a8fb15f476c2bd5b6d1c6063cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8760c696e8ef7f8498a48c49315e1d"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a4d8760c696e8ef7f8498a48c49315e1d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a4d8760c696e8ef7f8498a48c49315e1d">libcomp::DefinitionManager::LoadData&lt; objects::MiQuestData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a4d8760c696e8ef7f8498a48c49315e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09fd976d34663fa81f084d0aba52bf7f"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a09fd976d34663fa81f084d0aba52bf7f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a09fd976d34663fa81f084d0aba52bf7f">libcomp::DefinitionManager::LoadData&lt; objects::MiShopProductData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a09fd976d34663fa81f084d0aba52bf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ccecd0fb1e94fb87d02799918c9c243"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a6ccecd0fb1e94fb87d02799918c9c243"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a6ccecd0fb1e94fb87d02799918c9c243">libcomp::DefinitionManager::LoadData&lt; objects::MiSItemData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a6ccecd0fb1e94fb87d02799918c9c243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38274bb7855f7ef174929a1672a59dfc"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a38274bb7855f7ef174929a1672a59dfc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a38274bb7855f7ef174929a1672a59dfc">libcomp::DefinitionManager::LoadData&lt; objects::MiSkillData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a38274bb7855f7ef174929a1672a59dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3891c46b5e2d943ea0c34df787eaf8"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a0f3891c46b5e2d943ea0c34df787eaf8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a0f3891c46b5e2d943ea0c34df787eaf8">libcomp::DefinitionManager::LoadData&lt; objects::MiStatusData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a0f3891c46b5e2d943ea0c34df787eaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce9ea383dea0cda3611be1427eaf38c"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a2ce9ea383dea0cda3611be1427eaf38c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a2ce9ea383dea0cda3611be1427eaf38c">libcomp::DefinitionManager::LoadData&lt; objects::MiSynthesisData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a2ce9ea383dea0cda3611be1427eaf38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a570779562228183eceef95bc59946352"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a570779562228183eceef95bc59946352"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a570779562228183eceef95bc59946352">libcomp::DefinitionManager::LoadData&lt; objects::MiTimeLimitData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a570779562228183eceef95bc59946352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dcd56dbbec0881fe92f542ad1242e0f"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a6dcd56dbbec0881fe92f542ad1242e0f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a6dcd56dbbec0881fe92f542ad1242e0f">libcomp::DefinitionManager::LoadData&lt; objects::MiTitleData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a6dcd56dbbec0881fe92f542ad1242e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa137be539d20044e713ce2889f1dfd3e"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:aa137be539d20044e713ce2889f1dfd3e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#aa137be539d20044e713ce2889f1dfd3e">libcomp::DefinitionManager::LoadData&lt; objects::MiTriUnionSpecialData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:aa137be539d20044e713ce2889f1dfd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d7f684fabce4d290c724aff56552c8"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a64d7f684fabce4d290c724aff56552c8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a64d7f684fabce4d290c724aff56552c8">libcomp::DefinitionManager::LoadData&lt; objects::MiUraFieldTowerData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:a64d7f684fabce4d290c724aff56552c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb60a33de847ff14cd1872f64e630b97"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:acb60a33de847ff14cd1872f64e630b97"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#acb60a33de847ff14cd1872f64e630b97">libcomp::DefinitionManager::LoadData&lt; objects::MiWarpPointData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:acb60a33de847ff14cd1872f64e630b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc634bb751af5a13d9ea2a06ddc821e0"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:adc634bb751af5a13d9ea2a06ddc821e0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#adc634bb751af5a13d9ea2a06ddc821e0">libcomp::DefinitionManager::LoadData&lt; objects::MiZoneData &gt;</a> (gsl::not_null&lt; <a class="el" href="classlibcomp_1_1DataStore.html">DataStore</a> * &gt; pDataStore)</td></tr>
+<tr class="separator:adc634bb751af5a13d9ea2a06ddc821e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a990cd36a67fda02cfc87a982221dab63"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a990cd36a67fda02cfc87a982221dab63"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a990cd36a67fda02cfc87a982221dab63">libcomp::DefinitionManager::RegisterServerSideDefinition&lt; objects::EnchantSetData &gt;</a> (const std::shared_ptr&lt; objects::EnchantSetData &gt; &amp;record)</td></tr>
 <tr class="separator:a990cd36a67fda02cfc87a982221dab63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f227b7da737bb3aeccabafffbfdf4f0"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a2f227b7da737bb3aeccabafffbfdf4f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a2f227b7da737bb3aeccabafffbfdf4f0">libcomp::DefinitionManager::RegisterServerSideDefinition&lt; objects::EnchantSpecialData &gt;</a> (const std::shared_ptr&lt; objects::EnchantSpecialData &gt; &amp;record)</td></tr>
 <tr class="separator:a2f227b7da737bb3aeccabafffbfdf4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64207f0d83c6273d2a0613f425b47e6c"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a64207f0d83c6273d2a0613f425b47e6c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#a64207f0d83c6273d2a0613f425b47e6c">libcomp::DefinitionManager::RegisterServerSideDefinition&lt; objects::MiSItemData &gt;</a> (const std::shared_ptr&lt; objects::MiSItemData &gt; &amp;record)</td></tr>
+<tr class="separator:a64207f0d83c6273d2a0613f425b47e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae04e775813a7befb59c35f5056b3f0a5"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:ae04e775813a7befb59c35f5056b3f0a5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html#ae04e775813a7befb59c35f5056b3f0a5">libcomp::DefinitionManager::RegisterServerSideDefinition&lt; objects::MiSStatusData &gt;</a> (const std::shared_ptr&lt; objects::MiSStatusData &gt; &amp;record)</td></tr>
 <tr class="separator:ae04e775813a7befb59c35f5056b3f0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>

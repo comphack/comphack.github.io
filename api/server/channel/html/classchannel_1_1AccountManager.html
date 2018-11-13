@@ -116,6 +116,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5347feb980ef454c870cd3dc23ad7e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AccountManager.html#ae5347feb980ef454c870cd3dc23ad7e6">Authenticate</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">channel::ChannelClientConnection</a> &gt; &amp;client)</td></tr>
 <tr class="memdesc:ae5347feb980ef454c870cd3dc23ad7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate an account by its connection.  <a href="#ae5347feb980ef454c870cd3dc23ad7e6">More...</a><br /></td></tr>
 <tr class="separator:ae5347feb980ef454c870cd3dc23ad7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55324a3fa27371c5b7f8a7dbd4ba5ebc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::CharacterLogin &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AccountManager.html#a55324a3fa27371c5b7f8a7dbd4ba5ebc">GetActiveLogin</a> (const libobjgen::UUID &amp;characterUID)</td></tr>
+<tr class="memdesc:a55324a3fa27371c5b7f8a7dbd4ba5ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an active CharacterLogin by world CID.  <a href="#a55324a3fa27371c5b7f8a7dbd4ba5ebc">More...</a><br /></td></tr>
+<tr class="separator:a55324a3fa27371c5b7f8a7dbd4ba5ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f8a4a0d68ddf22bd305512c3f24aad"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; int32_t, std::shared_ptr&lt; objects::CharacterLogin &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AccountManager.html#a53f8a4a0d68ddf22bd305512c3f24aad">GetActiveLogins</a> ()</td></tr>
+<tr class="memdesc:a53f8a4a0d68ddf22bd305512c3f24aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all active CharacterLogins associated to the world.  <a href="#a53f8a4a0d68ddf22bd305512c3f24aad">More...</a><br /></td></tr>
+<tr class="separator:a53f8a4a0d68ddf22bd305512c3f24aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0ddf1d4cfcb0305f57394c8319a4bc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AccountManager.html#ac0ddf1d4cfcb0305f57394c8319a4bc9">HandleLoginRequest</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">channel::ChannelClientConnection</a> &gt; &amp;client, const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;username, uint32_t sessionKey)</td></tr>
 <tr class="memdesc:ac0ddf1d4cfcb0305f57394c8319a4bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request information from the world to log an account in by their username.  <a href="#ac0ddf1d4cfcb0305f57394c8319a4bc9">More...</a><br /></td></tr>
 <tr class="separator:ac0ddf1d4cfcb0305f57394c8319a4bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,9 +137,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afbc2d10a8b71ec57bffcdb97314885f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AccountManager.html#afbc2d10a8b71ec57bffcdb97314885f7">Logout</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">channel::ChannelClientConnection</a> &gt; &amp;client, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> delay=false)</td></tr>
 <tr class="memdesc:afbc2d10a8b71ec57bffcdb97314885f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log out a user by their connection.  <a href="#afbc2d10a8b71ec57bffcdb97314885f7">More...</a><br /></td></tr>
 <tr class="separator:afbc2d10a8b71ec57bffcdb97314885f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac316d393a292efefb2e60af350e5d3ad"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::ChannelLogin &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AccountManager.html#ac316d393a292efefb2e60af350e5d3ad">PrepareChannelChange</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">channel::ChannelClientConnection</a> &gt; &amp;client, uint32_t zoneID, uint32_t dynamicMapID, uint8_t channelID)</td></tr>
+<tr class="memdesc:ac316d393a292efefb2e60af350e5d3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a channel change ChannelLogin for the supplied client and save all logout information now.  <a href="#ac316d393a292efefb2e60af350e5d3ad">More...</a><br /></td></tr>
+<tr class="separator:ac316d393a292efefb2e60af350e5d3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f866014d0be308063bfbcebfcba61e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AccountManager.html#a4f866014d0be308063bfbcebfcba61e5">RequestDisconnect</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">channel::ChannelClientConnection</a> &gt; &amp;client)</td></tr>
+<tr class="memdesc:a4f866014d0be308063bfbcebfcba61e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request that a client disconnect from the server.  <a href="#a4f866014d0be308063bfbcebfcba61e5">More...</a><br /></td></tr>
+<tr class="separator:a4f866014d0be308063bfbcebfcba61e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00f889f928b8780c4ca630e9120578ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AccountManager.html#a00f889f928b8780c4ca630e9120578ca">SendCPBalance</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">channel::ChannelClientConnection</a> &gt; &amp;client)</td></tr>
 <tr class="memdesc:a00f889f928b8780c4ca630e9120578ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the account's current CP balance.  <a href="#a00f889f928b8780c4ca630e9120578ca">More...</a><br /></td></tr>
 <tr class="separator:a00f889f928b8780c4ca630e9120578ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b05029e8daf3f98c0b76db8056b95a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AccountManager.html#a50b05029e8daf3f98c0b76db8056b95a">UpdateLogins</a> (std::list&lt; std::shared_ptr&lt; objects::CharacterLogin &gt;&gt; updates, std::list&lt; std::shared_ptr&lt; objects::CharacterLogin &gt;&gt; removes)</td></tr>
+<tr class="memdesc:a50b05029e8daf3f98c0b76db8056b95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all registered CharacterLogins on the server.  <a href="#a50b05029e8daf3f98c0b76db8056b95a">More...</a><br /></td></tr>
+<tr class="separator:a50b05029e8daf3f98c0b76db8056b95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -149,6 +164,15 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:ac8e455984c1bc160c8691b3d5cb412a7"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; int32_t, std::shared_ptr&lt; objects::CharacterLogin &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AccountManager.html#ac8e455984c1bc160c8691b3d5cb412a7">mActiveLogins</a></td></tr>
+<tr class="memdesc:ac8e455984c1bc160c8691b3d5cb412a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of all character logins active on the world by world CID.  <a href="#ac8e455984c1bc160c8691b3d5cb412a7">More...</a><br /></td></tr>
+<tr class="separator:ac8e455984c1bc160c8691b3d5cb412a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abacddd1bd23660257be41795aa1d4bbd"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a>, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AccountManager.html#abacddd1bd23660257be41795aa1d4bbd">mCIDMap</a></td></tr>
+<tr class="memdesc:abacddd1bd23660257be41795aa1d4bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of character UUIDs to world CID for any active login.  <a href="#abacddd1bd23660257be41795aa1d4bbd">More...</a><br /></td></tr>
+<tr class="separator:abacddd1bd23660257be41795aa1d4bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c76507165baf91a28878487836e95c"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AccountManager.html#a88c76507165baf91a28878487836e95c">mLock</a></td></tr>
+<tr class="memdesc:a88c76507165baf91a28878487836e95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server lock for shared resources.  <a href="#a88c76507165baf91a28878487836e95c">More...</a><br /></td></tr>
+<tr class="separator:a88c76507165baf91a28878487836e95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace050d5a3c50d2e77ad4ed1377edfbaa"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; <a class="el" href="classchannel_1_1ChannelServer.html">ChannelServer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1AccountManager.html#ace050d5a3c50d2e77ad4ed1377edfbaa">mServer</a></td></tr>
 <tr class="memdesc:ace050d5a3c50d2e77ad4ed1377edfbaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the channel server.  <a href="#ace050d5a3c50d2e77ad4ed1377edfbaa">More...</a><br /></td></tr>
 <tr class="separator:ace050d5a3c50d2e77ad4ed1377edfbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,7 +180,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manager to handle Account focused actions. </p>
 
-<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00063">63</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00065">65</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3f11cff6727eee92f9c7e77bc29d94dd"></a>
 <div class="memitem">
@@ -180,7 +204,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00070">70</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00078">78</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -199,7 +223,7 @@ Private Attributes</h2></td></tr>
 
 <p>Clean up the <a class="el" href="classchannel_1_1AccountManager.html" title="Manager to handle Account focused actions. ">AccountManager</a>. </p>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00075">75</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00083">83</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -226,11 +250,62 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00284">284</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00510">510</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ad995a520b3f035ccb13860b4801666f6">libcomp::Packet::WriteU32Little()</a>.</p>
+<p>References <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ad995a520b3f035ccb13860b4801666f6">libcomp::Packet::WriteU32Little()</a>.</p>
 
 <p>Referenced by <a class="el" href="Auth_8cpp_source.html#l00039">AuthenticateAccount()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a55324a3fa27371c5b7f8a7dbd4ba5ebc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; objects::CharacterLogin &gt; AccountManager::GetActiveLogin </td>
+          <td>(</td>
+          <td class="paramtype">const libobjgen::UUID &amp;&#160;</td>
+          <td class="paramname"><em>characterUID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get an active CharacterLogin by world CID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">characterUID</td><td>Character UUID to retrieve </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the active CharacterLogin or null if no matching UID is active </dd></dl>
+
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00580">580</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+
+<p>References <a class="el" href="AccountManager_8h_source.html#l00235">mActiveLogins</a>, <a class="el" href="AccountManager_8h_source.html#l00238">mCIDMap</a>, and <a class="el" href="AccountManager_8h_source.html#l00241">mLock</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a53f8a4a0d68ddf22bd305512c3f24aad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt; int32_t, std::shared_ptr&lt; objects::CharacterLogin &gt; &gt; AccountManager::GetActiveLogins </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all active CharacterLogins associated to the world. </p>
+<dl class="section return"><dt>Returns</dt><dd>Map of active CharacterLogins by world CID </dd></dl>
+
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00574">574</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+
+<p>References <a class="el" href="AccountManager_8h_source.html#l00235">mActiveLogins</a>.</p>
 
 </div>
 </div>
@@ -274,9 +349,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00079">79</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00087">87</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Convert.html#acf55d81b176d67bdfa666b3248c16ac4a439ee39e30ecd2cb6dfec4020697eeb7">libcomp::Convert::ENCODING_UTF8</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="AccountManager_8h_source.html#l00183">mServer</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab7f2381548009b30746d4d8717bdcd7f">libcomp::Packet::WriteString16Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a42d5cc275d54549c33df4f97bcbcb358">libcomp::Packet::WriteU32()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Convert.html#acf55d81b176d67bdfa666b3248c16ac4a439ee39e30ecd2cb6dfec4020697eeb7">libcomp::Convert::ENCODING_UTF8</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="AccountManager_8h_source.html#l00244">mServer</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab7f2381548009b30746d4d8717bdcd7f">libcomp::Packet::WriteString16Little()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a42d5cc275d54549c33df4f97bcbcb358">libcomp::Packet::WriteU32()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2507cb23cbaf9e6544370f7604c5810b">libcomp::Packet::WriteU8()</a>.</p>
 
 <p>Referenced by <a class="el" href="Login_8cpp_source.html#l00042">LoginAccount()</a>.</p>
 
@@ -304,11 +379,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00117">117</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00126">126</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00086">channel::ClientState::GetDemonState()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00352">InitializeCharacter()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="AccountManager_8cpp_source.html#l01127">LogoutCharacter()</a>, <a class="el" href="AccountManager_8h_source.html#l00183">mServer</a>, <a class="el" href="ClientState_8cpp_source.html#l00130">channel::ClientState::Register()</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab7f2381548009b30746d4d8717bdcd7f">libcomp::Packet::WriteString16Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ad995a520b3f035ccb13860b4801666f6">libcomp::Packet::WriteU32Little()</a>.</p>
+<p>References <a class="el" href="ActiveEntityState_8h_source.html#l00044">EFFECT_CANCEL_LOGOUT</a>, <a class="el" href="ActiveEntityState_8h_source.html#l00047">EFFECT_CANCEL_ZONEOUT</a>, <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00089">channel::ClientState::GetDemonState()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#ad81a63b214eccb267d246000c33233a7">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00617">InitializeCharacter()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="AccountManager_8cpp_source.html#l01524">LogoutCharacter()</a>, <a class="el" href="AccountManager_8h_source.html#l00244">mServer</a>, <a class="el" href="ClientState_8cpp_source.html#l00166">channel::ClientState::Register()</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html#a693b6ba29a440fa12e37272cebccce29">SVR_CONST</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab7f2381548009b30746d4d8717bdcd7f">libcomp::Packet::WriteString16Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ad995a520b3f035ccb13860b4801666f6">libcomp::Packet::WriteU32Little()</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountLogin_8cpp_source.html#l00049">HandleLoginResponse()</a>.</p>
+<p>Referenced by <a class="el" href="AccountLogin_8cpp_source.html#l00051">HandleLoginResponse()</a>.</p>
 
 </div>
 </div>
@@ -352,9 +427,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00192">192</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00263">263</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a18fe5254e32ac247d9a254f0c713d6b6">libcomp::Packet::Clear()</a>, <a class="el" href="AccountManager_8h_source.html#l00054">channel::LOGOUT_CODE_QUIT</a>, <a class="el" href="AccountManager_8h_source.html#l00056">channel::LOGOUT_CODE_SWITCH</a>, <a class="el" href="AccountManager_8h_source.html#l00183">mServer</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#acb7bad5ab1a3bdba98aaa900a456a4a7">libcomp::Packet::WriteS8()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab7f2381548009b30746d4d8717bdcd7f">libcomp::Packet::WriteString16Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ad995a520b3f035ccb13860b4801666f6">libcomp::Packet::WriteU32Little()</a>.</p>
+<p>References <a class="el" href="ChannelServer_8cpp_source.html#l00788">channel::ChannelServer::GetServerTime()</a>, <a class="el" href="AccountManager_8h_source.html#l00056">channel::LOGOUT_CODE_QUIT</a>, <a class="el" href="AccountManager_8h_source.html#l00058">channel::LOGOUT_CODE_SWITCH</a>, <a class="el" href="AccountManager_8h_source.html#l00244">mServer</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab7f2381548009b30746d4d8717bdcd7f">libcomp::Packet::WriteString16Little()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ad995a520b3f035ccb13860b4801666f6">libcomp::Packet::WriteU32Little()</a>.</p>
 
 </div>
 </div>
@@ -392,9 +467,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the amount was updated, false if it could not be updated </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00305">305</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00531">531</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="AccountManager_8h_source.html#l00183">mServer</a>.</p>
+<p>References <a class="el" href="AccountManager_8h_source.html#l00244">mServer</a>.</p>
 
 </div>
 </div>
@@ -440,11 +515,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00352">352</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00617">617</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="ClientState_8cpp_source.html#l00225">channel::ClientState::GetAccountUID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00154">channel::ClientState::GetObjectID()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00783">InitializeNewCharacter()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0c53e5566a3b790db039421523dd4637">LOG_WARNING</a>, <a class="el" href="AccountManager_8h_source.html#l00183">mServer</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#a997d0624a8767a4c14052e7d82384a95">libcomp::PersistentObject::New()</a>, and <a class="el" href="ClientState_8cpp_source.html#l00210">channel::ClientState::SetObjectID()</a>.</p>
+<p>References <a class="el" href="ClientState_8cpp_source.html#l00272">channel::ClientState::GetAccountUID()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#ad81a63b214eccb267d246000c33233a7">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00190">channel::ClientState::GetObjectID()</a>, <a class="el" href="AccountManager_8cpp_source.html#l01167">InitializeNewCharacter()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0c53e5566a3b790db039421523dd4637">LOG_WARNING</a>, <a class="el" href="AccountManager_8h_source.html#l00244">mServer</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#a997d0624a8767a4c14052e7d82384a95">libcomp::PersistentObject::New()</a>, and <a class="el" href="ClientState_8cpp_source.html#l00246">channel::ClientState::SetObjectID()</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00117">HandleLoginResponse()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00126">HandleLoginResponse()</a>.</p>
 
 </div>
 </div>
@@ -488,11 +563,11 @@ Private Attributes</h2></td></tr>
 </li>
 </ul>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00783">783</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l01167">1167</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="AccountManager_8h_source.html#l00183">mServer</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#a997d0624a8767a4c14052e7d82384a95">libcomp::PersistentObject::New()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#ad81a63b214eccb267d246000c33233a7">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="AccountManager_8h_source.html#l00244">mServer</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#a997d0624a8767a4c14052e7d82384a95">libcomp::PersistentObject::New()</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00352">InitializeCharacter()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00617">InitializeCharacter()</a>.</p>
 
 </div>
 </div>
@@ -529,11 +604,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00236">236</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00365">365</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00236">channel::ClientState::GetWorldCID()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="AccountManager_8cpp_source.html#l01127">LogoutCharacter()</a>, <a class="el" href="AccountManager_8h_source.html#l00183">mServer</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>.</p>
+<p>References <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00283">channel::ClientState::GetWorldCID()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="AccountManager_8cpp_source.html#l01524">LogoutCharacter()</a>, <a class="el" href="AccountManager_8h_source.html#l00244">mServer</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>.</p>
 
-<p>Referenced by <a class="el" href="ManagerConnection_8cpp_source.html#l00168">channel::ManagerConnection::RemoveClientConnection()</a>.</p>
+<p>Referenced by <a class="el" href="ManagerConnection_8cpp_source.html#l00170">channel::ManagerConnection::RemoveClientConnection()</a>.</p>
 
 </div>
 </div>
@@ -568,11 +643,93 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l01127">1127</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l01524">1524</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DatabaseChangeSet.html#a03a7037cb49e525b13310dfd97f469dc">libcomp::DatabaseChangeSet::Create()</a>, and <a class="el" href="AccountManager_8h_source.html#l00183">mServer</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DatabaseChangeSet.html#a03a7037cb49e525b13310dfd97f469dc">libcomp::DatabaseChangeSet::Create()</a>, and <a class="el" href="AccountManager_8h_source.html#l00244">mServer</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00117">HandleLoginResponse()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00236">Logout()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00126">HandleLoginResponse()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00365">Logout()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00450">PrepareChannelChange()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac316d393a292efefb2e60af350e5d3ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; objects::ChannelLogin &gt; AccountManager::PrepareChannelChange </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">channel::ChannelClientConnection</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>zoneID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dynamicMapID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>channelID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a channel change ChannelLogin for the supplied client and save all logout information now. </p>
+<p>The world communication must be handled elsewhere. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>Pointer to the client connection </td></tr>
+    <tr><td class="paramname">zoneID</td><td>ID of the zone the player will enter on the other channel. If 0 the current character state will be used. </td></tr>
+    <tr><td class="paramname">dynamicMapID</td><td>Dynamic map ID of the zone the player will enter on the other channel. If 0 the current character state will be used. </td></tr>
+    <tr><td class="paramname">channelID</td><td>ID of the channel being moved to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the channel change ChannelLogin </dd></dl>
+
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00450">450</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+
+<p>References <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="el" href="ClientState_8cpp_source.html#l00288">channel::ClientState::GetZone()</a>, <a class="el" href="AccountManager_8cpp_source.html#l01524">LogoutCharacter()</a>, <a class="el" href="AccountManager_8h_source.html#l00244">mServer</a>, and <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f866014d0be308063bfbcebfcba61e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AccountManager::RequestDisconnect </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">channel::ChannelClientConnection</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Request that a client disconnect from the server. </p>
+<p>Typically used following an initial logout request from the client. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>Pointer to the client connection </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00438">438</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ad995a520b3f035ccb13860b4801666f6">libcomp::Packet::WriteU32Little()</a>.</p>
 
 </div>
 </div>
@@ -598,13 +755,130 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00335">335</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00556">556</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="ClientState_8cpp_source.html#l00225">channel::ClientState::GetAccountUID()</a>, <a class="el" href="AccountManager_8h_source.html#l00183">mServer</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>.</p>
+<p>References <a class="el" href="ClientState_8cpp_source.html#l00272">channel::ClientState::GetAccountUID()</a>, <a class="el" href="AccountManager_8h_source.html#l00244">mServer</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a50b05029e8daf3f98c0b76db8056b95a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AccountManager::UpdateLogins </td>
+          <td>(</td>
+          <td class="paramtype">std::list&lt; std::shared_ptr&lt; objects::CharacterLogin &gt;&gt;&#160;</td>
+          <td class="paramname"><em>updates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::list&lt; std::shared_ptr&lt; objects::CharacterLogin &gt;&gt;&#160;</td>
+          <td class="paramname"><em>removes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update all registered CharacterLogins on the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">update</td><td>List of updated CharacterLogins </td></tr>
+    <tr><td class="paramname">removes</td><td>List of removed CharacterLogins </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00598">598</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+
+<p>References <a class="el" href="AccountManager_8h_source.html#l00235">mActiveLogins</a>, <a class="el" href="AccountManager_8h_source.html#l00238">mCIDMap</a>, and <a class="el" href="AccountManager_8h_source.html#l00241">mLock</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ac8e455984c1bc160c8691b3d5cb412a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;int32_t, std::shared_ptr&lt;objects::CharacterLogin&gt; &gt; channel::AccountManager::mActiveLogins</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Map of all character logins active on the world by world CID. </p>
+
+<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00235">235</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00580">GetActiveLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00574">GetActiveLogins()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00598">UpdateLogins()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abacddd1bd23660257be41795aa1d4bbd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a>, int32_t&gt; channel::AccountManager::mCIDMap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Map of character UUIDs to world CID for any active login. </p>
+
+<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00238">238</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00580">GetActiveLogin()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00598">UpdateLogins()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a88c76507165baf91a28878487836e95c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex channel::AccountManager::mLock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Server lock for shared resources. </p>
+
+<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00241">241</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00580">GetActiveLogin()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00598">UpdateLogins()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ace050d5a3c50d2e77ad4ed1377edfbaa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -625,9 +899,9 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the channel server. </p>
 
-<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00183">183</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00244">244</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00079">HandleLoginRequest()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00117">HandleLoginResponse()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00192">HandleLogoutRequest()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00305">IncreaseCP()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00352">InitializeCharacter()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00783">InitializeNewCharacter()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00236">Logout()</a>, <a class="el" href="AccountManager_8cpp_source.html#l01127">LogoutCharacter()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00335">SendCPBalance()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00087">HandleLoginRequest()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00126">HandleLoginResponse()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00263">HandleLogoutRequest()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00531">IncreaseCP()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00617">InitializeCharacter()</a>, <a class="el" href="AccountManager_8cpp_source.html#l01167">InitializeNewCharacter()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00365">Logout()</a>, <a class="el" href="AccountManager_8cpp_source.html#l01524">LogoutCharacter()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00450">PrepareChannelChange()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00556">SendCPBalance()</a>.</p>
 
 </div>
 </div>

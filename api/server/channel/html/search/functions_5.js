@@ -1,11 +1,18 @@
 var searchData=
 [
+  ['failplasma',['FailPlasma',['../classchannel_1_1ZoneManager.html#a4bf5aa67c16bad4ac56f5b485f419a25',1,'channel::ZoneManager']]],
+  ['familiaritybooststats',['FamiliarityBoostStats',['../classchannel_1_1CharacterManager.html#a9bff892b61a8ab16c5daa2ad88f2fa8c',1,'channel::CharacterManager']]],
   ['familiarityup',['FamiliarityUp',['../classchannel_1_1SkillManager.html#ada31a2de4821971ea2e6e0291a3cdffb',1,'channel::SkillManager']]],
   ['familiarityupitem',['FamiliarityUpItem',['../classchannel_1_1SkillManager.html#ab6635d91d56e107d100ed7f656b4d7ed',1,'channel::SkillManager']]],
   ['file',['File',['../../../../libcomp/html/classlibcomp_1_1Exception.html#a7627bf0e51c1a16bc99440723978fae2',1,'libcomp::Exception::File()'],['../../../../libcomp/html/classlibcomp_1_1Exception.html#a7627bf0e51c1a16bc99440723978fae2',1,'libcomp::PacketException::File()']]],
+  ['filedelete',['FileDelete',['../../../../libcomp/html/classlibcomp_1_1Log.html#a251a836d87a44cb3fda0d858f5637c3b',1,'libcomp::Log']]],
+  ['fileexists',['FileExists',['../../../../libcomp/html/classlibcomp_1_1Log.html#a7fb8c58767a29922bafa7836bdbb8f5c',1,'libcomp::Log']]],
+  ['filemove',['FileMove',['../../../../libcomp/html/classlibcomp_1_1Log.html#a57ccc287dc27898b1358ba3f850d43dd',1,'libcomp::Log']]],
   ['filesize',['FileSize',['../../../../libcomp/html/classlibcomp_1_1DataStore.html#a87b17b1382168ea39fbd11a1f3346716',1,'libcomp::DataStore']]],
+  ['finalizeskill',['FinalizeSkill',['../classchannel_1_1SkillManager.html#a8b217900e750817887230f289177d7bd',1,'channel::SkillManager']]],
   ['finalizeskillexecution',['FinalizeSkillExecution',['../classchannel_1_1SkillManager.html#a35cdf82c2ccf61231a35e10da83285f4',1,'channel::SkillManager']]],
   ['finishinitialize',['FinishInitialize',['../../../../libcomp/html/classlibcomp_1_1BaseServer.html#a0196923ac5f81b1f56e6d9502d2cfc00',1,'libcomp::BaseServer']]],
+  ['firephasetriggers',['FirePhaseTriggers',['../classchannel_1_1MatchManager.html#ad71c50c4e873eb3bca9ac57163ef53dd',1,'channel::MatchManager']]],
   ['fixcurrentposition',['FixCurrentPosition',['../classchannel_1_1ZoneManager.html#aa8b8905bb7c1fff877395abbaef0a154',1,'channel::ZoneManager']]],
   ['flush',['Flush',['../../../../libcomp/html/classlibcomp_1_1DataFile.html#a5991545b27897e773bbebc75315e019a',1,'libcomp::DataFile']]],
   ['flushalloutgoing',['FlushAllOutgoing',['../classchannel_1_1ChannelClientConnection.html#aa3fbaac7f4a58c36a0314d7244a19250',1,'channel::ChannelClientConnection']]],

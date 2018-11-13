@@ -1,7 +1,7 @@
 var searchData=
 [
   ['zone',['Zone',['../classchannel_1_1Zone.html',1,'channel']]],
-  ['zone',['Zone',['../classchannel_1_1Zone.html#a37c9721c0d592a7a231f4e6dbae93277',1,'channel::Zone::Zone()'],['../classchannel_1_1Zone.html#a67e31e0bbb7036f61cfa15e6dcb511ba',1,'channel::Zone::Zone(uint32_t id, const std::shared_ptr&lt; objects::ServerZone &gt; &amp;definition)'],['../classchannel_1_1Zone.html#a936fe5a0545adb05ac115a9a5e778b7a',1,'channel::Zone::Zone(const Zone &amp;other)']]],
+  ['zone',['Zone',['../classchannel_1_1Zone.html#a67e31e0bbb7036f61cfa15e6dcb511ba',1,'channel::Zone']]],
   ['zone_2ecpp',['Zone.cpp',['../Zone_8cpp.html',1,'']]],
   ['zone_2eh',['Zone.h',['../Zone_8h.html',1,'']]],
   ['zone_5fdefault',['ZONE_DEFAULT',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a53afee98122325b364015cfb262e095e',1,'libcomp::ServerConstants::Data']]],
@@ -10,7 +10,7 @@ var searchData=
   ['zonegeometry_2ecpp',['ZoneGeometry.cpp',['../ZoneGeometry_8cpp.html',1,'']]],
   ['zonegeometry_2eh',['ZoneGeometry.h',['../ZoneGeometry_8h.html',1,'']]],
   ['zoneid',['ZoneID',['../structPartyMemberInfo.html#aa2f9dd82e1ae9609d525aa9c0de65fe2',1,'PartyMemberInfo']]],
-  ['zoneinstance',['ZoneInstance',['../classchannel_1_1ZoneInstance.html#aff58ea2383c8ec87adeeebe4f7318b87',1,'channel::ZoneInstance::ZoneInstance()'],['../classchannel_1_1ZoneInstance.html#aca9e4d1ac5f28bff5ebfc159ce8e1920',1,'channel::ZoneInstance::ZoneInstance(uint32_t id, const std::shared_ptr&lt; objects::ServerZoneInstance &gt; &amp;definition, std::set&lt; int32_t &gt; &amp;accessCIDs)'],['../classchannel_1_1ZoneInstance.html#a09c9f12017cd6261cac94e4abc2ccc26',1,'channel::ZoneInstance::ZoneInstance(const ZoneInstance &amp;other)']]],
+  ['zoneinstance',['ZoneInstance',['../classchannel_1_1ZoneInstance.html#a02ce5374aff7f7b26fa1400385088be8',1,'channel::ZoneInstance']]],
   ['zoneinstance',['ZoneInstance',['../classchannel_1_1ZoneInstance.html',1,'channel']]],
   ['zoneinstance_2ecpp',['ZoneInstance.cpp',['../ZoneInstance_8cpp.html',1,'']]],
   ['zoneinstance_2eh',['ZoneInstance.h',['../ZoneInstance_8h.html',1,'']]],
@@ -20,8 +20,9 @@ var searchData=
   ['zonemanager_2eh',['ZoneManager.h',['../ZoneManager_8h.html',1,'']]],
   ['zoneqmpshape',['ZoneQmpShape',['../classchannel_1_1ZoneQmpShape.html',1,'channel']]],
   ['zoneqmpshape',['ZoneQmpShape',['../classchannel_1_1ZoneQmpShape.html#a48119304cac1aba4a83b407a75aeb918',1,'channel::ZoneQmpShape']]],
-  ['zoneshape',['ZoneShape',['../classchannel_1_1ZoneShape.html#a1f56375b6625c8469484fd25208837c6',1,'channel::ZoneShape']]],
   ['zoneshape',['ZoneShape',['../classchannel_1_1ZoneShape.html',1,'channel']]],
+  ['zoneshape',['ZoneShape',['../classchannel_1_1ZoneShape.html#a1f56375b6625c8469484fd25208837c6',1,'channel::ZoneShape']]],
+  ['zonespotshape',['ZoneSpotShape',['../classchannel_1_1ZoneSpotShape.html',1,'channel']]],
   ['zonespotshape',['ZoneSpotShape',['../classchannel_1_1ZoneSpotShape.html#a65adf6e2c83c1468215a51bc8ed7ff71',1,'channel::ZoneSpotShape']]],
-  ['zonespotshape',['ZoneSpotShape',['../classchannel_1_1ZoneSpotShape.html',1,'channel']]]
+  ['zonetrigger_5ft',['ZoneTrigger_t',['../namespacechannel.html#ac98169d44b597d2c469604551969743a',1,'channel']]]
 ];

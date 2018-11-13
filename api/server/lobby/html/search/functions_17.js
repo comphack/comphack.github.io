@@ -1,6 +1,7 @@
 var searchData=
 [
   ['_7eapihandler',['~ApiHandler',['../classlobby_1_1ApiHandler.html#ac89bbe6f245061610853733074d9b2da',1,'lobby::ApiHandler']]],
+  ['_7eapisession',['~ApiSession',['../classlobby_1_1ApiSession.html#abc47cc20063516c583052fd45c176fbf',1,'lobby::ApiSession']]],
   ['_7eargumentparser',['~ArgumentParser',['../../../../libcomp/html/classlibcomp_1_1ArgumentParser.html#a9f0d5af005d495723d0068a10451a07d',1,'libcomp::ArgumentParser']]],
   ['_7ebaseserver',['~BaseServer',['../../../../libcomp/html/classlibcomp_1_1BaseServer.html#af26a04f6b9e4a614157bf92b69765979',1,'libcomp::BaseServer']]],
   ['_7ebasicpacketstream',['~BasicPacketStream',['../../../../libcomp/html/classlibcomp_1_1BasicPacketStream.html#aee45893c53cfa5433911b4d0bb980cb2',1,'libcomp::BasicPacketStream']]],

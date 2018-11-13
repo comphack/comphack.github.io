@@ -19,6 +19,8 @@ var searchData=
   ['equipmentlist_2ecpp',['EquipmentList.cpp',['../EquipmentList_8cpp.html',1,'']]],
   ['equipmentmod_2ecpp',['EquipmentMod.cpp',['../EquipmentMod_8cpp.html',1,'']]],
   ['equipmentmodedit_2ecpp',['EquipmentModEdit.cpp',['../EquipmentModEdit_8cpp.html',1,'']]],
+  ['equipmentspiritdefuse_2ecpp',['EquipmentSpiritDefuse.cpp',['../EquipmentSpiritDefuse_8cpp.html',1,'']]],
+  ['equipmentspiritfuse_2ecpp',['EquipmentSpiritFuse.cpp',['../EquipmentSpiritFuse_8cpp.html',1,'']]],
   ['errorcodes_2ecpp',['ErrorCodes.cpp',['../../../../libcomp/html/ErrorCodes_8cpp.html',1,'']]],
   ['errorcodes_2eh',['ErrorCodes.h',['../../../../libcomp/html/ErrorCodes_8h.html',1,'']]],
   ['eventmanager_2ecpp',['EventManager.cpp',['../EventManager_8cpp.html',1,'']]],

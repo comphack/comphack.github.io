@@ -90,12 +90,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">libcomp::Config Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a16324002acea156d766260a7df69b041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibcomp_1_1Config.html#a16324002acea156d766260a7df69b041">LogVersion</a> (const char *szServerName)</td></tr>
+<tr class="memdesc:a16324002acea156d766260a7df69b041"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classlibcomp_1_1Log.html" title="Logging interface capable of logging messages to the terminal or a file. ">Log</a> the version information for the server.  <a href="#a16324002acea156d766260a7df69b041">More...</a><br /></td></tr>
+<tr class="separator:a16324002acea156d766260a7df69b041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a842abe352138c42cd859e9f4a9aa0ea7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibcomp_1_1Config.html#a842abe352138c42cd859e9f4a9aa0ea7">ENCRYPTED_FILE_IV</a> = &quot;P[?jd6c4&quot;</td></tr>
@@ -108,6 +115,35 @@ Variables</h2></td></tr>
 <tr class="memdesc:a475501f783db93c1fee5fd471b45420a"><td class="mdescLeft">&#160;</td><td class="mdescRight">4-byte magic at the beginning of an encrypted file.  <a href="#a475501f783db93c1fee5fd471b45420a">More...</a><br /></td></tr>
 <tr class="separator:a475501f783db93c1fee5fd471b45420a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a16324002acea156d766260a7df69b041"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libcomp::Config::LogVersion </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szServerName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classlibcomp_1_1Log.html" title="Logging interface capable of logging messages to the terminal or a file. ">Log</a> the version information for the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">szServerName</td><td><a class="el" href="classlibcomp_1_1String.html" title="UTF-8 encoded string object. ">String</a> to print as the server name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="Config_8cpp_source.html#l00053">53</a> of file <a class="el" href="Config_8cpp_source.html">Config.cpp</a>.</p>
+
+<p>References <a class="el" href="Log_8h_source.html#l00388">LOG_INFO</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a842abe352138c42cd859e9f4a9aa0ea7"></a>
 <div class="memitem">
@@ -121,7 +157,7 @@ Variables</h2></td></tr>
 
 <p>Blowfish initialization vector used by the file encryption. </p>
 
-<p>Definition at line <a class="el" href="Config_8cpp_source.html#l00042">42</a> of file <a class="el" href="Config_8cpp_source.html">Config.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Config_8cpp_source.html#l00047">47</a> of file <a class="el" href="Config_8cpp_source.html">Config.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="src_2Decrypt_8cpp_source.html#l00684">libcomp::Decrypt::DecryptCbc()</a>, <a class="el" href="src_2Decrypt_8cpp_source.html#l00635">libcomp::Decrypt::EncryptCbc()</a>, and <a class="el" href="src_2Decrypt_8cpp_source.html#l00093">INITIALIZER()</a>.</p>
 
@@ -139,7 +175,7 @@ Variables</h2></td></tr>
 
 <p>Blowfish key used by the file encryption. </p>
 
-<p>Definition at line <a class="el" href="Config_8cpp_source.html#l00039">39</a> of file <a class="el" href="Config_8cpp_source.html">Config.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Config_8cpp_source.html#l00044">44</a> of file <a class="el" href="Config_8cpp_source.html">Config.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="src_2Decrypt_8cpp_source.html#l00093">INITIALIZER()</a>.</p>
 
@@ -157,7 +193,7 @@ Variables</h2></td></tr>
 
 <p>4-byte magic at the beginning of an encrypted file. </p>
 
-<p>Definition at line <a class="el" href="Config_8cpp_source.html#l00036">36</a> of file <a class="el" href="Config_8cpp_source.html">Config.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Config_8cpp_source.html#l00041">41</a> of file <a class="el" href="Config_8cpp_source.html">Config.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="src_2Decrypt_8cpp_source.html#l00124">libcomp::Decrypt::DecryptFile()</a>, <a class="el" href="src_2Decrypt_8cpp_source.html#l00168">libcomp::Decrypt::EncryptFile()</a>, <a class="el" href="src_2Decrypt_8cpp_source.html#l00093">INITIALIZER()</a>, and <a class="el" href="tests_2Decrypt_8cpp_source.html#l00179">TEST()</a>.</p>
 

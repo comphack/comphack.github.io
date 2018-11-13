@@ -118,6 +118,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a3ab09734881b8dc3af04d27ed98b3361"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a3ab09734881b8dc3af04d27ed98b3361"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Randomizer.html#a3ab09734881b8dc3af04d27ed98b3361">GetEntry</a> (const std::list&lt; T &gt; &amp;dataset)</td></tr>
+<tr class="memdesc:a3ab09734881b8dc3af04d27ed98b3361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a random entry from the supplied list.  <a href="#a3ab09734881b8dc3af04d27ed98b3361">More...</a><br /></td></tr>
+<tr class="separator:a3ab09734881b8dc3af04d27ed98b3361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44eef5f50e7928203981a60a35d5e1ab"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a44eef5f50e7928203981a60a35d5e1ab"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Randomizer.html#a44eef5f50e7928203981a60a35d5e1ab">GetEntry</a> (const std::set&lt; T &gt; &amp;dataset)</td></tr>
+<tr class="memdesc:a44eef5f50e7928203981a60a35d5e1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a random entry from the supplied set.  <a href="#a44eef5f50e7928203981a60a35d5e1ab">More...</a><br /></td></tr>
+<tr class="separator:a44eef5f50e7928203981a60a35d5e1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf33fa2bf60ecdd33955d95db4cdb5c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a9cf33fa2bf60ecdd33955d95db4cdb5c"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Randomizer.html#a9cf33fa2bf60ecdd33955d95db4cdb5c">GetRandomDecimal</a> (T minVal, T maxVal, uint8_t precision)</td></tr>
 <tr class="memdesc:a9cf33fa2bf60ecdd33955d95db4cdb5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a random decimal number of the templated type between the minimum and maximum values supplied.  <a href="#a9cf33fa2bf60ecdd33955d95db4cdb5c">More...</a><br /></td></tr>
@@ -150,8 +158,84 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock"><p>Static utility class used for improved random number generation. </p>
 <p>Random number generation is handled on a per thread basis and is thus thread safe. </p>
 
-<p>Definition at line <a class="el" href="Randomizer_8h_source.html#l00042">42</a> of file <a class="el" href="Randomizer_8h_source.html">Randomizer.h</a>.</p>
+<p>Definition at line <a class="el" href="Randomizer_8h_source.html#l00044">44</a> of file <a class="el" href="Randomizer_8h_source.html">Randomizer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a3ab09734881b8dc3af04d27ed98b3361"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T libcomp::Randomizer::GetEntry </td>
+          <td>(</td>
+          <td class="paramtype">const std::list&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dataset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a random entry from the supplied list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">List</td><td>of entries to pull a random entry from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Random entry from the supplied list or the default value for the templated type if empty </dd></dl>
+
+<p>Definition at line <a class="el" href="Randomizer_8h_source.html#l00099">99</a> of file <a class="el" href="Randomizer_8h_source.html">Randomizer.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44eef5f50e7928203981a60a35d5e1ab"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T libcomp::Randomizer::GetEntry </td>
+          <td>(</td>
+          <td class="paramtype">const std::set&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dataset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a random entry from the supplied set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Set</td><td>of entries to pull a random entry from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Random entry from the supplied set or the default value for the templated type if empty </dd></dl>
+
+<p>Definition at line <a class="el" href="Randomizer_8h_source.html#l00121">121</a> of file <a class="el" href="Randomizer_8h_source.html">Randomizer.h</a>.</p>
+
+<p>References <a class="el" href="Randomizer_8cpp_source.html#l00057">SeedRNG()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="affa681fada5ba3c1b317f8c972f83f64"></a>
 <div class="memitem">
 <div class="memproto">
@@ -185,6 +269,42 @@ template&lt;&gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="Randomizer_8cpp_source.html#l00077">77</a> of file <a class="el" href="Randomizer_8cpp_source.html">Randomizer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d5cce603054fea773583c1279591560"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">double libcomp::Randomizer::GetRandomDecimal </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minVal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxVal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>precision</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Randomizer_8cpp_source.html#l00088">88</a> of file <a class="el" href="Randomizer_8cpp_source.html">Randomizer.cpp</a>.</p>
 
 </div>
 </div>
@@ -239,43 +359,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Random decimal number between the minimum and maximum values </dd></dl>
 
-<p>Referenced by <a class="el" href="Randomizer_8h_source.html#l00071">GetRandomNumber64()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1d5cce603054fea773583c1279591560"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">double libcomp::Randomizer::GetRandomDecimal </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>minVal</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>maxVal</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>precision</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="Randomizer_8cpp_source.html#l00088">88</a> of file <a class="el" href="Randomizer_8cpp_source.html">Randomizer.cpp</a>.</p>
+<p>Referenced by <a class="el" href="Randomizer_8h_source.html#l00073">GetRandomNumber64()</a>.</p>
 
 </div>
 </div>
@@ -323,9 +407,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Random number between the minimum and maximum values </dd></dl>
 
-<p>Definition at line <a class="el" href="Randomizer_8h_source.html#l00054">54</a> of file <a class="el" href="Randomizer_8h_source.html">Randomizer.h</a>.</p>
+<p>Definition at line <a class="el" href="Randomizer_8h_source.html#l00056">56</a> of file <a class="el" href="Randomizer_8h_source.html">Randomizer.h</a>.</p>
 
-<p>References <a class="el" href="Randomizer_8cpp_source.html#l00057">SeedRNG()</a>, and <a class="el" href="Randomizer_8h_source.html#l00098">sGen</a>.</p>
+<p>References <a class="el" href="Randomizer_8cpp_source.html#l00057">SeedRNG()</a>, and <a class="el" href="Randomizer_8h_source.html#l00144">sGen</a>.</p>
 
 </div>
 </div>
@@ -373,9 +457,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Random number between the minimum and maximum values </dd></dl>
 
-<p>Definition at line <a class="el" href="Randomizer_8h_source.html#l00071">71</a> of file <a class="el" href="Randomizer_8h_source.html">Randomizer.h</a>.</p>
+<p>Definition at line <a class="el" href="Randomizer_8h_source.html#l00073">73</a> of file <a class="el" href="Randomizer_8h_source.html">Randomizer.h</a>.</p>
 
-<p>References <a class="el" href="classlibcomp_1_1Randomizer.html#a9cf33fa2bf60ecdd33955d95db4cdb5c">GetRandomDecimal()</a>, <a class="el" href="Randomizer_8cpp_source.html#l00057">SeedRNG()</a>, and <a class="el" href="Randomizer_8h_source.html#l00101">sGen64</a>.</p>
+<p>References <a class="el" href="classlibcomp_1_1Randomizer.html#a9cf33fa2bf60ecdd33955d95db4cdb5c">GetRandomDecimal()</a>, <a class="el" href="Randomizer_8cpp_source.html#l00057">SeedRNG()</a>, and <a class="el" href="Randomizer_8h_source.html#l00147">sGen64</a>.</p>
 
 </div>
 </div>
@@ -404,9 +488,9 @@ template&lt;class T &gt; </div>
 
 <p>Definition at line <a class="el" href="Randomizer_8cpp_source.html#l00057">57</a> of file <a class="el" href="Randomizer_8cpp_source.html">Randomizer.cpp</a>.</p>
 
-<p>References <a class="el" href="CString_8cpp_source.html#l00741">libcomp::String::Data()</a>, <a class="el" href="src_2Decrypt_8cpp_source.html#l00255">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="Randomizer_8h_source.html#l00098">sGen</a>, and <a class="el" href="Randomizer_8h_source.html#l00101">sGen64</a>.</p>
+<p>References <a class="el" href="CString_8cpp_source.html#l00741">libcomp::String::Data()</a>, <a class="el" href="src_2Decrypt_8cpp_source.html#l00255">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="Randomizer_8h_source.html#l00144">sGen</a>, and <a class="el" href="Randomizer_8h_source.html#l00147">sGen64</a>.</p>
 
-<p>Referenced by <a class="el" href="Randomizer_8h_source.html#l00054">GetRandomNumber()</a>, and <a class="el" href="Randomizer_8h_source.html#l00071">GetRandomNumber64()</a>.</p>
+<p>Referenced by <a class="el" href="Randomizer_8h_source.html#l00121">GetEntry()</a>, <a class="el" href="Randomizer_8h_source.html#l00056">GetRandomNumber()</a>, and <a class="el" href="Randomizer_8h_source.html#l00073">GetRandomNumber64()</a>.</p>
 
 </div>
 </div>
@@ -431,9 +515,9 @@ template&lt;class T &gt; </div>
 
 <p>Thread specific 32-bit random number generator. </p>
 
-<p>Definition at line <a class="el" href="Randomizer_8h_source.html#l00098">98</a> of file <a class="el" href="Randomizer_8h_source.html">Randomizer.h</a>.</p>
+<p>Definition at line <a class="el" href="Randomizer_8h_source.html#l00144">144</a> of file <a class="el" href="Randomizer_8h_source.html">Randomizer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Randomizer_8h_source.html#l00054">GetRandomNumber()</a>, and <a class="el" href="Randomizer_8cpp_source.html#l00057">SeedRNG()</a>.</p>
+<p>Referenced by <a class="el" href="Randomizer_8h_source.html#l00056">GetRandomNumber()</a>, and <a class="el" href="Randomizer_8cpp_source.html#l00057">SeedRNG()</a>.</p>
 
 </div>
 </div>
@@ -457,9 +541,9 @@ template&lt;class T &gt; </div>
 
 <p>Thread specific 65-bit random number generator. </p>
 
-<p>Definition at line <a class="el" href="Randomizer_8h_source.html#l00101">101</a> of file <a class="el" href="Randomizer_8h_source.html">Randomizer.h</a>.</p>
+<p>Definition at line <a class="el" href="Randomizer_8h_source.html#l00147">147</a> of file <a class="el" href="Randomizer_8h_source.html">Randomizer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Randomizer_8h_source.html#l00071">GetRandomNumber64()</a>, and <a class="el" href="Randomizer_8cpp_source.html#l00057">SeedRNG()</a>.</p>
+<p>Referenced by <a class="el" href="Randomizer_8h_source.html#l00073">GetRandomNumber64()</a>, and <a class="el" href="Randomizer_8cpp_source.html#l00057">SeedRNG()</a>.</p>
 
 </div>
 </div>

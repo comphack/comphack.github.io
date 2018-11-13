@@ -88,6 +88,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">ZoneManager.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -96,54 +98,85 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Manages zone instance objects and connections.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ZoneManager_8h_source.html">ZoneManager.h</a>&quot;</code><br />
-<code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Constants_8h.html">Constants.h</a>&gt;</code><br />
+<code>#include &lt;Constants.h&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DefinitionManager_8h.html">DefinitionManager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html">Log.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/PacketCodes_8h.html">PacketCodes.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Randomizer_8h.html">Randomizer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ScriptEngine_8h.html">ScriptEngine.h</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html">ServerConstants.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerDataManager_8h.html">ServerDataManager.h</a>&gt;</code><br />
 <code>#include &lt;Account.h&gt;</code><br />
 <code>#include &lt;AccountLogin.h&gt;</code><br />
 <code>#include &lt;AccountWorldData.h&gt;</code><br />
 <code>#include &lt;ActionSpawn.h&gt;</code><br />
+<code>#include &lt;ActionStartEvent.h&gt;</code><br />
+<code>#include &lt;Ally.h&gt;</code><br />
+<code>#include &lt;ChannelLogin.h&gt;</code><br />
 <code>#include &lt;CharacterLogin.h&gt;</code><br />
+<code>#include &lt;CharacterProgress.h&gt;</code><br />
+<code>#include &lt;DestinyBox.h&gt;</code><br />
+<code>#include &lt;DiasporaBase.h&gt;</code><br />
+<code>#include &lt;DigitalizeState.h&gt;</code><br />
 <code>#include &lt;Enemy.h&gt;</code><br />
 <code>#include &lt;EntityStats.h&gt;</code><br />
+<code>#include &lt;InstanceAccess.h&gt;</code><br />
 <code>#include &lt;Item.h&gt;</code><br />
 <code>#include &lt;ItemDrop.h&gt;</code><br />
+<code>#include &lt;Loot.h&gt;</code><br />
 <code>#include &lt;LootBox.h&gt;</code><br />
+<code>#include &lt;Match.h&gt;</code><br />
 <code>#include &lt;MiAIData.h&gt;</code><br />
 <code>#include &lt;MiDevilData.h&gt;</code><br />
 <code>#include &lt;MiDynamicMapData.h&gt;</code><br />
 <code>#include &lt;MiGrowthData.h&gt;</code><br />
 <code>#include &lt;MiSpotData.h&gt;</code><br />
+<code>#include &lt;MiTimeLimitData.h&gt;</code><br />
+<code>#include &lt;MiUraFieldTowerData.h&gt;</code><br />
 <code>#include &lt;MiZoneData.h&gt;</code><br />
 <code>#include &lt;MiZoneFileData.h&gt;</code><br />
+<code>#include &lt;MiONPCData.h&gt;</code><br />
 <code>#include &lt;Party.h&gt;</code><br />
+<code>#include &lt;PentalphaEntry.h&gt;</code><br />
 <code>#include &lt;PlasmaSpawn.h&gt;</code><br />
 <code>#include &lt;PlayerExchangeSession.h&gt;</code><br />
+<code>#include &lt;PvPBase.h&gt;</code><br />
+<code>#include &lt;PvPInstanceStats.h&gt;</code><br />
+<code>#include &lt;PvPInstanceVariant.h&gt;</code><br />
+<code>#include &lt;PvPMatch.h&gt;</code><br />
 <code>#include &lt;QmpBoundary.h&gt;</code><br />
 <code>#include &lt;QmpBoundaryLine.h&gt;</code><br />
 <code>#include &lt;QmpElement.h&gt;</code><br />
 <code>#include &lt;QmpFile.h&gt;</code><br />
+<code>#include &lt;QmpNavPoint.h&gt;</code><br />
 <code>#include &lt;ServerBazaar.h&gt;</code><br />
+<code>#include &lt;ServerCultureMachineSet.h&gt;</code><br />
 <code>#include &lt;ServerNPC.h&gt;</code><br />
 <code>#include &lt;ServerObject.h&gt;</code><br />
 <code>#include &lt;ServerZone.h&gt;</code><br />
 <code>#include &lt;ServerZoneInstance.h&gt;</code><br />
+<code>#include &lt;ServerZoneInstanceVariant.h&gt;</code><br />
+<code>#include &lt;ServerZonePartial.h&gt;</code><br />
 <code>#include &lt;ServerZoneSpot.h&gt;</code><br />
 <code>#include &lt;Spawn.h&gt;</code><br />
 <code>#include &lt;SpawnGroup.h&gt;</code><br />
 <code>#include &lt;SpawnLocation.h&gt;</code><br />
 <code>#include &lt;SpawnLocationGroup.h&gt;</code><br />
 <code>#include &lt;SpawnRestriction.h&gt;</code><br />
+<code>#include &lt;Team.h&gt;</code><br />
+<code>#include &lt;UBMatch.h&gt;</code><br />
+<code>#include &lt;WorldSharedConfig.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ActionManager_8h_source.html">ActionManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AIManager_8h_source.html">AIManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AIState_8h_source.html">AIState.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ChannelSyncManager_8h_source.html">ChannelSyncManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="CultureMachineState_8h_source.html">CultureMachineState.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EventManager_8h_source.html">EventManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ManagerConnection_8h_source.html">ManagerConnection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MatchManager_8h_source.html">MatchManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PlasmaState_8h_source.html">PlasmaState.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Zone_8h_source.html">Zone.h</a>&quot;</code><br />
@@ -151,6 +184,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;cmath&gt;</code><br />
 </div>
 <p><a href="ZoneManager_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacelibcomp"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html">libcomp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages zone instance objects and connections. </p>
 <dl class="section author"><dt>Author</dt><dd>HACKfrost</dd></dl>

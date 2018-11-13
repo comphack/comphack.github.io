@@ -90,7 +90,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">ActionManager.h File Reference</div>  </div>
 </div><!--header-->
@@ -99,6 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Class to manage actions when triggering a spot or interacting with an object/NPC.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/EnumMap_8h.html">EnumMap.h</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ScriptEngine_8h.html">ScriptEngine.h</a>&gt;</code><br />
 <code>#include &lt;Action.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="ChannelClientConnection_8h_source.html">ChannelClientConnection.h</a>&quot;</code><br />
 </div>
@@ -106,6 +108,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchannel_1_1ActionManager_1_1ActionContext.html">channel::ActionManager::ActionContext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_1_1ActionManager.html">channel::ActionManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to manage actions when triggering a spot or interacting with an object/NPC.  <a href="classchannel_1_1ActionManager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,6 +118,17 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacechannel"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechannel.html">channel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacelibcomp"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibcomp.html">libcomp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aa9598e1d4a83d6f9b2700703051aa8ba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechannel.html#aa9598e1d4a83d6f9b2700703051aa8ba">channel::ActionRunScriptResult_t</a> : int8_t { <a class="el" href="namespacechannel.html#aa9598e1d4a83d6f9b2700703051aa8baac85ebc7797987bd5d0c952d35fc2a26b">channel::SUCCESS</a> = 0, 
+<a class="el" href="namespacechannel.html#aa9598e1d4a83d6f9b2700703051aa8baa63c93bb833e169b295480c3d44ebc8e7">channel::FAIL</a> = -1, 
+<a class="el" href="namespacechannel.html#aa9598e1d4a83d6f9b2700703051aa8baa9d56646140a2d4a2b1e7966adc7cc724">channel::LOG_OFF</a> = -2
+ }<tr class="memdesc:aa9598e1d4a83d6f9b2700703051aa8ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible results from an ActionRunScript action returned from the script being executed.  <a href="namespacechannel.html#aa9598e1d4a83d6f9b2700703051aa8ba">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aa9598e1d4a83d6f9b2700703051aa8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to manage actions when triggering a spot or interacting with an object/NPC. </p>

@@ -119,6 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7fd008ae6cf3029a112fc27858a98908"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1AccountManager.html#a7fd008ae6cf3029a112fc27858a98908">DeleteCharacter</a> (const std::shared_ptr&lt; objects::Account &gt; &amp;account, const std::shared_ptr&lt; objects::Character &gt; &amp;character)</td></tr>
 <tr class="memdesc:a7fd008ae6cf3029a112fc27858a98908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a character by CID and update the Characters array on the account.  <a href="#a7fd008ae6cf3029a112fc27858a98908">More...</a><br /></td></tr>
 <tr class="separator:a7fd008ae6cf3029a112fc27858a98908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82af335f157187819d2cf6119cb39568"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1AccountManager.html#a82af335f157187819d2cf6119cb39568">EndWebGameSession</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;username)</td></tr>
+<tr class="memdesc:a82af335f157187819d2cf6119cb39568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start any web-game session for the specified user.  <a href="#a82af335f157187819d2cf6119cb39568">More...</a><br /></td></tr>
+<tr class="separator:a82af335f157187819d2cf6119cb39568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a329949d18be857e347f406edf6c09e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1AccountManager.html#a329949d18be857e347f406edf6c09e43">ExpireSession</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;username, const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;sid)</td></tr>
 <tr class="memdesc:a329949d18be857e347f406edf6c09e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expire a session key.  <a href="#a329949d18be857e347f406edf6c09e43">More...</a><br /></td></tr>
 <tr class="separator:a329949d18be857e347f406edf6c09e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aee0f697175d0ca91df06998eb6f69f25"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::AccountLogin &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1AccountManager.html#aee0f697175d0ca91df06998eb6f69f25">GetUserLogin</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;username)</td></tr>
 <tr class="memdesc:aee0f697175d0ca91df06998eb6f69f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current user login state independent of world.  <a href="#aee0f697175d0ca91df06998eb6f69f25">More...</a><br /></td></tr>
 <tr class="separator:aee0f697175d0ca91df06998eb6f69f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2928260f4cde877f4dfbd772b147b3b2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classlobby_1_1WebGameApiSession.html">WebGameApiSession</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1AccountManager.html#a2928260f4cde877f4dfbd772b147b3b2">GetWebGameApiSession</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;username, const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;sessionID, const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;clientAddress)</td></tr>
+<tr class="memdesc:a2928260f4cde877f4dfbd772b147b3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get or create a web-game API session based upon a valid web-game session if one exists and matches the supplied values.  <a href="#a2928260f4cde877f4dfbd772b147b3b2">More...</a><br /></td></tr>
+<tr class="separator:a2928260f4cde877f4dfbd772b147b3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a348add21f1d08baa9d853b82f5537ea4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1AccountManager.html#a348add21f1d08baa9d853b82f5537ea4">IsLoggedIn</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;username, int8_t &amp;world)</td></tr>
 <tr class="memdesc:a348add21f1d08baa9d853b82f5537ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a user is logged in.  <a href="#a348add21f1d08baa9d853b82f5537ea4">More...</a><br /></td></tr>
 <tr class="separator:a348add21f1d08baa9d853b82f5537ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +155,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acae6513b7fa29b7656e21dd7ae086b7c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; objects::AccountLogin &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1AccountManager.html#acae6513b7fa29b7656e21dd7ae086b7c">StartChannelLogin</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;username, const std::shared_ptr&lt; objects::Character &gt; &amp;character)</td></tr>
 <tr class="memdesc:acae6513b7fa29b7656e21dd7ae086b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the character associated to the supplied account in preparation for world communication and channel connection.  <a href="#acae6513b7fa29b7656e21dd7ae086b7c">More...</a><br /></td></tr>
 <tr class="separator:acae6513b7fa29b7656e21dd7ae086b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93b06b341ceb3a28e19480a5f1b741f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1AccountManager.html#ae93b06b341ceb3a28e19480a5f1b741f">StartWebGameSession</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;username, const std::shared_ptr&lt; objects::WebGameSession &gt; &amp;gameSession)</td></tr>
+<tr class="memdesc:ae93b06b341ceb3a28e19480a5f1b741f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a web-game session for the specified user who is currently playing that remains valid until a remove request is received or the account leaves the channel.  <a href="#ae93b06b341ceb3a28e19480a5f1b741f">More...</a><br /></td></tr>
+<tr class="separator:ae93b06b341ceb3a28e19480a5f1b741f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb5a3c3e59d5f05eeb0f3e30b536e51f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ErrorCodes_8h.html#a2cf7f25f3a3bc56e70c6f1ae0cc8323b">ErrorCodes_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1AccountManager.html#adb5a3c3e59d5f05eeb0f3e30b536e51f">SwitchToChannel</a> (const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;username, int8_t worldID, int8_t channelID)</td></tr>
 <tr class="memdesc:adb5a3c3e59d5f05eeb0f3e30b536e51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transitions the user login state from LOBBY to LOBBY_TO_CHANNEL, set the supplied world and channel IDs and await world communication that the player has successfully entered the channel.  <a href="#adb5a3c3e59d5f05eeb0f3e30b536e51f">More...</a><br /></td></tr>
 <tr class="separator:adb5a3c3e59d5f05eeb0f3e30b536e51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,11 +197,16 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae05396ddf9c66af83da40830e0d96784"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlobby_1_1LobbyServer.html">LobbyServer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1AccountManager.html#ae05396ddf9c66af83da40830e0d96784">mServer</a></td></tr>
 <tr class="memdesc:ae05396ddf9c66af83da40830e0d96784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the lobby server.  <a href="#ae05396ddf9c66af83da40830e0d96784">More...</a><br /></td></tr>
 <tr class="separator:ae05396ddf9c66af83da40830e0d96784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95bc1938801ac90233fd8f71f114bb35"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a>, std::shared_ptr&lt; <a class="el" href="classlobby_1_1WebGameApiSession.html">WebGameApiSession</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1AccountManager.html#a95bc1938801ac90233fd8f71f114bb35">mWebGameAPISessions</a></td></tr>
+<tr class="separator:a95bc1938801ac90233fd8f71f114bb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3834f0309e09c9c2ee6762bd3d1b704"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a>, std::shared_ptr&lt; objects::WebGameSession &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlobby_1_1AccountManager.html#ab3834f0309e09c9c2ee6762bd3d1b704">mWebGameSessions</a></td></tr>
+<tr class="memdesc:ab3834f0309e09c9c2ee6762bd3d1b704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of account usernames associated to accounts to web-game sessions either pending or active for a character currently playing.  <a href="#ab3834f0309e09c9c2ee6762bd3d1b704">More...</a><br /></td></tr>
+<tr class="separator:ab3834f0309e09c9c2ee6762bd3d1b704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages logged in user accounts. </p>
 
-<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00056">56</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00058">58</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aad9aa34a8e0ca29a874b9a4616bba04f"></a>
 <div class="memitem">
@@ -225,7 +239,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>The server must remain valid during any account manager request. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00054">54</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00056">56</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -272,9 +286,9 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true upon successful update, false if an error occurred </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is thread safe. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00460">460</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00463">463</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="AccountManager_8cpp_source.html#l00580">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, and <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>.</p>
+<p>References <a class="el" href="AccountManager_8cpp_source.html#l00593">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00389">mWebGameAPISessions</a>, <a class="el" href="AccountManager_8h_source.html#l00384">mWebGameSessions</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
 </div>
 </div>
@@ -324,9 +338,9 @@ Private Attributes</h2></td></tr>
 </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is thread safe. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00409">409</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00411">411</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="AccountManager_8cpp_source.html#l00580">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, and <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>.</p>
+<p>References <a class="el" href="AccountManager_8cpp_source.html#l00593">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, and <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>.</p>
 
 </div>
 </div>
@@ -364,11 +378,40 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the character was deleted and the account was updated, false otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00805">805</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00820">820</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyServer_8cpp_source.html#l00546">lobby::LobbyServer::GetLobbySyncManager()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00258">lobby::LobbyServer::GetMainDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Constants_8h.html#a4c91fbfef0473c70a4a109eeaa84e154">MAX_CHARACTER</a>, <a class="el" href="AccountManager_8h_source.html#l00335">mServer</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#ac1142242ad747f1627737cbc7c7e690c">libcomp::DataSyncManager::RemoveRecord()</a>.</p>
+<p>References <a class="el" href="LobbyServer_8cpp_source.html#l00535">lobby::LobbyServer::GetLobbySyncManager()</a>, <a class="el" href="LobbyServer_8cpp_source.html#l00254">lobby::LobbyServer::GetMainDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00372">mServer</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DataSyncManager.html#ac1142242ad747f1627737cbc7c7e690c">libcomp::DataSyncManager::RemoveRecord()</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00699">UpdateKillTime()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00714">UpdateKillTime()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a82af335f157187819d2cf6119cb39568"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> AccountManager::EndWebGameSession </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>username</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start any web-game session for the specified user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Username of the account the session belongs to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the session existed and was removed, false if it did not </dd></dl>
+
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00970">970</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00389">mWebGameAPISessions</a>, <a class="el" href="AccountManager_8h_source.html#l00384">mWebGameSessions</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
 </div>
 </div>
@@ -403,11 +446,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function is NOT thread safe. You MUST lock access first! </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00626">626</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00639">639</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="AccountManager_8h_source.html#l00342">mAccountMap</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00925">UpdateDebugStatus()</a>.</p>
+<p>References <a class="el" href="AccountManager_8h_source.html#l00379">mAccountMap</a>, <a class="el" href="AccountManager_8h_source.html#l00389">mWebGameAPISessions</a>, <a class="el" href="AccountManager_8h_source.html#l00384">mWebGameSessions</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l01036">UpdateDebugStatus()</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00260">LobbyLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00499">Logout()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00058">WebAuthLogin()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00262">LobbyLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00506">Logout()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00060">WebAuthLogin()</a>.</p>
 
 </div>
 </div>
@@ -445,11 +488,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function is thread safe. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00548">548</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00561">561</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00342">mAccountMap</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00925">UpdateDebugStatus()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00379">mAccountMap</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l01036">UpdateDebugStatus()</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00499">Logout()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00058">WebAuthLogin()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00506">Logout()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00060">WebAuthLogin()</a>.</p>
 
 </div>
 </div>
@@ -476,7 +519,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>List of pointers to characters to delete. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00785">785</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00800">800</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -512,11 +555,11 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The login object for the given username or null on error. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is NOT thread safe. You MUST lock access first! </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00580">580</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00593">593</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyServer_8cpp_source.html#l00258">lobby::LobbyServer::GetMainDatabase()</a>, <a class="el" href="AccountManager_8h_source.html#l00342">mAccountMap</a>, <a class="el" href="AccountManager_8h_source.html#l00335">mServer</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00925">UpdateDebugStatus()</a>.</p>
+<p>References <a class="el" href="LobbyServer_8cpp_source.html#l00254">lobby::LobbyServer::GetMainDatabase()</a>, <a class="el" href="AccountManager_8h_source.html#l00379">mAccountMap</a>, <a class="el" href="AccountManager_8h_source.html#l00372">mServer</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l01036">UpdateDebugStatus()</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00460">ChannelToChannelSwitch()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00409">CompleteChannelLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00210">LobbyLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00499">Logout()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00334">StartChannelLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00368">SwitchToChannel()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00058">WebAuthLogin()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00463">ChannelToChannelSwitch()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00411">CompleteChannelLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00212">LobbyLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00506">Logout()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00336">StartChannelLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00370">SwitchToChannel()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00060">WebAuthLogin()</a>.</p>
 
 </div>
 </div>
@@ -543,11 +586,58 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the login state; null if it does not exist. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00657">657</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00672">672</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00342">mAccountMap</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
+<p>References <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00379">mAccountMap</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00699">UpdateKillTime()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00714">UpdateKillTime()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2928260f4cde877f4dfbd772b147b3b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classlobby_1_1WebGameApiSession.html">WebGameApiSession</a> &gt; AccountManager::GetWebGameApiSession </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>sessionID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>clientAddress</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get or create a web-game API session based upon a valid web-game session if one exists and matches the supplied values. </p>
+<p>Sessions created here last only as long as the game session exists. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Username of the account the session belongs to </td></tr>
+    <tr><td class="paramname">sessionID</td><td>Session ID supplied by the world server which changes each time a new web-game session is requested </td></tr>
+    <tr><td class="paramname">clientAddress</td><td>Base address of the client requesting the session used for prevention of two active sessions for the same user </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the web-game API session, null if the supplied values were not valid </dd></dl>
+
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00923">923</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00389">mWebGameAPISessions</a>, <a class="el" href="AccountManager_8h_source.html#l00384">mWebGameSessions</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
 </div>
 </div>
@@ -585,9 +675,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the user is logged in; false otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00636">636</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00651">651</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00342">mAccountMap</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
+<p>References <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00379">mAccountMap</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
 </div>
 </div>
@@ -639,9 +729,9 @@ Private Attributes</h2></td></tr>
 </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is thread safe. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00210">210</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00212">212</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00580">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00593">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
 </div>
 </div>
@@ -689,9 +779,9 @@ Private Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This function is thread safe. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Check if the server is full and return SERVER_FULL. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00260">260</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00262">262</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="AccountManager_8cpp_source.html#l00626">EraseLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00580">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>, <a class="el" href="LobbyClientConnection_8h_source.html#l00056">lobby::state()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
+<p>References <a class="el" href="AccountManager_8cpp_source.html#l00639">EraseLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00593">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, <a class="el" href="LobbyClientConnection_8h_source.html#l00056">lobby::state()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
 </div>
 </div>
@@ -719,9 +809,9 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the account was logged out; false otherwise. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is thread safe. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00499">499</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00506">506</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyClientConnection_8h_source.html#l00071">lobby::config()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00626">EraseLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00548">ExpireSession()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a3f136d3503bef43fc0001c8a9eb8d682">libcomp::BaseServer::GetConfig()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00580">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a03a0f7c920ee9a45f64bd4e77d8b17b4">libcomp::BaseServer::GetTimerManager()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>, and <a class="el" href="AccountManager_8h_source.html#l00335">mServer</a>.</p>
+<p>References <a class="el" href="LobbyClientConnection_8h_source.html#l00071">lobby::config()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00639">EraseLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00561">ExpireSession()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a3f136d3503bef43fc0001c8a9eb8d682">libcomp::BaseServer::GetConfig()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00593">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a03a0f7c920ee9a45f64bd4e77d8b17b4">libcomp::BaseServer::GetTimerManager()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00372">mServer</a>, <a class="el" href="AccountManager_8h_source.html#l00389">mWebGameAPISessions</a>, <a class="el" href="AccountManager_8h_source.html#l00384">mWebGameSessions</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
 </div>
 </div>
@@ -759,9 +849,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>List of usernames that were logged out. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00668">668</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00683">683</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00342">mAccountMap</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00925">UpdateDebugStatus()</a>.</p>
+<p>References <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00379">mAccountMap</a>, and <a class="el" href="AccountManager_8cpp_source.html#l01036">UpdateDebugStatus()</a>.</p>
 
 </div>
 </div>
@@ -789,9 +879,9 @@ Private Attributes</h2></td></tr>
 <p>Print the status of the accounts managed by this object. </p>
 <dl class="section note"><dt>Note</dt><dd>This function is NOT thread safe. You MUST lock access first! </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00879">879</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00990">990</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00342">mAccountMap</a>, and <a class="el" href="LobbyClientConnection_8h_source.html#l00056">lobby::state()</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00379">mAccountMap</a>, and <a class="el" href="LobbyClientConnection_8h_source.html#l00056">lobby::state()</a>.</p>
 
 </div>
 </div>
@@ -829,9 +919,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the character was created and the account was updated, false otherwise </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00746">746</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00761">761</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyServer_8cpp_source.html#l00258">lobby::LobbyServer::GetMainDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Constants_8h.html#a4c91fbfef0473c70a4a109eeaa84e154">MAX_CHARACTER</a>, and <a class="el" href="AccountManager_8h_source.html#l00335">mServer</a>.</p>
+<p>References <a class="el" href="LobbyServer_8cpp_source.html#l00254">lobby::LobbyServer::GetMainDatabase()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, and <a class="el" href="AccountManager_8h_source.html#l00372">mServer</a>.</p>
 
 </div>
 </div>
@@ -870,9 +960,49 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the matching AccountLogin or null if it does not exist </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is thread safe. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00334">334</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00336">336</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="AccountManager_8cpp_source.html#l00580">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, and <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>.</p>
+<p>References <a class="el" href="AccountManager_8cpp_source.html#l00593">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, and <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae93b06b341ceb3a28e19480a5f1b741f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> AccountManager::StartWebGameSession </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; objects::WebGameSession &gt; &amp;&#160;</td>
+          <td class="paramname"><em>gameSession</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start a web-game session for the specified user who is currently playing that remains valid until a remove request is received or the account leaves the channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Username of the account the session belongs to </td></tr>
+    <tr><td class="paramname">gameSession</td><td>Pointer to the session's definition </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the session was started successfully, false if it was not </dd></dl>
+
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00894">894</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00379">mAccountMap</a>, <a class="el" href="AccountManager_8h_source.html#l00384">mWebGameSessions</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
 </div>
 </div>
@@ -922,9 +1052,9 @@ Private Attributes</h2></td></tr>
 </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is thread safe. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00368">368</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00370">370</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="AccountManager_8cpp_source.html#l00580">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, and <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>.</p>
+<p>References <a class="el" href="AccountManager_8cpp_source.html#l00593">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, and <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>.</p>
 
 </div>
 </div>
@@ -952,11 +1082,11 @@ Private Attributes</h2></td></tr>
 <p>Update the server debug state for systems configured to display it. </p>
 <dl class="section note"><dt>Note</dt><dd>This function is NOT thread safe. You MUST lock access first! </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00925">925</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l01036">1036</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="AccountManager_8h_source.html#l00342">mAccountMap</a>.</p>
+<p>References <a class="el" href="AccountManager_8h_source.html#l00379">mAccountMap</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00626">EraseLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00548">ExpireSession()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00580">GetOrCreateLogin()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00668">LogoutUsersInWorld()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00639">EraseLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00561">ExpireSession()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00593">GetOrCreateLogin()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00683">LogoutUsersInWorld()</a>.</p>
 
 </div>
 </div>
@@ -1001,9 +1131,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the character was updated, false otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00699">699</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00714">714</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyClientConnection_8h_source.html#l00071">lobby::config()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00805">DeleteCharacter()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00657">GetUserLogin()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>.</p>
+<p>References <a class="el" href="LobbyClientConnection_8h_source.html#l00071">lobby::config()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00820">DeleteCharacter()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00672">GetUserLogin()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>.</p>
 
 </div>
 </div>
@@ -1073,11 +1203,11 @@ Private Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This function is thread safe. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Check if the server is full and return SERVER_FULL. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00058">58</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00060">60</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="LobbyClientConnection_8h_source.html#l00071">lobby::config()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00626">EraseLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00548">ExpireSession()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a3f136d3503bef43fc0001c8a9eb8d682">libcomp::BaseServer::GetConfig()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00580">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a03a0f7c920ee9a45f64bd4e77d8b17b4">libcomp::BaseServer::GetTimerManager()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a38a1731684a357f62f2c77eac470d256">libcomp::Decrypt::HashPassword()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00338">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00335">mServer</a>, <a class="el" href="LobbyClientConnection_8h_source.html#l00056">lobby::state()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
+<p>References <a class="el" href="LobbyClientConnection_8h_source.html#l00071">lobby::config()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00639">EraseLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00561">ExpireSession()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a825ecd0a6d663cbec637a0fb38a3d854">libcomp::Decrypt::GenerateRandom()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a3f136d3503bef43fc0001c8a9eb8d682">libcomp::BaseServer::GetConfig()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00593">GetOrCreateLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#a03a0f7c920ee9a45f64bd4e77d8b17b4">libcomp::BaseServer::GetTimerManager()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Decrypt.html#a38a1731684a357f62f2c77eac470d256">libcomp::Decrypt::HashPassword()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="el" href="AccountManager_8h_source.html#l00375">mAccountLock</a>, <a class="el" href="AccountManager_8h_source.html#l00372">mServer</a>, <a class="el" href="LobbyClientConnection_8h_source.html#l00056">lobby::state()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a2ea8e48b75f4e32e62b171f11c67932c">libcomp::String::ToLower()</a>.</p>
 
-<p>Referenced by <a class="el" href="LoginWebHandler_8cpp_source.html#l00154">lobby::LoginHandler::HandlePage()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00203">WebAuthLoginApi()</a>.</p>
+<p>Referenced by <a class="el" href="LoginWebHandler_8cpp_source.html#l00154">lobby::LoginHandler::HandlePage()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00205">WebAuthLoginApi()</a>.</p>
 
 </div>
 </div>
@@ -1134,11 +1264,11 @@ Private Attributes</h2></td></tr>
 <dd>
 The password is not required because it is assumed to have been checked by the API subsystem. Do NOT use this for normal logins. </dd></dl>
 
-<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00203">203</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8cpp_source.html#l00205">205</a> of file <a class="el" href="AccountManager_8cpp_source.html">AccountManager.cpp</a>.</p>
 
-<p>References <a class="el" href="AccountManager_8cpp_source.html#l00058">WebAuthLogin()</a>.</p>
+<p>References <a class="el" href="AccountManager_8cpp_source.html#l00060">WebAuthLogin()</a>.</p>
 
-<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00258">lobby::ApiHandler::Account_ClientLogin()</a>.</p>
+<p>Referenced by <a class="el" href="ApiHandler_8cpp_source.html#l00270">lobby::ApiHandler::Account_ClientLogin()</a>.</p>
 
 </div>
 </div>
@@ -1163,9 +1293,9 @@ The password is not required because it is assumed to have been checked by the A
 
 <p>Mutex to lock access to the account map. </p>
 
-<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00338">338</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00375">375</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00460">ChannelToChannelSwitch()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00409">CompleteChannelLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00805">DeleteCharacter()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00548">ExpireSession()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00657">GetUserLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00636">IsLoggedIn()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00210">LobbyLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00499">Logout()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00668">LogoutUsersInWorld()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00746">SetCharacterOnAccount()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00334">StartChannelLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00368">SwitchToChannel()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00058">WebAuthLogin()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00463">ChannelToChannelSwitch()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00411">CompleteChannelLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00820">DeleteCharacter()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00970">EndWebGameSession()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00561">ExpireSession()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00672">GetUserLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00923">GetWebGameApiSession()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00651">IsLoggedIn()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00212">LobbyLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00506">Logout()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00683">LogoutUsersInWorld()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00761">SetCharacterOnAccount()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00336">StartChannelLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00894">StartWebGameSession()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00370">SwitchToChannel()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00060">WebAuthLogin()</a>.</p>
 
 </div>
 </div>
@@ -1189,9 +1319,9 @@ The password is not required because it is assumed to have been checked by the A
 
 <p>Map of accounts with associated login information. </p>
 
-<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00342">342</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00379">379</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00626">EraseLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00548">ExpireSession()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00580">GetOrCreateLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00657">GetUserLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00636">IsLoggedIn()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00668">LogoutUsersInWorld()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00879">PrintAccounts()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00925">UpdateDebugStatus()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00639">EraseLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00561">ExpireSession()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00593">GetOrCreateLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00672">GetUserLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00651">IsLoggedIn()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00683">LogoutUsersInWorld()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00990">PrintAccounts()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00894">StartWebGameSession()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l01036">UpdateDebugStatus()</a>.</p>
 
 </div>
 </div>
@@ -1215,9 +1345,59 @@ The password is not required because it is assumed to have been checked by the A
 
 <p>Pointer to the lobby server. </p>
 
-<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00335">335</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
+<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00372">372</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00805">DeleteCharacter()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00580">GetOrCreateLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00499">Logout()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00746">SetCharacterOnAccount()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00058">WebAuthLogin()</a>.</p>
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00820">DeleteCharacter()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00593">GetOrCreateLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00506">Logout()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00761">SetCharacterOnAccount()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00060">WebAuthLogin()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a95bc1938801ac90233fd8f71f114bb35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a>, std::shared_ptr&lt;<a class="el" href="classlobby_1_1WebGameApiSession.html">WebGameApiSession</a>&gt; &gt; lobby::AccountManager::mWebGameAPISessions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00389">389</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00463">ChannelToChannelSwitch()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00970">EndWebGameSession()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00639">EraseLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00923">GetWebGameApiSession()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00506">Logout()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3834f0309e09c9c2ee6762bd3d1b704"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a>, std::shared_ptr&lt; objects::WebGameSession&gt; &gt; lobby::AccountManager::mWebGameSessions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Map of account usernames associated to accounts to web-game sessions either pending or active for a character currently playing. </p>
+
+<p>Definition at line <a class="el" href="AccountManager_8h_source.html#l00384">384</a> of file <a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>.</p>
+
+<p>Referenced by <a class="el" href="AccountManager_8cpp_source.html#l00463">ChannelToChannelSwitch()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00970">EndWebGameSession()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00639">EraseLogin()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00923">GetWebGameApiSession()</a>, <a class="el" href="AccountManager_8cpp_source.html#l00506">Logout()</a>, and <a class="el" href="AccountManager_8cpp_source.html#l00894">StartWebGameSession()</a>.</p>
 
 </div>
 </div>

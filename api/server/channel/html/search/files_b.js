@@ -13,6 +13,8 @@ var searchData=
   ['managersystem_2eh',['ManagerSystem.h',['../ManagerSystem_8h.html',1,'']]],
   ['mapflag_2ecpp',['MapFlag.cpp',['../MapFlag_8cpp.html',1,'']]],
   ['mariadb_2ecpp',['MariaDB.cpp',['../../../../libcomp/html/MariaDB_8cpp.html',1,'']]],
+  ['matchmanager_2ecpp',['MatchManager.cpp',['../MatchManager_8cpp.html',1,'']]],
+  ['matchmanager_2eh',['MatchManager.h',['../MatchManager_8h.html',1,'']]],
   ['materialbox_2ecpp',['MaterialBox.cpp',['../MaterialBox_8cpp.html',1,'']]],
   ['materialextract_2ecpp',['MaterialExtract.cpp',['../MaterialExtract_8cpp.html',1,'']]],
   ['materialinsert_2ecpp',['MaterialInsert.cpp',['../MaterialInsert_8cpp.html',1,'']]],
@@ -36,5 +38,8 @@ var searchData=
   ['messagetimeout_2eh',['MessageTimeout.h',['../../../../libcomp/html/MessageTimeout_8h.html',1,'']]],
   ['messageworldnotification_2ecpp',['MessageWorldNotification.cpp',['../../../../libcomp/html/MessageWorldNotification_8cpp.html',1,'']]],
   ['messageworldnotification_2eh',['MessageWorldNotification.h',['../../../../libcomp/html/MessageWorldNotification_8h.html',1,'']]],
+  ['missionleave_2ecpp',['MissionLeave.cpp',['../MissionLeave_8cpp.html',1,'']]],
+  ['mitamareset_2ecpp',['MitamaReset.cpp',['../MitamaReset_8cpp.html',1,'']]],
+  ['mitamareunion_2ecpp',['MitamaReunion.cpp',['../MitamaReunion_8cpp.html',1,'']]],
   ['move_2ecpp',['Move.cpp',['../Move_8cpp.html',1,'']]]
 ];

@@ -10,6 +10,7 @@ var searchData=
   ['skillmanager',['SkillManager',['../classchannel_1_1SkillManager.html',1,'channel']]],
   ['skilltargetresult',['SkillTargetResult',['../classchannel_1_1SkillTargetResult.html',1,'channel']]],
   ['spawnthread',['SpawnThread',['../../../../libcomp/html/classlibcomp_1_1SpawnThread.html',1,'libcomp']]],
+  ['statuseffectchange',['StatusEffectChange',['../classchannel_1_1StatusEffectChange.html',1,'channel']]],
   ['string',['String',['../../../../libcomp/html/classlibcomp_1_1String.html',1,'libcomp']]],
   ['stringdata',['StringData',['../../../../libcomp/html/classString_1_1StringData.html',1,'String']]]
 ];

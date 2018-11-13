@@ -89,6 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions_func_g.html#index_g"><span>g</span></a></li>
       <li><a href="functions_func_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_i.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_func_j.html#index_j"><span>j</span></a></li>
+      <li><a href="functions_func_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_func_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_func_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_func_n.html#index_n"><span>n</span></a></li>
@@ -134,11 +136,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GenerateDemon()
 : <a class="el" href="classchannel_1_1CharacterManager.html#a6802d4adc3947f684985ff6af777d4d9">channel::CharacterManager</a>
 </li>
+<li>GenerateDemonQuest()
+: <a class="el" href="classchannel_1_1EventManager.html#ac6018f15921c2c0370cc22f249effa18">channel::EventManager</a>
+</li>
 <li>GenerateItem()
 : <a class="el" href="classchannel_1_1CharacterManager.html#a25630fce8afa984bd86ee4e08ff52b59">channel::CharacterManager</a>
-</li>
-<li>GetAccessCIDs()
-: <a class="el" href="classchannel_1_1ZoneInstance.html#abeea971a391039a2129d41d42dbe1767">channel::ZoneInstance</a>
 </li>
 <li>GetAccountManager()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a2f31062a43ec96dc441957bc09b66e6f">channel::ChannelServer</a>
@@ -146,11 +148,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetAccountUID()
 : <a class="el" href="classchannel_1_1ClientState.html#ad1cb0407e9b71cadbf6e9763e11b6b7b">channel::ClientState</a>
 </li>
+<li>GetAction()
+: <a class="el" href="classchannel_1_1ActionManager.html#aa28a67be50ab3fffb0432cb0f16f79e7">channel::ActionManager</a>
+</li>
+<li>GetActionContextCIDs()
+: <a class="el" href="classchannel_1_1ActionManager.html#aef705fc28ce1dcbcc1117c73f78c0b44">channel::ActionManager</a>
+</li>
 <li>GetActionManager()
 : <a class="el" href="classchannel_1_1ChannelServer.html#aded5d71e3d0833613de8e3239f2a90b3">channel::ChannelServer</a>
-</li>
-<li>GetActionTime()
-: <a class="el" href="classchannel_1_1ActiveEntityState.html#a66d0c35bb1d4ee3e361fafb02fcf629a">channel::ActiveEntityState</a>
 </li>
 <li>GetActivatedAbility()
 : <a class="el" href="classchannel_1_1AIUseSkillCommand.html#aa9a5608e01fe3c0400a161daeb495b0c">channel::AIUseSkillCommand</a>
@@ -167,8 +172,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetActiveEntity()
 : <a class="el" href="classchannel_1_1Zone.html#a75d09687abaa3b1b2707944d204cba12">channel::Zone</a>
 </li>
+<li>GetActiveLogin()
+: <a class="el" href="classchannel_1_1AccountManager.html#a55324a3fa27371c5b7f8a7dbd4ba5ebc">channel::AccountManager</a>
+</li>
+<li>GetActiveLogins()
+: <a class="el" href="classchannel_1_1AccountManager.html#a53f8a4a0d68ddf22bd305512c3f24aad">channel::AccountManager</a>
+</li>
 <li>GetActivePoints()
 : <a class="el" href="classchannel_1_1PlasmaState.html#a38cdfff2b74064fc24fc7098dfa5c1c6">channel::PlasmaState</a>
+</li>
+<li>GetActiveStatusesPacket()
+: <a class="el" href="classchannel_1_1CharacterManager.html#a145b3056ded7100f33fd3005bd8ec5ec">channel::CharacterManager</a>
 </li>
 <li>GetActor()
 : <a class="el" href="classchannel_1_1Zone.html#a8fa3b4fd2ab479c5aa722dbecdd6e111">channel::Zone</a>
@@ -179,14 +193,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetAdjustedLevelSum()
 : <a class="el" href="classchannel_1_1FusionManager.html#ae75ef62ea017a32a72f517a27119f68f">channel::FusionManager</a>
 </li>
-<li>GetAggression()
-: <a class="el" href="classchannel_1_1AIState.html#affb9fcba2e074c306034899e3a7b4e5a">channel::AIState</a>
+<li>GetAffinityBoost()
+: <a class="el" href="classchannel_1_1SkillManager.html#ae79c41cae170be1cfd08e8dc411387ba">channel::SkillManager</a>
 </li>
 <li>GetAggroValue()
 : <a class="el" href="classchannel_1_1AIState.html#ac0df4666db6d1eead403dca9b36db713">channel::AIState</a>
-</li>
-<li>GetAIData()
-: <a class="el" href="classchannel_1_1AIState.html#ac4d9a7f11c29bb69920448f1b7e4e00c">channel::AIState</a>
 </li>
 <li>GetAIManager()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a6be3423c47561212e7aaff5b55404025">channel::ChannelServer</a>
@@ -194,24 +205,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetAIState()
 : <a class="el" href="classchannel_1_1ActiveEntityState.html#a7683912a1ff2b1a5dd162b5441a7dcc5">channel::ActiveEntityState</a>
 </li>
+<li>GetAllConnections()
+: <a class="el" href="classchannel_1_1ManagerConnection.html#ab34a3847e7c8529e5c6477483bb22965">channel::ManagerConnection</a>
+</li>
+<li>GetAllEnemySkills()
+: <a class="el" href="classchannel_1_1ActiveEntityState.html#aa14ac6caa71abd175b26bb045fb9642a">channel::ActiveEntityState</a>
+</li>
+<li>GetAllies()
+: <a class="el" href="classchannel_1_1Zone.html#a530ee8a08baf6b8d0a694a0f7dc40ffd">channel::Zone</a>
+</li>
 <li>GetAllRegisteredChannels()
 : <a class="el" href="classchannel_1_1ChannelServer.html#ab6913a3dafb51d079216fd53a98b0088">channel::ChannelServer</a>
 </li>
 <li>GetAllSkills()
 : <a class="el" href="classchannel_1_1ActiveEntityState.html#a2d6d36cbc13f6afee27eac6ad1545a2e">channel::ActiveEntityState</a>
-, <a class="el" href="classchannel_1_1ActiveEntityStateImp.html#ab49cdbfc8d64fb90019f421a9f182597">channel::ActiveEntityStateImp&lt; T &gt;</a>
+, <a class="el" href="classchannel_1_1AllyState.html#ac6773fe30146ecf1ca1ba52fa1c1ab52">channel::AllyState</a>
+, <a class="el" href="classchannel_1_1CharacterState.html#aed4d354c27aabd33a4001faf60823e87">channel::CharacterState</a>
+, <a class="el" href="classchannel_1_1DemonState.html#ae440e1a98c7f8b7263106081378dbc92">channel::DemonState</a>
+, <a class="el" href="classchannel_1_1EnemyState.html#ab55b5046170193f76dfbda3ba7957907">channel::EnemyState</a>
 </li>
 <li>GetAllTokuseiEntities()
 : <a class="el" href="classchannel_1_1TokuseiManager.html#abc66b5512c37386c2866d4094b0557de">channel::TokuseiManager</a>
 </li>
+<li>GetAlly()
+: <a class="el" href="classchannel_1_1Zone.html#a6328a36b9b347e83cf3e681ae2abb9e2">channel::Zone</a>
+</li>
 <li>GetAspectMap()
-: <a class="el" href="classchannel_1_1TokuseiManager.html#a4bd95ef0a0b46f91286fc3cc42eb8e23">channel::TokuseiManager</a>
+: <a class="el" href="classchannel_1_1TokuseiManager.html#aab01f59a69050eac43084892c145f2d6">channel::TokuseiManager</a>
 </li>
 <li>GetAspectSum()
 : <a class="el" href="classchannel_1_1TokuseiManager.html#a7cd7b53af3902f6097897aaafe0c50b7">channel::TokuseiManager</a>
 </li>
 <li>GetAspectValueList()
 : <a class="el" href="classchannel_1_1TokuseiManager.html#a9b1983db37fd17107b6213c2c9d871c3">channel::TokuseiManager</a>
+</li>
+<li>GetBaseRestrictedActionTypes()
+: <a class="el" href="classchannel_1_1Zone.html#a88108a1a646df4472881f2e6bbc06b11">channel::Zone</a>
 </li>
 <li>GetBazaar()
 : <a class="el" href="classchannel_1_1Zone.html#adae8d138de6e1fed5cee38bda6b81364">channel::Zone</a>
@@ -222,14 +251,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetBazaarState()
 : <a class="el" href="classchannel_1_1ClientState.html#af3273a2b98ec248e7c9fee87c2eb2533">channel::ClientState</a>
 </li>
+<li>GetBosses()
+: <a class="el" href="classchannel_1_1Zone.html#aef7db11b26545617fad1aa421868ed66">channel::Zone</a>
+</li>
 <li>GetCalculatedState()
 : <a class="el" href="classchannel_1_1SkillManager.html#a205507530e58c4473bdd21b755284043">channel::SkillManager</a>
+</li>
+<li>GetChannelID()
+: <a class="el" href="classchannel_1_1ChannelServer.html#a300eebcf7430536ee6e2f5d37d1e84a9">channel::ChannelServer</a>
 </li>
 <li>GetChannelSyncManager()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a97cc63d98b46baf8030c6e90552e3b7a">channel::ChannelServer</a>
 </li>
-<li>GetCharacterBaseStatMap()
-: <a class="el" href="classchannel_1_1CharacterManager.html#a7b1affc94f77ac7634ddf6c6387af725">channel::CharacterManager</a>
+<li>GetCharacterBaseStats()
+: <a class="el" href="classchannel_1_1CharacterManager.html#a6411b9883aa2efce72afb5bd83ebd1a1">channel::CharacterManager</a>
 </li>
 <li>GetCharacterManager()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a01ec52bcd8e51455bf9fe48abed512c7">channel::ChannelServer</a>
@@ -253,7 +288,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classchannel_1_1ClientState.html#a3c8a216bf04f6a6afd884ac527342aff">channel::ClientState</a>
 </li>
 <li>GetCompendiumCount()
-: <a class="el" href="classchannel_1_1DemonState.html#a3b2eecde376c681b08eee90120194bc9">channel::DemonState</a>
+: <a class="el" href="classchannel_1_1DemonState.html#a6a6675c7a4fd82858aa30b70c11cdca9">channel::DemonState</a>
 </li>
 <li>GetCompendiumTokuseiIDs()
 : <a class="el" href="classchannel_1_1DemonState.html#a87ac6c182987e4dd109eb176d7398c45">channel::DemonState</a>
@@ -266,6 +301,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>GetConnections()
 : <a class="el" href="classchannel_1_1Zone.html#a4f173f83f9ba6b899ac33bba0bc72008">channel::Zone</a>
+, <a class="el" href="classchannel_1_1ZoneInstance.html#a013c2530135932c17492b0baabea5a77">channel::ZoneInstance</a>
 </li>
 <li>GetCoreStats()
 : <a class="el" href="classchannel_1_1ActiveEntityState.html#a0bae772edcb18a6edf81681b0331dd25">channel::ActiveEntityState</a>
@@ -280,23 +316,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetCritLevel()
 : <a class="el" href="classchannel_1_1SkillManager.html#a1ab4c19d71557019668265f593f0158e">channel::SkillManager</a>
 </li>
+<li>GetCultureMachine()
+: <a class="el" href="classchannel_1_1Zone.html#ae4fa580ee2f1adc9bd424db2c688fcb8">channel::Zone</a>
+</li>
+<li>GetCultureMachines()
+: <a class="el" href="classchannel_1_1Zone.html#a84085a3429189854fc668c1e72b04491">channel::Zone</a>
+</li>
 <li>GetCurrentCommand()
 : <a class="el" href="classchannel_1_1AIState.html#a42c29eaa6b757ecb124a2cb897ee4e94">channel::AIState</a>
 </li>
 <li>GetCurrentDestination()
-: <a class="el" href="classchannel_1_1AIMoveCommand.html#a988f76e5673f3174a3d9eafcfd8148ef">channel::AIMoveCommand</a>
+: <a class="el" href="classchannel_1_1AIMoveCommand.html#a3f5487a127d2fc4ed3d85f8ddfd7dcd6">channel::AIMoveCommand</a>
 </li>
 <li>GetCurrentExpiration()
-: <a class="el" href="classchannel_1_1ActiveEntityState.html#af93288af34867c22340a7da9f699b2fc">channel::ActiveEntityState</a>
+: <a class="el" href="classchannel_1_1ActiveEntityState.html#aa435684cdf90e4ae5a7fb854b7dfaa20">channel::ActiveEntityState</a>
 </li>
 <li>GetCurrentMarket()
 : <a class="el" href="classchannel_1_1BazaarState.html#a1a23a0d9e5e872c8f85c0388aa4437b6">channel::BazaarState</a>
 </li>
+<li>GetCurrentMenuShopID()
+: <a class="el" href="classchannel_1_1ClientState.html#a6f9e86ae93f579f4ecb06468056c6dae">channel::ClientState</a>
+</li>
 <li>GetCurrentStatusEffectStates()
-: <a class="el" href="classchannel_1_1ActiveEntityState.html#a9364c47b242a5691d9500504c2a3e2f8">channel::ActiveEntityState</a>
+: <a class="el" href="classchannel_1_1ActiveEntityState.html#a082941f1b6a6490af8c998569d466cbc">channel::ActiveEntityState</a>
 </li>
 <li>GetCurrentZone()
-: <a class="el" href="classchannel_1_1ZoneManager.html#ac7644f2cf627f046ef91a07133177f85">channel::ZoneManager</a>
+: <a class="el" href="classchannel_1_1ZoneManager.html#af3e04258b45d492711b4b1ff0fb39648">channel::ZoneManager</a>
 </li>
 <li>GetDecimalArg()
 : <a class="el" href="classchannel_1_1ChatManager.html#a648aa9073b31e7344defb2af4b7145ad">channel::ChatManager</a>
@@ -307,18 +352,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetDefaultStatus()
 : <a class="el" href="classchannel_1_1AIState.html#a653fc8203ee078b37980948efff9a427">channel::AIState</a>
 </li>
-<li>GetDefinition()
-: <a class="el" href="classchannel_1_1Zone.html#a933cee505b2fd0ab1842053375ae9e41">channel::Zone</a>
-, <a class="el" href="classchannel_1_1ZoneInstance.html#ab248b97fa631622296619cd9961ab996">channel::ZoneInstance</a>
-</li>
 <li>GetDefinitionID()
 : <a class="el" href="classchannel_1_1Zone.html#a903c7fdf831913adef790258d01aab0b">channel::Zone</a>
+, <a class="el" href="classchannel_1_1ZoneInstance.html#a6df6d99ca3d506cd10d1a62d766cfc37">channel::ZoneInstance</a>
 </li>
 <li>GetDefinitionManager()
 : <a class="el" href="classchannel_1_1ChannelServer.html#aacd7b273b283373056ad42d7c4dae0ad">channel::ChannelServer</a>
 </li>
 <li>GetDelay()
 : <a class="el" href="classchannel_1_1AICommand.html#ab101e10bc85b83f9519a220f80dbc2b2">channel::AICommand</a>
+</li>
+<li>GetDemonBaseStats()
+: <a class="el" href="classchannel_1_1CharacterManager.html#a8799be14d7e42d09195749e05d6cb6c4">channel::CharacterManager</a>
 </li>
 <li>GetDemonBox()
 : <a class="el" href="classchannel_1_1CharacterManager.html#a98f95d6bffb555cc0b9eb9039be23e34">channel::CharacterManager</a>
@@ -327,13 +372,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classchannel_1_1CharacterManager.html#ab51facd0d1b3a7924f84df7879486f00">channel::CharacterManager</a>
 </li>
 <li>GetDemonPresent()
-: <a class="el" href="classchannel_1_1SkillManager.html#a7570ec5ad790aa1d89ca83a7eac86043">channel::SkillManager</a>
+: <a class="el" href="classchannel_1_1CharacterManager.html#a60cc0b9dded5669dcd97713f889bad37">channel::CharacterManager</a>
 </li>
 <li>GetDemonState()
 : <a class="el" href="classchannel_1_1ClientState.html#a3a2cf5885225de5e0fbf4a7485411a3f">channel::ClientState</a>
 </li>
+<li>GetDemonTokuseiIDs()
+: <a class="el" href="classchannel_1_1DemonState.html#abbbf9fe8e75893c1ac23f0c06dc758d6">channel::DemonState</a>
+</li>
 <li>GetDespawnEntities()
 : <a class="el" href="classchannel_1_1Zone.html#a38711991b5edbfd603c26abc81666d6e">channel::Zone</a>
+</li>
+<li>GetDestinyBox()
+: <a class="el" href="classchannel_1_1ZoneInstance.html#a8c0ccd50d5c3d456d800040eb4a227b4">channel::ZoneInstance</a>
+</li>
+<li>GetDiasporaBase()
+: <a class="el" href="classchannel_1_1Zone.html#ac152d37c6ad1b9dc7a5f6530c2e1fdf1">channel::Zone</a>
+</li>
+<li>GetDiasporaBases()
+: <a class="el" href="classchannel_1_1Zone.html#a8f16c5d29283daf5af97dd6e7e13a74a">channel::Zone</a>
+</li>
+<li>GetDiasporaMiniBossCount()
+: <a class="el" href="classchannel_1_1Zone.html#a9f5e264752d41e55da2053acc566b413">channel::Zone</a>
+</li>
+<li>GetDigitalizeAbilityLevel()
+: <a class="el" href="classchannel_1_1CharacterState.html#a3427294a49d48a2de22df07a8d015b87">channel::CharacterState</a>
+</li>
+<li>GetDigitalizeState()
+: <a class="el" href="classchannel_1_1CharacterState.html#af895ffce29fd302c6115de3a0995d121">channel::CharacterState</a>
 </li>
 <li>GetDirectTokusei()
 : <a class="el" href="classchannel_1_1TokuseiManager.html#aeb687c04024c47e372bc56b400170d4d">channel::TokuseiManager</a>
@@ -348,6 +414,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetDynamicMap()
 : <a class="el" href="classchannel_1_1Zone.html#aafa8e0bc529b4e7e60f48cbe1cdb9cab">channel::Zone</a>
 </li>
+<li>GetDynamicMapID()
+: <a class="el" href="classchannel_1_1Zone.html#a96057bbb9cc306ccbd0bacc96d39080a">channel::Zone</a>
+</li>
 <li>GetEffectiveTokuseiSkills()
 : <a class="el" href="classchannel_1_1ActiveEntityState.html#af5d0540419e8c3d02bb6485603c81133">channel::ActiveEntityState</a>
 </li>
@@ -361,7 +430,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classchannel_1_1FusionManager.html#a36493205970cac07a18a2a1c5a86f555">channel::FusionManager</a>
 </li>
 <li>GetEndDestination()
-: <a class="el" href="classchannel_1_1AIMoveCommand.html#ad62ebc9aacc7e001429903d2fcacafc3">channel::AIMoveCommand</a>
+: <a class="el" href="classchannel_1_1AIMoveCommand.html#a537e3ee273740f1e26d786e067b031de">channel::AIMoveCommand</a>
 </li>
 <li>GetEnemies()
 : <a class="el" href="classchannel_1_1Zone.html#a491cbe8d78b1dc574f8df09c9048d042">channel::Zone</a>
@@ -369,19 +438,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetEnemy()
 : <a class="el" href="classchannel_1_1Zone.html#ac22f5472abca19975312721b34020a20">channel::Zone</a>
 </li>
+<li>GetEnemyBase()
+: <a class="el" href="classchannel_1_1ActiveEntityState.html#a1a0a70754e46f5cff95bcca5c0269cf9">channel::ActiveEntityState</a>
+, <a class="el" href="classchannel_1_1AllyState.html#a4925893c62bd45fb8e432e0ca39edd0d">channel::AllyState</a>
+, <a class="el" href="classchannel_1_1EnemyState.html#aa4444dd9a7b4ccb4df07f631402dc5f4">channel::EnemyState</a>
+</li>
 <li>GetEntitiesInFoV()
 : <a class="el" href="classchannel_1_1ZoneManager.html#ab891957cbb372544048a15ea5158723a">channel::ZoneManager</a>
 </li>
 <li>GetEntity()
-: <a class="el" href="classchannel_1_1ActiveEntityStateImp.html#af4221fa010303086a166e69ca54345ea">channel::ActiveEntityStateImp&lt; T &gt;</a>
+: <a class="el" href="classchannel_1_1ActiveEntityStateImp.html#a12ae6b01d350e4513bcb3cacd1661e7d">channel::ActiveEntityStateImp&lt; T &gt;</a>
 , <a class="el" href="classchannel_1_1EntityState.html#a78ed793f6bd313a5167573938b18bb23">channel::EntityState&lt; T &gt;</a>
 , <a class="el" href="classchannel_1_1Zone.html#a45c43ad21244ce3de52fa70fa46a36d1">channel::Zone</a>
 </li>
 <li>GetEntityClient()
 : <a class="el" href="classchannel_1_1ManagerConnection.html#abf8b483c60943afebd797ed895d84a06">channel::ManagerConnection</a>
 </li>
+<li>GetEntityClients()
+: <a class="el" href="classchannel_1_1ManagerConnection.html#a20786e9467ff96a7afb33e13be08dd3e">channel::ManagerConnection</a>
+</li>
 <li>GetEntityClientState()
 : <a class="el" href="classchannel_1_1ClientState.html#adfda568072305ea8850278decd14ae0c">channel::ClientState</a>
+</li>
+<li>GetEntityRate()
+: <a class="el" href="classchannel_1_1SkillManager.html#a27112642b518c1440c91297dca0f01be">channel::SkillManager</a>
 </li>
 <li>GetEntityRevivalPacket()
 : <a class="el" href="classchannel_1_1CharacterManager.html#a507eea9130c0499fd774a34b01c23c52">channel::CharacterManager</a>
@@ -390,29 +470,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classchannel_1_1ClientState.html#ae8d70dc0474d84337fa2dd0d46af95ed">channel::ClientState</a>
 </li>
 <li>GetEntityStatsPacketData()
-: <a class="el" href="classchannel_1_1CharacterManager.html#aafea48ed8547da2002304a6510d27b94">channel::CharacterManager</a>
+: <a class="el" href="classchannel_1_1CharacterManager.html#ac1e016a6201f6cb92b0e014a1326ee6b">channel::CharacterManager</a>
 </li>
 <li>GetEntityUUID()
 : <a class="el" href="classchannel_1_1ActiveEntityState.html#acef6b10c4095a4b2d0ed8b5f3ff94a5b">channel::ActiveEntityState</a>
-, <a class="el" href="classchannel_1_1ActiveEntityStateImp.html#aa1e73078f5e79d3b16ecd0e1119ee9f7">channel::ActiveEntityStateImp&lt; T &gt;</a>
+, <a class="el" href="classchannel_1_1CharacterState.html#a05473d9cd04b7fa35900141f0cc7ca65">channel::CharacterState</a>
+, <a class="el" href="classchannel_1_1DemonState.html#a14e2e0e852a777a3f1621ae0e708d334">channel::DemonState</a>
 </li>
 <li>GetEquipmentTokuseiIDs()
 : <a class="el" href="classchannel_1_1CharacterState.html#ae7fd9287b1226cd096fe44b80108e353">channel::CharacterState</a>
 </li>
+<li>GetEquipTypeArg()
+: <a class="el" href="classchannel_1_1ChatManager.html#aa17d6c5f146438c1ef9d2e1e208ab186">channel::ChatManager</a>
+</li>
+<li>GetEvent()
+: <a class="el" href="classchannel_1_1EventManager.html#a3ae98af92420583911a3e069941e5280">channel::EventManager</a>
+</li>
+<li>GetEventCounter()
+: <a class="el" href="classchannel_1_1CharacterState.html#a05199fd5c255df62ee6c28421346d728">channel::CharacterState</a>
+</li>
 <li>GetEventManager()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a244bb51b0a5abb52f9f6d17df3bf909e">channel::ChannelServer</a>
+</li>
+<li>GetEventSourceEntityID()
+: <a class="el" href="classchannel_1_1ClientState.html#a910d2dad3ae8df5262100235e7296195">channel::ClientState</a>
+</li>
+<li>GetExistingItemCount()
+: <a class="el" href="classchannel_1_1CharacterManager.html#af98a67d73c1038d9a0ea1855e35d3859">channel::CharacterManager</a>
 </li>
 <li>GetExistingItems()
 : <a class="el" href="classchannel_1_1CharacterManager.html#a6bd247619309362ccea7a0cb49805a1c">channel::CharacterManager</a>
 </li>
+<li>GetExistingZone()
+: <a class="el" href="classchannel_1_1ZoneManager.html#ae25c254d6518e4441265a125cdef9d51">channel::ZoneManager</a>
+</li>
 <li>GetExpertiseRank()
-: <a class="el" href="classchannel_1_1CharacterState.html#ac5133d08b88d3f6732909a4da3b10c34">channel::CharacterState</a>
+: <a class="el" href="classchannel_1_1CharacterState.html#a330398a5fb105b8acae2c035bf177ee0">channel::CharacterState</a>
 </li>
 <li>GetExpirationInSeconds()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a234227630f4670180786b68a0c9ba43f">channel::ChannelServer</a>
 </li>
 <li>GetFamiliarityRank()
-: <a class="el" href="classchannel_1_1CharacterManager.html#aea6d27408da8d70849621b639ef6726b">channel::CharacterManager</a>
+: <a class="el" href="classchannel_1_1CharacterManager.html#a5806869b59186d1a332bd5e80804fc6a">channel::CharacterManager</a>
 </li>
 <li>GetFlagState()
 : <a class="el" href="classchannel_1_1Zone.html#a3959b03ea33b61907044f67483514400">channel::Zone</a>
@@ -435,18 +534,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetFusionManager()
 : <a class="el" href="classchannel_1_1ChannelServer.html#ac551d6e218df8e10b2a2f215fbcb15f6">channel::ChannelServer</a>
 </li>
+<li>GetGender()
+: <a class="el" href="classchannel_1_1ActiveEntityState.html#ababe0ede1ea5da1743b75d4fe777ceea">channel::ActiveEntityState</a>
+, <a class="el" href="classchannel_1_1AllyState.html#ad3eabab1fb49329c5e94ddea524bb365">channel::AllyState</a>
+, <a class="el" href="classchannel_1_1CharacterState.html#a21e6be55b0c9c39dcafba35f77396c8f">channel::CharacterState</a>
+, <a class="el" href="classchannel_1_1DemonState.html#afce40b2829abf272b01f05310d27d71c">channel::DemonState</a>
+, <a class="el" href="classchannel_1_1EnemyState.html#a93fde3ea17dfd257c0825345900a888b">channel::EnemyState</a>
+</li>
 <li>GetGeometry()
 : <a class="el" href="classchannel_1_1Zone.html#afabd959e992dbd7c440ef6a999100a51">channel::Zone</a>
 </li>
-<li>GetID()
-: <a class="el" href="classchannel_1_1Zone.html#a1d41abb03a1e4b53be50a97d73b1d66f">channel::Zone</a>
-, <a class="el" href="classchannel_1_1ZoneInstance.html#a11c6b7f05cff3610a336f3e5f50f6e67">channel::ZoneInstance</a>
+<li>GetGlobalZone()
+: <a class="el" href="classchannel_1_1ZoneManager.html#a4df5582eef7ff913157351418d64d58f">channel::ZoneManager</a>
 </li>
 <li>GetInstance()
 : <a class="el" href="classchannel_1_1Zone.html#aca80c38bbbd5905fc9277b05039326be">channel::Zone</a>
+, <a class="el" href="classchannel_1_1ZoneManager.html#a40de7a69420ffbc5a89d58e6583a421a">channel::ZoneManager</a>
 </li>
 <li>GetInstanceAccess()
-: <a class="el" href="classchannel_1_1ZoneManager.html#ae81658266920943e6f4c41c3b469ec23">channel::ZoneManager</a>
+: <a class="el" href="classchannel_1_1ZoneManager.html#af75a1f60b5f6f0ebcfda4ace6e995f43">channel::ZoneManager</a>
+</li>
+<li>GetInstanceID()
+: <a class="el" href="classchannel_1_1Zone.html#a38275d26eb2bd794b4ad12897c16d5a4">channel::Zone</a>
+</li>
+<li>GetInstanceStartingZone()
+: <a class="el" href="classchannel_1_1ZoneManager.html#a3eb7b87a327426c931f080bf0082449a">channel::ZoneManager</a>
+</li>
+<li>GetInstanceType()
+: <a class="el" href="classchannel_1_1Zone.html#ac9eff6cc3f20e9cf3038452843904885">channel::Zone</a>
+</li>
+<li>GetInstanceZone()
+: <a class="el" href="classchannel_1_1ZoneManager.html#aa90e346d8284cb248fc4be3950c045fa">channel::ZoneManager</a>
 </li>
 <li>GetIntegerArg()
 : <a class="el" href="classchannel_1_1ChatManager.html#a6ef1f0c598c0410afb5f4ba4ebba5161">channel::ChatManager</a>
@@ -458,17 +576,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classchannel_1_1CharacterManager.html#ada94a92c31a85541870130d24dec7856">channel::CharacterManager</a>
 </li>
 <li>GetItemDrops()
-: <a class="el" href="classchannel_1_1SkillManager.html#afaae856431c1f2afae9f2515d3d6cd8e">channel::SkillManager</a>
+: <a class="el" href="classchannel_1_1SkillManager.html#aa5fe6a89c59f834f1d2edd50bd0e1578">channel::SkillManager</a>
 </li>
 <li>GetLearningSkills()
 : <a class="el" href="classchannel_1_1DemonState.html#a30082a84673d10c339fa501b8153ef8d">channel::DemonState</a>
 </li>
+<li>GetLevel()
+: <a class="el" href="classchannel_1_1ActiveEntityState.html#a08e72e53b6f2cbf66bec87a745892b14">channel::ActiveEntityState</a>
+, <a class="el" href="classchannel_1_1ActiveEntityStateImp.html#a296f084ac9577b9e3bf5203a8705a679">channel::ActiveEntityStateImp&lt; T &gt;</a>
+</li>
 <li>GetLinearPoint()
-: <a class="el" href="classchannel_1_1ZoneManager.html#a71a15fc2bdb97af8b24ba9fd6468fc3c">channel::ZoneManager</a>
+: <a class="el" href="classchannel_1_1ZoneManager.html#a305871a10878d7ca248fbcbd7b4fe072">channel::ZoneManager</a>
 </li>
 <li>GetLNCType()
 : <a class="el" href="classchannel_1_1ActiveEntityState.html#ae1582e47b378c99a62134ebd97b68d3b">channel::ActiveEntityState</a>
-, <a class="el" href="classchannel_1_1ActiveEntityStateImp.html#a4100067bbe779db70c897cf343f7943c">channel::ActiveEntityStateImp&lt; T &gt;</a>
+, <a class="el" href="classchannel_1_1AllyState.html#a33581ec1c0b7a3106e13eee35d69b90c">channel::AllyState</a>
+, <a class="el" href="classchannel_1_1CharacterState.html#a00a7209ffa615e5e4c46ab587983dead">channel::CharacterState</a>
+, <a class="el" href="classchannel_1_1DemonState.html#a732bd63bd19736f33ffb6934124c9384">channel::DemonState</a>
+, <a class="el" href="classchannel_1_1EnemyState.html#a68b115ef9d862db850b7b7691de0446b">channel::EnemyState</a>
 </li>
 <li>GetLobbyDatabase()
 : <a class="el" href="classchannel_1_1ChannelServer.html#ab915200294d11b0f5d79029ee7fd9f74">channel::ChannelServer</a>
@@ -479,6 +604,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetLocalObjectUUID()
 : <a class="el" href="classchannel_1_1ClientState.html#a72dda0be86f351373e38bd47643ff04a">channel::ClientState</a>
 </li>
+<li>GetLoginZone()
+: <a class="el" href="classchannel_1_1ZoneManager.html#a8519d250572e0045b99186f05a4db78e">channel::ZoneManager</a>
+</li>
 <li>GetLoot()
 : <a class="el" href="classchannel_1_1PlasmaPoint.html#a09fd384620a037187de0c38a170344f1">channel::PlasmaPoint</a>
 </li>
@@ -488,14 +616,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetLootBoxes()
 : <a class="el" href="classchannel_1_1Zone.html#a24c4f793c9afe25687b79cda7fd35a56">channel::Zone</a>
 </li>
+<li>GetMachineID()
+: <a class="el" href="classchannel_1_1CultureMachineState.html#a72b85004ff980a3e13eaafefb3c7f709">channel::CultureMachineState</a>
+</li>
 <li>GetManagerConnection()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a50ccb06823904b53406446e7e09102c6">channel::ChannelServer</a>
+</li>
+<li>GetMatchEntry()
+: <a class="el" href="classchannel_1_1MatchManager.html#a9f445d52ea62be3c121358bc7e8cc087">channel::MatchManager</a>
+</li>
+<li>GetMatchManager()
+: <a class="el" href="classchannel_1_1ChannelServer.html#a15412664d598f360ca5ba0331409791a">channel::ChannelServer</a>
+</li>
+<li>GetMatchStartPosition()
+: <a class="el" href="classchannel_1_1ZoneManager.html#acb7bcb0d02e83d4a974ffa1f04d7556a">channel::ZoneManager</a>
 </li>
 <li>GetMaxExpertisePoints()
 : <a class="el" href="classchannel_1_1CharacterManager.html#a02b36a8fe9b037b711fd56d46162d603">channel::CharacterManager</a>
 </li>
+<li>GetMaxFusionGaugeStocks()
+: <a class="el" href="classchannel_1_1CharacterState.html#a20c8897187e287722197ede6c169c1c9">channel::CharacterState</a>
+</li>
+<li>GetMitamaBonuses()
+: <a class="el" href="classchannel_1_1CharacterManager.html#a9eec673d8f7f5d71c3e841e29a8d1025">channel::CharacterManager</a>
+</li>
+<li>GetMitamaIndex()
+: <a class="el" href="classchannel_1_1FusionManager.html#a3a8f34ba227bd147b6887209ba17c203">channel::FusionManager</a>
+</li>
+<li>GetMitamaType()
+: <a class="el" href="classchannel_1_1FusionManager.html#a2ffbcf3b19eb393d891f23814f47f959">channel::FusionManager</a>
+</li>
 <li>GetMoveCommand()
-: <a class="el" href="classchannel_1_1AIManager.html#a39077202e01e32f7b12934049327fbe6">channel::AIManager</a>
+: <a class="el" href="classchannel_1_1AIManager.html#a6a7076cb76ca4b284d333c1a143eb99e">channel::AIManager</a>
 </li>
 <li>GetMovementSpeed()
 : <a class="el" href="classchannel_1_1ActiveEntityState.html#a3a11050fb65a386e982332da21db2c87">channel::ActiveEntityState</a>
@@ -506,11 +658,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetNextEntityID()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a981d3f4fd9bfca170dcb7e6ea0834174">channel::ChannelServer</a>
 </li>
-<li>GetNextExpiration()
-: <a class="el" href="classchannel_1_1BazaarState.html#ae2782d0257151d8447032d37dcd62ee9">channel::BazaarState</a>
-</li>
 <li>GetNextObjectID()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a33f5349eb73ed0bef4287ec9bd752086">channel::ChannelServer</a>
+</li>
+<li>GetNextRentalExpiration()
+: <a class="el" href="classchannel_1_1Zone.html#a12fd8d737373e671ca96b327feff0e1b">channel::Zone</a>
 </li>
 <li>GetNPC()
 : <a class="el" href="classchannel_1_1Zone.html#af2c48393074db43ac37a543ac918239c">channel::Zone</a>
@@ -522,7 +674,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classchannel_1_1ActiveEntityState.html#ac468fcaa3b7dd039c9924d1ef55e880a">channel::ActiveEntityState</a>
 </li>
 <li>GetNRAResult()
-: <a class="el" href="classchannel_1_1SkillManager.html#a8e988fdbdbd0fce581135fad3e5eef94">channel::SkillManager</a>
+: <a class="el" href="classchannel_1_1SkillManager.html#a4b1b988818af19ff6b5d08855a82cf56">channel::SkillManager</a>
+</li>
+<li>GetNRAShield()
+: <a class="el" href="classchannel_1_1ActiveEntityState.html#ad625c1296e162ee407df0fcc2372d656">channel::ActiveEntityState</a>
 </li>
 <li>GetObjectID()
 : <a class="el" href="classchannel_1_1ClientState.html#a9be86f60b323c002ae00e219f7448df4">channel::ClientState</a>
@@ -551,8 +706,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetPartyID()
 : <a class="el" href="classchannel_1_1ClientState.html#af042bf665d6d933b77be74a3b05bf85f">channel::ClientState</a>
 </li>
+<li>GetPathing()
+: <a class="el" href="classchannel_1_1AIMoveCommand.html#a4434959241eecc97ff926d0e18d6fdf5">channel::AIMoveCommand</a>
+</li>
 <li>GetPAttributeDeadline()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a541bb714eaad630b3a1dfb25d20884c3">channel::ChannelServer</a>
+</li>
+<li>GetPentalphaMatch()
+: <a class="el" href="classchannel_1_1MatchManager.html#a349b1f3c29807dfe00814d8a2b6b3972">channel::MatchManager</a>
 </li>
 <li>GetPlasma()
 : <a class="el" href="classchannel_1_1Zone.html#a2ec1cb1e12bb67c0ea71c13764560633">channel::Zone</a>
@@ -561,13 +722,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classchannel_1_1PlasmaState.html#a5cd4a9577acb43280dd78a5b8c7f88a6">channel::PlasmaState</a>
 </li>
 <li>GetPointStatusData()
-: <a class="el" href="classchannel_1_1PlasmaState.html#ac0fbe4b4e64f10900d8bf8fa3b4eabe6">channel::PlasmaState</a>
+: <a class="el" href="classchannel_1_1PlasmaState.html#a856c4bd95919b3d62d16be595ebaf206">channel::PlasmaState</a>
 </li>
 <li>GetPreviousStatus()
 : <a class="el" href="classchannel_1_1AIState.html#a23447bccd6d7ff3aa75a0fe3bdb5ee98">channel::AIState</a>
 </li>
 <li>GetProcessingSkill()
-: <a class="el" href="classchannel_1_1SkillManager.html#a72a402fb4d3fe586ecd005b2cb1ef92e">channel::SkillManager</a>
+: <a class="el" href="classchannel_1_1SkillManager.html#a7c26e2530a1161e8be3baf421f8d5272">channel::SkillManager</a>
+</li>
+<li>GetPvPBase()
+: <a class="el" href="classchannel_1_1Zone.html#a89ee7181d2a1e943bb2a161ee43258a5">channel::Zone</a>
+</li>
+<li>GetPvPBases()
+: <a class="el" href="classchannel_1_1Zone.html#a34ca86fa87ecfe6dfc1b83bc831ee992">channel::Zone</a>
+</li>
+<li>GetPvPData()
+: <a class="el" href="classchannel_1_1MatchManager.html#a2d4477046f54fee88ddf02d23fff8dc9">channel::MatchManager</a>
+</li>
+<li>GetPvPTrophies()
+: <a class="el" href="classchannel_1_1MatchManager.html#a936ddd4be86cb54e660ec5ee1f84edcf">channel::MatchManager</a>
+</li>
+<li>GetQuestBonusCount()
+: <a class="el" href="classchannel_1_1CharacterState.html#ab67167a06dfdb74ad0d7bde7c0c7daa8">channel::CharacterState</a>
+</li>
+<li>GetQuestBonusTokuseiIDs()
+: <a class="el" href="classchannel_1_1CharacterState.html#a2f42e3b328f17517fadd012b0ff2f37b">channel::CharacterState</a>
 </li>
 <li>GetRaceIndex()
 : <a class="el" href="classchannel_1_1FusionManager.html#a8bcf7a1e9f4b4e8fe291ffc631268f4c">channel::FusionManager</a>
@@ -584,23 +763,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetRegisteredWorld()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a610ec407260c680565bc2afafa455445">channel::ChannelServer</a>
 </li>
+<li>GetRemovedStatusesPacket()
+: <a class="el" href="classchannel_1_1CharacterManager.html#aa8fb7ca514187678890c4a404c0f7437">channel::CharacterManager</a>
+</li>
+<li>GetRentalData()
+: <a class="el" href="classchannel_1_1CultureMachineState.html#acb6aa2742aeee857b76f686bd9ef5166">channel::CultureMachineState</a>
+</li>
 <li>GetRespawnLocations()
 : <a class="el" href="classchannel_1_1Zone.html#ad1e63e79c3dad939d3c34b638f03165c">channel::Zone</a>
 </li>
 <li>GetResultDemon()
 : <a class="el" href="classchannel_1_1FusionManager.html#a89e84dda80ea20c0d0e6bad209ba5223">channel::FusionManager</a>
 </li>
+<li>GetReunionRankTotal()
+: <a class="el" href="classchannel_1_1CharacterManager.html#ad6d73f61282cd27a1c09ee6ac651137f">channel::CharacterManager</a>
+</li>
 <li>GetScript()
 : <a class="el" href="classchannel_1_1AIState.html#a2d1c5044d04563652002913df7056d07">channel::AIState</a>
 </li>
-<li>GetScriptFunction()
-: <a class="el" href="classchannel_1_1AIState.html#a1548595ea9605c9891f5e6082e12b467">channel::AIState</a>
-</li>
 <li>GetSearchEntries()
-: <a class="el" href="classchannel_1_1ChannelSyncManager.html#a3a3ed7066598efb94c4009f093b0f44d">channel::ChannelSyncManager</a>
+: <a class="el" href="classchannel_1_1ChannelSyncManager.html#a11b078ff285328189a9eca5e0d228764">channel::ChannelSyncManager</a>
 </li>
 <li>GetSelfTarget()
-: <a class="el" href="classchannel_1_1SkillManager.html#a04fe8f600d70632bb75e18044cba65ea">channel::SkillManager</a>
+: <a class="el" href="classchannel_1_1SkillManager.html#a3fa4d202e094d1da77bb551d39c887c9">channel::SkillManager</a>
 </li>
 <li>GetServerDataManager()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a10687cbb8559d3955f1acaa965567fea">channel::ChannelServer</a>
@@ -620,6 +805,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetServerTimeSteady()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a7624fd49f864a73ba5a746d009ba6063">channel::ChannelServer</a>
 </li>
+<li>GetShortestPath()
+: <a class="el" href="classchannel_1_1ZoneManager.html#aeb696f5cb9d1c6f538d54b84ae1837f7">channel::ZoneManager</a>
+</li>
+<li>GetSkillData()
+: <a class="el" href="classchannel_1_1AIUseSkillCommand.html#afe8c9c559bb1c5ad42ba1ff47da40f6c">channel::AIUseSkillCommand</a>
+</li>
 <li>GetSkillID()
 : <a class="el" href="classchannel_1_1AIUseSkillCommand.html#add7f92c3fa78adf5b7ad2386e4f6d983">channel::AIUseSkillCommand</a>
 </li>
@@ -627,13 +818,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classchannel_1_1ChannelServer.html#a751fb9214894f350e7755fe616d18a32">channel::ChannelServer</a>
 </li>
 <li>GetSkillMap()
-: <a class="el" href="classchannel_1_1AIState.html#ab38741f3fc6d79d73cdfeb6ea955bba5">channel::AIState</a>
+: <a class="el" href="classchannel_1_1AIState.html#ae2620825639284452c555c14c139dc3f">channel::AIState</a>
 </li>
-<li>GetSkillSettings()
-: <a class="el" href="classchannel_1_1AIState.html#a0829b1f53a88e6fa269467b8d2a74bbf">channel::AIState</a>
+<li>GetSpawnLevel()
+: <a class="el" href="classchannel_1_1SkillManager.html#ae6582e0844a9596aad768bb798c370b1">channel::SkillManager</a>
 </li>
 <li>GetSpotPosition()
 : <a class="el" href="classchannel_1_1ZoneManager.html#a77356fff224a2e0d17e90b74cf9f460e">channel::ZoneManager</a>
+</li>
+<li>GetStartTime()
+: <a class="el" href="classchannel_1_1AICommand.html#a8d740a87421b7c0e71a01801b3a634ce">channel::AICommand</a>
 </li>
 <li>GetState()
 : <a class="el" href="classchannel_1_1PlasmaPoint.html#ae26cbbd20eeab8cdf793e989a8b61403">channel::PlasmaPoint</a>
@@ -647,6 +841,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetStringArg()
 : <a class="el" href="classchannel_1_1ChatManager.html#a9ec0e4e64dfd2fdf7868a3c1d8cc36d3">channel::ChatManager</a>
 </li>
+<li>GetSummonSpeed()
+: <a class="el" href="classchannel_1_1SkillManager.html#a401f7883df3e742fcde2719ba17c5eac">channel::SkillManager</a>
+</li>
 <li>GetSupportedTypes()
 : <a class="el" href="classchannel_1_1ManagerConnection.html#afb0b50132fc40f19d81d8a2e07e3e4d8">channel::ManagerConnection</a>
 , <a class="el" href="classchannel_1_1ManagerSystem.html#ad37046344781a857f6d1edb0a8f3eb59">channel::ManagerSystem</a>
@@ -657,20 +854,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetTalkPoints()
 : <a class="el" href="classchannel_1_1EnemyState.html#ae7935459bebf8f717d2ef8ecf1465c83">channel::EnemyState</a>
 </li>
-<li>GetTarget()
-: <a class="el" href="classchannel_1_1AIState.html#a45872de8d34170bc9a753ae0456bb8eb">channel::AIState</a>
-</li>
 <li>GetTargetCharacterAccount()
 : <a class="el" href="classchannel_1_1ChatManager.html#a91b1598b49ed5a320d5104ec08cf6087">channel::ChatManager</a>
 </li>
-<li>GetTargetObjectID()
-: <a class="el" href="classchannel_1_1AIUseSkillCommand.html#af4f4ee9f3497c44fc851760998d19941">channel::AIUseSkillCommand</a>
+<li>GetTargetDistance()
+: <a class="el" href="classchannel_1_1AIMoveCommand.html#a7a752d123af9de8c0da436f43d2c264b">channel::AIMoveCommand</a>
 </li>
-<li>GetThinkSpeed()
-: <a class="el" href="classchannel_1_1AIState.html#a7bf677cd08d82109bce6e422577bdacc">channel::AIState</a>
+<li>GetTargetEntityID()
+: <a class="el" href="classchannel_1_1AICommand.html#aa157f82bc73863ed1cb9ea3eeb2618cb">channel::AICommand</a>
+</li>
+<li>GetTeamID()
+: <a class="el" href="classchannel_1_1ClientState.html#afdc4294017f3ebfd8b71498ff28a6353">channel::ClientState</a>
 </li>
 <li>GetTimeout()
 : <a class="el" href="classchannel_1_1ChannelClientConnection.html#ab0a14eefb42d36b1df8d33453005126d">channel::ChannelClientConnection</a>
+</li>
+<li>GetTimeUntilMidnight()
+: <a class="el" href="classchannel_1_1ChannelServer.html#ab2cfeb08af58064b13eb5946bb840328">channel::ChannelServer</a>
 </li>
 <li>GetTokuseiManager()
 : <a class="el" href="classchannel_1_1ChannelServer.html#aba74eb2545f1249d1b7a115b95354897">channel::ChannelServer</a>
@@ -678,8 +878,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetTotalMacca()
 : <a class="el" href="classchannel_1_1CharacterManager.html#a0933004ba58d1a2cce72ded576c9c5aa">channel::CharacterManager</a>
 </li>
+<li>GetTraitSkills()
+: <a class="el" href="classchannel_1_1CharacterManager.html#a1db8a0c1e0442d045d47cfaa35d8c745">channel::CharacterManager</a>
+</li>
+<li>GetTriggerTimes()
+: <a class="el" href="classchannel_1_1ZoneManager.html#aa23d52695a9395e78249383dbee5493c">channel::ZoneManager</a>
+</li>
 <li>GetType()
 : <a class="el" href="classchannel_1_1AICommand.html#ac770cd7345a7cb02befb6143097f13b7">channel::AICommand</a>
+</li>
+<li>GetUBMatch()
+: <a class="el" href="classchannel_1_1Zone.html#abec5e4491e664319e7ba160550a09c2c">channel::Zone</a>
+</li>
+<li>GetUBTournament()
+: <a class="el" href="classchannel_1_1MatchManager.html#ad079e62e3ab2bfcfbb2b1408de0236af">channel::MatchManager</a>
 </li>
 <li>GetUpdatedStatusEffectEntities()
 : <a class="el" href="classchannel_1_1Zone.html#a9f9e5a20cb36a2ac85ceb0874de97c6c">channel::Zone</a>
@@ -691,7 +903,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classchannel_1_1AIManager.html#a5d610e35d974216d237bcd58ae31d74d">channel::AIManager</a>
 </li>
 <li>GetWorldCID()
-: <a class="el" href="classchannel_1_1ClientState.html#a4e91326e3913b3f0026c9074588492a9">channel::ClientState</a>
+: <a class="el" href="classchannel_1_1ActiveEntityState.html#a1affddaf0599c0919967a50abe90fe5a">channel::ActiveEntityState</a>
+, <a class="el" href="classchannel_1_1ClientState.html#a4e91326e3913b3f0026c9074588492a9">channel::ClientState</a>
 </li>
 <li>GetWorldClockTime()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a22dc9aacc059ab39839d2136dd5184e2">channel::ChannelServer</a>
@@ -702,10 +915,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetWorldDatabase()
 : <a class="el" href="classchannel_1_1ChannelServer.html#a7942e5878f1183e0f0a88504692ad74b">channel::ChannelServer</a>
 </li>
+<li>GetWorldEventCounter()
+: <a class="el" href="classchannel_1_1ChannelSyncManager.html#a45c07db69ed9d97e62af8018c1f39456">channel::ChannelSyncManager</a>
+</li>
+<li>GetWorldSharedConfig()
+: <a class="el" href="classchannel_1_1ChannelServer.html#a4236b0aea223d864f90da34b8a67ba8e">channel::ChannelServer</a>
+</li>
+<li>GetXPMultiplier()
+: <a class="el" href="classchannel_1_1Zone.html#a72ff36aec622c2c1a4105574189bff48">channel::Zone</a>
+</li>
 <li>GetZone()
 : <a class="el" href="classchannel_1_1ActiveEntityState.html#ab75cc6f82b822318ec0816b6ccebd30a">channel::ActiveEntityState</a>
 , <a class="el" href="classchannel_1_1ClientState.html#ad7a7616c9aad7e314086e76920642de9">channel::ClientState</a>
-, <a class="el" href="classchannel_1_1ZoneInstance.html#ab683f69dbeb6874f3d1318a626cec727">channel::ZoneInstance</a>
+, <a class="el" href="classchannel_1_1ZoneInstance.html#ad90ce663bc31ec63c050dd59e3b21110">channel::ZoneInstance</a>
 , <a class="el" href="classchannel_1_1ZoneManager.html#af669b89bb6cc2ed0f31294b72ab4df41">channel::ZoneManager</a>
 </li>
 <li>GetZoneConnections()
@@ -715,7 +937,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classchannel_1_1ChannelServer.html#add8755ff0b0fae5d89d640de553c78e7">channel::ChannelServer</a>
 </li>
 <li>GetZones()
-: <a class="el" href="classchannel_1_1ZoneInstance.html#ac7962e26feece6e3d9781ef6879a17f6">channel::ZoneInstance</a>
+: <a class="el" href="classchannel_1_1ZoneInstance.html#a45bf4651984c5370f435014f138f2750">channel::ZoneInstance</a>
+</li>
+<li>GetZoneTriggers()
+: <a class="el" href="classchannel_1_1ZoneManager.html#abeb0f4936c9fbf0f48f340c91b582a9d">channel::ZoneManager</a>
 </li>
 <li>GiveDemonPresent()
 : <a class="el" href="classchannel_1_1SkillManager.html#a4c98b266d085e01ee87e614e003aa68b">channel::SkillManager</a>
@@ -729,23 +954,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GMCommand_Ban()
 : <a class="el" href="classchannel_1_1ChatManager.html#adb22a8f75bf4e1f0554263f82a2790f7">channel::ChatManager</a>
 </li>
+<li>GMCommand_BattlePoints()
+: <a class="el" href="classchannel_1_1ChatManager.html#a9561e2ec23538239d58651751568708d">channel::ChatManager</a>
+</li>
+<li>GMCommand_Bethel()
+: <a class="el" href="classchannel_1_1ChatManager.html#a7bdf90f112b49a6cf08108413b4e550f">channel::ChatManager</a>
+</li>
+<li>GMCommand_Coin()
+: <a class="el" href="classchannel_1_1ChatManager.html#a584ad4b5ab8b2fa82ae12b22fb744622">channel::ChatManager</a>
+</li>
 <li>GMCommand_Contract()
 : <a class="el" href="classchannel_1_1ChatManager.html#ac3ff99a3aec84bf389c03114a3c15fb9">channel::ChatManager</a>
+</li>
+<li>GMCommand_Counter()
+: <a class="el" href="classchannel_1_1ChatManager.html#ac81527669a0a8e4ccc56785035f6b741">channel::ChatManager</a>
+</li>
+<li>GMCommand_Cowrie()
+: <a class="el" href="classchannel_1_1ChatManager.html#a96c0f9f485125c83f46bdae9dfde0a58">channel::ChatManager</a>
 </li>
 <li>GMCommand_Crash()
 : <a class="el" href="classchannel_1_1ChatManager.html#a5d8bc756f08ec71ff7e5ea7e6014bed4">channel::ChatManager</a>
 </li>
+<li>GMCommand_DigitalizePoints()
+: <a class="el" href="classchannel_1_1ChatManager.html#a554feacc9ce730e4494a7d851dfdc927">channel::ChatManager</a>
+</li>
 <li>GMCommand_Effect()
 : <a class="el" href="classchannel_1_1ChatManager.html#a33cd9c6973eb5c867f322bd8d1f0d430">channel::ChatManager</a>
+</li>
+<li>GMCommand_Enchant()
+: <a class="el" href="classchannel_1_1ChatManager.html#ada45e5b7d74f1e58e1e361b4cf208719">channel::ChatManager</a>
 </li>
 <li>GMCommand_Enemy()
 : <a class="el" href="classchannel_1_1ChatManager.html#a82c448a5cd1f5590bdd5db64a9b29c67">channel::ChatManager</a>
 </li>
+<li>GMCommand_Event()
+: <a class="el" href="classchannel_1_1ChatManager.html#ae9da99eaa72ee4992eb2c17da40ef69e">channel::ChatManager</a>
+</li>
 <li>GMCommand_ExpertiseExtend()
 : <a class="el" href="classchannel_1_1ChatManager.html#a5d2ae9858c3fc69d213504e735473701">channel::ChatManager</a>
 </li>
-<li>GMCommand_ExpertiseUpdate()
-: <a class="el" href="classchannel_1_1ChatManager.html#aad78dae278f47660c49b37b908a9eee0">channel::ChatManager</a>
+<li>GMCommand_ExpertiseSet()
+: <a class="el" href="classchannel_1_1ChatManager.html#afb77126be6d49d0793cd57a74b4a5d9f">channel::ChatManager</a>
 </li>
 <li>GMCommand_Familiarity()
 : <a class="el" href="classchannel_1_1ChatManager.html#a204695ddc603c95ce33465e2d68bbc22">channel::ChatManager</a>
@@ -753,8 +1002,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GMCommand_Flag()
 : <a class="el" href="classchannel_1_1ChatManager.html#a1a51801d26b114fe95f265369271e1ee">channel::ChatManager</a>
 </li>
+<li>GMCommand_FusionGauge()
+: <a class="el" href="classchannel_1_1ChatManager.html#a83260f37389be76d4daae4a46554fda3">channel::ChatManager</a>
+</li>
 <li>GMCommand_Goto()
 : <a class="el" href="classchannel_1_1ChatManager.html#aa33296cbdb520ad66ae39895597d1fc9">channel::ChatManager</a>
+</li>
+<li>GMCommand_GradePoints()
+: <a class="el" href="classchannel_1_1ChatManager.html#ac660f5404e61348484a4a299f256b61e">channel::ChatManager</a>
 </li>
 <li>GMCommand_Help()
 : <a class="el" href="classchannel_1_1ChatManager.html#a8cbba2279bc57a6121544c052b04f52e">channel::ChatManager</a>
@@ -777,11 +1032,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GMCommand_LevelUp()
 : <a class="el" href="classchannel_1_1ChatManager.html#ae79fffdf09d167844efa76b1c068ebcb">channel::ChatManager</a>
 </li>
+<li>GMCommand_License()
+: <a class="el" href="classchannel_1_1ChatManager.html#ae143b4d528808de3a0c54f41a293741a">channel::ChatManager</a>
+</li>
 <li>GMCommand_LNC()
 : <a class="el" href="classchannel_1_1ChatManager.html#a4d364922112d283d5724052fa86d9347">channel::ChatManager</a>
 </li>
 <li>GMCommand_Map()
 : <a class="el" href="classchannel_1_1ChatManager.html#aee66e3287ae941567d200e72e35bac8f">channel::ChatManager</a>
+</li>
+<li>GMCommand_Online()
+: <a class="el" href="classchannel_1_1ChatManager.html#a9a7b30901d56acf062ed3ba8893b7e2a">channel::ChatManager</a>
+</li>
+<li>GMCommand_PenaltyReset()
+: <a class="el" href="classchannel_1_1ChatManager.html#a1695dcf3108ec93e70f06ca4b4a77ff2">channel::ChatManager</a>
 </li>
 <li>GMCommand_Plugin()
 : <a class="el" href="classchannel_1_1ChatManager.html#a257cad0883553c1d16964cefa33a010a">channel::ChatManager</a>
@@ -794,6 +1058,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>GMCommand_Quest()
 : <a class="el" href="classchannel_1_1ChatManager.html#ab07f4ce39ae94df45b1becd7e637d8a0">channel::ChatManager</a>
+</li>
+<li>GMCommand_Reported()
+: <a class="el" href="classchannel_1_1ChatManager.html#a9c13a7de1de5fe7a2563ea610288b1a3">channel::ChatManager</a>
+</li>
+<li>GMCommand_Resolve()
+: <a class="el" href="classchannel_1_1ChatManager.html#aa31f9dc361c3556a01b923d911662301">channel::ChatManager</a>
+</li>
+<li>GMCommand_Reunion()
+: <a class="el" href="classchannel_1_1ChatManager.html#a93b8abe66f2dd658fe55975f71d9670d">channel::ChatManager</a>
 </li>
 <li>GMCommand_Scrap()
 : <a class="el" href="classchannel_1_1ChatManager.html#acdcb5d878ba9d58e1b51c8639291ba6c">channel::ChatManager</a>
@@ -816,8 +1089,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GMCommand_Speed()
 : <a class="el" href="classchannel_1_1ChatManager.html#a48de93332ff9e0cfadd719177ea7a1de">channel::ChatManager</a>
 </li>
+<li>GMCommand_Spirit()
+: <a class="el" href="classchannel_1_1ChatManager.html#a5bdee2ba1ce86364938f6ef92a8cc46f">channel::ChatManager</a>
+</li>
+<li>GMCommand_Support()
+: <a class="el" href="classchannel_1_1ChatManager.html#a13d8415a83c30cbec1f1203f78c43691">channel::ChatManager</a>
+</li>
 <li>GMCommand_TickerMessage()
 : <a class="el" href="classchannel_1_1ChatManager.html#a95a3c1961f44e43106b4c4b708dbead1">channel::ChatManager</a>
+</li>
+<li>GMCommand_Title()
+: <a class="el" href="classchannel_1_1ChatManager.html#acd3e0da9814eb3014308e9ccbac63311">channel::ChatManager</a>
 </li>
 <li>GMCommand_Tokusei()
 : <a class="el" href="classchannel_1_1ChatManager.html#ab5ea1521a27ce38ce220b5093786bc63">channel::ChatManager</a>
@@ -833,6 +1115,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>GMCommand_XP()
 : <a class="el" href="classchannel_1_1ChatManager.html#a951b67909aafa2527ab1fe9577e930e4">channel::ChatManager</a>
+</li>
+<li>GMCommand_Ziotite()
+: <a class="el" href="classchannel_1_1ChatManager.html#acf84e1cf3c372011def85d6a7894ade0">channel::ChatManager</a>
 </li>
 <li>GMCommand_Zone()
 : <a class="el" href="classchannel_1_1ChatManager.html#ae0e4db86faa38538dbfd66716a7cb858">channel::ChatManager</a>

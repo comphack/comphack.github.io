@@ -99,13 +99,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Represents the state of an active entity on the channel.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ActiveEntityState_8h_source.html">ActiveEntityState.h</a>&quot;</code><br />
-<code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Constants_8h.html">Constants.h</a>&gt;</code><br />
+<code>#include &lt;Constants.h&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DefinitionManager_8h.html">DefinitionManager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Randomizer_8h.html">Randomizer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html">ServerConstants.h</a>&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;ActivatedAbility.h&gt;</code><br />
+<code>#include &lt;Ally.h&gt;</code><br />
 <code>#include &lt;CalculatedEntityState.h&gt;</code><br />
 <code>#include &lt;Character.h&gt;</code><br />
 <code>#include &lt;Clan.h&gt;</code><br />
@@ -121,11 +122,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;MiEffectData.h&gt;</code><br />
 <code>#include &lt;MiGrowthData.h&gt;</code><br />
 <code>#include &lt;MiItemData.h&gt;</code><br />
-<code>#include &lt;MiNPCBasicData.h&gt;</code><br />
 <code>#include &lt;MiSkillData.h&gt;</code><br />
 <code>#include &lt;MiSkillItemStatusCommonData.h&gt;</code><br />
 <code>#include &lt;MiStatusBasicData.h&gt;</code><br />
 <code>#include &lt;MiStatusData.h&gt;</code><br />
+<code>#include &lt;Spawn.h&gt;</code><br />
 <code>#include &lt;Tokusei.h&gt;</code><br />
 <code>#include &lt;TokuseiAspect.h&gt;</code><br />
 <code>#include &lt;TokuseiCorrectTbl.h&gt;</code><br />
@@ -134,6 +135,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Zone_8h_source.html">Zone.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ZoneInstance_8h_source.html">ZoneInstance.h</a>&quot;</code><br />
 </div>
 <p><a href="ActiveEntityState_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -148,6 +150,8 @@ Namespaces</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ac6145c3a22f4db3d5e0a9cf90eef8889"><td class="memItemLeft" align="right" valign="top">const std::set&lt; <a class="el" href="ActiveEntityState_8h.html#ae5e46bc20c247425b6c26aa4d9636868">CorrectTbl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ActiveEntityState_8cpp.html#ac6145c3a22f4db3d5e0a9cf90eef8889">BASE_STATS</a></td></tr>
 <tr class="separator:ac6145c3a22f4db3d5e0a9cf90eef8889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b7893bd32baafea5bd1de208c4c2b4"><td class="memItemLeft" align="right" valign="top">const std::set&lt; <a class="el" href="ActiveEntityState_8h.html#ae5e46bc20c247425b6c26aa4d9636868">CorrectTbl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ActiveEntityState_8cpp.html#a81b7893bd32baafea5bd1de208c4c2b4">FORCE_NUMERIC</a></td></tr>
+<tr class="separator:a81b7893bd32baafea5bd1de208c4c2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc129608a7f2cd5d04c1ffb9994778ab"><td class="memItemLeft" align="right" valign="top">const std::set&lt; <a class="el" href="ActiveEntityState_8h.html#ae5e46bc20c247425b6c26aa4d9636868">CorrectTbl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ActiveEntityState_8cpp.html#afc129608a7f2cd5d04c1ffb9994778ab">VISIBLE_STATS</a></td></tr>
 <tr class="separator:afc129608a7f2cd5d04c1ffb9994778ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -172,7 +176,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    {</div><div class="line">        CorrectTbl::STR,</div><div class="line">        CorrectTbl::MAGIC,</div><div class="line">        CorrectTbl::VIT,</div><div class="line">        CorrectTbl::INT,</div><div class="line">        CorrectTbl::SPEED,</div><div class="line">        CorrectTbl::LUCK</div><div class="line">    }</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="ActiveEntityState_8cpp_source.html#l02167">2167</a> of file <a class="el" href="ActiveEntityState_8cpp_source.html">ActiveEntityState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ActiveEntityState_8cpp_source.html#l02385">2385</a> of file <a class="el" href="ActiveEntityState_8cpp_source.html">ActiveEntityState.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a81b7893bd32baafea5bd1de208c4c2b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::set&lt;<a class="el" href="ActiveEntityState_8h.html#ae5e46bc20c247425b6c26aa4d9636868">CorrectTbl</a>&gt; FORCE_NUMERIC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ActiveEntityState_8cpp_source.html#l02397">2397</a> of file <a class="el" href="ActiveEntityState_8cpp_source.html">ActiveEntityState.cpp</a>.</p>
 
 </div>
 </div>
@@ -186,7 +204,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    {</div><div class="line">        CorrectTbl::STR,</div><div class="line">        CorrectTbl::MAGIC,</div><div class="line">        CorrectTbl::VIT,</div><div class="line">        CorrectTbl::INT,</div><div class="line">        CorrectTbl::SPEED,</div><div class="line">        CorrectTbl::LUCK,</div><div class="line">        CorrectTbl::HP_MAX,</div><div class="line">        CorrectTbl::MP_MAX,</div><div class="line">        CorrectTbl::CLSR,</div><div class="line">        CorrectTbl::LNGR,</div><div class="line">        CorrectTbl::SPELL,</div><div class="line">        CorrectTbl::SUPPORT,</div><div class="line">        CorrectTbl::PDEF,</div><div class="line">        CorrectTbl::MDEF</div><div class="line">    }</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="ActiveEntityState_8cpp_source.html#l02614">2614</a> of file <a class="el" href="ActiveEntityState_8cpp_source.html">ActiveEntityState.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ActiveEntityState_8cpp_source.html#l03046">3046</a> of file <a class="el" href="ActiveEntityState_8cpp_source.html">ActiveEntityState.cpp</a>.</p>
 
 </div>
 </div>

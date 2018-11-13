@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['barter_5fcooldowns',['BARTER_COOLDOWNS',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a04f7e3b7b700af42016a4cd117999fe7',1,'libcomp::ServerConstants::Data']]],
   ['base_5fstats',['BASE_STATS',['../ActiveEntityState_8cpp.html#ac6145c3a22f4db3d5e0a9cf90eef8889',1,'ActiveEntityState.cpp']]],
   ['baseaffinity',['BaseAffinity',['../classchannel_1_1ProcessingSkill.html#a5ca8b8b1f272940d681fa0327f9e8b80',1,'channel::ProcessingSkill']]],
   ['baseofcode',['BaseOfCode',['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER32.html#aafd7d7842bed9850826fb2828407198c',1,'IMAGE_OPTIONAL_HEADER32::BaseOfCode()'],['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER64.html#a2a59084aec74d1b86dd06b35f363b503',1,'IMAGE_OPTIONAL_HEADER64::BaseOfCode()']]],

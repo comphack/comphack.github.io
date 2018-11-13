@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['leader_5frequired',['LEADER_REQUIRED',['../ErrorCodes_8h.html#a64ad8177593b0263347e1d6e5a7a56bbaaede1c4f218c966ba0718e31cc42b56a',1,'LEADER_REQUIRED():&#160;ErrorCodes.h'],['../ErrorCodes_8h.html#a025150864fda35ac52afa639bfd33c17aaede1c4f218c966ba0718e31cc42b56a',1,'LEADER_REQUIRED():&#160;ErrorCodes.h']]],
   ['lnc_5fdifference',['LNC_DIFFERENCE',['../ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524a19aad6e4f819532d25148c0ed58d66b8',1,'ErrorCodes.h']]],
   ['location_5frestrict',['LOCATION_RESTRICT',['../ErrorCodes_8h.html#a407a8b14fbe4457dcd19565aacde2524aa33eccf88e34a5fdb654b0ed488d9cb9',1,'ErrorCodes.h']]],
   ['log_5flevel_5fcount',['LOG_LEVEL_COUNT',['../classlibcomp_1_1Log.html#a1472098b0e9b0bfebec448507c9cc6abaa17536d1ed65be43ffe3a0e2065ace4f',1,'libcomp::Log']]],

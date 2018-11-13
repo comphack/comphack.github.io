@@ -185,6 +185,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a92d676d6520230b286acf4c1a52a9df3"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Object.html#a92d676d6520230b286acf4c1a52a9df3">GetXmlText</a> (const tinyxml2::XMLElement &amp;root) const </td></tr>
 <tr class="memdesc:a92d676d6520230b286acf4c1a52a9df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to get element text from an XML node.  <a href="#a92d676d6520230b286acf4c1a52a9df3">More...</a><br /></td></tr>
 <tr class="separator:a92d676d6520230b286acf4c1a52a9df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f887ec98e5f34bc5973815cfe780df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Object.html#a49f887ec98e5f34bc5973815cfe780df">SkipPadding</a> (std::istream &amp;stream, uint8_t count)</td></tr>
+<tr class="memdesc:a49f887ec98e5f34bc5973815cfe780df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to skip padding bytes when reading from a datastream.  <a href="#a49f887ec98e5f34bc5973815cfe780df">More...</a><br /></td></tr>
+<tr class="separator:a49f887ec98e5f34bc5973815cfe780df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c4e0a1e8f3c20e4684599af22cba05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1Object.html#a94c4e0a1e8f3c20e4684599af22cba05">WritePadding</a> (std::ostream &amp;stream, uint8_t count) const </td></tr>
+<tr class="memdesc:a94c4e0a1e8f3c20e4684599af22cba05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to write padding bytes when writing to a datastream.  <a href="#a94c4e0a1e8f3c20e4684599af22cba05">More...</a><br /></td></tr>
+<tr class="separator:a94c4e0a1e8f3c20e4684599af22cba05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -215,7 +221,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Create an object. </p>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00036">36</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00037">37</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="PersistentObject_8cpp_source.html#l00373">libcomp::ScriptEngine::Using()</a>.</p>
 
 </div>
 </div>
@@ -241,7 +249,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00040">40</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00041">41</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 </div>
 </div>
@@ -268,7 +276,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Clean up the object. </p>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00045">45</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00046">46</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 </div>
 </div>
@@ -317,7 +325,7 @@ Protected Attributes</h2></td></tr>
 <p>Save the object into XML and return it as a string. </p>
 <dl class="section return"><dt>Returns</dt><dd>An XML string for the object. </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00297">297</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00298">298</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 <p>References <a class="el" href="classlibcomp_1_1Object.html#a6b726aabcadc40f46afef2e6164f0e39">Save()</a>.</p>
 
@@ -366,9 +374,9 @@ Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>First matching XML node child or nullptr if not found </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classlibcomp_1_1Object.html#aa897ef8716eabc1b8c7cb3bf0eac5dce" title="Utility function to get child XML elements from a parent node matching a specified name...">Object::GetXmlChildren</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00074">74</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00075">75</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
-<p>References <a class="el" href="Object_8cpp_source.html#l00081">GetXmlChildren()</a>.</p>
+<p>References <a class="el" href="Object_8cpp_source.html#l00082">GetXmlChildren()</a>.</p>
 
 </div>
 </div>
@@ -415,9 +423,9 @@ Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>List of matching XML node children or empty if not found </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classlibcomp_1_1Object.html#a5a9a204c875a0c5204014751fa2b35cc" title="Utility function to get a child XML element from a parent node matching a specified name...">Object::GetXmlChild</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00081">81</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00082">82</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00074">GetXmlChild()</a>.</p>
+<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00075">GetXmlChild()</a>.</p>
 
 </div>
 </div>
@@ -452,7 +460,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Map of child members by element name </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00099">99</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00100">100</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 </div>
 </div>
@@ -487,7 +495,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Text contained in the node's element text </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00120">120</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00121">121</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 </div>
 </div>
@@ -524,6 +532,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classlibcomp_1_1DynamicObject.html#a202d48566f9277e572dbfd9d91c6f268">libcomp::DynamicObject</a>.</p>
 
+<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00339">libcomp::ScriptEngine::Using()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a32d4706f815f90eacd9e12cc7e7741f2"></a>
@@ -557,7 +567,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if loading was successful, false if it was not </dd></dl>
 
-<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00049">LoadPacket()</a>.</p>
+<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00050">LoadPacket()</a>.</p>
 
 </div>
 </div>
@@ -691,7 +701,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>List of resulting objects built from the stream </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00144">144</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00145">145</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 <p>References <a class="el" href="Object_8h_source.html#l00067">libcomp::ObjectInStream::dynamicSizes</a>.</p>
 
@@ -739,7 +749,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if loading was successful, false if it was not </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00049">49</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00050">50</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 <p>References <a class="el" href="classlibcomp_1_1Object.html#a32d4706f815f90eacd9e12cc7e7741f2">Load()</a>, and <a class="el" href="ReadOnlyPacket_8cpp_source.html#l00116">libcomp::ReadOnlyPacket::Skip()</a>.</p>
 
@@ -776,7 +786,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if saving was successful, false if it was not </dd></dl>
 
-<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00297">GetXml()</a>, and <a class="el" href="Object_8cpp_source.html#l00065">SavePacket()</a>.</p>
+<p>Referenced by <a class="el" href="Object_8cpp_source.html#l00298">GetXml()</a>, and <a class="el" href="Object_8cpp_source.html#l00066">SavePacket()</a>.</p>
 
 </div>
 </div>
@@ -917,7 +927,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if saving was successful, false if it was not </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00204">204</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00205">205</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 <p>References <a class="el" href="Object_8h_source.html#l00086">libcomp::ObjectOutStream::dynamicSizes</a>.</p>
 
@@ -965,11 +975,103 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if saving was successful, false if it was not </dd></dl>
 
-<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00065">65</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00066">66</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 <p>References <a class="el" href="classlibcomp_1_1Object.html#a6b726aabcadc40f46afef2e6164f0e39">Save()</a>.</p>
 
 <p>Referenced by <a class="el" href="TcpConnection_8cpp_source.html#l00134">libcomp::TcpConnection::QueueObject()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a49f887ec98e5f34bc5973815cfe780df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> Object::SkipPadding </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Utility function to skip padding bytes when reading from a datastream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Byte stream being read from </td></tr>
+    <tr><td class="paramname">count</td><td>Number of bytes to skip </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the stream is still good after skipping </dd></dl>
+
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00316">316</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94c4e0a1e8f3c20e4684599af22cba05"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> Object::WritePadding </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Utility function to write padding bytes when writing to a datastream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Byte stream being written to </td></tr>
+    <tr><td class="paramname">count</td><td>Number of bytes to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the stream is still good after writing </dd></dl>
+
+<p>Definition at line <a class="el" href="Object_8cpp_source.html#l00324">324</a> of file <a class="el" href="Object_8cpp_source.html">Object.cpp</a>.</p>
 
 </div>
 </div>
@@ -994,7 +1096,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Mutex to lock accessing the object fields. </p>
 
-<p>Definition at line <a class="el" href="Object_8h_source.html#l00268">268</a> of file <a class="el" href="Object_8h_source.html">Object.h</a>.</p>
+<p>Definition at line <a class="el" href="Object_8h_source.html#l00284">284</a> of file <a class="el" href="Object_8h_source.html">Object.h</a>.</p>
 
 </div>
 </div>

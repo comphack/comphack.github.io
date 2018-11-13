@@ -1,7 +1,10 @@
 var searchData=
 [
+  ['fasttrack',['FastTrack',['../classchannel_1_1SkillExecutionContext.html#afe74cad9d0793af626f0be843142dd0c',1,'channel::SkillExecutionContext']]],
   ['filealignment',['FileAlignment',['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER32.html#adb9ef2df2a5ddd32fde4fe2eec2f2c34',1,'IMAGE_OPTIONAL_HEADER32::FileAlignment()'],['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER64.html#aeb26bfcd1b8e2d291c9b56a11993d972',1,'IMAGE_OPTIONAL_HEADER64::FileAlignment()']]],
   ['fileheader',['FileHeader',['../../../../libcomp/html/structIMAGE__NT__HEADERS32.html#a136393b81b4ff9be3a8bece74baeed62',1,'IMAGE_NT_HEADERS32::FileHeader()'],['../../../../libcomp/html/structIMAGE__NT__HEADERS64.html#afafbe227b254729eb0223fbd64fd9d57',1,'IMAGE_NT_HEADERS64::FileHeader()']]],
+  ['finalized',['Finalized',['../classchannel_1_1SkillExecutionContext.html#a08402e6adad32bfb545e30533db5b1d6',1,'channel::SkillExecutionContext']]],
+  ['fizzle',['Fizzle',['../classchannel_1_1SkillExecutionContext.html#a4ec25abef3525019fc3f6963b5736a2f',1,'channel::SkillExecutionContext']]],
   ['flag1_5fabsorb',['FLAG1_ABSORB',['../SkillManager_8cpp.html#a98c65df18b11a58a40a4c84dcc29a346',1,'SkillManager.cpp']]],
   ['flag1_5fblock_5fmagic',['FLAG1_BLOCK_MAGIC',['../SkillManager_8cpp.html#a852963768fc62e8286670ae327bddacc',1,'SkillManager.cpp']]],
   ['flag1_5fblock_5fphys',['FLAG1_BLOCK_PHYS',['../SkillManager_8cpp.html#a124802c748d97fee2b1976e414f1e191',1,'SkillManager.cpp']]],
@@ -24,10 +27,12 @@ var searchData=
   ['flag2_5flimit_5fbreak',['FLAG2_LIMIT_BREAK',['../SkillManager_8cpp.html#a1fa320df0bd1e6e8074c236ce7b3ffeb',1,'SkillManager.cpp']]],
   ['flags1',['Flags1',['../classchannel_1_1SkillTargetResult.html#abc8e6a942c03d3c376eb5c212882fec5',1,'channel::SkillTargetResult']]],
   ['flags2',['Flags2',['../classchannel_1_1SkillTargetResult.html#ad32cda1161d54000f9fcae046f2f7f3e',1,'channel::SkillTargetResult']]],
-  ['freecast',['FreeCast',['../classchannel_1_1SkillExecutionContext.html#ac093e144eae21e0c6bd70f4432cf4d53',1,'channel::SkillExecutionContext']]],
+  ['force_5fnumeric',['FORCE_NUMERIC',['../ActiveEntityState_8cpp.html#a81b7893bd32baafea5bd1de208c4c2b4',1,'ActiveEntityState.cpp']]],
+  ['functionid',['FunctionID',['../classchannel_1_1ProcessingSkill.html#a1059ebedf497933789ee74aedee89f14',1,'channel::ProcessingSkill']]],
   ['fusion_5fboost_5fskills',['FUSION_BOOST_SKILLS',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a1f5647ddbf3f7cd262de37957d0d631a',1,'libcomp::ServerConstants::Data']]],
   ['fusion_5fboost_5fstatuses',['FUSION_BOOST_STATUSES',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a4464260446c61e385c43f8d567f90cf9',1,'libcomp::ServerConstants::Data']]],
   ['fusion_5felemental_5fadjust',['FUSION_ELEMENTAL_ADJUST',['../FusionTables_8cpp.html#a930ed54df4d4788b342d06717857eb0a',1,'FUSION_ELEMENTAL_ADJUST():&#160;FusionTables.cpp'],['../FusionTables_8h.html#a930ed54df4d4788b342d06717857eb0a',1,'FUSION_ELEMENTAL_ADJUST():&#160;FusionTables.cpp']]],
+  ['fusion_5felemental_5fmitama',['FUSION_ELEMENTAL_MITAMA',['../FusionTables_8cpp.html#a868badbb97b033768a4c448c66bfac2f',1,'FUSION_ELEMENTAL_MITAMA():&#160;FusionTables.cpp'],['../FusionTables_8h.html#a868badbb97b033768a4c448c66bfac2f',1,'FUSION_ELEMENTAL_MITAMA():&#160;FusionTables.cpp']]],
   ['fusion_5ffamiliarity_5fbonus',['FUSION_FAMILIARITY_BONUS',['../FusionTables_8cpp.html#afdd9ba40ab12aa4f9d44268a212ff04e',1,'FUSION_FAMILIARITY_BONUS():&#160;FusionTables.cpp'],['../FusionTables_8h.html#afdd9ba40ab12aa4f9d44268a212ff04e',1,'FUSION_FAMILIARITY_BONUS():&#160;FusionTables.cpp']]],
   ['fusion_5frace_5fmap',['FUSION_RACE_MAP',['../FusionTables_8cpp.html#a746f158b6a227b719eb17494631cd273',1,'FUSION_RACE_MAP():&#160;FusionTables.cpp'],['../FusionTables_8h.html#a746f158b6a227b719eb17494631cd273',1,'FUSION_RACE_MAP():&#160;FusionTables.cpp']]]
 ];

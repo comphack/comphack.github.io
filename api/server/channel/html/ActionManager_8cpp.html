@@ -88,8 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">ActionManager.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -101,19 +99,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DefinitionManager_8h.html">DefinitionManager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html">Log.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/PacketCodes_8h.html">PacketCodes.h</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Randomizer_8h.html">Randomizer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerDataManager_8h.html">ServerDataManager.h</a>&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;Account.h&gt;</code><br />
 <code>#include &lt;AccountLogin.h&gt;</code><br />
+<code>#include &lt;AccountWorldData.h&gt;</code><br />
 <code>#include &lt;Action.h&gt;</code><br />
 <code>#include &lt;ActionAddRemoveItems.h&gt;</code><br />
 <code>#include &lt;ActionAddRemoveStatus.h&gt;</code><br />
 <code>#include &lt;ActionCreateLoot.h&gt;</code><br />
+<code>#include &lt;ActionDelay.h&gt;</code><br />
 <code>#include &lt;ActionDisplayMessage.h&gt;</code><br />
 <code>#include &lt;ActionGrantSkills.h&gt;</code><br />
 <code>#include &lt;ActionGrantXP.h&gt;</code><br />
 <code>#include &lt;ActionPlayBGM.h&gt;</code><br />
 <code>#include &lt;ActionPlaySoundEffect.h&gt;</code><br />
+<code>#include &lt;ActionRunScript.h&gt;</code><br />
 <code>#include &lt;ActionSetHomepoint.h&gt;</code><br />
 <code>#include &lt;ActionSetNPCState.h&gt;</code><br />
 <code>#include &lt;ActionSpawn.h&gt;</code><br />
@@ -130,32 +132,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;ActionZoneChange.h&gt;</code><br />
 <code>#include &lt;CharacterProgress.h&gt;</code><br />
 <code>#include &lt;DemonBox.h&gt;</code><br />
+<code>#include &lt;DestinyBox.h&gt;</code><br />
+<code>#include &lt;DigitalizeState.h&gt;</code><br />
 <code>#include &lt;DropSet.h&gt;</code><br />
+<code>#include &lt;Expertise.h&gt;</code><br />
+<code>#include &lt;EventInstance.h&gt;</code><br />
+<code>#include &lt;EventState.h&gt;</code><br />
+<code>#include &lt;InstanceAccess.h&gt;</code><br />
+<code>#include &lt;Loot.h&gt;</code><br />
 <code>#include &lt;LootBox.h&gt;</code><br />
+<code>#include &lt;Match.h&gt;</code><br />
+<code>#include &lt;MiCategoryData.h&gt;</code><br />
+<code>#include &lt;MiItemData.h&gt;</code><br />
+<code>#include &lt;MiPossessionData.h&gt;</code><br />
+<code>#include &lt;MiSkillItemStatusCommonData.h&gt;</code><br />
 <code>#include &lt;MiSpotData.h&gt;</code><br />
+<code>#include &lt;MiStatusData.h&gt;</code><br />
+<code>#include &lt;MiTimeLimitData.h&gt;</code><br />
 <code>#include &lt;MiZoneData.h&gt;</code><br />
 <code>#include &lt;ObjectPosition.h&gt;</code><br />
 <code>#include &lt;Party.h&gt;</code><br />
+<code>#include &lt;PentalphaEntry.h&gt;</code><br />
+<code>#include &lt;PentalphaMatch.h&gt;</code><br />
+<code>#include &lt;PostItem.h&gt;</code><br />
+<code>#include &lt;PvPInstanceStats.h&gt;</code><br />
+<code>#include &lt;PvPMatch.h&gt;</code><br />
 <code>#include &lt;Quest.h&gt;</code><br />
 <code>#include &lt;ServerNPC.h&gt;</code><br />
 <code>#include &lt;ServerObject.h&gt;</code><br />
 <code>#include &lt;ServerZone.h&gt;</code><br />
 <code>#include &lt;ServerZoneInstance.h&gt;</code><br />
+<code>#include &lt;ServerZoneTrigger.h&gt;</code><br />
+<code>#include &lt;Team.h&gt;</code><br />
+<code>#include &lt;WorldSharedConfig.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ChannelSyncManager_8h_source.html">ChannelSyncManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="EventManager_8h_source.html">EventManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ManagerConnection_8h_source.html">ManagerConnection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MatchManager_8h_source.html">MatchManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TokuseiManager_8h_source.html">TokuseiManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ZoneManager_8h_source.html">ZoneManager.h</a>&quot;</code><br />
 </div>
 <p><a href="ActionManager_8cpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchannel_1_1ActionContext.html">channel::ActionContext</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to manage actions when triggering a spot or interacting with an object/NPC. </p>
 <dl class="section author"><dt>Author</dt><dd>COMP Omega <a href="#" onclick="location.href='mai'+'lto:'+'com'+'po'+'meg'+'a@'+'tut'+'an'+'ota'+'.c'+'om'; return false;">compo<span style="display: none;">.nosp@m.</span>mega<span style="display: none;">.nosp@m.</span>@tuta<span style="display: none;">.nosp@m.</span>nota<span style="display: none;">.nosp@m.</span>.com</a></dd></dl>

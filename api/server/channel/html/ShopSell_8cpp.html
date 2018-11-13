@@ -103,6 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Packet_8h.html">Packet.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/PacketCodes_8h.html">PacketCodes.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html">ServerConstants.h</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerDataManager_8h.html">ServerDataManager.h</a>&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;Account.h&gt;</code><br />
 <code>#include &lt;Item.h&gt;</code><br />
@@ -110,6 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;MiItemBasicData.h&gt;</code><br />
 <code>#include &lt;MiItemData.h&gt;</code><br />
 <code>#include &lt;MiPossessionData.h&gt;</code><br />
+<code>#include &lt;ServerShop.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="ChannelServer_8h_source.html">ChannelServer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>&quot;</code><br />
 </div>
@@ -117,8 +119,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a86fb7c38f0302404b2e7f8ef2836d3f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ShopSell_8cpp.html#a86fb7c38f0302404b2e7f8ef2836d3f4">HandleShopSale</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelServer.html">ChannelServer</a> &gt; server, const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">ChannelClientConnection</a> &gt; client, int32_t shopID, int32_t cacheID, std::list&lt; std::pair&lt; uint32_t, int64_t &gt;&gt; itemsSold)</td></tr>
-<tr class="separator:a86fb7c38f0302404b2e7f8ef2836d3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4351cc9f37ccff931844a88c1a28e03f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ShopSell_8cpp.html#a4351cc9f37ccff931844a88c1a28e03f">HandleShopSale</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelServer.html">ChannelServer</a> &gt; server, const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">ChannelClientConnection</a> &gt; client, int32_t shopID, std::list&lt; std::pair&lt; uint32_t, int64_t &gt;&gt; itemsSold)</td></tr>
+<tr class="separator:a4351cc9f37ccff931844a88c1a28e03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a681efa9fb03612268ce7a729bc4a9ba7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ShopSell_8cpp.html#a681efa9fb03612268ce7a729bc4a9ba7">SendShopSaleReply</a> (const std::shared_ptr&lt; <a class="el" href="classchannel_1_1ChannelClientConnection.html">ChannelClientConnection</a> &gt; client, int32_t shopID, int32_t result, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> queue)</td></tr>
 <tr class="separator:a681efa9fb03612268ce7a729bc4a9ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -133,7 +135,7 @@ Functions</h2></td></tr>
 
 <p>Definition in file <a class="el" href="ShopSell_8cpp_source.html">ShopSell.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a86fb7c38f0302404b2e7f8ef2836d3f4"></a>
+<a class="anchor" id="a4351cc9f37ccff931844a88c1a28e03f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -158,12 +160,6 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>cacheID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">std::list&lt; std::pair&lt; uint32_t, int64_t &gt;&gt;&#160;</td>
           <td class="paramname"><em>itemsSold</em>&#160;</td>
         </tr>
@@ -175,9 +171,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ShopSell_8cpp_source.html#l00075">75</a> of file <a class="el" href="ShopSell_8cpp_source.html">ShopSell.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ShopSell_8cpp_source.html#l00077">77</a> of file <a class="el" href="ShopSell_8cpp_source.html">ShopSell.cpp</a>.</p>
 
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DatabaseChangeSet.html#a03a7037cb49e525b13310dfd97f469dc">libcomp::DatabaseChangeSet::Create()</a>, <a class="el" href="ClientState_8cpp_source.html#l00081">channel::ClientState::GetCharacterState()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#ad81a63b214eccb267d246000c33233a7">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00168">channel::ClientState::GetObjectUUID()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ManagerPacket.html#aa21f449c7953fe4108dbfb2f3334d869">libcomp::ManagerPacket::GetServer()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Constants_8h.html#aafe90c9ac4baae61294abeca5d8a011d">ITEM_MACCA_NOTE_AMOUNT</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a7f8a0775e240d3920ce6a5a593d950d3">libcomp::ReadOnlyPacket::Left()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#aedfc887738ff281ce6b5ae20c64318bc">libcomp::BaseServer::QueueWork()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a07d26e7750f1cf1044be11dd19f77f52">libcomp::ReadOnlyPacket::ReadS32Little()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a66956b5bd19502ed529460009cf8bde4">libcomp::ReadOnlyPacket::ReadS64Little()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a77df6bdb1e70e8fc7c4f4ab6975018ee">libcomp::ReadOnlyPacket::ReadU32Little()</a>, <a class="el" href="ShopSell_8cpp_source.html#l00057">SendShopSaleReply()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a760041f152f57ce4fdd5580c841bf41e">libcomp::ReadOnlyPacket::Size()</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00128">channel::state()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html#a693b6ba29a440fa12e37272cebccce29">SVR_CONST</a>.</p>
+<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1DatabaseChangeSet.html#a03a7037cb49e525b13310dfd97f469dc">libcomp::DatabaseChangeSet::Create()</a>, <a class="el" href="ClientState_8cpp_source.html#l00084">channel::ClientState::GetCharacterState()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#ad81a63b214eccb267d246000c33233a7">libcomp::PersistentObject::GetObjectByUUID()</a>, <a class="el" href="ClientState_8cpp_source.html#l00204">channel::ClientState::GetObjectUUID()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ManagerPacket.html#aa21f449c7953fe4108dbfb2f3334d869">libcomp::ManagerPacket::GetServer()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a7f8a0775e240d3920ce6a5a593d950d3">libcomp::ReadOnlyPacket::Left()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1BaseServer.html#aedfc887738ff281ce6b5ae20c64318bc">libcomp::BaseServer::QueueWork()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a07d26e7750f1cf1044be11dd19f77f52">libcomp::ReadOnlyPacket::ReadS32Little()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a66956b5bd19502ed529460009cf8bde4">libcomp::ReadOnlyPacket::ReadS64Little()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a77df6bdb1e70e8fc7c4f4ab6975018ee">libcomp::ReadOnlyPacket::ReadU32Little()</a>, <a class="el" href="ShopSell_8cpp_source.html#l00059">SendShopSaleReply()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a760041f152f57ce4fdd5580c841bf41e">libcomp::ReadOnlyPacket::Size()</a>, <a class="el" href="ChannelClientConnection_8h_source.html#l00135">channel::state()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ServerConstants_8h.html#a693b6ba29a440fa12e37272cebccce29">SVR_CONST</a>.</p>
 
 </div>
 </div>
@@ -217,11 +213,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ShopSell_8cpp_source.html#l00057">57</a> of file <a class="el" href="ShopSell_8cpp_source.html">ShopSell.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ShopSell_8cpp_source.html#l00059">59</a> of file <a class="el" href="ShopSell_8cpp_source.html">ShopSell.cpp</a>.</p>
 
 <p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab4d39238a6c6aa34b51481009eabad10">libcomp::Packet::WriteS32Little()</a>.</p>
 
-<p>Referenced by <a class="el" href="ShopSell_8cpp_source.html#l00075">HandleShopSale()</a>.</p>
+<p>Referenced by <a class="el" href="ShopSell_8cpp_source.html#l00077">HandleShopSale()</a>.</p>
 
 </div>
 </div>

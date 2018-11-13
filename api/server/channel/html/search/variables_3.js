@@ -5,6 +5,7 @@ var searchData=
   ['damage1type',['Damage1Type',['../classchannel_1_1SkillTargetResult.html#a4db2f521a0ed3ec0bcdb90e19089fe06',1,'channel::SkillTargetResult']]],
   ['damage2',['Damage2',['../classchannel_1_1SkillTargetResult.html#aeab6da0d642505414944311d57a41042',1,'channel::SkillTargetResult']]],
   ['damage2type',['Damage2Type',['../classchannel_1_1SkillTargetResult.html#ae158fbf36dce18df9034429ba5f61d00',1,'channel::SkillTargetResult']]],
+  ['damage_5fexplicit_5fset',['DAMAGE_EXPLICIT_SET',['../SkillManager_8cpp.html#ad68a770a9e22ec6690f8ebdf70e275be',1,'SkillManager.cpp']]],
   ['damage_5ftype_5fdrain',['DAMAGE_TYPE_DRAIN',['../SkillManager_8cpp.html#a7730f5a108834730aea3e0e79f6413fc',1,'SkillManager.cpp']]],
   ['damage_5ftype_5fgeneric',['DAMAGE_TYPE_GENERIC',['../SkillManager_8cpp.html#aa4975ff3cb4beb96878ffca8a2dd8520',1,'SkillManager.cpp']]],
   ['damage_5ftype_5fhealing',['DAMAGE_TYPE_HEALING',['../SkillManager_8cpp.html#a3a172e83ec5aed2810ca224dd809e42a',1,'SkillManager.cpp']]],
@@ -15,10 +16,13 @@ var searchData=
   ['db',['DB',['../../../../libcomp/html/classlibcomp_1_1DataSyncManager_1_1ObjectConfig.html#ae6b7e91d7d35f2bcf28b54784755a165',1,'libcomp::DataSyncManager::ObjectConfig']]],
   ['definition',['Definition',['../classchannel_1_1ProcessingSkill.html#a437534c16a88d3a2585a835810d030a2',1,'channel::ProcessingSkill::Definition()'],['../classchannel_1_1ZoneSpotShape.html#a44529bc261aa122959daaa6adcf82de0',1,'channel::ZoneSpotShape::Definition()']]],
   ['demon_5fbook_5fbonus',['DEMON_BOOK_BONUS',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a8915cd367284253244f5b56d96117054',1,'libcomp::ServerConstants::Data']]],
+  ['demon_5fcrystals',['DEMON_CRYSTALS',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a5f8af8eccf81eb7e9f9aeef33b71c2f3',1,'libcomp::ServerConstants::Data']]],
+  ['demon_5ffusion_5fskills',['DEMON_FUSION_SKILLS',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a73806b61266cb3defc5560e4969bd1fc',1,'libcomp::ServerConstants::Data']]],
+  ['demon_5fquest_5fxp',['DEMON_QUEST_XP',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#adaf85dfcff0cacab3e46b5ef2636449a',1,'libcomp::ServerConstants::Data']]],
   ['depo_5fmap_5fdemon',['DEPO_MAP_DEMON',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a1adf17a613c3661d4cf4180fffb11fb1',1,'libcomp::ServerConstants::Data']]],
   ['depo_5fmap_5fitem',['DEPO_MAP_ITEM',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#aeac00220009aca14983cf58351510aa7',1,'libcomp::ServerConstants::Data']]],
-  ['disassembly_5fitems',['DISASSEMBLY_ITEMS',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a44caf772a2ce27bc0e83d673f23df161',1,'libcomp::ServerConstants::Data']]],
   ['dllcharacteristics',['DllCharacteristics',['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER32.html#a787ce3c8823583a45fb2a04548ca0356',1,'IMAGE_OPTIONAL_HEADER32::DllCharacteristics()'],['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER64.html#a53b3e13cfe507493687247f28683a89e',1,'IMAGE_OPTIONAL_HEADER64::DllCharacteristics()']]],
+  ['duration',['Duration',['../classchannel_1_1StatusEffectChange.html#af8da72c1b5427c539b7f77e5b6510245',1,'channel::StatusEffectChange']]],
   ['dynamichandler',['DynamicHandler',['../../../../libcomp/html/classlibcomp_1_1DataSyncManager_1_1ObjectConfig.html#a666fbdd1874a46e937a841619c287fc6',1,'libcomp::DataSyncManager::ObjectConfig']]],
   ['dynamicsizes',['dynamicSizes',['../../../../libcomp/html/classlibcomp_1_1ObjectInStream.html#a34aa3e66a1c2412fc05c3ef2511ec5c9',1,'libcomp::ObjectInStream::dynamicSizes()'],['../../../../libcomp/html/classlibcomp_1_1ObjectOutStream.html#aee0235fb8fcb2bc8b22b4eb4f05a5071',1,'libcomp::ObjectOutStream::dynamicSizes()']]]
 ];

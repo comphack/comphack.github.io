@@ -88,8 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">AccountLogin.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -98,33 +96,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Parser to handle retrieving a channel for the client to log into.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;Packets.h&quot;</code><br />
-<code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html">Log.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ManagerPacket_8h.html">ManagerPacket.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Packet_8h.html">Packet.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/PacketCodes_8h.html">PacketCodes.h</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/ReadOnlyPacket_8h.html">ReadOnlyPacket.h</a>&gt;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;Account.h&gt;</code><br />
 <code>#include &lt;AccountLogin.h&gt;</code><br />
-<code>#include &lt;Character.h&gt;</code><br />
-<code>#include &lt;CharacterLogin.h&gt;</code><br />
-<code>#include &lt;Clan.h&gt;</code><br />
-<code>#include &lt;ClanMember.h&gt;</code><br />
-<code>#include &lt;EntityStats.h&gt;</code><br />
+<code>#include &lt;ChannelLogin.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="AccountManager_8h_source.html">AccountManager.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="CharacterManager_8h_source.html">CharacterManager.h</a>&quot;</code><br />
-<code>#include &quot;WorldConfig.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="WorldServer_8h_source.html">WorldServer.h</a>&quot;</code><br />
 </div>
 <p><a href="AccountLogin_8cpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ac6cbfededd5803f269338b754a9e0dce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AccountLogin_8cpp.html#ac6cbfededd5803f269338b754a9e0dce">ChannelLogin</a> (std::shared_ptr&lt; <a class="el" href="classworld_1_1WorldServer.html">WorldServer</a> &gt; server, const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1InternalConnection.html">libcomp::InternalConnection</a> &gt; connection, uint32_t sesssionKey, const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a> username)</td></tr>
-<tr class="separator:ac6cbfededd5803f269338b754a9e0dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac8cbc691906a5b1d142429a24dd0445"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AccountLogin_8cpp.html#aac8cbc691906a5b1d142429a24dd0445">LobbyLogin</a> (std::shared_ptr&lt; <a class="el" href="classworld_1_1WorldServer.html">WorldServer</a> &gt; server, const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1InternalConnection.html">libcomp::InternalConnection</a> &gt; connection, std::shared_ptr&lt; objects::AccountLogin &gt; login)</td></tr>
-<tr class="separator:aac8cbc691906a5b1d142429a24dd0445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parser to handle retrieving a channel for the client to log into. </p>
 <dl class="section author"><dt>Author</dt><dd>HACKfrost</dd></dl>
@@ -135,88 +116,7 @@ Functions</h2></td></tr>
 <p>You should have received a copy of the GNU Affero General Public License along with this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>. </p>
 
 <p>Definition in file <a class="el" href="AccountLogin_8cpp_source.html">AccountLogin.cpp</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ac6cbfededd5803f269338b754a9e0dce"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChannelLogin </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classworld_1_1WorldServer.html">WorldServer</a> &gt;&#160;</td>
-          <td class="paramname"><em>server</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1InternalConnection.html">libcomp::InternalConnection</a> &gt;&#160;</td>
-          <td class="paramname"><em>connection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>sesssionKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html">libcomp::String</a>&#160;</td>
-          <td class="paramname"><em>username</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="AccountLogin_8cpp_source.html#l00202">202</a> of file <a class="el" href="AccountLogin_8cpp_source.html">AccountLogin.cpp</a>.</p>
-
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/namespacelibcomp_1_1Convert.html#acf55d81b176d67bdfa666b3248c16ac4a439ee39e30ecd2cb6dfec4020697eeb7">libcomp::Convert::ENCODING_UTF8</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ManagerPacket.html#aa21f449c7953fe4108dbfb2f3334d869">libcomp::ManagerPacket::GetServer()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1String.html#a4e8fb512730c14bb1ff9344df6184f32">libcomp::String::Length()</a>, <a class="el" href="AccountLogin_8cpp_source.html#l00056">LobbyLogin()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#afea191b7edfa277902361d699296fba0">libcomp::ReadOnlyPacket::ReadString16Little()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1ReadOnlyPacket.html#a4c9e94c236048dbfde9e569a374c969e">libcomp::ReadOnlyPacket::ReadU32()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#acb7bad5ab1a3bdba98aaa900a456a4a7">libcomp::Packet::WriteS8()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#ab7f2381548009b30746d4d8717bdcd7f">libcomp::Packet::WriteString16Little()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aac8cbc691906a5b1d142429a24dd0445"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LobbyLogin </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classworld_1_1WorldServer.html">WorldServer</a> &gt;&#160;</td>
-          <td class="paramname"><em>server</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1InternalConnection.html">libcomp::InternalConnection</a> &gt;&#160;</td>
-          <td class="paramname"><em>connection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::shared_ptr&lt; objects::AccountLogin &gt;&#160;</td>
-          <td class="paramname"><em>login</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="AccountLogin_8cpp_source.html#l00056">56</a> of file <a class="el" href="AccountLogin_8cpp_source.html">AccountLogin.cpp</a>.</p>
-
-<p>References <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1PersistentObject.html#a86eaa54acf5c99d6142254e6febdb492">libcomp::PersistentObject::LoadObjectByUUID()</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a3d35edb171d00cad3f98eedaa3105d2f">LOG_DEBUG</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/Log_8h.html#a0b8803f44819fc5393300b390f0e170d">LOG_ERROR</a>, <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#a2334f0cb7c1a8b853cde6e92293b07fc">libcomp::Packet::WritePacketCode()</a>, and <a class="elRef" doxygen="C:/projects/comp-hack/build/api/libcomp.tags:../../../libcomp/html/" href="../../../libcomp/html/classlibcomp_1_1Packet.html#acb7bad5ab1a3bdba98aaa900a456a4a7">libcomp::Packet::WriteS8()</a>.</p>
-
-<p>Referenced by <a class="el" href="AccountLogin_8cpp_source.html#l00202">ChannelLogin()</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

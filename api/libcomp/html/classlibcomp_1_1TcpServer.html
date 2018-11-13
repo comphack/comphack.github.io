@@ -128,9 +128,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a72bc46aa57e7b0fa194be6bb3cfe9ef4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1TcpServer.html#a72bc46aa57e7b0fa194be6bb3cfe9ef4">RemoveConnection</a> (std::shared_ptr&lt; <a class="el" href="classlibcomp_1_1TcpConnection.html">TcpConnection</a> &gt; &amp;connection)</td></tr>
 <tr class="memdesc:a72bc46aa57e7b0fa194be6bb3cfe9ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a connection from the list of client connections.  <a href="#a72bc46aa57e7b0fa194be6bb3cfe9ef4">More...</a><br /></td></tr>
 <tr class="separator:a72bc46aa57e7b0fa194be6bb3cfe9ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad41e8f0ede0549eef18b2ecb769aca22"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1TcpServer.html#ad41e8f0ede0549eef18b2ecb769aca22">Start</a> ()</td></tr>
-<tr class="memdesc:ad41e8f0ede0549eef18b2ecb769aca22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a thread that listens for incoming network connections.  <a href="#ad41e8f0ede0549eef18b2ecb769aca22">More...</a><br /></td></tr>
-<tr class="separator:ad41e8f0ede0549eef18b2ecb769aca22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7078e7c1394ba269348d03f1ab716078"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1TcpServer.html#a7078e7c1394ba269348d03f1ab716078">ServerReady</a> ()</td></tr>
+<tr class="memdesc:a7078e7c1394ba269348d03f1ab716078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the server has started.  <a href="#a7078e7c1394ba269348d03f1ab716078">More...</a><br /></td></tr>
+<tr class="separator:a7078e7c1394ba269348d03f1ab716078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b85f7704e169be0147dc98faf09fb3"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1TcpServer.html#a11b85f7704e169be0147dc98faf09fb3">Start</a> (<a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a> delayReady=false)</td></tr>
+<tr class="memdesc:a11b85f7704e169be0147dc98faf09fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a thread that listens for incoming network connections.  <a href="#a11b85f7704e169be0147dc98faf09fb3">More...</a><br /></td></tr>
+<tr class="separator:a11b85f7704e169be0147dc98faf09fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -167,9 +170,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a927c8c1b17bb5a6832802ebc3b251d12"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1TcpServer.html#a927c8c1b17bb5a6832802ebc3b251d12">Run</a> ()</td></tr>
 <tr class="memdesc:a927c8c1b17bb5a6832802ebc3b251d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main loop for the server.  <a href="#a927c8c1b17bb5a6832802ebc3b251d12">More...</a><br /></td></tr>
 <tr class="separator:a927c8c1b17bb5a6832802ebc3b251d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7078e7c1394ba269348d03f1ab716078"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1TcpServer.html#a7078e7c1394ba269348d03f1ab716078">ServerReady</a> ()</td></tr>
-<tr class="memdesc:a7078e7c1394ba269348d03f1ab716078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the server has started.  <a href="#a7078e7c1394ba269348d03f1ab716078">More...</a><br /></td></tr>
-<tr class="separator:a7078e7c1394ba269348d03f1ab716078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa7fa058f68c10fc7d8300c50cbf2ba9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibcomp_1_1TcpServer.html#aaa7fa058f68c10fc7d8300c50cbf2ba9">SetDiffieHellman</a> (DH *pDiffieHellman)</td></tr>
 <tr class="memdesc:aaa7fa058f68c10fc7d8300c50cbf2ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Diffie-Hellman key pair used by this server.  <a href="#aaa7fa058f68c10fc7d8300c50cbf2ba9">More...</a><br /></td></tr>
 <tr class="separator:aaa7fa058f68c10fc7d8300c50cbf2ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,7 +272,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00050">50</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
-<p>References <a class="el" href="TcpServer_8h_source.html#l00192">mDiffieHellman</a>.</p>
+<p>References <a class="el" href="TcpServer_8h_source.html#l00194">mDiffieHellman</a>.</p>
 
 </div>
 </div>
@@ -318,9 +318,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00164">164</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00170">170</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
-<p>References <a class="el" href="TcpServer_8cpp_source.html#l00157">CreateConnection()</a>, <a class="el" href="Log_8h_source.html#l00255">LOG_CRITICAL</a>, <a class="el" href="Log_8h_source.html#l00291">LOG_DEBUG</a>, <a class="el" href="Log_8h_source.html#l00264">LOG_ERROR</a>, <a class="el" href="TcpServer_8h_source.html#l00186">mAcceptor</a>, <a class="el" href="TcpServer_8h_source.html#l00179">mConnections</a>, <a class="el" href="TcpServer_8h_source.html#l00176">mConnectionsLock</a>, and <a class="el" href="TcpServer_8h_source.html#l00192">mDiffieHellman</a>.</p>
+<p>References <a class="el" href="TcpServer_8cpp_source.html#l00163">CreateConnection()</a>, <a class="el" href="Log_8h_source.html#l00361">LOG_CRITICAL</a>, <a class="el" href="Log_8h_source.html#l00397">LOG_DEBUG</a>, <a class="el" href="Log_8h_source.html#l00370">LOG_ERROR</a>, <a class="el" href="TcpServer_8h_source.html#l00188">mAcceptor</a>, <a class="el" href="TcpServer_8h_source.html#l00181">mConnections</a>, <a class="el" href="TcpServer_8h_source.html#l00178">mConnectionsLock</a>, and <a class="el" href="TcpServer_8h_source.html#l00194">mDiffieHellman</a>.</p>
 
 <p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>.</p>
 
@@ -358,9 +358,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Copied key pair or nullptr on failure. </dd></dl>
 
-<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00334">334</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00340">340</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00157">CreateConnection()</a>, and <a class="el" href="DiffieHellman_8cpp_source.html#l00036">TEST()</a>.</p>
+<p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00163">CreateConnection()</a>, and <a class="el" href="DiffieHellman_8cpp_source.html#l00036">TEST()</a>.</p>
 
 </div>
 </div>
@@ -395,11 +395,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the newly created connection </dd></dl>
 
-<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00157">157</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00163">163</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
-<p>References <a class="el" href="TcpServer_8cpp_source.html#l00334">CopyDiffieHellman()</a>, and <a class="el" href="TcpServer_8h_source.html#l00192">mDiffieHellman</a>.</p>
+<p>References <a class="el" href="TcpServer_8cpp_source.html#l00340">CopyDiffieHellman()</a>, and <a class="el" href="TcpServer_8h_source.html#l00194">mDiffieHellman</a>.</p>
 
-<p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00164">AcceptHandler()</a>.</p>
+<p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00170">AcceptHandler()</a>.</p>
 
 </div>
 </div>
@@ -427,9 +427,7 @@ Private Attributes</h2></td></tr>
 <p>Generate a Diffie-Hellman key pair. </p>
 <dl class="section return"><dt>Returns</dt><dd>Generated key pair or nullptr on failure. </dd></dl>
 
-<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00225">225</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
-
-<p>References <a class="el" href="Constants_8h_source.html#l00082">DH_BASE_INT</a>, <a class="el" href="Constants_8h_source.html#l00073">DH_KEY_BIT_SIZE</a>, and <a class="el" href="Constants_8h_source.html#l00079">DH_SHARED_DATA_SIZE</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00231">231</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>, and <a class="el" href="DiffieHellman_8cpp_source.html#l00036">TEST()</a>.</p>
 
@@ -459,11 +457,11 @@ Private Attributes</h2></td></tr>
 <p>Get the Diffie-Hellman key pair used by this server. </p>
 <dl class="section return"><dt>Returns</dt><dd>Key pair or nullptr if one is not set. </dd></dl>
 
-<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00210">210</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00216">216</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
-<p>References <a class="el" href="TcpServer_8h_source.html#l00192">mDiffieHellman</a>.</p>
+<p>References <a class="el" href="TcpServer_8h_source.html#l00194">mDiffieHellman</a>.</p>
 
-<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00061">libcomp::BaseServer::Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00062">libcomp::BaseServer::Initialize()</a>.</p>
 
 </div>
 </div>
@@ -498,11 +496,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Generated key pair or nullptr on failure. </dd></dl>
 
-<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00247">247</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00253">253</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
-<p>References <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="Constants_8h_source.html#l00085">DH_BASE_STRING</a>, <a class="el" href="Constants_8h_source.html#l00076">DH_KEY_HEX_SIZE</a>, <a class="el" href="Constants_8h_source.html#l00079">DH_SHARED_DATA_SIZE</a>, <a class="el" href="CString_8cpp_source.html#l00476">libcomp::String::Length()</a>, <a class="el" href="Log_8h_source.html#l00291">LOG_DEBUG</a>, and <a class="el" href="Log_8h_source.html#l00264">LOG_ERROR</a>.</p>
+<p>References <a class="el" href="CString_8cpp_source.html#l00753">libcomp::String::C()</a>, <a class="el" href="CString_8cpp_source.html#l00476">libcomp::String::Length()</a>, <a class="el" href="Log_8h_source.html#l00397">LOG_DEBUG</a>, and <a class="el" href="Log_8h_source.html#l00370">LOG_ERROR</a>.</p>
 
-<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00061">libcomp::BaseServer::Initialize()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00285">LoadDiffieHellman()</a>, <a class="el" href="EncryptedConnection_8cpp_source.html#l00247">libcomp::EncryptedConnection::ParseClientEncryptionStart()</a>, and <a class="el" href="DiffieHellman_8cpp_source.html#l00036">TEST()</a>.</p>
+<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00062">libcomp::BaseServer::Initialize()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00291">LoadDiffieHellman()</a>, <a class="el" href="EncryptedConnection_8cpp_source.html#l00247">libcomp::EncryptedConnection::ParseClientEncryptionStart()</a>, and <a class="el" href="DiffieHellman_8cpp_source.html#l00036">TEST()</a>.</p>
 
 </div>
 </div>
@@ -537,9 +535,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Generated key pair or nullptr on failure. </dd></dl>
 
-<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00285">285</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00291">291</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
-<p>References <a class="el" href="TcpServer_8cpp_source.html#l00247">LoadDiffieHellman()</a>.</p>
+<p>References <a class="el" href="TcpServer_8cpp_source.html#l00253">LoadDiffieHellman()</a>.</p>
 
 </div>
 </div>
@@ -585,9 +583,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Generated key pair or nullptr on failure. </dd></dl>
 
-<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00290">290</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
-
-<p>References <a class="el" href="Constants_8h_source.html#l00085">DH_BASE_STRING</a>, and <a class="el" href="Constants_8h_source.html#l00079">DH_SHARED_DATA_SIZE</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00296">296</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
 </div>
 </div>
@@ -613,9 +609,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00127">127</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00130">130</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
-<p>References <a class="el" href="TcpServer_8h_source.html#l00179">mConnections</a>, and <a class="el" href="TcpServer_8h_source.html#l00176">mConnectionsLock</a>.</p>
+<p>References <a class="el" href="TcpServer_8h_source.html#l00181">mConnections</a>, and <a class="el" href="TcpServer_8h_source.html#l00178">mConnectionsLock</a>.</p>
 
 </div>
 </div>
@@ -645,7 +641,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classlibcomp_1_1BaseServer.html#ab8242184f16ac6379b0deb827ca7920f">libcomp::BaseServer</a>.</p>
 
-<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00139">139</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00142">142</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>.</p>
 
@@ -682,9 +678,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Buffer containing the prime (empty on failure). </dd></dl>
 
-<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00317">317</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
-
-<p>References <a class="el" href="Constants_8h_source.html#l00079">DH_SHARED_DATA_SIZE</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00323">323</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="DiffieHellman_8cpp_source.html#l00036">TEST()</a>.</p>
 
@@ -706,7 +700,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -715,11 +709,11 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classlibcomp_1_1BaseServer.html#a724620208dfb4a16fd5bff8e330c7ea0">libcomp::BaseServer</a>.</p>
 
-<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00144">144</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00147">147</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
-<p>References <a class="el" href="Log_8h_source.html#l00282">LOG_INFO</a>.</p>
+<p>References <a class="el" href="Log_8h_source.html#l00388">LOG_INFO</a>.</p>
 
-<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00299">libcomp::BaseServer::ServerReady()</a>, and <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>.</p>
+<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00302">libcomp::BaseServer::ServerReady()</a>, and <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>.</p>
 
 </div>
 </div>
@@ -753,15 +747,15 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00215">215</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00221">221</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
-<p>References <a class="el" href="TcpServer_8h_source.html#l00192">mDiffieHellman</a>.</p>
+<p>References <a class="el" href="TcpServer_8h_source.html#l00194">mDiffieHellman</a>.</p>
 
-<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00061">libcomp::BaseServer::Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00062">libcomp::BaseServer::Initialize()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad41e8f0ede0549eef18b2ecb769aca22"></a>
+<a class="anchor" id="a11b85f7704e169be0147dc98faf09fb3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -771,7 +765,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">int TcpServer::Start </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="DatabaseQueryMariaDB_8cpp.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>delayReady</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -786,11 +781,17 @@ Private Attributes</h2></td></tr>
 <p>This call will block until the server is stopped. This will call <a class="el" href="classlibcomp_1_1TcpServer.html#a927c8c1b17bb5a6832802ebc3b251d12">Run</a> for the main loop. In the <a class="el" href="classlibcomp_1_1BaseServer.html">BaseServer</a> implementation this will run a main worker thread. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classlibcomp_1_1BaseServer.html" title="Base class for all servers that run workers to handle incoming messages in the message queue...">BaseServer</a> </dd>
 <dd>
 <a class="el" href="classlibcomp_1_1Worker.html" title="Generic worker assigned to a message queue used to handle messages as they are received. ">Worker</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delayReady</td><td>Optional parameter to delay ready notification to be called manually at a later point. Defaults to false. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Code indicating the exit status. </dd></dl>
 
 <p>Definition at line <a class="el" href="TcpServer_8cpp_source.html#l00058">58</a> of file <a class="el" href="TcpServer_8cpp_source.html">TcpServer.cpp</a>.</p>
 
-<p>References <a class="el" href="TcpServer_8cpp_source.html#l00164">AcceptHandler()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00225">GenerateDiffieHellman()</a>, <a class="el" href="TcpConnection_8cpp_source.html#l00468">libcomp::TcpConnection::GetDiffieHellmanPrime()</a>, <a class="el" href="CString_8cpp_source.html#l00486">libcomp::String::IsEmpty()</a>, <a class="el" href="Log_8h_source.html#l00255">LOG_CRITICAL</a>, <a class="el" href="Log_8h_source.html#l00273">LOG_WARNING</a>, <a class="el" href="TcpServer_8h_source.html#l00186">mAcceptor</a>, <a class="el" href="TcpServer_8h_source.html#l00192">mDiffieHellman</a>, <a class="el" href="TcpServer_8h_source.html#l00195">mListenAddress</a>, <a class="el" href="TcpServer_8h_source.html#l00198">mPort</a>, <a class="el" href="TcpServer_8h_source.html#l00182">mService</a>, <a class="el" href="TcpServer_8h_source.html#l00189">mServiceThread</a>, <a class="el" href="TcpServer_8cpp_source.html#l00139">Run()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00144">ServerReady()</a>, <a class="el" href="CString_8cpp_source.html#l00731">libcomp::String::ToLower()</a>, and <a class="el" href="CString_8cpp_source.html#l00444">libcomp::String::ToUtf8()</a>.</p>
+<p>References <a class="el" href="TcpServer_8cpp_source.html#l00170">AcceptHandler()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00231">GenerateDiffieHellman()</a>, <a class="el" href="TcpConnection_8cpp_source.html#l00468">libcomp::TcpConnection::GetDiffieHellmanPrime()</a>, <a class="el" href="CString_8cpp_source.html#l00486">libcomp::String::IsEmpty()</a>, <a class="el" href="Log_8h_source.html#l00361">LOG_CRITICAL</a>, <a class="el" href="Log_8h_source.html#l00379">LOG_WARNING</a>, <a class="el" href="TcpServer_8h_source.html#l00188">mAcceptor</a>, <a class="el" href="TcpServer_8h_source.html#l00194">mDiffieHellman</a>, <a class="el" href="TcpServer_8h_source.html#l00197">mListenAddress</a>, <a class="el" href="TcpServer_8h_source.html#l00200">mPort</a>, <a class="el" href="TcpServer_8h_source.html#l00184">mService</a>, <a class="el" href="TcpServer_8h_source.html#l00191">mServiceThread</a>, <a class="el" href="TcpServer_8cpp_source.html#l00142">Run()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00147">ServerReady()</a>, <a class="el" href="CString_8cpp_source.html#l00731">libcomp::String::ToLower()</a>, and <a class="el" href="CString_8cpp_source.html#l00444">libcomp::String::ToUtf8()</a>.</p>
 
 </div>
 </div>
@@ -815,9 +816,9 @@ Private Attributes</h2></td></tr>
 
 <p>Asynchronous acceptor for new connections. </p>
 
-<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00186">186</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00188">188</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00164">AcceptHandler()</a>, and <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>.</p>
+<p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00170">AcceptHandler()</a>, and <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>.</p>
 
 </div>
 </div>
@@ -841,9 +842,9 @@ Private Attributes</h2></td></tr>
 
 <p>List of connections managed by this server. </p>
 
-<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00179">179</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00181">181</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00164">AcceptHandler()</a>, and <a class="el" href="TcpServer_8cpp_source.html#l00127">RemoveConnection()</a>.</p>
+<p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00170">AcceptHandler()</a>, and <a class="el" href="TcpServer_8cpp_source.html#l00130">RemoveConnection()</a>.</p>
 
 </div>
 </div>
@@ -867,9 +868,9 @@ Private Attributes</h2></td></tr>
 
 <p>Lock for the connection list. </p>
 
-<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00176">176</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00178">178</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00164">AcceptHandler()</a>, and <a class="el" href="TcpServer_8cpp_source.html#l00127">RemoveConnection()</a>.</p>
+<p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00170">AcceptHandler()</a>, and <a class="el" href="TcpServer_8cpp_source.html#l00130">RemoveConnection()</a>.</p>
 
 </div>
 </div>
@@ -893,9 +894,9 @@ Private Attributes</h2></td></tr>
 
 <p>Diffie-Hellman key pair used to encrypt connections. </p>
 
-<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00192">192</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00194">194</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00164">AcceptHandler()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00157">CreateConnection()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00210">GetDiffieHellman()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00215">SetDiffieHellman()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>, and <a class="el" href="TcpServer_8cpp_source.html#l00050">~TcpServer()</a>.</p>
+<p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00170">AcceptHandler()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00163">CreateConnection()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00216">GetDiffieHellman()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00221">SetDiffieHellman()</a>, <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>, and <a class="el" href="TcpServer_8cpp_source.html#l00050">~TcpServer()</a>.</p>
 
 </div>
 </div>
@@ -919,7 +920,7 @@ Private Attributes</h2></td></tr>
 
 <p>Address the server is listening on. </p>
 
-<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00195">195</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00197">197</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>.</p>
 
@@ -945,7 +946,7 @@ Private Attributes</h2></td></tr>
 
 <p>Port the address is listening on. </p>
 
-<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00198">198</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00200">200</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>.</p>
 
@@ -971,9 +972,9 @@ Private Attributes</h2></td></tr>
 
 <p>ASIO service used to handle network operations. </p>
 
-<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00182">182</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00184">184</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00282">libcomp::BaseServer::Run()</a>, and <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>.</p>
+<p>Referenced by <a class="el" href="BaseServer_8cpp_source.html#l00285">libcomp::BaseServer::Run()</a>, and <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>.</p>
 
 </div>
 </div>
@@ -997,7 +998,7 @@ Private Attributes</h2></td></tr>
 
 <p>Thread that runs the ASIO service. </p>
 
-<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00189">189</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
+<p>Definition at line <a class="el" href="TcpServer_8h_source.html#l00191">191</a> of file <a class="el" href="TcpServer_8h_source.html">TcpServer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="TcpServer_8cpp_source.html#l00058">Start()</a>.</p>
 
