@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Linux Install &amp; Setup</title><link rel="stylesheet" type="text/css" href="static/docbook.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.79.1" /><link rel="home" href="index.html" title="COMP_hack: The Definitive Guide" /><link rel="up" href="ch02.html" title="Chapter 2. Server Setup" /><link rel="prev" href="ch02s01.html" title="Requirements" /><link rel="next" href="ch02s03.html" title="Client Updater with Nginx" /></head><body><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Linux Install &amp; Setup</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s01.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Server Setup</th><td width="20%" align="right"> <a accesskey="n" href="ch02s03.html">Next</a></td></tr></table><hr /></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm45274909666720"></a>Linux Install &amp; Setup</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45274913274752"></a>Overview</h3></div></div></div><p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Linux Install &amp; Setup</title><link rel="stylesheet" type="text/css" href="static/docbook.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.79.1" /><link rel="home" href="index.html" title="COMP_hack: The Definitive Guide" /><link rel="up" href="ch02.html" title="Chapter 2. Server Setup" /><link rel="prev" href="ch02s01.html" title="Requirements" /><link rel="next" href="ch02s03.html" title="Building from Source" /></head><body><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Linux Install &amp; Setup</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s01.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Server Setup</th><td width="20%" align="right"> <a accesskey="n" href="ch02s03.html">Next</a></td></tr></table><hr /></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm46480099755984"></a>Linux Install &amp; Setup</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46480100907360"></a>Overview</h3></div></div></div><p>
 	This section of the guide will describe installation and setup of the server on an Ubuntu 16.04 LTS (<a class="ulink" href="https://www.ubuntu.com" target="_top">https://www.ubuntu.com</a>) system. Installation on other Linux systems should be possible and this guide could be adapted for such a system; however, installation on these systems won't be described here. Similarly, DNS setup, connecting to and maintaining a Linux server, basic Linux commands, basic SQL and web development are out of the scope of this document. Please look elsewhere online for an excellent selection of guides, tutorials and videos on these topics.
-</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45274910346928"></a>Package Install</h3></div></div></div><p>
+</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46480100763824"></a>Package Install</h3></div></div></div><p>
 	A packaged version of the server is available from this <a class="ulink" href="https://launchpad.net/~compomega/+archive/ubuntu/comphack" target="_top">Ubuntu PPA</a>. This guide will be using this PPA so if this does not work for your system, please see the section in this guide describing how to build the server from source. Install the package as follows:
 </p><pre class="programlisting">
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:compomega/comphack
 sudo apt-get update
 sudo apt-get install comphack
-</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45274918251120"></a>Server Data</h3></div></div></div><p>
+</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46480100256608"></a>Server Data</h3></div></div></div><p>
 	Update a copy of the server data or create your own server data. You now want to upload these files to /var/lib/comp_hack/data and verify the permissions of the files. First install some utilities for zip and 7z files:
 </p><pre class="programlisting">
 sudo apt-get install unzip p7zip-full
@@ -50,7 +50,7 @@ drwxr-xr-x 2 bob bob 20K Apr  7 15:15 Shield
 </p><pre class="programlisting">
 -rw-r--r-- 1 bob bob  2.2K Apr  7 15:16 ClientDebugMap.qmp
 -rw-r--r-- 1 bob bob   463 Apr  7 15:16 MA01_001_01.qmp
-</pre><p>Once done verify all files and directories will be readable by the <span class="emphasis"><em>comphack</em></span> user.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45274913290784"></a>MariaDB Setup (Optional)</h3></div></div></div><p>
+</pre><p>Once done verify all files and directories will be readable by the <span class="emphasis"><em>comphack</em></span> user.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46480102732304"></a>MariaDB Setup (Optional)</h3></div></div></div><p>
 	A production server should not use the default SQLite3 database. It's recommended to install MariaDB (a fork of MySQL) instead. This section will describe how to install and configure MariaDB. First, install the packages:
 </p><pre class="programlisting">
 sudo apt-get install mariadb-server mariadb-client
@@ -90,7 +90,7 @@ sudo chown -R `whoami`:`whoami` /etc/comp_hack
 &lt;/member&gt;
 </pre><p>
 	Open the file <span class="emphasis"><em>/etc/comp_hack/world.xml</em></span> and make the same database configuration changes.
-</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45274907650736"></a>Server Configuration</h3></div></div></div><p>
+</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46480107427600"></a>Server Configuration</h3></div></div></div><p>
 	Only one configuration is required; however, this guide will walk you through a few more useful changes as well. To make the channel server connect-able you must change the external IP address in the channel configuration. You can determine the IP address of the server like so:
 </p><pre class="programlisting">
 dig +short myip.opendns.com @resolver1.opendns.com
@@ -113,7 +113,7 @@ dig +short myip.opendns.com @resolver1.opendns.com
 &lt;member name="Password"&gt;password&lt;/member&gt;
 </pre><p>
 	See the configuration section of this guide for a full list of configuration options and what they mean.
-</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45274910059968"></a>Starting the Server</h3></div></div></div><p>
+</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46480102076368"></a>Starting the Server</h3></div></div></div><p>
 	The server components may be started individually:
 </p><pre class="programlisting">
 sudo systemctl start comp_lobby
@@ -135,7 +135,7 @@ sudo systemctl start comp_channel
 sudo systemctl status comp_lobby
 </pre><p>
 	Looking at the status of the server components or the log files in <span class="emphasis"><em>/var/log/comp_hack</em></span> is very important if the server components are not starting or functioning properly.
-</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm45274917666688"></a>Connecting to the Server</h3></div></div></div><p>
+</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm46480101289152"></a>Connecting to the Server</h3></div></div></div><p>
 	To connect to the server with a client you must create two files: <span class="emphasis"><em>webaccess.sdat</em></span> and <span class="emphasis"><em>ImagineClient.dat</em></span>. To create the <span class="emphasis"><em>webaccess.sdat</em></span> file, first create a file called <span class="emphasis"><em>webaccess.dat</em></span> with the contents below. Be sure to change the domain name as well as the protocol if you are using https instead.
 </p><pre class="programlisting">
 &lt;dbnet = http://www.myimagineserver.online/index/auth?user_id=%s&amp;user_password=%s&amp;character_name=%s&amp;world_id=%d&gt;
@@ -160,4 +160,4 @@ comp_encrypt webaccess.dat webaccess.sdat
 -port 10666
 </pre><p>
 	Place these two files into an install of the patched 1.666 client and it should now connect to your new server!
-</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch02s01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch02s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Requirements </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Client Updater with Nginx</td></tr></table></div></body></html>
+</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch02s01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch02s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Requirements </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Building from Source</td></tr></table></div></body></html>
