@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['keepalive_2ecpp',['KeepAlive.cpp',['../KeepAlive_8cpp.html',1,'']]],
-  ['kill',['Kill',['../../../../libcomp/html/classlibcomp_1_1Child.html#a10b9793949cebda004ecce029adbcf84',1,'libcomp::Child::Kill()'],['../classchannel_1_1ChannelClientConnection.html#a1496e2c1ff0642e2ed5e8f38fa139424',1,'channel::ChannelClientConnection::Kill()']]],
-  ['knowledgerank',['KnowledgeRank',['../classchannel_1_1ProcessingSkill.html#a98e71e1766093cb686fef1abac1d4f38',1,'channel::ProcessingSkill']]]
+  ['join',['Join',['../../../../libcomp/html/classlibcomp_1_1String.html#ad4eaa292f4b482094009ec896a646c77',1,'libcomp::String::Join()'],['../../../../libcomp/html/classlibcomp_1_1Worker.html#aa78486b3e33d26fda8488d8a2a38d008',1,'libcomp::Worker::Join()']]],
+  ['joinqueue',['JoinQueue',['../classchannel_1_1MatchManager.html#adf303c0a30c23877eaf1963d152df1d8',1,'channel::MatchManager']]],
+  ['joinultimatebattlequeue',['JoinUltimateBattleQueue',['../classchannel_1_1MatchManager.html#acc97873ad449eddc7d6c1e43932dca98',1,'channel::MatchManager']]]
 ];

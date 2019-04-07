@@ -22,6 +22,8 @@ var searchData=
   ['bikeboostoff_2ecpp',['BikeBoostOff.cpp',['../BikeBoostOff_8cpp.html',1,'']]],
   ['bikebooston_2ecpp',['BikeBoostOn.cpp',['../BikeBoostOn_8cpp.html',1,'']]],
   ['bikedismount_2ecpp',['BikeDismount.cpp',['../BikeDismount_8cpp.html',1,'']]],
+  ['binarydataset_2ecpp',['BinaryDataSet.cpp',['../../../../libcomp/html/BinaryDataSet_8cpp.html',1,'']]],
+  ['binarydataset_2eh',['BinaryDataSet.h',['../../../../libcomp/html/BinaryDataSet_8h.html',1,'']]],
   ['blacklist_2ecpp',['Blacklist.cpp',['../Blacklist_8cpp.html',1,'']]],
   ['blacklistupdate_2ecpp',['BlacklistUpdate.cpp',['../BlacklistUpdate_8cpp.html',1,'']]]
 ];

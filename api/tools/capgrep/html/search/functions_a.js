@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kill',['Kill',['../../../../libcomp/html/classlibcomp_1_1Child.html#a10b9793949cebda004ecce029adbcf84',1,'libcomp::Child']]]
+  ['join',['Join',['../../../../libcomp/html/classlibcomp_1_1String.html#ad4eaa292f4b482094009ec896a646c77',1,'libcomp::String::Join()'],['../../../../libcomp/html/classlibcomp_1_1Worker.html#aa78486b3e33d26fda8488d8a2a38d008',1,'libcomp::Worker::Join()']]]
 ];

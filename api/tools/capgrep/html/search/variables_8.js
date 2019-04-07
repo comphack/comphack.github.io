@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['levelup_5fstatuses',['LEVELUP_STATUSES',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a4275e0538a0e5db6d2002a2b5f10fb48',1,'libcomp::ServerConstants::Data']]],
-  ['lineheight',['lineHeight',['../classHexViewPaintState.html#a8904b37dd8bd439b0f62e0912f83eee1',1,'HexViewPaintState']]],
-  ['loaderflags',['LoaderFlags',['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER32.html#a26439606afeb1b6b106008355b95cfcb',1,'IMAGE_OPTIONAL_HEADER32::LoaderFlags()'],['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER64.html#aece99af93af6de3f517d42608369c42c',1,'IMAGE_OPTIONAL_HEADER64::LoaderFlags()']]],
-  ['log_5flevel_5fcount',['LOG_LEVEL_COUNT',['../../../../libcomp/html/classlibcomp_1_1Log.html#a1472098b0e9b0bfebec448507c9cc6abaa17536d1ed65be43ffe3a0e2065ace4f',1,'libcomp::Log']]],
-  ['log_5flevel_5fcritical',['LOG_LEVEL_CRITICAL',['../../../../libcomp/html/classlibcomp_1_1Log.html#a1472098b0e9b0bfebec448507c9cc6abaedf5e9f93072516b2d90311d6d85f73d',1,'libcomp::Log']]],
-  ['log_5flevel_5fdebug',['LOG_LEVEL_DEBUG',['../../../../libcomp/html/classlibcomp_1_1Log.html#a1472098b0e9b0bfebec448507c9cc6abad3b7419f0fe22e079690d6549ff5330c',1,'libcomp::Log']]],
-  ['log_5flevel_5ferror',['LOG_LEVEL_ERROR',['../../../../libcomp/html/classlibcomp_1_1Log.html#a1472098b0e9b0bfebec448507c9cc6aba9df91f36622dcff9a8b19c5b7296f8ce',1,'libcomp::Log']]],
-  ['log_5flevel_5finfo',['LOG_LEVEL_INFO',['../../../../libcomp/html/classlibcomp_1_1Log.html#a1472098b0e9b0bfebec448507c9cc6aba4207e1a23001fd951dbd2dd7290518de',1,'libcomp::Log']]],
-  ['log_5flevel_5fwarning',['LOG_LEVEL_WARNING',['../../../../libcomp/html/classlibcomp_1_1Log.html#a1472098b0e9b0bfebec448507c9cc6aba46f998103a5fb09a4879c259f3d9c58a',1,'libcomp::Log']]],
-  ['longname',['longName',['../../../../libcomp/html/structlibcomp_1_1ArgumentParser_1_1Argument.html#a37f6b15938bdf712d8c36f4b24f5af9b',1,'libcomp::ArgumentParser::Argument']]]
+  ['imagebase',['ImageBase',['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER32.html#a0187c8b157c365fead6aca157d83b059',1,'IMAGE_OPTIONAL_HEADER32::ImageBase()'],['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER64.html#afadaeefabaa27d28de89fa984ddaacd7',1,'IMAGE_OPTIONAL_HEADER64::ImageBase()']]],
+  ['instantiated',['Instantiated',['../../../../libcomp/html/structlibcomp_1_1ServerScript.html#ab65b02c5396998a268621a86485f944c',1,'libcomp::ServerScript']]],
+  ['item_5fbalm_5fof_5flife',['ITEM_BALM_OF_LIFE',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a6bda83310c78adda4a74ef2eb08aeeda',1,'libcomp::ServerConstants::Data']]],
+  ['item_5fbalm_5fof_5flife_5fdemon',['ITEM_BALM_OF_LIFE_DEMON',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#ad45e032f248bd0f285f009946db7f251',1,'libcomp::ServerConstants::Data']]],
+  ['item_5fkreuz',['ITEM_KREUZ',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a80be36b45f120302ee5f296650991c4b',1,'libcomp::ServerConstants::Data']]],
+  ['item_5fmacca',['ITEM_MACCA',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#ad0d654f53c22ccbbf8dbbaa37331c24e',1,'libcomp::ServerConstants::Data']]],
+  ['item_5fmacca_5fnote',['ITEM_MACCA_NOTE',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a2bc92927dc235ae73b5d97e67b9682ab',1,'libcomp::ServerConstants::Data']]],
+  ['item_5fmag_5fpresser',['ITEM_MAG_PRESSER',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a09824875dd6e340e048bdd5d52716670',1,'libcomp::ServerConstants::Data']]],
+  ['item_5fmagnetite',['ITEM_MAGNETITE',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#af0b125cb8712dcf19759c89d56755c8c',1,'libcomp::ServerConstants::Data']]],
+  ['item_5frbloodstone',['ITEM_RBLOODSTONE',['../../../../libcomp/html/structlibcomp_1_1ServerConstants_1_1Data.html#a2ed806b3cef35c43b4acd6223ce6c3ee',1,'libcomp::ServerConstants::Data']]]
 ];

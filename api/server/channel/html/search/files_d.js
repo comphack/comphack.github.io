@@ -24,6 +24,8 @@ var searchData=
   ['pefile_2eh',['PEFile.h',['../../../../libcomp/html/PEFile_8h.html',1,'']]],
   ['peformat_2eh',['PEFormat.h',['../../../../libcomp/html/PEFormat_8h.html',1,'']]],
   ['pentalphadata_2ecpp',['PentalphaData.cpp',['../PentalphaData_8cpp.html',1,'']]],
+  ['performancetimer_2ecpp',['PerformanceTimer.cpp',['../PerformanceTimer_8cpp.html',1,'']]],
+  ['performancetimer_2eh',['PerformanceTimer.h',['../PerformanceTimer_8h.html',1,'']]],
   ['persistentobject_2ecpp',['PersistentObject.cpp',['../../../../libcomp/html/PersistentObject_8cpp.html',1,'']]],
   ['persistentobject_2eh',['PersistentObject.h',['../../../../libcomp/html/PersistentObject_8h.html',1,'']]],
   ['pivot_2ecpp',['Pivot.cpp',['../Pivot_8cpp.html',1,'']]],

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['channelconnection',['ChannelConnection',['../../../../libcomp/html/classlibcomp_1_1ChannelConnection.html',1,'libcomp']]],
-  ['channelconnection',['ChannelConnection',['../classChannelConnection.html',1,'']]],
+  ['channelconnection',['ChannelConnection',['../../../../libcomp/html/classlibcomp_1_1ChannelConnection.html',1,'libcomp::ChannelConnection'],['../classChannelConnection.html',1,'ChannelConnection']]],
   ['channelserver',['ChannelServer',['../classChannelServer.html',1,'']]],
   ['child',['Child',['../../../../libcomp/html/classlibcomp_1_1Child.html',1,'libcomp']]],
   ['close',['Close',['../classClose.html',1,'']]],

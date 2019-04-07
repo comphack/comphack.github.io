@@ -35,6 +35,8 @@ var searchData=
   ['spawnthread_2ecpp',['SpawnThread.cpp',['../../../../libcomp/html/SpawnThread_8cpp.html',1,'']]],
   ['spawnthread_2eh',['SpawnThread.h',['../../../../libcomp/html/SpawnThread_8h.html',1,'']]],
   ['spottriggered_2ecpp',['SpotTriggered.cpp',['../SpotTriggered_8cpp.html',1,'']]],
+  ['sqratint64_2ecpp',['SqratInt64.cpp',['../../../../libcomp/html/SqratInt64_8cpp.html',1,'']]],
+  ['sqratint64_2eh',['SqratInt64.h',['../../../../libcomp/html/SqratInt64_8h.html',1,'']]],
   ['sqrattypesinclude_2eh',['SqratTypesInclude.h',['../../../../libcomp/html/SqratTypesInclude_8h.html',1,'']]],
   ['sqrattypesnonref_2eh',['SqratTypesNonRef.h',['../../../../libcomp/html/SqratTypesNonRef_8h.html',1,'']]],
   ['sqrattypessource_2eh',['SqratTypesSource.h',['../../../../libcomp/html/SqratTypesSource_8h.html',1,'']]],

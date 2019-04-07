@@ -5,6 +5,7 @@ var searchData=
   ['actionlist',['ActionList',['../classActionList.html',1,'']]],
   ['actionlistb',['ActionListB',['../classActionListB.html',1,'']]],
   ['actionmanager',['ActionManager',['../classchannel_1_1ActionManager.html',1,'channel']]],
+  ['actionoptions',['ActionOptions',['../structchannel_1_1ActionOptions.html',1,'channel']]],
   ['activeentitystate',['ActiveEntityState',['../classchannel_1_1ActiveEntityState.html',1,'channel']]],
   ['activeentitystateimp',['ActiveEntityStateImp',['../classchannel_1_1ActiveEntityStateImp.html',1,'channel']]],
   ['activeentitystateimp_3c_20objects_3a_3aally_20_3e',['ActiveEntityStateImp&lt; objects::Ally &gt;',['../classchannel_1_1ActiveEntityStateImp.html',1,'channel']]],

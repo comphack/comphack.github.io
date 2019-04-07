@@ -6,6 +6,7 @@ var searchData=
   ['action_5flearn_5facquired',['ACTION_LEARN_ACQUIRED',['../DemonSkillUpdate_8cpp.html#ac6c65b501ae9880f18bdf94845f850c3',1,'DemonSkillUpdate.cpp']]],
   ['action_5flearn_5finherited',['ACTION_LEARN_INHERITED',['../DemonSkillUpdate_8cpp.html#a41609d95197476f81f85b98b5f608ac0',1,'DemonSkillUpdate.cpp']]],
   ['action_5fmove',['ACTION_MOVE',['../DemonSkillUpdate_8cpp.html#a1809abc00fae8880f54b9d50974a17c8',1,'DemonSkillUpdate.cpp']]],
+  ['actiongroupid',['ActionGroupID',['../structchannel_1_1EventOptions.html#acb10083cdb281780f97ec7fffc809aa2',1,'channel::EventOptions']]],
   ['actions',['actions',['../classActionList.html#aff790f200d00ac2f9da5cf117398de7e',1,'ActionList::actions()'],['../classActionListB.html#ac5882239762c81dc18911e125f3478bc',1,'ActionListB::actions()']]],
   ['activated',['Activated',['../classchannel_1_1ProcessingSkill.html#aeafc94de7a098017060da7e32abc3075',1,'channel::ProcessingSkill']]],
   ['active',['Active',['../classchannel_1_1ZoneQmpShape.html#a94dfdf165a9833775d29589d7bd94ef0',1,'channel::ZoneQmpShape']]],
@@ -25,9 +26,10 @@ var searchData=
   ['ailmentdamage',['AilmentDamage',['../classchannel_1_1SkillTargetResult.html#ad82a5567184687ad02dda519fb77ed3b',1,'channel::SkillTargetResult']]],
   ['ailmentdamagetime',['AilmentDamageTime',['../classchannel_1_1SkillTargetResult.html#a3b47197c421c9ca2c1050552b8778d58',1,'channel::SkillTargetResult']]],
   ['ailmentdamagetype',['AilmentDamageType',['../classchannel_1_1SkillTargetResult.html#acc60468c59e60c5277a31b5582465abf',1,'channel::SkillTargetResult']]],
+  ['applyaggro',['ApplyAggro',['../classchannel_1_1SkillExecutionContext.html#a0a54a21da11d96d6f8fb97483a781706',1,'channel::SkillExecutionContext']]],
   ['applystatuseffects',['ApplyStatusEffects',['../classchannel_1_1SkillExecutionContext.html#a0ed1b4c3a44bfc7b4a9fe146f515eff6',1,'channel::SkillExecutionContext']]],
   ['argtype',['argType',['../../../../libcomp/html/structlibcomp_1_1ArgumentParser_1_1Argument.html#a303bedabd779dbd9f9be96d5b62b14a3',1,'libcomp::ArgumentParser::Argument']]],
-  ['autoeventsonly',['AutoEventsOnly',['../structchannel_1_1ActionManager_1_1ActionContext.html#af659f7fa8aa968d04561db75736742ee',1,'channel::ActionManager::ActionContext']]],
-  ['autoonly',['AutoOnly',['../structchannel_1_1EventManager_1_1EventContext.html#a57b019de1f69a5e064a4e038be8fb439',1,'channel::EventManager::EventContext']]],
+  ['autoeventsonly',['AutoEventsOnly',['../structchannel_1_1ActionOptions.html#a83104132427c73dd0afb82883fb89761',1,'channel::ActionOptions']]],
+  ['autoonly',['AutoOnly',['../structchannel_1_1EventOptions.html#a9005291f7a1e38cdf492f94bdd87ce50',1,'channel::EventOptions::AutoOnly()'],['../structchannel_1_1EventManager_1_1EventContext.html#a57b019de1f69a5e064a4e038be8fb439',1,'channel::EventManager::EventContext::AutoOnly()']]],
   ['autoprotect',['AutoProtect',['../classchannel_1_1SkillTargetResult.html#a1171eae77018a68978972191e318539d',1,'channel::SkillTargetResult']]]
 ];

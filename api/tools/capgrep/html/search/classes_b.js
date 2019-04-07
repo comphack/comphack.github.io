@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['packet',['Packet',['../../../../libcomp/html/classlibcomp_1_1Packet.html',1,'libcomp']]],
-  ['packet',['Packet',['../../../../libcomp/html/classlibcomp_1_1Message_1_1Packet.html',1,'libcomp::Message']]],
+  ['packet',['Packet',['../../../../libcomp/html/classlibcomp_1_1Packet.html',1,'libcomp::Packet'],['../../../../libcomp/html/classlibcomp_1_1Message_1_1Packet.html',1,'libcomp::Message::Packet']]],
   ['packetdata',['PacketData',['../classPacketData.html',1,'']]],
   ['packetexception',['PacketException',['../../../../libcomp/html/classlibcomp_1_1PacketException.html',1,'libcomp']]],
   ['packetinfo',['PacketInfo',['../classPacketInfo.html',1,'']]],

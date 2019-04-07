@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['key',['key',['../structCryptData.html#a429630b44b8adcfd7a674242d6d6958c',1,'CryptData']]],
-  ['keys',['keys',['../structCryptData.html#aa3eebe7edcabfaac9bc9b7516649962a',1,'CryptData']]],
-  ['kill',['Kill',['../../../../libcomp/html/classlibcomp_1_1Child.html#a10b9793949cebda004ecce029adbcf84',1,'libcomp::Child']]]
+  ['join',['Join',['../../../../libcomp/html/classlibcomp_1_1String.html#ad4eaa292f4b482094009ec896a646c77',1,'libcomp::String::Join()'],['../../../../libcomp/html/classlibcomp_1_1Worker.html#aa78486b3e33d26fda8488d8a2a38d008',1,'libcomp::Worker::Join()']]],
+  ['jpaddress',['jpAddress',['../classLoggerServer.html#a84b0ed8f5bb2c275c8dabf47934515f0',1,'LoggerServer']]],
+  ['jpversion',['jpVersion',['../classLoggerServer.html#ac210e3ec4551f481a83104929f1759f8',1,'LoggerServer']]],
+  ['jpwebauth',['jpWebAuth',['../classLoggerServer.html#aa9a138ed46635afa850a4f7f91829018',1,'LoggerServer']]]
 ];

@@ -1,10 +1,12 @@
 var searchData=
 [
   ['imagebase',['ImageBase',['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER32.html#a0187c8b157c365fead6aca157d83b059',1,'IMAGE_OPTIONAL_HEADER32::ImageBase()'],['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER64.html#afadaeefabaa27d28de89fa984ddaacd7',1,'IMAGE_OPTIONAL_HEADER64::ImageBase()']]],
+  ['incrementeventindex',['IncrementEventIndex',['../structchannel_1_1ActionOptions.html#ae4d53fb3c7ee2051ddd7486130ac7fc4',1,'channel::ActionOptions']]],
   ['indirecttarget',['IndirectTarget',['../classchannel_1_1SkillTargetResult.html#a75eff9c5addb0f076d0a54c06fc7c796',1,'channel::SkillTargetResult']]],
   ['inheritence_5fskill_5fmap',['INHERITENCE_SKILL_MAP',['../FusionTables_8cpp.html#a506d6f827fce1c0804627c24544abf88',1,'INHERITENCE_SKILL_MAP():&#160;FusionTables.cpp'],['../FusionTables_8h.html#a506d6f827fce1c0804627c24544abf88',1,'INHERITENCE_SKILL_MAP():&#160;FusionTables.cpp']]],
   ['inpvp',['InPvP',['../classchannel_1_1ProcessingSkill.html#a95ba84f233da106bfdb3977162e931f9',1,'channel::ProcessingSkill']]],
   ['instanceid',['InstanceID',['../classchannel_1_1ZoneQmpShape.html#a4531d71b9b6eab3b1bbcaa07b12708d9',1,'channel::ZoneQmpShape']]],
+  ['instantiated',['Instantiated',['../../../../libcomp/html/structlibcomp_1_1ServerScript.html#ab65b02c5396998a268621a86485f944c',1,'libcomp::ServerScript']]],
   ['isconstant',['IsConstant',['../classchannel_1_1StatusEffectChange.html#a53d4d61349815100e0928d310cab4d32',1,'channel::StatusEffectChange']]],
   ['isitemskill',['IsItemSkill',['../classchannel_1_1ProcessingSkill.html#adc9bae4b803dfa42bae7d3b6847656f0',1,'channel::ProcessingSkill']]],
   ['isleader',['IsLeader',['../structPartyMemberInfo.html#a10837aa8325386475a6c108c579dcd94',1,'PartyMemberInfo']]],

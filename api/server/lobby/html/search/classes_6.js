@@ -8,6 +8,7 @@ var searchData=
   ['image_5foptional_5fheader32',['IMAGE_OPTIONAL_HEADER32',['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER32.html',1,'']]],
   ['image_5foptional_5fheader64',['IMAGE_OPTIONAL_HEADER64',['../../../../libcomp/html/structIMAGE__OPTIONAL__HEADER64.html',1,'']]],
   ['image_5fsection_5fheader',['IMAGE_SECTION_HEADER',['../../../../libcomp/html/structIMAGE__SECTION__HEADER.html',1,'']]],
+  ['importhandler',['ImportHandler',['../classlobby_1_1ImportHandler.html',1,'lobby']]],
   ['init',['Init',['../../../../libcomp/html/classlibcomp_1_1Message_1_1Init.html',1,'libcomp::Message']]],
   ['internalconnection',['InternalConnection',['../../../../libcomp/html/classlibcomp_1_1InternalConnection.html',1,'libcomp']]]
 ];
